@@ -5,11 +5,11 @@
 
 
 
-### 1. 编译环境搭建
+## 1. 编译环境搭建
 
 此编译环境配置 适用 Android/Linux SDK
 
-#### 硬件要求
+### 硬件要求
 
 | 系统环境   | 要求          |
 | ------ | ----------- |
@@ -18,7 +18,7 @@
 | 内存容量   | 8GB以上       |
 | 硬盘容量   | 200GB以上     |
 
-#### 安装依赖软件包
+### 安装依赖软件包
 
 ```
 $ sudo apt install git bc bison build-essential curl flex libsdl1.2-dev 
@@ -34,9 +34,9 @@ $ sudo pip install pyelftools
 
 > 软件包名称 会根据UBUNTU版本更新而变化。不同UBUNTU版本安装失败，可网络搜索对应的解决方法
 
-### 2. Linux SDK编译
+## 2. Linux SDK编译
 
-#### 获取SDK源码
+### 获取SDK源码
 
 * SDK网盘目录
 
@@ -54,7 +54,7 @@ $ git reset --hard
 
 > SDK源码仅包含git仓库，需要按照以上命令恢复出源码
 
-#### 获取Rootfs镜像
+### 获取Rootfs镜像
 
 * 文件系统网盘目录
 
@@ -90,7 +90,7 @@ $ ls ubuntu/ubuntu-rootfs.img
 >
 > 文件系统目录：ubuntu/ubuntu-rootfs.img
 
-#### 编译完整镜像
+### 编译完整镜像
 
 首次执行build.sh进行SDK编译，必须要选择编译配置信息，如：CPU型号、板卡型号、文件系统型号
 
@@ -134,7 +134,7 @@ $ ./build.sh
 >
 > 若编译失败，可尝试自行解决，亦可联系技术支持客服解决
 
-#### 单独编译分区镜像
+### 单独编译分区镜像
 
 **Uboot**
 
@@ -160,9 +160,9 @@ $ ./build.sh buildroot
 
 > 镜像生成目录：rockdev/rootfs.img
 
-### 3. Android SDK编译
+## 3. Android SDK编译
 
-#### 获取SDK源码
+### 获取SDK源码
 
 * 网盘目录
 
@@ -178,7 +178,7 @@ $ tar -zxvf rk356x-android13-*.tar.gz
 $ git reset --hard
 ```
 
-#### 编译完整镜像
+### 编译完整镜像
 
 根据CPU型号，选择对应编译命令
 
@@ -204,7 +204,7 @@ $ ./build.sh -AUCKu
 
 > 镜像生成目录：rockdev/Image-rk3568\_t/update-\*.img
 
-#### 单独编译分区镜像
+### 单独编译分区镜像
 
 **Uboot**
 

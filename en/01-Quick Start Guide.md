@@ -2,9 +2,9 @@
 
 
 
-### 1. Introduction
+## 1. Introduction
 
-#### 1.1 Cloud Drive Files
+### Cloud Drive Files
 
 Baidu Cloud Drive Link：
 
@@ -39,7 +39,7 @@ OneDrive Cloud Drive Link：
 
 
 
-#### 1.2 Board Hardware
+### Board Hardware
 
 板卡照片（带功能标注）
 
@@ -47,7 +47,7 @@ OneDrive Cloud Drive Link：
 
 
 
-#### 1.3 Accessory Information
+### Accessory Information
 
 **DC供电接口**
 
@@ -65,23 +65,23 @@ OneDrive Cloud Drive Link：
 
 
 
-### 2. 镜像烧录
+## 2. 镜像烧录
 
 开发板出厂默认烧录好镜像，若不需要更换系统的话，可直接跳过此步骤，启动系统
 
-#### 2.1 安装镜像烧录工具
+### 安装镜像烧录工具
 
 镜像烧录工具网盘目录：4-开发工具\USB镜像烧录工具\RKDevTool\_Release\_v2.96.zip
 
 ![image-20230526154741821](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154741821.png)
 
-#### 2.2 安装USB驱动
+### 安装USB驱动
 
 USB驱动网盘目录：4-开发工具\USB驱动\DriverAssitant\_v5.12.zip
 
 ![image-20230526154517334](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154517334.png)
 
-#### 2.3 获取镜像文件
+### 获取镜像文件
 
 镜像文件可通过以下两种方式获取：网盘下载、SDK编译
 
@@ -97,7 +97,7 @@ SDK编译详细步骤参考文档 \[02初级篇-sdk编译]
         └── Ubuntu2004
 ```
 
-#### 2.4 开发板进入烧录模式
+### 开发板进入烧录模式
 
 操作步骤：
 
@@ -106,7 +106,7 @@ SDK编译详细步骤参考文档 \[02初级篇-sdk编译]
 3. 连接12V DC接口
 4. 打开烧录工具，查看是否识别到LOADER设备
 
-#### 2.5 烧录工具使用
+### 烧录工具使用
 
 操作步骤：
 
@@ -118,12 +118,12 @@ SDK编译详细步骤参考文档 \[02初级篇-sdk编译]
 
 ![image-20230519111357204](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230519111357204.png)
 
-### 3. 系统启动
+## 3. 系统启动
 
-#### 3.1 图形化桌面登陆
+### 图形化桌面登陆
 
 连接HDMI或LCD
 
-#### 3.2 调试串口登录
+### 调试串口登录
 
-#### 3.4 Android ADB登录
+### Android ADB登录

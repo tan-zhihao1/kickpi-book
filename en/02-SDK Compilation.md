@@ -9,7 +9,7 @@
 
 This compilation environment setup is suitable for Android/Linux SDK.
 
-## Hardware Requirements
+### Hardware Requirements
 
 | System Environment   | Requirements          |
 | ------ | ----------- |
@@ -20,7 +20,7 @@ This compilation environment setup is suitable for Android/Linux SDK.
 
 
 
-## Installing Required Software Packages
+### Installing Required Software Packages
 
 ```
 $ sudo apt install git bc bison build-essential curl flex libsdl1.2-dev 
@@ -42,7 +42,7 @@ $ sudo pip install pyelftools
 
 ## 2. Compiling the Linux SDK
 
-## Obtaining the SDK Source Code
+### Obtaining the SDK Source Code
 
 * SDK Directory on the Cloud Drive
 
@@ -64,7 +64,7 @@ $ git reset --hard
 
 
 
-## Obtaining the Rootfs Image
+### Obtaining the Rootfs Image
 
 * File System Directory on the Cloud Drive
 
@@ -106,7 +106,7 @@ $ ls ubuntu/ubuntu-rootfs.img
 
 
 
-## Compiling the Complete Image
+### Compiling the Complete Image
 
 To compile the SDK for the first time, you must select the compilation configuration, such as CPU model, board model, and file system model.
 
@@ -156,7 +156,7 @@ $ ./build.sh
 
 
 
-## Compiling Individual Partition Images
+### Compiling Individual Partition Images
 
 **Uboot**
 
@@ -192,7 +192,7 @@ $ ./build.sh buildroot
 
 ## 3.  Compiling the Android SDK
 
-## Obtaining the SDK Source Code
+### Obtaining the SDK Source Code
 
 * Directory on the Cloud Drive
 
@@ -212,7 +212,7 @@ $ git reset --hard
 
 
 
-## Compiling the Complete Image
+### Compiling the Complete Image
 
 Select the appropriate compilation command based on the CPU model.
 
@@ -244,7 +244,7 @@ $ ./build.sh -AUCKu
 
 
 
-## Compiling Individual Partition Images
+### Compiling Individual Partition Images
 
 **Uboot**
 
