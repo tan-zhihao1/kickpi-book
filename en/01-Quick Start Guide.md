@@ -1,16 +1,18 @@
-# 01-快速入门文档
+# 01-Quick Start Guide
 
 
 
-### 1. 入门介绍
+### 1. Introduction
 
-#### 1.1 网盘资料
+#### 1.1 Cloud Drive Files
 
-百度网盘地址：
+Baidu Cloud Drive Link：
 
-OneDrive网盘地址：
+OneDrive Cloud Drive Link：
 
-* 网盘目录说明
+
+
+* Directory Structure
 
 ```
 ├── 0-用前必读
@@ -33,11 +35,19 @@ OneDrive网盘地址：
     └── 串口调试工具
 ```
 
-#### 1.2 板卡硬件
+
+
+
+
+#### 1.2 Board Hardware
 
 板卡照片（带功能标注）
 
-#### 1.3 配件说明
+
+
+
+
+#### 1.3 Accessory Information
 
 **DC供电接口**
 
@@ -50,6 +60,10 @@ OneDrive网盘地址：
 **调试串口**
 
 硬件配件连接图片
+
+
+
+
 
 ### 2. 镜像烧录
 
