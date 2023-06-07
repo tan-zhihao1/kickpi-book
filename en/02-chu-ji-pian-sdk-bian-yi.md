@@ -1,4 +1,4 @@
-# 02 Beginner Guide SDK Compilation
+# 02-SDK Compilation
 
 
 
