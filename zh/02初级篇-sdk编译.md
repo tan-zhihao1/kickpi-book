@@ -1,6 +1,10 @@
 # 02初级篇-sdk编译
 
 
+
+
+
+
 ### 1. 编译环境搭建
 
 此编译环境配置 适用 Android/Linux SDK
@@ -17,7 +21,13 @@
 #### 安装依赖软件包
 
 ```
-$ sudo apt install git bc bison build-essential curl flex libsdl1.2-dev g++-multilib gcc-multilib gnupg gperf libncurses5-dev imagemagick lib32ncurses5-dev lib32readline-dev squashfs-tools lib32z1-dev liblz4-tool xsltproc libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils schedtool lzop pngcrush rsync yasm zip zlib1g-dev python device-tree-compiler python-pip gawk openjdk-8-jdk u-boot-tools patchelf expect
+$ sudo apt install git bc bison build-essential curl flex libsdl1.2-dev 
+$ sudo apt install g++-multilib gcc-multilib gnupg gperf libncurses5-dev 
+$ sudo apt install imagemagick lib32ncurses5-dev lib32readline-dev squashfs-tools 
+$ sudo apt install lib32z1-dev liblz4-tool xsltproc libssl-dev libwxgtk3.0-dev 
+$ sudo apt install libxml2 libxml2-utils schedtool lzop pngcrush rsync 
+$ sudo apt install yasm zip zlib1g-dev python device-tree-compiler 
+$ sudo apt install python-pip gawk openjdk-8-jdk u-boot-tools patchelf expect
 
 $ sudo pip install pyelftools
 ```
