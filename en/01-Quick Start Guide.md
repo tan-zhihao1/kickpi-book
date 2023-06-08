@@ -49,15 +49,19 @@ OneDrive Cloud Drive Link：
 
 ### Accessory Information
 
-**DC供电接口**
+**DC Power Interface**
 
 配件连接图片
 
-**USB OTG(烧录USB口)**
+
+
+**USB OTG (Flashing USB Port)**
 
 配件连接图片
 
-**调试串口**
+
+
+**Debug Serial Port**
 
 硬件配件连接图片
 
@@ -65,29 +69,39 @@ OneDrive Cloud Drive Link：
 
 
 
-## 2. 镜像烧录
+## 2. Image Flashing
 
-开发板出厂默认烧录好镜像，若不需要更换系统的话，可直接跳过此步骤，启动系统
+The development board comes preloaded with the default image. If you don't need to change the system, you can skip this step and start the system.
 
-### 安装镜像烧录工具
 
-镜像烧录工具网盘目录：4-开发工具\USB镜像烧录工具\RKDevTool\_Release\_v2.96.zip
+
+### Installing the Image Flashing Tool
+
+Image flashing tool directory on the cloud drive：4-开发工具\USB镜像烧录工具\RKDevTool\_Release\_v2.96.zip
 
 ![image-20230526154741821](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154741821.png)
 
-### 安装USB驱动
 
-USB驱动网盘目录：4-开发工具\USB驱动\DriverAssitant\_v5.12.zip
+
+
+
+### Installing USB Drivers
+
+USB drivers directory on the cloud drive：4-开发工具\USB驱动\DriverAssitant\_v5.12.zip
 
 ![image-20230526154517334](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154517334.png)
 
-### 获取镜像文件
 
-镜像文件可通过以下两种方式获取：网盘下载、SDK编译
 
-SDK编译详细步骤参考文档 \[02初级篇-sdk编译]
 
-镜像文件网盘目录：
+
+### Obtaining Image Files
+
+You can obtain image files through the following two methods: downloading from the cloud drive or compiling from the SDK.
+
+For detailed steps on SDK compilation, refer to the document [02初级篇-sdk编译]
+
+Image files directory on the cloud drive:
 
 ```
 ├── 2-系统镜像
@@ -97,33 +111,55 @@ SDK编译详细步骤参考文档 \[02初级篇-sdk编译]
         └── Ubuntu2004
 ```
 
-### 开发板进入烧录模式
 
-操作步骤：
 
-1. 板卡USB OTG 连接 PC USB接口
-2. 长按 RECOVERY按键
-3. 连接12V DC接口
-4. 打开烧录工具，查看是否识别到LOADER设备
 
-### 烧录工具使用
 
-操作步骤：
+### Putting the Development Board in Flashing Mode
 
-1. 烧录工具 成功识别板卡设备（若识别不到，返回上一步确认操作）
-2. 进入完整镜像烧录页面
-3. 选择镜像路径
-4. 开始烧录镜像
-5. 查看 烧录日志，烧录成功后自动重启进入系统
+Steps:
+
+1. Connect the board's USB OTG to the PC's USB port.
+2. Press and hold the RECOVERY button.
+3. Connect the 12V DC power interface.
+4. Open the flashing tool and check if the LOADER device is detected.
+
+
+
+
+
+### Using the Flashing Tool
+
+Steps:
+
+1. The flashing tool successfully detects the board device (if not detected, go back to the previous step and confirm the operation).
+2. Enter the full image flashing page.
+3. Select the image path.
+4. Start flashing the image.
+5. Check the flashing log and the system will automatically restart after successful flashing.
 
 ![image-20230519111357204](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230519111357204.png)
 
-## 3. 系统启动
 
-### 图形化桌面登陆
 
-连接HDMI或LCD
 
-### 调试串口登录
 
-### Android ADB登录
+
+
+## 3. System Startup
+
+### Graphical Desktop Login
+
+Connect HDMI or LCD.
+
+
+
+
+
+### Debug Serial Port Login
+
+
+
+
+
+### Android ADB Login
