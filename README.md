@@ -1,6 +1,6 @@
 
 # English Document
-* [RK356X](en)
+* [RK356X EN Doc](rk356x/en)
 
 # 中文文档
-* [RK356X](zh)
+* [RK356X 中文文档](rk356x/zh)
