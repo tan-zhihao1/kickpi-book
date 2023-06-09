@@ -15,24 +15,25 @@ OneDrive Cloud Drive Link：
 * Directory Structure
 
 ```
-├── 0-用前必读
-│   └── 资料目录说明.md
-├── 1-SDK源码
-│   └── RK356X Linux
+├── 1-SDK Source 软件源码
+│   ├── rk356x-android13
+│   └── rk356x-linux
+│       ├── buildroot-dl-20230607.tar.gz
 │       ├── linaro-rootfs-20230524.tar.gz
 │       ├── rk356x-linux-20230524.tar.gz
 │       └── ubuntu-rootfs-20230523.tar.gz
-├── 2-系统镜像
-│   └── RK3566 TX66
-│       ├── Android11 TV
+├── 2-System Image 系统镜像
+│   └── RK3566-TX66
+│       ├── Android11-TV
+│       ├── Android13
 │       ├── Debian11
 │       └── Ubuntu2004
-├── 3-硬件资料
-└── 4-开发工具
-    ├── ADB工具
-    ├── USB镜像烧录工具
-    ├── USB驱动
-    └── 串口调试工具
+├── 3-Hardware Data 硬件资料
+└── 4-Development Tools 开发工具
+    ├── ADB Tool
+    ├── UART Debug Tool 串口调试工具
+    ├── USB Driver USB驱动
+    └── USB Image Burn Tool 镜像烧录工具
 ```
 
 
@@ -77,7 +78,7 @@ The development board comes preloaded with the default image. If you don't need 
 
 ### Installing the Image Flashing Tool
 
-Image flashing tool directory on the cloud drive：4-开发工具\USB镜像烧录工具\RKDevTool\_Release\_v2.96.zip
+Image flashing tool directory on the cloud drive：4-Development Tools\USB Image Burn Tool\RKDevTool\_Release\_v2.96.zip
 
 ![image-20230526154741821](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154741821.png)
 
@@ -87,7 +88,7 @@ Image flashing tool directory on the cloud drive：4-开发工具\USB镜像烧�
 
 ### Installing USB Drivers
 
-USB drivers directory on the cloud drive：4-开发工具\USB驱动\DriverAssitant\_v5.12.zip
+USB drivers directory on the cloud drive：4-Development Tools\USB Driver\DriverAssitant\_v5.12.zip
 
 ![image-20230526154517334](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154517334.png)
 
@@ -99,16 +100,17 @@ USB drivers directory on the cloud drive：4-开发工具\USB驱动\DriverAssita
 
 You can obtain image files through the following two methods: downloading from the cloud drive or compiling from the SDK.
 
-For detailed steps on SDK compilation, refer to the document [02初级篇-sdk编译]
+For detailed steps on SDK compilation, refer to the document [02-SDK Compilation]
 
 Image files directory on the cloud drive:
 
 ```
-├── 2-系统镜像
-    └── RK3566-TX66
-        ├── Android11-TV
-        ├── Debian11
-        └── Ubuntu2004
+├── 2-System Image 系统镜像
+│   └── RK3566-TX66
+│       ├── Android11-TV
+│       ├── Android13
+│       ├── Debian11
+│       └── Ubuntu2004
 ```
 
 
@@ -130,6 +132,8 @@ Steps:
 
 ### Using the Flashing Tool
 
+![image-20230519111357204](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230519111357204.png)
+
 Steps:
 
 1. The flashing tool successfully detects the board device (if not detected, go back to the previous step and confirm the operation).
@@ -137,10 +141,6 @@ Steps:
 3. Select the image path.
 4. Start flashing the image.
 5. Check the flashing log and the system will automatically restart after successful flashing.
-
-![image-20230519111357204](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230519111357204.png)
-
-
 
 
 

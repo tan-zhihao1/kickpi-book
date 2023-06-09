@@ -3,8 +3,6 @@
 
 
 
-
-
 ## 1. 编译环境搭建
 
 此编译环境配置 适用 Android/Linux SDK
@@ -17,6 +15,8 @@
 | CPU核心数 | 4核以上        |
 | 内存容量   | 8GB以上       |
 | 硬盘容量   | 200GB以上     |
+
+
 
 ### 安装依赖软件包
 
@@ -34,6 +34,10 @@ $ sudo pip install pyelftools
 
 > 软件包名称 会根据UBUNTU版本更新而变化。不同UBUNTU版本安装失败，可网络搜索对应的解决方法
 
+
+
+
+
 ## 2. Linux SDK编译
 
 ### 获取SDK源码
@@ -45,6 +49,8 @@ $ sudo pip install pyelftools
 	rk356x-linux-*.tar.gz
 ```
 
+
+
 * 解压源码压缩包
 
 ```
@@ -53,6 +59,8 @@ $ git reset --hard
 ```
 
 > SDK源码仅包含git仓库，需要按照以上命令恢复出源码
+
+
 
 ### 获取Rootfs镜像
 
@@ -63,6 +71,8 @@ $ git reset --hard
 	linaro-rootfs-20230524.tar.gz
 	ubuntu-rootfs-20230523.tar.gz
 ```
+
+
 
 * 解压debian镜像文件
 
@@ -77,6 +87,8 @@ $ ls debian/linaro-rootfs.img
 >
 > 文件系统目录：debian/linaro-rootfs.img
 
+
+
 * 解压ubuntu镜像文件
 
 ```
@@ -90,11 +102,15 @@ $ ls ubuntu/ubuntu-rootfs.img
 >
 > 文件系统目录：ubuntu/ubuntu-rootfs.img
 
+
+
 ### 编译完整镜像
 
 首次执行build.sh进行SDK编译，必须要选择编译配置信息，如：CPU型号、板卡型号、文件系统型号
 
 具体板卡型号差异可查看 `入门文档介绍`
+
+
 
 * SDK编译配置
 
@@ -122,7 +138,9 @@ $ ./build.sh lunch
     Which would you like? [0]:	# 选择文件系统型号
 ```
 
-> 首次编译执行一次即可
+> 配置命令首次编译执行一次即可
+
+
 
 * 编译镜像
 
@@ -134,6 +152,8 @@ $ ./build.sh
 >
 > 若编译失败，可尝试自行解决，亦可联系技术支持客服解决
 
+
+
 ### 单独编译分区镜像
 
 **Uboot**
@@ -144,6 +164,8 @@ $ ./build.sh uboot
 
 > 镜像生成目录：rockdev/uboot.img
 
+
+
 **Kernel**
 
 ```
@@ -152,6 +174,8 @@ $ ./build.sh kernel
 
 > 镜像生成目录：rockdev/boot.img
 
+
+
 **Buildroot**
 
 ```
@@ -159,6 +183,10 @@ $ ./build.sh buildroot
 ```
 
 > 镜像生成目录：rockdev/rootfs.img
+
+
+
+
 
 ## 3. Android SDK编译
 
@@ -177,6 +205,8 @@ $ ./build.sh buildroot
 $ tar -zxvf rk356x-android13-*.tar.gz
 $ git reset --hard
 ```
+
+
 
 ### 编译完整镜像
 
@@ -203,6 +233,8 @@ $ ./build.sh -AUCKu
 ```
 
 > 镜像生成目录：rockdev/Image-rk3568\_t/update-\*.img
+
+
 
 ### 单独编译分区镜像
 

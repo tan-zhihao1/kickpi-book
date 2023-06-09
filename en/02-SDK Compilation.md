@@ -3,8 +3,6 @@
 
 
 
-
-
 ## 1.  Setting up the Compilation Environment
 
 This compilation environment setup is suitable for Android/Linux SDK.
@@ -34,7 +32,9 @@ $ sudo apt install python-pip gawk openjdk-8-jdk u-boot-tools patchelf expect
 $ sudo pip install pyelftools
 ```
 
-> The names of the software packages may vary depending on the version of Ubuntu. If the installation fails for a different Ubuntu version, you can search the internet for the corresponding solution.
+> The names of the software packages may vary depending on the version of Ubuntu.
+>
+> If the installation fails for a different Ubuntu version, you can search the internet for the corresponding solution.
 
 
 
@@ -47,7 +47,7 @@ $ sudo pip install pyelftools
 * SDK Directory on the Cloud Drive
 
 ```
-1-SDK\rk356x-linux\
+1-SDK Source 软件源码\rk356x-linux\
 	rk356x-linux-*.tar.gz
 ```
 
@@ -197,7 +197,7 @@ $ ./build.sh buildroot
 * Directory on the Cloud Drive
 
 ```
-1-SDK\rk356x-android13\
+1-SDK Source 软件源码\rk356x-android13\
 	rk356x-android13-*.tar.gz
 ```
 
