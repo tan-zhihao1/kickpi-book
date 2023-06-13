@@ -10,7 +10,7 @@
 
 To change the system language, open the command line terminal and execute the following commands.
 
-
+PS: Restart for the changes to take effect.
 
 ### English Language
 
