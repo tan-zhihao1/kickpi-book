@@ -78,7 +78,18 @@ $ vim device/rockchip/rk356x/BoardConfig.mk
 
 ## 8. 默认语言
 
+```
+$ vim build/target/product/full_base.mk
+	PRODUCT_LOCALES := en_US
+```
 
+
+
+| 选项  | 描述 |
+| ----- | ---- |
+| en_US | 英文 |
+| zh_CN | 中文 |
+|       |      |
 
 
 
