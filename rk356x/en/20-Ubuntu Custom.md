@@ -12,7 +12,7 @@ To change the system language, open the command line terminal and execute the fo
 
 
 
-### English language
+### English Language
 
 ```
 echo "export LC_ALL=en_US.UTF-8" >> /etc/profile.d/zh_CN.sh
