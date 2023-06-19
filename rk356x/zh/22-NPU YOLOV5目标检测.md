@@ -18,6 +18,10 @@ external/rknpu2/examples/rknn_yolov5_video_demo/
 
 * 指定交叉编译工具链路径
 
+```
+$ export 
+```
+
 
 
 * 编译源码
@@ -25,6 +29,8 @@ external/rknpu2/examples/rknn_yolov5_video_demo/
 
 
 * 拷贝程序到开发板
+
+
 
 
 
