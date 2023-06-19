@@ -16,7 +16,14 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 
 
 
-* 测试视频
+* 网盘获取测试视频文件
+
+```
+1-SDK Source 软件源码/demo/
+	rknn_yolov5_demo_test.mp4
+```
+
+> 可自行下载任意视频
 
 
 
@@ -51,6 +58,8 @@ $ ls install/rknn_yolov5_demo_Linux/
 ```
 
 > 拷贝方式可用U盘、网络等
+>
+> 若不想要编译，可从网盘目录获取可执行程序 1-SDK Source 软件源码/demo/rknn_yolov5_demo_Linux.tar.gz
 
 
 
