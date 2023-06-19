@@ -16,6 +16,10 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 
 
 
+* 测试视频
+
+
+
 ## 编译源码
 
 * 指定交叉编译工具链路径
@@ -46,7 +50,7 @@ $ ls install/rknn_yolov5_demo_Linux/
 	lib/              model/            rknn_yolov5_demo
 ```
 
-
+> 拷贝方式可用U盘、网络等
 
 
 
