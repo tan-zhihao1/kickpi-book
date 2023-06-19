@@ -16,20 +16,30 @@ external/rknpu2/examples/rknn_yolov5_video_demo/
 
 ## 编译源码
 
+* 指定交叉编译工具链路径
 
+
+
+* 编译源码
+
+
+
+* 拷贝程序到开发板
 
 
 
 ## 程序运行
 
-* RK356X Debian11
+### RK356X Debian11解析视频流
+
+* 程序运行命令
 
 ```
 $ cd rknn_yolov5_demo_Linux/
 $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 ```
 
-> RK356X性能只能运行到7帧/秒，可自行优化程序性能
+> RK356X只能运行到7帧/秒，可自行优化程序性能
 
 
 
