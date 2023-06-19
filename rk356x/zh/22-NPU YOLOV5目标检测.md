@@ -42,6 +42,8 @@ $ ./build-linux_RK356X.sh
 * 拷贝程序到开发板
 
 ```
+$ ls install/rknn_yolov5_demo_Linux/
+	lib/              model/            rknn_yolov5_demo
 ```
 
 
