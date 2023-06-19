@@ -178,7 +178,7 @@ $ ./build.sh
 
 ### 单独编译分区镜像
 
-**Uboot**
+**单独编译Uboot**
 
 ```
 $ ./build.sh uboot
@@ -188,7 +188,7 @@ $ ./build.sh uboot
 
 
 
-**Kernel**
+**单独编译Kernel**
 
 ```
 $ ./build.sh kernel
@@ -198,7 +198,7 @@ $ ./build.sh kernel
 
 
 
-**Buildroot**
+**单独编译Buildroot**
 
 ```
 $ ./build.sh buildroot
@@ -231,7 +231,9 @@ $ ./build.sh buildroot
 
 * MD5校验文件完整性
 
-
+```
+$ md5sum -c *.md5
+```
 
 
 
