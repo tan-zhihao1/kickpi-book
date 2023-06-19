@@ -1,22 +1,22 @@
-# 22-NPU YOLOV5S目标检测
+# 22-NPU YOLOV5S Object Detection
 
 
 
 
 
-## 视频流解析
+## Video Stream Parsing
 
-### 硬件环境
+### Hardware Environment
 
-开发板：RK356X
+Development Board：RK356X
 
-系统：Debian11
+System：Debian11
 
 
 
-### 获取源码
+### Getting the Source Code
 
-* 程序源码内置SDK目录
+* Program source code with built-in SDK directory
 
 ```
 $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
