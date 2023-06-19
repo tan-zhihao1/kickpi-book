@@ -4,6 +4,16 @@
 
 
 
+
+
+## 硬件环境
+
+开发板：RK356X
+
+系统：Debian11
+
+
+
 ## 获取源码
 
 * 程序源码内置SDK目录
@@ -64,8 +74,6 @@ $ ls install/rknn_yolov5_demo_Linux/
 
 
 ## 程序运行
-
-### RK356X Debian11解析视频流
 
 * 程序运行命令
 
