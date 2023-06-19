@@ -51,6 +51,20 @@ $ sudo pip install pyelftools
 
 
 
+* 拷贝源码压缩包到编译主机目录
+
+  若编译主机为虚拟机，不可放在共享目录下编译
+
+
+
+* MD5校验文件完整性
+
+```
+$ 
+```
+
+
+
 * 解压源码压缩包
 
 ```
@@ -74,7 +88,15 @@ $ git reset --hard
 
 
 
-* 解压debian镜像文件
+* 拷贝压缩包到指定目录
+
+
+
+* MD5校验文件完整性
+
+
+
+* 解压镜像文件
 
 ```
 $ tar -zxvf linaro-rootfs-*.tar.gz
@@ -199,6 +221,20 @@ $ ./build.sh buildroot
 	rk356x-android13-*.tar.gz
 ```
 
+
+
+* 拷贝源码压缩包到编译主机目录
+
+  若编译主机为虚拟机，不可放在共享目录下编译
+
+
+
+* MD5校验文件完整性
+
+
+
+
+
 * 解压源码压缩包
 
 ```
@@ -210,9 +246,9 @@ $ git reset --hard
 
 ### 编译完整镜像
 
-根据CPU型号，选择对应编译命令
+根据CPU型号，选择对应编译命令；若编译失败，可尝试自行解决，或联系技术客服解决
 
-若编译失败，可尝试自行解决，或联系技术客服解决
+
 
 * RK3566平台
 
@@ -223,6 +259,8 @@ $ ./build.sh -AUCKu
 ```
 
 > 镜像生成目录：rockdev/Image-rk3566\_t/update-\*.img
+
+
 
 * RK3568平台
 
@@ -238,7 +276,7 @@ $ ./build.sh -AUCKu
 
 ### 单独编译分区镜像
 
-**Uboot**
+**单独编译Uboot**
 
 ```
 $ source build/envsetup.sh
@@ -248,7 +286,9 @@ $ ./build.sh -U
 
 > 镜像生成目录：rockdev/Image-\*/uboot.img
 
-**Kernel**
+
+
+**单独编译Kernel**
 
 ```
 $ source build/envsetup.sh
@@ -258,7 +298,9 @@ $ ./build.sh -CK
 
 > 镜像生成目录：rockdev/Image-\*/boot.img
 
-**Android**
+
+
+**单独编译Android**
 
 ```
 $ source build/envsetup.sh
