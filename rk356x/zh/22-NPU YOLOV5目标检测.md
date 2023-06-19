@@ -31,12 +31,18 @@ $ export GCC_COMPILER=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-202
 * 编译源码
 
 ```
-$ 
+$ cd external/rknpu2/examples/rknn_yolov5_video_demo/
+$ ./build-linux_RK356X.sh
 ```
+
+> 编译成功后，执行程序生成目录 install/rknn_yolov5_demo_Linux/
 
 
 
 * 拷贝程序到开发板
+
+```
+```
 
 
 
