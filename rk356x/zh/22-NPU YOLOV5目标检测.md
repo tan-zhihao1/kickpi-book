@@ -9,7 +9,9 @@
 * 程序源码内置SDK目录
 
 ```
-external/rknpu2/examples/rknn_yolov5_video_demo/
+$ ls external/rknpu2/examples/rknn_yolov5_video_demo/
+	build  build-android_RK356X.sh  build-android_RK3588.sh  build-linux_RK356X.sh  build-linux_RK3588.sh  
+	CMakeLists.txt  convert_rknn_demo  include  install  model  README.md  src
 ```
 
 
@@ -19,12 +21,18 @@ external/rknpu2/examples/rknn_yolov5_video_demo/
 * 指定交叉编译工具链路径
 
 ```
-$ export 
+$ export GCC_COMPILER=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-rockchip1031-linux-gnu
 ```
+
+> 交叉编译工具链内置SDK目录，具体路径参考以上命令
 
 
 
 * 编译源码
+
+```
+$ 
+```
 
 
 
