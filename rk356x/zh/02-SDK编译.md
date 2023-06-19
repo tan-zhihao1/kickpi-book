@@ -60,7 +60,7 @@ $ sudo pip install pyelftools
 * MD5校验文件完整性
 
 ```
-$ 
+$ md5sum -c *.md5
 ```
 
 
