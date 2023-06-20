@@ -1,4 +1,6 @@
-# 22-NPU YOLOV5S Object Detection
+# 22-NPU YOLOV5S
+
+
 
 
 
@@ -26,66 +28,66 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 
 
 
-* 网盘获取测试视频文件
+* Obtain test video files from cloud storage
 
 ```
 1-SDK Source 软件源码/demo/
 	rknn_yolov5_demo_test.mp4
 ```
 
-> 可自行下载任意视频
+> You can download any video of your choice
 
 
 
-### 编译源码
+### Compiling the Source Code
 
-* 指定交叉编译工具链路径
+* Specify the cross-compilation toolchain path
 
 ```
 $ export GCC_COMPILER=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-rockchip1031-linux-gnu
 ```
 
-> 交叉编译工具链内置SDK目录，具体路径参考以上命令
+> The cross-compilation toolchain is located in the built-in SDK directory. Please refer to the above command for the specific path.
 
 
 
-* 编译源码
+* Compile the source code
 
 ```
 $ cd external/rknpu2/examples/rknn_yolov5_video_demo/
 $ ./build-linux_RK356X.sh
 ```
 
-> 编译成功后，执行程序生成目录 install/rknn_yolov5_demo_Linux/
+> After successful compilation, execute the program to generate the directory install/rknn_yolov5_demo_Linux/ .
 
 
 
-* 拷贝程序到开发板
+* Copy the program to the development board
 
 ```
 $ ls install/rknn_yolov5_demo_Linux/
 	lib/              model/            rknn_yolov5_demo
 ```
 
-> 拷贝方式可用U盘、网络等
+> Copying can be done using USB flash drive, network, etc.
 >
-> 若不想要编译，可从网盘目录获取可执行程序 1-SDK Source 软件源码/demo/rknn_yolov5_demo_Linux.tar.gz
+> If you don't want to compile, you can get the executable program from the cloud storage directory 1-SDK Source Software Code/demo/rknn_yolov5_demo_Linux.tar.gz.
 
 
 
-### 程序运行
+### Running the Program 
 
-* 程序运行命令
+* Program execution command
 
 ```
 $ cd rknn_yolov5_demo_Linux/
 $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 ```
 
-> RK356X只能运行到7帧/秒，可自行优化程序性能
+> RK356X can only run at 7 frames per second. You can optimize the program performance as needed.
 
 
 
-* 程序运行界面
+* Program execution interface
 
 ![f8944680e7bd81aeec4cbddf2eab4b0](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/f8944680e7bd81aeec4cbddf2eab4b0.jpg)
