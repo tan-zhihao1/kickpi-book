@@ -80,7 +80,9 @@ To change the system language, open the command line terminal and execute the fo
 
 PS: Restart for the changes to take effect.
 
-### English Language
+### UBUNTU2004
+
+#### English Language
 
 ```
 $ locale-gen en_US.UTF-8
@@ -93,7 +95,7 @@ $ echo "export LANGUAGE=en_US:en" >> /etc/profile.d/zh_CN.sh
 
 
 
-### China Language
+#### China Language
 
 ```
 $ locale-gen zh_CN.UTF-8
@@ -106,7 +108,23 @@ $ echo "export LANGUAGE=zh_CN:zh" >> /etc/profile.d/zh_CN.sh
 
 
 
+## 5、Timezone Configuration
 
+After executing the command, restart for the changes to take effect.
+
+
+
+* Set the timezone to Asia/Shanghai
+
+```
+$ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime     
+```
+
+* Set the timezone to America/New_York
+
+```
+$ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+```
 
 
 
