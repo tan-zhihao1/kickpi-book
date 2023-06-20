@@ -20,6 +20,8 @@ $ /etc/init.d/kickpi.sh
 
 ## 2. QT运行环境搭建
 
+### Debian11
+
 Debian11系统默认配置好QT运行环境，可执行以下命令测试
 
 ```
@@ -74,7 +76,9 @@ $ docker run -it ubuntu bash
 
 修改系统语言，请打开命令行终端，执行以下命令。重新启动使修改生效
 
-### 设置英文语言
+### Ubuntu2004
+
+* 设置英文语言
 
 ```
 $ locale-gen en_US.UTF-8
@@ -87,7 +91,7 @@ $ echo "export LANGUAGE=en_US:en" >> /etc/profile.d/zh_CN.sh
 
 
 
-### 设置中文语言
+* 设置中文语言
 
 ```
 $ locale-gen zh_CN.UTF-8
@@ -97,6 +101,18 @@ $ echo "export LC_ALL=zh_CN.UTF-8" >> /etc/profile.d/zh_CN.sh
 $ echo "export LANG=zh_CN.UTF-8" >> /etc/profile.d/zh_CN.sh
 $ echo "export LANGUAGE=zh_CN:zh" >> /etc/profile.d/zh_CN.sh
 ```
+
+
+
+## 5、时区配置
+
+
+
+
+
+
+
+
 
 
 
