@@ -70,15 +70,11 @@ $ docker run -it ubuntu bash
 
 
 
-
-
 ## 4. 语言配置
 
-To change the system language, open the command line terminal and execute the following commands.
+修改系统语言，请打开命令行终端，执行以下命令。重新启动使修改生效
 
-PS: Restart for the changes to take effect.
-
-### English Language
+### 设置英文语言
 
 ```
 $ locale-gen en_US.UTF-8
@@ -91,7 +87,7 @@ $ echo "export LANGUAGE=en_US:en" >> /etc/profile.d/zh_CN.sh
 
 
 
-### China Language
+### 设置中文语言
 
 ```
 $ locale-gen zh_CN.UTF-8
