@@ -1,4 +1,4 @@
-# 20-Ubuntu Custom
+# 20-Linux Custom
 
 
 
