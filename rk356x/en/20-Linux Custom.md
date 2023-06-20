@@ -4,23 +4,38 @@
 
 
 
-## 1. Autostart Programs Setup
+
+
+## 1. Startup Program Autostart
+
+### Autostart Script
+
+```
+$ /etc/init.d/kickpi.sh
+```
+
+> Add the startup program command to the kickpi.sh script to enable autostart on boot
 
 
 
 
 
+## 2. QT Runtime Environment Setup
+
+### Debian11
+
+Debian 11 comes with the QT runtime environment preconfigured. You can test it by executing the following commands
+
+```
+$ cd /usr/lib/aarch64-linux-gnu/qt5/examples/qpa/windows/
+$ ./windows
+```
 
 
-## 2. QT Environment
 
-### Development Environment Setup
+* Open a dual QT window interface
 
-
-
-### Runtime Environment Setup
-
-
+![a29f89e0967515369b000d08b2ff832](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/a29f89e0967515369b000d08b2ff832.jpg)
 
 
 
