@@ -106,6 +106,24 @@ $ echo "export LANGUAGE=zh_CN:zh" >> /etc/profile.d/zh_CN.sh
 
 ## 5、时区配置
 
+命令执行后，重启生效
+
+
+
+* 设置时区亚洲/上海
+
+```
+$ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime     
+```
+
+* 设置时区美国/纽约
+
+```
+$ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+```
+
+
+
 
 
 
