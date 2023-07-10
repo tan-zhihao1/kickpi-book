@@ -42,6 +42,18 @@ $ sudo pip install pyelftools
 
 ## 2. Linux SDK编译
 
+### SDK
+
+内核版本：5.10
+
+Ubuntu版本：20.04
+
+Debian版本：11
+
+
+
+
+
 ### 获取SDK源码
 
 * SDK网盘目录
@@ -212,7 +224,7 @@ $ ./build.sh buildroot
 
 
 
-## 3. Android SDK编译
+## 3. Android13.0 SDK编译
 
 ### 获取SDK源码
 
