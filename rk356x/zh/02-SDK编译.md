@@ -42,7 +42,7 @@ $ sudo pip install pyelftools
 
 ## 2. Linux SDK编译
 
-### SDK
+### SDK介绍
 
 内核版本：5.10
 
