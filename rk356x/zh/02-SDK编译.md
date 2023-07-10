@@ -226,6 +226,16 @@ $ ./build.sh buildroot
 
 ## 3. Android13.0 SDK编译
 
+### SDK介绍
+
+内核版本：5.10
+
+Android系统版本：13.0
+
+
+
+
+
 ### 获取SDK源码
 
 * 网盘目录
