@@ -34,7 +34,9 @@ $ sudo apt install python-pip gawk openjdk-8-jdk u-boot-tools patchelf expect
 $ sudo pip install pyelftools
 ```
 
-> 软件包名称 会根据UBUNTU版本更新而变化。不同UBUNTU版本安装失败，可网络搜索对应的解决方法
+> 软件包名称 会根据UBUNTU版本更新而变化。
+>
+> 不同UBUNTU版本安装失败，可网络搜索对应的解决方法
 
 
 
