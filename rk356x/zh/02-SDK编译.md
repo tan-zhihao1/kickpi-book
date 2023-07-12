@@ -45,13 +45,9 @@ $ sudo pip install pyelftools
 
 ### SDK介绍
 
-内核版本：5.10
+Rockchip Linux SDK由SDK源码包、文件系统镜像组成
 
-Ubuntu版本：20.04
-
-Debian版本：11
-
-
+SDK源码包内核版本5.10，支持Ubuntu20.04、Debian11文件系统
 
 
 
