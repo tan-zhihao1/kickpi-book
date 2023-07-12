@@ -53,7 +53,7 @@ SDK源码包内核版本5.10，支持Ubuntu20.04、Debian11文件系统
 
 ### 获取SDK源码
 
-* SDK网盘目录
+* 网盘下载SDK源码包
 
 ```
 1-SDK源码\rk356x-linux\
