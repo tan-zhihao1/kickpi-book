@@ -79,16 +79,27 @@ SDK源码包内核版本5.10，支持Ubuntu20.04、Debian11文件系统
 $ md5sum -c *.md5
 ```
 
-
+> 若
 
 **解压源码压缩包**
 
 ```
 $ tar -zxvf rk356x-linux-*.tar.gz
+$ ls -al
+	.git
+```
+
+> SDK源码压缩包仅包含Git仓库，可用ls -al命令查看到.git文件夹
+
+
+
+**还原源码文件**
+
+```
 $ git reset --hard
 ```
 
-> SDK源码仅包含git仓库，需要按照以上命令恢复出源码
+
 
 
 
