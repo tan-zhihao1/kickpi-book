@@ -1,11 +1,11 @@
-# English Document
-
-* [RK356X EN Doc](rk356x/en)
+# KICKPI Document
 
 
 
 
 
-# 中文文档
+
+
+* [RK356X English Document](rk356x/en)
 
 * [RK356X 中文文档](rk356x/zh)
