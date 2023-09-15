@@ -287,29 +287,38 @@ $ git reset --hard
 
 根据CPU型号，选择对应编译命令；若编译失败，可尝试自行解决，或联系技术客服解决
 
-
-
-* RK3566平台
+**配置SDK编译项**
 
 ```
-$ source build/envsetup.sh
-$ lunch rk3566_t-userdebug
-$ ./build.sh -AUCKu 
+$ ./build.sh lunch
+
+	will lunch sdk
+
+	You're building on Linux
+	Lunch menu...pick a combo:
+
+	1. rk356x
+	2. rk3588
+	Which would you like? [0]:
+
+	You're building on Linux
+	Lunch menu...pick a combo:
+
+	1. BoardConfig.mk
+	2. BoardConfig-rk3566-kickpi-tx66.mk
+	3. BoardConfig-rk3568-kickpi-k1a.mk
+	4. BoardConfig-rk3568-kickpi-k1b.mk
 ```
 
-> 镜像生成目录：rockdev/Image-rk3566\_t/update-\*.img
 
 
-
-* RK3568平台
+**编译镜像**
 
 ```
-$ source build/envsetup.sh
-$ lunch rk3568_t-userdebug
 $ ./build.sh -AUCKu
 ```
 
-> 镜像生成目录：rockdev/Image-rk3568\_t/update-\*.img
+> 镜像生成目录：rockdev/Image-*/update-\*.img
 
 
 
