@@ -325,8 +325,6 @@ $ ./build.sh -AUCKu
 **单独编译Uboot**
 
 ```
-$ source build/envsetup.sh
-$ lunch
 $ ./build.sh -U
 ```
 
@@ -337,8 +335,6 @@ $ ./build.sh -U
 **单独编译Kernel**
 
 ```
-$ source build/envsetup.sh
-$ lunch
 $ ./build.sh -CK
 ```
 
@@ -349,8 +345,6 @@ $ ./build.sh -CK
 **单独编译Android**
 
 ```
-$ source build/envsetup.sh
-$ lunch
 $ ./build.sh -A
 ```
 
