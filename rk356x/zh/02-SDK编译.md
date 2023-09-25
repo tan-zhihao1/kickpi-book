@@ -123,7 +123,7 @@ $ md5sum -c *.md5
 
 
 
-* 解压镜像文件
+* 解压debian镜像文件
 
 ```
 $ tar -zxvf linaro-rootfs-*.tar.gz
