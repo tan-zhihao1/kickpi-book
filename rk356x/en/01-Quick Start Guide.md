@@ -154,9 +154,10 @@ Steps:
 
 1. The burnning tool successfully detects the board device (if not detected, go back to the previous step and confirm the operation).
 2. Enter the partition image brunning page.
-3. Select the image path.
-4. Start burnning the image.
-5. Check the burnning log and the system will automatically restart after successful flashing.
+3. Select the partition items for burnning
+4. Select the image path.
+5. Start burnning the image.
+6. Check the burnning log and the system will automatically restart after successful flashing.
 
 
 
