@@ -146,7 +146,7 @@ Steps:
 
 
 
-####
+#### Burnning partition image
 
 
 
