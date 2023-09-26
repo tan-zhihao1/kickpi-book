@@ -92,7 +92,9 @@ Image burnning tool directory on the cloud drive：
 
 ### Installing USB Drivers
 
-USB drivers directory on the cloud drive：4-Development Tools\USB Driver\DriverAssitant\_v5.12.zip
+USB drivers directory on the cloud drive：
+
+​	4-Development Tools\USB Driver\DriverAssitant\_v5.12.zip
 
 ![image-20230526154517334](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154517334.png)
 
