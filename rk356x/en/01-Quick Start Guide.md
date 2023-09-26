@@ -148,6 +148,16 @@ Steps:
 
 #### Burnning partition image
 
+![image-20230926170256112](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230926170256112.png)
+
+Steps:
+
+1. The flashing tool successfully detects the board device (if not detected, go back to the previous step and confirm the operation).
+2. Enter the full image flashing page.
+3. Select the image path.
+4. Start flashing the image.
+5. Check the flashing log and the system will automatically restart after successful flashing.
+
 
 
 
