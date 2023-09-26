@@ -40,15 +40,13 @@ OneDrive Cloud Drive Link：
 
 
 
-### Board Hardware
-
-板卡照片（带功能标注）
+### Board Hardware（Pic）
 
 
 
 
 
-### Accessory Information
+### Accessory Information（Pic）
 
 **DC Power Interface**
 
@@ -60,13 +58,13 @@ RK3566 TX66 comes with a 5V adapter
 
 **USB OTG (Flashing USB Port)**
 
-配件连接图片
+
 
 
 
 **Debug Serial Port**
 
-硬件配件连接图片
+
 
 
 
