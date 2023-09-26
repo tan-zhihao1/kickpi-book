@@ -126,11 +126,13 @@ Steps:
 3. Connect the 12V DC power interface.
 4. Open the flashing tool and check if the LOADER device is detected.
 
+![image-20230926172750849](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230926172750849.png)
 
 
 
+### Using the Burnning Tool
 
-### Using the Flashing Tool
+#### Burnning complete image
 
 ![image-20230519111357204](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230519111357204.png)
 
@@ -141,6 +143,10 @@ Steps:
 3. Select the image path.
 4. Start flashing the image.
 5. Check the flashing log and the system will automatically restart after successful flashing.
+
+
+
+####
 
 
 
