@@ -78,7 +78,11 @@ The development board comes preloaded with the default image. If you don't need 
 
 ### Installing the Image Burnning Tool
 
-Image burnning tool directory on the cloud drive：4-Development Tools\USB Image Burn Tool\RKDevTool\_Release\_v2.96.zip
+Image burnning tool directory on the cloud drive：
+
+​	4-Development Tools\USB Image Burn Tool\RKDevTool\_Release\_v2.96.zip
+
+
 
 ![image-20230526154741821](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154741821.png)
 
