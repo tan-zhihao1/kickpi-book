@@ -52,7 +52,9 @@ OneDrive Cloud Drive Link：
 
 **DC Power Interface**
 
-配件连接图片
+RK3568 K1 comes with a 12V adapter
+
+RK3566 TX66 comes with a 5V adapter
 
 
 
