@@ -84,7 +84,11 @@ $ cd rknn_yolov5_demo_Linux/
 $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 ```
 
-> RK3566 can only run at 7 frames per second. You can optimize the program performance as needed.
+> RK3566 can only run at 7 frames per second. 
+>
+> RK3568 can only run at 16 frames per second. 
+>
+> You can optimize the program performance as needed.
 
 
 
