@@ -146,8 +146,6 @@ Steps:
 
 #### Burnning complete image
 
-![image-20230519111357204](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230519111357204.png)
-
 Steps:
 
 1. The burnning tool successfully detects the board device (if not detected, go back to the previous step and confirm the operation).
@@ -158,9 +156,11 @@ Steps:
 
 
 
-#### Burnning partition image
+![image-20230519111357204](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230519111357204.png)
 
-![image-20230926170256112](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230926170256112.png)
+
+
+#### Burnning partition image
 
 Steps:
 
@@ -172,6 +172,8 @@ Steps:
 6. Check the burnning log and the system will automatically restart after successful flashing.
 
 
+
+![image-20230926170256112](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230926170256112.png)
 
 
 
