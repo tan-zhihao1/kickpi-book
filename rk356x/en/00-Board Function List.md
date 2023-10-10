@@ -3,6 +3,8 @@
 | Function            | K1                                                           | K1B                                                          |
 | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | APPEARANCE          |                                                              |                                                              |
+| PCB SIZE            |                                                              |                                                              |
+| Weight              |                                                              |                                                              |
 | SOC                 | RK3568B2                                                     | RK3568B2                                                     |
 | CPU                 | Quad Core Cortex-A55                                         | Quad Core Cortex-A55                                         |
 | GPU                 | Mali G52                                                     | Mali G52                                                     |
@@ -10,8 +12,6 @@
 | DDR                 | 2G/4G                                                        | 2G/4G                                                        |
 | EMMC                | 8G/16G/32G                                                   | 8G/16G/32G                                                   |
 | SYSTEM              | Android13.0 / Debian11 / Ubuntu2204                          | Android13.0 / Debian11 / Ubuntu2204                          |
-| PCB SIZE            |                                                              |                                                              |
-| Weight              |                                                              |                                                              |
 | POWER               | DC 12V                                                       | Type-C 5V                                                    |
 | FAN                 | Y（5V Power）                                                | N                                                            |
 | LED                 | * Power LED<br />* Work LED                                  | * Power LED<br />* Work LED                                  |
