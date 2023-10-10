@@ -96,8 +96,6 @@ Image burnning tool directory on the cloud drive：
 
 
 
-
-
 ### Installing USB Drivers
 
 USB drivers directory on the cloud drive：
