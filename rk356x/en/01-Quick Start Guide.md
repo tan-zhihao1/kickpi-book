@@ -84,7 +84,15 @@ Image burnning tool directory on the cloud drive：
 
 
 
-![image-20230526154741821](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154741821.png)
+![](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154741821.png)
+
+
+
+**Change the language of the burning tool to English**
+
+![image-20231010202819610](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231010202819610.png)
+
+![image-20231010203036869](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231010203036869.png)
 
 
 
