@@ -104,9 +104,7 @@ USB drivers directory on the cloud drive：
 
 
 
-![image-20230526154517334](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154517334.png)
-
-
+![image-20231010203215046](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231010203215046.png)
 
 
 
