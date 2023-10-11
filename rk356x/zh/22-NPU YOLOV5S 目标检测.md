@@ -4,7 +4,7 @@
 
 
 
-## NPU YOLOV5S是什么
+## NPU YOLOV5S 是什么
 
 YOLOV5S
 
@@ -24,17 +24,16 @@ YOLOV5S
 
 YOLOV5S目标检测 示例程序 已内置在Debian11文件系统
 
-示例程序 目录
+进入示例程序目录
 
 ```
-
+$ cd /rockchip-test/npu2/rknn_yolov5_demo_Linux/
 ```
-
-
 
 运行示例程序
 
 ```
+$ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 ```
 
 
