@@ -52,17 +52,6 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 
 
 
-* 网盘获取测试视频文件
-
-```
-1-SDK Source 软件源码/demo/
-	rknn_yolov5_demo_test.mp4
-```
-
-> 可自行下载任意视频
-
-
-
 ### 编译源码
 
 * 指定交叉编译工具链路径
