@@ -38,8 +38,6 @@ $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 
 
 
-
-
 ### 获取示例程序源码
 
 * 程序源码内置SDK目录
