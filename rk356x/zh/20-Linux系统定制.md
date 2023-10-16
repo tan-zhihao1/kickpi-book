@@ -104,7 +104,7 @@ $ echo "export LANGUAGE=zh_CN:zh" >> /etc/profile.d/zh_CN.sh
 
 
 
-## 5、时区配置
+## 5. 时区配置
 
 > 命令执行后，重启生效
 
@@ -122,7 +122,7 @@ $ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 
 
 
-## 6、配置屏幕显示方向
+## 6. 配置屏幕显示方向
 
 * 查看当前屏幕信息
 
