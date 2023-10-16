@@ -6,7 +6,9 @@
 
 ## NPU YOLOV5S 是什么
 
-YOLOV5S
+YOLOV5S 是计算机视觉中的一个目标检测算法，它是YOLO（You Only Look Once）系列的一部分，由Joseph Redmon和Alexey Bochkovskiy等人开发。YOLO 算法系列以其快速的实时目标检测能力而闻名，能够在图像或视频中检测和定位多个对象，包括物体的类别和位置。
+
+YOLOv5S 是 YOLOv5 系列中的一个变种，不同版本的 YOLOv5 具有不同的性能和模型复杂度。通常，"S" 在 YOLOv5S 中可能代表 "Small"，这意味着它可能是一种轻量级的模型，适合在资源受限的环境下运行，如移动设备或嵌入式系统。 YOLOv5S 可能在速度和准确性之间进行权衡，以适应不同的应用场景。
 
 
 
