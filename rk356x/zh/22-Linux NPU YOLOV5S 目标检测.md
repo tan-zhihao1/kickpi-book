@@ -1,4 +1,4 @@
-# 22-NPU YOLOV5S 目标检测
+# 22-Linux NPU YOLOV5S 目标检测
 
 
 
