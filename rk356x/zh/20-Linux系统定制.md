@@ -18,7 +18,7 @@ $ /etc/init.d/kickpi.sh
 
 
 
-## 4. 语言配置
+## 2. 语言配置
 
 修改系统语言，请打开命令行终端，执行以下命令。重新启动使修改生效
 
@@ -50,7 +50,7 @@ $ echo "export LANGUAGE=zh_CN:zh" >> /etc/profile.d/zh_CN.sh
 
 
 
-## 5. 时区配置
+## 3. 时区配置
 
 > 命令执行后，重启生效
 
@@ -68,7 +68,7 @@ $ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 
 
 
-## 6. 配置屏幕显示方向
+## 4. 配置屏幕显示方向
 
 * 查看当前屏幕信息
 
