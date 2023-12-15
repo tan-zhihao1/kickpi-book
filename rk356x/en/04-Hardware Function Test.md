@@ -22,7 +22,7 @@
 
 ## 2. LED
 
-The K1 development board is equipped with a working LED, which serves as the system's heartbeat indicator by default. If the heartbeat LED continues to flash, it indicates that the kernel is running normally.
+The K1 development board is equipped with a working LED, which serves as the system's heartbeat indicator by default. If the heartbeat LED continues to flash, it indicates that the kernel is running normally
 
 Additionally, you can refer to the following aspects to control the LED for other functions.
 
