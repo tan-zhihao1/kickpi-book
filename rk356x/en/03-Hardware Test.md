@@ -1,6 +1,0 @@
-# 03-Hardware Test
-
-
-
-
-
