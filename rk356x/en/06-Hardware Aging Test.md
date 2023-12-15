@@ -1,6 +1,8 @@
-# 06 - Hardware Aging Test
+# 06-Hardware Aging Test
 
 Hardware Aging Test is a hardware aging test based on the DeviceTest application, primarily focusing on CPU, DDR, GPU, and VPU aging tests.
+
+
 
 ## Copying VPU Test Videos
 
@@ -18,6 +20,8 @@ Below are two common methods for copying the video:
 
 1. Use the adb push tool to push the Aging_Test_Video.mp4 video file to the /sdcard directory.
 2. Copy the video file to a USB flash drive or SD card and use a file manager to copy it to the /sdcard directory.
+
+
 
 ## Accessing the Hardware Aging Program
 
