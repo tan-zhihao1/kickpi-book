@@ -180,8 +180,6 @@ bool EventHub::isExternalDeviceLocked(Device* device) {
 
 
 
-### Linux多屏触摸配置
-
 
 
 
