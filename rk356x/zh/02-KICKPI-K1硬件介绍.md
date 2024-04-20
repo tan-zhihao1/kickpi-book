@@ -1,4 +1,4 @@
-# 01-快速入门文档
+# 02-KICKPI-K1硬件介绍
 
 
 
@@ -6,39 +6,13 @@
 
 ## 1. 主控信息
 
-### RK3562
-
-![image-20231214152205552](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231214152205552.png)
-
-
-
-### RK3566
-
-![rk3566基本信息](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/rk3566bd.png)
-
-
-
-### RK3568
-
 ![rk3568基本信息](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/rk3568bd.png)
 
 
 
 ## 2. 开发板信息
 
-### RK3568 K1
-
-![image-20231214155147080](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231214155147080.png)
-
-
-
-### RK3568 K1B
-
-![image-20240130090518950](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240130090518950.png)
-
-### RK3562 K3
-
-
+![image-20240420175637137](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420175637137.png)
 
 
 
@@ -46,21 +20,7 @@
 
 ## 3. 配件列表
 
-常用配件有适配器、USB烧录线、调试串口线 等可自行选购
-
-### RK3568 K1配件列表
-
 ![img](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/O1CN01kcjuvi29djTNDfOhy_!!2216870748091.jpg)
-
-
-
-### RK3568 K1B配件列表
-
-![img](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/O1CN01fnKIlL29djThiLgdR_!!2216870748091.jpg)
-
-
-
-### RK3562 K3配件列表
 
 
 
@@ -109,26 +69,4 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 │   ├── USB Driver USB驱动
 │   └── USB ImageBurnTool 镜像烧录工具
 ```
-
-
-
-## 5. 技术交流/售后支持
-
-### KICKPI 官方店铺链接
-
-[淘宝店铺链接](https://shop183733283.taobao.com/?spm=a230r.7195193.1997079397.2.10f76f498zHqMG)
-
-[阿里巴巴店铺链接](https://shop122g2107958t7.1688.com/page/index.html?spm=0.0.wp_pc_common_header_companyName_undefined.0)
-
-
-
-### 客服QQ号
-
-![image-20231018142716705](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231018142716705.png)
-
-
-
-### 技术交流QQ群
-
-![image-20231018142017914](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231018142017914.png)
 

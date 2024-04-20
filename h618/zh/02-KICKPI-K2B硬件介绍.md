@@ -1,12 +1,10 @@
-# 01-快速入门文档
+# 02-KICKPI-K2B硬件介绍
 
 
 
 
 
 ## 1. 主控信息
-
-### H618
 
 ![image-20240320092438171](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240320092438171.png)
 
@@ -16,15 +14,11 @@
 
 ## 2. 开发板信息
 
-### K2B
-
-![7e67e08bdbb8ff7f9777006ca46ed211](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/7e67e08bdbb8ff7f9777006ca46ed211.jpg)
+![image-20240420180042321](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420180042321.png)
 
 
 
 ## 3. 配件信息
-
-常用配件有适配器、USB烧录线、调试串口线 等可自行选购
 
 
 
@@ -68,24 +62,4 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 ```
 
 
-
-## 5. 技术交流/售后支持
-
-### KICKPI 官方店铺链接
-
-[淘宝店铺链接](https://shop183733283.taobao.com/?spm=a230r.7195193.1997079397.2.10f76f498zHqMG)
-
-[阿里巴巴店铺链接](https://shop122g2107958t7.1688.com/page/index.html?spm=0.0.wp_pc_common_header_companyName_undefined.0)
-
-
-
-### 客服QQ号
-
-![image-20231018142716705](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231018142716705.png)
-
-
-
-### 技术交流QQ群
-
-![image-20231018142017914](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231018142017914.png)
 

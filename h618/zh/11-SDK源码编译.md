@@ -1,4 +1,4 @@
-# 03-源码编译
+# 11-SDK源码编译
 
 
 
@@ -152,8 +152,3 @@ $ ./build.sh android
 
 
 
-
-
-## 3. Linux SDK编译
-
-Ubuntu22.04 系统 仅提供镜像文件，编译可参考 ARMBIAN SDK
