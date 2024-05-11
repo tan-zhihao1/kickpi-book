@@ -152,3 +152,6 @@ $ ./build.sh android
 
 
 
+## 3. ARMBIAN SDK
+
+建议参考ARMBIAN官方文档

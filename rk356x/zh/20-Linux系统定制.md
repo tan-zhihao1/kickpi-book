@@ -109,6 +109,25 @@ $ xrandr --output HDMI-1 --rotate right				// 旋转270度
 
 
 
+## 5. 网络配置
+
+### 静态IP地址配置
+
+示例：ens33网卡配置静态IP地址为192.168.1.50
+
+```
+$ vim /etc/netplan/01-network-manager-all.yaml
+
+network:
+	version: 2
+    ethernets:
+        ens33:
+            dhcp4: no
+            addresses: [192.168.1.50/24]
+            optional: true
+            gateway4: 192.168.1.1
+```
+
 
 
 

@@ -13,16 +13,12 @@ $ sudo apt update
 $ sudo apt install docker.io
 ```
 
-
-
 * 防火墙配置
 
 ```
 $ sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 $ sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 ```
-
-
 
 * Docker运行测试
 

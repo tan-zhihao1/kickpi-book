@@ -249,6 +249,28 @@ $ ./build.sh menuconfig
 
 
 
+### SDK新增编译项
+
+**示例：新增RK3568 K1 Buildroot编译选项**
+
+* 新增配置文件
+
+```
+$ cd device/rockchip/rk3566_rk3568/
+$ cp rockchip_rk3568_kickpi_k1_debian_defconfig rockchip_rk3568_kickpi_k1_buildroot_defconfig
+```
+
+* 修改编译配置文件
+
+```
+$ vim rockchip_rk3568_kickpi_k1_buildroot_defconfig
+
+- RK_ROOTFS_SYSTEM_DEBIAN=y
++ RK_ROOTFS_SYSTEM_BUILDROOT=y
+```
+
+
+
 
 
 ## 3. Android13.0 SDK编译
