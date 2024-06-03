@@ -14,7 +14,7 @@
 
 ## 2. 开发板信息
 
-
+![image-20240521112727844](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240521112727844.png)
 
 
 
