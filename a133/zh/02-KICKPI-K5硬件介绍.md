@@ -6,13 +6,13 @@
 
 ## 1. 主控信息
 
-![a133基本信息](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/rk3568bd.png)
+![image-20240320092438171](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240320092438171.png)
 
 
 
 ## 2. 开发板信息
 
-![KICKPI-K5_V1.0](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420175637137.png)
+![image-20240420180042321](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420180042321.png)
 
 
 
