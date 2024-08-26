@@ -4,6 +4,7 @@ h3 { counter-reset: h4counter; }
 h4 { counter-reset: h5counter; }
 h5 { counter-reset: h6counter; }
 h6 { }
+
 h2:before {
   counter-increment: h2counter;
   content: counter(h2counter) ".\0000a0\0000a0";
