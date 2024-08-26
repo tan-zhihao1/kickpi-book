@@ -43,6 +43,11 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 │   └── android10
 ├── 2-Image镜像
 │   └── K5
+│       └── Android10.0
+│           ├── lcd-lvds-21-1920-1080
+│           │   └── a133_android10_c3_uart0.img
+│           └── lcd-lvds-7-1024-600
+│               └── a133_android10_c3_uart0.img
 ├── 3-SoftwareData软件资料
 │   └── Android
 ├── 4-HardwareData硬件资料
