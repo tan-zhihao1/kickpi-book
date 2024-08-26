@@ -12,7 +12,7 @@
 
 ## 2. 开发板信息
 
-![image-20240420175637137](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420175637137.png)
+![KICKPI-K5_V1.0](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420175637137.png)
 
 
 
