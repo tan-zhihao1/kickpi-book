@@ -42,11 +42,11 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 ├── 1-SDK软件源码
 │   └── android10
 ├── 2-Image镜像
-│   └── A133-K5
+│   └── K5
 ├── 3-SoftwareData软件资料
 │   └── Android
 ├── 4-HardwareData硬件资料
-│   └── A133-K5
+│   └── K5
 ├── 5-DevelopmentTool开发工具
 │   ├── ADB Tool
 │   ├── ADB投屏
