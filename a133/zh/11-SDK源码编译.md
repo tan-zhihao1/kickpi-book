@@ -116,7 +116,7 @@ $ git reset --hard
 $ ./build.sh
 ```
 
-> 镜像生成目录：longan/out/h618_android12_p2_uart0.img
+> 镜像生成目录：longan/out/a133_android10_c3_uart0.img
 
 
 
