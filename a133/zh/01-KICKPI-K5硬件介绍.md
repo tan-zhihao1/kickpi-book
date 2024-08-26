@@ -40,32 +40,25 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 
 ```
 ├── 1-SDK软件源码
-│   └── android13
+│   └── android10
 ├── 2-Image镜像
-│   ├── RK3566-TX66
-│   │   ├── Android11-TV
-│   │   ├── Debian11
-│   │   └── Ubuntu2004
-│   ├── RK3568-K1
-│   │   ├── Android13.0
-│   │   ├── Debian11
-│   │   └── Ubuntu2204
-│   └── RK3568-K1B
-│       ├── Android13.0
-│       ├── Debian11
-│       └── Ubuntu2204
+│   └── A133-K5
 ├── 3-SoftwareData软件资料
-│   ├── rknn_toolkit
-│   └── RKNPU
+│   └── Android
 ├── 4-HardwareData硬件资料
-│   ├── RK3568-K1
-│   └── RK3568-K1B
-├── 5-DevelopmentTools开发工具
+│   └── A133-K5
+├── 5-DevelopmentTool开发工具
 │   ├── ADB Tool
 │   ├── ADB投屏
 │   ├── FactoryTool 工厂镜像烧录工具
+│   ├── HDTunePro_6.00_trial.exe
+│   ├── SD Card Formatter 5.0.2 Setup EN.exe
+│   ├── SDCardFormatterv5_WinEN
+│   ├── SD卡烧录工具
+│   ├── SD启动卡工具
 │   ├── UART DebugTool 串口调试工具
-│   ├── USB Driver USB驱动
 │   └── USB ImageBurnTool 镜像烧录工具
+└── 6-Document文档
+
 ```
 
