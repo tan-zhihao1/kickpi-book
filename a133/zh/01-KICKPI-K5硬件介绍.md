@@ -40,8 +40,7 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 
 ```
 ├── 1-SDK软件源码
-│   ├── android13
-│   └── linux
+│   └── android13
 ├── 2-Image镜像
 │   ├── RK3566-TX66
 │   │   ├── Android11-TV
