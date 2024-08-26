@@ -56,8 +56,8 @@ Android系统版本：10.0
 * 网盘下载目录
 
 ```
-1-SDK软件源码\Android12.0\
-	h618-android12.0-20240320.tar.gz
+1-SDK软件源码\Android10.0\
+
 ```
 
 
