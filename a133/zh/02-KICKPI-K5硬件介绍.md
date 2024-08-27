@@ -6,25 +6,15 @@
 
 ## 1. 主控信息
 
-![image-20240320092438171](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240320092438171.png)
-
-
+TODO
 
 ## 2. 开发板信息
 
-![image-20240420180042321](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420180042321.png)
-
-
-
-
+TODO
 
 ## 3. 配件列表
 
-![K5开发板配件图](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/O1CN01kcjuvi29djTNDfOhy_!!2216870748091.jpg)
-
-
-
-
+TODO
 
 ## 4. 网盘资料
 
@@ -33,8 +23,6 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 两份网盘资料内容一致，可根据实际情况自行选择
 
 网盘链接可通过 购买平台或QQ咨询客服获取
-
-
 
 * 网盘目录说明
 
