@@ -56,9 +56,7 @@ Rockchip Linux SDK由SDK源码包、文件系统镜像组成
 网盘SDK目录如下
 
 ```
-1-SDK源码\rk356x-linux\
-	rk356x-linux-*.tar.gz
-	rk356x-linux-*.md5
+TODO
 ```
 
 
@@ -82,7 +80,7 @@ $ md5sum -c *.md5
 **解压源码压缩包**
 
 ```
-$ tar -zxvf rk356x-linux-*.tar.gz
+TODO
 ```
 
 > SDK源码压缩包仅包含Git仓库，可用ls -al命令查看到.git文件夹
