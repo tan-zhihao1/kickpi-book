@@ -167,7 +167,7 @@ $ ./build.sh
 $ ./build.sh uboot
 ```
 
-> 镜像生成目录：rockdev/uboot.img
+> 镜像生成目录：output/image/download.bin、output/image/idblock.img 和 output/image/uboot.img
 
 
 
