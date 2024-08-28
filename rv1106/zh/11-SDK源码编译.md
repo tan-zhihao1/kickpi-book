@@ -192,6 +192,9 @@ $ ./build.sh rootfs
 
 **单独编译media**
 
+```
+$ ./build.sh rootfs
+```
 
 ### 其他常用命令
 
