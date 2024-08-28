@@ -136,9 +136,7 @@ $ git reset --hard
 * 文件系统网盘目录
 
 ```
-1-SDK源码\rk356x-linux\
-	linaro-rootfs-20230524.tar.gz
-	ubuntu-rootfs-20230523.tar.gz
+TODO
 ```
 
 
@@ -154,10 +152,7 @@ $ md5sum -c *.md5
 * 解压debian镜像文件
 
 ```
-$ tar -zxvf linaro-rootfs-*.tar.gz
-$ cp linaro-rootfs.img debian/
-
-$ ls debian/linaro-rootfs.img
+TODO
 ```
 
 > debian镜像文件的名称、目录必须保证一致
