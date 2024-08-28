@@ -140,13 +140,11 @@ TODO
 ```
 
 
-
 * MD5校验文件完整性
 
 ```
 $ md5sum -c *.md5
 ```
-
 
 
 * 解压debian镜像文件
@@ -155,24 +153,13 @@ $ md5sum -c *.md5
 TODO
 ```
 
-> debian镜像文件的名称、目录必须保证一致
->
-> 文件系统目录：debian/linaro-rootfs.img
-
-
 
 * 解压ubuntu镜像文件
 
 ```
-$ tar -zxvf ubuntu-rootfs-*.tar.gz
-$ cp ubuntu-rootfs.img.img ubuntu/
-
-$ ls ubuntu/ubuntu-rootfs.img
+TODO
 ```
 
-> ubuntu镜像文件的名称、目录必须保证一致
->
-> 文件系统目录：ubuntu/ubuntu-rootfs.img
 
 
 
