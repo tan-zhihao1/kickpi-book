@@ -1,6 +1,6 @@
 # 11-SDK源码编译
 
-## 1. 编译环境搭建
+## 编译环境搭建
 
 此编译环境配置 适用 Android/Linux SDK
 
@@ -35,7 +35,7 @@ $ sudo pip install pyelftools
 
 
 
-## 2. Linux SDK编译
+## Linux SDK编译
 
 ### SDK介绍
 
