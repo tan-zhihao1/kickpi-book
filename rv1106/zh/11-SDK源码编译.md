@@ -177,7 +177,7 @@ $ ./build.sh uboot
 $ ./build.sh kernel
 ```
 
-> 镜像生成目录：rockdev/boot.img
+> 镜像生成目录：output/image/boot.img
 
 
 
@@ -187,7 +187,7 @@ $ ./build.sh kernel
 $ ./build.sh buildroot
 ```
 
-> 镜像生成目录：rockdev/rootfs.img
+> 镜像生成目录：output/image/rootfs.img
 
 
 
