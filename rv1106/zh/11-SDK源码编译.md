@@ -195,6 +195,8 @@ $ ./build.sh rootfs
 ```
 $ ./build.sh rootfs
 ```
+> ⽣成⽂件的存放⽬录：output/out/media_out
+
 
 ### 其他常用命令
 
