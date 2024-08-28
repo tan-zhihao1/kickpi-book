@@ -187,6 +187,7 @@ $ ./build.sh kernel
 $ ./build.sh rootfs
 ```
 
+> 编译后使用./build.sh firmware命令打包成rootfs.img
 > 镜像生成目录：output/image/rootfs.img
 
 
