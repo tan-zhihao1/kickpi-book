@@ -190,12 +190,14 @@ $ ./build.sh rootfs
 > 编译后使用./build.sh firmware命令打包成rootfs.img
 > 镜像生成目录：output/image/rootfs.img
 
+
 **单独编译media**
 
 ```
-$ ./build.sh rootfs
+$ ./build.sh media
 ```
-> ⽣成⽂件的存放⽬录：output/out/media_out
+⽣成⽂件的存放⽬录：output/out/media_out
+
 
 
 ### 其他常用命令
