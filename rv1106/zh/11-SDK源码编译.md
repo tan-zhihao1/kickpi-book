@@ -209,6 +209,7 @@ $ ./build.sh media
 ./build.sh app
 ```
 > ⽣成⽂件的存放⽬录：output/out/app_out
+>
 > 注：app依赖media
 
 **编译内核驱动**
