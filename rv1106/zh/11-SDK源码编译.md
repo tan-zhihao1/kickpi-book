@@ -30,7 +30,7 @@ $ sudo apt install lib32z1-dev liblz4-tool xsltproc libssl-dev libwxgtk3.0-dev
 $ sudo apt install libxml2 libxml2-utils schedtool lzop pngcrush rsync 
 $ sudo apt install yasm zip zlib1g-dev python device-tree-compiler 
 $ sudo apt install python-pip gawk openjdk-8-jdk u-boot-tools patchelf expect
-$ sudo apt install makeinfo cmake ssh make gcc gcc-multilib g++-multilib module-assistant
+$ sudo apt install makeinfo cmake ssh make gcc module-assistant g++ gawk texinfo libssl-dev
 $ sudo pip install pyelftools
 ```
 
