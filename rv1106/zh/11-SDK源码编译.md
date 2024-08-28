@@ -181,10 +181,10 @@ $ ./build.sh kernel
 
 
 
-**单独编译Buildroot**
+**单独编译rootfs**
 
 ```
-$ ./build.sh buildroot
+$ ./build.sh rootfs
 ```
 
 > 镜像生成目录：output/image/rootfs.img
