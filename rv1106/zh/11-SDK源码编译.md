@@ -93,8 +93,6 @@ TODO
 $ git reset --hard
 ```
 
-
-
 ### 获取Rootfs镜像
 
 * 文件系统网盘目录
