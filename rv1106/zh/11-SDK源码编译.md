@@ -219,24 +219,6 @@ $ ./build.sh media
 > ⽣成⽂件的存放⽬录：output/out/sysdrv_out/kernel_drv_ko/
 
 
-### 其他常用命令
-
-**内核配置**
-
-```
-$ ./build.sh kernel-config
-```
-
-
-
-**buildroot配置**
-
-```
-$ ./build.sh menuconfig
-```
-
-
-
 ### SDK新增编译项
 
 **示例：新增RK3568 K1 Buildroot编译选项**
