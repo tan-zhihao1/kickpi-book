@@ -198,6 +198,12 @@ $ ./build.sh media
 ```
 ⽣成⽂件的存放⽬录：output/out/media_out
 
+**编译参考应用**
+
+```
+./build.sh app
+```
+> ⽣成⽂件的存放⽬录：output/out/app_out
 
 
 ### 其他常用命令
