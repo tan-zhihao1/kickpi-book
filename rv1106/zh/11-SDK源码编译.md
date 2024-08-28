@@ -131,25 +131,128 @@ TODO
 ```
 $ ./build.sh lunch
 	
-    You're building on Linux
-    Lunch menu...pick a combo:
-    1. rk356x
-    2. rk3588
-    Which would you like? [0]:	# 选择CPU型号
 
-    You're building on Linux
-    Lunch menu...pick a combo:
-	1. BoardConfig-rk3566-kickpi-tx66.mk
-	2. BoardConfig-rk3568-kickpi-tx68.mk
-    Which would you like? [0]:	# 选择板卡型号
+3. BoardConfig_IPC/BoardConfig-EMMC-NONE-RV1106_EVB1_V11_V13-IPC_FASTBOOT.mk
+                             boot medium(启动介质): EMMC
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106_EVB1_V11_V13
+                             application(应用场景): IPC_FASTBOOT
+----------------------------------------------------------------
 
-    You're building on Linux
-    Lunch menu...pick a combo:
-    0. default RootfsConfig.mk
-    1. RootfsConfig-buildroot.mk
-    2. RootfsConfig-debian.mk
-    3. RootfsConfig-ubuntu.mk
-    Which would you like? [0]:	# 选择文件系统型号
+----------------------------------------------------------------
+4. BoardConfig_IPC/BoardConfig-EMMC-NONE-RV1106_KICKPI_K6B-IPC.mk
+                             boot medium(启动介质): EMMC
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106_KICKPI_K6B
+                             application(应用场景): IPC
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+5. BoardConfig_IPC/BoardConfig-SPI_NAND-NONE-RV1106G3_EVB1_V11_V13-IPC_4K.mk
+                             boot medium(启动介质): SPI_NAND
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106G3_EVB1_V11_V13
+                             application(应用场景): IPC_4K
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+6. BoardConfig_IPC/BoardConfig-SPI_NAND-NONE-RV1106_EVB1_V11_V13-DUAL_CAMERA.mk
+                             boot medium(启动介质): SPI_NAND
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106_EVB1_V11_V13
+                             application(应用场景): DUAL_CAMERA
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+7. BoardConfig_IPC/BoardConfig-SPI_NAND-NONE-RV1106_EVB1_V11_V13-IPC.mk
+                             boot medium(启动介质): SPI_NAND
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106_EVB1_V11_V13
+                             application(应用场景): IPC
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+8. BoardConfig_IPC/BoardConfig-SPI_NAND-NONE-RV1106_EVB1_V11_V13-IPC_AIISP.mk
+                             boot medium(启动介质): SPI_NAND
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106_EVB1_V11_V13
+                             application(应用场景): IPC_AIISP
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+9. BoardConfig_IPC/BoardConfig-SPI_NAND-NONE-RV1106_EVB1_V11_V13-IPC_FASTBOOT.mk
+                             boot medium(启动介质): SPI_NAND
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106_EVB1_V11_V13
+                             application(应用场景): IPC_FASTBOOT
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+10. BoardConfig_IPC/BoardConfig-SPI_NAND-NONE-RV1106_IPC38_DEMO_V10-IPC.mk
+                             boot medium(启动介质): SPI_NAND
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106_IPC38_DEMO_V10
+                             application(应用场景): IPC
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+11. BoardConfig_IPC/BoardConfig-SPI_NOR-NONE-RV1103_EVB1_V10-IPC.mk
+                             boot medium(启动介质): SPI_NOR
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1103_EVB1_V10
+                             application(应用场景): IPC
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+12. BoardConfig_IPC/BoardConfig-SPI_NOR-NONE-RV1103_EVB1_V11-IPC.mk
+                             boot medium(启动介质): SPI_NOR
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1103_EVB1_V11
+                             application(应用场景): IPC
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+13. BoardConfig_IPC/BoardConfig-SPI_NOR-NONE-RV1103_IPC38_DEMO_V10-IPC.mk
+                             boot medium(启动介质): SPI_NOR
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1103_IPC38_DEMO_V10
+                             application(应用场景): IPC
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+14. BoardConfig_IPC/BoardConfig-SPI_NOR-NONE-RV1106_EVB1_V11_V13-IPC_FASTBOOT.mk
+                             boot medium(启动介质): SPI_NOR
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106_EVB1_V11_V13
+                             application(应用场景): IPC_FASTBOOT
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+15. BoardConfig_IPC/BoardConfig-SPI_NOR-NONE-RV1106_EVB2_V12-IPC.mk
+                             boot medium(启动介质): SPI_NOR
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106_EVB2_V12
+                             application(应用场景): IPC
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+16. BoardConfig_IPC/BoardConfig-SPI_NOR-NONE-RV1106_EVB2_V14-IPC.mk
+                             boot medium(启动介质): SPI_NOR
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106_EVB2_V14
+                             application(应用场景): IPC
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+17. BoardConfig_IPC/BoardConfig-SPI_NOR-NONE-RV1106_IPC38_DEMO_V10-IPC.mk
+                             boot medium(启动介质): SPI_NOR
+                          power solution(电源方案): NONE
+                        hardware version(硬件版本): RV1106_IPC38_DEMO_V10
+                             application(应用场景): IPC
+----------------------------------------------------------------
+
+Which would you like? [0]: 4
+
 ```
 
 > 配置命令首次编译执行一次即可
