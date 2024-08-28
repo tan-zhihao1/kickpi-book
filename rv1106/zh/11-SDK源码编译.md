@@ -154,10 +154,9 @@ Which would you like? [0]: 4  #选择对应板级配置的序号
 $ ./build.sh
 ```
 
-> 镜像生成目录：rockdev/update-\*.img
+> 镜像生成目录：output/image/
 >
 > 若编译失败，可尝试自行解决，亦可联系技术支持客服解决
-
 
 
 ### 单独编译分区镜像
