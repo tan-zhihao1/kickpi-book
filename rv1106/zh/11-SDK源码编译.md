@@ -213,6 +213,7 @@ $ ./build.sh media
 ```
 > ⽣成⽂件的存放⽬录：output/out/sysdrv_out/kernel_drv_ko/
 
+
 ### 其他常用命令
 
 **内核配置**
