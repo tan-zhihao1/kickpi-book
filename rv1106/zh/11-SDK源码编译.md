@@ -207,8 +207,11 @@ $ ./build.sh media
 > ⽣成⽂件的存放⽬录：output/out/app_out
 > 注：app依赖media
 
-
-
+**编译内核驱动**
+```
+./build.sh driver
+```
+> ⽣成⽂件的存放⽬录：output/out/sysdrv_out/kernel_drv_ko/
 
 ### 其他常用命令
 
