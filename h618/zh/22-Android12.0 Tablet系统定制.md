@@ -8,6 +8,8 @@
 
 
 
+
+
 ## 开机自启动APP
 
 要让 APP 作为 Launcher 开机自启动，需要在 AndroidManifest.xml 中添加两个 category
