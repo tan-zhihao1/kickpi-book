@@ -36,7 +36,7 @@
 
 支持 bootanimation.mp4 以及 bootanimation.zip 两种方式的开机动画
 
-> device/softwinner/apollo/common/media/config.mk
+device/softwinner/apollo/common/media/config.mk
 
 bootanimation.zip 方式
 
