@@ -134,3 +134,18 @@ PRODUCT_PACKAGES += \
 </activity>
 ```
 
+
+
+## HDMI TX
+
+hdmi tx 属性结点
+
+```
+# ls /sys/class/hdmi/hdmi/attr
+avmute          dvi_mode   hdcp_enable  hpd_mask   phy_write  scdc_write
+cec_dump        edid       hdcp_status  hpi_read   read       set_ddc
+cec_enable      edid_test  hdcp_type    hpi_write  reg_dump   write
+cec_simulation  esm_dump   hdmi_sink    phy_power  rxsense
+debug           hdcp_dump  hdmi_source  phy_read   scdc_read
+```
+
