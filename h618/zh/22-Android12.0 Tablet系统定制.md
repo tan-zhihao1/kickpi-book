@@ -28,7 +28,12 @@
 
 ## 开机LOGO
 
+替换路径
 
+```
+longan/device/config/chips/h618/boot-resource/boot-resource/
+	bootlogo.bmp
+```
 
 
 
