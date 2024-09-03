@@ -38,7 +38,11 @@
 
 两种文件同时存在播放优先级比 zip 高 ，优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
 
+修改路径
+
+```
 device/softwinner/apollo/common/media/config.mk
+```
 
 bootanimation.zip 方式
 
