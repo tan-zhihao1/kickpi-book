@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
      $(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
 ```
 
-bootanimation.mp4 方式，两种文件同时存在播放优先级比 zip 高
+bootanimation.mp4 方式，两种文件同时存在播放优先级比 zip 高 ，优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
 
 ```makefile
 PRODUCT_COPY_FILES += \
