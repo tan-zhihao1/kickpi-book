@@ -71,13 +71,13 @@ android_app_import {
     name: "test",
     apk: "test.apk",
 
-    presigned: true,
-    //certificate: "platform",
+    //presigned: true,
+    certificate: "platform",
     dex_preopt: {
         enabled: true,
     },
 
-    //privileged: true,
+    privileged: true,
     //product_specific: true,
     //proprietary: true,
     enforce_uses_libs: false,
