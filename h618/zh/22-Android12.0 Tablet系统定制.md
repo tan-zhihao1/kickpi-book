@@ -56,7 +56,36 @@ PRODUCT_COPY_FILES += \
 
 ## 内置第三方 APP
 
+比如新增 test.apk
 
+
+
+Android.bp
+
+```makefile
+android_app_import {
+    name: "test",
+    apk: "test.apk",
+
+    presigned: true,
+    //certificate: "platform",
+    dex_preopt: {
+        enabled: true,
+    },
+
+    //privileged: true,
+    //product_specific: true,
+    //proprietary: true,
+    enforce_uses_libs: false,
+}
+```
+
+加入编译
+
+```makefile
+PRODUCT_PACKAGES += \
+       test
+```
 
 
 
