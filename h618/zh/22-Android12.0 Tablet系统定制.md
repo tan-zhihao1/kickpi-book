@@ -36,6 +36,8 @@
 
 支持 bootanimation.mp4 以及 bootanimation.zip 两种方式的开机动画
 
+两种文件同时存在播放优先级比 zip 高 ，优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
+
 device/softwinner/apollo/common/media/config.mk
 
 bootanimation.zip 方式
@@ -45,7 +47,7 @@ PRODUCT_COPY_FILES += \
      $(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
 ```
 
-bootanimation.mp4 方式，两种文件同时存在播放优先级比 zip 高 ，优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
+bootanimation.mp4 方式
 
 ```makefile
 PRODUCT_COPY_FILES += \
