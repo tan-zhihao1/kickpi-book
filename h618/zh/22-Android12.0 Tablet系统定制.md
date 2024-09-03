@@ -58,8 +58,6 @@ PRODUCT_COPY_FILES += \
 
 比如新增 test.apk
 
-
-
 Android.bp
 
 ```makefile
