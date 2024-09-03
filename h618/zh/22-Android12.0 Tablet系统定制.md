@@ -36,7 +36,7 @@
 
 支持 bootanimation.mp4 以及 bootanimation.zip 两种方式的开机动画
 
-两种文件同时存在播放优先级比 zip 高 ，优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
+两种文件同时存在播放优先级比 zip 高 ，具体优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
 
 修改路径
 
