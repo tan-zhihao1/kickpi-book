@@ -86,6 +86,8 @@ PRODUCT_COPY_FILES += \
     $(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
 ```
 
+* 烧录镜像后第一次启动的开机动画是原生Android，需要重启显示替换的开机动画
+
 
 
 ## 内置第三方 APP
