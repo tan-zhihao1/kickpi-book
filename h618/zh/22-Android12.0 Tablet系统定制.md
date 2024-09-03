@@ -34,6 +34,24 @@
 
 ## 开机动画
 
+支持 bootanimation.mp4 以及 bootanimation.zip 两种方式的开机动画
+
+> device/softwinner/apollo/common/media/config.mk
+
+bootanimation.zip 方式
+
+```makefile
+PRODUCT_COPY_FILES += \
+     $(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
+```
+
+bootanimation.mp4 方式，同时存在优先级比较高
+
+```makefile
+PRODUCT_COPY_FILES += \
+    $(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
+```
+
 
 
 ## 内置第三方 APP
