@@ -71,13 +71,13 @@ android_app_import {
     name: "test",
     apk: "test.apk",
 
-    //presigned: true,
-    certificate: "platform",
+    //presigned: true,	// 使用原来的签名
+    certificate: "platform",	// 系统签名
     dex_preopt: {
         enabled: true,
     },
 
-    privileged: true,
+    privileged: true,	// 特权应用
     //product_specific: true,
     //proprietary: true,
     enforce_uses_libs: false,
