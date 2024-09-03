@@ -2,6 +2,30 @@
 
 ## Tablet 桌面
 
+vendor/aw/homlet/homlet.mk
+
+```diff
+--- a/vendor/aw/homlet/homlet.mk
++++ b/vendor/aw/homlet/homlet.mk
+@@ -16,12 +16,12 @@ PRODUCT_PACKAGES += \
+     DragonSN  \
+     GalleryTV
+
+-PRODUCT_PACKAGES += \
++#PRODUCT_PACKAGES += \
+     TvLauncher \
+     TvSettings
+
+-#PRODUCT_PACKAGES += \
+-       Launcher3 \
++PRODUCT_PACKAGES += \
++       Launcher3 \
+        Settings \
+        SystemUI
+```
+
+
+
 
 
 ## 开机动画、LOGO、音频
