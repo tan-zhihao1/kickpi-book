@@ -9,3 +9,15 @@
 
 
 ## 开机自启动APP
+
+要让APP作为Launcher开机自启动，需要在Manifest中添加两个category：
+
+```xml
+<activity android:name=".MainActivity">
+    <intent-filter>
+		<category android:name="android.intent.category.HOME"/>
+		<category android:name="android.intent.category.DEFAULT"/>
+	</intent-filter>
+</activity>
+```
+
