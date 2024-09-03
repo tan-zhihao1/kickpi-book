@@ -2,7 +2,7 @@
 
 ## Tablet 桌面
 
-vendor/aw/homlet/homlet.mk
+开启Tablet对应的PRODUCT_PACKAGES
 
 ```diff
 --- a/vendor/aw/homlet/homlet.mk
@@ -23,8 +23,6 @@ vendor/aw/homlet/homlet.mk
         Settings \
         SystemUI
 ```
-
-
 
 
 
