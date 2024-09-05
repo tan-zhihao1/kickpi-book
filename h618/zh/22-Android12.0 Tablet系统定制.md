@@ -90,11 +90,36 @@ PRODUCT_COPY_FILES += \
 
 ## 默认语言
 
-
-
-
+persist.sys.locale 属性
 
 ```
+device/softwinner/apollo/apollo_p2.mk
+	PRODUCT_PROPERTY_OVERRIDES += \
+		persist.sys.locale=zh-CN
+```
+
+
+
+persist.sys.country 以及 persist.sys.language 属性
+
+```diff
+--- a/device/softwinner/apollo/apollo_p2.mk
++++ b/device/softwinner/apollo/apollo_p2.mk
+@@ -32,8 +32,8 @@ PRODUCT_PACKAGES += FT618
+
+ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+     persist.sys.timezone=Asia/Shanghai \
+-    persist.sys.country=US \
+-    persist.sys.language=en
++    persist.sys.country=CN \
++    persist.sys.language=zh
+```
+
+
+
+PRODUCT_LOCALES 配置
+
+```makefile
 $ vim build/target/product/full_base.mk
 	PRODUCT_LOCALES := en_US
 ```
@@ -108,7 +133,7 @@ $ vim build/target/product/full_base.mk
 
 
 
-语言属性获取优先级 frameworks/base/core/jni/AndroidRuntime.cpp
+locale 获取优先级 frameworks/base/core/jni/AndroidRuntime.cpp
 
 ```java
 /*
@@ -162,8 +187,6 @@ const std::string readLocale()
     return productLanguage + "-" + productRegion;
 }
 ```
-
-
 
 
 
