@@ -108,8 +108,6 @@ $ vim build/target/product/full_base.mk
 
 新增 test.apk 
 
-
-
 Android.mk
 
 ```
@@ -126,8 +124,6 @@ LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
 
 include $(BUILD_PREBUILT)
 ```
-
-
 
 Android.bp
 
