@@ -90,6 +90,10 @@ PRODUCT_COPY_FILES += \
 
 ## 默认语言
 
+
+
+
+
 ```
 $ vim build/target/product/full_base.mk
 	PRODUCT_LOCALES := en_US
@@ -104,9 +108,68 @@ $ vim build/target/product/full_base.mk
 
 
 
+语言属性获取优先级 frameworks/base/core/jni/AndroidRuntime.cpp
+
+```java
+/*
+ * Read the persistent locale. Inspects the following system properties
+ * (in order) and returns the first non-empty property in the list :
+ *
+ * (1) persist.sys.locale
+ * (2) persist.sys.language/country/localevar (country and localevar are
+ * inspected iff. language is non-empty.
+ * (3) ro.product.locale
+ * (4) ro.product.locale.language/region
+ *
+ * Note that we need to inspect persist.sys.language/country/localevar to
+ * preserve language settings for devices that are upgrading from Lollipop
+ * to M. The same goes for ro.product.locale.language/region as well.
+ */
+const std::string readLocale()
+{
+    const std::string locale = GetProperty("persist.sys.locale", "");
+    if (!locale.empty()) {
+        return locale;
+    }
+
+    const std::string language = GetProperty("persist.sys.language", "");
+    if (!language.empty()) {
+        const std::string country = GetProperty("persist.sys.country", "");
+        const std::string variant = GetProperty("persist.sys.localevar", "");
+
+        std::string out = language;
+        if (!country.empty()) {
+            out = out + "-" + country;
+        }
+
+        if (!variant.empty()) {
+            out = out + "-" + variant;
+        }
+
+        return out;
+    }
+
+    const std::string productLocale = GetProperty("ro.product.locale", "");
+    if (!productLocale.empty()) {
+        return productLocale;
+    }
+
+    // If persist.sys.locale and ro.product.locale are missing,
+    // construct a locale value from the individual locale components.
+    const std::string productLanguage = GetProperty("ro.product.locale.language", "en");
+    const std::string productRegion = GetProperty("ro.product.locale.region", "US");
+
+    return productLanguage + "-" + productRegion;
+}
+```
+
+
+
+
+
 ## 内置第三方 APP
 
-新增 test.apk 
+比如新增 test.apk 
 
 Android.mk
 
@@ -117,6 +180,9 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := PRESIGNED
+
+LOCAL_ENFORCE_USES_LIBRARIES := false
+LOCAL_DEX_PREOPT := false
 
 LOCAL_MODULE := test
 
@@ -132,13 +198,13 @@ android_app_import {
     name: "test",
     apk: "test.apk",
 
-    //presigned: true,	// 使用原来的签名
-    certificate: "platform",	// 系统签名
+    //presigned: true,
+    certificate: "platform",
     dex_preopt: {
         enabled: true,
     },
 
-    privileged: true,	// 特权应用
+    privileged: true,
     //product_specific: true,
     //proprietary: true,
     enforce_uses_libs: false,
