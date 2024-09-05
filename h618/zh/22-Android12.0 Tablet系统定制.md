@@ -110,6 +110,27 @@ $ vim build/target/product/full_base.mk
 
 新增 test.apk 
 
+
+
+Android.mk
+
+```
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := PRESIGNED
+
+LOCAL_MODULE := test
+
+LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
+
+include $(BUILD_PREBUILT)
+```
+
+
+
 Android.bp
 
 ```makefile
