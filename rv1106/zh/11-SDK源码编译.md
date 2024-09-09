@@ -33,8 +33,6 @@ $ sudo pip install pyelftools
 
 
 
-
-
 ## Linux SDK编译
 
 ### SDK介绍
@@ -49,7 +47,7 @@ Rockchip Linux SDK由SDK源码包、文件系统镜像组成
 网盘SDK目录如下
 
 ```
-TODO
+
 ```
 
 
