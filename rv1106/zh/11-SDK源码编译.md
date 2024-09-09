@@ -162,12 +162,14 @@ $ ./build.sh rootfs
 > 镜像生成目录：output/image/rootfs.img
 
 
+
 **单独编译media**
 
 ```
 $ ./build.sh media
 ```
 > ⽣成⽂件的存放⽬录：output/out/media_out
+
 
 
 **编译参考应用**
@@ -180,11 +182,14 @@ $ ./build.sh media
 > 注：app依赖media
 
 
+
 **编译内核驱动**
+
 ```
 ./build.sh driver
 ```
 > ⽣成⽂件的存放⽬录：output/out/sysdrv_out/kernel_drv_ko/
+
 
 
 ### SDK新增编译项
