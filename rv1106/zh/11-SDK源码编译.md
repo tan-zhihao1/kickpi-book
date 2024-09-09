@@ -179,6 +179,7 @@ $ ./build.sh media
 >
 > 注：app依赖media
 
+
 **编译内核驱动**
 ```
 ./build.sh driver
