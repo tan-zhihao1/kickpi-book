@@ -1,5 +1,7 @@
 # 30-Kernel defconfig配置
 
+
+
 ## 配置defconfig
 
 内核路径
