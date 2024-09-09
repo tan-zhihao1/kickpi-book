@@ -196,4 +196,7 @@ $ ./build.sh media
 
 **示例：新增编译选项**
 
-TODO
+```
++ project/cfg/BoardConfig_IPC/BoardConfig-EMMC-NONE-RV1106_KICKPI_K6B-IPC.mk
+```
+
