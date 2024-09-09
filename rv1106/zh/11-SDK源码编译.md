@@ -71,7 +71,7 @@ $ md5sum -c *.md5
 **解压源码压缩包**
 
 ```
-TODO
+
 ```
 
 > SDK源码压缩包仅包含Git仓库，可用ls -al命令查看到.git文件夹
@@ -83,6 +83,8 @@ TODO
 ```
 $ git reset --hard
 ```
+
+
 
 ### 获取Rootfs镜像
 
