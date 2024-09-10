@@ -110,7 +110,51 @@ $ git reset --hard
 
 
 
-## 首次编译
+## 首次编译环境配置
+
+首次配置一下环境
+
+```
+cd longan
+./build.sh config
+```
+
+
+
+编译选项
+
+```
+Welcome to mkscript setup progress
+All available platform:
+   0. android
+   1. linux
+Choice [android]: 0
+All available ic:
+   0. h618
+Choice [h618]: 0
+All available board:
+   0. ft
+   1. p1
+   2. p2
+   3. p7
+   4. p7l
+   5. perf1
+   6. perf2
+   7. perf3
+   8. qa
+Choice [p2]: 2
+All available flash:
+   0. default
+   1. nor
+Choice [default]: 0
+All available kern_ver:
+   0. linux-5.4
+Choice [linux-5.4]: 0
+All available arch:
+   0. arm
+   1. arm64
+Choice [arm64]: 1
+```
 
 
 
