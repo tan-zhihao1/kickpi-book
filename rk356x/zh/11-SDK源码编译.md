@@ -85,9 +85,12 @@ $ md5sum -c *.md5
 
 ```
 $ tar -zxvf rk356x-linux-*.tar.gz
+
+$ ls -al
+	.git
 ```
 
-> SDK源码压缩包仅包含Git仓库，可用ls -al命令查看到.git文件夹
+> SDK源码压缩包通过Git仓库分享，可用ls -al命令查看到.git文件夹
 
 
 
@@ -99,9 +102,15 @@ $ git reset --hard
 
 
 
-### 获取Rootfs镜像
+### 获取文件系统镜像
 
-* 文件系统网盘目录
+SDK源码包不包含文件系统镜像，需要参考下面步骤，单独解压拷贝文件系统到SDK源码
+
+网盘提供debian、ubuntu文件系统镜像，可根据需求自行下载
+
+
+
+**文件系统网盘目录**
 
 ```
 1-SDK源码\rk356x-linux\
@@ -111,7 +120,7 @@ $ git reset --hard
 
 
 
-* MD5校验文件完整性
+**MD5校验文件完整性**
 
 ```
 $ md5sum -c *.md5
@@ -119,7 +128,7 @@ $ md5sum -c *.md5
 
 
 
-* 解压debian镜像文件
+**解压debian镜像文件**
 
 ```
 $ tar -zxvf linaro-rootfs-*.tar.gz
@@ -134,7 +143,7 @@ $ ls debian/linaro-rootfs.img
 
 
 
-* 解压ubuntu镜像文件
+**解压ubuntu镜像文件**
 
 ```
 $ tar -zxvf ubuntu-rootfs-*.tar.gz
@@ -157,7 +166,7 @@ $ ls ubuntu/ubuntu-rootfs.img
 
 
 
-* SDK编译配置
+**SDK编译配置**
 
 ```
 $ ./build.sh lunch
@@ -187,7 +196,7 @@ $ ./build.sh lunch
 
 
 
-* 编译镜像
+**编译镜像**
 
 ```
 $ ./build.sh
@@ -209,8 +218,6 @@ $ ./build.sh uboot
 
 > 镜像生成目录：rockdev/uboot.img
 
-
-
 **单独编译Kernel**
 
 ```
@@ -218,8 +225,6 @@ $ ./build.sh kernel
 ```
 
 > 镜像生成目录：rockdev/boot.img
-
-
 
 **单独编译Buildroot**
 
@@ -238,8 +243,6 @@ $ ./build.sh buildroot
 ```
 $ ./build.sh kernel-config
 ```
-
-
 
 **buildroot配置**
 
@@ -396,3 +399,10 @@ $ ./build.sh -A
 $ ./build.sh -CKM
 ```
 
+**编译多屏自适应镜像**
+
+```
+$ ./build.sh -AUCKum
+```
+
+> 出厂Android/Linux镜像默认为多屏自适应镜像，兼容官方7寸/10寸/15寸显示屏，连接任一显示屏可直接点亮
