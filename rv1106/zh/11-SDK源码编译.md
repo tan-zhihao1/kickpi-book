@@ -202,3 +202,16 @@ $ ./build.sh media
 
 
 
+## buildroot配置
+
+```
+cd sysdrv/source/buildroot/buildroot-2024.02.6/
+make kickpi_k6b_defconfig
+make menuconfig
+make savedefconfig
+diff configs/kickpi_k6b_defconfig ../../../tools/board/buildroot/kickpi_k6b_defconfig
+cp configs/kickpi_k6b_defconfig ../../../tools/board/buildroot/kickpi_k6b_defconfig
+```
+
+
+

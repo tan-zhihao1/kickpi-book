@@ -10,12 +10,19 @@
 longan/kernel/linux-5.4/
 ```
 
-配置相关命令
+
+
+kernel config 配置相关命令
 
 ```
-make ARCH=arm64 sun50iw9p1smp_h618_android_defconfig
-make ARCH=arm64 menuconfig
-make ARCH=arm64 savedefconfig
+cd longan
+
+# loadconfig|menuconfig|saveconfig|mergeconfig
+
+./build.sh loadconfig
+./build.sh menuconfig
+./build.sh saveconfig
+./build.sh mergeconfig
 ```
 
 
