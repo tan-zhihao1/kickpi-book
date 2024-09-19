@@ -132,3 +132,15 @@ network:
 
 ## 6. NFS配置
 
+**环境配置**
+
+```
+sudo apt install nfs-kernel-server
+sudo apt install rpcbind
+sudo apt install nfs-common
+```
+
+
+
+
+
