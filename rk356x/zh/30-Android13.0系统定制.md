@@ -114,3 +114,48 @@ $ vim device/rockchip/rk356x/overlay/frameworks/base/packages/SettingsProvider/r
 $ vim frameworks/base/packages/SettingsProvider/res/values/defaults.xml
 	<bool name="def_lockscreen_disabled">true</bool>
 ```
+
+
+
+## 12. 签名APK
+
+
+
+**SDK源码中进行重签**
+
+```
+$ cd rk-android13.0/
+$ java -Xmx2048m -Djava.library.path="out/host/linux-x86/lib64" \
+-jar out/host/linux-x86/framework/signapk.jar  --disable-v2 \
+-w build/target/product/security/platform.x509.pem \
+build/target/product/security/platform.pk8 \
+old.apk new.apk
+```
+
+
+
+**使用签名相关文件重签**
+
+SDK中需要的签名相关文件
+
+```
+out/host/linux-x86/lib64	// 避免Java库问题
+out/host/linux-x86/framework/signapk.jar
+build/target/product/security/platform.x509.pem
+build/target/product/security/platform.pk8
+```
+
+
+
+根据提供文件进行重签，具体路径自行调整
+
+```
+签名包 rk-android13.0-key.tar.gz
+$ tar -xvf rk-android13.0-key-20240919.tar.gz
+$ ls rk-android13.0-key
+$ java -Xmx2048m -Djava.library.path="rk-android13.0-key/lib64" \
+-jar rk-android13.0-key/signapk.jar  --disable-v2 \
+-w rk-android13.0-key/platform.x509.pem \
+rk-android13.0-key/platform.pk8 \
+old.apk new.apk
+```
