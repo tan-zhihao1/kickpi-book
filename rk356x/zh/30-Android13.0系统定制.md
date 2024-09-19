@@ -123,7 +123,7 @@ $ vim frameworks/base/packages/SettingsProvider/res/values/defaults.xml
 
 **SDK源码中进行重签**
 
-```
+```shell
 $ cd rk-android13.0/
 $ java -Xmx2048m -Djava.library.path="out/host/linux-x86/lib64" \
 -jar out/host/linux-x86/framework/signapk.jar  --disable-v2 \
@@ -149,7 +149,7 @@ build/target/product/security/platform.pk8
 
 根据提供文件进行重签，具体路径自行调整
 
-```
+```shell
 签名包 rk-android13.0-key.tar.gz
 $ tar -xvf rk-android13.0-key-20240919.tar.gz
 $ ls rk-android13.0-key
