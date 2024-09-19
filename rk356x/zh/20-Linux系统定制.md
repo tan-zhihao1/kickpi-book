@@ -218,7 +218,7 @@ $ ls nfs_tmp/
 查看软件版本，根据版本查找镜像源替换
 
 ```
-lsb_release -a
+$ lsb_release -a
 No LSB modules are available.
 Distributor ID: Ubuntu
 Description:    Ubuntu 20.04.6 LTS
