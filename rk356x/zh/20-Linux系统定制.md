@@ -212,3 +212,26 @@ $ ls nfs_tmp/
 ```
 
    
+
+## 7. 镜像源设置
+
+查看软件版本，根据版本查找镜像源替换
+
+```
+lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 20.04.6 LTS
+Release:        20.04
+Codename:       focal
+```
+
+
+
+注意：使用arm的镜像源
+
+```
+$ sudo vi /etc/apt/sources.list
+$ sudo apt update
+```
+
