@@ -3,6 +3,8 @@
 
 
 
+
+
 ## 1. 编译环境搭建
 
 此编译环境配置 适用 Android/Linux SDK
@@ -156,13 +158,15 @@ Choice [arm64]: 1
 
 
 
+
+
 ### 编译完整镜像
 
 ```
 $ ./build.sh
 ```
 
-> 镜像生成目录：
+> 镜像生成目录：longan/out/h618_android12_p2_uart0.img
 
 
 
@@ -174,7 +178,7 @@ $ ./build.sh
 $ ./build.sh uboot
 ```
 
-> 镜像生成目录：
+> 镜像生成目录：longan/out/h618_android12_p2_uart0.img
 
 
 
@@ -194,6 +198,10 @@ $ ./build.sh kernel
 $ ./build.sh android
 ```
 
-> 镜像生成目录：
+> 镜像生成目录：longan/out/h618_android12_p2_uart0.img
 
 
+
+## 3. ARMBIAN SDK
+
+建议参考ARMBIAN官方文档
