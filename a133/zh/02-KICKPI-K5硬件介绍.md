@@ -6,7 +6,7 @@
 
 ## 1. 主控信息
 
-![image-20240920093618967](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20240920093618967.png)
+![image-20240920093743886](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20240920093743886.png)
 
 A133, DDR容量最大支持4GB，包括1GB/1.5GB/2GB/3GB/4GB。
 
@@ -29,31 +29,6 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 * 网盘目录说明
 
 ```
-├── 1-SDK软件源码
-│   └── android10
-├── 2-Image镜像
-│   └── K5
-│       └── Android10.0
-│           ├── lcd-lvds-21-1920-1080
-│           │   └── a133_android10_c3_uart0.img
-│           └── lcd-lvds-7-1024-600
-│               └── a133_android10_c3_uart0.img
-├── 3-SoftwareData软件资料
-│   └── Android
-├── 4-HardwareData硬件资料
-│   └── K5
-├── 5-DevelopmentTool开发工具
-│   ├── ADB Tool
-│   ├── ADB投屏
-│   ├── FactoryTool 工厂镜像烧录工具
-│   ├── HDTunePro_6.00_trial.exe
-│   ├── SD Card Formatter 5.0.2 Setup EN.exe
-│   ├── SDCardFormatterv5_WinEN
-│   ├── SD卡烧录工具
-│   ├── SD启动卡工具
-│   ├── UART DebugTool 串口调试工具
-│   └── USB ImageBurnTool 镜像烧录工具
-└── 6-Document文档
-
+TODO
 ```
 
