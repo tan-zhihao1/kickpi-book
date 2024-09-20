@@ -105,6 +105,39 @@ $ git reset --hard
 
 
 
+### 首次编译配置
+
+```
+$ cd longan/
+$ ./build.sh config
+
+Welcome to mkscript setup progress
+All available platform:
+   0. android
+   1. linux
+Choice [android]: 0
+All available ic:
+   0. a133
+   1. t509
+Choice [a133]: 0
+All available board:
+   0. b1
+   1. b3
+   2. b4
+   3. c3
+   4. c4
+   5. dpf
+   6. fpga
+   7. perf1
+   8. perf2
+   9. perf3
+  10. qa
+  11. ver
+Choice [c3]: 3
+```
+
+
+
 ### 编译完整镜像
 
 ```
