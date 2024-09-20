@@ -115,8 +115,8 @@ $ git reset --hard
 首次配置一下环境
 
 ```
-cd longan
-./build.sh config
+$ cd longan
+$ ./build.sh config
 ```
 
 
