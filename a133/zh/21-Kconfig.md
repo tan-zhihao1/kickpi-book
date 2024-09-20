@@ -1,14 +1,33 @@
 # 21-Kconfig
 
-内核路径 `longan/kernel/linux-4.9`
-
-编译config配置
+内核路径
 
 ```
-cd longan/kernel/linux-4.9
-make ARCH=arm64 menuconfig
-make ARCH=arm64 savedefconfig
-diff defconfig arch/arm64/configs/sun50iw10p1smp_a133_android_defconfig
-cp defconfig arch/arm64/configs/sun50iw10p1smp_a133_android_defconfig
+longan/kernel/linux-4.9
+```
+
+
+
+kernel config 配置相关命令
+
+```
+cd longan
+
+# loadconfig|menuconfig|saveconfig|mergeconfig
+
+./build.sh loadconfig
+./build.sh menuconfig
+./build.sh saveconfig
+./build.sh mergeconfig
+```
+
+
+
+## 开启 DEBUG_FS
+
+```
+Kernel hacking > 
+	Compile-time checks and compiler options >
+		 [*] Debug Filesystem
 ```
 
