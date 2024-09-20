@@ -3,8 +3,6 @@
 
 
 
-
-
 ## 1. 编译环境搭建
 
 此编译环境配置 适用 Android/Linux SDK
@@ -149,5 +147,4 @@ $ ./build.sh android
 ```
 
 > 镜像生成目录：longan/out/a133_android10_c3_uart0.img
-
 
