@@ -1,4 +1,4 @@
-# 21-Kconfig
+# 21-Kernel defconfig配置
 
 内核路径
 
