@@ -202,7 +202,7 @@ $ ./build.sh media
 
 
 
-## buildroot配置
+## buildroot
 
 ```
 cd sysdrv/source/buildroot/buildroot-2024.02.6/
@@ -217,5 +217,15 @@ cp configs/kickpi_k6b_defconfig ../../../tools/board/buildroot/kickpi_k6b_defcon
 
 ## dts
 
+```
+sysdrv/source/kernel/arch/arm/boot/dts/rv1106g-kickpi-k6b.dts
+```
 
+
+
+## defconfig
+
+```
+sysdrv/source/kernel/arch/arm/configs/rv1106_defconfig
+```
 
