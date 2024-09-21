@@ -215,3 +215,7 @@ cp configs/kickpi_k6b_defconfig ../../../tools/board/buildroot/kickpi_k6b_defcon
 
 
 
+## dts
+
+
+
