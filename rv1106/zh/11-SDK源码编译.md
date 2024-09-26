@@ -204,13 +204,23 @@ $ ./build.sh media
 
 ## buildroot
 
+代码路径：
+
 ```
-cd sysdrv/source/buildroot/buildroot-2024.02.6/
-make kickpi_k6b_defconfig
-make menuconfig
-make savedefconfig
-diff configs/kickpi_k6b_defconfig ../../../tools/board/buildroot/kickpi_k6b_defconfig
-cp configs/kickpi_k6b_defconfig ../../../tools/board/buildroot/kickpi_k6b_defconfig
+源码：
+sysdrv/tools/board/buildroot/buildroot-2024.02.6.tar.gz
+生成路径：
+sysdrv/source/buildroot/buildroot-2024.02.6/
+```
+
+配置：
+
+```
+make kickpi_k6b_defconfig -C sysdrv/source/buildroot/buildroot-2024.02.6/
+make menuconfig -C sysdrv/source/buildroot/buildroot-2024.02.6/
+make savedefconfig -C sysdrv/source/buildroot/buildroot-2024.02.6/
+diff sysdrv/source/buildroot/buildroot-2024.02.6/configs/kickpi_k6b_defconfig sysdrv/tools/board/buildroot/kickpi_k6b_defconfig
+cp -v sysdrv/source/buildroot/buildroot-2024.02.6/configs/kickpi_k6b_defconfig sysdrv/tools/board/buildroot/kickpi_k6b_defconfig
 ```
 
 
@@ -227,5 +237,15 @@ sysdrv/source/kernel/arch/arm/boot/dts/rv1106g-kickpi-k6b.dts
 
 ```
 sysdrv/source/kernel/arch/arm/configs/rv1106_defconfig
+```
+
+
+
+```
+cd sysdrv/source/objs_kernel
+make ARCH=arm rv1106_defconfig
+make ARCH=arm menuconfig
+make ARCH=arm savedefconfig
+diff defconfig ../kernel/arch/arm/configs/rv1106_defconfig
 ```
 
