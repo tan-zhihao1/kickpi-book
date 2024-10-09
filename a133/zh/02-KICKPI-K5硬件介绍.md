@@ -2,8 +2,6 @@
 
 
 
-
-
 ## 1. 主控信息
 
 ![image-20240920093743886](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20240920093743886.png)

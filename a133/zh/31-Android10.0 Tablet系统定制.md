@@ -1,27 +1,27 @@
-# 22-Android12.0 Tablet系统定制
+# 31-Android10.0 Tablet系统定制
 
-## Tablet 桌面
+[TOC]
 
-开启Tablet对应的PRODUCT_PACKAGES
 
-```diff
---- a/vendor/aw/homlet/homlet.mk
-+++ b/vendor/aw/homlet/homlet.mk
-@@ -16,12 +16,12 @@ PRODUCT_PACKAGES += \
-     DragonSN  \
-     GalleryTV
 
--PRODUCT_PACKAGES += \
-+#PRODUCT_PACKAGES += \
-     TvLauncher \
-     TvSettings
+## Android 环境
 
--#PRODUCT_PACKAGES += \
--       Launcher3 \
-+PRODUCT_PACKAGES += \
-+       Launcher3 \
-        Settings \
-        SystemUI
+```
+cd android
+source build/envsetup.sh
+lunch ceres_c3-userdebug
+```
+
+
+
+## 开发者模式
+
+```
+操作步骤：
+Settings -> About tablet ->  点击 Build number -> 提示已经切换到开发者模式
+
+开发者选项路径：
+Settings -> System -> Developer options
 ```
 
 
@@ -325,21 +325,4 @@ public class MyReceiver extends BroadcastReceiver {
   
 
 
-
-## HDMI 固定输出分辨率
-
-
-
-## HDMI TX
-
-hdmi tx 属性结点
-
-```
-# ls /sys/class/hdmi/hdmi/attr
-avmute          dvi_mode   hdcp_enable  hpd_mask   phy_write  scdc_write
-cec_dump        edid       hdcp_status  hpi_read   read       set_ddc
-cec_enable      edid_test  hdcp_type    hpi_write  reg_dump   write
-cec_simulation  esm_dump   hdmi_sink    phy_power  rxsense
-debug           hdcp_dump  hdmi_source  phy_read   scdc_read
-```
 

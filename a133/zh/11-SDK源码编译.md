@@ -11,12 +11,12 @@
 
 ### 硬件要求
 
-| 系统环境  | 要求        |
-| --------- | ----------- |
-| 系统版本  | Ubuntu18.04 |
-| CPU核心数 | 4核以上     |
-| 内存容量  | 16GB以上    |
-| 硬盘容量  | 200GB以上   |
+| 系统环境  | 要求          |
+| --------- | ------------- |
+| 系统版本  | > Ubuntu18.04 |
+| CPU核心数 | 4核以上       |
+| 内存容量  | 16GB以上      |
+| 硬盘容量  | 200GB以上     |
 
 
 
@@ -107,39 +107,6 @@ $ git reset --hard
 
 
 
-### 首次编译配置
-
-```
-$ cd longan/
-$ ./build.sh config
-
-Welcome to mkscript setup progress
-All available platform:
-   0. android
-   1. linux
-Choice [android]: 0
-All available ic:
-   0. a133
-   1. t509
-Choice [a133]: 0
-All available board:
-   0. b1
-   1. b3
-   2. b4
-   3. c3
-   4. c4
-   5. dpf
-   6. fpga
-   7. perf1
-   8. perf2
-   9. perf3
-  10. qa
-  11. ver
-Choice [c3]: 3
-```
-
-
-
 ### 编译完整镜像
 
 ```
@@ -179,4 +146,83 @@ $ ./build.sh android
 ```
 
 > 镜像生成目录：longan/out/a133_android10_c3_uart0.img
+
+
+
+**内核路径**
+
+```
+longan/kernel/linux-4.9
+```
+
+
+
+**kernel config 配置相关命令**
+
+```
+cd longan
+
+# loadconfig|menuconfig|saveconfig|mergeconfig
+
+./build.sh loadconfig
+./build.sh menuconfig
+./build.sh saveconfig
+./build.sh mergeconfig
+```
+
+
+
+## 编译问题
+
+**工具链路径错误，编译需要配置**
+
+```
+$ cd longan/
+$ ./build.sh config
+
+Welcome to mkscript setup progress
+All available platform:
+   0. android
+   1. linux
+Choice [android]: 0
+All available ic:
+   0. a133
+   1. t509
+Choice [a133]: 0
+All available board:
+   0. b1
+   1. b3
+   2. b4
+   3. c3
+   4. c4
+   5. dpf
+   6. fpga
+   7. perf1
+   8. perf2
+   9. perf3
+  10. qa
+  11. ver
+Choice [c3]: 3
+```
+
+
+
+**由于编译环境 ld 不同，可能会导致 yylloc 报错，需要修改代码中的yylloc**
+
+实际路径根据报错提示修改
+
+```diff
+--- a/longan/kernel/linux-4.9/scripts/dtc/dtc-lexer.lex.c
++++ b/longan/kernel/linux-4.9/scripts/dtc/dtc-lexer.lex.c
+@@ -631,8 +631,8 @@ char *yytext;
+ #include "srcpos.h"
+ #include "dtc-parser.tab.h"
+
+-//YYLTYPE yylloc;
+-extern YYLTYPE yylloc;
++YYLTYPE yylloc;
++//extern YYLTYPE yylloc;
+```
+
+
 
