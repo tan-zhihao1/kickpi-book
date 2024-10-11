@@ -191,8 +191,6 @@ $ ./build.sh
 $ ./build.sh uboot
 ```
 
-> 镜像生成目录：rockdev/uboot.img
-
 
 
 **单独编译Kernel**
@@ -201,8 +199,6 @@ $ ./build.sh uboot
 $ ./build.sh kernel
 ```
 
-> 镜像生成目录：rockdev/boot.img
-
 
 
 **单独编译Buildroot**
@@ -210,8 +206,6 @@ $ ./build.sh kernel
 ```
 $ ./build.sh buildroot
 ```
-
-> 镜像生成目录：rockdev/rootfs.img
 
 
 
@@ -229,28 +223,6 @@ $ ./build.sh kernel-config
 
 ```
 $ ./build.sh menuconfig
-```
-
-
-
-### SDK新增编译项
-
-**示例：新增RK3568 K1 Buildroot编译选项**
-
-* 新增配置文件
-
-```
-$ cd device/rockchip/rk3566_rk3568/
-$ cp rockchip_rk3568_kickpi_k1_debian_defconfig rockchip_rk3568_kickpi_k1_buildroot_defconfig
-```
-
-* 修改编译配置文件
-
-```
-$ vim rockchip_rk3568_kickpi_k1_buildroot_defconfig
-
-- RK_ROOTFS_SYSTEM_DEBIAN=y
-+ RK_ROOTFS_SYSTEM_BUILDROOT=y
 ```
 
 
