@@ -104,7 +104,7 @@ $ git reset --hard
 * 文件系统网盘目录
 
 ```
-1-SDK源码\rk356x-linux\
+1-SDK源码\t113-linux\
 	linaro-rootfs-20230524.tar.gz
 	ubuntu-rootfs-20230523.tar.gz
 ```
@@ -157,43 +157,13 @@ $ ls ubuntu/ubuntu-rootfs.img
 
 
 
-* SDK编译配置
-
-```
-$ ./build.sh lunch
-	
-    You're building on Linux
-    Lunch menu...pick a combo:
-    1. rk356x
-    2. rk3588
-    Which would you like? [0]:	# 选择CPU型号
-
-    You're building on Linux
-    Lunch menu...pick a combo:
-	1. BoardConfig-rk3566-kickpi-tx66.mk
-	2. BoardConfig-rk3568-kickpi-tx68.mk
-    Which would you like? [0]:	# 选择板卡型号
-
-    You're building on Linux
-    Lunch menu...pick a combo:
-    0. default RootfsConfig.mk
-    1. RootfsConfig-buildroot.mk
-    2. RootfsConfig-debian.mk
-    3. RootfsConfig-ubuntu.mk
-    Which would you like? [0]:	# 选择文件系统型号
-```
-
-> 配置命令首次编译执行一次即可
-
-
-
 * 编译镜像
 
 ```
 $ ./build.sh
 ```
 
-> 镜像生成目录：rockdev/update-\*.img
+> 镜像生成目录：out/t113_linux_evb1_auto_uart0.img
 >
 > 若编译失败，可尝试自行解决，亦可联系技术支持客服解决
 
