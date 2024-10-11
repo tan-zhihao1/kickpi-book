@@ -235,3 +235,19 @@ $ sudo vi /etc/apt/sources.list
 $ sudo apt update
 ```
 
+
+
+## 8. Chrome 硬件加速测试
+
+测试平台：RK3568 Debian11 Chrome
+
+
+
+### GPU
+
+
+
+
+
+
+
