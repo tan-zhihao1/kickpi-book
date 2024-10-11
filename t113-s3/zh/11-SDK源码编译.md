@@ -157,6 +157,20 @@ $ ls ubuntu/ubuntu-rootfs.img
 
 
 
+* SDK编译配置
+
+```
+$ ./build.sh lunch
+
+======you are building t113 linux======
+1. BoardConfig-t113-s3-kickpi-k4b-buildroot.mk
+which board would you like: 
+```
+
+> 配置命令首次编译执行一次即可
+
+
+
 * 编译镜像
 
 ```
