@@ -18,6 +18,8 @@
 | 内存容量  | 16GB以上    |
 | 硬盘容量  | 200GB以上   |
 
+> ubuntu22.04 经过测试，编译会有大量报错，不建议使用
+
 
 
 ### 安装依赖软件包
@@ -266,7 +268,6 @@ $ vim rockchip_rk3568_kickpi_k1_buildroot_defconfig
 - RK_ROOTFS_SYSTEM_DEBIAN=y
 + RK_ROOTFS_SYSTEM_BUILDROOT=y
 ```
-
 
 
 
