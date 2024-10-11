@@ -58,9 +58,9 @@ Tina5.0 Linux SDK支持构建三个文件系统，分别为buildroot、openwrt�
 网盘SDK目录如下
 
 ```
-1-SDK源码\rk356x-linux\
-	rk356x-linux-*.tar.gz
-	rk356x-linux-*.md5
+1-SDK源码\t113-linux\
+	t113-linux-*.tar.gz
+	t113-linux-*.md5
 ```
 
 
@@ -84,7 +84,7 @@ $ md5sum -c *.md5
 **解压源码压缩包**
 
 ```
-$ tar -zxvf rk356x-linux-*.tar.gz
+$ tar -zxvf t113-linux-*.tar.gz
 ```
 
 > SDK源码压缩包仅包含Git仓库，可用ls -al命令查看到.git文件夹
