@@ -24,7 +24,7 @@
 
 ```
 $ sudo apt install git bc bison build-essential curl flex libsdl1.2-dev 
-$ sudo apt install g++-multilib gcc-multilib gnupg gperf libncurses5-dev 
+$ sudo apt install g++-multilib gcc-multilib gnupg gperf libncurses5-dev libncurses5
 $ sudo apt install imagemagick lib32ncurses5-dev lib32readline-dev squashfs-tools 
 $ sudo apt install lib32z1-dev liblz4-tool xsltproc libssl-dev libwxgtk3.0-dev 
 $ sudo apt install libxml2 libxml2-utils schedtool lzop pngcrush rsync 
