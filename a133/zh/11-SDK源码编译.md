@@ -172,7 +172,7 @@ cd longan
 
 
 
-## 编译问题
+### 编译问题
 
 **工具链路径错误，编译需要配置**
 
@@ -225,4 +225,12 @@ Choice [c3]: 3
 ```
 
 
+
+## 3.Linux SDK编译
+
+```
+./build.sh config
+./build.sh 
+./build.sh pack
+```
 
