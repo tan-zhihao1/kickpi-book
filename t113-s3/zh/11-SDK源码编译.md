@@ -204,7 +204,7 @@ $ ./build.sh kernel
 **单独编译Buildroot**
 
 ```
-$ ./build.sh buildroot
+$ ./build.sh buildroot_rootfs
 ```
 
 
