@@ -222,7 +222,8 @@ $ ./build.sh kernel-config
 **buildroot配置**
 
 ```
-$ ./build.sh menuconfig
+$ ./build.sh buildroot_menuconfig
+$ ./build.sh buildroot_saveconfig
 ```
 
 
