@@ -241,14 +241,6 @@ $ sudo apt update
 
 测试平台：RK3568 Debian11 Chrome
 
-
-
-### GPU
-
-## DEBIAN 11 本地解码1080P和4K帧率性能：
-
-> 本次测试RK3568B2使用的是K1板卡
-
 #### 测试方法：
 
 ​	1.拷贝1080P及4K的视频到板子，通过chrome浏览器本地解码。
