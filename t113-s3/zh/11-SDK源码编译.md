@@ -119,18 +119,11 @@ $ md5sum -c *.md5
 
 
 
-* 解压ubuntu镜像文件
+* 解压ubuntu镜像文件（暂不支持）
 
-```
-$ tar -zxvf ubuntu-rootfs-*.tar.gz
-$ cp ubuntu-rootfs.img.img ubuntu/
 
-$ ls ubuntu/ubuntu-rootfs.img
-```
 
-> ubuntu镜像文件的名称、目录必须保证一致
->
-> 文件系统目录：ubuntu/ubuntu-rootfs.img
+
 
 
 
