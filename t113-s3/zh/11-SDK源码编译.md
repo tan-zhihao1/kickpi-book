@@ -119,21 +119,6 @@ $ md5sum -c *.md5
 
 
 
-* 解压debian镜像文件
-
-```
-$ tar -zxvf linaro-rootfs-*.tar.gz
-$ cp linaro-rootfs.img debian/
-
-$ ls debian/linaro-rootfs.img
-```
-
-> debian镜像文件的名称、目录必须保证一致
->
-> 文件系统目录：debian/linaro-rootfs.img
-
-
-
 * 解压ubuntu镜像文件
 
 ```
