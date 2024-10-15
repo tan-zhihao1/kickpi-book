@@ -234,3 +234,41 @@ Choice [c3]: 3
 ./build.sh pack
 ```
 
+
+
+```
+$ ./build.sh config
+
+Welcome to mkscript setup progress
+All available platform:
+   0. android
+   1. linux
+Choice [android]: 1
+All available linux_dev:
+   0. bsp
+   1. dragonboard
+Choice [bsp]: 0
+All available kern_ver:
+   0. linux-4.9
+Choice [linux-4.9]: 0
+All available ic:
+   0. a133
+Choice [a133]: 0
+All available board:
+   0. b1
+   1. b3
+   2. c3
+   3. c4
+   4. fpga
+   5. perf1
+   6. perf2
+   7. perf3
+   8. qa
+   9. ver
+Choice [c3]: 2
+All available flash:
+   0. default
+   1. nor
+Choice [default]: 0
+```
+
