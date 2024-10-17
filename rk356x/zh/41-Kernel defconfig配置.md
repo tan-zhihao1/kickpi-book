@@ -1,4 +1,4 @@
-# 41-RK Kernel defconfig配置
+# 41-Kernel defconfig配置
 
 ## 配置defconfig
 
