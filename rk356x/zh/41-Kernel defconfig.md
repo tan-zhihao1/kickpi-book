@@ -14,8 +14,11 @@ kernel config 配置相关命令
 
 ```
 cd kernel-5.10/
-//我们默认使用arm64
-make 
+make ARCH=arm64menuconfig //我们默认使用arm64
+make loadconfig
+make menuconfig
+make saveconfig
+make mergeconfig
 ```
 
 
