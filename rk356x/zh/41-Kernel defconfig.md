@@ -1,4 +1,4 @@
-# 41-Kernel defconfig配置
+# 41-RK Kernel defconfig配置
 
 ## 配置defconfig
 
@@ -19,7 +19,7 @@ make menuconfig //进入配置图形化界面
 make saveconfig //保存为默认配置
 ```
 
-saveconfig生成defconfig 需要cp 到SDK编译使用的*defconfig文件
+make  saveconfig生成defconfig 需要cp 到SDK编译使用的*defconfig文件进行使用
 
 ```
 cp defconfig arch/arm64/configs/rockchip_defconfig
