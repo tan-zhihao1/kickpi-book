@@ -22,7 +22,7 @@ make saveconfig //保存为默认配置
 
 saveconfig生成defconfig 需要cp 到SDK编译使用的*defconfig文件
 
-
+内核配置文件arch/arm64/configs/rockchip_defconfig，不同版本的defconfig可能不同，可自行在git历史记录中查找对应的版本文件
 
 ## 开启 DEBUG_FS
 
