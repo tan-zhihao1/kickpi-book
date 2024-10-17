@@ -13,6 +13,7 @@ kernel config 配置相关命令
 ```
 cd kernel-5.10/
 make ARCH=arm64 menuconfig //我们默认使用arm64
+
 make loadconfig //恢复旧的
 make menuconfig //进入配置图形化界面
 make saveconfig //保存为默认配置
