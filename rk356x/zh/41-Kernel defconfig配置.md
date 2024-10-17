@@ -17,7 +17,7 @@ make ARCH=arm64 menuconfig //我们默认使用arm64
 make loadconfig //恢复旧的
 make menuconfig //进入配置图形化界面
 make saveconfig //保存为默认配置
-
+make ARCH=arm64 rockchip_defconfig
 ```
 
 make  saveconfig生成defconfig 需要cp 到SDK编译使用的*defconfig文件进行使用
