@@ -274,12 +274,13 @@ Choice [default]: 0
 
 
 
+defconfig 修改及保存
+
 ```
-cd /home/huangcm/A/sdk/a133-linux/kernel/linux-4.9
-make ARCH=arm64 defconfig KBUILD_DEFCONFIG=sun50iw10p1smp_defconfig
-
-or
-
 ./build.sh config
+cd kernel/linux-4.9/
+make ARCH=arm64 menuconfig
+cd -
+./build.sh saveconfig
 ```
 
