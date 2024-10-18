@@ -198,8 +198,8 @@ Export list for 192.168.199.173:
 2. 挂载文件夹
 
 ```
-$ mkdir /nfs_tmp
-$ mount -t nfs 192.168.199.173:/home/huangcm/nfs_share /nfs_tmp/
+$ mkdir nfs_tmp
+$ mount -t nfs 192.168.199.173:/home/huangcm/nfs_share nfs_tmp/
 ```
 
 
