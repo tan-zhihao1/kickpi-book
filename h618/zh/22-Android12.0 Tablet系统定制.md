@@ -319,9 +319,10 @@ public class MyReceiver extends BroadcastReceiver {
 
   ```
   adb root; adb remount;
-  adb push ./app /system/priv-app/
+  adb push ./app /system/app/
+  /data/app
   ```
-
+  
   
 
 
