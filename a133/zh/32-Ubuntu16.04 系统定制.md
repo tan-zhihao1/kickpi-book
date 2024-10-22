@@ -31,7 +31,7 @@ sudo tar -zxf device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz -C
 
 
 
-chroot 进行挂载
+chroot 进行挂载，等同于在 root 下进行修改ubuntu镜像
 
 ```
 // 配置以及挂载
