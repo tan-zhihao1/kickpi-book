@@ -43,9 +43,11 @@ sudo cp -b /usr/bin/qemu-aarch64-static rootfs_k5/usr/bin/
 
 // 通过chroot挂载修改
 su chroot rootfs_k5
+# export LC_ALL=C.UTF-8
+
 
 // chroot 下用exit退出
-exit
+# exit
 
 // 取消挂载
 sudo umount rootfs_k5/proc
