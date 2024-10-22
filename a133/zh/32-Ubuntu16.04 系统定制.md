@@ -67,7 +67,7 @@ apt-get -f -y upgrade
 
 
 
-将修改后的ubuntu重新打包
+将修改后的ubuntu重新打包 (注意：必须取消挂载！！！)
 
 ```
 rm -v device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
