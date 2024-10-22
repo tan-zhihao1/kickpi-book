@@ -31,7 +31,7 @@ sudo tar -zxf device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz -C
 
 
 
-chroot 进行修改
+chroot 进行挂载
 
 ```
 // 配置以及挂载
@@ -55,7 +55,7 @@ sudo umount rootfs_k5/dev
 
 
 
-更新apt，然后进行操作
+更新apt进行安装
 
 ```
 apt-get -y update
