@@ -324,6 +324,75 @@ public class MyReceiver extends BroadcastReceiver {
   
   
 
+## APP签名文件
+
+签名文件路径如下
+
+```
+build/target/product/security/platform.pk8
+build/target/product/security/platform.x509.pem
+out/host/linux-x86/framework/signak.jar
+```
+
+
+
+## APP特殊权限问题
+
+目前桌面级APP是特殊应用，如果添加特殊权限，可能会出现系统无法起来问题，需要抓取APP相关log日志
+
+```shell
+# logcat | grep JingWei
+09-14 10:36:06.662  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication3 (/system/priv-app/LauncherJingWei) not in privapp-permissions allowlist
+09-14 10:36:08.437  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication3 (/system/priv-app/LauncherJingWei) not in privapp-permissions allowlist
+```
+
+
+
+根据log信息添加权限
+
+```
+SDK
+	修改 frameworks/base/data/etc/privapp-permissions-platform.xml
+	重新编译烧录
+
+主板上
+	/etc/permissions/privapp-permissions-platform.xml
+```
+
+
+
+根据 log 修改 android.permission.INSTALL_PACKAGES 内容如下，其他报错类似参考以下添加：
+
+```diff
+--- a/frameworks/base/data/etc/privapp-permissions-platform.xml
++++ b/frameworks/base/data/etc/privapp-permissions-platform.xml
+@@ -550,4 +550,8 @@ applications that come with the platform
+     <privapp-permissions package="com.android.calllogbackup">
+         <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+     </privapp-permissions>
++
++    <privapp-permissions package="com.example.myapplication3">
++        <permission name="android.permission.INSTALL_PACKAGES"/>
++    </privapp-permissions>
+```
+
+
+
+## 全编替换不生效问题
+
+由于惰性编译，一些编译目标或依赖直接替换文件，在编译时不会拷贝生效
+
+需要先手动清除，再进行编译
+
+```
+source build/envsetup.sh
+lunch apollo_p2-userdebug
+make installclean -j32
+./build.sh
+```
+
+
+
 
 
 ## HDMI 固定输出分辨率
