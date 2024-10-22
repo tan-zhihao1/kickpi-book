@@ -26,6 +26,6 @@ cp device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz device/config
 
 ```
 mkdir rootfs_k5
-
+tar -zxf device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz -C rootfs_k5
 ```
 
