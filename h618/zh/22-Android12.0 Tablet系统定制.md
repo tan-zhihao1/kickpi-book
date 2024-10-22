@@ -335,6 +335,21 @@ h618 预装到 priv-app 由于权限限制会出现APP问题，需要针对添�
 
 
 
+4、由于权限问题相对比较繁琐，提供镜像支持唤醒 /system/app/ 路径下的app
+
+```
+
+```
+
+```
+adb root; adb remount;
+adb push ./app /system/priv-app/
+```
+
+
+
+
+
 ## APP签名文件
 
 签名文件路径如下
