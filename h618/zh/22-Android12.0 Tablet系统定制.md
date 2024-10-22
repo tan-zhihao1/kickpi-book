@@ -322,7 +322,10 @@ public class MyReceiver extends BroadcastReceiver {
   adb push ./app /system/priv-app/
   ```
   
-  
+
+h618 预装到 priv-app 由于权限限制会出现APP问题，需要针对添加权限， 参考
+
+
 
 ## APP签名文件
 
