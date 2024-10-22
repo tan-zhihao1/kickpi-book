@@ -338,7 +338,7 @@ h618 预装到 priv-app 由于权限限制会出现APP问题，需要针对添�
 4、由于权限问题相对比较繁琐，提供镜像支持唤醒 /system/app/ 路径下的app
 
 ```
-
+h618_android12_p2_uart0-bootup-test-20241022.img
 ```
 
 ```
