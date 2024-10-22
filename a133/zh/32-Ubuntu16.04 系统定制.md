@@ -34,6 +34,15 @@ sudo tar -zxf device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz -C
 chroot 进行修改
 
 ```
+sudo mount -t proc /proc rootfs_k5/proc
+sudo mount -t sysfs /sys rootfs_k5/sys
+sudo mount -o bind /dev rootfs_k5/dev
+
+
+
+sudo umount rootfs_k5/proc
+sudo umount rootfs_k5/sys
+sudo umount rootfs_k5/dev
 ```
 
 
