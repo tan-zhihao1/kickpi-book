@@ -58,9 +58,12 @@ sudo umount rootfs_k5/dev
 更新apt进行安装
 
 ```
+ping www.baidu.com  // 测试是否有网
 apt-get -y update
 apt-get -f -y upgrade
 ```
+
+
 
 
 
