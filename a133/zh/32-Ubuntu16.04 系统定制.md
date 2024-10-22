@@ -34,13 +34,20 @@ sudo tar -zxf device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz -C
 chroot 进行修改
 
 ```
+// 配置以及挂载
 sudo mount -t proc /proc rootfs_k5/proc
 sudo mount -t sysfs /sys rootfs_k5/sys
 sudo mount -o bind /dev rootfs_k5/dev
 sudo cp -b /etc/resolv.conf rootfs_k5/etc/resolv.conf
 sudo cp -b /usr/bin/qemu-aarch64-static $TARGET_ROOTFS_DIR/usr/bin/
 
+// 通过chroot挂载修改
+su chroot rootfs_k5
 
+// chroot 下用exit退出
+exit
+
+// 取消挂载
 sudo umount rootfs_k5/proc
 sudo umount rootfs_k5/sys
 sudo umount rootfs_k5/dev
