@@ -38,6 +38,7 @@ sudo mount -t proc /proc rootfs_k5/proc
 sudo mount -t sysfs /sys rootfs_k5/sys
 sudo mount -o bind /dev rootfs_k5/dev
 sudo cp -b /etc/resolv.conf rootfs_k5/etc/resolv.conf
+sudo cp -b /usr/bin/qemu-aarch64-static $TARGET_ROOTFS_DIR/usr/bin/
 
 
 sudo umount rootfs_k5/proc
