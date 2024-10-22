@@ -16,7 +16,7 @@ device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 ## chroot 修改ubuntu
 
-修改前先备份
+修改前先备份保留原本的镜像
 
 ```
 cp device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts_backup.tar.gz
