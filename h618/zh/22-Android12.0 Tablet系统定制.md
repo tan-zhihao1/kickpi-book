@@ -323,7 +323,7 @@ public class MyReceiver extends BroadcastReceiver {
   ```
   
 
-h618 预装到 priv-app 由于权限限制会出现APP问题，需要针对添加权限， 参考
+h618 预装到 priv-app 由于权限限制会出现APP问题，需要针对添加权限， 参考 [APP特殊权限问题](## APP特殊权限问题)
 
 
 
