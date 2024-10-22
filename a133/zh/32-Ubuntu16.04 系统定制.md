@@ -25,5 +25,7 @@ cp device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz device/config
 解压
 
 ```
+mkdir rootfs_k5
+
 ```
 
