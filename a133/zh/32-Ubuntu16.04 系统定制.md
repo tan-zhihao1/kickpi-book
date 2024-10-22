@@ -70,8 +70,8 @@ apt-get -f -y upgrade
 将修改后的ubuntu重新打包
 
 ```
-sudo tar -zxf device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz -C rootfs_k5
 rm -v device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
+cd rootfs_k5/
 sudo tar -zcf . ../device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 ```
 
