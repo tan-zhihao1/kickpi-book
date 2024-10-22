@@ -97,7 +97,7 @@ overlay
 overlay/etc/test.sh
 ```
 
-编译会拷贝到根目录 etc/test.sh
+编译会拷贝到根目录 /etc/test.sh
 
 
 
