@@ -91,9 +91,10 @@ ls device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 修改ubuntu会影响镜像大小，mkfs.ubifs 会报错
 
-需要修改
+需要修改 build/mkcmd.sh
 
 ```
+vim build/mkcmd.sh
 - fakeroot mkfs.ubifs -m 4096 -e 258048 -c 1280 -F -x zlib -r ${ROOTFS} -o ${LICHEE_PLAT_OUT}/rootfs.ubifs
 + fakeroot mkfs.ubifs -m 4096 -e 258048 -c 2560 -F -x zlib -r ${ROOTFS} -o ${LICHEE_PLAT_OUT}/rootfs.ubifs
 ```
