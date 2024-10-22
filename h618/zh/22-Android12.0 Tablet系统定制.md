@@ -341,12 +341,17 @@ h618 预装到 priv-app 由于权限限制会出现APP问题，需要针对添�
 h618_android12_p2_uart0-bootup-test-20241022.img
 ```
 
+* 首先确认adb install 是否能正常打开apk
+* 卸载apk
+* 通过adb push 方式安装为system app
+
 ```
 adb root; adb remount;
 adb push ./app /system/priv-app/
+adb reboot
 ```
 
-
+* 开机后后台调用起APP
 
 
 
