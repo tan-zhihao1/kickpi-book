@@ -71,6 +71,8 @@ apt-get -f -y upgrade
 
 ```
 sudo tar -zxf device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz -C rootfs_k5
+rm -v device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
+sudo tar -zcf . ../device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 ```
 
 
