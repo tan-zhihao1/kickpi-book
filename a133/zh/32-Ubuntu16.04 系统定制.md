@@ -55,3 +55,10 @@ sudo umount rootfs_k5/dev
 
 
 
+更新apt，然后进行操作
+
+```
+apt-get -y update
+apt-get -f -y upgrade
+```
+
