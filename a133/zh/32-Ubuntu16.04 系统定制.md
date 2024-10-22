@@ -81,6 +81,12 @@ ls device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 
 
+重新编译即可
+
+
+
+
+
 ## 替换方式修改ubuntu
 
 将需要替换的文件存放到overlay下，编译会拷贝替换 rootfs 对应路径下的文件
