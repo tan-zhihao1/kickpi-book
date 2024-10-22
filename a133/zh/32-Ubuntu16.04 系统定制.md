@@ -14,6 +14,8 @@ device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 
 
+## chroot 修改ubuntu
+
 修改前先备份
 
 ```
@@ -75,6 +77,10 @@ cd rootfs_k5/
 sudo tar -zcf ../device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz .
 ls device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 ```
+
+
+
+## 替换方式修改ubuntu
 
 
 
