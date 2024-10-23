@@ -44,7 +44,7 @@ sudo cp -b /etc/resolv.conf rootfs_k5/etc/resolv.conf
 sudo cp -b /usr/bin/qemu-aarch64-static rootfs_k5/usr/bin/
 
 // 通过chroot挂载修改
-su chroot rootfs_k5
+sudo chroot rootfs_k5
 export LC_ALL=C.UTF-8
 # 可以做ubuntu系统下操作
 
