@@ -69,3 +69,8 @@ export QT_QPA_PLATFORM=linuxfb:tty=/dev/fb0 //指定我们的运行平台和输�
 export QT_QPA_FB_DISABLE_INPUT=1 //添加input
 ```
 
+
+
+## FAQ
+
+1.如果遇到QT运行后显示不了中文，应该是缺少中文库wqy-zenhei.ttc，可以网上下载并push进去/usr/share/fonts/
