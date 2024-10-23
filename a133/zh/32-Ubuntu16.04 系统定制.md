@@ -126,13 +126,12 @@ overlay/etc/test.sh
 ## xface 桌面安装（需要联网）
 
 ```
-DEBIAN_FRONTEND=noninteractive apt install -y xubuntu-core onboard rsyslog sudo dialog apt-utils ntp evtest udev
-mv /var/lib/dpkg/info/ /var/lib/dpkg/info_old/
-mkdir /var/lib/dpkg/info/
-apt-get update
-DEBIAN_FRONTEND=noninteractive apt install -y xubuntu-core onboard rsyslog sudo dialog apt-utils ntp evtest udev
-mv /var/lib/dpkg/info_old/* /var/lib/dpkg/info/
-reboot
+$ DEBIAN_FRONTEND=noninteractive apt install -y xubuntu-core onboard rsyslog sudo dialog apt-utils ntp evtest udev --allow-unauthenticated
+$ mv /var/lib/dpkg/info/ /var/lib/dpkg/info_old/
+$ mkdir /var/lib/dpkg/info/
+$ apt-get update
+$ DEBIAN_FRONTEND=noninteractive apt install -y xubuntu-core onboard rsyslog sudo dialog apt-utils ntp evtest udev --allow-unauthenticated
+$ mv /var/lib/dpkg/info_old/* /var/lib/dpkg/info/
 ```
 
 
