@@ -93,7 +93,7 @@ ls device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 需要修改 build/mkcmd.sh
 
-```
+```diff
 vim build/mkcmd.sh
 - fakeroot mkfs.ubifs -m 4096 -e 258048 -c 1280 -F -x zlib -r ${ROOTFS} -o ${LICHEE_PLAT_OUT}/rootfs.ubifs
 + fakeroot mkfs.ubifs -m 4096 -e 258048 -c 2560 -F -x zlib -r ${ROOTFS} -o ${LICHEE_PLAT_OUT}/rootfs.ubifs
