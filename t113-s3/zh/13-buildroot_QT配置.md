@@ -7,7 +7,7 @@ make menuconfig //打开配置界面
 make savedefconfig  //保存为默认配置
 ```
 
-Buildroot下配置libdrm、mesa3d、Qt5：
+Buildroot下QT5配置有关如下：
 
 ```
 Target packages
@@ -50,5 +50,22 @@ Target packages
 　　　　　　->qt5svg
 　　　　　　->qt5virtualkeyboard
 　　　　　　->language layouts
+```
+
+### 2.QT5配置后编译Buildroot
+
+out目录下就有QT5的库。
+
+qmake位置：out/t113/evb1_auto/buildroot/buildroot/host/bin/qmake
+
+可以使用qmake进行编译想要在板子上运行的QT-project
+
+### 3.QT在板子上的运行
+
+QT程序运行前需要进行QT环境变量的设置：
+
+```
+export QT_QPA_PLATFORM=linuxfb:tty=/dev/fb0 //指定我们的运行平台和输出显示屏
+export QT_QPA_FB_DISABLE_INPUT=1 //添加input
 ```
 
