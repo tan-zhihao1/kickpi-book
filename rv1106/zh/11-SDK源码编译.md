@@ -250,6 +250,6 @@ diff defconfig ../kernel/arch/arm/configs/rv1106_defconfig
 cp defconfig ../kernel/arch/arm/configs/rv1106_defconfig
 
 // 注意 由于 rv1106-evb.config 会覆盖 rv1106_defconfig
-如果kernel 选择的配置不生效，需要检查rv1106-evb.config
+如果kernel 选择的配置不生效，需要检查 rv1106-evb.config 中的 config 是否覆盖率，删除即可
 ```
 
