@@ -301,7 +301,7 @@ rootfs
 defconfig 修改及保存
 
 ```
-./build.sh config
+./build.sh config 
 cd kernel/linux-4.9/
 make ARCH=arm64 menuconfig
 cd -
