@@ -286,6 +286,14 @@ kernel
 
 
 
+rootfs
+
+```
+./build.sh rootfs
+```
+
+
+
 
 
 ### defconfig 
