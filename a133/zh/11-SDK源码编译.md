@@ -228,7 +228,7 @@ Choice [c3]: 3
 
 ## 3.Linux SDK编译
 
-
+### 完整编译
 
 ```
 ./build.sh config
