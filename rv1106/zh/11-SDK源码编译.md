@@ -243,10 +243,10 @@ sysdrv/source/kernel/arch/arm/configs/rv1106_defconfig
 
 ```
 cd sysdrv/source/objs_kernel
-make ARCH=arm rv1106_defconfig
+make ARCH=arm rv1106_defconfig rv1106-evb.config
 make ARCH=arm menuconfig
 make ARCH=arm savedefconfig
-diff defconfig ../kernel/arch/arm/configs/rv1106-evb.config
-cp defconfig ../kernel/arch/arm/configs/rv1106-evb.config
+diff defconfig ../kernel/arch/arm/configs/rv1106_defconfig
+cp defconfig ../kernel/arch/arm/configs/rv1106_defconfig
 ```
 
