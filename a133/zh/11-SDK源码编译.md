@@ -276,6 +276,20 @@ Choice [default]: 0
 
 
 
+### 单独编译
+
+kernel
+
+```
+./build.sh kernel
+```
+
+
+
+
+
+### defconfig 
+
 defconfig 修改及保存
 
 ```
