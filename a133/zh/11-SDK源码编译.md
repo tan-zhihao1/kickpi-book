@@ -294,13 +294,12 @@ rootfs
 
 
 
-
-
 ### defconfig 
 
 defconfig 修改及保存
 
 ```
+确保编译过一次 或 ./build.sh config
 cd kernel/linux-4.9/
 make ARCH=arm64 menuconfig
 cd -
@@ -311,11 +310,13 @@ cd -
 
 ### 工具链
 
+包路径
+
 ```
 build/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu.tar.xz
 ```
 
-编译后
+编译后工具的路径
 
 ```
 out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
