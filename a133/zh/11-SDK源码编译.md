@@ -231,12 +231,12 @@ Choice [c3]: 3
 ### 完整编译
 
 ```
-./build.sh config
 ./build.sh 
-./build.sh pack
 ```
 
 
+
+如果编译失败，尝试配置
 
 ```
 $ ./build.sh config
