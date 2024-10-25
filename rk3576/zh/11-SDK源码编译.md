@@ -54,5 +54,19 @@ lunch rk3576_u-userdebug
 
 详情可参考
 
-​		源码/RKDocs/android/RK3576_Developer_Guide_Android14_SDK_CN.pdf
+```
+（源码）/RKDocs/android/RK3576_Developer_Guide_Android14_SDK_CN.pdf
+```
+
+
+
+## 文档参考
+
+源码下有 RK 官方的指导文件
+
+```
+（源码）/RKDocs/
+```
+
+
 
