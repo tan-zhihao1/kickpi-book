@@ -81,13 +81,11 @@ rockdev/Image-rk3576_u/
 └── vbmeta.img
 ```
 
+直接烧写 `update.img`
 
 
-直接烧写 update.img
 
-或
-
-工具烧写如下文件：
+或工具烧写如下文件：
 
 ```
 rockdev/Image-rk3576_u/
