@@ -63,7 +63,7 @@ lunch rk3576_u-userdebug
 完整编译后会生成如下文件：
 
 ```
-rockdev/Image-rk3576_u/
+(源码)/rockdev/Image-rk3576_u/
 ├── boot-debug.img
 ├── boot.img
 ├── config.cfg
@@ -83,11 +83,7 @@ rockdev/Image-rk3576_u/
 
 直接烧写 `update.img`
 
-
-
-
-
-
+详情见 - 系统镜像烧录
 
 
 
