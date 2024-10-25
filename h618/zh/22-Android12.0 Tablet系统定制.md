@@ -192,6 +192,8 @@ const std::string readLocale()
 
 比如新增 test.apk 
 
+h618-android12.0\vendor\aw\public\prebuild\apk 放你的apk和Android.bp 
+
 Android.mk
 
 ```
@@ -232,7 +234,7 @@ android_app_import {
 }
 ```
 
-加入编译
+在/vendor/aw/homlet/homlet.mk加入编译
 
 ```makefile
 PRODUCT_PACKAGES += \
