@@ -58,6 +58,50 @@ lunch rk3576_u-userdebug
 
 
 
+**固件说明**
+
+完整编译后会生成如下文件：
+
+```
+rockdev/Image-rk3576_u/
+├── boot-debug.img
+├── boot.img
+├── config.cfg
+├── dtbo.img
+├── MiniLoaderAll.bin
+├── misc.img
+├── parameter.txt
+├── pcba_small_misc.img
+├── pcba_whole_misc.img
+├── recovery.img
+├── resource.img
+├── super.img
+├── uboot.img
+├── update.img
+└── vbmeta.img
+```
+
+
+
+直接烧写 update.img
+
+或
+
+工具烧写如下文件：
+
+```
+rockdev/Image-rk3576_u/
+├── boot.img
+├── dtbo.img
+├── MiniLoaderAll.bin
+├── misc.img
+├── parameter.txt
+├── recovery.img
+├── super.img
+├── uboot.img
+└── vbmeta.img
+```
+
 
 
 
