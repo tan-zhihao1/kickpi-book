@@ -35,5 +35,24 @@ $ sudo pip install pyelftools
 
 
 
+## Android 编译
 
+配置环境
+
+```
+source build/envsetup.sh
+lunch rk3576_u-userdebug
+```
+
+全部编译
+
+```
+./build.sh -AUCKu
+```
+
+
+
+详情可参考
+
+​		源码/RKDocs/android/RK3576_Developer_Guide_Android14_SDK_CN.pdf
 
