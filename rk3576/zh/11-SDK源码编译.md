@@ -85,30 +85,9 @@ rockdev/Image-rk3576_u/
 
 
 
-或工具烧写如下文件：
-
-```
-rockdev/Image-rk3576_u/
-├── boot.img
-├── dtbo.img
-├── MiniLoaderAll.bin
-├── misc.img
-├── parameter.txt
-├── recovery.img
-├── super.img
-├── uboot.img
-└── vbmeta.img
-```
 
 
 
-
-
-详情可参考
-
-```
-（源码）/RKDocs/android/RK3576_Developer_Guide_Android14_SDK_CN.pdf
-```
 
 
 
