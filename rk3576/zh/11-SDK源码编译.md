@@ -81,9 +81,29 @@ lunch rk3576_u-userdebug
 └── vbmeta.img
 ```
 
-直接烧写 `update.img`
+烧写的镜像为 `(源码)/rockdev/Image-rk3576_u/update.img`
 
-详情见 - 系统镜像烧录
+烧录详见 - 系统镜像烧录
+
+
+
+**userdebug 和 user 编译**
+
+默认为userdebug模式编译，如果需要user版本镜像则需要修改对应编译mk
+
+```diff
+vim device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
+-export BUILD_VARIANT=userdebug
++export BUILD_VARIANT=user
+```
+
+
+
+dts 路径
+
+```
+kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
+```
 
 
 
