@@ -133,7 +133,7 @@ sudo make -j4
 
 时间较长，基于板子功能4-12小时
 
-##### FAQ ：如果已经按照python3，但是构建过程中提示缺少了 Python 解释器。QtQml 模块的构建依赖于 Python，可以创建一个符号链接：
+##### FAQ ：如果已经安装python3，但是构建过程中提示缺少了 Python 解释器。可以创建一个符号链接：
 
 ```
 sudo ln -s /usr/bin/python3 /usr/bin/python
