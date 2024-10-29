@@ -35,8 +35,6 @@ $ echo "export LANG=en_US.UTF-8" >> /etc/profile.d/zh_CN.sh
 $ echo "export LANGUAGE=en_US:en" >> /etc/profile.d/zh_CN.sh
 ```
 
-
-
 * 设置中文语言
 
 ```
