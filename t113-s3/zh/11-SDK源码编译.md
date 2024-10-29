@@ -152,6 +152,7 @@ which board would you like:
 
 ```
 $ ./build.sh
+$ ./build.sh pack
 ```
 
 > 镜像生成目录：out/t113_linux_evb1_auto_uart0.img
