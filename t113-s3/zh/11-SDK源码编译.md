@@ -99,13 +99,12 @@ $ git reset --hard
 
 
 
-### 获取Rootfs镜像
+### 获取Rootfs镜像(暂不支持)
 
 * 文件系统网盘目录
 
 ```
 1-SDK源码\t113-linux\
-	linaro-rootfs-20230524.tar.gz
 	ubuntu-rootfs-20230523.tar.gz
 ```
 
