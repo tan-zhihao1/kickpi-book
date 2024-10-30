@@ -87,22 +87,16 @@ sudo cp -b /usr/bin/qemu-aarch64-static rootfs_k5/usr/bin/
 sudo chroot rootfs_k5
 export LC_ALL=C.UTF-8
 # 可以做ubuntu系统下操作
+ping www.baidu.com  // 测试是否有网
+apt-get -y update
+apt-get -f -y upgrade
+apt install // 下载需要的东西 或 修改文件
 
 // chroot 下用exit退出
 # exit
 
 // 取消挂载
  ./ch-mount.sh -u rootfs_k5/
-```
-
-
-
-更新apt进行安装
-
-```
-ping www.baidu.com  // 测试是否有网
-apt-get -y update
-apt-get -f -y upgrade
 ```
 
 
