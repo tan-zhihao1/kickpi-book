@@ -92,9 +92,7 @@ export LC_ALL=C.UTF-8
 # exit
 
 // 取消挂载
-sudo umount rootfs_k5/proc
-sudo umount rootfs_k5/sys
-sudo umount rootfs_k5/dev
+ ./ch-mount.sh -u rootfs_k5/
 ```
 
 
@@ -109,7 +107,7 @@ apt-get -f -y upgrade
 
 
 
-将修改后的ubuntu重新打包 (注意：必须取消挂载！！！)
+将修改后的ubuntu重新打包 **(注意：必须取消挂载！！！)**
 
 ```
 rm -v device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
