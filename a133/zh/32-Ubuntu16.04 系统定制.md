@@ -119,7 +119,7 @@ ls device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 
 
-重新编译即可 ./build.sh
+重新编译即可 ./build.sh , 会将 新的 root fs 打包编译进镜像。
 
 
 
