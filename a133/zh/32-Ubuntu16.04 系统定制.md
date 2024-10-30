@@ -4,6 +4,12 @@
 
 
 
+## 编译方式
+
+​		见 11- SDK 源码编译
+
+
+
 ## Kernel Defconfig 
 
 defconfig 修改及保存
