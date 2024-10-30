@@ -119,7 +119,7 @@ ls device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 
 
-重新编译即可
+重新编译即可 ./build.sh
 
 
 
