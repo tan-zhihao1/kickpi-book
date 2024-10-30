@@ -10,7 +10,7 @@ A133, DDR容量最大支持4GB，包括1GB/1.5GB/2GB/3GB/4GB。
 
 ## 2. 开发板信息
 
-TODO
+![K5功能标注图](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K5功能标注图.jpg)
 
 ## 3. 配件列表
 
