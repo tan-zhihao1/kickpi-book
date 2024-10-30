@@ -4,9 +4,7 @@
 
 
 
-
-
-## defconfig 
+## Kernel Defconfig 
 
 defconfig 修改及保存
 
