@@ -69,9 +69,7 @@ chroot 进行挂载，等同于在 root 下进行修改ubuntu镜像
 
 ```
 // 配置以及挂载
-sudo mount -t proc /proc rootfs_k5/proc
-sudo mount -t sysfs /sys rootfs_k5/sys
-sudo mount -o bind /dev rootfs_k5/dev
+./ch-mount.sh -m rootfs_k5
 sudo cp -b /etc/resolv.conf rootfs_k5/etc/resolv.conf
 sudo cp -b /usr/bin/qemu-aarch64-static rootfs_k5/usr/bin/
 
