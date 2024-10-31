@@ -157,7 +157,15 @@ longan/kernel/linux-4.9
 
 
 
-**kernel config 配置相关命令**
+### **defconfig **
+
+defconfig
+
+```
+longan/kernel/linux-4.9/arch/arm64/configs/sun50iw10p1smp_a133_android_defconfig
+```
+
+
 
 ```
 cd longan
