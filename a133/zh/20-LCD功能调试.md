@@ -15,6 +15,13 @@ $ vim longan/device/config/chips/a133/configs/c3/board.dts
 //#include "lcd-mipi-10-800-1280.dtsi"
 ```
 
+```
+linux 路径
+device/config/chips/a133/configs/c3/board.dts
+```
+
+
+
 * 二级设备树目录
 
 ```
