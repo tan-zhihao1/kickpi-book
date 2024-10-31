@@ -40,7 +40,7 @@ out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
 
 ## ubuntu包路径
 
-ubuntu镜像
+ubuntu 文件系统
 
 ```
 device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
