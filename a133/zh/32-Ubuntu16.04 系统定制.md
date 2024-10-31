@@ -184,3 +184,7 @@ sudo apt install firefox
 
 
 
+## 其他事项
+
+​		a133 目前不支持 xrandr 进行旋转
+
