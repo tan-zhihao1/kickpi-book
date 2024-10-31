@@ -97,13 +97,15 @@ pin 232 (PH8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
 ​		通过 /sys/class/gpio/export 注册 PH8 并进行控制
 
 ```
+// 注册
 root@kickpi:~# echo  232 > /sys/class/gpio/export
+// 查看是否生成
 root@kickpi:~# ls /sys/class/gpio/
 export  gpio232  gpiochip0  gpiochip352  unexport
+// 注册后的结点内容
 root@kickpi:~# ls /sys/class/gpio/gpio232
 active_low  device  direction  edge  power  subsystem  uevent  value
 root@kickpi:~#
-
 ```
 
 
