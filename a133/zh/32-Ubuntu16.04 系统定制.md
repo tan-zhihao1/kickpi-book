@@ -36,7 +36,13 @@ cd -
 
 将GPIO释放出来，通过/sys/class/gpio进行控制
 
+
+
+步骤一
+
 先将对应GPIO引脚注释，/sys/class/gpio/export 只能导入未注册的 gpio
+
+比如PH8，如需其他引脚，一样在 leds 结点下注释即可
 
 ```diff
 vim device/config/chips/a133/configs/c3/board.dts
@@ -50,6 +56,22 @@ vim device/config/chips/a133/configs/c3/board.dts
 ```
 
 
+
+步骤二
+
+​		编译镜像，重新烧录
+
+
+
+步骤三
+
+​		确认gpio未被注册
+
+
+
+步骤四
+
+​		通过 /sys/class/gpio/export 注册 gpio 并进行控制
 
 
 
