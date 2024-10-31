@@ -8,6 +8,14 @@
 
 
 
+## dts
+
+```
+longan/device/config/chips/a133/configs/c3/board.dts
+```
+
+
+
 ## Kernel Defconfig 
 
 defconfig 修改及保存
