@@ -108,7 +108,12 @@ active_low  device  direction  edge  power  subsystem  uevent  value
 root@kickpi:~#
 ```
 
+​			通过结点下的内容控制 gpio
 
+```
+direction
+value
+```
 
 
 
