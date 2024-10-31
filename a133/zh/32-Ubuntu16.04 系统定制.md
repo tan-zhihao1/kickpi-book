@@ -113,8 +113,10 @@ root@kickpi:~#
 ```
 direction
 	in / out
-	
+	echo in > /sys/class/gpio/gpio232/direction
+	echo out > /sys/class/gpio/gpio232/direction
 value
+	
 ```
 
 
