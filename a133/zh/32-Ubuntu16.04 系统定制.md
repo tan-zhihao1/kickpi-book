@@ -105,7 +105,7 @@ device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 
 
-## chroot 修改 ubuntu
+## chroot 方式修改 ubuntu
 
 搭建构建环境
 
@@ -196,7 +196,7 @@ vim build/mkcmd.sh
 
 
 
-## overlay方式修改ubuntu
+## overlay 方式修改ubuntu
 
 
 
@@ -231,7 +231,11 @@ $ mv /var/lib/dpkg/info_old/* /var/lib/dpkg/info/
 
 
 
-## 默认无浏览器
+
+
+## 其他事项
+
+## xfce 默认无浏览器
 
 需要安装火狐浏览器
 
@@ -240,8 +244,6 @@ sudo apt install firefox
 ```
 
 
-
-## 其他事项
 
 ​		a133 目前不支持 xrandr 进行旋转
 
