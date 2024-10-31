@@ -58,7 +58,7 @@ out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
 
 先将对应GPIO引脚注释，/sys/class/gpio/export 只能导入未注册的 gpio
 
-比如PH8，如需其他引脚，一样在 leds 结点下注释即可
+比如PH8，如需其他引脚，一样在 leds 结点下注释即可 ,  下面内容都以PH8 做举例
 
 ```diff
 vim device/config/chips/a133/configs/c3/board.dts
