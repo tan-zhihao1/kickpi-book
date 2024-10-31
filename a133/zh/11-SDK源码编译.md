@@ -69,22 +69,13 @@ Android系统版本：10.0
 
 
 
-* 解压源码压缩包
+* 解压源码压缩包，Git恢复源码目录
 
 ```
 mkdir sdk
-
-$ tar -zxvf *.tar.gz
-```
-
-> 解压完成后，查看源码目录仅有.git文件夹，需要执行下一步才能完成恢复出源码
-
-
-
-* Git恢复源码目录
-
-```
-$ git reset --hard
+tar -zxf a133-linux-20241031.tar.gz -C sdk/
+cd sdk
+git reset --hard
 ```
 
 
