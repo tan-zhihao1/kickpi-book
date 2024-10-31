@@ -39,8 +39,6 @@ $ sudo pip install pyelftools
 
 
 
-## 2. Android SDK编译
-
 ### SDK介绍
 
 Android SDK版本信息
@@ -77,6 +75,12 @@ tar -zxf a133-linux-20241031.tar.gz -C sdk/
 cd sdk
 git reset --hard
 ```
+
+
+
+
+
+## 2. Android SDK编译
 
 
 
