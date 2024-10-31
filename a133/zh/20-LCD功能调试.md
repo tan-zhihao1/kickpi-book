@@ -32,6 +32,11 @@ longan/kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
 	lcd-lvds-21-1920-1080.dtsi
 ```
 
+```
+linux 路径
+kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
+```
+
 
 
 
