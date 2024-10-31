@@ -360,6 +360,16 @@ adb reboot
 
 
 
+## APK priv-app push 
+
+```
+adb root; adb remount;  // 进行root 可以修改只读分区
+adb push （你APK的路径） /system/priv-app/
+adb reboot // 重启，android 会检索  /system/priv-app/ 的apk进行安装
+```
+
+
+
 ## APP签名文件
 
 签名文件路径如下
