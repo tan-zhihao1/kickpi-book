@@ -11,7 +11,7 @@
 ## dts
 
 ```
-longan/device/config/chips/a133/configs/c3/board.dts
+device/config/chips/a133/configs/c3/board.dts
 ```
 
 
