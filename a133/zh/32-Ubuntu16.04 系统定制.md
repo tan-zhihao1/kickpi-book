@@ -38,7 +38,7 @@ out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
 
 
 
-## ubuntu包路径
+## ubuntu 1604
 
 ubuntu 文件系统
 
@@ -48,7 +48,7 @@ device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 
 
-## chroot 修改ubuntu
+## chroot 修改 ubuntu
 
 搭建构建环境
 
@@ -57,8 +57,6 @@ sudo apt-get install binfmt-support qemu-user-static
 sudo dpkg -i ubuntu-build-service/packages/*
 sudo apt-get install -f
 ```
-
-
 
 
 
