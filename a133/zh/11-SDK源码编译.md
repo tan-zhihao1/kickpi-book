@@ -159,7 +159,7 @@ longan/kernel/linux-4.9
 
 ### **defconfig **
 
-defconfig
+路径
 
 ```
 longan/kernel/linux-4.9/arch/arm64/configs/sun50iw10p1smp_a133_android_defconfig
