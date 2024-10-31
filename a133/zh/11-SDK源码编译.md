@@ -314,6 +314,12 @@ rootfs
 
 ### defconfig 
 
+```
+kernel/linux-4.9/arch/arm64/configs/sun50iw10p1smp_defconfig
+```
+
+
+
 defconfig 修改及保存
 
 ```
