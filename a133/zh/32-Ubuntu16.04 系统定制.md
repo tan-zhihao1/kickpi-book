@@ -83,11 +83,13 @@ vim device/config/chips/a133/configs/c3/board.dts
 
 ​		确认gpio未被注册
 
-
+​	
 
 步骤四
 
 ​		通过 /sys/class/gpio/export 注册 gpio 并进行控制
+
+echo > /sys/class/gpio/export
 
 
 
