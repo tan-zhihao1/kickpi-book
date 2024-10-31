@@ -118,13 +118,9 @@ direction
 value
 	0 / 1
 	cat /sys/class/gpio/gpio232/value 		// 读取
-	echo 1 > /sys/class/gpio/gpio232/value
-	echo 0 > /sys/class/gpio/gpio232/value
+	echo 1 > /sys/class/gpio/gpio232/value	// 配置高电平
+	echo 0 > /sys/class/gpio/gpio232/value  // 配置低电平
 ```
-
-
-
-
 
 
 
