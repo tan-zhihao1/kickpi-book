@@ -83,7 +83,12 @@ vim device/config/chips/a133/configs/c3/board.dts
 
 ​		确认gpio未被注册
 
-​	
+```
+root@kickpi:~# cat /sys/kernel/debug/pinctrl/pio/pinmux-pins  | grep PH8
+pin 232 (PH8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+```
+
+
 
 步骤四
 
