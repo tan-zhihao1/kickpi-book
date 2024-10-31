@@ -351,6 +351,7 @@ h618_android12_p2_uart0-bootup-test-20241022.img
 
 ```
 adb root; adb remount;
+// adb push (要push的apk路径) 主板上路径
 adb push ./app /system/priv-app/
 adb reboot
 ```
