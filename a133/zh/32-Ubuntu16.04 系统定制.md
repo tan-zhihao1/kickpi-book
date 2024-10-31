@@ -36,9 +36,17 @@ cd -
 
 将GPIO释放出来，通过/sys/class/gpio进行控制
 
-```
-vim device/config/chips/a133/configs/c3/board.dts
+先将对应GPIO引脚注释，/sys/class/gpio/export 只能导入未注册的 gpio
 
+```diff
+vim device/config/chips/a133/configs/c3/board.dts
++ /*
+			PH8 {
+				label = "PH8";
+				gpios = <&pio PH 8 1 0 1 0>;
+				linux,default_trigger = "default-on";
+			};
++ */
 ```
 
 
