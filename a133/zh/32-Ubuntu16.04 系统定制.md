@@ -34,6 +34,13 @@ cd -
 
 当存在将拓展引脚配置为输入的需求，默认软件的gpio-led不能满足需求。
 
+将GPIO释放出来，通过/sys/class/gpio进行控制
+
+```
+vim device/config/chips/a133/configs/c3/board.dts
+
+```
+
 
 
 
