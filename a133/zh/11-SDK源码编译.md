@@ -71,6 +71,8 @@ Android系统版本：10.0
 
 * 解压源码压缩包，Git恢复源码目录
 
+  >a133-*.tar.gz 指代解压的代码压缩包
+
 ```
 mkdir sdk
 tar -zxf a133-*.tar.gz -C sdk/
