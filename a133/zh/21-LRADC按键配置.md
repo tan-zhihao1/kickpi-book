@@ -25,7 +25,7 @@
 
 LRADC 模块的设备树配置位于 longan 的内核目录 `longan/device/config/chips/a133/configs/c3/board.dts`
 
-linux 路径为 longan/device/config/chips/a133/configs/c3/board.dts
+linux 路径为 `device/config/chips/a133/configs/c3/board.dts`
 
 ```c
 sunxi_keyboard: keyboard {
