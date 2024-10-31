@@ -72,6 +72,8 @@ Android系统版本：10.0
 * 解压源码压缩包
 
 ```
+mkdir sdk
+
 $ tar -zxvf *.tar.gz
 ```
 
