@@ -176,5 +176,9 @@ $ mv /var/lib/dpkg/info_old/* /var/lib/dpkg/info/
 
 
 
+## 默认无浏览器
 
+```
+sudo apt install firefox
+```
 
