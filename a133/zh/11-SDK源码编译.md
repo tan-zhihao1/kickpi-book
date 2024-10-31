@@ -73,7 +73,7 @@ Android系统版本：10.0
 
 ```
 mkdir sdk
-tar -zxf a133-linux-20241031.tar.gz -C sdk/
+tar -zxf a133-*.tar.gz -C sdk/
 cd sdk
 git reset --hard
 ```
