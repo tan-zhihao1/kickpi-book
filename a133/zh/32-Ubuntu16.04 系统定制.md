@@ -88,6 +88,8 @@ root@kickpi:~# cat /sys/kernel/debug/pinctrl/pio/pinmux-pins  | grep PH8
 pin 232 (PH8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
 ```
 
+​		能够看到PH8未被使用，且对应 pin 值为 232
+
 
 
 步骤四
