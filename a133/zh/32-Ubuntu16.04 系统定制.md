@@ -94,9 +94,16 @@ pin 232 (PH8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
 
 步骤四
 
-​		通过 /sys/class/gpio/export 注册 gpio 并进行控制
+​		通过 /sys/class/gpio/export 注册 PH8 并进行控制
 
-echo > /sys/class/gpio/export
+```
+echo  232 > /sys/class/gpio/export
+
+```
+
+
+
+
 
 
 
