@@ -231,11 +231,9 @@ $ mv /var/lib/dpkg/info_old/* /var/lib/dpkg/info/
 
 
 
-
-
 ## 其他事项
 
-## xfce 默认无浏览器
+### xfce 默认无浏览器
 
 需要安装火狐浏览器
 
@@ -244,6 +242,8 @@ sudo apt install firefox
 ```
 
 
+
+### xrandr 无法旋转
 
 ​		a133 目前不支持 xrandr 进行旋转
 
