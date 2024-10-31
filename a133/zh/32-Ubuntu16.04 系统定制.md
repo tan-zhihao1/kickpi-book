@@ -30,6 +30,22 @@ cd -
 
 
 
+## 工具链
+
+包路径
+
+```
+build/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu.tar.xz
+```
+
+编译后工具的路径
+
+```
+out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
+```
+
+
+
 ## sys gpio控制
 
 当存在将拓展引脚配置为输入的需求，默认软件的gpio-led不能满足需求。
@@ -76,20 +92,6 @@ vim device/config/chips/a133/configs/c3/board.dts
 
 
 
-
-## 工具链
-
-包路径
-
-```
-build/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu.tar.xz
-```
-
-编译后工具的路径
-
-```
-out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
-```
 
 
 
@@ -194,7 +196,7 @@ vim build/mkcmd.sh
 
 
 
-## 替换方式修改ubuntu
+## overlay方式修改ubuntu
 
 
 
