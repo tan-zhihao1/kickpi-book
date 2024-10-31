@@ -93,8 +93,6 @@ vim device/config/chips/a133/configs/c3/board.dts
 
 
 
-
-
 ## ubuntu 1604
 
 ubuntu 文件系统
