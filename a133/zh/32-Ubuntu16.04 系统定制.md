@@ -116,7 +116,8 @@ direction
 	echo in > /sys/class/gpio/gpio232/direction
 	echo out > /sys/class/gpio/gpio232/direction
 value
-	
+	0 / 1
+	cat /sys/class/gpio/gpio232/value
 ```
 
 
