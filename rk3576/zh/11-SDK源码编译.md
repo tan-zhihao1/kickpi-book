@@ -43,7 +43,7 @@ $ sudo pip install pyelftools
 
 ## Android 编译
 
-配置环境
+### 配置环境
 
 ```
 
@@ -51,7 +51,7 @@ $ sudo pip install pyelftools
 
 
 
-全部编译
+### 全部编译
 
 ```
 ./build.sh -AUCKu
