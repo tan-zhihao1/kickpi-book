@@ -46,7 +46,22 @@ $ sudo pip install pyelftools
 ### 配置环境
 
 ```
+$ ./build.sh lunch
+will lunch sdk
 
+You're building on Linux
+Lunch menu...pick a combo:
+
+1. rk3576
+Which would you like? [0]: 1
+
+You're building on Linux
+Lunch menu...pick a combo:
+
+1. BoardConfig.mk
+2. BoardConfig-rk3576-kickpi-k7.mk
+Which would you like? [0]: 2
+switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
 ```
 
 
