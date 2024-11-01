@@ -101,6 +101,20 @@ vim device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
 
 android 环境配置使用 mm / get_build_var 等命令
 
+```makefile
+cat device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
+# lunch option1
+export TARGET_PRODUCT=rk3576_u
+
+# lunch option2
+export BUILD_VARIANT=userdebug
+
+# DTS File Name
+export KERNEL_DTS=rk3576-kickpi-k7-android
+```
+
+
+
 
 
 dts 路径
