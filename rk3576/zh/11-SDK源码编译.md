@@ -99,6 +99,10 @@ vim device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
 
 
 
+android 环境配置使用 mm / get_build_var 等命令
+
+
+
 dts 路径
 
 ```
