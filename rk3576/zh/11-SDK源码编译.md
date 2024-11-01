@@ -45,6 +45,8 @@ $ sudo pip install pyelftools
 
 ### 配置环境
 
+单独编译或全部编译前先配置环境
+
 ```
 $ ./build.sh lunch
 will lunch sdk
@@ -76,7 +78,7 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 
 ### 单独编译
 
-编译安卓
+单编安卓
 
 ```
 ```
