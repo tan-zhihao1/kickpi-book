@@ -287,6 +287,12 @@ h618 作为Launcher 由于权限限制会出现APP问题，需要针对添加权
 
 
 
+```
+LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3
+```
+
+
+
 
 
 
