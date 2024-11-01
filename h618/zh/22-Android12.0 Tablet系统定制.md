@@ -266,6 +266,8 @@ h618 作为Launcher 由于权限限制会出现APP问题，需要针对添加权
 
 
 
+
+
 没有桌面属性缺失问题，需要添加 上面两个 category
 
 ![image-20241101094329876](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20241101094329876.png)
