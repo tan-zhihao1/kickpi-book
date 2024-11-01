@@ -101,6 +101,8 @@ vim device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
 
 android 环境配置使用 mm / get_build_var 等命令
 
+先确认编译时选择的lunch
+
 ```makefile
 cat device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
 # lunch option1
