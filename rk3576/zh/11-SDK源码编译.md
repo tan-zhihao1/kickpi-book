@@ -86,12 +86,6 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 
 
 
-
-
-
-
-
-
 **固件说明**
 
 完整编译后会生成如下文件：
