@@ -274,6 +274,17 @@ h618 作为Launcher 由于权限限制会出现APP问题，需要针对添加权
 
 
 
+预置时替换原生桌面，需要添加覆盖属性
+
+```
+    overrides: [
+        "Launcher2",
+        "Launcher3",
+        "Launcher3QuickStep",
+        "Launcher3QuickStepGo",
+    ],
+```
+
 
 
 
