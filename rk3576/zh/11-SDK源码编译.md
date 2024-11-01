@@ -46,9 +46,10 @@ $ sudo pip install pyelftools
 配置环境
 
 ```
-source build/envsetup.sh
-lunch rk3576_u-userdebug
+
 ```
+
+
 
 全部编译
 
@@ -113,6 +114,13 @@ export BUILD_VARIANT=userdebug
 
 # DTS File Name
 export KERNEL_DTS=rk3576-kickpi-k7-android
+```
+
+
+
+```
+source build/envsetup.sh
+lunch rk3576_u-userdebug
 ```
 
 
