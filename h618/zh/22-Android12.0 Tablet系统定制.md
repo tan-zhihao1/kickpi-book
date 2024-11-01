@@ -360,7 +360,7 @@ adb reboot
 
 
 
-## APK priv-app push 
+## APK priv-app push 替换
 
 ```
 adb root; adb remount;  // 进行root 可以修改只读分区
