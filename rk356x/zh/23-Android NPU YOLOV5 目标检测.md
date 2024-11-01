@@ -1,6 +1,6 @@
 # 23-Android NPU YOLOV5 目标检测
 
-测试平台 K1-RK3568 
+测试平台 K1-RK3568-Android
 
 测试demo:rk-android13.0\hardware\rockchip\rknpu2\examples\rknn_yolov5_demo
 
