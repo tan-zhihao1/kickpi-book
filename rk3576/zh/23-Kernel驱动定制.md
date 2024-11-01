@@ -22,10 +22,10 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 
 默认软件拓展引脚配置为gpio-led进行控制，可以方便的输出高或低电平
 
-
-
 ```
 ```
+
+
 
 
 
