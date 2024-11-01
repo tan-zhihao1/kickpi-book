@@ -194,7 +194,7 @@ const std::string readLocale()
 
 h618-android12.0\vendor\aw\public\prebuild\apk 放你的apk和Android.bp 
 
-Android.mk
+Android.mk 方式
 
 ```
 LOCAL_PATH := $(call my-dir)
@@ -214,7 +214,7 @@ LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
 include $(BUILD_PREBUILT)
 ```
 
-Android.bp
+Android.bp 方式
 
 ```makefile
 android_app_import {
@@ -266,8 +266,6 @@ h618 作为Launcher 由于权限限制会出现APP问题，需要针对添加权
 
 
 
-
-
 没有桌面属性缺失问题，需要添加 上面两个 category
 
 ![image-20241101094329876](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20241101094329876.png)
@@ -275,6 +273,8 @@ h618 作为Launcher 由于权限限制会出现APP问题，需要针对添加权
 
 
 预置时替换原生桌面，需要添加覆盖属性
+
+Android.bp 方式
 
 ```
     overrides: [
@@ -285,15 +285,11 @@ h618 作为Launcher 由于权限限制会出现APP问题，需要针对添加权
     ],
 ```
 
-
+Android.mk 方式
 
 ```
 LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep Launcher3QuickStepGo
 ```
-
-
-
-
 
 
 
