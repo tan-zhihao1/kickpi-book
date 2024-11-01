@@ -115,16 +115,14 @@ vim device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
 
 
 
-android 环境配置
+**android 环境配置**
 
-配置环境，使用 mm / get_build_var 等命令
+配置环境，可以使用 mm / get_build_var 等安卓环境下命令
 
 ```
 source build/envsetup.sh
 lunch rk3576_u-userdebug
 ```
-
-
 
 
 
