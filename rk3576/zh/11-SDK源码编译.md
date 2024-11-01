@@ -81,7 +81,12 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 单编安卓
 
 ```
+./build.sh -Au
 ```
+
+
+
+
 
 
 
