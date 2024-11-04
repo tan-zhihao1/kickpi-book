@@ -25,7 +25,7 @@ cd longan
 // 打开menuconfig进行配置
 ./build.sh menuconfig
 
-// 保存menuconfig
+// 保存defconfig
 ./build.sh saveconfig
 ```
 
