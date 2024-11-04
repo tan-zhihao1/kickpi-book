@@ -19,8 +19,13 @@ cd longan
 
 # loadconfig|menuconfig|saveconfig|mergeconfig
 
+// 导入defconfig
 ./build.sh loadconfig
+
+// 打开menuconfig进行配置
 ./build.sh menuconfig
+
+// 保存menuconfig
 ./build.sh saveconfig
 ```
 
