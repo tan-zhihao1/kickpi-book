@@ -46,6 +46,8 @@ console:/ # echo 0 > /sys/class/leds/GPIO2_D6/brightness
 
 
 
+
+
 ### wifi
 
 ```
