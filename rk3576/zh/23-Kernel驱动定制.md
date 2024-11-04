@@ -1,7 +1,5 @@
 # Kernel驱动定制
 
-
-
 ## dts
 
 k7 安卓 dts 路径
@@ -46,12 +44,12 @@ console:/ # echo 0 > /sys/class/leds/GPIO2_D6/brightness
 
 
 
-
-
 ## wifi
 
 ```
 RKDocs/android/wifi/
+Rockchip_Introduction_REALTEK_WIFI_Driver_Porting_CN&EN.pdf
+Rockchip_Introduction_WIFI_Configuration_CN&EN.pdf
 ```
 
 
