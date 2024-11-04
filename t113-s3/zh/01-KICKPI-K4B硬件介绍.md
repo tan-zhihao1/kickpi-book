@@ -6,11 +6,9 @@
 
 ## 板卡接口
 
-![image-20240713102235737](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240713102235737.png)
+![资源 9](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/资源 9.png)
 
-
-
-![image-20240713101152025](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240713101152025.png)
+![资源 10](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/资源 10.png)
 
 
 
@@ -61,4 +59,3 @@
 
 ## 3. 扩展引脚定义
 
-![image-20240713100507130](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240713100507130.png)
