@@ -27,6 +27,12 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 
 
 
+### wifi
+
+```
+RKDocs/android/wifi/
+```
+
 
 
 
