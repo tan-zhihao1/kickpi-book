@@ -22,7 +22,6 @@ cd longan
 ./build.sh loadconfig
 ./build.sh menuconfig
 ./build.sh saveconfig
-./build.sh mergeconfig
 ```
 
 
