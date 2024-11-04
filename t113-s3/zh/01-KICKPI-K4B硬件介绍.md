@@ -4,19 +4,23 @@
 
 
 
-## 板卡接口
-
-![资源 9](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/资源 9.png)
-
-![资源 10](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/资源 10.png)
-
-
-
 
 
 ## 1. 主控信息
 
 ![image-20240713100557331](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240713100557331.png)
+
+
+
+
+
+
+
+## 板卡接口
+
+![资源 9](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/资源 9.png)
+
+![资源 10](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/资源 10.png)
 
 
 
