@@ -37,7 +37,7 @@ console:/ # cat /sys/class/leds/GPIO2_D6/brightness
 
 console:/ # echo 255 > /sys/class/leds/GPIO2_D6/brightness
 cho 0 > /sys/class/leds/GPIO2_D6/brightness                                   <
-console:/ # echo 255 > /sys/class/leds/GPIO2_D6/brightness
+console:/ # echo 0 > /sys/class/leds/GPIO2_D6/brightness
 0
 console:/ #
 ```
