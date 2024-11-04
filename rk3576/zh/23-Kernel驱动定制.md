@@ -22,7 +22,24 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 
 默认软件拓展引脚配置为gpio-led进行控制，可以方便的输出高或低电平
 
-```
+```shell
+
+console:/ # ls /sys/class/leds/
+GPIO2_D6  GPIO3_D5  GPIO4_B0  GPIO4_C7  PCIE_PWREN    mmc1::
+GPIO2_D7  GPIO4_A4  GPIO4_B1  GPIO4_D0  SDMMC0_PWREN  work
+GPIO3_D4  GPIO4_A6  GPIO4_C6  GPIO4_D1  fan
+
+console:/ # ls /sys/class/leds/GPIO2_D6/
+brightness  device  max_brightness  power  subsystem  trigger  uevent
+
+console:/ # cat /sys/class/leds/GPIO2_D6/brightness
+0
+
+console:/ # echo 255 > /sys/class/leds/GPIO2_D6/brightness
+cho 0 > /sys/class/leds/GPIO2_D6/brightness                                   <
+console:/ # echo 255 > /sys/class/leds/GPIO2_D6/brightness
+0
+console:/ #
 ```
 
 
