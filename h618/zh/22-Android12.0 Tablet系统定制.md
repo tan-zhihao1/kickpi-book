@@ -1,5 +1,31 @@
 # 22-Android12.0 Tablet系统定制
 
+## TV桌面
+
+开启Tablet对应的PRODUCT_PACKAGES
+
+```diff
+--- a/vendor/aw/homlet/homlet.mk
++++ b/vendor/aw/homlet/homlet.mk
+@@ -16,12 +16,12 @@ PRODUCT_PACKAGES += \
+     DragonSN  \
+     GalleryTV
+
+-PRODUCT_PACKAGES += \
++#PRODUCT_PACKAGES += \
+     TvLauncher \
+     TvSettings
+
+-#PRODUCT_PACKAGES += \
+-       Launcher3 \
++PRODUCT_PACKAGES += \
++       Launcher3 \
+        Settings \
+        SystemUI
+```
+
+
+
 ## Tablet 桌面
 
 开启Tablet对应的PRODUCT_PACKAGES
