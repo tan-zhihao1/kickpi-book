@@ -102,7 +102,8 @@ $ ls -al
 $ git reset --hard
 ```
 
-
+> 注意：请在Linux下操作 并且安装了git
+>
 
 ### 获取文件系统镜像
 
@@ -317,6 +318,7 @@ $ md5sum -c *.md5
 
 ```
 $ tar -zxvf rk356x-android13-*.tar.gz
+$ cd rk356x-android13-*
 $ git reset --hard
 ```
 
