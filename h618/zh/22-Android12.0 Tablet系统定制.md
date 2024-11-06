@@ -487,7 +487,7 @@ debug           hdcp_dump  hdmi_source  phy_read   scdc_read
 
 ## 网络ADB
 
-网口ADB需要先adb启动端口服务后
+网口ADB需要先adb启动5555端口服务后
 
 ```
 PS C:\Users\16708\Desktop> adb tcpip 5555
