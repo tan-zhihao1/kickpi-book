@@ -1,4 +1,4 @@
-# 22-Android12.0 Tablet系统定制
+# 21-Android12.0 系统定制
 
 ## TV桌面
 
@@ -11,15 +11,15 @@
      DragonSN  \
      GalleryTV
 
--PRODUCT_PACKAGES += \
-+#PRODUCT_PACKAGES += \
+-#PRODUCT_PACKAGES += \
++PRODUCT_PACKAGES += \
      TvLauncher \
      TvSettings
 
--#PRODUCT_PACKAGES += \
--       Launcher3 \
-+PRODUCT_PACKAGES += \
-+       Launcher3 \
+-PRODUCT_PACKAGES += \
+       Launcher3 \
++#PRODUCT_PACKAGES += \
+       Launcher3 \
         Settings \
         SystemUI
 ```
