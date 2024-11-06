@@ -483,3 +483,20 @@ cec_simulation  esm_dump   hdmi_sink    phy_power  rxsense
 debug           hdcp_dump  hdmi_source  phy_read   scdc_read
 ```
 
+
+
+## 网络ADB
+
+```
+PS C:\Users\16708\Desktop> adb tcpip 5555
+PS C:\Users\16708\Desktop> adb connect 192.168.77.170
+connected to 192.168.77.170:5555
+PS C:\Users\16708\Desktop> adb devices
+List of devices attached
+7c001075a313c7c1c12     device
+192.168.77.170:5555     device
+
+PS C:\Users\16708\Desktop> adb -s 192.168.77.170:5555 shell
+apollo-p2:/ $ su
+```
+
