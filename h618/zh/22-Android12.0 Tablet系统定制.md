@@ -502,3 +502,18 @@ PS C:\Users\16708\Desktop> adb -s 192.168.77.170:5555 shell
 apollo-p2:/ $ su
 ```
 
+开机默认启动5555端口
+
+需要通过USB adb操作
+
+```
+ adb root
+ adb remount
+ adb pull /system/build.prop
+ //在build.prop中加入
+ //添加这一行
+ service.adb.tcp.port=5555
+ //替换进入
+ adb push .\build.prop /system/build.prop
+```
+
