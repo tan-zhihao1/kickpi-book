@@ -168,6 +168,8 @@ $ ./build.sh   //h618-android12.0下的build.sh
 
 > 镜像生成目录：longan/out/h618_android12_p2_uart0.img
 
+注意：如果编译Android的时候失败了，没有明显的报错，修改build.sh 里面Android编译的进程数，将64减小至你设备的实际情况。
+
 ### 单独编译分区镜像
 
 **单独编译Uboot**
