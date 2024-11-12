@@ -48,6 +48,12 @@ out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
 
 ## pin脚计算
 
+一组按32位算
+
+如 PB2 为 2 组，2号
+
+32 x ( 2 - 1) + 2 = 
+
 
 
 ## sys gpio控制
