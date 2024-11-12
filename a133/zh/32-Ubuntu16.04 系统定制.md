@@ -46,6 +46,10 @@ out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
 
 
 
+## pin脚计算
+
+
+
 ## sys gpio控制
 
 当存在将拓展引脚配置为输入的需求，默认软件的gpio-led不能满足需求。
