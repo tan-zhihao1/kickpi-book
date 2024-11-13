@@ -1,22 +1,22 @@
-# 31-扩展引脚配置
+# 31-Extended pin configuration
 
 
 
 
 
-## 配置文件路径
+## profile path
 
-扩展引脚配置 仅需要修改设备树文件，以下分别例举Android、Linux SDK对应的设备树路径
+Extended pin configuration, only need to modify the device tree file, the following examples are Android, Linux SDK corresponding device tree path
 
 
 
-**Android SDK设备树路径**
+**Android SDK device tree path**
 
 ```
 $ vim longan/device/config/chips/h618/configs/p2/board.dts
 ```
 
-**Linux SDK设备树路径**
+**Linux SDK device tree path**
 
 ```
 $ vim source/kernel/linux-5.4-h618/arch/arm64/boot/dts/sunxi/sun50iw9-lubancat-a1.dts
@@ -26,23 +26,17 @@ $ vim source/kernel/linux-5.4-h618/arch/arm64/boot/dts/sunxi/sun50iw9-lubancat-a
 
 
 
-## 示例功能配置
+## sample feature configuration
 
 
 
-### GPIO输出
+### GPIO output
 
-K2B开发板默认配置两路GPIO输出功能，分别为PC12（12脚）、PC7（14脚）
-
-注意：其他引脚已配置为其他功能，若要配置为GPIO功能，则需要先把默认功能去掉
-
-GPIO输出 提供两种控制方式，分别为gpio-leds、gpio_para
+The K2B development board is configured with two GPIO output functions by default, namely PC12 (12 pins) and PC7 (14 pins). Note: Other pins have been configured for other functions. If you want to configure them as GPIO functions, you need to remove the GPIO output from the default function and provide two control methods, namely gpio-leds, gpio_para
 
 **gpio-leds**
 
-gpio-leds 是LINUX内核自带的GPIO控制驱动，可实现丰富的控制方式
-
-以下示例为 系统运行指示灯配置，实现心跳闪烁功能
+GPIO-leds is the GPIO control driver that comes with the LINUX kernel, which can realize rich control methods. The following example is the system running indicator configuration to realize the heartbeat flashing function
 
 ```
 /{
@@ -63,9 +57,9 @@ gpio-leds 是LINUX内核自带的GPIO控制驱动，可实现丰富的控制方�
 
 **gpio_para**
 
-gpio-para 是全志的GPIO控制驱动，可实现简单的电平高低控制
+GPIO-para is a GPIO control driver for Allwinner, which can realize simple level control. 
 
-以下示例为 扩展引脚PC7、PC12的配置
+The following example is the configuration of the expansion pins PC7 and PC12
 
 ```
 &soc {
@@ -82,7 +76,7 @@ gpio-para 是全志的GPIO控制驱动，可实现简单的电平高低控制
 
 
 
-### GPIO按键
+### GPIO key
 
 ```
 /{
