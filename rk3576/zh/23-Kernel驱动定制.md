@@ -5,13 +5,24 @@
 配置
 
 ```makefile
+// 配置环境
 $ SDK_BUILD_TOP=`pwd`
 $ export PATH=$SDK_BUILD_TOP/prebuilts/clang/host/linux-x86/clang-r487747c/bin:$PATH
+
+// 加载defconfig
 $ cd kernel-6.1
 $ make CROSS_COMPILE=aarch64-linux-gnu- LLVM=1 LLVM_IAS=1 ARCH=arm64 rockchip_defconfig android-14.config pcie_wifi.config rk3576.config
+
+// 配置
 $ make ARCH=arm64 menuconfig
+
+// 保存
 $ make ARCH=arm64 savedefconfig
+
+// 检查修改差异
 $ diff defconfig arch/arm64/configs/rockchip_defconfig
+
+// 覆盖默认defconfig
 $ cp defconfig arch/arm64/configs/rockchip_defconfig
 ```
 
