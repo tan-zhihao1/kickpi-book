@@ -1,12 +1,12 @@
-## 33-linux QT应用编译环境搭建
+## 33-Linux QT application compilation environment construction
 
-### QT Creator环境配置
+### QT Creatorenvironment configuration
 
-qmake工具
+qmake tool
 
-1.查看当前Linux系统架构 uname -m 
+1.View current Linux architecture `uname -m` 
 
-2.安装依赖
+2.install dependencies
 
 ```
 sudo apt-get install build-essential perl python3 git
@@ -17,31 +17,31 @@ sudo apt-get install libasound2-dev libgstreamer1.0-dev libgstreamer-plugins-bas
 sudo apt install clang libclang-dev
 ```
 
-[qt不在维护版本](https://download.qt.io/new_archive/qt/)
+[qt Not in maintenance version](https://download.qt.io/new_archive/qt/)
 
-[qt在维护版本](https://download.qt.io/official_releases/qt/)
+[qt In the maintenance version](https://download.qt.io/official_releases/qt/)
 
-推荐使用qt5.12.2 qtcreator 4.11.1
+It is recommended to use qt5.12.2 qtcreator 4.11.1 
 
-选择你需要的版本
+choose the version you need
 
 ![image-20241028093459681](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093459681.png)
 
-选择single
+Select single
 
 ![image-20241028093254591](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093254591.png)
 
-选择tar.xz
+Select  tar.xz
 
 ![image-20241028093434074](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093434074.png)
 
-下载后进行解压在opt文件夹中
+Unzip it after downloading in the opt folder
 
 ```
 sudo tar -xvf qt-everywhere-src-5.14.2.tar.xz -C /opt/
 ```
 
-解压完成后进入文件夹，并建立auto.sh脚本文件。
+After the decompression is complete, enter the folder and create auto.sh script file.
 
 ```
 sudo vim auto.sh
@@ -72,48 +72,48 @@ sudo chmod 755 auto.sh
 sudo ./auto.sh
 ```
 
-脚本是为了执行./configure
--prefix /opt/Qt/ \ Qt安装路径
--opensource -confirm-license \ 安装版本，社区版还是商业版
--nomake examples \ 不编译安装例子
--nomake tests \ 不编译安装测试
--release \ release编译
--skip qt3d \ 跳过编译模块
--skip qtcharts \ 跳过编译模块
--skip qtandroidextras \ 跳过编译模块
--skip qtlocation \ 跳过编译模块，此模块容易出错
--skip qtmultimedia \ 跳过编译模块
--skip qtsensors \ 跳过编译模块
--skip qtserialbus \ 跳过编译模块
--skip qtserialport \ 跳过编译模块
--skip qtwayland \ 跳过编译模块
--skip qtwebengine \ 跳过编译模块，此模块容易出错
+The script is to execute./configure
+-prefix /opt/Qt/ \ Qt installation path
+- opensource-confirm-license \ installation version, community edition or commercial edition
+-nomake examples \ Do not compile installation examples
+-nomake tests \ Does not compile installation tests
+-release \ release Compile
+-skip qt3d \ skips compiling modules
+-skip qtcharts \ skips compiling modules
+-skip qtandroidextras \ skips compiling modules
+-skip qtlocation \ skips the compilation module, which is error-prone
+-skip qtmultimedia \ skips the compilation module
+-skip qtsensors \ Skip compiling modules
+-skip qtserialbus \ skips compiling modules
+-skip qtserialport \ skips compiling modules
+-skip qtwayland \ skips compiling modules
+-skip qtwebengine \ skips the compilation module, which is error-prone
 
-qtlocation qtwebengine ，如果不是特别需要这两个模块，建议放弃编译
-这些命令在解压后的README中有说明
-执行后根据提示进行改进，大部分提示错误是依赖安装不全
-执行
+qtlocation qtwebengine, if you do not specifically need these two modules, it is recommended not to compile
+These commands are described in the unzipped README
+After the execution, improve the system as prompted. Most of the errors are due to incomplete installation
+Carry out
 
 ```
 sudo make -j4
 ```
 
-时间较长，基于板子功能4-12小时
+Long time, 4-12 hours based on board function
 
-##### FAQ ：如果已经安装python3，但是构建过程中提示缺少了 Python 解释器。可以创建一个符号链接：
+##### FAQ: If you have already installed python3, but the Python interpreter is missing during the build process, you can create a symbolic link:
 
 ```
 sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
 
-完成后执行
+Execute after completion
 
 ```
 sudo make install
 ```
 
-此命令会将程序安装在/opt/Qt/ 中。
-安装成功后修改环境变量：
+This command installs the program in/opt/Qt/.
+Modify environment variables after successful installation:
 
 ```
 sudo vim /etc/profile
@@ -130,55 +130,45 @@ export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH
 source /etc/profile/
 ```
 
-最后执行`qmake -v`
+final execution`qmake -v`
 
 ![image-20241028094050024](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028094050024.png)
 
-### 编译安装qtcreator
+### Compile and install qtcreator
 
-安装qtcreator必须先安装Qt，用Qt编译qtcreator，如果编译Qt出错，这个位置编译也会出错。如果Qt编译时，有未编译的模块或者含有不依赖的模块，qt编译不受影响，但是qtcreator会有影响。我试过加-no-opengl \，编译qt没有错误，安装也可以，编译qtcreator出错。
+To install qtcreator, you must first install Qt and compile qtcreator with Qt. If there is an error in compiling Qt, the compilation at this location will also error. If there are uncompiled modules or undependent modules when Qt is compiled, the qt compilation will not be affected, but the qtcreator will be affected. I tried adding -no-opengl\, and there is no error in compiling qt. You can install it, but the qtcreator will fail.
 
-Qtcreator最好和Qt版本相对应
-[Qtcreator源码](https://download.qt.io/archive/qtcreator/)
+Qtcreator should preferably correspond to the Qt version
+[Qtcreator source code](https://download.qt.io/archive/qtcreator/)
 
 ![image-20241028094210629](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028094210629.png)
 
-下载完成后解压
-这里默认上面教程以完成好以后：
-进入解压路径，执行
+Unzip after download is complete
+Here, the above tutorial is defaulted to after completion:
+Enter the decompression path and execute
 
 ```
 qmaek -r
 ```
 
-等待完成后生成MakeFile文件。
-然后执行
+Wait for the MakeFile file to be generated after completion.
+Then execute
 
 ```
 sudo make -j4
 ```
 
-等待编译完成后，执行
+After the compilation is completed, execute
 
 ```
 sudo make install
 ```
 
-执行完
-
-打开bin文件夹就会有qtcreator和qtcreator.sh
-执行`./qtcreator.sh &`
-这样qtcreator会在后台运行。
-最后配置qtcreator即可。
-工具—>选项—>Kits
-
-Kits选择gcc为板子对应的编译工具链即可，一般qtcreator默认设配好
-
-gcc工具版本
-
-选择uname -r对应的交叉编译工具即可
-
-最好使用SDK里面相同版本号的交叉编译工具
+After execution, open the bin folder and there will be qtcreator and qtcreator.sh
+Execute./qtcreator.sh &
+This way qtcreator will run in the background.
+Finally, you can configure qtcreator.
+Tools - > Options - > Kits Kits Select gcc as the compilation toolchain corresponding to the board. Generally, qtcreator is equipped with the gcc tool version by default, and select the cross-compilation tool corresponding to uname -r. It is best to use the cross-compilation tool with the same version number in the SDK.
 
 ![image-20241028095022662](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028095022662.png)
 
