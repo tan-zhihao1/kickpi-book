@@ -18,6 +18,9 @@ kernel-6.1/kernel/configs
 	rockchip_defconfig 
 	android-14.config 
 	pcie_wifi.config 
+	
+	
+kernel-6.1/arch/arm64/configs/rk3576.config
 	rk3576.config
 ```
 
