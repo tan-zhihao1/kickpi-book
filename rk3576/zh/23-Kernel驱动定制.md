@@ -1,5 +1,13 @@
 # Kernel驱动定制
 
+## config
+
+```
+rockchip_defconfig android-14.config pcie_wifi.config rk3576.config
+```
+
+
+
 ## dts
 
 k7 安卓 dts 路径
