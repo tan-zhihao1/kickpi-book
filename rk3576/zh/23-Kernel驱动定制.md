@@ -8,6 +8,12 @@ rockchip_defconfig android-14.config pcie_wifi.config rk3576.config
 
 
 
+```
+make CROSS_COMPILE=aarch64-linux-gnu- LLVM=1 LLVM_IAS=1 ARCH=arm64 rockchip_defconfig android-14.config pcie_wifi.config rk3576.config
+```
+
+
+
 ## dts
 
 k7 安卓 dts 路径
