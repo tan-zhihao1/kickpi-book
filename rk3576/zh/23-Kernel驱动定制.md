@@ -15,12 +15,11 @@ make CROSS_COMPILE=aarch64-linux-gnu- LLVM=1 LLVM_IAS=1 ARCH=arm64 rockchip_defc
 
 ```
 kernel-6.1/kernel/configs
-	rockchip_defconfig 
 	android-14.config 
 	pcie_wifi.config 
 	
-	
 kernel-6.1/arch/arm64/configs/rk3576.config
+	rockchip_defconfig 
 	rk3576.config
 ```
 
