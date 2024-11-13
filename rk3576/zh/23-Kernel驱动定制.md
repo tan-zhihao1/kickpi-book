@@ -30,7 +30,11 @@ kernel-6.1/arch/arm64/configs/rk3576.config
 注意
 
 ```
-rockchip_defconfig android-14.config pcie_wifi.config rk3576.config
+rockchip_defconfig 
+android-14.config 
+pcie_wifi.config 
+rk3576.config
+是依次加载覆盖的，如果编译后
 ```
 
 
