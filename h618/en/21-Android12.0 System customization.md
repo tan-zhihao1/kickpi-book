@@ -1,8 +1,8 @@
-# 21-Android12.0 系统定制
+# 21-Android12.0 system customization
 
-## TV桌面
+## TV desktop
 
-开启Tablet对应的PRODUCT_PACKAGES
+Open the PRODUCT_PACKAGES corresponding to the tablet
 
 ```diff
 --- a/vendor/aw/homlet/homlet.mk
@@ -26,9 +26,9 @@
 
 
 
-## Tablet 桌面
+## Tablet desktop
 
-开启Tablet对应的PRODUCT_PACKAGES
+Open the PRODUCT_PACKAGES corresponding to the tablet
 
 ```diff
 --- a/vendor/aw/homlet/homlet.mk
@@ -52,23 +52,23 @@
 
 
 
-## APP 、文件编译不生效问题
+## APP and file compilation do not take effect
 
-android 为惰性编译，直接替换后编译，一些APP、文件不一定编译到镜像中
+Android is a lazy compilation, which is directly replaced and then compiled. Some APPs and files may not be compiled into the mirror. 
 
-可以通过如下其中一种方式解决
+They can be solved in one of the following ways
 
 1. make installclean
 
 2. rm out/target/product/apollo-p2/xxx/xxx
 
-3. 编译的条件发生变化（比如文件名、APK名）
+3. The compilation conditions change (such as file name, APK name).
 
 
 
-## 开机LOGO
+## boot logo
 
-logo 替换路径
+logo alternate path
 
 ```
 longan/device/config/chips/h618/boot-resource/boot-resource/bootlogo.bmp
@@ -76,15 +76,15 @@ longan/device/config/chips/h618/boot-resource/boot-resource/bootlogo.bmp
 
 
 
-## 开机动画
+## boot animation
 
-支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
+Support bootanimation.mp4 and bootanimation.zip two file formats
 
-两种文件同时存在播放 mp4 优先级比 zip 高 ，具体优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
+The two files exist at the same time to play mp4 with a higher priority than zip. For the specific priority, see frameworks/base/cmds/bootanimation/BootAnimation.cpp
 
 
 
-修改路径
+Modify path
 
 ```
 device/softwinner/apollo/common/media/config.mk
@@ -92,7 +92,7 @@ device/softwinner/apollo/common/media/config.mk
 
 
 
-bootanimation.zip 格式
+bootanimation.zip format
 
 ```makefile
 PRODUCT_COPY_FILES += \
@@ -101,20 +101,20 @@ PRODUCT_COPY_FILES += \
 
 
 
-bootanimation.mp4 格式
+bootanimation.mp4 format
 
 ```makefile
 PRODUCT_COPY_FILES += \
     $(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
 ```
 
-* 烧录镜像后第一次启动的开机动画是原生Android，需要重启显示替换的开机动画
+* The boot animation started for the first time after burning the mirror is native Android, and a restart is required to display the replacement boot animation.
 
 
 
-## 默认语言
+## default language
 
-persist.sys.locale 属性
+persist.sys.locale attribute
 
 ```
 device/softwinner/apollo/apollo_p2.mk
@@ -124,7 +124,7 @@ device/softwinner/apollo/apollo_p2.mk
 
 
 
-persist.sys.country 以及 persist.sys.language 属性
+persist.sys.country And the persist.sys.language property
 
 ```diff
 --- a/device/softwinner/apollo/apollo_p2.mk
@@ -141,7 +141,7 @@ persist.sys.country 以及 persist.sys.language 属性
 
 
 
-PRODUCT_LOCALES 配置
+PRODUCT_LOCALES configuration
 
 ```makefile
 $ vim build/target/product/full_base.mk
@@ -150,14 +150,14 @@ $ vim build/target/product/full_base.mk
 
 
 
-| 选项  | 描述 |
-| ----- | ---- |
-| en_US | 英文 |
-| zh_CN | 中文 |
+| options | describe |
+| ------- | -------- |
+| en_US   | English  |
+| zh_CN   | Chinese  |
 
 
 
-locale 获取优先级 frameworks/base/core/jni/AndroidRuntime.cpp
+locale Obtain priority. frameworks/base/core/jni/AndroidRuntime.cpp
 
 ```java
 /*
@@ -214,13 +214,13 @@ const std::string readLocale()
 
 
 
-## 内置第三方 APP
+## Built-in third-party APP
 
-比如新增 test.apk 
+Such as new test.apk 
 
-h618-android12.0\vendor\aw\public\prebuild\apk 放你的apk和Android.bp 
+h618-android12.0\vendor\aw\public\prebuild\apk Put your apk and Android.bp 
 
-Android.mk 方式
+Android.mk way
 
 ```
 LOCAL_PATH := $(call my-dir)
@@ -240,7 +240,7 @@ LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
 include $(BUILD_PREBUILT)
 ```
 
-Android.bp 方式
+Android.bp way
 
 ```makefile
 android_app_import {
@@ -260,7 +260,7 @@ android_app_import {
 }
 ```
 
-在/vendor/aw/homlet/homlet.mk加入编译
+ /vendor/aw/homlet/homlet.mk add compilation
 
 ```makefile
 PRODUCT_PACKAGES += \
@@ -269,13 +269,13 @@ PRODUCT_PACKAGES += \
 
 
 
-## 开机自启动 APP
+## Boot self-starting APP
 
-### **Launcher方式启动**
+### Launcher mode
 
-此方式替换桌面，返回 HOME 为 替换后的APP
+Replace the desktop in this way, return HOME as, and replace the APP.
 
-要让 APP 作为 Launcher 开机自启动，需要在 AndroidManifest.xml 中添加两个 category
+To make the APP boot as a Launcher, you need to add two categories to AndroidManifest.xml.
 
 ```xml
 <activity android:name=".MainActivity">
@@ -286,21 +286,19 @@ PRODUCT_PACKAGES += \
 </activity>
 ```
 
-
-
-h618 作为Launcher 由于权限限制会出现APP问题，需要针对添加权限， 参考 [APP特殊权限问题](## APP特殊权限问题)
-
-
-
-没有桌面属性缺失问题，需要添加 上面两个 category
-
-![image-20241101094329876](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20241101094329876.png)
+H618 As a Launcher, there will be APP problems due to permission restrictions. You need to add permissions. Please refer to [APPspecial permission issue](## APP特殊权限问题)
 
 
 
-预置时替换原生桌面，需要添加覆盖属性
+There is no missing desktop attribute problem, you need to add the above two categories.
 
-Android.bp 方式
+![image-20241101094329876](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241101094329876.png)
+
+
+
+Replace the native desktop when preset, you need to add an overlay attribute
+
+Android.bp way
 
 ```
     overrides: [
@@ -311,7 +309,7 @@ Android.bp 方式
     ],
 ```
 
-Android.mk 方式
+Android.mk way
 
 ```
 LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep Launcher3QuickStepGo
@@ -319,13 +317,13 @@ LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep Launcher3Quic
 
 
 
-### 后台调用方式
+### background call method
 
-此方式通过接收开机完成广播调起APK，可返回原本桌面
+In this way, the APK can be called up by receiving the boot completion broadcast, and the original desktop can be returned.
 
-**通过接收开机广播完成后，启动APP**
+**After receiving the boot broadcast and completing it, start the APP.**
 
-1、修改增加 APP 的权限以及广播接收  AndroidManifest.xml
+1、Modify and increase the permissions of the APP and broadcast reception  AndroidManifest.xml
 
 ```
 <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
@@ -347,7 +345,7 @@ LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep Launcher3Quic
 
 
 
-2、增加广播接收 MyReceiver.java
+2、Add broadcast reception MyReceiver.java
 
 ```
 package com.example.myapplication;
@@ -374,11 +372,11 @@ public class MyReceiver extends BroadcastReceiver {
 
 
 
-3、预装app 到 /system/priv-app/
+3、Pre-install the app to /system/priv-app/
 
-* 方式一，编译预装到源码，参考 [内置第三方APP](# 6. 内置第三方APP)
+* Method 1, compile and pre-install into the source code, refer to, and build-in third-party APP.
 
-* 方式二，push 方式预装
+* Method 2, push method pre-installed
 
   ```
   adb root; adb remount;
@@ -386,19 +384,19 @@ public class MyReceiver extends BroadcastReceiver {
   ```
   
 
-h618 预装到 priv-app 由于权限限制会出现APP问题，需要针对添加权限， 参考 [APP特殊权限问题](## APP特殊权限问题)
+H618 is pre-installed into private-app. Due to permission restrictions, there will be APP problems. For adding permissions, please refer to the APP special permission problem.
 
 
 
-4、由于权限问题相对比较繁琐，提供镜像支持唤醒 /system/app/ 路径下的app
+4、Due to the relatively cumbersome permission issues, providing mirroring support wakes up the app under the /system/app/path
 
 ```
 h618_android12_p2_uart0-bootup-test-20241022.img
 ```
 
-* 首先确认adb install 是否能正常打开apk
-* 卸载apk
-* 通过adb push 方式安装为system app
+* First confirm whether adb install can open apk normally 
+* Uninstall apk 
+* Install as system app through adb push
 
 ```
 adb root; adb remount;
