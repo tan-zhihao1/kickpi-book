@@ -1,8 +1,8 @@
-# 30-Kernel defconfig配置
+# 30-Kernel defconfig configuration
 
-## Android配置defconfig
+## Android configuration  deconfig
 
-内核路径
+kernel path
 
 ```
 longan/kernel/linux-5.4/
@@ -10,26 +10,26 @@ longan/kernel/linux-5.4/
 
 
 
-kernel config 配置相关命令
+Kernel config configuration related commands
 
 ```
 cd longan
 
 # loadconfig|menuconfig|saveconfig|mergeconfig
 
-// 导入defconfig
+// Import defconfig
 ./build.sh loadconfig
 
-// 打开menuconfig进行配置
+// Open menuconfig for configuration
 ./build.sh menuconfig
 
-// 保存defconfig
+// save defconfig
 ./build.sh saveconfig
 ```
 
 
 
-## 开启 DEBUG_FS
+## open DEBUG_FS
 
 ```
 Kernel hacking > 

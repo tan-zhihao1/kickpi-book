@@ -25,7 +25,7 @@ sudo passwd root
 
 ## Make an SD startup card
 
-Ubuntu22.04 系统 仅提供镜像文件，编译可参考 ARMBIAN SDK
+Ubuntu 22.04 system, only image files are provided, please refer to the ARMBIAN SDK for compilation.
 
 
 
