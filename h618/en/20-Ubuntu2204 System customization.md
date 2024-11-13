@@ -1,12 +1,12 @@
-# 20-Ubuntu2204系统
+# 20-Ubuntu2204 system
 
 
 
-### Linux系统登陆用户密码
+### Linux system login user password
 
-Ubuntu系统用户名/密码：kickpi/kickpi
+Ubuntu system username/password: kickpi/kickpi
 
-系统默认没有ROOT密码，su不成功，需要配置ROOT密码
+The system does not have a ROOT password by default, su is unsuccessful, and the ROOT password needs to be configured.
 
 ```
 sudo passwd root
@@ -14,7 +14,7 @@ sudo passwd root
 
 
 
-## Linux换默认登录用户
+## Linux change default login user
 
 /lib/systemd/system/serial-getty@.service.d/override.conf
 
@@ -23,7 +23,7 @@ sudo passwd root
 
 
 
-## 制作SD启动卡
+## Make an SD startup card
 
 Ubuntu22.04 系统 仅提供镜像文件，编译可参考 ARMBIAN SDK
 
@@ -33,29 +33,29 @@ Ubuntu22.04 系统 仅提供镜像文件，编译可参考 ARMBIAN SDK
 
 
 
-## 备份SD卡系统
+## Backup SD card system
 
 #### 全志-tina
 
-接好U盘在电脑上，大小至少16GB以上，打包出来的镜像会比较大
+Connect the U disk on the computer, the size is at least 16GB or more, and the packaged image will be relatively large.
 
-在板子上运行我们的打包脚本
+Run our packaging script on the board
 
 ```
 sudo ./out_rootfs.sh /mnt/usb/ -t ext4
 ```
 
-> 生成的包名格式如：Ubuntu22.04.5LTS_ztl_ext4_202411131114.img
+> The generated package name format is as follows：Ubuntu22.04.5LTS_ztl_ext4_202411131114.img
 
-等待打包结束
+Wait for the packaging to end.
 
-将这个镜像替换原本的out/h618-linux/rootfs.img
+Replace this mirror with the original out/h618-linux/rootfs.img
 
-如果需要对rootfs.img进行再进一步的修改，可以`sudo mount ./rootfs.img  /test_rootfs/` 挂载出 rootfs.img里面的内容
+If you need to make further changes to rootfs.img, you can `sudo mount./rootfs.img /test_rootfs/` mount the contents of rootfs.img
 
 
 
-修改镜像打包分区
+Modify the image packaging partition
 
 ```
 diff --git a/device/config/chips/h618/configs/p2/linux/sys_partition.fex b/device/config/chips/h618/configs/p2/linux/sys_partition.fex
@@ -67,25 +67,25 @@ index a5fa88c88..67fb67b5b 100755
  [partition]
      name         = rootfs
 -    size         = 8388608
-+    size         = 16777216  (修改到能容纳你rootfs.img的大小)
++    size         = 16777216  (Modify it to the size that can accommodate your rootfs.img)
      downloadfile = "rootfs.fex"
      user_type    = 0x8000
 
 ```
 
-然后`pack` 打包成固件烧录即可
+Then `pack` it into firmware and burn it.
 
-## 定制系统功能
-
-
+## Customize system functions
 
 
 
 
 
-## 更换开机动画图片
 
-* 替换开机动画图片
+
+## Replace the boot animation picture.
+
+* Replace boot animation picture
 
 ```
 /usr/share/plymouth/ubuntu-logo.png
@@ -93,13 +93,13 @@ index a5fa88c88..67fb67b5b 100755
 /usr/share/plymouth/themes/spinner/bgrt-fallback.png
 ```
 
-> 将自定义图片替换到以上三处路径
+> Replace the custom image with the above three paths
 >
-> 注意图片格式为PNG
+> Note that the image format is PNG.
 
 
 
-* 更新开机动画图片
+* Update boot animation picture
 
 ```
 $ sudo update-initramfs -u
@@ -108,17 +108,17 @@ $ reboot
 
 
 
-### 设置开机自启动命令
+### Set boot self-start command
 
-把需要的命令写到系统里面的/etc/rc.local
+Write the required commands into the system /etc/rc.local
 
 
 
-### 设置wifi热点模式
+### Set the wifi hotspot mode
 
 ```
 iw list | grep AP
-#查看是否支持AP模式
+#Check if AP mode is supported
 Device supports AP-side u-APSD.
 		 * AP
 		 * AP/VLAN
@@ -133,28 +133,28 @@ Device supports AP-side u-APSD.
 		 * AP/VLAN: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
 		 * AP: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0
 		 * AP/VLAN: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0
-# AP/VLAN则可以表示硬件支持
+# AP/VLAN It can indicate hardware support
 
-#创建依赖
+#Create dependencies
 sudo apt-get install util-linux hostapd dnsmasq iptables iproute2 haveged 
 
-# 创建虚拟网卡
+# Create a virtual network interface card
 sudo iw dev <wirelessname> interface add <virtualwlanname> type __ap  
-# <wirelessname> 是真实无线网卡名，可通过ifconfig查看，<virtualwlanname>是虚拟的无线网卡名
-#例如命令 
+# < WirelessName > is the real wireless network interface card name, which can be viewed through ifconfig,  #<virtualwlanname > is the virtual wireless network interface card name
+#Such as command 
 sudo iw dev wlan0 interface add wlo2 type __ap
 
-#为虚拟网卡添加物理地址
+#Add physical address for virtual network interface card
 sudo ip link set dev <virtualwlanname> address 22:33:44:55:66:00
-# 随意填写，假如冲突则换一个，<virtualwlanname>是虚拟的无线网卡名
-#例如命令：
+# Feel free to fill in, if there is a conflict, change it, < virtualwlanname > is the virtual wireless      # network interface card name
+#For example, the command:
 sudo ip link set dev wlo2 address 22:33:44:55:66:00
 
-#查看创建情况
+#View creation status
 sudo iw dev <virtualwlanname> info
 sudo iw dev wlo2 info
 
-# 输出内容类似
+# The output is similar
    Interface wlo2
 	ifindex 5
 	wdev 0x5
@@ -165,44 +165,45 @@ sudo iw dev wlo2 info
 	multicast TXQ:
 		qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytestx-packets
 		0	0	0	0	0	0	0	0	0
-# 注意：重启电脑后，这里创建的虚拟网卡就会失效
-# 注意：重启电脑后，这里创建的虚拟网卡就会失效
-# 注意：重启电脑后，这里创建的虚拟网卡就会失效
+#Note: After restarting the computer, the virtual network interface card created here will be invalid
+#Note: After restarting the computer, the virtual network interface card created here will be invalid
+#Note: After restarting the computer, the virtual network interface card created here will be invalid
 
 
-1. 下载安装工具 create_ap
+1. Download the installation tool create_ap
 git clone https://github.com/oblique/create_ap
 cd */create_ap
 sudo make install
 
 
-2. 使用create_ap创建热点
+2. Use create_ap to create hotspots
 
 sudo create_ap -c 11 <virtualwlanname> <wirelessname> <SSID> <password> 
 
-# <wirelessname> 是你的无线网卡的姓名，<virtualwlanname> 虚拟网卡名，<SSID> <password>分别是创建的热点wifi名和密码
-#例如 
+# < WirelessName > is the name of your wireless network interface card, < virtualwlanname > virtual network interface card name, < SSID > < password > is the hotspot wifi name and password created respectively
+#For example 
 sudo create_ap -c 11 wlo2 wlan0 m3 88888888
 
-3. 如果创建的热点卡住
-开启热点时报如下错误:
+3. If the created hotspot gets stuck
+Open Hotspot Times with the following error:
 #RTNETLINK answers: Device or resource busy
 
 #ERROR: Maybe your WiFi adapter does not fully support virtual interfaces.
      #  Try again with --no-virt.
      
-可以如下操作停止之前创建的热点，然后重启开启热点。
-sudo create_ap --stop <virtualwlanname>  #<virtualwlanname> 虚拟网卡名
+You can stop the hotspot created before, and then restart the hotspot as follows.
+sudo create_ap --stop <virtualwlanname>  
+#<virtualwlanname> Virtual network interface card name
 
 
 ```
 
 
 
-### SSH登录
+### SSH login
 
-ubuntu-server版系统默认安装了有SSH
-打开Windows cmd
+The ubuntu-server version system has SSH installed by default.
+Open Windows cmd
 
 ```
 ssh kickpi@<IP>   //密码 kickpi
