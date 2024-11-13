@@ -8,7 +8,7 @@
 | -------------- | ------------------------------------------------------------ |
 | PCB Size       | 81mm * 55mm                                                  |
 | SoC            | Allwinner H618                                               |
-| CPU            | 四核Cortex-A55                                               |
+| CPU            | quad core Cortex-A55                                         |
 | GPU            | Mali G31 2EE                                                 |
 | DDR            | 1G / 2G / 4G                                                 |
 | eMMC           | 8G / 16G / 32G                                               |

@@ -39,7 +39,7 @@ Ubuntu 22.04 system, only image files are provided, please refer to the ARMBIAN 
 
 ## Backup SD card system
 
-#### 全志-tina
+#### Allwinner-tina
 
 Connect the U disk on the computer, the size is at least 16GB or more, and the packaged image will be relatively large.
 
