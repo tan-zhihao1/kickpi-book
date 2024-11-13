@@ -4,11 +4,12 @@
 
 配置
 
-```
+```shell
 $ cd kernel-6.1
 $ make CROSS_COMPILE=aarch64-linux-gnu- LLVM=1 LLVM_IAS=1 ARCH=arm64 rockchip_defconfig android-14.config pcie_wifi.config rk3576.config
 $ make menuconfig
 $ make saveconfig
+$ cp defconfig arch/arm64/configs/rockchip_defconfig
 ```
 
 
@@ -20,7 +21,7 @@ kernel-6.1/kernel/configs
 	android-14.config 
 	pcie_wifi.config 
 	
-kernel-6.1/arch/arm64/configs/rk3576.config
+kernel-6.1/arch/arm64/configs/
 	rockchip_defconfig 
 	rk3576.config
 ```
