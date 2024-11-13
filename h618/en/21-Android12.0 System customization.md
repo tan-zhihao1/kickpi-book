@@ -400,28 +400,28 @@ h618_android12_p2_uart0-bootup-test-20241022.img
 
 ```
 adb root; adb remount;
-// adb push (要push的apk路径) 主板上路径
+// adb push (Apk path to push) Path on main board
 adb push ./app /system/priv-app/
 adb reboot
 ```
 
-* 开机后后台调用起APP
+* After booting, the APP is called in the background.
 
 
 
-## APK priv-app push 替换
+## APK private-app push replacement
 
 ```
-adb root; adb remount;  // 进行root 可以修改只读分区
-adb push （你APK的路径） /system/priv-app/
-adb reboot // 重启，android 会检索  /system/priv-app/ 的apk进行安装
+adb root; adb remount;  // Rooting can modify the read-only partition
+adb push (The path to your APK) /system/priv-app/
+adb reboot //restart, android will retrieve /system/priv-app/apk to install
 ```
 
 
 
-## APP签名文件
+## APP signature file
 
-签名文件路径如下
+The signature file path is as follows
 
 ```
 build/target/product/security/platform.pk8
@@ -431,32 +431,32 @@ out/host/linux-x86/framework/signak.jar
 
 
 
-## APP特殊权限问题
+## APP special permission issue
 
-目前桌面级APP是特殊应用，如果添加特殊权限，可能会出现系统无法起来问题，需要抓取APP相关log日志
+At present, the desktop APP is a special application. If special permissions are added, there may be a problem that the system cannot get up. It is necessary to grab the APP-related log logs.
 
 ```shell
-# logcat | grep com.example.myapplication3（Androidapk的包名）
+# logcat | grep com.example.myapplication3（package name of Androidapk）
 09-14 10:36:06.662  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication3 (/system/priv-app/LauncherJingWei) not in privapp-permissions allowlist
 09-14 10:36:08.437  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication3 (/system/priv-app/LauncherJingWei) not in privapp-permissions allowlist
 ```
 
 
 
-根据log信息添加权限
+Add permissions based on log information
 
 ```
 SDK
-	修改 frameworks/base/data/etc/privapp-permissions-platform.xml
-	重新编译烧录
+	modify frameworks/base/data/etc/privapp-permissions-platform.xml
+	recompile and burn
 
-主板上
+On the main board
 	/etc/permissions/privapp-permissions-platform.xml
 ```
 
 
 
-根据 log 修改 android.permission.INSTALL_PACKAGES 内容如下，其他报错类似参考以下添加：
+According to the log modification **android.permission. INSTALL_PACKAGES** content is as follows, other errors are similar to the following:
 
 ```diff
 --- a/frameworks/base/data/etc/privapp-permissions-platform.xml
@@ -473,11 +473,9 @@ SDK
 
 
 
-## 全编替换不生效问题
+## Full replacement does not take effect
 
-由于惰性编译，一些编译目标或依赖直接替换文件，在编译时不会拷贝生效
-
-需要先手动清除，再进行编译
+Due to lazy compilation, some compilation targets or relying on direct replacement files will not be copied during compilation. They need to be manually cleared before compilation
 
 ```
 source build/envsetup.sh
@@ -490,13 +488,13 @@ make installclean -j32
 
 
 
-## HDMI 固定输出分辨率
+## HDMI fixed output resolution
 
 
 
 ## HDMI TX
 
-hdmi tx 属性结点
+hdmi tx attribute node
 
 ```
 # ls /sys/class/hdmi/hdmi/attr
@@ -509,9 +507,9 @@ debug           hdcp_dump  hdmi_source  phy_read   scdc_read
 
 
 
-## 网络ADB
+## Network ADB
 
-网口ADB需要先adb启动5555端口服务后
+The network port ADB needs to start the 5555 port service first.
 
 ```
 PS C:\Users\16708\Desktop> adb tcpip 5555
@@ -526,18 +524,18 @@ PS C:\Users\16708\Desktop> adb -s 192.168.77.170:5555 shell
 apollo-p2:/ $ su
 ```
 
-#### 开机默认启动5555端口
+#### When powered on, port 5555 is started by default.
 
-需要通过USB adb操作
+It needs to be operated via USB adb.
 
 ```
  adb root
  adb remount
  adb pull /system/build.prop
- //在build.prop中加入
- //添加这一行
+ //Add to build.prop
+ //Add this line
  service.adb.tcp.port=5555
- //替换进入
+ //substitute entry
  adb push .\build.prop /system/build.prop
 ```
 
