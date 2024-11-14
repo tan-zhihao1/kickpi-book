@@ -181,22 +181,23 @@ sudo tar -zxf device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz -C
 
 chroot 进行挂载，等同于在 root 下进行修改ubuntu镜像
 
-```
+```shell
 // 配置以及挂载
-./ch-mount.sh -m rootfs_k5
-sudo cp -b /etc/resolv.conf rootfs_k5/etc/resolv.conf
-sudo cp -b /usr/bin/qemu-aarch64-static rootfs_k5/usr/bin/
+$ ./ch-mount.sh -m rootfs_k5
+$ sudo cp -b /etc/resolv.conf rootfs_k5/etc/resolv.conf
+$ sudo cp -b /usr/bin/qemu-aarch64-static rootfs_k5/usr/bin/
 
 // 通过chroot挂载修改
-sudo chroot rootfs_k5
-export LC_ALL=C.UTF-8
-# 可以做ubuntu系统下操作
-ping www.baidu.com  // 测试是否有网
-apt-get -y update
-apt-get -y upgrade
-apt install 		// 下载需要的东西 或 修改文件
-
-// chroot 下用exit退出
+$ sudo chroot rootfs_k5
+# export LC_ALL=C.UTF-8
+// 可以做ubuntu系统下操作
+// 测试是否有网
+# ping www.baidu.com  
+# sudo apt-get update
+# sudo apt-get upgrade
+// 下载需要的东西 或 修改文件
+# apt install 		
+// chroot下用exit退出
 # exit
 
 // 取消挂载
