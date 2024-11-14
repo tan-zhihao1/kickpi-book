@@ -200,7 +200,7 @@ apt install 		// 下载需要的东西 或 修改文件
 # exit
 
 // 取消挂载
- ./ch-mount.sh -u rootfs_k5
+$ ./ch-mount.sh -u rootfs_k5
 ```
 
 
