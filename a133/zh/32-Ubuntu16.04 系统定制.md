@@ -193,7 +193,7 @@ export LC_ALL=C.UTF-8
 # 可以做ubuntu系统下操作
 ping www.baidu.com  // 测试是否有网
 apt-get -y update
-apt-get -f -y upgrade
+apt-get -y upgrade
 apt install 		// 下载需要的东西 或 修改文件
 
 // chroot 下用exit退出
