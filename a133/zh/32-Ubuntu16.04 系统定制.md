@@ -190,7 +190,6 @@ $ sudo cp -b /usr/bin/qemu-aarch64-static rootfs_k5/usr/bin/
 // 通过chroot挂载修改
 $ sudo chroot rootfs_k5
 # export LC_ALL=C.UTF-8
-// 可以做ubuntu系统下操作
 // 测试是否有网
 # ping www.baidu.com  
 # sudo apt-get update
