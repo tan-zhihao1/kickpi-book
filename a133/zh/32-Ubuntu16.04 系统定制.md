@@ -190,6 +190,8 @@ $ sudo cp -b /usr/bin/qemu-aarch64-static rootfs_k5/usr/bin/
 // 通过chroot挂载修改
 $ sudo chroot rootfs_k5
 # export LC_ALL=C.UTF-8
+# echo "nameserver 8.8.8.8" >> etc/resolv.conf
+# echo "nameserver 114.114.114.114" >> etc/resolv.conf
 // 测试是否有网
 # ping www.baidu.com  
 # sudo apt-get update
