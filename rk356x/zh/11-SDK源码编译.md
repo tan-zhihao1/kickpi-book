@@ -150,7 +150,7 @@ $ ls debian/linaro-rootfs.img
 
 ```
 $ tar -zxvf ubuntu-rootfs-*.tar.gz
-$ cp ubuntu-rootfs.img.img ubuntu/
+$ cp ubuntu-rootfs.img ubuntu/
 
 $ ls ubuntu/ubuntu-rootfs.img
 ```
