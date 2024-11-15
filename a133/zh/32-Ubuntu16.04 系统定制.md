@@ -194,8 +194,8 @@ $ sudo chroot rootfs_k5
 # echo "nameserver 114.114.114.114" >> etc/resolv.conf
 // 测试是否有网
 # ping www.baidu.com  
-# sudo apt-get update
-# sudo apt-get upgrade
+# apt-get update
+# apt-get upgrade
 // 下载需要的东西 或 修改文件
 # apt install 		
 // chroot下用exit退出
