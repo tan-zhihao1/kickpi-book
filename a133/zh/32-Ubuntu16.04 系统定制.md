@@ -357,13 +357,13 @@ $ ls nfs_tmp/
 ```
 用户：kickpi
 密码：kickpi
-默认不支持root连接
+
 (su)root密码： kickpi
 ```
 
 
 
-root连接配置
+默认不支持root连接，root连接需要配置
 
 ```shell
 $ vim /etc/ssh/ssh_config
@@ -372,8 +372,6 @@ $ vim /etc/ssh/sshd_config
 + PermitRootLogin yes
 $ sudo /etc/init.d/ssh restart
 ```
-
-
 
 
 
