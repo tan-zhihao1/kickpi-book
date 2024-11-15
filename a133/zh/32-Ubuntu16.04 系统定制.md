@@ -357,7 +357,17 @@ $ ls nfs_tmp/
 ```
 用户：kickpi
 密码：kickpi
+默认不支持root连接
 ```
+
+
+
+root连接配置
+
+```
+```
+
+
 
 
 
