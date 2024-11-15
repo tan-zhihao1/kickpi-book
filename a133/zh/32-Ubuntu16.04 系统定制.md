@@ -357,7 +357,6 @@ $ ls nfs_tmp/
 ```
 用户：kickpi
 密码：kickpi
-
 (su)root密码： kickpi
 ```
 
@@ -372,6 +371,14 @@ $ vim /etc/ssh/sshd_config
 + PermitRootLogin yes
 $ sudo /etc/init.d/ssh restart
 ```
+
+
+
+注意事项：
+
+确保板子IP正常
+
+确保能正常连通板子的IP
 
 
 
