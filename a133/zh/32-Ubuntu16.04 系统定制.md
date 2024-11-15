@@ -366,9 +366,9 @@ $ ls nfs_tmp/
 root连接配置
 
 ```shell
-$vim /etc/ssh/ssh_config
+$ vim /etc/ssh/ssh_config
 + PermitRootLogin yes
-$vim /etc/ssh/sshd_config
+$ vim /etc/ssh/sshd_config
 + PermitRootLogin yes
 $ sudo /etc/init.d/ssh restart
 ```
