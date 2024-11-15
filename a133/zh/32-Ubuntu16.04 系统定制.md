@@ -154,7 +154,7 @@ device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 
 
-## chroot 方式修改 ubuntu
+### chroot 方式修改 ubuntu
 
 搭建构建环境
 
@@ -247,7 +247,7 @@ vim build/mkcmd.sh
 
 
 
-## overlay 方式修改ubuntu
+### overlay 方式修改ubuntu
 
 
 
@@ -351,6 +351,10 @@ $ ls nfs_tmp/
 ```
 
    
+
+## SSH配置
+
+
 
 
 
