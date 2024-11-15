@@ -354,6 +354,11 @@ $ ls nfs_tmp/
 
 ## SSH配置
 
+```
+用户：kickpi
+密码：kickpi
+```
+
 
 
 
