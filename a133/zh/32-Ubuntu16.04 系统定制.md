@@ -377,8 +377,6 @@ $ sudo /etc/init.d/ssh restart
 
 
 
-
-
 ## xface 桌面安装（需要联网）
 
 ```
