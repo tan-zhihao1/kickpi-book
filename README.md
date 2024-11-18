@@ -41,3 +41,11 @@
 * [RV1106 English Document](rv1106/en)
 
 * [RV1106 中文文档](rv1106/zh)
+
+
+
+## K7
+
+* [RK3576 English Document](rk3576/en)
+* [RK3576 中文文档](rk3576/zh)
+
