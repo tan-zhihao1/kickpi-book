@@ -142,6 +142,8 @@ vim device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
 ```
 source build/envsetup.sh
 lunch rk3576_u-userdebug
+
+$ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
 ```
 
 
