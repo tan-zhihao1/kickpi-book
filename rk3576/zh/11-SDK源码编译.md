@@ -140,6 +140,7 @@ vim device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
 配置环境，可以使用 mm / get_build_var 等安卓环境下命令
 
 ```shell
+// 配置环境
 source build/envsetup.sh
 lunch rk3576_u-userdebug
 
