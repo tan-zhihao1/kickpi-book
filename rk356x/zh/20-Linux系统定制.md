@@ -116,7 +116,20 @@ $ xinput_calibrator --list //查看Device和ID
 #第三歩 重置转置矩阵和校准矩阵，这里非常关键，转置矩阵需要根据屏幕旋转，校准矩阵设置默认值即可
 $ xinput set-prop $id --type=float "Coordinate Transformation Matrix" 0 -1 1 1 0 0 0 0 1
 $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
+
+#修改触摸方向（可根据名字修改） 默认方向
+xinput set-prop 10 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
  
+#修改触摸方向（可根据名字修改） 向左90度
+xinput set-prop 10 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
+ 
+#修改触摸方向（可根据名字修改） 向右90度
+xinput set-prop 10 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
+ 
+#修改触摸方向（可根据名字修改） 旋转180度
+xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
+
+
 #第四步 开始校准
 $ /usr/bin/xinput_calibrator -v --device $DEVICE
 
