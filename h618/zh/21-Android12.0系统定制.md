@@ -256,7 +256,7 @@ android_app_import {
         enabled: true,
     },
 
-    privileged: true,
+    //privileged: true, //指应用是特权应用 具有高权限
     //product_specific: true,
     //proprietary: true,
     enforce_uses_libs: false,
