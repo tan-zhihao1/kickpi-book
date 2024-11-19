@@ -225,6 +225,7 @@ Android.mk 方式
 ```
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
+#可以为user、eng、tests、optional，optional代表在任何版本下都编译
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
