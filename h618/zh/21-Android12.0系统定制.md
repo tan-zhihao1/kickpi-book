@@ -251,12 +251,12 @@ android_app_import {
     apk: "test.apk",
 
     //presigned: true,
-    //certificate: "platform",  //platform表示系统用户，可设置
+    certificate: "platform",  //platform表示系统用户，可设置
     dex_preopt: {
         enabled: true,
     },
 
-    //privileged: true, //指应用是特权应用 具有高权限
+    privileged: true, //指应用是特权应用 具有高权限
     //product_specific: true,
     //proprietary: true,
     enforce_uses_libs: false,
