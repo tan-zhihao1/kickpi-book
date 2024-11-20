@@ -97,7 +97,7 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 单编kernel
 
 ```
-./build.sh -ACKu
+./build.sh -CKu
 ```
 
 
