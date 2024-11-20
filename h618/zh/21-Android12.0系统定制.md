@@ -251,7 +251,7 @@ android_app_import {
     apk: "test.apk",
 
     //presigned: true,
-    certificate: "platform",  //platform表示系统用户，可设置
+    certificate: "platform",  //platform表示系统应用，可设置
     dex_preopt: {
         enabled: true,
     },
