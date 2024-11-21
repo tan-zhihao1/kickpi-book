@@ -150,8 +150,10 @@ value
 cd /sys/kernel/debug/sunxi_pinctrl
 
 查看 pin 的配置
-echo PH8 > sunxi_pin
-cat sunxi_pin_configure
+$ echo PH8 > sunxi_pin
+$ cat sunxi_pin_configure
+
+echo 0 > function
 
 修改 pin 的属性
 echo PB8 1 > pull
