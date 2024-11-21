@@ -156,7 +156,7 @@ cd /sys/kernel/debug/sunxi_pinctrl
 配置 pin 为 gpio 模式
 # echo 'PH8 0' > function
 
-修改 pin 的属性
+修改 pin 的上拉属性
 # echo 'PH8 1' > pull
 // 查看修改情况
 # cat pull					
