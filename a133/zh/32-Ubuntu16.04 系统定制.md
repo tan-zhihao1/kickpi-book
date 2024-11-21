@@ -306,10 +306,12 @@ overlay/etc/test.sh
 目的：将板子的修改的配置，导出制作镜像进行批量烧录
 
 ```
-ff_export_rootfs /media/kickpi/EAA1-F4D4/
+ff_export_rootfs U盘或SD卡的路径
+如：
+	ff_export_rootfs /media/kickpi/EAA1-F4D4/
+	
+ls /media/kickpi/EAA1-F4D4/
 ```
-
-
 
 
 
