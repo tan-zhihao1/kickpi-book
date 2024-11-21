@@ -144,6 +144,12 @@ value
 
 
 
+## sunxi gpio 控制
+
+
+
+
+
 ## ubuntu 1604
 
 ubuntu 文件系统
