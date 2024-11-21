@@ -158,6 +158,12 @@ echo PB8 1 > pull
 // 查看修改情况
 cat pull					
 cat sunxi_pin_configure
+
+注意：
+当操作PL及之后的pin ， 需要切换pin的设备， 否则操作失败
+
+
+
 ```
 
 
