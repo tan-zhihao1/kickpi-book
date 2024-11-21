@@ -164,7 +164,7 @@ cat sunxi_pin_configure
 echo pio > /sys/kernel/debug/sunxi_pinctrl/dev_name
 cat /sys/kernel/debug/sunxi_pinctrl/dev_name
 
-echo pio > /sys/kernel/debug/sunxi_pinctrl/dev_name
+echo r_pio > /sys/kernel/debug/sunxi_pinctrl/dev_name
 cat /sys/kernel/debug/sunxi_pinctrl/dev_name
 ```
 
