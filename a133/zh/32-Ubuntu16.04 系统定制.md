@@ -163,7 +163,7 @@ cd /sys/kernel/debug/sunxi_pinctrl
 # cat sunxi_pin_configure
 
 查看 pin 电平
-
+# cat data
 
 注意：
 当操作PL及之后的pin ， 需要切换pin的设备， 否则操作失败
