@@ -154,7 +154,9 @@ echo PH8 > sunxi_pin
 cat sunxi_pin_configure
 
 修改 pin 的属性
-
+echo PB8 1 > pull
+cat pull
+cat sunxi_pin_configure
 ```
 
 
