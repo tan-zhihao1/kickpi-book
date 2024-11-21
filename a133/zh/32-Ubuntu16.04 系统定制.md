@@ -153,7 +153,8 @@ cd /sys/kernel/debug/sunxi_pinctrl
 $ echo PH8 > sunxi_pin
 $ cat sunxi_pin_configure
 
-echo 0 > function
+配置 pin 为 gpio 模式
+$ echo 0 > function
 
 修改 pin 的属性
 echo PB8 1 > pull
