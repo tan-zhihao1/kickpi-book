@@ -162,6 +162,9 @@ cd /sys/kernel/debug/sunxi_pinctrl
 # cat pull					
 # cat sunxi_pin_configure
 
+查看 pin 电平
+
+
 注意：
 当操作PL及之后的pin ， 需要切换pin的设备， 否则操作失败
 echo pio > /sys/kernel/debug/sunxi_pinctrl/dev_name
