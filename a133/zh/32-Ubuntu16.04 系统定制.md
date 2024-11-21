@@ -170,8 +170,6 @@ cat /sys/kernel/debug/sunxi_pinctrl/dev_name
 
 
 
-
-
 ## ubuntu 1604
 
 ubuntu 文件系统
