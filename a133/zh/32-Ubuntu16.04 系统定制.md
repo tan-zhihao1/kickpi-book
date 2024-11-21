@@ -311,6 +311,7 @@ ff_export_rootfs U盘或SD卡的路径
 	ff_export_rootfs /media/kickpi/EAA1-F4D4/
 	
 ls /media/kickpi/EAA1-F4D4/
+	rootfs.img
 ```
 
 
