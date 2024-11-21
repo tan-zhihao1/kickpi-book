@@ -146,6 +146,11 @@ value
 
 ## sunxi gpio 控制
 
+```
+cd /sys/kernel/debug/sunxi_pinctrl
+
+```
+
 
 
 
