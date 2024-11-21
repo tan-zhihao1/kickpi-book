@@ -281,8 +281,6 @@ vim build/mkcmd.sh
 
 ### overlay 方式修改ubuntu
 
-
-
 将需要替换的文件存放到overlay下，编译会拷贝替换 rootfs 对应路径下的文件
 
 ```
@@ -306,11 +304,10 @@ overlay/etc/test.sh
 目的：将板子的修改的配置，导出制作镜像进行批量烧录
 
 ```
-ff_export_rootfs U盘或SD卡的路径
+# ff_export_rootfs U盘或SD卡的路径
 如：
-	ff_export_rootfs /media/kickpi/EAA1-F4D4/
-	
-ls /media/kickpi/EAA1-F4D4/
+# ff_export_rootfs /media/kickpi/EAA1-F4D4/	
+# ls /media/kickpi/EAA1-F4D4/
 	rootfs.img
 ```
 
