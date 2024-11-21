@@ -150,17 +150,17 @@ value
 cd /sys/kernel/debug/sunxi_pinctrl
 
 查看 pin 的配置
-$ echo PH8 > sunxi_pin
-$ cat sunxi_pin_configure
+# echo PH8 > sunxi_pin
+# cat sunxi_pin_configure
 
 配置 pin 为 gpio 模式
-$ echo 0 > function
+# echo 0 > function
 
 修改 pin 的属性
-echo PB8 1 > pull
+# echo PB8 1 > pull
 // 查看修改情况
-cat pull					
-cat sunxi_pin_configure
+# cat pull					
+# cat sunxi_pin_configure
 
 注意：
 当操作PL及之后的pin ， 需要切换pin的设备， 否则操作失败
