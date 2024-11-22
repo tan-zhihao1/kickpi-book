@@ -29,26 +29,3 @@
 | LAN              | 1000M X1                                                     |
 | Key              | Recovery KEY <br />RESET KEY <br />POWER KEY                 |
 | Extend GPIO      | Extend Pin Total 20Pin： <br />* UART X1 <br />* I2C X1 <br />* USB X1 <br  <br />* ADC X1 <br />* GPIO X10 |
-
-
-
-## 技术交流/售后支持
-
-### KICKPI 官方店铺链接
-
-[淘宝店铺链接](https://shop183733283.taobao.com/?spm=a230r.7195193.1997079397.2.10f76f498zHqMG)
-
-[阿里巴巴店铺链接](https://shop122g2107958t7.1688.com/page/index.html?spm=0.0.wp_pc_common_header_companyName_undefined.0)
-
-
-
-### 客服QQ号
-
-![image-20231018142716705](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231018142716705.png)
-
-
-
-### 技术交流QQ群
-
-![image-20231018142017914](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231018142017914.png)
-
