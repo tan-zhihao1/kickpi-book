@@ -4,5 +4,8 @@
 
 ## 1. CPU Information
 
-A133
+### A133
 
+
+
+2. Board Information
