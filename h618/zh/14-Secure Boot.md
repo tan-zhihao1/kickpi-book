@@ -79,3 +79,42 @@ $ pack -v
 
 ​	1.打包的安全固件进行烧录（注意：烧录了安全固件后就不能烧录普通固件，如果烧录了普通固件会在启动最后打印提示：need secure firmware）
 
+​	2.在 PC 端配置 DrangonSN 工具后运行。  
+
+​	3、工具的配置
+
+![image-20241122102647734](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122102647734.png)
+
+​							鼠标右键打开菜单栏
+
+![image-20241122103219298](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122103219298.png)
+
+![image-20241122103411818](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122103411818.png)
+
+![image-20241122103517802](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122103517802.png)
+
+![image-20241122103904903](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122103904903.png)
+
+![image-20241122104243353](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122104243353.png)
+
+​		4.PC通过USB接好板子或者板子重新复位（板子得关机重启中DrangonSN 工具才能识别到）
+
+![image-20241122104814617](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122104814617.png)
+
+​		5.烧写成功
+
+![image-20241122104853169](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122104853169.png)
+
+​	**FAQ：只能烧写一次，烧写失败如下：**
+
+![image-20241122105405421](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122105405421.png)
+
+### 6、校验烧写是否成功
+
+​	串口调试接上，启动中，按住s 等待进入uboot
+
+![image-20241122105809805](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122105809805.png)
+
+输入`printenv` 打印uboot的环境变量
+
+![image-20241122110113103](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122110113103.png)
