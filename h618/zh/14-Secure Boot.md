@@ -12,10 +12,12 @@
 
 ```
 ./longan/build/createkeys 
-//选择使用的平台
+//选择使用的平台 如:h618
 ```
 
-> 生成的密钥位于longan/out/$(platform)/common/keys  下
+> 生成的密钥位于longan/out/$(platform)/common/keys 
+>
+> 如：longan/out/h618/common/keys 
 
 ![image-20241122100503977](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122100503977.png)
 
@@ -30,3 +32,14 @@
 密钥的文件数量及名称都是根据平台固件打包的过程做过适配的。 A 平台生成的密钥不可用于 B 平台安全固件的打包。否则打
 包过程可能会因为找不到指定的密钥而失败。
 
+
+
+### 3、防回滚版本号
+
+芯片在引导固件的时候，会对比固件的版本号与芯片内存保留的版本号。
+
+
+
+防回滚版本号在 
+
+longan/devices/configs/chips/${chip}/configs/default/version_base.mk中进行配置，文件中主要有两个属性可配置:
