@@ -16,7 +16,7 @@ device/config/chips/a133/configs/c3/board.dts
 
 
 
-## Kernel defconfig 
+## Kernel Defconfig 
 
 defconfig 修改及保存
 
@@ -475,7 +475,9 @@ $ sudo /etc/init.d/ssh restart
 
 
 
-## xface 桌面安装（需要联网）
+## xface 桌面安装
+
+（需要联网）
 
 ```
 $ DEBIAN_FRONTEND=noninteractive apt install -y xubuntu-core onboard rsyslog sudo dialog apt-utils ntp evtest udev --allow-unauthenticated
