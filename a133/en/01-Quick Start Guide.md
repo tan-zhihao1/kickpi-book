@@ -2,3 +2,7 @@
 
 
 
+## 1. CPU Information
+
+A133
+
