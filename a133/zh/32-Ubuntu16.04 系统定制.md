@@ -475,24 +475,9 @@ $ sudo /etc/init.d/ssh restart
 
 
 
-## xface 桌面安装
-
-（需要联网）
-
-```
-$ DEBIAN_FRONTEND=noninteractive apt install -y xubuntu-core onboard rsyslog sudo dialog apt-utils ntp evtest udev --allow-unauthenticated
-$ mv /var/lib/dpkg/info/ /var/lib/dpkg/info_old/
-$ mkdir /var/lib/dpkg/info/
-$ apt-get update
-$ DEBIAN_FRONTEND=noninteractive apt install -y xubuntu-core onboard rsyslog sudo dialog apt-utils ntp evtest udev --allow-unauthenticated
-$ mv /var/lib/dpkg/info_old/* /var/lib/dpkg/info/
-```
-
-
-
 ## 其他事项
 
-### xfce 默认无浏览器
+### xfce 浏览器打不开
 
 需要安装火狐浏览器
 
