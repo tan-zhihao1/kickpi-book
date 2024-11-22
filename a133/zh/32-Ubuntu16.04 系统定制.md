@@ -351,6 +351,14 @@ mount /dev/mmcblk0p6 /data
 
 
 
+fstab 方式
+
+```
+/dev/mmcblk0p7  /       ext4    defaults        0       0
+```
+
+
+
 ## NFS配置
 
 **环境配置**
