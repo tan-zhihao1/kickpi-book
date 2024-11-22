@@ -301,7 +301,7 @@ overlay/etc/test.sh
 
 目的：将板子的修改的配置，导出根文件系统镜像，重新打包成烧录镜像
 
-```
+```bash
 # ff_export_rootfs U盘或SD卡的路径
 如：
 # ff_export_rootfs /media/kickpi/EAA1-F4D4/	
@@ -313,7 +313,7 @@ overlay/etc/test.sh
 
 在已经编译过的代码上，将生成的 rootfs.img 重新打包
 
-```
+```bash
 rm out/a133/c3/bsp/rootfs.ext4
 cp (rootfs.img的路径) out/a133/c3/bsp/rootfs.ext4
 ./build.sh pack
