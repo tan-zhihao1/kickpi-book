@@ -16,7 +16,7 @@ device/config/chips/a133/configs/c3/board.dts
 
 
 
-## Kernel Defconfig 
+## Kernel defconfig 
 
 defconfig 修改及保存
 
@@ -178,7 +178,7 @@ cat /sys/kernel/debug/sunxi_pinctrl/dev_name
 
 
 
-## ubuntu 1604
+## UBUNTU 1604
 
 ubuntu 文件系统
 
