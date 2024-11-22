@@ -321,6 +321,12 @@ cp (rootfs.img的路径) out/a133/c3/bsp/rootfs.ext4
 
 
 
+## 分区和容量
+
+
+
+
+
 ## NFS配置
 
 **环境配置**
