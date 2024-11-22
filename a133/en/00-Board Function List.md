@@ -28,4 +28,4 @@
 | Wi-Fi / Bluetooth | AW869A                                                       |
 | Ethernet          | 1000M X1                                                     |
 | Key               | Recovery KEY <br />RESET KEY <br />POWER KEY                 |
-| Extend GPIO       | Extend Pin Total 20Pin： <br />* UART X1 <br />* I2C X1 <br />* USB X1 <br  <br />* ADC X1 <br />* GPIO X10 |
+| Extend GPIO       | Extend Pin Total 20Pin： <br />* UART X1 <br />* I2C X1 <br />* USB X1 <br />* ADC X1 <br />* GPIO X10 |
