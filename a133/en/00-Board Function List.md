@@ -13,8 +13,8 @@
 | System            | Android10 / Ubuntu1604                                       |
 | Power             | DC 12V                                                       |
 | LED               | * Power LED <br />* Work LED                                 |
-| USB HOST          | USB2.0 HOST X2                                               |
-| USB OTG           | USB2.0 OTG X1                                                |
+| USB HOST          | USB2.0 HOST X 2                                              |
+| USB Debug         | USB2.0 Debug X1                                              |
 | Single LVDS LCD   | X1                                                           |
 | DUAL LVDS LCD     | X1                                                           |
 | Speaker           | Y                                                            |
