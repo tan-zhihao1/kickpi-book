@@ -465,8 +465,6 @@ $ vim /etc/ssh/sshd_config
 $ sudo /etc/init.d/ssh restart
 ```
 
-
-
 注意事项：
 
 确保板子IP正常
