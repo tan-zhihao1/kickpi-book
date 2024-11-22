@@ -20,7 +20,7 @@
 | Speaker         | Y                                                            |
 | Headphone       | Y                                                            |
 | Microphone      | Y                                                            |
-| 4G module       | Y                                                            |
+| 4G Module       | Y                                                            |
 | SD卡            | Y                                                            |
 | 散热风扇        | Y                                                            |
 | 红外接收器      | Y                                                            |
