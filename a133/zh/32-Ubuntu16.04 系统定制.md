@@ -325,6 +325,11 @@ cp (rootfs.img的路径) out/a133/c3/bsp/rootfs.ext4
 
 目前软件默认rootfs分区为 6G，除必要分区外，剩余空间分配给 UDISK 分区
 
+```
+# fdisk  -l
+
+```
+
 
 
 ## NFS配置
