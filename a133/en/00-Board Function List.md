@@ -21,12 +21,12 @@
 | Headphone       | Y                                                            |
 | Microphone      | Y                                                            |
 | 4G Module       | Y                                                            |
-| SD卡            | Y                                                            |
-| 散热风扇        | Y                                                            |
-| 红外接收器      | Y                                                            |
-| 实时时钟        | Y                                                            |
-| WIFI/蓝牙       | AW869A                                                       |
-| 以太网          | 100M X1                                                      |
+| MicroSD         | Y                                                            |
+| FAN             | Y                                                            |
+| IR Controller   | Y                                                            |
+| RTC             | Y                                                            |
+| WIFI / BT       | AW869A                                                       |
+| LAN             | 1000M X1                                                     |
 | 按键            | * Recovery KEY <br />* RESET KEY <br />* MASKROM KEY <br />* POWER KEY |
 | 扩展引脚        | Extend Pin Total 20Pin： <br />* UART X1 <br />* I2C X1 <br />* USB X1 <br  <br />* ADC X1 <br />* GPIO X10 |
 
