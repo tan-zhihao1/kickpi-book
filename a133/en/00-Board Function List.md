@@ -12,7 +12,7 @@
 | eMMC            | 8GB / 32GB                                                   |
 | System          | Android10 / Ubuntu1604                                       |
 | Power           | DC 12V                                                       |
-| LED灯           | * Power LED <br />* Work LED                                 |
+| LED             | * Power LED <br />* Work LED                                 |
 | USB HOST        | USB2.0 HOST X2                                               |
 | USB OTG         | USB2.0 OTG X1                                                |
 | MIPI CSI摄像头  | 4Lane X2                                                     |
