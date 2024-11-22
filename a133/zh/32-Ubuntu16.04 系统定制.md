@@ -323,12 +323,22 @@ cp (rootfs.img的路径) out/a133/c3/bsp/rootfs.ext4
 
 ## 分区和容量
 
-目前软件默认rootfs分区为 6G，除必要分区外，剩余空间分配给 UDISK 分区
+目前软件默认rootfs分区为 6G，除必要分区外，剩余空间分配给 UDISK 分区 /dev/mmcblk0p6
 
 ```
 # fdisk  -l
-
+Device            Start      End  Sectors  Size Type
+/dev/mmcblk0p1    73728   139263    65536   32M Microsoft basic data
+/dev/mmcblk0p2   139264   172031    32768   16M Microsoft basic data
+/dev/mmcblk0p3   172032   303103   131072   64M Microsoft basic data
+/dev/mmcblk0p4   303104 12886015 12582912    6G Microsoft basic data
+/dev/mmcblk0p5 12886016 12918783    32768   16M Microsoft basic data
+/dev/mmcblk0p6 12918784 15155166  2236383  1.1G Microsoft basic data
 ```
+
+
+
+
 
 
 
