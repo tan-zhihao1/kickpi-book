@@ -279,12 +279,6 @@ vim build/mkcmd.sh
 
 
 
-
-
-device/config/chips/a133/configs/default/sys_partition.fex
-
-
-
 ### overlay 方式修改ubuntu
 
 将需要替换的文件存放到overlay下，编译会拷贝替换 rootfs 对应路径下的文件
@@ -343,6 +337,12 @@ Device            Start      End  Sectors  Size Type
 /dev/mmcblk0p5 12886016 12918783    32768   16M Microsoft basic data
 /dev/mmcblk0p6 12918784 15155166  2236383  1.1G Microsoft basic data
 ```
+
+
+
+分区表
+
+device/config/chips/a133/configs/default/sys_partition.fex
 
 
 
