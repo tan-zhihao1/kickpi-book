@@ -10,7 +10,7 @@
 | GPU             | PowerVR GE8300                                               |
 | DDR             | 1GB / 2GB / 4GB                                              |
 | eMMC            | 8GB / 32GB                                                   |
-| 系统            | * Android10                                                  |
+| System          | Android10 / Ubuntu1604                                       |
 | 电源供电        | DC 12V                                                       |
 | LED灯           | * Power LED <br />* Work LED                                 |
 | USB HOST        | USB2.0 HOST X2                                               |
