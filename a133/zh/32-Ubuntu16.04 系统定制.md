@@ -338,7 +338,7 @@ Device            Start      End  Sectors  Size Type
 
 
 
-默认未挂载 UDISK 分区，可将其挂载
+默认未挂载 UDISK 分区，可手动将其挂载
 
 ```
 mkfs.ext4 /dev/mmcblk0p6
