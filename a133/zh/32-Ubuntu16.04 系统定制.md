@@ -46,7 +46,9 @@ out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
 
 
 
-## pin脚计算
+## PIN 控制
+
+### pin 脚计算
 
 ( B ~ J ) 一组按32位算
 
@@ -66,7 +68,7 @@ PH3 为 8组， 3号脚
 
 
 
-## sys gpio控制
+### sys gpio控制
 
 当存在将拓展引脚配置为输入的需求，默认软件的gpio-led不能满足需求。
 
@@ -144,7 +146,7 @@ value
 
 
 
-## sunxi gpio 控制
+### sunxi gpio 控制
 
 ```
 cd /sys/kernel/debug/sunxi_pinctrl
