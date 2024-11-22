@@ -18,9 +18,9 @@
 | Single LVDS LCD | X1                                                           |
 | DUAL LVDS LCD   | X1                                                           |
 | Speaker         | Y                                                            |
-| *Headphone*     | Y                                                            |
-| 麦克风          | Y                                                            |
-| 4G移动网络      | Y                                                            |
+| Headphone       | Y                                                            |
+| Microphone      | Y                                                            |
+| 4G module       | Y                                                            |
 | SD卡            | Y                                                            |
 | 散热风扇        | Y                                                            |
 | 红外接收器      | Y                                                            |
