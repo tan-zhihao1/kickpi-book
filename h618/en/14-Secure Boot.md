@@ -79,6 +79,10 @@ $ pack -v
 
 ​	1. Burn the packaged security firmware (Note: After burning the security firmware, ordinary firmware cannot be burned. If ordinary firmware is burned, it will be printed at the end of startup. Prompt: need secure firmware)
 
+​	Through the serial port log **secure enable bit:** determine whether it is secure firmware
+
+​	0: normal firmware, 1: security firmware
+
 ​	2. Run after configuring the DrangonSN tool on the PC.  
 
 ​	3.Tool configuration
