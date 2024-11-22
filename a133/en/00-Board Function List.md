@@ -21,7 +21,7 @@
 | Headphone         | Y                                                            |
 | Microphone        | Y                                                            |
 | 4G Module         | Y                                                            |
-| MicroSD           | Y                                                            |
+| Micro SD          | Y                                                            |
 | FAN               | Y                                                            |
 | IR Controller     | Y                                                            |
 | RTC               | Y                                                            |
