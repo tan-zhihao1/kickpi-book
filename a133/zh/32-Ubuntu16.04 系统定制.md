@@ -323,7 +323,7 @@ cp (rootfs.img的路径) out/a133/c3/bsp/rootfs.ext4
 
 ## 分区和容量
 
-目前软件默认rootfs分区为 6G，除其他必要分区外，剩余空间分配给 UDISK 分区 /dev/mmcblk0p6
+目前软件默认rootfs分区为 6G，除其他必要分区外，剩余空间分配给 UDISK 分区 `/dev/mmcblk0p6`
 
 ```
 # fdisk  -l
@@ -351,10 +351,11 @@ mount /dev/mmcblk0p6 /data
 
 
 
-fstab 方式
+fstab 修改方式，系统启动会将其默认挂载
 
 ```
-/dev/mmcblk0p7  /       ext4    defaults        0       0
+# vim /etc/fstab
+/dev/mmcblk0p6  /data       ext4    defaults        0       0
 ```
 
 
