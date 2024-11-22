@@ -323,7 +323,7 @@ cp (rootfs.img的路径) out/a133/c3/bsp/rootfs.ext4
 
 ## 分区和容量
 
-目前软件默认rootfs分区为 6G，除必要分区外，剩余空间分配给 UDISK 分区 /dev/mmcblk0p6
+目前软件默认rootfs分区为 6G，除其他必要分区外，剩余空间分配给 UDISK 分区 /dev/mmcblk0p6
 
 ```
 # fdisk  -l
@@ -344,12 +344,10 @@ Device            Start      End  Sectors  Size Type
 // 默认无文件系统格式，将其格式化未 ext4
 sudo mkfs.ext4 /dev/mmcblk0p6
 
-// 
+// 挂载 UDISK 分区
+mkdir /data
+mount /dev/mmcblk0p6 /data
 ```
-
-
-
-
 
 
 
