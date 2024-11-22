@@ -15,11 +15,10 @@
 | LED             | * Power LED <br />* Work LED                                 |
 | USB HOST        | USB2.0 HOST X2                                               |
 | USB OTG         | USB2.0 OTG X1                                                |
-| MIPI CSI摄像头  | 4Lane X2                                                     |
 | Single LVDS LCD | X1                                                           |
 | DUAL LVDS LCD   | X1                                                           |
-| 喇叭            | Y                                                            |
-| 耳机            | Y                                                            |
+| Speaker         | Y                                                            |
+| *Headphone*     | Y                                                            |
 | 麦克风          | Y                                                            |
 | 4G移动网络      | Y                                                            |
 | SD卡            | Y                                                            |
