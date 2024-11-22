@@ -338,6 +338,8 @@ Device            Start      End  Sectors  Size Type
 
 
 
+默认未挂载 UDISK 分区
+
 
 
 
