@@ -27,8 +27,8 @@
 | RTC             | Y                                                            |
 | WIFI / BT       | AW869A                                                       |
 | LAN             | 1000M X1                                                     |
-| 按键            | * Recovery KEY <br />* RESET KEY <br />* MASKROM KEY <br />* POWER KEY |
-| 扩展引脚        | Extend Pin Total 20Pin： <br />* UART X1 <br />* I2C X1 <br />* USB X1 <br  <br />* ADC X1 <br />* GPIO X10 |
+| Key             | * Recovery KEY <br />* RESET KEY <br />* MASKROM KEY <br />* POWER KEY |
+| Extend GPIO     | Extend Pin Total 20Pin： <br />* UART X1 <br />* I2C X1 <br />* USB X1 <br  <br />* ADC X1 <br />* GPIO X10 |
 
 
 
