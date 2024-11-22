@@ -5,11 +5,11 @@
 | Function        | K5                                                           |
 | --------------- | ------------------------------------------------------------ |
 | PCB Size        | 141mm * 80mm                                                 |
-| 主控            | Allwinner A133                                               |
+| SoC             | Allwinner A133                                               |
 | CPU             | ARM64 Cortex A53 X4                                          |
 | GPU             | PowerVR GE8300                                               |
-| 运行内存        | 1GB / 2GB / 4GB                                              |
-| 存储            | 8GB / 32GB                                                   |
+| DDR             | 1GB / 2GB / 4GB                                              |
+| eMMC            | 8GB / 32GB                                                   |
 | 系统            | * Android10                                                  |
 | 电源供电        | DC 12V                                                       |
 | LED灯           | * Power LED <br />* Work LED                                 |
