@@ -279,6 +279,12 @@ vim build/mkcmd.sh
 
 
 
+
+
+device/config/chips/a133/configs/default/sys_partition.fex
+
+
+
 ### overlay 方式修改ubuntu
 
 将需要替换的文件存放到overlay下，编译会拷贝替换 rootfs 对应路径下的文件
