@@ -340,9 +340,13 @@ Device            Start      End  Sectors  Size Type
 
 
 
-分区表
+修改分区表
 
-device/config/chips/a133/configs/default/sys_partition.fex
+```
+vim device/config/chips/a133/configs/default/sys_partition.fex
+```
+
+
 
 
 
