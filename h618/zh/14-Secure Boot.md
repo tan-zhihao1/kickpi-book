@@ -115,6 +115,12 @@ $ pack -v
 
 ![image-20241122105809805](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122105809805.png)
 
-输入`printenv` 打印uboot的环境变量
+输入`printenv` 打印uboot的环境变量 
+
+rotpk_status=1
+
+0： 表示没有烧录
+
+1：表示烧录了rotpk
 
 ![image-20241122110113103](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122110113103.png)
