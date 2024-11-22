@@ -1,6 +1,6 @@
 # 14-Secure Boot  
 
-### 1.Secure Boot 原理
+### 1、Secure Boot 原理
 
 ​	Secure Boot 启动过程中，芯片在启动时，会先对系统做安全性检验，检验通过后才引导系统。检查不通过则认为系统已经被修改，拒绝引导系统并进入烧录模式。
 
@@ -11,8 +11,9 @@
 生成密钥的脚本位于: longan/build/createkeys   
 
 ```
-./longan/build/createkeys 
-//选择使用的平台 如:h618
+$ ./longan/build/createkeys 
+//选择使用的平台 
+//如:h618
 ```
 
 > 生成的密钥位于longan/out/$(platform)/common/keys 
@@ -38,8 +39,43 @@
 
 芯片在引导固件的时候，会对比固件的版本号与芯片内存保留的版本号。
 
+防回滚版本号在 longan/devices/configs/chips/${chip}/configs/default/version_base.mk中进行配置，文件中主要有两个属性可配置:
+
+![image-20241122101027941](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122101027941.png)
+
+- ROOT_ROLLBACK_USED
+
+是否填充供 BROM 使用的返回滚版本号，平台相关，已经配置，使用默认值即可
+
+- MAIN_VERSION
+
+固件的防回滚版本号，可用范围为 0-31。配置其他值芯片会直接认为固件版本号检验失败。
 
 
-防回滚版本号在 
 
-longan/devices/configs/chips/${chip}/configs/default/version_base.mk中进行配置，文件中主要有两个属性可配置:
+### 4、生成安全固件
+
+配置burn_key 属性  
+
+​	设置 burn_key 属性值为 1 后，设备才会接收 DragonSN 通过 usb 传输的信息，进行相应的烧录工作。该属性在文件 longan/device/config/chips/h618/configs/p2/sys_config.fex中， [target] 项下，如图。如果未显式配置，按 burn_key=0 处理。  
+
+![image-20241122101659346](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122101659346.png)
+
+```
+$ source build/envsetup.sh
+$ lunch apollo_p2-userdebug
+$ pack -v
+```
+
+> 生成的安全固件位于：longan/out/  h618_android12_p2_uart0_secure_v0.img 
+>
+> 后面的v0就是你设置的版本号，芯片出厂默认是0
+
+
+
+### 5、ROTPK 烧写
+
+​	Rotpk 通过 PC 端工具 dragonSN 进行烧录。 DragonSN 工具通过 usb 与设备通信，控制设备烧录指定的 rotpk 信息。具体烧录步骤如下:  
+
+​	1.打包的安全固件进行烧录（注意：烧录了安全固件后就不能烧录普通固件，如果烧录了普通固件会在启动最后打印提示：need secure firmware）
+
