@@ -1,6 +1,6 @@
 # 21-Android12.0 系统定制
 
-
+H618 Android 12.0 为 tv 系统，兼容 tv 的 APP，安装使用 tablet 或 phone 版本的软件可能会存在兼容性问题。
 
 ## TV 桌面
 
