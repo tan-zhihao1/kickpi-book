@@ -556,5 +556,14 @@ apollo-p2:/ $ su
 
 
 
-## 支持旋转
+## 旋转
+
+支持使用adb命令进行旋转
+
+```
+adb shell settings put system user_rotation 1
+adb shell settings put system user_rotation 1
+adb shell settings put system user_rotation 1
+adb shell settings put system user_rotation 1
+```
 
