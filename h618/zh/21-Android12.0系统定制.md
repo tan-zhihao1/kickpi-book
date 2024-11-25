@@ -564,9 +564,13 @@ apollo-p2:/ $ su
 // 正常显示
 adb shell settings put system user_rotation 0
 
-// 
+// 90°
 adb shell settings put system user_rotation 1
+
+// 180°
 adb shell settings put system user_rotation 2
+
+// 270°
 adb shell settings put system user_rotation 3
 ```
 
