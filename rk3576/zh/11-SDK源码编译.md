@@ -169,7 +169,7 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 
 ### 常见问题
 
-
+![image-20241125155203743](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20241125155203743.png)
 
 
 
