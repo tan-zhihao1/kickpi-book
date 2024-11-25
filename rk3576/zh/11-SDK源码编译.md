@@ -175,10 +175,10 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 
 需要清除数据
 
-```
+```shell
 source build/envsetup.sh
 lunch rk3576_u-userdebug
-make clean
+make clean -j32
 ```
 
 
