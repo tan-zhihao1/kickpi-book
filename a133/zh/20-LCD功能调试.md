@@ -54,7 +54,7 @@ $ vim longan/device/config/chips/a133/configs/c3/board.dts
 //#include "lcd-mipi-10-800-1280.dtsi"
 ```
 
-注意：lcd-*.dtsi ，只打开一个，否则最后屏的dtsi生效
+注意：lcd-*.dtsi ，同时只打开一个
 
 
 
