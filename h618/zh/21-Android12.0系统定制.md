@@ -554,3 +554,7 @@ apollo-p2:/ $ su
  adb push .\build.prop /system/build.prop
 ```
 
+
+
+## 支持旋转
+
