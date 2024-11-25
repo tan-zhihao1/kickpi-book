@@ -169,7 +169,11 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 
 ### 常见问题
 
+**由于代码位置移动，路径错误导致 android 编译错误**
+
 ![image-20241125155203743](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20241125155203743.png)
+
+需要
 
 
 
