@@ -167,6 +167,10 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 
 
 
+问题
+
+
+
 ## 文档参考
 
 源码下有 RK 官方的指导文件
