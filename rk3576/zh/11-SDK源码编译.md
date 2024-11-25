@@ -173,7 +173,13 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 
 ![image-20241125155203743](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20241125155203743.png)
 
-需要
+需要清除数据
+
+```
+source build/envsetup.sh
+lunch rk3576_u-userdebug
+make clean -j32
+```
 
 
 
