@@ -181,6 +181,8 @@ lunch rk3576_u-userdebug
 make clean -j32
 ```
 
+重新全部编译即可
+
 
 
 ## 文档参考
