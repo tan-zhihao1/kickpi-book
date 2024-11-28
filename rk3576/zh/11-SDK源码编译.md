@@ -196,6 +196,8 @@ make clean -j32
 修改编译方式，带 -J 线程
 
 ```
+如： 修改线程为16
+./build.sh -AUCKu -J16
 ```
 
 
