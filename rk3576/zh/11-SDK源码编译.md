@@ -129,7 +129,7 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 
 烧写的镜像为 `(源码)/rockdev/Image-rk3576_u/update.img`
 
-烧录详见 - 11- 系统镜像烧录
+烧录详见 - `10-系统镜像烧录`
 
 
 
