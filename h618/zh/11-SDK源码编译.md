@@ -188,7 +188,7 @@ $ ./build.sh uboot
 $ ./build.sh kernel
 ```
 
-> 镜像生成目录：
+> 镜像生成目录：longan/out/h618_android12_p2_uart0.img
 
 
 
