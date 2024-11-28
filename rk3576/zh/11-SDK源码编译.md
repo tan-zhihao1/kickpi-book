@@ -198,6 +198,11 @@ make clean -j32
 
 方式二：
 
+```
+vim device/rockchip/common/build/rockchip/build.sh
+
+```
+
 
 
 
