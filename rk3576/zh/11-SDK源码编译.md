@@ -191,6 +191,8 @@ make clean -j32
 
 方式一： 
 
+
+
 ```
 ```
 
@@ -198,9 +200,12 @@ make clean -j32
 
 方式二：
 
-```
-vim device/rockchip/common/build/rockchip/build.sh
+修改默认线程
 
+```diff
+$ vim device/rockchip/common/build/rockchip/build.sh
+-BUILD_JOBS=32
++BUILD_JOBS=16
 ```
 
 
