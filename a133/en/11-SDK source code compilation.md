@@ -1,26 +1,26 @@
-# 11-SDK源码编译
+# 11-SDK source code compilation
+
+[TOC]
+
+
+## 1. build environment
+
+This build environment configuration for Android/Linux SDK
 
 
 
+### Hardware requirements
 
-## 1. 编译环境搭建
-
-此编译环境配置 适用 Android/Linux SDK
-
-
-
-### 硬件要求
-
-| 系统环境  | 要求          |
-| --------- | ------------- |
-| 系统版本  | > Ubuntu18.04 |
-| CPU核心数 | 4核以上       |
-| 内存容量  | 16GB以上      |
-| 硬盘容量  | 200GB以上     |
+| System environment | request         |
+| ------------------ | --------------- |
+| System version     | > Ubuntu18.04   |
+| CPU core count     | 4 cores or more |
+| Memory capacity    | 16GB or more    |
+| Hard disk capacity | 200GB or more   |
 
 
 
-### 安装依赖软件包
+### Install dependent packages
 
 ```
 $ sudo apt install git bc bison build-essential curl flex libsdl1.2-dev 
@@ -28,30 +28,30 @@ $ sudo apt install g++-multilib gcc-multilib gnupg gperf libncurses5-dev
 $ sudo apt install imagemagick lib32ncurses5-dev lib32readline-dev squashfs-tools 
 $ sudo apt install lib32z1-dev liblz4-tool xsltproc libssl-dev libwxgtk3.0-dev 
 $ sudo apt install libxml2 libxml2-utils schedtool lzop pngcrush rsync 
-$ sudo apt install yasm zip zlib1g-dev python device-tree-compiler mtd-utils
+$ sudo apt install yasm zip zlib1g-dev python device-tree-compiler 
 $ sudo apt install python-pip gawk openjdk-8-jdk u-boot-tools patchelf expect
 $ sudo pip install pyelftools
 ```
 
-> 软件包名称 会根据UBUNTU版本更新而变化
+> Package names change according to UBUNTU version updates
 >
-> 不同UBUNTU版本安装失败，可网络搜索对应的解决方法
+> The installation of different UBUNTU versions failed. You can search for the corresponding solution on the network.
 
 
 
-### SDK介绍
+### SDK introduction
 
-Android SDK版本信息
+Android SDK version information
 
-内核版本：4.9
+Kernel version: 4.9
 
-Android系统版本：10.0
+Android system version: 10.0
 
 
 
-### 获取SDK源码
+### Get the SDK source code
 
-* 网盘下载目录
+* Network disk download directory
 
 ```
 ├── 1-SDK软件源码
@@ -59,19 +59,19 @@ Android系统版本：10.0
 │   └── ubuntu1604
 ```
 
-* 拷贝源码压缩包到编译主机目录 （linux环境）
+* Copy the source archive to the build host directory (Linux environment)
 
-  > 注意事项：
+  > Notes:
   >
-  > 1. 源码不可放在共享目录下编译
+  > 1. The source code cannot be compiled in a shared directory
   >
-  > 2. 编译主机不可用ROOT账号登陆
+  > 2. The compilation host cannot log in with the ROOT account.
 
 
 
-* 解压源码压缩包，Git恢复源码目录
+* Unzip the source code compressed package, Git restores the source code directory
 
-  >a133-*.tar.gz 指代解压的代码压缩包
+  >a133-*.tar.gz Refers to the decompressed code archive
 
 ```
 mkdir sdk
@@ -82,53 +82,53 @@ git reset --hard
 
 
 
-## 2. Android SDK编译
+## 2. Android SDK compilation
 
 
 
-### 编译完整镜像
+### Compile full image
 
 ```
 $ ./build.sh
 ```
 
-> 镜像生成目录：longan/out/a133_android10_c3_uart0.img
+> Image generation directory: longan/out/a133_android10_c3_uart0.img
 
 
 
-### 单独编译分区镜像
+### Compile partition images separately
 
-**单独编译Uboot**
+**Compile Uboot separately**
 
 ```
 $ ./build.sh uboot
 ```
 
-> 镜像生成目录：longan/out/a133_android10_c3_uart0.img
+> Mirror generation directory: longan/out/a133_android10_c3_uart0.img
 
 
 
-**单独编译Kernel**
+**Compiling Kernels Separately**
 
 ```
 $ ./build.sh kernel
 ```
 
-> 镜像生成目录：longan/out/a133_android10_c3_uart0.img
+> Mirror generation directory: longan/out/a133_android10_c3_uart0.img
 
 
 
-**单独编译Android**
+**Compile Android separately**
 
 ```
 $ ./build.sh android
 ```
 
-> 镜像生成目录：longan/out/a133_android10_c3_uart0.img
+> Mirror generation directory: longan/out/a133_android10_c3_uart0.img
 
 
 
-**内核路径**
+**kernel path**
 
 ```
 longan/kernel/linux-4.9
@@ -138,7 +138,7 @@ longan/kernel/linux-4.9
 
 ### **defconfig **
 
-路径
+path
 
 ```
 longan/kernel/linux-4.9/arch/arm64/configs/sun50iw10p1smp_a133_android_defconfig
@@ -159,9 +159,9 @@ cd longan
 
 
 
-### 编译问题
+### compilation problem
 
-**工具链路径错误，编译需要配置**
+**Toolchain path error. Compilation requires configuration.**
 
 ```
 $ cd longan/
@@ -194,9 +194,9 @@ Choice [c3]: 3
 
 
 
-**由于编译环境 ld 不同，可能会导致 yylloc 报错，需要修改代码中的yylloc**
+**Due to different compilation environments (ld), it may cause an error in yylloc. The yylloc in the code needs to be modified.**
 
-实际路径根据报错提示修改
+The actual path is modified according to the error prompt.
 
 ```diff
 --- a/longan/kernel/linux-4.9/scripts/dtc/dtc-lexer.lex.c
@@ -213,59 +213,25 @@ Choice [c3]: 3
 
 
 
-## 3.Linux SDK编译
+## 3.Linux SDK compilation
 
-### 完整编译
+### full compilation
 
 ```
 ./build.sh 
 ```
 
->镜像生成目录：out/a133_linux_c3_uart0.img
 
 
-
-### 单独编译
-
-kernel
+mirror image
 
 ```
-./build.sh kernel
+out/a133_linux_c3_uart0.img
 ```
 
 
 
-rootfs
-
-```
-./build.sh rootfs
-```
-
-
-
-### defconfig 
-
-```
-kernel/linux-4.9/arch/arm64/configs/sun50iw10p1smp_defconfig
-```
-
-
-
-defconfig 修改及保存
-
-```
-确保编译过一次 或 ./build.sh config
-cd kernel/linux-4.9/
-make ARCH=arm64 menuconfig
-cd -
-./build.sh saveconfig
-```
-
-
-
-### 编译问题
-
-如果编译失败，尝试配置
+If compilation fails, try configuring
 
 ```
 $ ./build.sh config
@@ -305,15 +271,53 @@ Choice [default]: 0
 
 
 
-### 工具链
+### Compile separately
 
-包路径
+kernel
+
+```
+./build.sh kernel
+```
+
+
+
+rootfs
+
+```
+./build.sh rootfs
+```
+
+
+
+### defconfig 
+
+```
+kernel/linux-4.9/arch/arm64/configs/sun50iw10p1smp_defconfig
+```
+
+
+
+defconfig Modify and save
+
+```
+Make sure it is compiled once, or ./build.sh config
+cd kernel/linux-4.9/
+make ARCH=arm64 menuconfig
+cd -
+./build.sh saveconfig
+```
+
+
+
+### toolchain
+
+packet path
 
 ```
 build/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu.tar.xz
 ```
 
-编译后工具的路径
+Path to the compiled tool
 
 ```
 out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu

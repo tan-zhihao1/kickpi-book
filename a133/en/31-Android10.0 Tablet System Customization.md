@@ -1,8 +1,10 @@
-# 31-Android10.0 Tablet系统定制
+# 31-Android10.0 Tablet System Customization
+
+[TOC]
 
 
 
-## Android 环境
+## Android environment
 
 ```
 cd android
@@ -12,35 +14,35 @@ lunch ceres_c3-userdebug
 
 
 
-## 开发者模式
+## developer mode
 
 ```
-操作步骤：
-Settings -> About tablet ->  点击 Build number -> 提示已经切换到开发者模式
+Operation steps:
+Settings - > About tablet - > Click Build number - > Prompt that it has switched to developer mode
 
-开发者选项路径：
+Developer Options Path:
 Settings -> System -> Developer options
 ```
 
 
 
-## APP 、文件编译不生效问题
+## APP and file compilation do not take effect
 
-android 为惰性编译，直接替换后编译，一些APP、文件不一定编译到镜像中
+Android is a lazy compilation, which is directly replaced and compiled. Some APPs and files may not be compiled into the mirror.
 
-可以通过如下其中一种方式解决
+It can be solved in one of the following ways
 
 1. make installclean
 
 2. rm out/target/product/apollo-p2/xxx/xxx
 
-3. 编译的条件发生变化（比如文件名、APK名）
+3. Compile conditions change (e.g. file name, APK name)
 
 
 
-## 开机LOGO
+## boot logo
 
-logo 替换路径
+logo alternate path
 
 ```
 longan/device/config/chips/h618/boot-resource/boot-resource/bootlogo.bmp
@@ -48,15 +50,15 @@ longan/device/config/chips/h618/boot-resource/boot-resource/bootlogo.bmp
 
 
 
-## 开机动画
+## boot animation
 
-支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
+Support bootanimation.mp4 and bootanimation.zip two file formats
 
-两种文件同时存在播放 mp4 优先级比 zip 高 ，具体优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
+The two files exist at the same time to play mp4 with a higher priority than zip. For the specific priority, see frameworks/base/cmds/bootanimation/BootAnimation.cpp
 
 
 
-修改路径
+Modify path
 
 ```
 device/softwinner/apollo/common/media/config.mk
@@ -64,7 +66,7 @@ device/softwinner/apollo/common/media/config.mk
 
 
 
-bootanimation.zip 格式
+bootanimation.zip format
 
 ```makefile
 PRODUCT_COPY_FILES += \
@@ -73,20 +75,20 @@ PRODUCT_COPY_FILES += \
 
 
 
-bootanimation.mp4 格式
+bootanimation.mp4 format
 
 ```makefile
 PRODUCT_COPY_FILES += \
     $(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
 ```
 
-* 烧录镜像后第一次启动的开机动画是原生Android，需要重启显示替换的开机动画
+* The boot animation started for the first time after burning the mirror is native Android, and a restart is required to display the replacement boot animation.
 
 
 
-## 默认语言
+## default language
 
-persist.sys.locale 属性
+Persist.sys.locale property
 
 ```
 device/softwinner/apollo/apollo_p2.mk
@@ -96,7 +98,7 @@ device/softwinner/apollo/apollo_p2.mk
 
 
 
-persist.sys.country 以及 persist.sys.language 属性
+persist.sys.country and persist.sys.language properties
 
 ```diff
 --- a/device/softwinner/apollo/apollo_p2.mk
@@ -113,7 +115,7 @@ persist.sys.country 以及 persist.sys.language 属性
 
 
 
-PRODUCT_LOCALES 配置
+PRODUCT_LOCALES configuration
 
 ```makefile
 $ vim build/target/product/full_base.mk
@@ -122,14 +124,14 @@ $ vim build/target/product/full_base.mk
 
 
 
-| 选项  | 描述 |
-| ----- | ---- |
-| en_US | 英文 |
-| zh_CN | 中文 |
+| option | describe |
+| ------ | -------- |
+| en_US  | English  |
+| zh_CN  | Chinese  |
 
 
 
-locale 获取优先级 frameworks/base/core/jni/AndroidRuntime.cpp
+Locale get priority frameworks/base/core/jni/AndroidRuntime.cpp
 
 ```java
 /*
@@ -186,9 +188,9 @@ const std::string readLocale()
 
 
 
-## 内置第三方 APP
+## Built-in third-party APP
 
-比如新增 test.apk 
+For example, add test.apk 
 
 Android.mk
 
@@ -230,7 +232,7 @@ android_app_import {
 }
 ```
 
-加入编译
+add compilation
 
 ```makefile
 PRODUCT_PACKAGES += \
@@ -239,11 +241,11 @@ PRODUCT_PACKAGES += \
 
 
 
-## 开机自启动 APP
+## Boot self-starting APP
 
-### **Launcher方式启动**
+### **Launcher mode**
 
-要让 APP 作为 Launcher 开机自启动，需要在 AndroidManifest.xml 中添加两个 category
+To make the APP boot as a Launcher, you need to add two categories to AndroidManifest.xml.
 
 ```xml
 <activity android:name=".MainActivity">
@@ -256,13 +258,13 @@ PRODUCT_PACKAGES += \
 
 
 
-### 后台调用方式
+### background call method
 
-**通过接收开机广播完成后，启动APP**
+**After receiving the boot broadcast, start the APP.**
 
-1、修改增加 APP 的权限以及广播接收  AndroidManifest.xml
+1. Modify and increase the permissions of the APP and broadcast to receive AndroidManifest.xml
 
-```xml
+```
 <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
 <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
@@ -282,9 +284,9 @@ PRODUCT_PACKAGES += \
 
 
 
-2、增加广播接收 MyReceiver.java
+2, increase the broadcast reception MyReceiver.java
 
-```java
+```
 package com.example.myapplication;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -309,18 +311,18 @@ public class MyReceiver extends BroadcastReceiver {
 
 
 
-3、预装app 到 /system/priv-app/
+3.Pre-install the app to /system/priv-app/
 
-* 方式一，编译预装到源码，参考 [内置第三方APP](# 6. 内置第三方APP)
+* Method 1, compile and pre-install to the source code, refer to [Built-in third-party APP] (#6. Built-in third-party APP)
 
-* 方式二，push 方式预装
+* Method 2, push method pre-installed
 
-  ```
-  adb root; adb remount;
-  adb push ./app /system/priv-app/
-  ```
+```
+adb root; adb remount;
+adb push ./app /system/priv-app/
+```
 
-  
+
 
 
 

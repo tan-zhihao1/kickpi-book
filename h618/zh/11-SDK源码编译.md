@@ -202,7 +202,35 @@ $ ./build.sh android
 
 
 
-## 3. ARMBIAN SDK
+## 3.TINA Linux-SDK
+
+> 编译线刷固件-内核4.9版本SDK
+
+安装依赖包
+
+```
+sudo apt-get install binfmt-support qemu-user-static
+```
+
+编译命令：
+
+```
+$ ./build.sh server 
+//参数可以用如下：
+server)			--server版本
+desktop) 		--桌面版本
+kernel) 		--单独编译kernel
+uboot) 			--单独编译kernel
+rootfs_server)  --单独编译rootfs server版的
+rootfs_desktop)	--单独编译rootfs 桌面版的
+pack) 			--打包固件
+```
+
+编译固件：out/h618-p2/tina_h618-p2_uart0.img
+
+
+
+## 4. ARMBIAN SDK
 
 
 
@@ -257,8 +285,11 @@ $ git reset --hard
 
 ### 编译命令
 
+内核5.4版本SDK
+
 ```
 $ ./build.sh
+$ ./build.sh auto_burn=true // 编译固件制作的SD卡为烧录卡
 ```
 
 在aw-image-build根目录运行 **./build.sh** 来进入交互式构建界面

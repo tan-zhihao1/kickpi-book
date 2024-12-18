@@ -256,12 +256,14 @@ Codename:       focal
 
 
 
-注意：使用arm的镜像源
+将新的镜像源替换并更新
 
 ```
 $ sudo vi /etc/apt/sources.list
 $ sudo apt update
 ```
+
+注意：使用arm的镜像源
 
 
 

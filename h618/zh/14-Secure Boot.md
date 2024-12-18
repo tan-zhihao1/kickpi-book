@@ -1,19 +1,32 @@
 # 14-Secure Boot  
 
-### 1、Secure Boot 原理
+## 1、Secure Boot 原理
 
 ​	Secure Boot 启动过程中，芯片在启动时，会先对系统做安全性检验，检验通过后才引导系统。检查不通过则认为系统已经被修改，拒绝引导系统并进入烧录模式。
 
 
 
-### 2、生成密钥
 
-生成密钥的脚本位于: longan/build/createkeys   
+
+## 2、密钥使用说明
+
+密钥使用分为两种情况
+
+1. 自己没有密钥，SDK下自行生成
+2. 已有现成密钥，提供到SDK指定目录
+
+
+
+### 2.1、生成密钥
+
+生成密钥的脚本位于: longan/build/createkeys
 
 ```
 $ ./longan/build/createkeys 
 //选择使用的平台 
 //如:h618
+
+$ cp longan/out/h618/common/keys/* android/vendor/security/toc_keys/ -rf
 ```
 
 > 生成的密钥位于longan/out/$(platform)/common/keys 
@@ -28,6 +41,8 @@ $ ./longan/build/createkeys
 
 
 
+### 2.2、使用已有密钥
+
 **如果已经有密码，将密钥放到longan/out/$(platform)/common/keys  下**
 
 密钥的文件数量及名称都是根据平台固件打包的过程做过适配的。 A 平台生成的密钥不可用于 B 平台安全固件的打包。否则打
@@ -35,7 +50,7 @@ $ ./longan/build/createkeys
 
 
 
-### 3、防回滚版本号
+## 3、防回滚版本号
 
 芯片在引导固件的时候，会对比固件的版本号与芯片内存保留的版本号。
 
@@ -53,7 +68,7 @@ $ ./longan/build/createkeys
 
 
 
-### 4、生成安全固件
+## 4、生成安全固件
 
 配置burn_key 属性  
 
@@ -73,7 +88,7 @@ $ pack -v
 
 
 
-### 5、ROTPK 烧写
+## 5、ROTPK 烧写
 
 ​	Rotpk 通过 PC 端工具 dragonSN 进行烧录。 DragonSN 工具通过 usb 与设备通信，控制设备烧录指定的 rotpk 信息。具体烧录步骤如下:  
 
@@ -113,7 +128,9 @@ $ pack -v
 
 ![image-20241122105405421](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122105405421.png)
 
-### 6、校验烧写是否成功
+
+
+## 6、校验烧写是否成功
 
 ​	串口调试接上，启动中，按住s 等待进入uboot
 

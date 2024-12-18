@@ -1,8 +1,14 @@
-# 32-Ubuntu16.04 系统定制
+# 32-Ubuntu16.04 system customization
+
+[TOC]
+
+## compilation method
+
+​		See 11 - SDK source code compilation
 
 
 
-## dts
+## DTS
 
 ```
 device/config/chips/a133/configs/c3/board.dts
@@ -12,10 +18,10 @@ device/config/chips/a133/configs/c3/board.dts
 
 ## Kernel Defconfig 
 
-defconfig 修改及保存
+Defconfig and save
 
 ```
-确保编译过一次 或 ./build.sh config
+Make sure it is compiled once, or ./build.sh config
 cd kernel/linux-4.9/
 make ARCH=arm64 menuconfig
 cd -
@@ -24,15 +30,15 @@ cd -
 
 
 
-## 工具链
+## toolchain
 
-包路径
+packet path
 
 ```
 build/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu.tar.xz
 ```
 
-编译后工具的路径
+Path to the compiled tool
 
 ```
 out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
@@ -40,41 +46,41 @@ out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
 
 
 
-## PIN 控制
+## PIN control
 
-### pin 脚计算
+### Pin calculation
 
-( B ~ J ) 一组按32位算
+(B~ J) A group is calculated according to 32 bits
 
-如 PB2 为 2 组，2号脚
+If PB2 is 2 groups, foot 2
 
 ```
 32 x ( 2 - 1) + 2 =  34
 ```
 
-PH3 为 8组， 3号脚
+PH3 is 8 groups, foot 3.
 
 ```
 32 x ( 8 - 1) + 3 =  227 
 ```
 
-其他引脚类比计算即可
+Other pins can be calculated by analogy.
 
 
 
-### sys gpio控制
+### Sys gpio control
 
-当存在将拓展引脚配置为输入的需求，默认软件的gpio-led不能满足需求。
+When there is a need to configure the extension pin as an input, the default software's GPIO-LED does not meet the requirement.
 
-将GPIO释放出来，通过/sys/class/gpio进行控制
+Release the GPIO and control it with/sys/class/gpio
 
 
 
-步骤一
+Step one
 
-先将对应GPIO引脚注释，/sys/class/gpio/export 只能导入未注册的 gpio
+Note the corresponding GPIO pins first,/sys/class/gpio/export can only import unregistered gpio.
 
-比如PH8，如需其他引脚，一样在 leds 结点下注释即可 ,  下面内容都以PH8 做举例
+For example, PH8, if you need other pins, just comment under the leds node. The following content is based on PH8 as an example
 
 ```diff
 vim device/config/chips/a133/configs/c3/board.dts
@@ -90,42 +96,40 @@ vim device/config/chips/a133/configs/c3/board.dts
 
 
 
-步骤二
+Step two
 
-​		编译镜像，重新烧录
+​	Compilation mirroring, reburning
 
+Step three
 
-
-步骤三
-
-​		确认gpio未被注册
+​	Confirm that gpio is not registered
 
 ```
 root@kickpi:~# cat /sys/kernel/debug/pinctrl/pio/pinmux-pins  | grep PH8
 pin 232 (PH8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
 ```
 
-​		能够看到PH8未被使用，且对应 pin 值为 232 ，引脚计算见 [pin脚计算](# pin脚计算)
+​		You can see that PH8 is not used, and the corresponding pin value is 232. See pin calculation for pin calculation.
 
 
 
-步骤四
+Step four
 
-​		通过 /sys/class/gpio/export 注册 PH8 并进行控制
+​	Register and control PH8 by /sys/class/gpio/export
 
 ```
-// 注册
+// Register
 root@kickpi:~# echo  232 > /sys/class/gpio/export
-// 查看是否生成
+// Check if it is generated
 root@kickpi:~# ls /sys/class/gpio/
 export  gpio232  gpiochip0  gpiochip352  unexport
-// 注册后的结点内容
+// Node content after registration
 root@kickpi:~# ls /sys/class/gpio/gpio232
 active_low  device  direction  edge  power  subsystem  uevent  value
 root@kickpi:~#
 ```
 
-​			通过结点下的内容控制 gpio , 常用如下
+​			Control gpio through the content under the node, commonly used as follows
 
 ```
 direction
@@ -134,36 +138,36 @@ direction
 	echo out > /sys/class/gpio/gpio232/direction
 value
 	0 / 1
-	cat /sys/class/gpio/gpio232/value 		// 读取
-	echo 1 > /sys/class/gpio/gpio232/value	// 配置高电平
-	echo 0 > /sys/class/gpio/gpio232/value  // 配置低电平
+	cat /sys/class/gpio/gpio232/value 		// read
+	echo 1 > /sys/class/gpio/gpio232/value	// Configure High
+	echo 0 > /sys/class/gpio/gpio232/value  // Configure low
 ```
 
 
 
-### sunxi gpio 控制
+### Sunxi gpio control
 
 ```
 cd /sys/kernel/debug/sunxi_pinctrl
 
-查看 pin 的配置
+Check the configuration of the pin.
 # echo PH8 > sunxi_pin
 # cat sunxi_pin_configure
 
-配置 pin 为 gpio 模式
+Configure pin to gpio mode
 # echo 'PH8 0' > function
 
-修改 pin 的上拉属性
+Modify the pull-up properties of pin
 # echo 'PH8 1' > pull
-// 查看修改情况
+//check the modification status
 # cat pull					
 # cat sunxi_pin_configure
 
-查看 pin 电平
+Check pin level
 # cat data
 
-注意：
-当操作PL及之后的pin ， 需要切换pin的设备， 否则操作失败
+Attention:
+When operating PL and subsequent pins, you need to switch the device of the pin, otherwise the operation fails.
 echo pio > /sys/kernel/debug/sunxi_pinctrl/dev_name
 cat /sys/kernel/debug/sunxi_pinctrl/dev_name
 
@@ -175,7 +179,7 @@ cat /sys/kernel/debug/sunxi_pinctrl/dev_name
 
 ## UBUNTU 1604
 
-ubuntu 文件系统
+Ubuntu file system
 
 ```
 device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
@@ -183,9 +187,9 @@ device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 
 
-### chroot 方式修改 ubuntu
+### Modify Ubuntu by chroot
 
-搭建构建环境
+Setting up the build environment
 
 ```
 sudo apt-get install binfmt-support qemu-user-static
@@ -195,7 +199,7 @@ sudo apt-get install -f
 
 
 
-修改前先备份保留原本的镜像
+Backup before modification and keep the original image
 
 ```
 cp device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts_backup.tar.gz
@@ -203,7 +207,7 @@ cp device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz device/config
 
 
 
-解压
+decompress
 
 ```
 mkdir rootfs_k5
@@ -212,35 +216,35 @@ sudo tar -zxf device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz -C
 
 
 
-chroot 进行挂载，等同于在 root 下进行修改ubuntu镜像
+Chroot to mount, which is equivalent to modifying the ubuntu image under root
 
 ```shell
-// 配置以及挂载
+//Configure and mount
 $ ./ch-mount.sh -m rootfs_k5
 $ sudo cp -b /etc/resolv.conf rootfs_k5/etc/resolv.conf
 $ sudo cp -b /usr/bin/qemu-aarch64-static rootfs_k5/usr/bin/
 
-// 通过chroot挂载修改
+//Modify by chroot mount
 $ sudo chroot rootfs_k5
 # export LC_ALL=C.UTF-8
 # echo "nameserver 8.8.8.8" >> etc/resolv.conf
 # echo "nameserver 114.114.114.114" >> etc/resolv.conf
-// 测试是否有网
+//Test if there is a network
 # ping www.baidu.com  
 # apt-get update
 # apt-get upgrade
-// 下载需要的东西 或 修改文件
+Download what you need, or modify the file
 # apt install 		
-// chroot下用exit退出
+//Exit with exit under chroot
 # exit
 
-// 取消挂载
+//unmount
 $ ./ch-mount.sh -u rootfs_k5
 ```
 
 
 
-将修改后的ubuntu重新打包 **(注意：必须取消挂载！！！)**
+Repack modified Ubuntu  **(Note: must unmount!!!)** 
 
 ```
 rm -v device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
@@ -252,15 +256,15 @@ ls device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 
 
 
-重新编译即可 ./build.sh , 会将 新的 root fs 打包编译进镜像。
+Just recompile./build.sh, the new root fs will be packaged and compiled into the image.
 
-报错问题
+Error report
 
 ![image-20241022183551403](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241022183551403.png)
 
-修改ubuntu会影响镜像大小，mkfs.ubifs 会报错
+Modifying ubuntu will affect the image size, and mkfs.ubifs will report an error.
 
-需要修改 build/mkcmd.sh
+Need to modify build/mkcmd.sh
 
 ```diff
 vim build/mkcmd.sh
@@ -270,13 +274,13 @@ vim build/mkcmd.sh
 
 
 
-注意：如果chroot修改方式不生效，则需要查看 overlay路径下文件是否存在覆盖文件!
+Note: If the chroot modification method does not take effect, you need to check whether there is an overlay file in the file under the overlay path!
 
 
 
-### overlay 方式修改ubuntu
+### Modify Ubuntu by overlay
 
-将需要替换的文件存放到overlay下，编译会拷贝替换 rootfs 对应路径下的文件
+Store the files that need to be replaced under the overlay, and the compilation will copy and replace the files in the corresponding path of rootfs.
 
 ```
 overlay
@@ -284,22 +288,22 @@ overlay
 
 
 
-比如，需要将脚本放到 /etc/test.sh，则放到代码路径
+For example, if you need to put the script in /etc/test.sh, put it in the code path
 
 ```
 overlay/etc/test.sh
 ```
 
-编译会拷贝到根目录 /etc/test.sh
+The compilation will be copied to the root directory /etc/test.sh
 
 
 
-### 制作打包根文件系统
+## Make a packaged root file system
 
-目的：将板子的修改的配置，导出根文件系统镜像，重新打包成烧录镜像
+Objective: To export the modified configuration of the board to the root file system image and repackage it into a burning image
 
 ```bash
-# ff_export_rootfs U盘或SD卡的路径
+# ff_export_rootfs The path to the U disk or SD card
 如：
 # ff_export_rootfs /media/kickpi/EAA1-F4D4/	
 	Export rootfs to /media/kickpi/EAA1-F4D4//rootfs.img Success
@@ -309,19 +313,19 @@ overlay/etc/test.sh
 
 
 
-在已经编译过的代码上，将生成的 rootfs.img 重新打包
+On the already compiled code, repackage the generated rootfs.img
 
 ```bash
 rm out/a133/c3/bsp/rootfs.ext4
-cp (rootfs.img的路径) out/a133/c3/bsp/rootfs.ext4
+cp (Path to rootfs.img) out/a133/c3/bsp/rootfs.ext4
 ./build.sh pack
 ```
 
 
 
-## 分区和容量
+## Partition and capacity
 
-目前软件默认rootfs分区为 6G，除其他必要分区外，剩余空间分配给 UDISK 分区 `/dev/mmcblk0p6`
+At present, the default rootfs partition of the software is 6G. In addition to other necessary partitions, the remaining space is allocated to the UDISK partition `/dev/mmcblk0p6`
 
 ```
 # fdisk  -l
@@ -336,7 +340,7 @@ Device            Start      End  Sectors  Size Type
 
 
 
-修改分区表
+Modify partition table
 
 ```
 vim device/config/chips/a133/configs/default/sys_partition.fex
@@ -346,20 +350,20 @@ vim device/config/chips/a133/configs/default/sys_partition.fex
 
 
 
-默认未挂载 UDISK 分区，可手动将其挂载
+The UDISK partition is not mounted by default, it can be mounted manually
 
 ```
-// 默认无文件系统格式，将其格式化未 ext4
+// Default filesystem format, format it not ext4
 sudo mkfs.ext4 /dev/mmcblk0p6
 
-// 挂载 UDISK 分区
+// Mount UDISK partition
 mkdir /data
 mount /dev/mmcblk0p6 /data
 ```
 
 
 
-fstab 修改方式，系统启动会将其默认挂载
+Fstab modification method, system start-up will mount it by default
 
 ```
 # vim /etc/fstab
@@ -368,9 +372,9 @@ fstab 修改方式，系统启动会将其默认挂载
 
 
 
-## NFS配置
+## NFS configuration
 
-**环境配置**
+**environment configuration**
 
 ```
 sudo apt install nfs-kernel-server
@@ -380,9 +384,9 @@ sudo apt install nfs-common
 
 
 
-**服务器端**
+**server side**
 
-1. 配置共享的文件
+1. Configure shared files
 
 ```
 $ mkdir /home/huangcm/nfs_share
@@ -403,7 +407,7 @@ $ vi /etc/exports
 
 
 
-2. 启动服务
+2. startup service
 
 ```
 sudo service nfs-kernel-server restart
@@ -411,7 +415,7 @@ sudo service nfs-kernel-server restart
 
 
 
-3. 查看当前服务器共享文件，证明共享成果
+3. View the current server shared files to prove the shared results
 
 ```
 $  showmount -e localhost
@@ -421,9 +425,9 @@ Export list for localhost:
 
 
 
-**客户端**
+**client side**
 
-1. 查看服务器共享文件
+1. View server shared files
 
 ```
 showmount -e 192.168.199.173
@@ -433,7 +437,7 @@ Export list for 192.168.199.173:
 
 
 
-2. 挂载文件夹
+2. mount folder
 
 ```
 $ mkdir nfs_tmp
@@ -442,7 +446,7 @@ $ sudo mount -t nfs 192.168.199.173:/home/huangcm/nfs_share nfs_tmp/
 
 
 
-3. 挂载成功
+3. Mount successful
 
 ```
 $ ls nfs_tmp/
@@ -451,17 +455,17 @@ $ ls nfs_tmp/
 
    
 
-## SSH配置
+## SSH configuration
 
 ```
-用户：kickpi
-密码：kickpi
-(su)root密码： kickpi
+User:kickpi
+Password: kickpi
+(su)root Password： kickpi
 ```
 
 
 
-默认不支持root连接，root连接需要配置
+Root connection is not supported by default, root connection needs to be configured.
 
 ```shell
 $ vim /etc/ssh/ssh_config
@@ -471,33 +475,19 @@ $ vim /etc/ssh/sshd_config
 $ sudo /etc/init.d/ssh restart
 ```
 
-注意事项：
+Notes:
 
-确保板子IP正常
+Make sure the board IP is normal.
 
-确保能正常连通板子的IP
-
-
-
-## 4G配置
-
-开机会检测4G模块，自动拨号，关闭需要去掉
-
-```diff
-$ vim usr/lib/lbc/hardware-optimization 
-4g_config &
-- 4g_config &
-```
+Make sure that the IP of the board can be connected normally.
 
 
 
+## Other business
 
+### XFCE browser cannot be opened
 
-## 其他事项
-
-### xfce 浏览器打不开
-
-需要安装火狐浏览器
+Firefox browser needs to be installed.
 
 ```
 sudo apt install firefox
@@ -505,7 +495,7 @@ sudo apt install firefox
 
 
 
-### xrandr 无法旋转
+### Xrandr cannot rotate
 
-a133 目前不支持 xrandr 进行旋转
+​		A133 currently does not support xrandr rotation
 

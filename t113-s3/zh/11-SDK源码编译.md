@@ -58,7 +58,7 @@ Tina5.0 Linux SDK支持构建三个文件系统，分别为buildroot、openwrt�
 网盘SDK目录如下
 
 ```
-1-SDK源码\t113-linux\
+1-SDK源码\linux\sdk\xxxxxxx\
 	t113-linux-*.tar.gz
 	t113-linux-*.md5
 ```
@@ -75,7 +75,7 @@ Tina5.0 Linux SDK支持构建三个文件系统，分别为buildroot、openwrt�
 
 **MD5校验文件完整性**
 
-```
+```shell
 $ md5sum -c *.md5
 ```
 
@@ -83,7 +83,7 @@ $ md5sum -c *.md5
 
 **解压源码压缩包**
 
-```
+```shell
 $ tar -zxvf t113-linux-*.tar.gz
 ```
 
@@ -93,35 +93,33 @@ $ tar -zxvf t113-linux-*.tar.gz
 
 **还原源码文件**
 
-```
+```shell
 $ git reset --hard
 ```
 
 
 
-### 获取Rootfs镜像(暂不支持)
+### 获取Rootfs镜像
 
 * 文件系统网盘目录
 
 ```
-1-SDK源码\t113-linux\
-	ubuntu-rootfs-20230523.tar.gz
+1-SDK源码\linux\rootfs\
+	buildroot-dl-*.tar.gz
+	ubuntu-rootfs-*.tar.gz
 ```
 
+* buildroot文件系统
 
+提供的buildroot-dl-*.tar.gz压缩包，可用于离线编译Buildroot文件系统,，减少编译时下载源码的时间
 
-* MD5校验文件完整性
+将buildroot-dl-*.tar.gz解压至buildroot/buildroot-201902目下
 
-```
-$ md5sum -c *.md5
-```
+* ubuntu文件系统
 
+ubuntu-rootfs-*.tar.gz是ubuntu文件系统压缩包，搭配SDK源码编译可生成ubuntu系统镜像
 
-
-* 解压ubuntu镜像文件（暂不支持）
-
-
-
+将ubuntu-rootfs-*.tar.gz拷贝至SDK的device/config/rootfs_tar目录下并重命名为ubuntu-armhf.tar.gz
 
 
 
@@ -136,12 +134,13 @@ $ md5sum -c *.md5
 
 * SDK编译配置
 
-```
+```shell
 $ ./build.sh lunch
 
 ======you are building t113 linux======
 1. BoardConfig-t113-s3-kickpi-k4b-buildroot.mk
-which board would you like: 
+2. BoardConfig-t113-s3-kickpi-k4b-ubuntu.mk
+which board would you like (1-2): 
 ```
 
 > 配置命令首次编译执行一次即可
@@ -150,7 +149,7 @@ which board would you like:
 
 * 编译镜像
 
-```
+```shell
 $ ./build.sh
 $ ./build.sh pack
 ```
@@ -165,7 +164,7 @@ $ ./build.sh pack
 
 **单独编译Uboot**
 
-```
+```shell
 $ ./build.sh uboot
 ```
 
@@ -173,7 +172,7 @@ $ ./build.sh uboot
 
 **单独编译Kernel**
 
-```
+```shell
 $ ./build.sh kernel
 ```
 
@@ -181,7 +180,7 @@ $ ./build.sh kernel
 
 **单独编译Buildroot**
 
-```
+```shell
 $ ./build.sh buildroot_rootfs
 ```
 
@@ -191,15 +190,16 @@ $ ./build.sh buildroot_rootfs
 
 **内核配置**
 
-```
-$ ./build.sh kernel-config
+```shell
+$ ./build.sh menuconfig
+$ ./build.sh saveconfig
 ```
 
 
 
 **buildroot配置**
 
-```
+```shell
 $ ./build.sh buildroot_menuconfig
 $ ./build.sh buildroot_saveconfig
 ```

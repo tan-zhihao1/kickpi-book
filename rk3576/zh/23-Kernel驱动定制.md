@@ -1,8 +1,42 @@
 # Kernel驱动定制
 
-## config
+## version
 
-配置
+```
+Linux version 6.1.75
+```
+
+
+
+## cross compile
+
+```
+prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-
+```
+
+
+
+## dts
+
+k7 安卓 dts 路径
+
+```
+kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
+```
+
+
+
+k7 Linux dts 路径
+
+```
+kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-linux.dts
+```
+
+
+
+## defconfig
+
+Android defconfig 配置
 
 ```makefile
 // 配置环境
@@ -11,7 +45,7 @@ $ export PATH=$SDK_BUILD_TOP/prebuilts/clang/host/linux-x86/clang-r487747c/bin:$
 
 // 加载defconfig
 $ cd kernel-6.1
-$ make CROSS_COMPILE=aarch64-linux-gnu- LLVM=1 LLVM_IAS=1 ARCH=arm64 rockchip_defconfig android-14.config pcie_wifi.config rk3576.config
+$ make CROSS_COMPILE=aarch64-linux-gnu- LLVM=1 LLVM_IAS=1 ARCH=arm64 rockchip_defconfig android-14.config sdio_wifi.config rk3576.config
 
 // 配置
 $ make ARCH=arm64 menuconfig
@@ -28,7 +62,27 @@ $ cp defconfig arch/arm64/configs/rockchip_defconfig
 
 
 
-路径
+Linux defconfig 配置
+
+```
+$ cd kernel-6.1
+
+$ export CROSS_COMPILE=../prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-
+
+$ make ARCH=arm64 rockchip_linux_defconfig rk3576.config
+
+$ make ARCH=arm64 menuconfig
+
+$ make ARCH=arm64 savedefcofig
+
+
+```
+
+
+
+
+
+defconfig 路径
 
 ```
 kernel-6.1/kernel/configs
@@ -42,21 +96,15 @@ kernel-6.1/arch/arm64/configs/
 
 
 
+
+
+
+
 注意
 
 ```
-rockchip_defconfig、android-14.config、pcie_wifi.config、rk3576.config
+rockchip_defconfig、android-14.config、sdio_wifi.config、rk3576.config
 是依次加载覆盖的，如果编译后.config文件中没有开启对应的配置，需要检测 config 中是否取消了对应的config配置
-```
-
-
-
-## dts
-
-k7 安卓 dts 路径
-
-```
-kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 ```
 
 
@@ -68,6 +116,8 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 ```
 (源码)/kernel-6.1/Documentation/devicetree/bindings/leds/leds-gpio.yaml
 ```
+
+
 
 默认软件拓展 gpio 引脚配置为gpio-led进行控制，可以方便的输出高或低电平
 

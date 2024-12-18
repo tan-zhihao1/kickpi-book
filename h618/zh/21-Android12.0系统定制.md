@@ -401,27 +401,6 @@ h618 预装到 priv-app 由于权限限制会出现APP问题，需要针对添�
 
 
 
-4、由于权限问题相对比较繁琐，提供镜像支持唤醒 /system/app/ 路径下的app
-
-```
-h618_android12_p2_uart0-bootup-test-20241022.img
-```
-
-* 首先确认adb install 是否能正常打开apk
-* 卸载apk
-* 通过adb push 方式安装为system app
-
-```
-adb root; adb remount;
-// adb push (要push的apk路径) 主板上路径
-adb push ./app /system/priv-app/
-adb reboot
-```
-
-* 开机后后台调用起APP
-
-
-
 ## APK priv-app push 替换
 
 ```
@@ -519,6 +498,27 @@ cec_enable      edid_test  hdcp_type    hpi_write  reg_dump   write
 cec_simulation  esm_dump   hdmi_sink    phy_power  rxsense
 debug           hdcp_dump  hdmi_source  phy_read   scdc_read
 ```
+
+
+
+## ADB 功能
+
+**adb offline 问题**
+
+```
+$ adb devices
+List of devices attached
+6c00107150d147e1d52     offline
+```
+
+reconnect 即可
+
+```
+$ adb reconnect
+reconnecting 6c00107150d147e1d52 [offline]
+```
+
+
 
 
 

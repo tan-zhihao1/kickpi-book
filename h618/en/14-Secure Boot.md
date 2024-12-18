@@ -14,6 +14,8 @@ The script that generates the key is located at: longan/build/createkeys
 $ ./longan/build/createkeys 
 //Choose the platform to use 
 //such as:h618
+
+$ cp longan/out/h618/common/keys/* android/vendor/security/toc_keys/ -rf
 ```
 
 > The generated key is located inlongan/out/$(platform)/common/keys 

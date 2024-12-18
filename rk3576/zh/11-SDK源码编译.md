@@ -14,27 +14,34 @@
 
 ### 硬件要求
 
-| 系统环境  | 要求        |
-| --------- | ----------- |
-| 系统版本  | Ubuntu22.04 |
-| CPU核心数 | 4核以上     |
-| 内存容量  | 16GB以上    |
-| 硬盘容量  | 500GB以上   |
+| 系统环境  | 要求              |
+| --------- | ----------------- |
+| 系统版本  | Ubuntu22.04，64位 |
+| CPU核心数 | 4核以上           |
+| 内存容量  | 16GB以上          |
+| 硬盘容量  | 200GB以上         |
 
 
 
 ### 安装依赖软件包
 
+Android / Linux 
+
 ```
-$ sudo apt install git bc bison build-essential curl flex libsdl1.2-dev 
-$ sudo apt install g++-multilib gcc-multilib gnupg gperf libncurses5-dev 
-$ sudo apt install imagemagick lib32ncurses5-dev lib32readline-dev squashfs-tools 
-$ sudo apt install lib32z1-dev liblz4-tool xsltproc libssl-dev libwxgtk3.0-dev 
-$ sudo apt install libxml2 libxml2-utils schedtool lzop pngcrush rsync 
-$ sudo apt install yasm zip zlib1g-dev python device-tree-compiler 
-$ sudo apt install python-pip gawk openjdk-8-jdk u-boot-tools patchelf expect
-$ sudo apt install cmake ssh make gcc module-assistant g++ texinfo fakeroot unzip autoconf
-$ sudo pip install pyelftools
+sudo apt update
+sudo apt install autoconf bc binfmt-support bison build-essential bzip2
+sudo apt install chrpath cmake cpp-aarch64-linux-gnu curl device-tree-compiler diffstat
+sudo apt install expat expect expect-dev fakeroot flex
+sudo apt install g++ g++-multilib gawk gcc gcc-multilib git gnupg gperf gpgv2 imagemagick
+sudo apt install lib32ncurses5-dev lib32readline-dev lib32z1-dev libgmp-dev 
+sudo apt install libgucharmap-2-90-dev liblz4-tool libmpc-dev
+sudo apt install libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-gtk3-dev 
+sudo apt install libxml2 libxml2-utils live-build lzop
+sudo apt install make module-assistant ncurses-dev openjdk-8-jdk 
+sudo apt install patchelf pngcrush python2 python-is-python3 python-pip
+sudo apt install qemu-user-static rsync schedtool squashfs-tools ssh sudo texinfo u-boot-tools unzip
+sudo apt install xsltproc yasm zip zlib1g-dev pip
+sudo pip install pyelftools
 ```
 
 > 软件包名称 会根据UBUNTU版本更新而变化
@@ -49,7 +56,7 @@ $ sudo pip install pyelftools
 
 单独编译或全部编译前先配置环境
 
-```
+```bash
 $ ./build.sh lunch
 will lunch sdk
 
@@ -183,7 +190,7 @@ lunch rk3576_u-userdebug
 make clean -j32
 ```
 
-重新全部编译即可
+重新全部编译
 
 
 
@@ -214,6 +221,88 @@ $ vim device/rockchip/common/build/rockchip/build.sh
 
 
 
+## Linux 编译
+
+### 配置环境
+
+单独编译或全部编译前先配置环境
+
+```
+$ ./build.sh lunch
+Log colors: message notice warning error fatal
+
+Log saved at /home/huangcm/A/sdk/rk3576/rk3576-linux/output/sessions/2024-12-05_16-25-44
+Pick a defconfig:
+
+1. rockchip_defconfig
+2. rockchip_rk3576_kickpi_k7_buildroot_defconfig
+3. rockchip_rk3576_kickpi_k7_debian_defconfig
+4. rockchip_rk3576_kickpi_k7_ubuntu_defconfig
+Which would you like? [1]:
+```
+
+根据需要选择对应的主板和系统
+
+
+
+### 全部编译
+
+```
+$ ./build.sh 
+```
+
+
+
+### 单独编译
+
+**kernel 编译**
+
+```
+./build.sh kernel
+```
+
+或
+
+```
+export CROSS_COMPILE=../prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-
+make ARCH=arm64 rockchip_linux_defconfig rk3576.config
+make ARCH=arm64 rk3576-kickpi-k7-linux.img -j24
+```
+
+
+
+## Debian 编译
+
+用于自行下载定制化 Debian 操作系统
+
+```
+# lsb_release -a
+No LSB modules are available.
+Distributor ID: Debian
+Description:    Debian GNU/Linux 12 (bookworm)
+Release:        12
+Codename:       bookworm
+```
+
+
+
+### 配置环境
+
+```
+sudo dpkg -i debian/ubuntu-build-service/packages/*
+sudo apt-get install -f
+```
+
+
+
+### rootfs.img 编译
+
+```
+./build.sh debian
+或
+参考 debian/readme.md
+```
+
 
 
 ## 文档参考
@@ -221,14 +310,21 @@ $ vim device/rockchip/common/build/rockchip/build.sh
 源码下有 RK 官方的指导文件
 
 ```
-（源码）/RKDocs/
+Android:
+	（Android源码）/RKDocs/
+Linux:
+	（Linux源码）/docs/
 ```
 
 
 
-优先推荐查看，仔细的了解 RK Android14 SDK 指导说明
+优先推荐查看，仔细的了解 RK 相关 SDK 指导说明
 
 ```
-（源码）/RKDocs/android/RK3576_Developer_Guide_Android14_SDK_CN.pdf
+Android:
+	（Android源码）/RKDocs/android/RK3576_Developer_Guide_Android14_SDK_CN.pdf
+Linux:
+	（Linux源码）/docs/readme_cn.md
+	（Linux源码）/docs/cn/Rockchip_Developer_Guide_Linux_Software_CN.pdf
 ```
 

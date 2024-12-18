@@ -1,4 +1,4 @@
-# 41-Kernel defconfig配置
+# 41-Kernel 驱动配置
 
 ## 配置defconfig
 
@@ -27,6 +27,27 @@ cp defconfig arch/arm64/configs/rockchip_defconfig
 ```
 
 > 不同版本的defconfig可能不同，可自行在git历史记录中查找对应的版本文件
+
+
+
+## dts
+
+rk-linux 
+
+```
+kernel/arch/arm64/boot/dts/rockchip/
+	rk3562-kickpi-k3-linux.dts
+	rk3568-kickpi-k1-linux.dts
+	rk3568-kickpi-k1b-linux.dts
+```
+
+
+
+## PWM 配置
+
+例如：将K1拓展引脚上的GPIO配置成PWM
+
+![image-20241206165454476](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20241206165454476.png)
 
 
 
