@@ -1,4 +1,4 @@
-# 02-KICKPI-K2B硬件介绍
+# 03-KICKPI-K2C硬件介绍
 
 
 
@@ -14,7 +14,7 @@
 
 ## 2. 开发板信息
 
-![image-20240420180042321](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420180042321.png)
+
 
 
 
