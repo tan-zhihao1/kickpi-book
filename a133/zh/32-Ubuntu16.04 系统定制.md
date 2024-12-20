@@ -491,6 +491,17 @@ $ sudo /etc/init.d/ssh restart
 
 
 
+```
+$ cat /etc/ssh/ssh_config | grep PermitRootLogin
+PermitRootLogin yes
+$ cat /etc/ssh/sshd_config | grep PermitRootLogin
+PermitRootLogin yes
+```
+
+
+
+
+
 ## 4G配置
 
 开机会检测4G模块，自动拨号，关闭需要去掉
