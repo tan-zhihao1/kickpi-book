@@ -489,16 +489,12 @@ $ sudo /etc/init.d/ssh restart
 
 确保能正常连通板子的IP
 
-
-
 ```
 $ cat /etc/ssh/ssh_config | grep PermitRootLogin
 PermitRootLogin yes
 $ cat /etc/ssh/sshd_config | grep PermitRootLogin
 PermitRootLogin yes
 ```
-
-
 
 
 
