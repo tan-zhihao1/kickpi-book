@@ -47,7 +47,7 @@ kernel/arch/arm64/boot/dts/rockchip/
 
 例如：将K1拓展引脚上的GPIO配置成PWM
 
-![image-20241206165454476](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20241206165454476.png)
+
 
 
 
