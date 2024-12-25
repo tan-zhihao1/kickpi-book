@@ -20,9 +20,10 @@ $ sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 $ sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 ```
 
-- 启动docker服务
+- 检测docker服务 没有启动就启动运行
 
 ```
+$ sudo systemctl status docker
 $ sudo systemctl start docker
 ```
 
