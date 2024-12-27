@@ -510,7 +510,7 @@ $ vim usr/lib/lbc/hardware-optimization
 
 
 
-## 卸载桌面
+## 卸载xfce桌面
 
 ```
 $ sudo apt-get remove xfce4*
