@@ -513,10 +513,10 @@ $ vim usr/lib/lbc/hardware-optimization
 ## 卸载桌面
 
 ```
-$ apt autoremove xubuntu-desktop
+$ sudo apt-get remove xfce4*
+$ sudo apt-get autoremove
+$ sudo apt-get clean
 ```
-
-
 
 
 
