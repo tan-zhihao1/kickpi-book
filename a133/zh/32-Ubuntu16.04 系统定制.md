@@ -510,6 +510,13 @@ $ vim usr/lib/lbc/hardware-optimization
 
 
 
+卸载桌面
+
+```
+```
+
+
+
 
 
 ## 其他事项
