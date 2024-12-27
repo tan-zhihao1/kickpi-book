@@ -510,9 +510,10 @@ $ vim usr/lib/lbc/hardware-optimization
 
 
 
-卸载桌面
+## 卸载桌面
 
 ```
+$ apt autoremove xubuntu-desktop
 ```
 
 
