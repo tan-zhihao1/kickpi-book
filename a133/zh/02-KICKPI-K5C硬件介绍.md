@@ -1,4 +1,4 @@
-# 02-KICKPI-K5硬件介绍
+# 02-KICKPI-K5C硬件介绍
 
 
 
@@ -14,7 +14,7 @@ A133, DDR容量最大支持4GB，包括1GB/1.5GB/2GB/3GB/4GB。
 
 ## 2. 开发板信息
 
-![K5功能标注图](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K5功能标注图.jpg)
+
 
 ## 3. 配件信息
 
@@ -41,7 +41,7 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 ├── 3-SoftwareData软件资料
 │   └── Android串口测试APP
 ├── 4-HardwareData硬件资料
-│   └── K5_V1.1_20240904.pdf
+│   └── K5C_Vx.x_xxxxxxx.pdf
 ├── 5-DevelopmentTool开发工具
 │   ├── ADB Tool
 │   ├── ADB投屏
