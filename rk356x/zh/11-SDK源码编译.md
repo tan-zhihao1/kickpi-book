@@ -253,6 +253,14 @@ $ ./build.sh kernel-config
 $ ./build.sh menuconfig
 ```
 
+**编译多屏自适应镜像**
+
+```
+$ ./build.sh all_multi_dtb
+```
+
+> 出厂Android/Linux镜像默认为多屏自适应镜像，兼容官方7寸/10寸/15寸显示屏，连接任一显示屏可直接点亮
+
 
 
 ### SDK新增编译项
