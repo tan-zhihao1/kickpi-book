@@ -16,7 +16,9 @@ The development board is equipped with a 20Pin expansion pin, which includes ord
 
 ![image-20241227112959132](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241227112959132.png)
 
-
+With * as the default configuration function of the output software
+UART0_RX /TX default configuration serial debugging
+TWI or I2C: TWI1_SCK/TWI1_SDA I2C_CLK/I2C_SDA
 
 ### 1.1. GPIO
 

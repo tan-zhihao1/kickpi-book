@@ -256,7 +256,7 @@ For Linux systems, USB defaults to HOST mode, and OTG is not currently supported
 
 
 
-### 6. PWM
+## 6. PWM
 
 RK3568 has 4 PWM modules, each with 4 channels, providing a total of 16 PWM channels.
 
@@ -280,7 +280,7 @@ $ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
 
 
 
-### 7. WIFI
+## 7. WIFI
 
 The K1 development board is equipped with the RTL8822CS high-performance WIFI module.
 
@@ -294,7 +294,7 @@ Supports 2.4G/5G dual-frequency bands, WIFI 5, 2T2R.
 
 
 
-### 8. Bluetooth
+## 8. Bluetooth
 
 The K1 development board is equipped with the RTL8822CS high-performance Bluetooth module.
 
@@ -306,7 +306,7 @@ The K1 development board is equipped with the RTL8822CS high-performance Bluetoo
 
 
 
-### 9. SATA Hard Disk
+## 9. SATA Hard Disk
 
 The K1 development board is equipped with a SATA3.0 hard disk interface.
 
@@ -326,7 +326,7 @@ Keep the development board powered off, connect the hard disk, power on, and And
 
 
 
-### 10. M.2 SSD
+## 10. M.2 SSD
 
 The K1 development board is equipped with a PCIe3.0 M.2 SSD hard disk interface.
 
@@ -357,7 +357,7 @@ Test results:
 
 
 
-### 11. RTC
+## 11. RTC
 
 The K1 development board is equipped with the HYM8563 RTC chip, which can achieve power-off timekeeping.
 
@@ -378,7 +378,7 @@ Test Steps:
 
 
 
-### 12. LCD
+## 12. LCD
 
 The K1 development board is equipped with three LCD interfaces: one LVDS interface (can be reused as a MIPI interface), one MIPI interface, and one eDP interface.
 
@@ -442,7 +442,7 @@ Number of pins: 30, and the direction of the FPC is the same.
 
 
 
-### 13. MIPI Camera
+## 13. MIPI Camera
 
 #### *Hardware Wiring (Pic)
 
@@ -465,7 +465,7 @@ $ cheese
 
 
 
-### 16. GPU
+## 16. GPU
 
 #### Debian GLmark2 Performance Test
 
@@ -489,7 +489,7 @@ $ source /rockchip-test/gpu/test_fullscreen_glmark2.sh
 
 
 
-### 17. NPU
+## 17. NPU
 
 The RK3568 is equipped with a 1T computing power NPU unit.
 
