@@ -919,6 +919,8 @@ Usage: arecord [OPTION]... [FILE]...
 ...
 ```
 
+> Use the command -h to see the description of the corresponding command.
+
 
 
 
