@@ -867,7 +867,7 @@ Fan supply voltage is 5V
 
 
 
-## 22. 4G communication module
+## 22. 4G Module
 
 Currently supports Quecte EC20 and Quecte EC200M-CN modules.
 
