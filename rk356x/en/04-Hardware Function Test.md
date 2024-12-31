@@ -1031,3 +1031,20 @@ $ arecord -D hw:1,0 a.wav -r 48000 -f S16_LE -d 5 -c 2
 
 
 
+**Headset MIC Recording Test**
+
+```
+$ amixer cset -c 1 numid=25,iface=MIXER,name='Capture Digital Volume' 192 192 
+$ amixer cset -c 1 numid=26,iface=MIXER,name='Capture Mute' 0
+$ amixer cset -c 1 numid=27,iface=MIXER,name='Left Channel Capture Volume' 3
+$ amixer cset -c 1 numid=28,iface=MIXER,name='Right Channel Capture Volume' 3
+$ amixer cset -c 1 numid=42,iface=MIXER,name='Left PGA Mux' 2
+$ amixer cset -c 1 numid=43,iface=MIXER,name='Right PGA Mux' 2
+$ amixer cset -c 1 numid=44,iface=MIXER,name='Differential Mux' 0
+$ arecord -D hw:1,0 a.wav -r 48000 -f S16_LE -d 5 -c 2
+```
+
+>amixer configuration for es8388 sound card
+
+
+
