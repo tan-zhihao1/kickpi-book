@@ -64,6 +64,12 @@ $ source /rockchip-test/auto_reboot/auto_reboot.sh
 
 
 ```
+$ cat /data/rockchip-test/reboot_cnt
+```
+
+
+
+```
 $ echo off > /data/rockchip-test/reboot_cnt
 ```
 
