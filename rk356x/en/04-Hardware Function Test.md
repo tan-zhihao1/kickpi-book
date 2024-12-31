@@ -867,3 +867,7 @@ Fan supply voltage is 5V
 
 
 
+## 22. 4G communication module
+
+
+
