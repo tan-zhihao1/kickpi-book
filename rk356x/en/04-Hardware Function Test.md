@@ -814,6 +814,19 @@ $ source /rockchip-test/chromium/test_chromium_with_video.sh
 
 **K8 codec test results**
 
+```
+Encoding H.264 4096x2160 100 frames test fps 44.65
+Encoding H.265 4096x2160 100 frames test fps 45.53
+Decode H.264 4096x2160 100 fps fps 206.22
+Decode H.265 4096x2160 100 fps fps 386.86
+```
+
+
+
+### chromium video test
+
+Connect the board to the display device, open the virtual terminal or debug serial terminal, execute the following commands to start chromium video testing
+
 
 
 
