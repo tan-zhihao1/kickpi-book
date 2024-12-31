@@ -744,7 +744,11 @@ Begin perf ...
 ...
 ```
 
+> From the printout, an average of 450 frames per second is processed.
 
+
+
+Debian Target Detection
 
 
 
