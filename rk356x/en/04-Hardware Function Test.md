@@ -62,6 +62,12 @@ K1 development board's 40-pin extension port comes with 9 controllable GPIO (Gen
 
 Firstly, refer to the [Extension Pins](#ExpansionPin) section to confirm the positions and numbers of GPIO pins. Follow the steps below to control the status of a specific GPIO.
 
+
+
+### Sys GPIO Control
+
+
+
 ### User GPIO Level Control
 
 **View GPIO Registration List**
