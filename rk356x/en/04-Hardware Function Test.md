@@ -42,11 +42,13 @@ The default LED trigger mode is set to "heartbeat," under which the LED state ca
 
 If you wish to achieve command-based LED state control, you can use the following command to set it to "none" first. Afterward, you can adjust the LED's brightness as needed. 
 
-```
+```bash
 $ echo none > /sys/class/leds/work-led/trigger
 $ echo 1 > /sys/class/leds/work-led/brightness
 $ echo 0 > /sys/class/leds/work-led/brightness
 ```
+
+
 
 
 
