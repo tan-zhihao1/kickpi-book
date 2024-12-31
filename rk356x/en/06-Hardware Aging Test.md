@@ -55,25 +55,25 @@ Steps:
 
 ### **Debian**
 
-
+Starting automatic reboot
 
 ```
 $ source /rockchip-test/auto_reboot/auto_reboot.sh
 ```
 
-
+View reboot count
 
 ```
 $ cat /data/rockchip-test/reboot_cnt
 ```
 
-
+Turn off automatic reboot
 
 ```
 $ echo off > /data/rockchip-test/reboot_cnt
 ```
 
-
+Modify the reboot wait time, e.g. 15 s
 
 ```
 $ vi /rockchip-test/auto_reboot/auto_reboot.sh
