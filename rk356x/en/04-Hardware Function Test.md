@@ -192,6 +192,10 @@ Connect debug line `TX` to `RX` on the mainboard, `RX` to `TX` on the mainboard,
 
 ![image-20241231151848065](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241231151848065.png)
 
+>PIN on the motherboard: RX TX GND 
+>
+>PIN on the debug line: TX RX GND
+
 
 
 **Download Serial Port Assistant Software**
