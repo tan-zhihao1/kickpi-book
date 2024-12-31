@@ -1110,18 +1110,14 @@ $ ifconfig <dev> up
 
 **Disable the network interface** 
 ``` 
-$ ifconfig <dev> up
-```
 $ ifconfig <dev> down
 ```
-
 > To disable the `eth0` interface, use the `ifconfig eth0 down` command
 
 
 
 **Set the MAC address** 
-```
-$ ifconfig <dev> down
+
 ```
 $ ifconfig <dev> down
 $ ifconfig <dev> hw ether <new MAC address
@@ -1129,5 +1125,5 @@ $ ifconfig <dev> up
 ```
 
 > There may be some differences between operating systems, some systems may not allow setting the MAC address directly via `ifconfig`, or may require an additional step
-```
+
 
