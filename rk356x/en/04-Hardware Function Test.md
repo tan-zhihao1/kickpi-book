@@ -186,7 +186,9 @@ The debug serial port cable currently provided has four wires, the red one is `V
 
 **Development board debugging serial port wiring**
 
-The debugging serial port is embedded in the 40-pin extension port. You can refer to the [[Extension Pins]] section or the diagram below to locate the debugging serial port.
+* Debug serial port location wiring instructions
+
+Connect debug line `TX` to `RX` on the mainboard, `RX` to `TX` on the mainboard, `GND` to `GND` on the mainboard, and do not need to connect `VCC`.
 
 
 
