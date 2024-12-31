@@ -313,6 +313,8 @@ $ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
 
 
 
+* How to confirm the pwm chip corresponding to the pwm
+
 
 
 ## 7. WIFI
