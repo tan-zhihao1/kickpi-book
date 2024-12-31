@@ -976,3 +976,13 @@ numid=39,iface=MIXER,name='Speaker Switch'
 
 
 
+**Set Sound Card Assigned Configuration**
+
+```
+$ amixer sget -c 1 numid=39,iface=MIXER,name='Speaker Switch' 1
+```
+
+
+
+**Speaker playback test**
+
