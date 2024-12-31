@@ -1133,3 +1133,13 @@ $ ifconfig <dev> up
 
 **Query the current grid device**
 
+```
+$ ifconfig -a
+```
+
+
+
+**CAN start**
+
+
+
