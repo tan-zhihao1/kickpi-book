@@ -336,6 +336,10 @@ Supports 2.4G/5G dual-frequency bands, WIFI 5, 2T2R.
 
 ### *Command Line WIFI Configuration
 
+### Configure WiFi hotspot (AP) mode via command line
+
+
+
 
 
 ## 8. Bluetooth
