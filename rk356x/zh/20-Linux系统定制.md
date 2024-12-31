@@ -168,14 +168,12 @@ sudo apt install rpcbind
 sudo apt install nfs-common
 ```
 
-
-
 **服务器端**
 
 1. 配置共享的文件
 
 ```
-$ mkdir /home/huangcm/nfs_share
+$ mkdir /home/kickpi/nfs_share
 $ chmod 777 /home/huangcm/nfs_share
 $ vi /etc/exports
 # /etc/exports: the access control list for filesystems which may be exported
@@ -188,10 +186,8 @@ $ vi /etc/exports
 # /srv/nfs4        gss/krb5i(rw,sync,fsid=0,crossmnt,no_subtree_check)
 # /srv/nfs4/homes  gss/krb5i(rw,sync,no_subtree_check)
 # 
-/home/huangcm/nfs_share *(rw,sync,no_subtree_check,insecure)
+/home/kickpi/nfs_share *(rw,sync,no_subtree_check,insecure)
 ```
-
-
 
 2. 启动服务
 
@@ -199,38 +195,30 @@ $ vi /etc/exports
 sudo service nfs-kernel-server restart
 ```
 
-
-
 3. 查看当前服务器共享文件，证明共享成果
 
 ```
 $  showmount -e localhost
 Export list for localhost:
-/home/huangcm/nfs_share *
+/home/kickpi/nfs_share *
 ```
-
-
 
 **客户端**
 
 1. 查看服务器共享文件
 
 ```
-showmount -e 192.168.199.173
-Export list for 192.168.199.173:
-/home/huangcm/nfs_share *
+showmount -e 192.168.19.173
+Export list for 192.168.19.173:
+/home/kickpi/nfs_share *
 ```
-
-
 
 2. 挂载文件夹
 
 ```
 $ mkdir nfs_tmp
-$ sudo mount -t nfs 192.168.199.173:/home/huangcm/nfs_share nfs_tmp/
+$ sudo mount -t nfs 192.168.19.173:/home/kickpi/nfs_share nfs_tmp/
 ```
-
-
 
 3. 挂载成功
 
