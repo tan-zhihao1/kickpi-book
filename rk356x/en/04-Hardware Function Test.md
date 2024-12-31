@@ -322,7 +322,7 @@ $ find /sys/devices/ | grep pwmchip | grep uevent
 /sys/devices/platform/fd8b0030.pwm/pwm/pwmchip2/uevent
 ```
 
-
+> fd8b0010.pwm is the node corresponding to dts
 
 
 
