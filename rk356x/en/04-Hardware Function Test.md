@@ -94,13 +94,13 @@ kernel-5.10/arch/arm64/boot/dts/rockchip/
 20pin:	rk3568-kickpi-extend-20pin.dtsi
 ```
 
-**步骤二**
+**Step 2**
 
-​		编译镜像，重新烧录
+Compile the image and re-burn
 
-**步骤三**
+**Step 3**
 
-​		确认gpio未被注册
+Confirm that gpio is not registered
 
 
 
