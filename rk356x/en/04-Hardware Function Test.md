@@ -222,15 +222,15 @@ Mobaxterm Software Download Link: [Mobaxterm](https://mobaxterm.mobatek.net/)
 
 
 
+### Ordinary Serial Port Usage
 
+1. Confirm the serial port number used
 
-### Linux Send/Receive Test
+2. Check whether the corresponding node exists
 
-
-
-
-
-### Android Send/Receive Test
+```
+$ ls /dev/ttyS*
+```
 
 
 

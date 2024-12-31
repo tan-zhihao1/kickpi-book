@@ -114,3 +114,95 @@ By default, the headphone audio output is disabled. Enable analog audio output i
 
 ![image-20240301134102184](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240301134102184.png)
 
+## 9.RS485/232
+
+> Version: K2C
+
+KICKPI-K2C design is optional: 1 channel 485 (/dev/ttyAS3) 1 channel 232 (/dev/ttyAS4)
+
+![1735098505539](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/1735098505539.jpg)
+
+Verify with microcom:
+
+The received content will be printed, but the sent content will not be printed.
+
+```shell
+# microcom -s 115200 /dev/ttyAS3
+```
+
+Verify with minicom:
+
+The received content will be printed, but the sent content will not be printed.
+
+```shell
+# minicom -b 9600 -D /dev/ttyAS3
+```
+
+> CRT + A enter control B-Z command Z for help
+
+> | Ctrl+A X | exit the program                                  |
+> | -------- | ------------------------------------------------- |
+> | Ctrl+A W | Enable/disable line wrapping, disabled by default |
+> | Ctrl+A E | Enable/Disable Input Display, disabled by default |
+> | Ctrl+A C | clear screen                                      |
+
+If the serial port is not properly occupied after exiting: minicom -s turns off the Serial port setup > > F Hardware Flow Control
+
+Or use echo to send directly.
+
+```shell
+# stty -F /dev/ttyAS3 -a 	//You can see the default baud rate.
+# stty -F /dev/ttyAS3 115200 	//Can be set
+# echo "123" > /dev/ttyAS3
+```
+
+
+
+## 10.4G verification
+
+> Version: K2C
+
+1.Confirm whether the usb module is loaded
+
+```shell
+# lsusb
+```
+
+2.Confirm whether the serial port node is generated
+
+```shell
+# ls /dev/ttyUSB*
+```
+
+3.Plug and unplug the calling card and re-dial.
+
+```shell
+# sudo pppd call quectel-ppp &
+```
+
+There may be no broadcast.
+View process number by'`ps -ef | grep pppd` '
+'`Kill -9 (process number)` 'to end the process
+And then dial again.
+
+4.Extranet ping test
+
+```shell
+# ping www.baidu.com
+```
+
+Ping extranet may fail to resolve DNS, you need to add the corresponding DNS.
+
+Modify the resolv.conf file
+
+```shell
+# vim /etc/resolv.conf
+```
+
+The following can be added:
+
+```shell
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+```
+
