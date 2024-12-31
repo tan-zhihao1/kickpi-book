@@ -340,8 +340,6 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 
 
 
-
-
 ## 9.SSH配置
 
 ```
@@ -352,8 +350,6 @@ $ sudo passwd root
 kickpi
 kickpi
 ```
-
-
 
 默认不支持root连接，root连接需要配置
 
