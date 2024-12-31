@@ -55,3 +55,23 @@ Steps:
 
 ### **Debian**
 
+
+
+```
+$ source /rockchip-test/auto_reboot/auto_reboot.sh
+```
+
+
+
+```
+$ echo off > /data/rockchip-test/reboot_cnt
+```
+
+
+
+```
+$ vi /rockchip-test/auto_reboot/auto_reboot.sh
+delay=8
++delay=15
+```
+
