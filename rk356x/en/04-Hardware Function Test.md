@@ -60,7 +60,7 @@ $ echo heartbeat > /sys/class/leds/work-led/trigger
 
 K1 development board's 40-pin extension port comes with 9 controllable GPIO (General Purpose Input/Output) pins by default.
 
-Firstly, refer to the [[Extension Pins]] section to confirm the positions and numbers of GPIO pins. Follow the steps below to control the status of a specific GPIO.
+Firstly, refer to the [Extension Pins](#ExpansionPin)section to confirm the positions and numbers of GPIO pins. Follow the steps below to control the status of a specific GPIO.
 
 ### User GPIO Level Control
 
