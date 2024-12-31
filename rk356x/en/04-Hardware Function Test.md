@@ -70,6 +70,8 @@ When there is a need to configure the expansion pin as input, the default softwa
 
 Release GPIO and control it through /sys/class/gpio
 
+**PIN calculation**
+
 
 
 
