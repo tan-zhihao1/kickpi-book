@@ -48,7 +48,11 @@ $ echo 1 > /sys/class/leds/work-led/brightness
 $ echo 0 > /sys/class/leds/work-led/brightness
 ```
 
+Restore heartbeat mode
 
+```
+$ echo heartbeat > /sys/class/leds/work-led/trigger
+```
 
 
 
