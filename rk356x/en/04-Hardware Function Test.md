@@ -998,3 +998,17 @@ $ aplay -D hw:1,0 1.wav
 
 
 
+**Headphone playback test**
+
+```
+$ amixer cset -c 1 numid=38,iface=MIXER,name='Headphone Switch' 1
+$ amixer cset -c 1 numid=35,iface=MIXER,name='Output 1 Playback Volume' 20 20
+$ aplay -D hw:1,0 1.wav
+```
+
+> amixer configuration for es8388 sound card
+
+
+
+
+
