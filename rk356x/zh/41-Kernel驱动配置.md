@@ -20,7 +20,7 @@ $ ./build.sh kernel-config
 kernel-5.10
 ```
 
-kernel config 配置相关命令
+kernel config 命令配置
 
 ```
 cd kernel-5.10/
