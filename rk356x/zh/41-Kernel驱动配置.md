@@ -2,15 +2,17 @@
 
 ## 配置defconfig
 
+Android 内核配置
 
+```
+$ ./build.sh -CKM
+```
 
-**linux 内核配置**
+linux 内核配置
 
 ```
 $ ./build.sh kernel-config
 ```
-
-
 
 内核路径
 
