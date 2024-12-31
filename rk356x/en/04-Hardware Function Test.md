@@ -1129,3 +1129,7 @@ $ ifconfig <dev> up
 
 ## 26. CAN
 
+**CAN** Frequently Used Command Interface
+
+**Queries the current grid device** **CAN** Frequently Used Command Interface
+
