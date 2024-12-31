@@ -42,7 +42,7 @@ cp defconfig arch/arm64/configs/rockchip_defconfig
 
 > 不同版本的defconfig可能不同，可在git历史记录中查找对应的版本文件
 >
-> $ git log --name-only | grep defconfig
+> $ git log --name-only   kernel-5.10/ | grep defconfig
 
 
 
