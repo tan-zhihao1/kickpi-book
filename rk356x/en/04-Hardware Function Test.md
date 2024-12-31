@@ -1169,29 +1169,53 @@ $ ip link set can0 up
 
 **CAN Transmit**
 
-
+Send (standard frame, data frame, ID:123, date:DEADBEEF)
 
 ```
 $ cansend can0 123#DEADBEEF
 ```
 
-
+Send (standard frame, remote frame, ID:123)
 
 ```
 $ cansend can0 123#R
 ```
 
-
+Transmit (extended frame, data frame, ID:00000123, date:DEADBEEF)
 
 ```
 $ cansend can0 00000123#12345678
 ```
 
-
+Transmit (Extended Frame, Remote Frame, ID: 00000123)
 
 ```
 $ cansend can0 00000123#R
 ```
 
 
+
+**CAN接收**
+
+开启打印，等待接收
+
+```
+$ candump can0
+```
+
+
+
+**回环模式测试**
+
+启动can后，io输⼊命令开启回环⾃测（基地址根据实际dts启动的can配置）
+
+```
+$ io -4 0xfea60000 0x8415
+```
+
+>0xfea60000 为 K8 CAN1 的 dts 节点
+
+
+
+回环模式下，cansend 后 candump 可以接收，说明控制器⼯作正常。
 
