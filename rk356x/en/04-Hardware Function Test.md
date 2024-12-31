@@ -170,7 +170,7 @@ $ echo 0 > /sys/class/leds/gpio3b6/brightness
 
 ###  Debug Serial Port Usage
 
-#### Check the DEBUG pin
+**Check the DEBUG pin**
 
 
 
