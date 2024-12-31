@@ -16,7 +16,9 @@
 
 ![image-20240914152349051](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240914152349051.png)
 
-K3引脚列表
+### K3 Pins List
+
+
 
 
 
