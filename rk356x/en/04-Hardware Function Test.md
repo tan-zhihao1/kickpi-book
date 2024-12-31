@@ -1221,3 +1221,11 @@ In loopback mode, candump can be received after candend.
 
 
 
+```
+root@linaro-alip:/# io -4 0xfea60000 0x8415
+root@linaro-alip:/# candump can0
+  can0  123   [4]  DE AD BE EF
+```
+
+
+
