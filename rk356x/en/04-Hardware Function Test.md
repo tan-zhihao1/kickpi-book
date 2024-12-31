@@ -937,5 +937,7 @@ $ cat /proc/asound/cards
                       rockchip-hdmi1
 ```
 
+>Speaker sound card is es8388, i.e. sound card 1
+
 
 
