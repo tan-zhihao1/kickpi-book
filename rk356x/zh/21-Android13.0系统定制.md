@@ -2,8 +2,6 @@
 
 
 
-
-
 ## 1. 开机LOGO定制
 
 开机LOGO分两个部分，分别是Uboot阶段、Kernel阶段
@@ -20,15 +18,11 @@ $ ls kernel-5.10/
 
 
 
-
-
 ## 2. 开机动画定制
 
 ```
 $ ls device/rockchip/common/bootanimation.zip
 ```
-
-
 
 
 
@@ -45,8 +39,6 @@ $ vim device/rockchip/rk356x/BoardConfig.mk
 
 
 ### 修改触摸方向
-
-
 
 
 
