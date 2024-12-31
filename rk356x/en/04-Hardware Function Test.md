@@ -612,6 +612,8 @@ $ cheese
 
 > After executing the command line to start the cheese program, the camera image will be displayed directly.
 
+### Debian gst-launch-1.0 preview image
+
 
 
 
