@@ -400,6 +400,8 @@ QSZ-BYT QSZ-PKT Flows Drops Marks Overlmt HashCol TX-BYTESTX-PACKETS
 0 0 0 0 0 0 0 0 0 0
 ```
 
+> Note: After you restart your computer, the virtual network card created here will become invalid
+
 
 
 
