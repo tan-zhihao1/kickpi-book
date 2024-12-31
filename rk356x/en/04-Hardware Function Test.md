@@ -861,4 +861,9 @@ $ echo A > /dev/watchdog
 
 
 
-21. FAN
+## 21. FAN
+
+Fan supply voltage is 5V
+
+
+
