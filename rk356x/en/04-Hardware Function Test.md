@@ -986,3 +986,15 @@ $ amixer sget -c 1 numid=39,iface=MIXER,name='Speaker Switch' 1
 
 **Speaker playback test**
 
+```
+$ amixer cset -c 1 numid=39,iface=MIXER,name='Speaker Switch' 1
+$ amixer cset -c 1 numid=35,iface=MIXER,name='Output 2 Playback Volume' 20 20
+$ amixer cset -c 1 numid=50,iface=MIXER,name='Right Mixer Right Playback Switch' 1
+$ amixer cset -c 1 numid=48,iface=MIXER,name='Left Mixer Left Playback Switch' 1
+$ aplay -D hw:1,0 1.wav
+```
+
+> amixer configuration for es8388 sound card
+
+
+
