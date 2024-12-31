@@ -965,5 +965,14 @@ numid=31,iface=MIXER,name='PCM Volume'
 
 
 
+**Get the specified configuration of the sound card**
+
+```
+$ amixer cget -c 1 numid=39,iface=MIXER,name='Speaker Switch'
+numid=39,iface=MIXER,name='Speaker Switch'
+  ; type=BOOLEAN,access=rw------,values=1
+  : values=on
+```
+
 
 
