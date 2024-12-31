@@ -1131,5 +1131,5 @@ $ ifconfig <dev> up
 
 **CAN** Frequently Used Command Interface
 
-**Queries the current grid device** **CAN** Frequently Used Command Interface
+**Query the current grid device**
 
