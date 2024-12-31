@@ -422,6 +422,19 @@ sudo create_ap -c 11 <virtualwlanname> <wirelessname> <SSID> <password>
 sudo create_ap -c 11 wlo2 wlan0 m3 8888888888
 ```
 
+3. If the created hotspot gets stuck
+
+```
+The following error occurs when the hotspot is turned on.
+#RTNETLINK answers: Device or resource busy
+
+#ERROR: Maybe your WiFi adapter does not fully support virtual interfaces.
+     # Try again with --no-virt.
+     
+You can stop the previously created hotspot and reboot to turn it on as follows.
+sudo create_ap --stop <virtualwlanname> #<virtualwlanname> Virtual card name
+```
+
 
 
 
