@@ -363,6 +363,25 @@ Device supports AP-side u-APSD.
 
 
 
+```
+#Create dependencies
+SUDO APT-Fin Install Util-linux hostapd DNSMasq iPtables iProute2 haveged
+
+# Create a virtual network card
+Sudo IW DEV <WirelessName> Interface Add <Virtualwlanname> Type __AP
+# <WirelessName> is a real wireless network card name. You can view it through ifconfig. <Virtualwlanname> is a virtual wireless network card name
+#For example, command
+Sudo IW dev WLAN0 Interface Add Wlo2 Type __AP
+
+#Add a physical address to the virtual network card
+SUDO IP Link Set Dev <Virtualwlanname> Address 22: 33: 44: 55: 66: 00
+# Fill in freely, if the conflict is changed, <virtualwlanname> is a virtual wireless network card name
+#For example, command:
+Sudo IP Link Set Dev Wlo2 Address 22: 33: 44: 55: 66: 00
+```
+
+
+
 
 
 
