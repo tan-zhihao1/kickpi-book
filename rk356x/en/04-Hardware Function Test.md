@@ -720,6 +720,30 @@ Begin perf ...
 
 
 
+**K8 NPU Stress Test Results**
+
+Connect to HDMI_OUT0
+
+```
+$ source /rockchip-test/npu2/npu_stress_test.sh
+...
+Begin perf ...
+   0: Elapse Time = 2.32ms, FPS = 431.97
+   1: Elapse Time = 2.29ms, FPS = 437.64
+   2: Elapse Time = 2.22ms, FPS = 450.05
+   3: Elapse Time = 2.17ms, FPS = 461.47
+   4: Elapse Time = 2.10ms, FPS = 475.51
+   5: Elapse Time = 2.15ms, FPS = 464.25
+   6: Elapse Time = 2.08ms, FPS = 481.70
+   7: Elapse Time = 2.09ms, FPS = 478.24
+   8: Elapse Time = 2.09ms, FPS = 479.62
+   9: Elapse Time = 2.20ms, FPS = 454.13
+---- Top5 ----
+0.984375 - 156
+0.007812 - 155
+...
+```
+
 
 
 
