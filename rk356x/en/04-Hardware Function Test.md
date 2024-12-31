@@ -875,7 +875,7 @@ Currently supports Quecte EC20 and Quecte EC200M-CN modules.
 
 ## 23. Speak
 
-K1 / K1B / K3 / K8 板载 ES8388模块
+K8 板载 ES8388 模块
 
 
 
