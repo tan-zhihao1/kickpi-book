@@ -215,9 +215,9 @@ ssh kickpi@<IP>   //密码 kickpi
 
 
 
-### SSH root登陆
+### SSH root login
 
-默认不支持root连接，root连接需要配置
+Root connection is not supported by default, root connection needs to be configured.
 
 ```shell
 $ vim /etc/ssh/ssh_config
@@ -227,11 +227,11 @@ $ vim /etc/ssh/sshd_config
 $ sudo /etc/init.d/ssh restart
 ```
 
-注意事项：
+Notes:
 
-确保板子IP正常
+Make sure the board IP is normal.
 
-确保能正常连通板子的IP
+Make sure that the IP of the board can be connected normally.
 
 ```
 $ cat /etc/ssh/ssh_config | grep PermitRootLogin
@@ -244,53 +244,53 @@ PermitRootLogin yes
 
 
 
-### UBUNTU从官网安装软件包
+### UBUNTU installs packages from the official website
 
-安装gcc为例子
+Installing gcc as an example
 
 `wget http://ports.ubuntu.com/pool/main/g/gcc-9/gcc-9_9.3.0-10ubuntu2_arm64.deb`
 `sudo dpkg -i *.deb`
-网站是https://ubuntu.pkgs.org/20.04/ubuntu-main-arm64/gcc-9_9.3.0-10ubuntu2_arm64.deb.html 可以直接搜索想要的依赖包名
+The website is https://ubuntu.pkgs.org/20.04/ubuntu-main-arm64/gcc-9_9.3.0-10ubuntu2_arm64.deb.html can directly search for the desired dependent package name
 
 ![f78e90f7748d198d11dbbd163bb33a9](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/f78e90f7748d198d11dbbd163bb33a9.png)
 
 
 
-## PIN 控制
+## PIN control
 
-### pin 脚计算
+### Pin calculation
 
-( B ~ J ) 一组按32位算
+( B ~ J ) A group is counted as 32 bits
 
-如 PB2 为 2 组，2号脚
+If PB2 is 2 groups, foot 2
 
 ```
 32 x ( 2 - 1) + 2 =  34
 ```
 
-PH3 为 8组， 3号脚
+PH3 is 8 groups, foot 3.
 
 ```
 32 x ( 8 - 1) + 3 =  227 
 ```
 
-其他引脚类比计算即可
+Other pins can be calculated by analogy.
 
 
 
-### sys gpio控制
+### Sys gpio control
 
-当存在将拓展引脚配置为输入的需求，默认软件的gpio-led不能满足需求。
+When there is a need to configure the extension pin as an input, the default software's GPIO-LED does not meet the requirement.
 
-将GPIO释放出来，通过/sys/class/gpio进行控制
+Release the GPIO and control it with/sys/class/gpio
 
 
 
-步骤一
+Step one
 
-先将对应GPIO引脚注释，/sys/class/gpio/export 只能导入未注册的 gpio
+Note the corresponding GPIO pins first,/sys/class/gpio/export can only import unregistered gpio.
 
-比如PH8，如需其他引脚，一样在 leds 结点下注释即可 ,  下面内容都以PH8 做举例
+For example, PH8, if you need other pins, just comment under the leds node. The following content is based on PH8 as an example
 
 ```diff
 vim longan/device/config/chips/h618/configs/p2/linux-5.4/board.dts  //android
@@ -307,42 +307,42 @@ vim source/kernel/linux-5.4-h618/arch/arm64/boot/dts/sunxi/board.dts //Linux
 
 
 
-步骤二
+Step two
 
-​		编译镜像，重新烧录
+​	Compilation mirroring, reburning
 
 
 
-步骤三
+Step three
 
-​		确认gpio未被注册
+​		Confirm that gpio is not registered
 
 ```
 root@kickpi:~# cat /sys/kernel/debug/pinctrl/pio/pinmux-pins  | grep PH8
 pin 232 (PH8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
 ```
 
-​		能够看到PH8未被使用，且对应 pin 值为 232 ，引脚计算见 [pin脚计算](# pin脚计算)
+​		You can see that PH8 is not used, and the corresponding pin value is 232. See pin calculation for pin calculation.
 
 
 
-步骤四
+Step four
 
-​		通过 /sys/class/gpio/export 注册 PH8 并进行控制
+​		Register and control PH8 through /sys/class/gpio/export
 
 ```
-// 注册
+// Register
 root@kickpi:~# echo  232 > /sys/class/gpio/export
-// 查看是否生成
+// Check if it is generated
 root@kickpi:~# ls /sys/class/gpio/
 export  gpio232  gpiochip0  gpiochip352  unexport
-// 注册后的结点内容
+// Node content after registration
 root@kickpi:~# ls /sys/class/gpio/gpio232
 active_low  device  direction  edge  power  subsystem  uevent  value
 root@kickpi:~#
 ```
 
-​			通过结点下的内容控制 gpio , 常用如下
+​			Control gpio through the content under the node, commonly used as follows
 
 ```
 direction
@@ -351,9 +351,9 @@ direction
 	echo out > /sys/class/gpio/gpio232/direction
 value
 	0 / 1
-	cat /sys/class/gpio/gpio232/value 		// 读取
-	echo 1 > /sys/class/gpio/gpio232/value	// 配置高电平
-	echo 0 > /sys/class/gpio/gpio232/value  // 配置低电平
+	cat /sys/class/gpio/gpio232/value 		// read
+	echo 1 > /sys/class/gpio/gpio232/value	// Configure High
+	echo 0 > /sys/class/gpio/gpio232/value  // Configure low
 ```
 
 
