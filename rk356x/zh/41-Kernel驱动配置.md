@@ -46,7 +46,7 @@ cp defconfig arch/arm64/configs/rockchip_defconfig
 
 ## dts
 
-rk-linux 
+rk-linux
 
 ```
 kernel/arch/arm64/boot/dts/rockchip/
