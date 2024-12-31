@@ -172,7 +172,7 @@ $ echo 0 > /sys/class/leds/gpio3b6/brightness
 
 **Check the DEBUG pin**
 
-
+The debug serial port of the Kickpi development board is usually embedded in the expansion pins. You can view the corresponding DEBUG pin position in the [Expansion Pins Chapter](#ExpansionPin). They are usually arranged in the order of `UART_RX_DEBUG`, `UART_TX_DEBUG`, and `GND`.
 
 
 
