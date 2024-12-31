@@ -455,7 +455,7 @@ The K1 development board is equipped with the RTL8822CS high-performance Bluetoo
 
 The K1 development board is equipped with a SATA3.0 hard disk interface.
 
-#### *Hardware Wiring (Pic)
+### *Hardware Wiring (Pic)
 
 SATA hard disk wiring includes the power interface and data interface.
 
@@ -465,7 +465,7 @@ Keep the development board powered off, connect the hard disk, power on, and And
 
 > **Note:** It is recommended to partition the hard disk in advance and format the partition.
 
-#### *Performance Testing
+### *Performance Testing
 
 
 
@@ -479,13 +479,13 @@ For Android, only `NTFS` or `Fat32` format partitions are supported.
 
 > It is recommended to format the solid-state drive in advance and create partitions in the supported format. If the SSD partition is not in a format supported by the system, you can follow the system prompts to format the partition, which will default to Fat32.
 
-#### *Hardware Wiring (Pic)
+### *Hardware Wiring (Pic)
 
 The M.2 interface supports mainstream 2280 specifications hard disks and comes with fixing screws.
 
 Make sure the development board is powered off, connect the hard disk, and power on.
 
-#### Performance Testing
+### Performance Testing
 
 Test SSD model: Samsung PM981 256G
 
@@ -506,11 +506,11 @@ Test results:
 
 The K1 development board is equipped with the HYM8563 RTC chip, which can achieve power-off timekeeping.
 
-#### *Hardware Wiring (Pic)
+### *Hardware Wiring (Pic)
 
 To test the RTC function, an external button battery must be connected, and the battery power must be sufficient.
 
-#### Power-Off Timekeeping Test
+### Power-Off Timekeeping Test
 
 Test Steps:
 
@@ -536,7 +536,7 @@ The three LCD interfaces support three-screen display/touch separately.
 
 
 
-#### MIPI Screen Hardware Wiring
+### MIPI Screen Hardware Wiring
 
 **FPC Requirements**
 
@@ -552,7 +552,7 @@ Number of pins: 30, and the direction of the FPC is the same.
 
 
 
-#### LVDS Screen Hardware Wiring
+### LVDS Screen Hardware Wiring
 
 **FPC Requirements**
 
@@ -568,7 +568,7 @@ Number of pins: 30, and the direction of the FPC is the same.
 
 
 
-#### eDP Screen Hardware Wiring
+### eDP Screen Hardware Wiring
 
 **FPC Requirements**
 
@@ -589,7 +589,7 @@ Number of pins: 30, and the direction of the FPC is the same.
 
 ## 13. MIPI Camera
 
-#### *Hardware Wiring (Pic)
+### *Hardware Wiring (Pic)
 
 **FPC Requirements**
 
@@ -598,7 +598,7 @@ Number of pins: 40, and the direction of the FPC is the opposite.
 > It is recommended to use the attached FPC, otherwise, it may cause damage to the screen.
 > Before plugging or unplugging any FPC interface peripheral, ensure that the board is completely powered off.
 
-#### Debian Preview Image
+### Debian Preview Image
 
 ```bash
 $ cheese
@@ -612,7 +612,7 @@ $ cheese
 
 ## 16. GPU
 
-#### Debian GLmark2 Performance Test
+### Debian GLmark2 Performance Test
 
 The RK Linux file system comes with the glmark2-es performance test tool.
 
@@ -638,7 +638,7 @@ $ source /rockchip-test/gpu/test_fullscreen_glmark2.sh
 
 The RK3568 is equipped with a 1T computing power NPU unit.
 
-#### Debian Image Classification Test
+### Debian Image Classification Test
 
 Open a virtual terminal or a debugging serial port terminal and execute the following command to start the NPU function test:
 
