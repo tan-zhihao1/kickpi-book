@@ -709,6 +709,17 @@ Begin perf ...
 0.000000 - 1
 ```
 
+>What follows `Begin perf...' shows the performance data for multiple runs of the model. ` followed by `Begin perf...` shows the performance data for multiple runs of the model:
+>
+>- Each time, the serial number of the run is recorded along with the corresponding elapsed time (`Elapse Time`) and frames processed per second (`FPS`). For example, `0: Elapse Time = 2.85ms, FPS = 351.12` means that the first run of the model inference took 2.85 ms, which calculates to 351.12 frames per second (FPS is calculated by dividing the elapsed time of each run by 1000 to get the number of frames per second after converting the units).
+>
+>The `---- Top5 ----` section presents the top 5 probabilistic categories in the model inference output with their corresponding probability values and category numbers:
+>
+>   - The `0.935059 - 156` indicates that the model believes that the input data (e.g., perhaps an image) most likely belongs to the category numbered 156, which corresponds to a probability as high as 0.935059, a relatively high probability value that indicates that the model has a relatively high level of confidence in the judgment.
+>   - The following `0.057037 - 155`, `0.003881 - 205`, `0.003119 - 284`, and `0.000172 - 285` list the category numbers and their probability values for categories with probability rankings of 2 to 5, respectively, and the probability values of these values are decreasing, which indicates that the model's certainty of their belonging to the corresponding categories is also decreasing gradually.
+
+
+
 
 
 
