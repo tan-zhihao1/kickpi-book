@@ -142,6 +142,10 @@ value
 
 ### User GPIO Level Control
 
+>The default software expansion pins are configured as GPIO and are generally registered as this control method
+>
+>This method can control the pin to output high or low level
+
 **View GPIO Registration List**
 
 ```
