@@ -176,7 +176,9 @@ The debug serial port of the Kickpi development board is usually embedded in the
 
 
 
-Debug serial line description
+**Debug serial line description**
+
+The debug serial port cable currently provided has four wires, the red one is `VCC`, the green one is `TX`, the white one is `RX`, and the black one is `GND`. Generally, there is no need to connect `VCC`.
 
 
 
