@@ -1247,3 +1247,19 @@ root@linaro-alip:/# cansend can0 123#DEADBEEF
 
 ## 27. SPI
 
+
+
+```
+$ kernel/tools/spi/spidev_test.c
+```
+
+
+
+```
+$ make CROSS_COMPILE=~/path-to-toolchain/gcc-xxxxx-toolchain/bin/xxxx-linux-gnu-
+```
+
+
+
+
+
