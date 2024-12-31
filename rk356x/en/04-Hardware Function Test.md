@@ -1247,25 +1247,31 @@ root@linaro-alip:/# cansend can0 123#DEADBEEF
 
 ## 27. SPI
 
-
+**Tool Location**
 
 ```
 $ kernel/tools/spi/spidev_test.c
 ```
 
-
+compiling
 
 ```
 $ make CROSS_COMPILE=~/path-to-toolchain/gcc-xxxxx-toolchain/bin/xxxx-linux-gnu-
 ```
 
-
+Loopback Mode Testing
 
 ```
 $ spidev_test -D /dev/spidev0.0 -v -l -p "hello"
 ```
 
+>Master for master control
+>
+>MISO and MOSI are shorted.
 
+
+
+* Example
 
 ```
 root@linaro-alip:/data# ./spidev_test -D /dev/spidev0.0 -v -l -p "hello"
