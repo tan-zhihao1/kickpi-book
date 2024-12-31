@@ -50,7 +50,7 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 │           └── h618-ubuntu2204-k2b-20240319.tar.gz
 ├── 3-SoftwareData软件资料
 ├── 4-HardwareData硬件资料
-│   └── H618-K2B原理图.pdf
+│   └── H618-K2C原理图.pdf
 └── 5-DevelopmentTools开发工具
     ├── ADB Tool
     ├── ADB投屏
