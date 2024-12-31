@@ -620,7 +620,9 @@ Debian filesystem Built-in gst-launch-1.0 test scripts
 /rockchip-test/camera/camera_rkisp_test.sh
 ```
 
-
+>Depending on the number of cameras connected, the /dev/video node number will be shifted so that the script cannot open the correct camera. 
+>
+>At this time, you can modify the script to specify the correct video number, device=/dev/video-camera0
 
 
 
