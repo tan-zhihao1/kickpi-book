@@ -347,7 +347,10 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 ```
 用户：kickpi
 密码：kickpi
-(su)root密码： kickpi
+root密码修改： 
+sudo passwd root
+kickpi
+kickpi
 ```
 
 
