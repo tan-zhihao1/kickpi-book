@@ -332,11 +332,9 @@ The K1 development board is equipped with the RTL8822CS high-performance WIFI mo
 
 Supports 2.4G/5G dual-frequency bands, WIFI 5, 2T2R.
 
-#### *Graphical Interface WIFI Configuration
+### *Graphical Interface WIFI Configuration
 
-#### *Command Line WIFI Configuration
-
-
+### *Command Line WIFI Configuration
 
 
 
