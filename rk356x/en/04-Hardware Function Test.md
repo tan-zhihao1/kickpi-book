@@ -1253,13 +1253,13 @@ root@linaro-alip:/# cansend can0 123#DEADBEEF
 $ kernel/tools/spi/spidev_test.c
 ```
 
-compiling
+**compiling**
 
 ```
 $ make CROSS_COMPILE=~/path-to-toolchain/gcc-xxxxx-toolchain/bin/xxxx-linux-gnu-
 ```
 
-Loopback Mode Testing
+**Loopback Mode Testing**
 
 ```
 $ spidev_test -D /dev/spidev0.0 -v -l -p "hello"
