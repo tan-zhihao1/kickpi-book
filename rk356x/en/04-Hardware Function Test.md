@@ -315,6 +315,15 @@ $ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
 
 * How to confirm the pwm chip corresponding to the pwm
 
+```
+$ find /sys/devices/ | grep pwmchip | grep uevent
+/sys/devices/platform/fd8b0020.pwm/pwm/pwmchip1/uevent
+/sys/devices/platform/fd8b0010.pwm/pwm/pwmchip0/uevent
+/sys/devices/platform/fd8b0030.pwm/pwm/pwmchip2/uevent
+```
+
+
+
 
 
 ## 7. WIFI
