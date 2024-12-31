@@ -887,3 +887,7 @@ If you do not have the tools, you can install them by running the following comm
 $ sudo apt install alsa-utils
 ```
 
+> After installation, commands such as aplay, arecord, amixer, etc. can be used.
+
+
+
