@@ -342,9 +342,9 @@ Supports 2.4G/5G dual-frequency bands, WIFI 5, 2T2R.
 
 The K1 development board is equipped with the RTL8822CS high-performance Bluetooth module.
 
-#### *Graphical Interface Pairing Bluetooth Devices
+### *Graphical Interface Pairing Bluetooth Devices
 
-#### *Command Line Pairing Bluetooth Devices
+### *Command Line Pairing Bluetooth Devices
 
 
 
