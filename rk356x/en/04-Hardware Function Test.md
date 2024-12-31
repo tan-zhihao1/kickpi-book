@@ -254,6 +254,10 @@ For Linux systems, USB defaults to HOST mode, and OTG is not currently supported
 
 
 
+### ADB Debugging
+
+
+
 
 
 ## 6. PWM
