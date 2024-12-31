@@ -1195,9 +1195,9 @@ $ cansend can0 00000123#R
 
 
 
-**CAN接收**
+**CAN reception**
 
-开启打印，等待接收
+Turn on printing and wait to receive
 
 ```
 $ candump can0
@@ -1205,17 +1205,19 @@ $ candump can0
 
 
 
-**回环模式测试**
+**Loopback Mode Testing**
 
-启动can后，io输⼊命令开启回环⾃测（基地址根据实际dts启动的can配置）
+After starting the can, io input command to enable loopback self-test (base address is configured according to the actual dts starting the can)
 
 ```
 $ io -4 0xfea60000 0x8415
 ```
 
->0xfea60000 为 K8 CAN1 的 dts 节点
+>0xfea60000 is the dts node of K8 CAN1.
 
 
 
-回环模式下，cansend 后 candump 可以接收，说明控制器⼯作正常。
+In loopback mode, candump can be received after candend.
+
+
 
