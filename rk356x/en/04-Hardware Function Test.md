@@ -26,9 +26,11 @@
 
 ## 2. LED
 
-The development board is equipped with a working LED, which serves as the system's heartbeat indicator by default. If the heartbeat LED continues to flash, it indicates that the kernel is running normally
+The development board is equipped with 2 LEDs. The green LED is the power indicator light, which is always on by default when powered on.
 
-Additionally, you can refer to the following aspects to control the LED for other functions.
+The blue LED is the system working heartbeat light. If the heartbeat light keeps flashing, it means that the kernel is running normally.
+
+In addition, the system working heartbeat light can refer to the following aspects to control the LED as other functions.
 
 
 
