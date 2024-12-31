@@ -46,6 +46,12 @@ Steps:
 
 ### **Android**
 
+Steps:
+
+1. Open the Calculator in the list of system applications.
+2. Enter the character “83991906=” into the calculator.
+
 
 
 ### **Debian**
+
