@@ -875,7 +875,15 @@ Currently supports Quecte EC20 and Quecte EC200M-CN modules.
 
 ## 23. Speak
 
+### Linux Playback Test
 
+**alsa tools**
 
+Linux systems can generally control sound card configuration and audio playback with the alsa tool, which is currently built into the Linux system software.
 
+If you do not have the tools, you can install them by running the following commands
+
+```
+$ sudo apt install alsa-utils
+```
 
