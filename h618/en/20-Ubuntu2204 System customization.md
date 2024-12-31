@@ -213,3 +213,178 @@ Open Windows cmd
 ssh kickpi@<IP>   //密码 kickpi
 ```
 
+
+
+### SSH root登陆
+
+默认不支持root连接，root连接需要配置
+
+```shell
+$ vim /etc/ssh/ssh_config
++ PermitRootLogin yes
+$ vim /etc/ssh/sshd_config
++ PermitRootLogin yes
+$ sudo /etc/init.d/ssh restart
+```
+
+注意事项：
+
+确保板子IP正常
+
+确保能正常连通板子的IP
+
+```
+$ cat /etc/ssh/ssh_config | grep PermitRootLogin
+PermitRootLogin yes
+$ cat /etc/ssh/sshd_config | grep PermitRootLogin
+PermitRootLogin yes
+```
+
+
+
+
+
+### UBUNTU从官网安装软件包
+
+安装gcc为例子
+
+`wget http://ports.ubuntu.com/pool/main/g/gcc-9/gcc-9_9.3.0-10ubuntu2_arm64.deb`
+`sudo dpkg -i *.deb`
+网站是https://ubuntu.pkgs.org/20.04/ubuntu-main-arm64/gcc-9_9.3.0-10ubuntu2_arm64.deb.html 可以直接搜索想要的依赖包名
+
+![f78e90f7748d198d11dbbd163bb33a9](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/f78e90f7748d198d11dbbd163bb33a9.png)
+
+
+
+## PIN 控制
+
+### pin 脚计算
+
+( B ~ J ) 一组按32位算
+
+如 PB2 为 2 组，2号脚
+
+```
+32 x ( 2 - 1) + 2 =  34
+```
+
+PH3 为 8组， 3号脚
+
+```
+32 x ( 8 - 1) + 3 =  227 
+```
+
+其他引脚类比计算即可
+
+
+
+### sys gpio控制
+
+当存在将拓展引脚配置为输入的需求，默认软件的gpio-led不能满足需求。
+
+将GPIO释放出来，通过/sys/class/gpio进行控制
+
+
+
+步骤一
+
+先将对应GPIO引脚注释，/sys/class/gpio/export 只能导入未注册的 gpio
+
+比如PH8，如需其他引脚，一样在 leds 结点下注释即可 ,  下面内容都以PH8 做举例
+
+```diff
+vim longan/device/config/chips/h618/configs/p2/linux-5.4/board.dts  //android
+vim source/kernel/linux-5.4-h618/arch/arm64/boot/dts/sunxi/board.dts //Linux
++ /*
+			PH8 {
+				label = "PH8";
+				gpios = <&pio PH 8 1 0 1 0>;
+				linux,default_trigger = "default-on";
+				default-state = "on";
+			};
++ */
+```
+
+
+
+步骤二
+
+​		编译镜像，重新烧录
+
+
+
+步骤三
+
+​		确认gpio未被注册
+
+```
+root@kickpi:~# cat /sys/kernel/debug/pinctrl/pio/pinmux-pins  | grep PH8
+pin 232 (PH8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+```
+
+​		能够看到PH8未被使用，且对应 pin 值为 232 ，引脚计算见 [pin脚计算](# pin脚计算)
+
+
+
+步骤四
+
+​		通过 /sys/class/gpio/export 注册 PH8 并进行控制
+
+```
+// 注册
+root@kickpi:~# echo  232 > /sys/class/gpio/export
+// 查看是否生成
+root@kickpi:~# ls /sys/class/gpio/
+export  gpio232  gpiochip0  gpiochip352  unexport
+// 注册后的结点内容
+root@kickpi:~# ls /sys/class/gpio/gpio232
+active_low  device  direction  edge  power  subsystem  uevent  value
+root@kickpi:~#
+```
+
+​			通过结点下的内容控制 gpio , 常用如下
+
+```
+direction
+	in / out
+	echo in > /sys/class/gpio/gpio232/direction
+	echo out > /sys/class/gpio/gpio232/direction
+value
+	0 / 1
+	cat /sys/class/gpio/gpio232/value 		// 读取
+	echo 1 > /sys/class/gpio/gpio232/value	// 配置高电平
+	echo 0 > /sys/class/gpio/gpio232/value  // 配置低电平
+```
+
+
+
+### Sunxi gpio control
+
+```
+# cd /sys/kernel/debug/sunxi_pinctrl
+
+Check the configuration of the pin.
+# echo PH8 > sunxi_pin
+# cat sunxi_pin_configure
+
+Configure pin to gpio mode
+# echo 'PH8 0' > function
+
+Modify the pull-up properties of pin
+# echo 'PH8 1' > pull
+Check the modification status
+# cat pull					
+# cat sunxi_pin_configure
+
+Check pin level
+# cat data
+
+Attention:
+When operating PL and subsequent pins, you need to switch the device of the pin, otherwise the operation fails.
+# echo pio > /sys/kernel/debug/sunxi_pinctrl/dev_name
+# cat /sys/kernel/debug/sunxi_pinctrl/dev_name
+
+# echo r_pio > /sys/kernel/debug/sunxi_pinctrl/dev_name
+# cat /sys/kernel/debug/sunxi_pinctrl/dev_name
+```
+
