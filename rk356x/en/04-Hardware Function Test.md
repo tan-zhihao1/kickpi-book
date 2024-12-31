@@ -146,6 +146,8 @@ value
 >
 >This method can control the pin to output high or low level
 
+
+
 **View GPIO Registration List**
 
 ```
@@ -154,8 +156,6 @@ $ ls /sys/class/leds/
 gpio1b0/ gpio1b2/ gpio1d4/ gpio3b6/ 
 gpio1a4/ gpio1b1/ gpio1d0/ gpio3b5/ gpio4c4/
 ```
-
-
 
 **Command Line GPIO State Control**
 
