@@ -163,7 +163,7 @@ $ ls ubuntu/ubuntu-rootfs.img
 >
 > 文件系统目录：ubuntu/ubuntu-rootfs.img
 >
-> lunch 选择 ubuntu，会使用此 linaro-rootfs.img 进行编译
+> lunch 选择 ubuntu，会使用此 ubuntu-rootfs.img 进行编译
 
 
 
