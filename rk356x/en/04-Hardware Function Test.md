@@ -1052,5 +1052,31 @@ $ arecord -D hw:1,0 a.wav -r 48000 -f S16_LE -d 5 -c 2
 
 **Displays information about all network interfaces**
 
+```
+$ ifconfig 
+or
+$ ifconfig -a
+enP3p49s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 82:76:b8:2f:96:6d  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 168  base 0xd000  
+
+enP4p65s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 6a:cb:0c:a5:15:e0  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 179  base 0x1000  
+...
+```
+
+> Network interface names may vary depending on the actual situation
+
+
+
 
 
