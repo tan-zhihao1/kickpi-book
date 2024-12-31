@@ -108,6 +108,22 @@ cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins
 
 > Unregistered as follows: pin 56 (gpio1-24): (MUX UNCLAIMED) (GPIO UNCLAIMED)
 
+**Step 4**
+
+Register 56 and control it through /sys/class/gpio/export
+
+```
+// Register
+root@kickpi:~# echo 56 > /sys/class/gpio/export
+// Check if it is generated
+root@kickpi:~# ls /sys/class/gpio/
+export gpio56 gpiochip0 gpiochip352 unexport
+// Node content after registration
+root@kickpi:~# ls /sys/class/gpio/gpio56
+active_low device direction edge power subsystem uevent value
+root@kickpi:~#
+```
+
 
 
 
