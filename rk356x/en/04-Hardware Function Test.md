@@ -589,6 +589,12 @@ Number of pins: 30, and the direction of the FPC is the same.
 
 ## 13. MIPI Camera
 
+The K1 board supports a single MIPI CSI 4Lane camera interface with up to two cameras.
+
+The K3 board supports dual MIPI CSI 4Lane camera interfaces for up to four cameras.
+
+
+
 ### *Hardware Wiring (Pic)
 
 **FPC Requirements**
