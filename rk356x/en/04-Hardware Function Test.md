@@ -238,11 +238,13 @@ $ ls /dev/ttyS*
 $ microcom -s 115200 /dev/ttyS4
 ```
 
+>For example, the node found for serial port 4 is /dev/ttyS4 
+>
+>-s sets the baud rate to 115200
 
 
 
-
-### 5. USB
+## 5. USB
 
 ### OTG Mode Switching
 
