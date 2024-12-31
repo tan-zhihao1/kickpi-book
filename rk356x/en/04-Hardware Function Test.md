@@ -941,3 +941,29 @@ $ cat /proc/asound/cards
 
 
 
+**Viewing the Sound Card Control Configuration List**
+
+```
+$ amixer -c 1
+Simple mixer control 'Headphone',0
+  Capabilities: pswitch pswitch-joined
+  Playback channels: Mono
+  Mono: Playback [off]
+Simple mixer control 'Speaker',0
+  Capabilities: pswitch pswitch-joined
+  Playback channels: Mono
+  Mono: Playback [on]
+...
+
+$ amixer controls -c 1
+numid=36,iface=CARD,name='Headphone Jack'
+numid=37,iface=CARD,name='Headset Mic Jack'
+numid=38,iface=MIXER,name='Headphone Switch'
+numid=31,iface=MIXER,name='PCM Volume'
+...
+```
+
+
+
+
+
