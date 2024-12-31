@@ -256,6 +256,10 @@ For Linux systems, USB defaults to HOST mode, and OTG is not currently supported
 
 ### ADB Debugging
 
+Android supports adb debugging (type-c interface connected to the host)
+
+* The main commands of adb are as follows:
+
 
 
 
