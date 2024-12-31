@@ -232,7 +232,11 @@ Mobaxterm Software Download Link: [Mobaxterm](https://mobaxterm.mobatek.net/)
 $ ls /dev/ttyS*
 ```
 
+3. Communication test using microcom
 
+```
+$ microcom -s 115200 /dev/ttyS4
+```
 
 
 
