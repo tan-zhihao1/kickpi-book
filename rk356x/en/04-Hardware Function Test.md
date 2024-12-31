@@ -170,6 +170,10 @@ $ echo 0 > /sys/class/leds/gpio3b6/brightness
 
 ###  Debug Serial Port Usage
 
+
+
+
+
 **Development Board Debugging Serial Port Wiring**
 
 The debugging serial port is embedded in the 40-pin extension port. You can refer to the [[Extension Pins]] section or the diagram below to locate the debugging serial port.
