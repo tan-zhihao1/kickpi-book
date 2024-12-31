@@ -648,6 +648,17 @@ $ source /rockchip-test/gpu/test_fullscreen_glmark2.sh
 
 
 
+**K8 Test Results**
+
+```
+$ source /rockchip-test/gpu/test_fullscreen_glmark2.sh
+=======================================================
+                                  glmark2 Score: 676 
+=======================================================
+```
+
+> Connect to HDMI_OUT0, test result is 676
+
 
 
 ## 17. NPU
