@@ -1108,8 +1108,9 @@ $ ifconfig <dev> up
 
 
 
-**Disable the network interface** `` $ ifconfig <dev> up
-
+**Disable the network interface** 
+``` 
+$ ifconfig <dev> up
 ```
 $ ifconfig <dev> down
 ```
