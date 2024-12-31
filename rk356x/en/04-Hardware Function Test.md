@@ -1027,5 +1027,7 @@ $ amixer cset -c 1 numid=44,iface=MIXER,name='Differential Mux' 1
 $ arecord -D hw:1,0 a.wav -r 48000 -f S16_LE -d 5 -c 2
 ```
 
+> amixer configuration for es8388 sound card
+
 
 
