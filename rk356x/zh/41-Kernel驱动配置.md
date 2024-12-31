@@ -2,6 +2,18 @@
 
 ## 配置defconfig
 
+
+
+**内核配置**
+
+```
+$ ./build.sh kernel-config
+```
+
+**buildroot配置**
+
+
+
 内核路径
 
 ```
