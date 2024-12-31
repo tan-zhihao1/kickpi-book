@@ -1261,5 +1261,20 @@ $ make CROSS_COMPILE=~/path-to-toolchain/gcc-xxxxx-toolchain/bin/xxxx-linux-gnu-
 
 
 
+```
+$ spidev_test -D /dev/spidev0.0 -v -l -p "hello"
+```
+
+
+
+```
+root@linaro-alip:/data# ./spidev_test -D /dev/spidev0.0 -v -l -p "hello"
+spi mode: 0x24
+bits per word: 8
+max speed: 500000 Hz (500 kHz)
+TX | 68 65 6C 6C 6F __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __  |hello|
+RX | 68 65 6C 6C 6F __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __  |hello|
+```
+
 
 
