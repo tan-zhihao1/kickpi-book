@@ -382,6 +382,26 @@ Sudo IP Link Set Dev Wlo2 Address 22: 33: 44: 55: 66: 00
 
 
 
+```
+#View creation situation
+Sudo IW DEV <Virtualwlanname> Info
+Sudo IW dev Wlo2 Info
+
+# The output content is similar
+   Interface wlo2
+IfIndex 5
+WDEV 0X5
+addr 04: E2: B9: 17: 18: 72
+type managed
+wiphy 0
+txpower 0.00 dbm
+multicast txq:
+QSZ-BYT QSZ-PKT Flows Drops Marks Overlmt HashCol TX-BYTESTX-PACKETS
+0 0 0 0 0 0 0 0 0 0
+```
+
+
+
 
 
 
