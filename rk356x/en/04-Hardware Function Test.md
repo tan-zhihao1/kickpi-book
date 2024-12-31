@@ -614,6 +614,12 @@ $ cheese
 
 ### Debian gst-launch-1.0 preview image
 
+Debian filesystem Built-in gst-launch-1.0 test scripts
+
+```
+/rockchip-test/camera/camera_rkisp_test.sh
+```
+
 
 
 
