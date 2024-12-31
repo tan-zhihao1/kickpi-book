@@ -190,6 +190,8 @@ The debug serial port cable currently provided has four wires, the red one is `V
 
 Connect debug line `TX` to `RX` on the mainboard, `RX` to `TX` on the mainboard, `GND` to `GND` on the mainboard, and do not need to connect `VCC`.
 
+![image-20241231151848065](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241231151848065.png)
+
 
 
 **Download Serial Port Assistant Software**
