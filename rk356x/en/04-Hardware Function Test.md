@@ -1088,7 +1088,7 @@ $ ifconfig <dev>
 
 
 
-**Set the IP address** ``` $ ifconfig <dev
+**Set the IP address** 
 
 ```
 $ ifconfig eth0 <ip> netmask <nmask>
@@ -1100,7 +1100,7 @@ $ ifconfig eth0 <ip> netmask <nmask>
 
 **Enable the network interface**
 
-``
+```
 $ ifconfig <dev> up
 ```
 
@@ -1118,8 +1118,9 @@ $ ifconfig <dev> down
 
 
 
-**Set the MAC address** `` $ ifconfig <dev> down
-
+**Set the MAC address** 
+```
+$ ifconfig <dev> down
 ```
 $ ifconfig <dev> down
 $ ifconfig <dev> hw ether <new MAC address
