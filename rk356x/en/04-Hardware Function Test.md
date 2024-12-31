@@ -1078,5 +1078,54 @@ enP4p65s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 
 
 
+**Displays information about specific network interfaces**
 
+```
+$ ifconfig <dev>
+```
+
+>To display information about a specific network interface (e.g. `eth0`), type `ifconfig eth0`
+
+
+
+**Set the IP address** ``` $ ifconfig <dev
+
+```
+$ ifconfig eth0 <ip> netmask <nmask>
+```
+
+> To set the IP address for the `eth0` interface to `192.168.1.101` and the subnet mask to `255.255.255.0`, use the command `ifconfig eth0 192.168.1.101 netmask 255.255.255.0`.
+
+
+
+**Enable the network interface**
+
+``
+$ ifconfig <dev> up
+```
+
+> To enable the `eth0` interface, use the `ifconfig eth0 up` command.
+
+
+
+**Disable the network interface** `` $ ifconfig <dev> up
+
+```
+$ ifconfig <dev> down
+```
+
+> To disable the `eth0` interface, use the `ifconfig eth0 down` command
+
+
+
+**Set the MAC address** `` $ ifconfig <dev> down
+
+```
+$ ifconfig <dev> down
+$ ifconfig <dev> hw ether <new MAC address
+$ ifconfig <dev> up
+```
+
+> There may be some differences between operating systems, some systems may not allow setting the MAC address directly via `ifconfig`, or may require an additional step
+```
 
