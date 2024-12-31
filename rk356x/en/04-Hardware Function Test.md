@@ -18,7 +18,7 @@
 
 ### K3 Pins List
 
-
+![K3_产品详情页_10](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K3_产品详情页_10.jpg)
 
 
 
@@ -26,7 +26,7 @@
 
 ## 2. LED
 
-The K1 development board is equipped with a working LED, which serves as the system's heartbeat indicator by default. If the heartbeat LED continues to flash, it indicates that the kernel is running normally
+The development board is equipped with a working LED, which serves as the system's heartbeat indicator by default. If the heartbeat LED continues to flash, it indicates that the kernel is running normally
 
 Additionally, you can refer to the following aspects to control the LED for other functions.
 
