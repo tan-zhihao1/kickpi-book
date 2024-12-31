@@ -359,7 +359,9 @@ Device supports AP-side u-APSD.
 
 ```
 
-> AP/VLAN则可以表示硬件支持
+> AP/VLAN can represent hardware support
+
+
 
 
 
