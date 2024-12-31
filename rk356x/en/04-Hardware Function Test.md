@@ -412,6 +412,8 @@ cd */create_ap
 sudo make install
 ```
 
+2. Creating a hotspot with create_ap
+
 
 
 
