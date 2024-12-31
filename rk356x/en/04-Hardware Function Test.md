@@ -665,6 +665,17 @@ $ source /rockchip-test/gpu/test_fullscreen_glmark2.sh
 
 The RK3568 is equipped with a 1T computing power NPU unit.
 
+
+
+**View NPU Usage**
+
+```
+$ watch cat /sys/kernel/debug/rknpu/load
+$ cat /sys/kernel/debug/rknpu/load
+```
+
+
+
 ### Debian Image Classification Test
 
 Open a virtual terminal or a debugging serial port terminal and execute the following command to start the NPU function test:
