@@ -827,7 +827,9 @@ Decode H.265 4096x2160 100 fps fps 386.86
 
 Connect the board to the display device, open the virtual terminal or debug serial terminal, execute the following commands to start chromium video testing
 
-
+```
+$ source /rockchip-test/chromium/test_chromium_with_video.sh
+```
 
 
 
@@ -856,3 +858,7 @@ You can use the following command to switch to user-level manual feeding. Make s
 ```shell
 $ echo A > /dev/watchdog
 ```
+
+
+
+21. FAN
