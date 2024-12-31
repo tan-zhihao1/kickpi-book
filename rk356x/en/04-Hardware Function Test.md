@@ -404,6 +404,14 @@ QSZ-BYT QSZ-PKT Flows Drops Marks Overlmt HashCol TX-BYTESTX-PACKETS
 
 
 
+1. Download installation tool create_ap
+
+```
+git clone https://github.com/oblique/create_ap
+cd */create_ap
+sudo make install
+```
+
 
 
 
