@@ -748,7 +748,17 @@ Begin perf ...
 
 
 
-Debian Target Detection
+### Debian Target Detection
+
+Measurement data can be streamed from the camera or from a video file.
+
+The results are output directly to the display, so you need to be connected to the display to see the results.
+
+```
+$ source /rockchip-test/npu2/rknn_yolov5_demo_Linux.sh
+```
+
+
 
 
 
