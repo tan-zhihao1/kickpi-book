@@ -1236,3 +1236,9 @@ root@linaro-alip:/# candump can0
 
 
 * Terminal 2
+Send command
+
+```
+root@linaro-alip:/# cansend can0 123#DEADBEEF
+```
+
