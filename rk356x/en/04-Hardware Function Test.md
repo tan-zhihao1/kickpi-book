@@ -414,6 +414,14 @@ sudo make install
 
 2. Creating a hotspot with create_ap
 
+```
+sudo create_ap -c 11 <virtualwlanname> <wirelessname> <SSID> <password> 
+#<wirelessname> is the name of your wireless card, <virtualwlanname> the virtual card name, and <SSID> <password> are the hotspot wifi name and password created, respectively
+
+#For example 
+sudo create_ap -c 11 wlo2 wlan0 m3 8888888888
+```
+
 
 
 
