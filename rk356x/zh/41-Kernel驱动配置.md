@@ -26,7 +26,7 @@ kernel config 命令通用配置
 cd kernel-5.10/
 make ARCH=arm64 menuconfig //根据IC架构，目前rk356x/3588选用arm64
 //主要命令
-make loadconfig //导入配置
+make loadconfig //恢复旧的
 make menuconfig //进入配置图形化界面
 make saveconfig //保存为默认配置
 make ARCH=arm64 rockchip_defconfig //加载这个路径下的defconfig
