@@ -1149,3 +1149,21 @@ $ ip link set can0 down
 
 
 
+```
+$ ip link set can0 type can bitrate 500000
+```
+
+
+
+```
+$ ip -details -statistics link show can0
+```
+
+
+
+```
+$ ip link set can0 up
+```
+
+
+
