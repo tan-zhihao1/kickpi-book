@@ -82,11 +82,27 @@ GPIO1-D0 calculation Pin num = 32 * 1 + 24 = 56
 
 **Step 1**
 
-First, comment the corresponding GPIO pins. /sys/class/gpio/export can only import unregistered gpio
+First, comment the corresponding GPIO pins. `/sys/class/gpio/export` can only import unregistered gpio
 
 Disable the corresponding IO in the device tree
 
 The device tree is located at:
+
+```
+kernel-5.10/arch/arm64/boot/dts/rockchip/
+40pin:	rk3568-kickpi-extend-40pin.dtsi
+20pin:	rk3568-kickpi-extend-20pin.dtsi
+```
+
+**步骤二**
+
+​		编译镜像，重新烧录
+
+**步骤三**
+
+​		确认gpio未被注册
+
+
 
 
 
