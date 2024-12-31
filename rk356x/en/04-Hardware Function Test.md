@@ -102,6 +102,12 @@ Compile the image and re-burn
 
 Confirm that gpio is not registered
 
+```
+cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins
+```
+
+> Unregistered as follows: pin 56 (gpio1-24): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
 
 
 
