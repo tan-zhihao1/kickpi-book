@@ -1147,23 +1147,25 @@ Close CAN
 $ ip link set can0 down
 ```
 
-
+Set Contrast Ratio 500KHz
 
 ```
 $ ip link set can0 type can bitrate 500000
 ```
 
-
+Print can0 information
 
 ```
 $ ip -details -statistics link show can0
 ```
 
-
+Activate CAN
 
 ```
 $ ip link set can0 up
 ```
 
 
+
+**CAN Transmit**
 
