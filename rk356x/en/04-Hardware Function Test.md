@@ -891,3 +891,35 @@ $ sudo apt install alsa-utils
 
 
 
+**Instructions for using the tool**
+
+```
+$ amixer -h
+Usage: amixer <options> [command]
+
+Available options:
+  -h,--help       this help
+...
+
+$ aplay -h
+Usage: aplay [OPTION]... [FILE]...
+
+-h, --help              help
+    --version           print current version
+-l, --list-devices      list all soundcards and digital audio devices
+...
+
+$ arecord -h
+Usage: arecord [OPTION]... [FILE]...
+
+-h, --help              help
+    --version           print current version
+-l, --list-devices      list all soundcards and digital audio devices
+-L, --list-pcms         list device names
+...
+```
+
+
+
+
+
