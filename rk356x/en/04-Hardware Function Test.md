@@ -80,7 +80,13 @@ A (0-7) B (8-15) C (16-23) D (24-31)
 GPIO1-D0 calculation Pin num = 32 * 1 + 24 = 56
 ```
 
+**Step 1**
 
+First, comment the corresponding GPIO pins. /sys/class/gpio/export can only import unregistered gpio
+
+Disable the corresponding IO in the device tree
+
+The device tree is located at:
 
 
 
