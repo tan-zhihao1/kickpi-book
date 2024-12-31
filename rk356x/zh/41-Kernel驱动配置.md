@@ -5,7 +5,7 @@
 Android 内核配置
 
 ```
-$ ./build.sh -CKM
+$ ./build.sh -M
 ```
 
 linux 内核配置
