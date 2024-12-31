@@ -342,7 +342,36 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 
 
 
-## 9.SSH
+## 9.SSH配置
+
+```
+用户：kickpi
+密码：kickpi
+(su)root密码： kickpi
+```
 
 
+
+默认不支持root连接，root连接需要配置
+
+```shell
+$ vim /etc/ssh/ssh_config
++ PermitRootLogin yes
+$ vim /etc/ssh/sshd_config
++ PermitRootLogin yes
+$ sudo /etc/init.d/ssh restart
+```
+
+注意事项：
+
+确保板子IP正常
+
+确保能正常连通板子的IP
+
+```
+$ cat /etc/ssh/ssh_config | grep PermitRootLogin
+PermitRootLogin yes
+$ cat /etc/ssh/sshd_config | grep PermitRootLogin
+PermitRootLogin yes
+```
 
