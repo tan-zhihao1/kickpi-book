@@ -145,6 +145,8 @@ $ ls debian/linaro-rootfs.img
 > debian镜像文件的名称、目录必须保证一致
 >
 > 文件系统目录：debian/linaro-rootfs.img
+>
+> lunch 选择 debian，会使用此 linaro-rootfs.img 进行编译 
 
 
 
@@ -160,6 +162,8 @@ $ ls ubuntu/ubuntu-rootfs.img
 > ubuntu镜像文件的名称、目录必须保证一致
 >
 > 文件系统目录：ubuntu/ubuntu-rootfs.img
+>
+> lunch 选择 ubuntu，会使用此 linaro-rootfs.img 进行编译
 
 
 
