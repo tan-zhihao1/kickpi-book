@@ -124,7 +124,19 @@ active_low device direction edge power subsystem uevent value
 root@kickpi:~#
 ```
 
+Control gpio through the content under the node, commonly used as follows
 
+```direction
+direction
+	in / out
+	echo in > /sys/class/gpio/gpio56/direction
+	echo out > /sys/class/gpio/gpio56/direction
+value
+	0 / 1
+	cat /sys/class/gpio/gpio56/value 		// 读取
+	echo 1 > /sys/class/gpio/gpio56/value	// 配置高电平
+	echo 0 > /sys/class/gpio/gpio56/value  // 配置低电平
+```
 
 
 
