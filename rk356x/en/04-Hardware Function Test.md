@@ -260,6 +260,33 @@ Android supports adb debugging (type-c interface connected to the host)
 
 * The main commands of adb are as follows:
 
+```
+#####**adb devices**
+- Description: View the currently connected device. The devices or simulators connected to the computer will be listed and displayed
+- adb start-server
+- Description: Start adb
+
+#####adb kill-server
+- Description: Close adb
+
+#####adb shell
+- Description: This command will log in to the shell of the device, followed by a direct run device command, which is equivalent to executing a remote command
+
+#####adb push
+- Description: This command can copy files on the computer to the development board
+- Example: adb push hello.c /tmp/ This will copy the hello.c file on the computer to the /tmp directory on the development board
+
+#####adb pull
+- Description: This command can copy files on the development board to the computer
+- Example: adb pull /tmp/hello.c ./ Copy the file hello.c in the /tmp directory on the development board to the current directory
+
+#####adb version
+- Description: View the version of adb
+
+#####adb help
+- Description: adb help. For more command details, please use the adb help command to view
+```
+
 
 
 
