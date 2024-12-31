@@ -1048,3 +1048,9 @@ $ arecord -D hw:1,0 a.wav -r 48000 -f S16_LE -d 5 -c 2
 
 
 
+## 25. network
+
+**Displays information about all network interfaces**
+
+
+
