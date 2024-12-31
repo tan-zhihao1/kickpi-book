@@ -8,6 +8,16 @@ The development board is equipped with a 20-pin expansion interface, which inclu
 
 ![image-20240319154848492](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240319154848492.png)
 
+
+
+### K2C 20PIN Pin Diagram
+
+The development board is equipped with a 20Pin expansion pin, which includes ordinary GPIO, I2C, UART, SPI, and other interfaces.
+
+![image-20241227112959132](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241227112959132.png)
+
+
+
 ### 1.1. GPIO
 
 The K2B development board's 20-pin expansion interface includes 9 controllable GPIO pins by default.
