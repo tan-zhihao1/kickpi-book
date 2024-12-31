@@ -1223,7 +1223,7 @@ In loopback mode, candump can be received after candend.
 
 **Examples**
 
-
+* Terminal 1
 
 Turn on the loopback mode test and listen to the can
 
@@ -1235,3 +1235,4 @@ root@linaro-alip:/# candump can0
 
 
 
+* Terminal 2
