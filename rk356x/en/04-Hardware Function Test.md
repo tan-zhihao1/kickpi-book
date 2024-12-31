@@ -923,5 +923,19 @@ Usage: arecord [OPTION]... [FILE]...
 
 
 
+**Listing to view sound cards**
+
+```
+$ cat /proc/asound/cards
+ 0 [rockchiphdmiin ]: rockchip_hdmiin - rockchip,hdmiin
+                      rockchip,hdmiin
+ 1 [rockchipes8388 ]: rockchip-es8388 - rockchip-es8388
+                      rockchip-es8388
+ 2 [rockchiphdmi0  ]: rockchip-hdmi0 - rockchip-hdmi0
+                      rockchip-hdmi0
+ 3 [rockchiphdmi1  ]: rockchip-hdmi1 - rockchip-hdmi1
+                      rockchip-hdmi1
+```
+
 
 
