@@ -1141,5 +1141,11 @@ $ ifconfig -a
 
 **CAN start**
 
+Close CAN
+
+```
+$ ip link set can0 down
+```
+
 
 
