@@ -66,6 +66,12 @@ Firstly, refer to the [Extension Pins](#ExpansionPin) section to confirm the pos
 
 ### Sys GPIO Control
 
+When there is a need to configure the expansion pin as input, the default software gpio-led cannot meet the need
+
+Release GPIO and control it through /sys/class/gpio
+
+
+
 
 
 ### User GPIO Level Control
