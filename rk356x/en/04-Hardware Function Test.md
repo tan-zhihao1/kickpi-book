@@ -1169,3 +1169,29 @@ $ ip link set can0 up
 
 **CAN Transmit**
 
+
+
+```
+$ cansend can0 123#DEADBEEF
+```
+
+
+
+```
+$ cansend can0 123#R
+```
+
+
+
+```
+$ cansend can0 00000123#12345678
+```
+
+
+
+```
+$ cansend can0 00000123#R
+```
+
+
+
