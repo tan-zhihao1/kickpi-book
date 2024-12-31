@@ -72,6 +72,14 @@ Release GPIO and control it through /sys/class/gpio
 
 **PIN calculation**
 
+Take GPIO1-D0 (gpio1-24) as an example:
+
+```
+Each GPIO group has 32 bits: 0-32
+A (0-7) B (8-15) C (16-23) D (24-31)
+GPIO1-D0 calculation Pin num = 32 * 1 + 24 = 56
+```
+
 
 
 
