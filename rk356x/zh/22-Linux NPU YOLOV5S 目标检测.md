@@ -26,6 +26,18 @@ RK Linux官方提供rknn_yolov5_demo，源码支持 RK3562、RK3568、RK3588，�
 
 源码参考及编译
 
+```
+$ export TOOL_CHAIN=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
+$ export GCC_COMPILER=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-rockchip1031-linux-gnu
+```
+
+
+
+```
+$ cd external/rknpu2/examples/rknn_yolov5_video_demo/
+$ ./build-linux_RK356X.sh
+```
+
 
 
 
