@@ -18,7 +18,7 @@ YOLOv5S 是 YOLOv5 系列中的一个变种，不同版本的 YOLOv5 具有不�
 
 ### 硬件环境
 
-测试环境：RK356X Debian11
+测试环境：RK3568 Debian11
 
 
 
