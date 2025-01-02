@@ -52,9 +52,11 @@ $ ./build-linux_RK3562.sh
 生成工具路径
 
 ```
+rknn_yolov5_demo$ ls install/rknn_yolov5_demo_Linux/
+lib  model  rknn_yolov5_demo  rknn_yolov5_video_demo
 ```
 
-
+>拷贝到主板上使用
 
 
 
