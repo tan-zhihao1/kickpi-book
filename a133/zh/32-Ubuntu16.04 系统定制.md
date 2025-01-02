@@ -520,7 +520,7 @@ $ sudo apt-get clean
 
 
 
-## 添加USB转UART支持
+## 添加USB转UART模块支持
 
 1. 接入USB转UART模块，查看新增的USB `PID`及`VID`
 
@@ -547,6 +547,12 @@ Bus 003 Device 001: ID 1a86:7523
 > 内核路径以实际为准
 
 3. 重新编译，烧录软件
+
+4. 接入USB转UART模块，查看新增的tty进行通信
+
+```
+$ ls /dev/tty*
+```
 
 
 
