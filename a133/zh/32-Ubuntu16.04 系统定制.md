@@ -348,7 +348,7 @@ Device            Start      End  Sectors  Size Type
 
 修改分区表
 
-```
+```diff
 --- a/device/config/chips/a133/configs/default/sys_partition.fex
 +++ b/device/config/chips/a133/configs/default/sys_partition.fex
 @@ -53,7 +53,7 @@ size = 16384
