@@ -100,7 +100,7 @@ rknn_yolov5_video_demo
 Usage: ./rknn_yolov5_video_demo <rknn_model> <video_path> <video_type 264/265>
 ```
 
-rknn_yolov5_video_demo
+rknn_yolov5_video_demo 使用示例
 
 ```
 $ ./rknn_yolov5_video_demo model/RK3588/yolov5s-640-640.rknn model/test.h264 264
