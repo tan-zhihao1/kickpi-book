@@ -526,7 +526,7 @@ $ sudo apt-get clean
 
 ```
 $ lsusb
-
+Bus 003 Device 001: ID 1a86:0001  
 ```
 
 
