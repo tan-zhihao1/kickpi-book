@@ -346,17 +346,11 @@ Device            Start      End  Sectors  Size Type
 /dev/mmcblk0p6 12918784 15155166  2236383  1.1G Microsoft basic data
 ```
 
-
-
 修改分区表
 
 ```
 vim device/config/chips/a133/configs/default/sys_partition.fex
 ```
-
-
-
-
 
 默认未挂载 UDISK 分区，可手动将其挂载
 
@@ -368,8 +362,6 @@ sudo mkfs.ext4 /dev/mmcblk0p6
 mkdir /data
 mount /dev/mmcblk0p6 /data
 ```
-
-
 
 fstab 修改方式，系统启动会将其默认挂载
 
