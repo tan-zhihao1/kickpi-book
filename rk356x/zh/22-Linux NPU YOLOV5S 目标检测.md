@@ -90,6 +90,44 @@ loop count = 10 , average run  23.615900 ms
 
 
 
+```
+$ ./rknn_yolov5_video_demo model/RK3588/yolov5s-640-640.rknn model/test.h264 264
+Loading mode...
+sdk version: 1.5.2 (c6b7b351a@2023-08-23T15:28:22) driver version: 0.9.2
+model input num: 1, output num: 3
+  index=0, name=images, n_dims=4, dims=[1, 640, 640, 3], n_elems=1228800, size=1228800, fmt=NHWC, type=INT8, qnt_type=AFFINE, zp=-128, scale=0.003922
+  index=0, name=output, n_dims=4, dims=[1, 255, 80, 80], n_elems=1632000, size=1632000, fmt=NCHW, type=INT8, qnt_type=AFFINE, zp=-128, scale=0.003860
+  index=1, name=283, n_dims=4, dims=[1, 255, 40, 40], n_elems=408000, size=408000, fmt=NCHW, type=INT8, qnt_type=AFFINE, zp=-128, scale=0.003922
+  index=2, name=285, n_dims=4, dims=[1, 255, 20, 20], n_elems=102000, size=102000, fmt=NCHW, type=INT8, qnt_type=AFFINE, zp=-128, scale=0.003915
+model is NHWC input fmt
+model input height=640, width=640, channel=3
+mpi_dec_test start mpi_dec_test decoder test start mpp_type 7 app_ctx=0x7fc1305278 decoder=0x23ad0100
+read video size=720664
+receive packet size=8192 receive packet size=8192 receive packet size=8192 receive packet size=8192 receive packet size=8192 receive packet size=8192 receive packet size=8192 decoder require buffer w:h [1280:720] stride [1280:720] buf_size 1843200 pts=0 dts=0 decode_get_frame get info changed found receive packet size=8192 receive packet size=8192 decoder require buffer w:h [1280:720] stride [1280:720] buf_size 1843200 pts=0 dts=0 get one frame 1687102942317 data_vir=0x7f80024000 fd=13 0x24133340 encoder test start w 1280 h 720 type 7
+input image 1280x720 stride 1280x720 format=2560
+resize with RGA!
+rga_api version 1.9.1_[4]
+once run use 26.630000 ms
+post process config: box_conf_threshold = 0.25, nms_threshold = 0.45
+loadLabelName ./model/coco_80_labels_list.txt
+car @ (380 412 438 461) 0.868004
+car @ (532 362 574 399) 0.866127
+car @ (496 328 530 354) 0.736625
+car @ (564 311 592 331) 0.729147
+car @ (860 433 928 497) 0.695733
+car @ (676 306 704 327) 0.642370
+car @ (738 402 792 457) 0.611211
+car @ (202 441 296 498) 0.610788
+bus @ (748 272 806 329) 0.527151
+car @ (440 322 474 347) 0.526350
+car @ (514 310 540 326) 0.507014
+car @ (280 666 444 720) 0.347807
+car @ (670 288 696 302) 0.271905
+car @ (540 289 566 307) 0.176622
+car @ (494 297 516 312) 0.168131
+car @ (702 263 716 273) 0.163944
+```
+
 
 
 
