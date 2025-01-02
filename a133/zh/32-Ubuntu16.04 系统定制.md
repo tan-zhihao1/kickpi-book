@@ -520,6 +520,15 @@ $ sudo apt-get clean
 
 
 
+## 添加USB转UART
+
+```
+```
+
+
+
+
+
 ## 其他事项
 
 ### xfce 浏览器打不开
