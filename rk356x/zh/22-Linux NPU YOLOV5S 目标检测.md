@@ -45,7 +45,7 @@ $ ./build-linux_RK3562.sh
 >build-linux_RK3566_RK3568.sh
 >build-linux_RK3588.sh
 >
->根据实际进行选择编译
+>根据实际IC选择对应的脚本进行编译
 
 工具使用
 
