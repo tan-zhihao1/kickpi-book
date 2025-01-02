@@ -14,7 +14,7 @@ YOLOv5S 是 YOLOv5 系列中的一个变种，不同版本的 YOLOv5 具有不�
 
 ## 2. 解析图片及视频流参考
 
-RK Linux官方提供rknn_yolov5_demo，源码支持 RK3562、RK3568、RK3588，编译出工具可进行图像解析和视频解析
+RK Linux官方提供rknn_yolov5_demo，源码支持 RK3562、RK3566_RK3568、RK3588，编译出工具可进行图像解析和视频解析
 
 ```
 (SDK)/external/rknpu2/examples/rknn_yolov5_demo
@@ -38,7 +38,14 @@ $ cd external/rknpu2/examples/rknn_yolov5_video_demo/
 $ ./build-linux_RK356X.sh
 ```
 
+>build-android_RK3562.sh
+>build-android_RK3566_RK3568.sh
+>build-android_RK3588.sh
+>build-linux_RK3562.sh
+>build-linux_RK3566_RK3568.sh
+>build-linux_RK3588.sh
 >
+>根据实际进行选择编译
 
 工具使用
 
