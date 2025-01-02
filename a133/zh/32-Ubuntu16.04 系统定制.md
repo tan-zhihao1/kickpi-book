@@ -522,14 +522,14 @@ $ sudo apt-get clean
 
 ## 添加USB转UART支持
 
-接入USB转UART模块，查看新增的USB `PID`及`VID`
+1. 接入USB转UART模块，查看新增的USB `PID`及`VID`
 
 ```
 $ lsusb
 Bus 003 Device 001: ID 1a86:7523  
 ```
 
-
+2. 内核添加对应设备PID及VID
 
 ```diff
 --- a/kernel/linux-4.9/drivers/usb/serial/option.c
@@ -544,7 +544,9 @@ Bus 003 Device 001: ID 1a86:7523
         { USB_DEVICE(FIBOCOM_VENDOR_ID, FIBOCOM_PRODUCT_L61032) },
 ```
 
+> 内核路径以实际为准
 
+3. 重新编译，烧录软件
 
 
 
