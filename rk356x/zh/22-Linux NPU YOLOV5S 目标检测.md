@@ -57,6 +57,7 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 * 指定交叉编译工具链路径
 
 ```
+$ export TOOL_CHAIN=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
 $ export GCC_COMPILER=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-rockchip1031-linux-gnu
 ```
 
