@@ -522,6 +522,8 @@ $ sudo apt-get clean
 
 ## 添加USB转UART模块支持
 
+> 由于不同的USB转UART模块存在不同ID，内核默认不一定包含
+
 1. 接入USB转UART模块，查看新增的USB `PID`及`VID`
 
 ```
