@@ -56,7 +56,7 @@ rknn_yolov5_demo$ ls install/rknn_yolov5_demo_Linux/
 lib  model  rknn_yolov5_demo  rknn_yolov5_video_demo
 ```
 
->拷贝到主板上使用
+>拷贝到主板上运行使用
 
 
 
