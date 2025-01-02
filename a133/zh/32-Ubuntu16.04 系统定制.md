@@ -522,7 +522,28 @@ $ sudo apt-get clean
 
 ## 添加USB转UART
 
+接入USB
+
 ```
+$ lsusb
+
+```
+
+
+
+
+
+```diff
+--- a/kernel/linux-4.9/drivers/usb/serial/option.c
++++ b/kernel/linux-4.9/drivers/usb/serial/option.c
+@@ -1980,6 +1980,7 @@ static const struct usb_device_id option_ids[] = {
+          { USB_DEVICE(0x2C7C, 0x0306) }, /* Quectel EG06/EP06/EM06 */
+          { USB_DEVICE(0x2C7C, 0x0296) }, /* Quectel BG96 */
+ #endif
++        { USB_DEVICE(0x1a86, 0x7523) }, /* 1a86:7523 QinHeng Electronics HL-340 UsB-serial adapter */
+        /* fibocom L610 */
+        { USB_DEVICE(FIBOCOM_VENDOR_ID, FIBOCOM_PRODUCT_L61031) },
+        { USB_DEVICE(FIBOCOM_VENDOR_ID, FIBOCOM_PRODUCT_L61032) },
 ```
 
 
