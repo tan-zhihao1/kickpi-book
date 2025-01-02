@@ -522,14 +522,12 @@ $ sudo apt-get clean
 
 ## 添加USB转UART支持
 
-接入USB
+接入USB转UART模块，查看新增的USB `PID`及`VID`
 
 ```
 $ lsusb
 Bus 003 Device 001: ID 1a86:7523  
 ```
-
-
 
 
 
