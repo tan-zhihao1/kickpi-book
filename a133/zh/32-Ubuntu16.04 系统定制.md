@@ -349,7 +349,16 @@ Device            Start      End  Sectors  Size Type
 修改分区表
 
 ```
-vim device/config/chips/a133/configs/default/sys_partition.fex
+--- a/device/config/chips/a133/configs/default/sys_partition.fex
++++ b/device/config/chips/a133/configs/default/sys_partition.fex
+@@ -53,7 +53,7 @@ size = 16384
+ 
+ [partition]
+     name         = rootfs
+-    size         = 14931722
++    size         = 12582912
+     downloadfile = "rootfs.fex"
+     user_type    = 0x8000
 ```
 
 默认未挂载 UDISK 分区，可手动将其挂载
