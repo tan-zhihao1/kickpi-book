@@ -94,6 +94,10 @@ person @ (79 354 122 516) 0.339254
 loop count = 10 , average run  23.615900 ms
 ```
 
+>person @ / bus @ 为对应识别信息
+
+
+
 rknn_yolov5_video_demo
 
 ```
