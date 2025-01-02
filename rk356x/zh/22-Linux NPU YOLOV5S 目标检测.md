@@ -62,13 +62,13 @@ lib  model  rknn_yolov5_demo  rknn_yolov5_video_demo
 
 ### 工具使用
 
-
+rknn_yolov5_demo
 
 ```
 Usage: ./rknn_yolov5_demo <rknn model> <jpg>
 ```
 
-
+rknn_yolov5_demo 使用示例
 
 ```
 $ ./rknn_yolov5_demo model/RK3588/yolov5s-640-640.rknn model/bus.jpg
@@ -94,7 +94,13 @@ person @ (79 354 122 516) 0.339254
 loop count = 10 , average run  23.615900 ms
 ```
 
+rknn_yolov5_video_demo
 
+```
+Usage: ./rknn_yolov5_video_demo <rknn_model> <video_path> <video_type 264/265>
+```
+
+rknn_yolov5_video_demo
 
 ```
 $ ./rknn_yolov5_video_demo model/RK3588/yolov5s-640-640.rknn model/test.h264 264
