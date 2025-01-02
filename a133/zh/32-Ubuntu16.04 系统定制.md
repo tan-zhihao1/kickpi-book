@@ -520,13 +520,13 @@ $ sudo apt-get clean
 
 
 
-## 添加USB转UART
+## 添加USB转UART支持
 
 接入USB
 
 ```
 $ lsusb
-Bus 003 Device 001: ID 1a86:0001  
+Bus 003 Device 001: ID 1a86:7523  
 ```
 
 
