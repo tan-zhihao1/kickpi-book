@@ -366,8 +366,8 @@ PermitRootLogin yes
 
 ## 10.触摸屏 图像界面文件管理器打不开文件
 
- 1.打开桌面Home 进入文件管理器
+1.打开桌面Home 进入文件管理器
 
 2.右上角第二个选项edit >> Perferences... 
 
-3. Perferences界面 第三页Navigation 选择 Single click to activate items
+3.Perferences界面 第三页Navigation 选择 Single click to activate items
