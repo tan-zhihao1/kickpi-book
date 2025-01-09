@@ -34,6 +34,7 @@
 | 以太网          | 1000M X2                                                     |
 | 按键            | * Boot KEY <br />* RESET KEY <br />* POWER KEY <br />* MASKROM KEY |
 | 扩展引脚        | Extend Pin Total 40Pin： <br />* CAN X2<br />* PWM X7 <br />* UART X5<br />* I3C X1 <br />* I2C X3 <br />* SPI X1<br />* PDM X1<br />* ADC X3 <br />* GPIO X22 |
+| 调试串口        | Y                                                            |
 
 
 
