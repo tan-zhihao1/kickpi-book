@@ -10,7 +10,8 @@
 | 主控           | Rockchip RK3576                                              |
 | CPU            | 四核 Cortex-A72 and 四核 Cortex-A53                          |
 | GPU            | ARM Mali G52 MC3                                             |
-| 运行内存       | 2G / 4GB / 8GB                                               |
+| NPU            | RKNN 6 TOPS*@INT8                                            |
+| 内存           | 4GB / 8GB / 16G                                              |
 | 存储           | 16GB / 32GB                                                  |
 | 系统           | * Android14                                                  |
 | 电源供电       | DC 12V                                                       |
@@ -33,6 +34,8 @@
 | 以太网         | 1000M X2                                                     |
 | 按键           | * Boot KEY <br />* RESET KEY <br />* POWER KEY <br />* MASKROM KEY |
 | 扩展引脚       | Extend Pin Total 40Pin： <br />* CAN X2<br />* PWM X7 <br />* UART X5<br />* I3C X1 <br />* I2C X3 <br />* SPI X1<br />* PDM X1<br />* ADC X3 <br />* GPIO X22 |
+
+
 
 
 
