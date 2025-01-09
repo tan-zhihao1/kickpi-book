@@ -8,7 +8,7 @@
 | -------------- | ------------------------------------------------------------ |
 | PCB尺寸        | 141mm * 80mm                                                 |
 | 主控           | Rockchip RK3576                                              |
-| CPU            | Quad Cortex-A72 and quad Cortex-A53                          |
+| CPU            | 四核 Cortex-A72 and 四核 Cortex-A53                          |
 | GPU            | ARM Mali G52 MC3                                             |
 | 运行内存       | 2G / 4GB / 8GB                                               |
 | 存储           | 16GB / 32GB                                                  |
