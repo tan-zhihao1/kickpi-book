@@ -34,6 +34,7 @@ $ ls device/rockchip/common/bootanimation.zip
 $ vim device/rockchip/rk356x/BoardConfig.mk
 
 	SF_PRIMARY_DISPLAY_ORIENTATION := 0
+	SF_PRIMARY_DISPLAY_ORIENTATION := 90
 ```
 
 
