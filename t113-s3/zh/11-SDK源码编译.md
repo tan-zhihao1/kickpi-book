@@ -94,6 +94,7 @@ $ tar -zxvf t113-linux-*.tar.gz
 **还原源码文件**
 
 ```shell
+$ cd t113-linux
 $ git reset --hard
 ```
 

@@ -371,3 +371,18 @@ PermitRootLogin yes
 2.右上角第二个选项edit >> Perferences... 
 
 3.Perferences界面 第三页Navigation 选择 Single click to activate items
+
+
+
+## 11.UBUNTU从官网安装软件包
+
+安装gcc为例子
+
+`wget http://ports.ubuntu.com/pool/main/g/gcc-9/gcc-9_9.3.0-10ubuntu2_arm64.deb`
+`sudo dpkg -i *.deb`
+网站是https://ubuntu.pkgs.org/20.04/ubuntu-main-arm64/gcc-9_9.3.0-10ubuntu2_arm64.deb.html 可以直接搜索想要的依赖包名
+
+![f78e90f7748d198d11dbbd163bb33a9](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/f78e90f7748d198d11dbbd163bb33a9.png)
+
+
+

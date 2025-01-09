@@ -48,13 +48,23 @@ cp defconfig arch/arm64/configs/rockchip_defconfig
 
 ## dts
 
-rk-linux
+rk356x-linux
 
 ```
 kernel/arch/arm64/boot/dts/rockchip/
 	rk3562-kickpi-k3-linux.dts
 	rk3568-kickpi-k1-linux.dts
 	rk3568-kickpi-k1b-linux.dts
+```
+
+rk-android
+
+```
+kernel-5.10/arch/arm64/boot/dts/rockchip
+ rk3568-kickpi-k1-android.dts
+ rk3568-kickpi-k1b-android.dts
+ rk3562-kickpi-k3-android.dts
+ rk3588-kickpi-k8-android.dts
 ```
 
 
