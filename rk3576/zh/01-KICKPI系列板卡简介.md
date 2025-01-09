@@ -27,10 +27,10 @@
 | 麦克风          | Y                                                            |
 | SD卡            | Y                                                            |
 | 红外接收器      | Y                                                            |
-| 实时时钟        | Y                                                            |
+| 实时时钟        | Y ( HYM8563 )                                                |
 | M.2硬盘         | Y                                                            |
-| 4G移动网络      | Y                                                            |
-| WIFI/蓝牙       | 8822CS                                                       |
+| 4G移动网络      | Y ( EC20 / EC200)                                            |
+| WIFI/蓝牙       | Y ( 8822CS )                                                 |
 | 以太网          | 1000M X2                                                     |
 | 按键            | * Boot KEY <br />* RESET KEY <br />* POWER KEY <br />* MASKROM KEY |
 | 扩展引脚        | Extend Pin Total 40Pin： <br />* CAN X2<br />* PWM X7 <br />* UART X5<br />* I3C X1 <br />* I2C X3 <br />* SPI X1<br />* PDM X1<br />* ADC X3 <br />* GPIO X22 |
