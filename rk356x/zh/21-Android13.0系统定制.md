@@ -58,6 +58,39 @@ $ vim device/rockchip/rk356x/BoardConfig.mk
 
 ## 6. 内置第三方APP
 
+参考 Setting2.apk 
+
+rk-android13.0\vendor\rockchip\common\apps\Settings2 放你的apk和Android.bp 
+
+Android.mk 方式
+
+```
+###############################################################################
+# Settings2
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE := Settings2
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+#LOCAL_PRIVILEGED_MODULE :=
+LOCAL_CERTIFICATE := PRESIGNED
+#LOCAL_OVERRIDES_PACKAGES := 
+LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
+#LOCAL_REQUIRED_MODULES :=
+#LOCAL_PREBUILT_JNI_LIBS :=
+include $(BUILD_PREBUILT)
+
+```
+
+在rk-android13.0\vendor\rockchip\common\apps\apps.mk加入编译
+
+```makefile
+PRODUCT_PACKAGES += \
+       test
+```
+
 
 
 
