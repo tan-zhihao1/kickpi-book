@@ -87,13 +87,13 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 
 ### 单独编译
 
+* 以下命令需先进行配置环境一次
+
 单编Uboot
 
 ```
 ./build.sh -Uu
 ```
-
-
 
 单编安卓
 
@@ -101,15 +101,11 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 ./build.sh -Au
 ```
 
-
-
 单编kernel
 
 ```
 ./build.sh -CKu
 ```
-
-
 
 配置 Kernel defconfig
 
