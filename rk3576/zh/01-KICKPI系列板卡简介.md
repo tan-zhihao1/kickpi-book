@@ -12,7 +12,7 @@
 | GPU            | ARM Mali G52 MC3                                             |
 | 运行内存       | 2G / 4GB / 8GB                                               |
 | 存储           | 16GB / 32GB                                                  |
-| 系统           | * Android14 * debian12 * ubuntu22.04                         |
+| 系统           | * Android14                                                  |
 | 电源供电       | DC 12V                                                       |
 | LED灯          | * Power LED <br />* Work LED                                 |
 | USB HOST       | USB3.0 HOST X3                                               |
