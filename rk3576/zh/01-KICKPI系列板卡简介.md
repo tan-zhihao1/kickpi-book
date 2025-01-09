@@ -13,7 +13,7 @@
 | NPU            | RKNN 6 TOPS*@INT8                                            |
 | 内存           | 4GB / 8GB / 16G                                              |
 | 存储           | 16GB / 32GB                                                  |
-| 系统           | * Android14                                                  |
+| 系统           | * Android14.0                                                |
 | 电源供电       | DC 12V                                                       |
 | LED灯          | * Power LED <br />* Work LED                                 |
 | USB HOST       | USB3.0 HOST X3                                               |
