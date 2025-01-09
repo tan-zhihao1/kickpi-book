@@ -241,7 +241,7 @@ Pick a defconfig:
 Which would you like? [1]:
 ```
 
-根据需要选择对应的主板和系统
+> 根据需要选择对应的主板和系统
 
 
 
