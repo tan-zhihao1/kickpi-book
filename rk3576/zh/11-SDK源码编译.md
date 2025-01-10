@@ -308,7 +308,7 @@ sudo apt-get install -f
 
 
 
-### rootfs.img 编译
+### 编译
 
 ```
 ./build.sh debian
