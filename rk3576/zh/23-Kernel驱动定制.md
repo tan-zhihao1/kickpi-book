@@ -37,25 +37,7 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-linux.dts
 Android defconfig 配置
 
 ```makefile
-// 配置环境
-$ SDK_BUILD_TOP=`pwd`
-$ export PATH=$SDK_BUILD_TOP/prebuilts/clang/host/linux-x86/clang-r487747c/bin:$PATH
-
-// 加载defconfig
-$ cd kernel-6.1
-$ make CROSS_COMPILE=aarch64-linux-gnu- LLVM=1 LLVM_IAS=1 ARCH=arm64 rockchip_defconfig android-14.config sdio_wifi.config rk3576.config
-
-// 配置
-$ make ARCH=arm64 menuconfig
-
-// 保存
-$ make ARCH=arm64 savedefconfig
-
-// 检查修改差异
-$ diff defconfig arch/arm64/configs/rockchip_defconfig
-
-// 覆盖默认defconfig
-$ cp defconfig arch/arm64/configs/rockchip_defconfig
+arch/arm64/configs/rockchip_defconfig
 ```
 
 
@@ -63,15 +45,7 @@ $ cp defconfig arch/arm64/configs/rockchip_defconfig
 Linux defconfig 配置
 
 ```
-$ cd kernel-6.1
-
-$ export CROSS_COMPILE=../prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-
-
-$ make ARCH=arm64 rockchip_linux_defconfig rk3576.config
-
-$ make ARCH=arm64 menuconfig
-
-$ make ARCH=arm64 savedefcofig
+arch/arm64/configs/rockchip_defconfig
 
 
 ```
