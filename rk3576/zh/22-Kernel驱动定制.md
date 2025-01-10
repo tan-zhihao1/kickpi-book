@@ -134,17 +134,15 @@ GPIO0-D3	= gpio0 - ((4 - 1) * 8 + 3)		= gpio0-27 		= (0 * 32) + 27 	= 27
 
 ## MIPI
 
-mipi屏幕选择
-
 `kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtsi`
 
-```
+```diff
 //#include "rk3576-kickpi-lcd-mipi-8-800-1280-MX080B2140.dtsi"
-#include "rk3576-kickpi-lcd-mipi-10.1-800-1280-AT101DS40I.dtsi"
++ #include "rk3576-kickpi-lcd-mipi-10.1-800-1280-AT101DS40I.dtsi"
 //#include "rk3576-kickpi-lcd-mipi-10.1-800-1280-MX101BA1340.dtsi"
 ```
 
-
+> 根据需要选择对应屏幕进行配置，重新编译即可
 
 
 
