@@ -33,3 +33,19 @@ $ get_build_var TARGET_BOARD_PLATFORM_PRODUCT
 tablet
 ```
 
+
+
+## FAQ
+
+**信号出现感叹号问题**
+
+![image-20241127174458223](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241127174458223.png)
+
+原生谷歌会向服务器 captive_portal_server 发送请求，根据判断网络是否可用
+
+如果不想出现，配置 captive_portal_server ，重启即可
+
+```
+adb shell settings put global captive_portal_server 204.gentool.top
+```
+
