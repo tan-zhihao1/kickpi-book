@@ -141,11 +141,11 @@ rockdev/Image-rk3576_u/
 ├── super.img
 ├── uboot.img
 ├── update.img
-├── update-rk3576-kickpi-k7-android-202501101427.img
+├── update-rk3576-kickpi-k7-android-*.img
 └── vbmeta.img
 ```
 
-烧写的镜像为 `(源码)/rockdev/Image-rk3576_u/update.img`
+烧写的镜像为 `(源码)/rockdev/Image-rk3576_u/update-rk3576-kickpi-k7-android-*.img`
 
 烧录详见 - `10-系统镜像烧录`
 
@@ -176,8 +176,6 @@ lunch rk3576_u-userdebug
 $ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
 true
 ```
-
-
 
 dts 路径
 
