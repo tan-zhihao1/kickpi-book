@@ -61,7 +61,7 @@ $ vim device/rockchip/rk356x/BoardConfig.mk
 
 ## 6. 内置第三方APP
 
-参考 Setting2.apk 
+参考 Settings2.apk 
 
 rk-android13.0\vendor\rockchip\common\apps\Settings2 放你的apk和Android.bp 
 
@@ -91,7 +91,7 @@ include $(BUILD_PREBUILT)
 
 ```makefile
 PRODUCT_PACKAGES += \
-       test
+       Settings2
 ```
 
 
