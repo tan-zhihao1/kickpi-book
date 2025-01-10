@@ -87,6 +87,9 @@ include $(BUILD_PREBUILT)
 
 ```
 
+Android.bp 方式
+
+```makefile
 android_app_import {
     name: "test",
     apk: "test.apk",
@@ -96,12 +99,13 @@ android_app_import {
     dex_preopt: {
         enabled: true,
     },
-    
+
     privileged: true, //指应用是特权应用 具有高权限
     //product_specific: true,
     //proprietary: true,
     enforce_uses_libs: false,
 }
+```
 
 在rk-android13.0\vendor\rockchip\common\apps\apps.mk加入编译
 
