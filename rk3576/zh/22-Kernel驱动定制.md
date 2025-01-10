@@ -134,13 +134,23 @@ GPIO0-D3	= gpio0 - ((4 - 1) * 8 + 3)		= gpio0-27 		= (0 * 32) + 27 	= 27
 
 ## extend-40pin
 
-`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-extend-40pin.dtsi`
+dts
+
+```
+kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-extend-40pin.dtsi
+```
 
 
 
 ## MIPI
 
-`kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtsi`
+dts
+
+```
+kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtsi
+```
+
+配置
 
 ```diff
 //#include "rk3576-kickpi-lcd-mipi-8-800-1280-MX080B2140.dtsi"
