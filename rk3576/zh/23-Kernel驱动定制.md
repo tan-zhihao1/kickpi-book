@@ -46,15 +46,11 @@ Linux defconfig 配置
 
 ```
 arch/arm64/configs/rockchip_defconfig
-
-
 ```
 
 
 
-
-
-defconfig 路径
+其他 config 路径
 
 ```
 kernel-6.1/kernel/configs
@@ -71,7 +67,7 @@ kernel-6.1/arch/arm64/configs/
 注意
 
 ```
-rockchip_defconfig、android-14.config、sdio_wifi.config、rk3576.config
+make rockchip_defconfig android-14.config sdio_wifi.config rk3576.config
 是依次加载覆盖的，如果编译后.config文件中没有开启对应的配置，需要检测 config 中是否取消了对应的config配置
 ```
 
