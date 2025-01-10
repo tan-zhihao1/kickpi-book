@@ -192,7 +192,7 @@ kernel-6.1/arch/arm64/configs/rockchip_defconfig
 
 **由于代码位置移动，路径错误导致 android 编译错误**
 
-![image-20241125155203743](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20241125155203743.png)
+![image-20241125155203743](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241125155203743.png)
 
 需要清除数据
 
