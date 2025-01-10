@@ -107,6 +107,31 @@ console:/ # echo 0 > /sys/class/leds/GPIO2_D6/brightness
 
 ## gpio-sysfs
 
+**Pinctrl 引脚控制计算**  
+
+Rockchip Pin的ID按照 控制器(bank)+端口(port)+索引序号(pin) 组成。
+
+* 控制器和GPIO控制器数量一致
+
+* 端口固定 A、B、C和D
+
+* 索引序号固定 0、1、2、3、4、5、6、7
+
+列举pin及引脚复用
+
+```
+cat /d/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins
+```
+
+计算方式
+
+```
+GPIO1-A1	= gpio1 - ((1 - 1) * 8 + 1)		= gpio1-1		= (1 * 32) + 1 		= 33
+GPIO0-D3	= gpio0 - ((4 - 1) * 8 + 3)		= gpio0-27 		= (0 * 32) + 27 	= 27
+```
+
+
+
 
 
 ## WIFI
