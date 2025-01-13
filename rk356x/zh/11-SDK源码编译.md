@@ -418,7 +418,7 @@ $ ./build.sh -A
 source build/envsetup.sh
 ```
 
-
+lunch选择设备
 
 ```
 $ lunch
@@ -432,7 +432,7 @@ $ lunch
 
 
 
-// 比如
+可使用Android下相关命令，比如
 
 ```
 $ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
