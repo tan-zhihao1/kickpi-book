@@ -416,14 +416,24 @@ $ ./build.sh -A
 ```shell
 // 配置环境
 source build/envsetup.sh
-lunch
-根据实际，选择对应的设备
-23
+
 
 // 比如
 $ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
 true
 ```
+
+
+
+```
+$ lunch
+根据实际，选择对应的设备，比如K1和K1B为rk3568
+61
+```
+
+
+
+![2a41026b5899c13dcc725f59858abd7](C:\Users\16708\Documents\WeChat Files\wxid_yeq1x453uq1m22\FileStorage\Temp\2a41026b5899c13dcc725f59858abd7.png)
 
 
 
