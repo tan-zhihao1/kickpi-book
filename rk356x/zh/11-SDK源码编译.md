@@ -418,7 +418,7 @@ $ ./build.sh -A
 source build/envsetup.sh
 lunch
 
-根据实际，输入你需要的设备号
+根据实际，选择对应的设备
 
 
 // 比如
