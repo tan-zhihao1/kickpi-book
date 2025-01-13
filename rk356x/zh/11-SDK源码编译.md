@@ -417,6 +417,7 @@ $ ./build.sh -A
 // 配置环境
 source build/envsetup.sh
 lunch
+
 输入你需要的设备号
 
 
