@@ -422,7 +422,7 @@ source build/envsetup.sh
 
 ```
 $ lunch
-根据实际，选择对应的设备，比如K1和K1B为rk3568
+根据实际，选择对应的设备，比如'K1'和'K1B'为 rk3568
 61
 ```
 
