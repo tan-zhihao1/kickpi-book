@@ -416,7 +416,9 @@ $ ./build.sh -A
 ```shell
 // 配置环境
 source build/envsetup.sh
-lunch rk3576_u-userdebug
+lunch
+输入你需要的设备号
+
 
 // 比如
 $ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
