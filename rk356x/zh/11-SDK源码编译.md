@@ -418,7 +418,7 @@ $ ./build.sh -A
 source build/envsetup.sh
 ```
 
-选择设备配置
+设备配置选择
 
 ```
 $ lunch
@@ -428,7 +428,7 @@ $ lunch
 
 ![2a41026b5899c13dcc725f59858abd7](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/2a41026b5899c13dcc725f59858abd7.png)
 
-可使用Android下相关命令，比如
+Android下相关命令使用，比如
 
 ```
 $ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
