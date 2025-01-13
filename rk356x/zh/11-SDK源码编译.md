@@ -411,14 +411,14 @@ $ ./build.sh -A
 
 **android 环境配置**
 
-配置环境，可以使用 mm / get_build_var 等安卓环境下命令
+配置命令环境，可以使用 mm / get_build_var 等安卓环境下命令
 
 ```shell
 // 配置环境
 source build/envsetup.sh
 ```
 
-lunch选择设备
+选择设备配置
 
 ```
 $ lunch
@@ -426,11 +426,7 @@ $ lunch
 61
 ```
 
-
-
-![2a41026b5899c13dcc725f59858abd7](C:\Users\16708\Documents\WeChat Files\wxid_yeq1x453uq1m22\FileStorage\Temp\2a41026b5899c13dcc725f59858abd7.png)
-
-
+![2a41026b5899c13dcc725f59858abd7](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/2a41026b5899c13dcc725f59858abd7.png)
 
 可使用Android下相关命令，比如
 
