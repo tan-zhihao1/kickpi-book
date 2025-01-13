@@ -386,3 +386,20 @@ PermitRootLogin yes
 
 
 
+## 12 备份SD卡系统
+
+> 注意：这种方式替换后的rootfs存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
+
+接好U盘在电脑上，大小至少16GB以上，打包出来的镜像会比较大
+
+在板子上运行我们的打包脚本
+
+```
+sudo ./ff_export_rootfs /mnt/usb/ -t ext4
+```
+
+> 生成的包名格式如：Ubuntu22.04.5LTS_ztl_ext4_202411131114.img
+
+等待打包结束
+
+单独烧录rootfs
