@@ -418,6 +418,7 @@ $ ./build.sh -A
 source build/envsetup.sh
 lunch
 根据实际，选择对应的设备
+23
 
 // 比如
 $ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
