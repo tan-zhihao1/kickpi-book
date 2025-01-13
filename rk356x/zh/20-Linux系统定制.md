@@ -400,6 +400,4 @@ sudo ./ff_export_rootfs /mnt/usb/ -t ext4
 
 > 生成的包名格式如：Ubuntu22.04.5LTS_ztl_ext4_202411131114.img
 
-等待打包结束
-
-单独烧录rootfs
+对需要替换这个系统的板子单独烧录rootfs即可
