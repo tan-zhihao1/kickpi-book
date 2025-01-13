@@ -55,7 +55,7 @@ kernel/arch/arm64/boot/dts/rockchip/
 	rk3562-kickpi-k3-linux.dts
 	rk3568-kickpi-k1-linux.dts
 	rk3568-kickpi-k1b-linux.dts
-	 rk3588-kickpi-k8-android.dts
+	rk3588-kickpi-k8-linux.dts
 ```
 
 rk-android
