@@ -409,6 +409,22 @@ $ ./build.sh -A
 
 
 
+**android 环境配置**
+
+配置环境，可以使用 mm / get_build_var 等安卓环境下命令
+
+```shell
+// 配置环境
+source build/envsetup.sh
+lunch rk3576_u-userdebug
+
+// 比如
+$ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
+true
+```
+
+
+
 ### 其他常用命令
 
 **内核配置**
