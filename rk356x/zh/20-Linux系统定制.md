@@ -388,7 +388,7 @@ PermitRootLogin yes
 
 ## 12 备份SD卡系统
 
-> 注意：这种方式替换后的rootfs存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
+> 注意：这种方式替换后的rootfs 可能存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
 
 接好U盘在电脑上，大小至少16GB以上，打包出来的镜像会比较大
 
