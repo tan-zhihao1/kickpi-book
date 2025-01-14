@@ -377,6 +377,8 @@ $ ./build.sh -AUCKu
 
 > 镜像生成目录：rockdev/Image-*/update-\*.img
 
+
+
 配置线程选项，指定线程32
 
 ```
