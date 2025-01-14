@@ -399,5 +399,7 @@ sudo ./ff_export_rootfs /mnt/usb/ -t ext4
 ```
 
 > 生成的包名格式如：Ubuntu22.04.5LTS_ztl_ext4_202411131114.img
+>
+> /mnt/usb/ 为U盘挂载的目录
 
 对需要替换这个系统的板子单独烧录rootfs即可
