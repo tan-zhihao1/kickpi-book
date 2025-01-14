@@ -37,3 +37,10 @@ $ sudo pip install pyelftools
 ### Obtaining the SDK Source Code
 
 * SDK Directory on the Cloud Drive
+
+``` 
+1-SDK源码\linux\sdk\xxxxxxx\
+	t113-linux-*.tar.gz
+	t113-linux-*.md5
+```
+
