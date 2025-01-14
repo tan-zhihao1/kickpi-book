@@ -375,7 +375,11 @@ $ ./build.sh -AUCKu
 
 > 镜像生成目录：rockdev/Image-*/update-\*.img
 
-注意：如果遇到编译Android时就失败了，但是没什么具体报错，应该就是你的虚拟机配置太低了，build.sh 里面的BUILD_JOBS=16 改成1后重新尝试
+注意：如果遇到编译Android时就失败了，但是没什么具体报错，大概率虚拟机配置过低，
+
+可以 build.sh 里面的BUILD_JOBS=16 改成1后重新尝试，
+
+
 
 ### 单独编译分区镜像
 
