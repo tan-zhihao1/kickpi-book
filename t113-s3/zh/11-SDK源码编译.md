@@ -114,7 +114,7 @@ $ git reset --hard
 
 提供的buildroot-dl-*.tar.gz压缩包，可用于离线编译Buildroot文件系统,，减少编译时下载源码的时间
 
-将buildroot-dl-*.tar.gz解压至buildroot/buildroot-201902目下
+将buildroot-dl-*.tar.gz解压至buildroot/buildroot-201902目录下
 
 * ubuntu文件系统
 
