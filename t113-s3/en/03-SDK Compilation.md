@@ -32,3 +32,8 @@ $ sudo pip install pyelftools
 >
 > If the installation fails for a different Ubuntu version, you can search the internet for the corresponding solution.
 
+## 2. Compiling the Linux SDK
+
+### Obtaining the SDK Source Code
+
+* SDK Directory on the Cloud Drive
