@@ -12,7 +12,7 @@ This compilation environment setup is suitable for Linux SDK.
 | Memory Capacity   | 8GB or more       |
 | Hard Disk Capacity   | 200GB or more     |
 
-
+> After testing ubuntu22.04, there will be a lot of errors when compiling, so it is not recommended to use it.
 
 
 
