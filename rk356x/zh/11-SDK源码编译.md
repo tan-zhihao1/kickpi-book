@@ -385,7 +385,7 @@ $ ./build.sh -AUCKu -J32
 
 > 注意：如果遇到编译Android时就失败了，但是没什么具体报错，大概率虚拟机配置过低；
 
-配置线程选项指定1线程
+配置线程选项，指定单线程
 
 ```
 $ ./build.sh -AUCKu -J1
@@ -396,7 +396,7 @@ $ ./build.sh -AUCKu -J1
 ```diff
 $ vim build.sh
 -BUILD_JOBS=16
-+BUILD_JOBS=16
++BUILD_JOBS=1
 $ ./build.sh -AUCKu
 ```
 
