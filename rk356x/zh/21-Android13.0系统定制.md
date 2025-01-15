@@ -308,7 +308,11 @@ apollo-p2:/ $ su
 
 ## 14. HDMI in APK 定制
 
+hdmi in APK 路径
+
 ```
 packages/apps/rkCamera2/
 ```
+
+
 
