@@ -395,7 +395,7 @@ PermitRootLogin yes
 在板子上运行我们的打包脚本
 
 ```
-sudo ./ff_export_rootfs /mnt/usb/ -t ext4
+sudo ./ff_export_rootfs /mnt/usb -t ext4
 ```
 
 > 生成的包名格式如：Ubuntu22.04.5LTS_ztl_ext4_202411131114.img
