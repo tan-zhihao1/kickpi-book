@@ -36,7 +36,7 @@ $ export GCC_COMPILER=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-202
 编译对应的工具
 
 ```
-$ cd external/rknpu2/examples/rknn_yolov5_video_demo/
+$ cd external/rknpu2/examples/rknn_yolov5_demo/
 $ ./build-linux_RK3562.sh
 ```
 
