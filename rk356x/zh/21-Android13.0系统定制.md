@@ -314,5 +314,20 @@ hdmi in APK 路径
 packages/apps/rkCamera2/
 ```
 
+hdmi in 画面全屏配置
+
+```diff
+--- a/packages/apps/rkCamera2/src/com/android/rockchip/camera2/activity/MainActivity.java
++++ b/packages/apps/rkCamera2/src/com/android/rockchip/camera2/activity/MainActivity.java
+@@ -207,7 +207,7 @@ public class MainActivity extends Activity implements
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_main);
+ 
++        fullScreen();
+-        //fullScreen();
+         rootView = (RelativeLayout) findViewById(R.id.root_view);
+         rootView.setOnClickListener(this);
+```
+
 
 
