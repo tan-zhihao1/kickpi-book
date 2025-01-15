@@ -60,6 +60,12 @@ vendor/aw/homlet/package/TVLauncher
         SystemUI
 ```
 
+APK 路径
+
+```
+packages/apps/Launcher3/
+```
+
 
 
 ## APP 、文件编译不生效问题
