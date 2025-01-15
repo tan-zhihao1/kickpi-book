@@ -304,3 +304,6 @@ apollo-p2:/ $ su
  adb push .\build.prop /system/build.prop
 ```
 
+
+
+## 14. HDMI in APK 定制
