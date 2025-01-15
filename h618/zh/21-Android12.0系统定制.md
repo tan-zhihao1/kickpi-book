@@ -28,6 +28,12 @@ H618 Android 12.0 为官方 tv 系统，兼容 tv 版本的 APP，安装使用 t
         SystemUI
 ```
 
+APK 路径
+
+```
+vendor/aw/homlet/package/TVLauncher
+```
+
 
 
 ## Tablet 桌面
