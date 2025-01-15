@@ -398,7 +398,7 @@ PermitRootLogin yes
 sudo ./ff_export_rootfs /mnt/usb -t ext4
 ```
 
-> 生成的包名格式如：Ubuntu22.04.5LTS_ztl_ext4_202411131114.img
+> 生成的包名格式如：rootfs.img
 >
 > /mnt/usb/ 为U盘挂载的目录
 
