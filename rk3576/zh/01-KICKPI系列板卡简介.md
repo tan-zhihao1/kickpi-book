@@ -10,7 +10,7 @@
 | 主控            | Rockchip RK3576                                              |
 | CPU             | Quad Cortex-A72 and quad Cortex-A53                          |
 | GPU             | ARM Mali G52 MC3                                             |
-| NPU             | RKNN 6 TOPS*@INT8                                            |
+| NPU             | 6 TOPS*@INT8                                                 |
 | 内存            | 4GB / 8GB / 16G                                              |
 | 存储            | 16GB / 32GB                                                  |
 | 系统            | * Android14.0                                                |
