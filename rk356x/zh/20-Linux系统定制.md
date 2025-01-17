@@ -172,7 +172,7 @@ sudo apt install nfs-common
 
 ```
 $ mkdir /home/kickpi/nfs_share
-$ chmod 777 /home/huangcm/nfs_share
+$ chmod 777 /home/kickpi/nfs_share
 $ vi /etc/exports
 # /etc/exports: the access control list for filesystems which may be exported
 #               to NFS clients.  See exports(5).
