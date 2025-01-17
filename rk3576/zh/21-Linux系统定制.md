@@ -238,7 +238,7 @@ $ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 
 ## 网络配置
 
-### 静态IP配置
+### debian12
 
 使用 `ifconfig` 和 `route` 命令（临时设置）
 
@@ -282,3 +282,4 @@ sudo route add default gw 192.168.1.1 eth0
 
 
 使用 `/etc/network/interfaces` 文件（长期设置）
+
