@@ -293,7 +293,7 @@ sudo vi /etc/network/interfaces
 
 > - `sudo`：以管理员权限运行命令。
 
-**添加或修改网络接口配置**：
+2. **添加或修改网络接口配置**：
 
 ```
 auto eth0
@@ -312,5 +312,9 @@ iface eth0 inet static
    > - `gateway`：设置网关。
    > - `dns-nameservers`：设置 DNS 服务器，这里使用了 Google 的 DNS 服务器，你可以使用其他 DNS 服务器，如 `114.114.114.114` 等。
 
-1. **保存并退出编辑器**：
-   - 在 `nano` 中，按 `Ctrl+X`，然后按 `Y` 保存并退出。
+3. **保存并退出编辑器**：
+
+- 在 `vi` 中，按 `ESC`，然后输入`:wq` ，`ENTER`键保存并退出。
+
+
+
