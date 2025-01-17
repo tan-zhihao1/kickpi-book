@@ -199,7 +199,7 @@ $ xinput_calibrator -v --device $id
 ```
 $ locale-gen en_US.UTF-8
 $ sed -i 's/^# *\(en_US.UTF-8\)/\1/' /etc/locale.gen
-$ echo "LANG=en_US.UTF-8" >> /etc/default/locale
+$ echo "LANG=en_US.UTF-8" > /etc/default/locale
 $ echo "export LC_ALL=en_US.UTF-8" > /etc/profile.d/zh_CN.sh
 $ echo "export LANG=en_US.UTF-8" >> /etc/profile.d/zh_CN.sh
 $ echo "export LANGUAGE=en_US:en" >> /etc/profile.d/zh_CN.sh
@@ -210,7 +210,7 @@ $ echo "export LANGUAGE=en_US:en" >> /etc/profile.d/zh_CN.sh
 ```
 $ locale-gen zh_CN.UTF-8
 $ sed -i 's/^# *\(zh_CN.UTF-8\)/\1/' /etc/locale.gen
-$ echo "LANG=zh_CN.UTF-8" >> /etc/default/locale
+$ echo "LANG=zh_CN.UTF-8" > /etc/default/locale
 $ echo "export LC_ALL=zh_CN.UTF-8" > /etc/profile.d/zh_CN.sh
 $ echo "export LANG=zh_CN.UTF-8" >> /etc/profile.d/zh_CN.sh
 $ echo "export LANGUAGE=zh_CN:zh" >> /etc/profile.d/zh_CN.sh
