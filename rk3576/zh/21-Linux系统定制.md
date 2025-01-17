@@ -288,7 +288,7 @@ sudo route add default gw 192.168.1.1 eth0
 1. **编辑 `/etc/network/interfaces` 文件**：
 
    ```
-   sudo nano /etc/network/interfaces
+   sudo vi /etc/network/interfaces
    ```
 
    > - `sudo`：以管理员权限运行命令。
@@ -306,4 +306,9 @@ sudo route add default gw 192.168.1.1 eth0
        dns-nameservers 8.8.8.8 8.8.4.4
    ```
 
-   
+   > - `auto eth0`：表示在系统启动时自动启用 `eth0` 接口。
+   > - `iface eth0 inet static`：表示 `eth0` 接口使用静态 IP 配置。
+   > - `address`：设置 IP 地址。
+   > - `netmask`：设置子网掩码。
+   > - `gateway`：设置网关。
+   > - `dns-nameservers`：设置 DNS 服务器，这里使用了 Google 的 DNS 服务器，你可以使用其他 DNS 服务器，如 `114.114.114.114` 等。
