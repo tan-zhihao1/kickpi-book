@@ -93,7 +93,9 @@ adb pull /data/2.txt .
 
 ## 屏幕显示方向配置
 
-* Debian 支持 xrandr 进行配置屏幕
+Debian12
+
+xrandr 进行配置屏幕
 
 ```
 # 获取使用帮助
