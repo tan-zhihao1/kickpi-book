@@ -425,4 +425,5 @@ export mpp_syslog_perror=1
 echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 ```
 
-#### 测试结果：
+#### 
+
