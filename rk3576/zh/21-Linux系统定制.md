@@ -429,11 +429,9 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 
 ## 备份文件系统
 
-当修改文件系统后，需要将其拷贝到其他相同板卡或量产板卡。
+当修改文件系统后，需要将其拷贝到其他相同板卡需求。
 
 可通过下面方式导出文件系统，进行重新烧录。
-
-> 注意：这种方式替换后的rootfs 可能存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
 
 接好U盘在板子上，大小至少16GB以上，打包出来的镜像会比较大
 
@@ -448,3 +446,5 @@ sudo ./ff_export_rootfs /mnt/usb -t ext4
 > /mnt/usb 为U盘挂载的目录
 
 对需要替换这个系统的板子单独烧录rootfs即可
+
+注意：这种方式替换后的rootfs 可能存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
