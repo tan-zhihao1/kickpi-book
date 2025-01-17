@@ -2,7 +2,7 @@
 
 * Debian12
 
-* Ubuntu
+* Ubuntu2204
 
 
 
