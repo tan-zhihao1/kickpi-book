@@ -401,3 +401,28 @@ $ ls nfs_tmp/
 
   
 
+## Chrome 硬件加速
+
+测试平台：K7 Debian12 Chrome
+
+#### 测试方法：
+
+​	1.拷贝1080P及4K的视频到板子，通过chrome浏览器本地解码。
+
+​	2.查看GPU占用：
+
+```
+cat /sys/devices/platform/*gpu/utilisation   //显示结果单位为%
+```
+
+​	3.打开帧解码日志并打印：
+
+```
+export mpi_debug=1
+export mpp_debug=1
+export h264d_debug=1
+export mpp_syslog_perror=1
+echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
+```
+
+#### 测试结果：
