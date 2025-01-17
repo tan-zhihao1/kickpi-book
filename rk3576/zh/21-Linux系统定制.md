@@ -1,9 +1,5 @@
 # 21-Linux系统定制
 
-* Debian12
-
-* Ubuntu2204
-
 
 
 ## 系统启动
