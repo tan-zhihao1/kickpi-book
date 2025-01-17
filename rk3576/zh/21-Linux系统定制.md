@@ -238,5 +238,9 @@ $ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 
 ## 网络配置
 
+### 静态IP配置
+
+使用 `ifconfig` 和 `route` 命令（临时设置）
+
 
 
