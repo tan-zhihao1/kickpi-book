@@ -400,6 +400,6 @@ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 > 生成的包名格式如：rootfs.img
 >
-> /mnt/usb/ 为U盘挂载的目录
+> /mnt/usb 为U盘挂载的目录
 
 对需要替换这个系统的板子单独烧录rootfs即可
