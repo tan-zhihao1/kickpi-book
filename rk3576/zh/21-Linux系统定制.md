@@ -425,7 +425,24 @@ export mpp_syslog_perror=1
 echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 ```
 
-#### 
+
+
+## 备份系统
 
 
 
+> 注意：这种方式替换后的rootfs 可能存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
+
+接好U盘在板子上，大小至少16GB以上，打包出来的镜像会比较大
+
+在板子上运行我们的打包脚本
+
+```
+sudo ./ff_export_rootfs /mnt/usb -t ext4
+```
+
+> 生成的包名格式如：rootfs.img
+>
+> /mnt/usb 为U盘挂载的目录
+
+对需要替换这个系统的板子单独烧录rootfs即可
