@@ -283,3 +283,8 @@ sudo route add default gw 192.168.1.1 eth0
 
 使用 `/etc/network/interfaces` 文件（长期设置）
 
+这种方法可以实现长期稳定的固定 IP 配置。
+
+1. **编辑 `/etc/network/interfaces` 文件**：
+
+   
