@@ -278,3 +278,7 @@ sudo route add default gw 192.168.1.1 eth0
 > - `route`：用于配置路由。
 > - `add default gw <网关地址>`：添加默认网关。
 > - `<网关地址>`：你的网络网关地址。
+
+
+
+使用 `/etc/network/interfaces` 文件（长期设置）
