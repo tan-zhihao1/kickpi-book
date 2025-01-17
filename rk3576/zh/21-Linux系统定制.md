@@ -246,15 +246,15 @@ $ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 
 1. **使用 `ifconfig` 命令设置 IP 地址、子网掩码和广播地址**：
 
-   ```
-   sudo ifconfig eth0 <IP 地址> netmask <子网掩码> broadcast <广播地址>
-   ```
+```
+sudo ifconfig eth0 <IP 地址> netmask <子网掩码> broadcast <广播地址>
+```
 
-   例如：
+例如：
 
-   ```
-   sudo ifconfig eth0 192.168.1.100 netmask 255.255.255.0 broadcast 192.168.1.255
-   ```
+```
+sudo ifconfig eth0 192.168.1.100 netmask 255.255.255.0 broadcast 192.168.1.255
+```
 
 > - `sudo`：以管理员权限运行命令。
 > - `ifconfig`：用于配置网络接口。
@@ -275,3 +275,6 @@ sudo route add default gw <网关地址> eth0
 sudo route add default gw 192.168.1.1 eth0
 ```
 
+> - `route`：用于配置路由。
+> - `add default gw <网关地址>`：添加默认网关。
+> - `<网关地址>`：你的网络网关地址。
