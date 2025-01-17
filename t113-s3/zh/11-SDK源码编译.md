@@ -47,7 +47,7 @@ $ sudo pip install pyelftools
 
 ### SDK介绍
 
-Tina5.0 Linux SDK支持构建三个文件系统，分别为buildroot、openwrt、tina
+Tina5.0 Linux SDK支持构建两个文件系统，分别为buildroot、ubuntu
 
 
 
@@ -207,3 +207,4 @@ $ ./build.sh buildroot_saveconfig
 
 
 
+添加
