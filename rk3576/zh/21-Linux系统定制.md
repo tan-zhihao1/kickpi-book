@@ -242,5 +242,36 @@ $ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 
 使用 `ifconfig` 和 `route` 命令（临时设置）
 
+这种方法在系统重启后会失效，但可以快速测试固定 IP 的配置。
 
+1. **使用 `ifconfig` 命令设置 IP 地址、子网掩码和广播地址**：
+
+   ```
+   sudo ifconfig eth0 <IP 地址> netmask <子网掩码> broadcast <广播地址>
+   ```
+
+   例如：
+
+   ```
+   sudo ifconfig eth0 192.168.1.100 netmask 255.255.255.0 broadcast 192.168.1.255
+   ```
+
+> - `sudo`：以管理员权限运行命令。
+> - `ifconfig`：用于配置网络接口。
+> - `eth0`：网络接口名称，你可以通过 `ifconfig -a` 查看自己的网络接口名称，可能是 `eth0`、`ens33` 或其他名称。
+> - `<IP 地址>`：你想要设置的固定 IP 地址。
+> - `<子网掩码>`：通常是 `255.255.255.0` 或其他子网掩码。
+> - `<广播地址>`：一般是根据 IP 地址和子网掩码计算得出，例如，对于 `192.168.1.100` 和 `255.255.255.0` 的子网掩码，广播地址是 `192.168.1.255`。
+
+2. **使用 `route` 命令设置网关**：
+
+```
+sudo route add default gw <网关地址> eth0
+```
+
+例如：
+
+```
+sudo route add default gw 192.168.1.1 eth0
+```
 
