@@ -564,6 +564,7 @@ apollo-p2:/ $ su
  service.adb.tcp.port=5555
  //替换进入
  adb push .\build.prop /system/build.prop
+ adb reboot
 ```
 
 
