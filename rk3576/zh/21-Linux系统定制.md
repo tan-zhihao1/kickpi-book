@@ -6,6 +6,36 @@
 
 
 
+## 系统启动
+
+### Linux系统登陆用户密码
+
+Debian系统用户名/密码：linaro/linaro
+
+Ubuntu系统用户名/密码：kickpi/kickpi
+
+
+
+### 图形桌面登陆
+
+默认自动登录kickpi用户
+
+图形桌面依赖显示设备，开机前需要先连接HDMI或LCD
+
+
+
+### 调试串口登录
+
+默认自动登录ROOT用户
+
+ROOT用户默认未设置密码，可用以下命令配置ROOT密码
+
+```
+$ sudo passwd root
+```
+
+
+
 ## SSH 登录
 
 ```
