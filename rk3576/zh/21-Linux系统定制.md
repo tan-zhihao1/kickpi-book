@@ -316,5 +316,17 @@ iface eth0 inet static
 
 - 在 `vi` 中，按 `ESC`，然后输入`:wq` ，`ENTER`键保存并退出。
 
+4. **重启网络服务或系统**：
+
+```
+sudo service networking restart
+```
+
+或者直接重启系统：
+
+```
+sudo reboot
+```
+
 
 
