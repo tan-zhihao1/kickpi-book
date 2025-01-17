@@ -311,3 +311,6 @@ iface eth0 inet static
    > - `netmask`：设置子网掩码。
    > - `gateway`：设置网关。
    > - `dns-nameservers`：设置 DNS 服务器，这里使用了 Google 的 DNS 服务器，你可以使用其他 DNS 服务器，如 `114.114.114.114` 等。
+
+1. **保存并退出编辑器**：
+   - 在 `nano` 中，按 `Ctrl+X`，然后按 `Y` 保存并退出。
