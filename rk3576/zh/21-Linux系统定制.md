@@ -287,4 +287,23 @@ sudo route add default gw 192.168.1.1 eth0
 
 1. **编辑 `/etc/network/interfaces` 文件**：
 
+   ```
+   sudo nano /etc/network/interfaces
+   ```
+
+   > - `sudo`：以管理员权限运行命令。
+   > - `nano`：文本编辑器，你也可以使用 `vi` 或 `vim`。
+
+   **添加或修改网络接口配置**：
+
+   ```
+   auto eth0
+   iface eth0 inet static
+       address 192.168.1.100
+       netmask 255.255.255.0
+       gateway 192.168.1.1
+       # 如果需要设置 DNS 服务器，可以添加以下行
+       dns-nameservers 8.8.8.8 8.8.4.4
+   ```
+
    
