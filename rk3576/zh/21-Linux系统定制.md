@@ -18,8 +18,6 @@ Ubuntu系统用户名/密码：kickpi/kickpi
 
 ### 图形桌面登陆
 
-默认自动登录kickpi用户
-
 图形桌面依赖显示设备，开机前需要先连接HDMI或LCD
 
 
