@@ -40,6 +40,8 @@ $ sudo passwd root
 ssh <用户名>@<IP>
 ```
 
+
+
 默认不支持root ssh 连接，root连接需要配置
 
 ```shell
@@ -55,6 +57,8 @@ $ sudo /etc/init.d/ssh restart
 确保板子IP正常
 
 确保能正常连通板子的IP
+
+
 
 root登陆需要确认配置
 
