@@ -12,6 +12,29 @@
 ssh <用户名>@<IP>
 ```
 
+默认不支持root连接，root连接需要配置
+
+```shell
+$ vim /etc/ssh/ssh_config
++ PermitRootLogin yes
+$ vim /etc/ssh/sshd_config
++ PermitRootLogin yes
+$ sudo /etc/init.d/ssh restart
+```
+
+注意事项：
+
+确保板子IP正常
+
+确保能正常连通板子的IP
+
+```
+$ cat /etc/ssh/ssh_config | grep PermitRootLogin
+PermitRootLogin yes
+$ cat /etc/ssh/sshd_config | grep PermitRootLogin
+PermitRootLogin yes
+```
+
 
 
 ## ADB 功能
