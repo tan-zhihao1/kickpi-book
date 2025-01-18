@@ -439,7 +439,7 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 sudo ./ff_export_rootfs /mnt/usb -t ext4
 ```
 
-> 生成的包名格式如：Debian_GNU_Linux_12__bookworm__ext4_202501180221.img
+> 生成的包名格式如：Debian_GNU_Linux_12_bookworm_ext4_202501180221.img
 >
 > /mnt/usb 为U盘挂载的目录
 
