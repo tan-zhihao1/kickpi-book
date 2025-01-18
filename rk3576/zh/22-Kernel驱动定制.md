@@ -40,8 +40,6 @@ Android defconfig 配置
 arch/arm64/configs/rockchip_defconfig
 ```
 
-
-
 Linux defconfig 配置
 
 ```
