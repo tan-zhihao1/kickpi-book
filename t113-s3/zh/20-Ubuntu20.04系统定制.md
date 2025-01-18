@@ -25,9 +25,9 @@ cp device/config/rootfs_tar/ubuntu-armhf.tar.gz device/config/rootfs_tar/ubuntu-
 
 解压
 
-```
+```shell
 mkdir rootfs_k4b
-sudo tar -zxf device/config/rootfs_tar/ubuntu-armhf.tar.gz -C rootfs_k5
+tar -zxf device/config/rootfs_tar/ubuntu-armhf.tar.gz -C rootfs_k4b
 ```
 
 
@@ -36,8 +36,8 @@ chroot 进行挂载，等同于在 root 下进行修改ubuntu镜像
 
 ```shell
 // 配置以及挂载
-$ ./ch-mount.sh -m rootfs_k5
-$ sudo cp -b /etc/resolv.conf rootfs_k5/etc/resolv.conf
+$ ./ch-mount.sh -m rootfs_k4b
+$ sudo cp -b /etc/resolv.conf rootfs_k4b/etc/resolv.conf
 $ sudo cp -b /usr/bin/qemu-aarch64-static rootfs_k5/usr/bin/
 
 // 通过chroot挂载修改
@@ -54,8 +54,8 @@ $ sudo chroot rootfs_k5
 // chroot下用exit退出
 # exit
 
-// 取消挂载
-$ ./ch-mount.sh -u rootfs_k5
+// 取消挂载(注意：必须取消挂载！！！)
+$ ./ch-mount.sh -u rootfs_k4b
 ```
 
 
