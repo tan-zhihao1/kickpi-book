@@ -436,12 +436,16 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 在板子上运行我们的打包脚本
 
 ```
-sudo ./ff_export_rootfs /mnt/usb -t ext4
+sudo ./ff_export_rootfs (U盘路径) -t ext4
 ```
 
-> 生成的包名格式如：Debian_GNU_Linux_12_bookworm_ext4_202501180221.img
->
-> /mnt/usb 为U盘挂载的目录
+生成的包名格式如：
+
+```
+Debian_GNU_Linux_12_bookworm_ext4_*.img
+```
+
+
 
 
 
