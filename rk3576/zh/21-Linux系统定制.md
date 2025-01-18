@@ -48,13 +48,11 @@ $ vim /etc/ssh/sshd_config
 $ sudo /etc/init.d/ssh restart
 ```
 
-注意事项：
-
-确保板子IP正常
-
-确保能正常连通板子的IP
-
-
+> 注意事项：
+>
+> 确保板子IP正常
+>
+> 确保能正常连通板子的IP
 
 root登陆需要确认配置
 
