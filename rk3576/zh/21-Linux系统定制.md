@@ -445,7 +445,3 @@ Debian 生成的包名格式
 Debian_GNU_Linux_12_bookworm_ext4_*.img
 ```
 
-
-
-
-
