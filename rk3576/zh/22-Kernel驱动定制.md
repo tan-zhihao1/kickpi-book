@@ -140,7 +140,7 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-extend-40pin.dtsi
 
 
 
-## MIPI
+## LCD MIPI
 
 ```
 kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtsi
