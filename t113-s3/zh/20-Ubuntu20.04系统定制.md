@@ -17,7 +17,7 @@ sudo apt-get install qemu-user-static
 
 修改前先备份保留原本的镜像
 
-```
+```shell
 cp device/config/rootfs_tar/ubuntu-armhf.tar.gz device/config/rootfs_tar/ubuntu-armhf.tar.gz-backup
 ```
 
@@ -26,8 +26,8 @@ cp device/config/rootfs_tar/ubuntu-armhf.tar.gz device/config/rootfs_tar/ubuntu-
 解压
 
 ```
-mkdir rootfs_k5
-sudo tar -zxf device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz -C rootfs_k5
+mkdir rootfs_k4b
+sudo tar -zxf device/config/rootfs_tar/ubuntu-armhf.tar.gz -C rootfs_k5
 ```
 
 
