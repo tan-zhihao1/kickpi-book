@@ -43,6 +43,12 @@ arch/arm64/configs/rockchip_defconfig
 Linux defconfig 配置
 
 ```
+./build.sh kernel-config
+```
+
+
+
+```
 arch/arm64/configs/rockchip_defconfig
 ```
 
