@@ -445,7 +445,9 @@ sudo ./ff_export_rootfs /mnt/usb -t ext4
 >
 > /mnt/usb 为U盘挂载的目录
 
-对需要替换这个系统的板子使用烧录单独烧录rootfs即可
+
+
+对需要替换这个系统的板子使用烧录单独烧录rootfs.img即可
 
 > 注意：这种方式替换后的rootfs 可能存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
 
