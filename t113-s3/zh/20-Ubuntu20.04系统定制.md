@@ -62,7 +62,7 @@ $ ./ch-mount.sh -u rootfs_k4b
 
 将修改后的ubuntu重新打包 **(注意：必须取消挂载！！！)**
 
-```
+```shell
 rm -v device/config/rootfs_tar/ubuntu-armhf.tar.gz
 cd rootfs_k4b/
 sudo tar -zcf ../device/config/rootfs_tar/ubuntu-armhf.tar.gz .
@@ -70,25 +70,7 @@ cd ..
 ls device/config/rootfs_tar/ubuntu-armhf.tar.gz
 ```
 
-
-
-重新编译即可 ./build.sh , 会将 新的 root fs 打包编译进镜像。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+重新编译即可 ./build.sh , 会将 新的 rootfs 打包编译进镜像。
 
 
 ## WIFI
