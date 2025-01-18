@@ -160,6 +160,8 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtsi
 
 ## WIFI
 
+* Android
+
 ```
 RKDocs/android/wifi/
 Rockchip_Introduction_REALTEK_WIFI_Driver_Porting_CN&EN.pdf
@@ -169,6 +171,8 @@ Rockchip_Introduction_WIFI_Configuration_CN&EN.pdf
 
 
 ## MMC
+
+* Android
 
 SD_Boot / SDMMC / SDIO / eMMC
 
