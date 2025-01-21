@@ -439,10 +439,10 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 ff_export_rootfs (U盘路径) -t ext4
 ```
 
-Debian 生成的包名格式
+生成的包名格式
 
 ```
-Debian_GNU_Linux_12_bookworm_ext4_*.img
+rootfs.img
 ```
 
 > 注意：由于 FAT32 单个文件不超4G，不建议使用该格式文件系统存储设备进行备份
