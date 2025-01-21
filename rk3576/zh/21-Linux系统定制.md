@@ -445,3 +445,4 @@ Debian 生成的包名格式
 Debian_GNU_Linux_12_bookworm_ext4_*.img
 ```
 
+> 注意：由于 FAT32 单个文件不超4G，不建议使用该格式文件系统存储设备进行备份
