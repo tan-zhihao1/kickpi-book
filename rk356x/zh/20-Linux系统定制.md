@@ -156,6 +156,86 @@ network:
 
 
 
+**显示所有网络接口信息**
+
+```
+$ ifconfig 
+或
+$ ifconfig -a
+enP3p49s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 82:76:b8:2f:96:6d  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 168  base 0xd000  
+
+enP4p65s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 6a:cb:0c:a5:15:e0  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 179  base 0x1000  
+...
+```
+
+>网络接口名称根据实际情况会有所不同
+
+
+
+**显示特定网络接口信息**
+
+```
+$ ifconfig <dev>
+```
+
+>要显示特定网络接口（如`eth0`）的信息，可输入`ifconfig eth0`
+
+
+
+**设置 IP 地址**
+
+```
+$ ifconfig eth0 <ip> netmask <nmask>
+```
+
+> 要为`eth0`接口设置 IP 地址为`192.168.1.101`，子网掩码为`255.255.255.0`，可以使用命令`ifconfig eth0 192.168.1.101 netmask 255.255.255.0`
+
+
+
+**启用网络接口**
+
+```
+$ ifconfig <dev> up
+```
+
+> 若要启用`eth0`接口，可以使用`ifconfig eth0 up`命令
+
+
+
+**禁用网络接口**
+
+```
+$ ifconfig <dev> down
+```
+
+> 要禁用`eth0`接口，使用`ifconfig eth0 down`命令
+
+
+
+**设置 MAC 地址**
+
+```
+$ ifconfig <dev> down
+$ ifconfig <dev> hw ether <新的MAC地址>
+$ ifconfig <dev> up
+```
+
+> 不同的操作系统可能会有一些差异，有些系统可能不允许通过`ifconfig`直接设置 MAC 地址，或者需要额外的步骤
+
+
+
 ## 6. NFS配置
 
 **环境配置**
