@@ -21,11 +21,7 @@
 | 内存容量  | 16GB以上          |
 | 硬盘容量  | 200GB以上         |
 
-
-
 ### 安装依赖软件包
-
-Android / Linux 
 
 ```
 sudo apt update
