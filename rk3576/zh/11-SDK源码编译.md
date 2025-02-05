@@ -39,8 +39,8 @@ sudo apt install libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-gtk3-dev
 sudo apt install libxml2 libxml2-utils live-build lzop
 sudo apt install make module-assistant ncurses-dev openjdk-8-jdk 
 sudo apt install patchelf pngcrush python2 python-is-python3 python-pip
-sudo apt install qemu-user-static rsync schedtool squashfs-tools ssh sudo texinfo u-boot-tools unzip
-sudo apt install 
+sudo apt install qemu-user-static rsync schedtool squashfs-tools ssh sudo 
+sudo apt install texinfo u-boot-tools unzip
 sudo apt install xsltproc yasm zip zlib1g-dev pip
 sudo pip install pyelftools
 ```
