@@ -442,7 +442,7 @@ ff_export_rootfs (U盘路径) -t ext4
 生成的包名格式
 
 ```
-rootfs.img
+*_ext4_*.img
 ```
 
 > 注意：
