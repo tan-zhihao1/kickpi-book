@@ -40,6 +40,7 @@ sudo apt install libxml2 libxml2-utils live-build lzop
 sudo apt install make module-assistant ncurses-dev openjdk-8-jdk 
 sudo apt install patchelf pngcrush python2 python-is-python3 python-pip
 sudo apt install qemu-user-static rsync schedtool squashfs-tools ssh sudo texinfo u-boot-tools unzip
+sudo apt install 
 sudo apt install xsltproc yasm zip zlib1g-dev pip
 sudo pip install pyelftools
 ```
