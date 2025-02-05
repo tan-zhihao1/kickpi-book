@@ -436,7 +436,7 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 在板子上运行我们的打包脚本
 
 ```
-ff_export_rootfs (U盘路径) -t ext4
+ff_export_rootfs (存储设备路径) -t ext4
 ```
 
 生成的包名格式
