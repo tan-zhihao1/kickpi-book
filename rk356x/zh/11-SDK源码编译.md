@@ -291,6 +291,12 @@ $ vim rockchip_rk3568_kickpi_k1_buildroot_defconfig
 
 
 
+### 工具链
+
+```
+prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
+```
+
 
 
 ## 3. Android13.0 SDK编译
