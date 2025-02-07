@@ -482,6 +482,8 @@ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 对需要替换这个系统的板子单独烧录rootfs即可
 
+
+
 ## 13 Ubuntu桌面版进入root用户
 
 最新桌面版系统默认登录用户为：kickpi
