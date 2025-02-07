@@ -490,7 +490,7 @@ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 就需要root权限 可以在命令前面加sudo 或者 进入root用户
 
-进入root用户如下：
+切换root用户操作如下：
 
 1.设置root密码
 
@@ -505,7 +505,7 @@ $ sudo passwd root
 
 提示passwd: password updated successfully 表示成功
 
-2进入root用户
+2切换到root用户
 
 ```
 $ su
