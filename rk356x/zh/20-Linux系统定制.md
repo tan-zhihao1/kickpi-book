@@ -481,3 +481,34 @@ sudo ./ff_export_rootfs /mnt/usb -t ext4
 > /mnt/usb 为U盘挂载的目录
 
 对需要替换这个系统的板子单独烧录rootfs即可
+
+## 13 Ubuntu桌面版进入root用户
+
+最新桌面版系统默认登录用户为：kickpi
+
+桌面版系统的Terminal 使用一些命令可能存在权限问题如：ifconfig
+
+就需要root权限 可以在命令前面加sudo 或者 进入root用户
+
+进入root用户如下：
+
+1.设置root密码
+
+```
+$ sudo passwd root
+```
+
+提示输入当前用户密码 如：kickpi
+提示New Password： 即可输入你要设置的root密码 （输入不会显示）
+
+提示Retype new password: 再次确认
+
+提示passwd: password updated successfully 表示成功
+
+2进入root用户
+
+```
+$ su
+```
+
+ 输入刚刚设置的密码即可 让当前Terminal 进入root用户
