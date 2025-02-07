@@ -499,11 +499,11 @@ $ sudo passwd root
 ```
 
 提示输入当前用户密码 如：kickpi
-提示New Password： 即可输入你要设置的root密码 （输入不会显示）
+提示 New Password： 即可输入你要设置的root密码 （输入不会显示）
 
-提示Retype new password: 再次确认
+提示 Retype new password: 再次确认
 
-提示passwd: password updated successfully 表示成功
+提示 passwd: password updated successfully 表示成功
 
 2切换到root用户
 
@@ -511,4 +511,4 @@ $ sudo passwd root
 $ su
 ```
 
- 输入刚刚设置的密码即可 让当前Terminal 进入root用户
+ 输入刚刚设置的密码 即可让当前Terminal 进入root用户
