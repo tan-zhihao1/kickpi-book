@@ -13,7 +13,7 @@
 | NPU             | 6 TOPS*@INT8                                                 |
 | 内存            | 4GB / 8GB / 16G                                              |
 | 存储            | 16GB / 32GB                                                  |
-| 系统            | * Android14.0                                                |
+| 系统            | Android14.0 / Debian 12                                      |
 | 电源供电        | DC 12V                                                       |
 | 散热风扇        | Y                                                            |
 | LED灯           | * Power LED <br />* Work LED                                 |
@@ -25,7 +25,7 @@
 | 喇叭            | Y                                                            |
 | 耳机            | Y                                                            |
 | 麦克风          | Y                                                            |
-| SD卡            | Y                                                            |
+| TF卡            | Y                                                            |
 | 红外接收器      | Y                                                            |
 | 实时时钟        | Y ( HYM8563 )                                                |
 | M.2硬盘         | Y                                                            |
