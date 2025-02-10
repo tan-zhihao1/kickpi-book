@@ -52,8 +52,6 @@ sudo apt install clang libclang-dev
 
 [qt在维护版本](https://download.qt.io/official_releases/qt/)
 
-推荐使用qt5.12.2 qtcreator 4.11.1
-
 选择你需要的版本
 
 ![image-20241028093459681](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093459681.png)
