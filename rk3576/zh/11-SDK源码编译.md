@@ -252,6 +252,10 @@ Which would you like? [1]:
 ```
 
 > 根据需要选择对应的主板和系统
+>
+> 默认使用 debian/linaro-rootfs.img 路径的文件系统，若不存在则会进行编译制作生成新的文件系统
+>
+> 可使用网盘中的 linaro-rootfs-*.img，重命名存放到 debian/linaro-rootfs.img
 
 
 
@@ -308,10 +312,6 @@ sudo apt-get install -f
 或
 参考 debian/readme.md
 ```
-
-> 默认使用 debian/linaro-rootfs.img 路径的文件系统，若不存在则会进行编译制作生成新的文件系统
->
-> 可使用网盘中的 linaro-rootfs-*.img，重命名存放到 debian/linaro-rootfs.img
 
 
 
