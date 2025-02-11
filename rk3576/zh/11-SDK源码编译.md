@@ -324,13 +324,26 @@ sudo apt-get install -f
 用于自行定制化 Ubuntu 操作系统
 
 ```
-# lsb_release -a
+$ lsb_release -a
 No LSB modules are available.
-Distributor ID: Debian
-Description:    Debian GNU/Linux 12 (bookworm)
-Release:        12
-Codename:       bookworm
+Distributor ID: Ubuntu
+Description:    Ubuntu 22.04.5 LTS
+Release:        22.04
+Codename:       jammy
 ```
+
+
+
+### 配置环境
+
+```
+sudo dpkg -i debian/ubuntu-build-service/packages/*
+sudo apt-get install -f
+```
+
+
+
+
 
 
 
