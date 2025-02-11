@@ -345,14 +345,10 @@ sudo apt-get install binfmt-support qemu-user-static --reinstall
 编译
 
 ```
-./build.sh debian
+./build.sh ubuntu
 或
 参考 debian/readme.md
 ```
-
-
-
-
 
 
 
