@@ -337,9 +337,10 @@ Codename:       jammy
 ### 配置环境
 
 ```
-sudo dpkg -i debian/ubuntu-build-service/packages/*
-sudo apt-get install -f
+sudo apt-get install binfmt-support qemu-user-static --reinstall
 ```
+
+
 
 
 
