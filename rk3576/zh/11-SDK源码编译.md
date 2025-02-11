@@ -319,6 +319,10 @@ sudo apt-get install -f
 
 
 
+## Ubuntu 编译
+
+
+
 ## 文档参考
 
 源码下有 RK 官方的指导文件
