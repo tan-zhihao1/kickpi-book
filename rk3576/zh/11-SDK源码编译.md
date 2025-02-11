@@ -281,7 +281,7 @@ make ARCH=arm64 rk3576-kickpi-k7-linux.img -j24
 
 
 
-### Debian 编译
+**Debian 编译**
 
 用于自行定制化 Debian 操作系统
 
@@ -294,14 +294,14 @@ Release:        12
 Codename:       bookworm
 ```
 
-**配置环境**
+配置环境
 
 ```
 sudo dpkg -i debian/ubuntu-build-service/packages/*
 sudo apt-get install -f
 ```
 
-**编译**
+编译
 
 ```
 ./build.sh debian
@@ -315,7 +315,7 @@ sudo apt-get install -f
 
 
 
-### Ubuntu 编译
+**Ubuntu 编译**
 
 用于自行定制化 Ubuntu 操作系统
 
@@ -328,13 +328,13 @@ Release:        22.04
 Codename:       jammy
 ```
 
-**配置环境**
+配置环境
 
 ```
 sudo apt-get install binfmt-support qemu-user-static --reinstall
 ```
 
-**编译**
+编译
 
 ```
 ./build.sh debian
