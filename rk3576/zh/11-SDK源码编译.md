@@ -342,7 +342,17 @@ sudo apt-get install binfmt-support qemu-user-static --reinstall
 
 
 
+### 编译
 
+```
+./build.sh debian
+或
+参考 debian/readme.md
+```
+
+> 默认使用 debian/linaro-rootfs.img 路径的文件系统，若不存在则会进行编译制作生成新的文件系统
+>
+> 可使用网盘中的 linaro-rootfs-*.img，重命名存放到 debian/linaro-rootfs.img
 
 
 
