@@ -253,9 +253,9 @@ Which would you like? [1]:
 
 > 根据需要选择对应的主板和系统
 >
-> deiabn 默认使用 debian/linaro-rootfs.img 路径的文件系统，若不存在则会进行编译制作生成新的文件系统
+> deiabn 默认使用 debian/linaro-rootfs.img 镜像，若不存在则会进行编译制作生成新的文件系统
 >
-> ubuntu 默认使用 ubuntu/ubuntu2204-rootfs.img 路径的文件系统，若不存在则会进行编译制作生成新的文件系统
+> ubuntu 默认使用 ubuntu/ubuntu2204-rootfs.img 镜像，若不存在则会进行编译制作生成新的文件系统
 >
 > 若需要快速编译debian，可使用网盘中的 linaro-rootfs-*.img，重命名存放到 debian/linaro-rootfs.img
 >
