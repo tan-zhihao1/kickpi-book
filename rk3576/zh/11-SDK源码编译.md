@@ -283,7 +283,7 @@ make ARCH=arm64 rk3576-kickpi-k7-linux.img -j24
 
 ## Debian 编译
 
-用于自行下载定制化 Debian 操作系统
+用于自行定制化 Debian 操作系统
 
 ```
 # lsb_release -a
