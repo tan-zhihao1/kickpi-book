@@ -259,7 +259,7 @@ Which would you like? [1]:
 >
 > 若需要快速编译debian，可使用网盘中的 linaro-rootfs-*.img，重命名存放到 debian/linaro-rootfs.img
 >
-> 若需要快速编译ubuntu，可使用网盘中的 ubuntu2204-rootfs.img，重命名存放到 debian/linaro-rootfs.img
+> 若需要快速编译ubuntu，可使用网盘中的 ubuntu2204-rootfs-*.img，重命名存放到 ubuntu/ubuntu2204-rootfs.img
 
 
 
