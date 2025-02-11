@@ -347,7 +347,7 @@ sudo apt-get install binfmt-support qemu-user-static --reinstall
 ```
 ./build.sh ubuntu
 或
-参考 debian/readme.md
+参考 ubuntu/readme.md
 ```
 
 
