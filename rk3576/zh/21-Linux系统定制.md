@@ -462,3 +462,8 @@ ff_export_rootfs (存储设备路径) -t ext4
 libmali isp等packages. 安装完后会重启显⽰服务. 如果是独⽴项⽬可以放到制作镜像的时候处理这部分差
 
 异即可。
+
+
+
+**Debian上安装GCC⼯具链**
+
