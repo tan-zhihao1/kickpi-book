@@ -455,5 +455,10 @@ ff_export_rootfs (存储设备路径) -t ext4
 
 ## 其他
 
-Debian第⼀次更新系统会重启显⽰服务
+**Debian第⼀次更新系统会重启显⽰服务**
 
+通⽤Debian为了兼容不同芯⽚, /etc/init.d/rockchip.sh 第⼀次启动的时候,会根据芯⽚安装各种差异包,⽐如
+
+libmali isp等packages. 安装完后会重启显⽰服务. 如果是独⽴项⽬可以放到制作镜像的时候处理这部分差
+
+异即可。
