@@ -467,3 +467,9 @@ libmali isp等packages. 安装完后会重启显⽰服务. 如果是独⽴项⽬
 
 **Debian上安装GCC⼯具链**
 
+```
+apt update && apt install -y build-essential manpages-dev
+```
+
+
+
