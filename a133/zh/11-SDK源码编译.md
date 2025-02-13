@@ -89,7 +89,7 @@ git reset --hard
 ### 编译完整镜像
 
 ```
-$ ./build.sh lunch
+$ ./build.sh lunch //根据板型选择K5或K5C
 $ ./build.sh
 ```
 
