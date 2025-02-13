@@ -93,7 +93,7 @@ $ ./build.sh lunch //根据板型选择K5或K5C
 $ ./build.sh
 ```
 
-> 镜像生成目录：longan/out/a133_android10_c3_uart0.img
+> 镜像生成目录：longan/out/kickpi-*_a133_android10_c3_uart0.img
 
 
 
