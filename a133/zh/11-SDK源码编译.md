@@ -89,6 +89,7 @@ git reset --hard
 ### 编译完整镜像
 
 ```
+$ ./build.sh lunch
 $ ./build.sh
 ```
 
