@@ -105,7 +105,7 @@ $ ./build.sh
 $ ./build.sh uboot
 ```
 
-> 镜像生成目录：longan/out/a133_android10_c3_uart0.img
+> 镜像生成目录：longan/out/kickpi-*_a133_android10_c3_uart0.img
 
 
 
@@ -115,7 +115,7 @@ $ ./build.sh uboot
 $ ./build.sh kernel
 ```
 
-> 镜像生成目录：longan/out/a133_android10_c3_uart0.img
+> 镜像生成目录：longan/out/kickpi-*_a133_android10_c3_uart0.img
 
 
 
@@ -125,7 +125,7 @@ $ ./build.sh kernel
 $ ./build.sh android
 ```
 
-> 镜像生成目录：longan/out/a133_android10_c3_uart0.img
+> 镜像生成目录：longan/out/kickpi-*_a133_android10_c3_uart0.img
 
 
 
