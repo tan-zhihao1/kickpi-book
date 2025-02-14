@@ -427,6 +427,8 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 
 
 
+
+
 ## 备份文件系统
 
 当修改文件系统后，需要将其拷贝到其他相同板卡需求。
