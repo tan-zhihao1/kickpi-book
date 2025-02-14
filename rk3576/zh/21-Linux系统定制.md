@@ -423,6 +423,10 @@ export mpp_syslog_perror=1
 echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 ```
 
+> 解码只⽀持vp8、h264、h265、vp9、av1
+>
+> 编码只⽀持vp8和h264
+
 
 
 ## 备份文件系统
