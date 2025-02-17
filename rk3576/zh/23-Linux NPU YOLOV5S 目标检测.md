@@ -72,6 +72,7 @@ Usage: ./rknn_yolov5_demo <rknn model> <input_image_path> <resize/letterbox> <ou
 rknn_yolov5_demo 使用示例
 
 ```
+$ export LD_LIBRARY_PATH=./lib
 $ ./rknn_yolov5_demo model/RK3588/yolov5s-640-640.rknn model/bus.jpg
 post process config: box_conf_threshold = 0.25, nms_threshold = 0.45
 Read model/bus.jpg ...
