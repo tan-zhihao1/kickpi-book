@@ -413,17 +413,6 @@ sudo apt-get install -f
 
 **Ubuntu 编译**
 
-用于自行定制化 Ubuntu 操作系统
-
-```
-$ lsb_release -a
-No LSB modules are available.
-Distributor ID: Ubuntu
-Description:    Ubuntu 22.04.5 LTS
-Release:        22.04
-Codename:       jammy
-```
-
 配置环境
 
 ```
