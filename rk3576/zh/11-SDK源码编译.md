@@ -43,7 +43,7 @@ sudo pip install pyelftools
 
 ## Android 编译
 
-### SDK下载
+### SDK介绍
 
 通过网盘链接进行下载
 
