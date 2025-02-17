@@ -27,11 +27,16 @@ sudo apt install clang libclang-dev
 
 ![image-20241028093459681](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093459681.png)
 
-选择single
+下面分虚拟机和板子两种选法：
+
+虚拟机Ubuntu选
+![1739790413797](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/1739790413797.png)
+
+ARM 选择single
 
 ![image-20241028093254591](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093254591.png)
 
-选择tar.xz
+ 然后选择tar.xz
 
 ![image-20241028093434074](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093434074.png)
 
