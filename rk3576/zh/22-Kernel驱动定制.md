@@ -62,18 +62,9 @@ kernel-6.1/arch/arm64/configs/
 
 
 
-注意
-
-```
-make rockchip_defconfig android-14.config sdio_wifi.config rk3576.config
-是依次加载覆盖的，如果编译后.config文件中没有开启对应的配置，需要检测 config 中是否取消了对应的config配置
-```
-
-
-
 ## gpio-led 
 
-说明见
+**说明**
 
 ```
 (源码)/kernel-6.1/Documentation/devicetree/bindings/leds/leds-gpio.yaml
