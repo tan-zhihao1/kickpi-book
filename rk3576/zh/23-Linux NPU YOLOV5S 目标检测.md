@@ -1,5 +1,7 @@
 # 23-Linux NPU YOLOV5S 目标检测
 
+SDK 指代源码路径，详情见 11-SDK源码编译
+
 
 
 ## 1. NPU YOLOV5S 是什么
