@@ -50,15 +50,6 @@ $ cd external/rknpu2/examples/rknn_yolov5_demo/
 $ ./build-linux.sh -t rk3576 -a aarch64 -b Release
 ```
 
->build-android_RK3562.sh
->build-android_RK3566_RK3568.sh
->build-android_RK3588.sh
->build-linux_RK3562.sh
->build-linux_RK3566_RK3568.sh
->build-linux_RK3588.sh
->
->根据实际IC选择对应的脚本进行编译
-
 生成工具路径
 
 ```
