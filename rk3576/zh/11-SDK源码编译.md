@@ -312,8 +312,8 @@ md5sum rk3576-linux-*.tar.gz
 
 ```
 $ mkdir rk3576-linux
-$ tar -zxvf md5sum rk3576-linux-*.tar.gz -C rk3576-linux
-$ cd rk3576-android/
+$ tar -zxvf md5sum rk3576-linux-*.tar.gz -C rk3576-linux/
+$ cd rk3576-linux/
 $ git reset --hard
 ```
 
