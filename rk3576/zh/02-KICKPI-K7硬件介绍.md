@@ -87,7 +87,7 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 
 * 3-SoftwareData软件资料：软件相关的资料，如程序例子、软件补丁等  
 
-* 4-HardwareData硬件资料：硬件相机
+* 4-HardwareData硬件资料：硬件相关的资料，如原理图等
 
 * 5-DevelopmentTool开发工具：  
 
