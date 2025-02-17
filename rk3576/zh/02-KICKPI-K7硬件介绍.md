@@ -85,13 +85,11 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 
   支持 Android14 / Debian12 / Ubuntu2404 系统镜像
 
-* 3-SoftwareData软件资料
+* 3-SoftwareData软件资料：  
 
-    
+* 4-HardwareData硬件资料：
 
-* 4-HardwareData硬件资料  
+* 5-DevelopmentTool开发工具：  
 
-* 5-DevelopmentTool开发工具  
-
-* 6-Docment文档
+* 6-Docment文档：
 
