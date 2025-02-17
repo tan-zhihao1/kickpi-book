@@ -3,7 +3,7 @@
 ## version
 
 ```
-Linux version 6.1.75
+Linux version 6.1
 ```
 
 
@@ -11,7 +11,7 @@ Linux version 6.1.75
 ## cross compile
 
 ```
-prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-
+prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
 ```
 
 
