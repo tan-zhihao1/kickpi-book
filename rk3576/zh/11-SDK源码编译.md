@@ -271,6 +271,50 @@ $ vim device/rockchip/common/build/rockchip/build.sh
 
 ## Linux 编译
 
+### SDK介绍
+
+内核版本：6.1
+
+Debian系统版本：12
+
+Ubuntu系统版本：12
+
+
+
+### 获取SDK源码
+
+* 网盘目录
+
+```
+1-SDK软件源码
+├── Android14
+    ├── rk3576-android14.0-*.md5sum
+    └── rk3576-android14.0-*.tar.gz
+```
+
+* 拷贝源码压缩包到编译主机目录
+
+  若编译主机为虚拟机，不可放在共享目录下编译
+
+* MD5校验文件完整性
+
+```
+md5sum rk3576-android14.0-*.tar.gz
+```
+
+> 判断结果和 rk3576-android14.0-*.md5sum 内容一致，则文件完整下载
+
+* 解压源码压缩包
+
+```
+$ mkdir rk3576-android
+$ tar -zxvf rk3576-android14.0-*.tar.gz -C rk3576-android/
+$ cd rk3576-android/
+$ git reset --hard
+```
+
+
+
 ### 配置环境
 
 * 前提：确保编译硬件要求，以及[编译环境搭建](#BuildEnv-K7)成功
