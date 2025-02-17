@@ -10,7 +10,7 @@
 
 ## 2. 开发板信息
 
-![K7_fun_label_map](D:\Desktop\K7\K7_fun_label_map.jpg)
+![K7_fun_label_map](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_fun_label_map.jpg)
 
 
 
