@@ -54,7 +54,10 @@ Android系统版本：14.0
 ### 获取SDK源码
 
 ```
-rk3576-android14.0-20250217.tar.gz
+├── 1-SDK软件源码
+│   ├── Android14
+│   │   ├── rk3576-android14.0-20250217.md5sum
+│   │   └── rk3576-android14.0-20250217.tar.gz
 ```
 
 
