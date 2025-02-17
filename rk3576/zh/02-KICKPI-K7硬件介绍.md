@@ -81,15 +81,15 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 
   Linux/sdk/ - Linux源码，可编译主板Debian12以及Ubuntu2404 镜像
 
-* 2-Image镜像：烧录镜像可以更新主板的系统
+* 2-Image镜像：烧录镜像可以更新主板的系统。
 
   支持 Android14 / Debian12 / Ubuntu2404 系统镜像
 
-* 3-SoftwareData软件资料：软件相关的资料，如程序例子、软件补丁等  
+* 3-SoftwareData软件资料：软件相关的资料，如程序例子、软件补丁等。
 
-* 4-HardwareData硬件资料：硬件相关的资料，如原理图等
+* 4-HardwareData硬件资料：硬件相关的资料，如原理图等。
 
-* 5-DevelopmentTool开发工具：  
+* 5-DevelopmentTool开发工具：  烧录调试相关工具，如烧录软件、ADB软件等。
 
 * 6-Docment文档：
 
