@@ -69,7 +69,7 @@ Android系统版本：14.0
 * MD5校验文件完整性
 
 ```
-md5sum -c *.md5
+md5sum rk3576-android14.0-*.tar.gz
 ```
 
 
