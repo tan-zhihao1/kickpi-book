@@ -418,6 +418,82 @@ sudo apt-get install binfmt-support qemu-user-static --reinstall
 
 
 
+### 其他说明
+
+**固件说明**
+
+完整编译后会生成如下文件：
+
+```
+(源码)/rockdev/Image-rk3576_u/
+rockdev/Image-rk3576_u/
+├── baseparameter.img
+├── boot-debug.img
+├── boot.img
+├── config.cfg
+├── dtbo.img
+├── MiniLoaderAll.bin
+├── misc.img
+├── parameter.txt
+├── pcba_small_misc.img
+├── pcba_whole_misc.img
+├── recovery.img
+├── resource.img
+├── super.img
+├── uboot.img
+├── update.img
+├── update-rk3576-kickpi-k7-android-*.img
+└── vbmeta.img
+```
+
+烧写的镜像为 `(源码)/rockdev/Image-rk3576_u/update-rk3576-kickpi-k7-android-*.img`
+
+烧录详见 - `10-系统镜像烧录`
+
+
+
+**userdebug 和 user 编译**
+
+默认为userdebug模式编译，如果需要user版本镜像则需要修改对应编译mk
+
+```diff
+vim device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
+-export BUILD_VARIANT=userdebug
++export BUILD_VARIANT=user
+```
+
+
+
+**android 环境配置**
+
+配置环境，可以使用 mm / get_build_var 等安卓环境下命令
+
+```shell
+// 配置环境
+source build/envsetup.sh
+lunch rk3576_u-userdebug
+
+// 比如
+$ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
+true
+```
+
+dts 路径
+
+```
+kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
+```
+
+defconfig 路径
+
+```
+kernel-6.1/arch/arm64/configs/rockchip_defconfig
+```
+
+
+
+
+
 ## 文档参考
 
 源码下有 RK 官方的指导文件
