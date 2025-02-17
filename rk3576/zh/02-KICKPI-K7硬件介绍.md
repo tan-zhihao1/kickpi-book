@@ -42,8 +42,6 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 │           └── rk3576-linux-20250217.tar.gz
 ├── 2-Image镜像
 │   ├── Android14
-│   │   ├── back
-│   │   │   └── update-rk3576-kickpi-k7-android-202501101427.img
 │   │   └── update-rk3576-kickpi-k7-android-202502111421.img
 │   ├── Debian12
 │   │   └── update-rk3576-kickpi-k7-linux-debian-20250217-171230.img
