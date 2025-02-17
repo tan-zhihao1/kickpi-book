@@ -16,6 +16,12 @@ YOLOv5S 是 YOLOv5 系列中的一个变种，不同版本的 YOLOv5 具有不�
 
 RK Linux官方提供rknn_yolov5_demo，源码支持 `RK3576`，编译出工具可进行图像解析和视频解析
 
+
+
+### 网盘路径
+
+
+
 ### 源码路径
 
 ```
@@ -173,5 +179,5 @@ root@kickpi:/rknn_yolov5_demo_Linux$ ls
 out.h264
 ```
 
-
+![yolov5_video](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/yolov5_video.png)
 
