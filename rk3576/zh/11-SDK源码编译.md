@@ -45,11 +45,13 @@ sudo pip install pyelftools
 
 ### SDK介绍
 
-通过网盘链接进行下载
+内核版本：6.1
+
+Android系统版本：14.0
 
 
 
-### SDK使用
+### 获取SDK源码
 
 ```
 rk3576-android14.0-20250217.tar.gz
