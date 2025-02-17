@@ -311,8 +311,8 @@ md5sum rk3576-linux-*.tar.gz
 * 解压源码压缩包
 
 ```
-$ mkdir rk3576-android
-$ tar -zxvf rk3576-android14.0-*.tar.gz -C rk3576-android/
+$ mkdir rk3576-linux
+$ tar -zxvf md5sum rk3576-linux-*.tar.gz -C rk3576-linux
 $ cd rk3576-android/
 $ git reset --hard
 ```
