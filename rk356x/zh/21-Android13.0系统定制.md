@@ -43,6 +43,17 @@ $ vim device/rockchip/rk356x/BoardConfig.mk
 
 ### 修改触摸方向
 
+以7寸屏的TP为例，可以通过这个修改你要的方向
+
+```
+$ vim kernel-5.10\arch\arm64\boot\dts\rockchip\rk3568-kickpi-lcd-lvds0-7-1024-600.dtsi
+		
+		gtp_change_x2y = <0>; //1 为X Y轴对调
+		gtp_overturn_x = <0>; //1 为X轴反向
+		gtp_overturn_y = <0>; //1 为Y轴反向
+
+```
+
 
 
 
