@@ -2,22 +2,6 @@
 
 
 
-## SDK下载
-
-通过网盘链接进行下载
-
-
-
-## SDK使用
-
-```
-rk3576-android14.0-20250217.tar.gz
-```
-
-
-
-
-
 ## 编译环境搭建
 
 此编译环境配置 适用 Android/Linux SDK
@@ -58,6 +42,20 @@ sudo pip install pyelftools
 
 
 ## Android 编译
+
+### SDK下载
+
+通过网盘链接进行下载
+
+
+
+### SDK使用
+
+```
+rk3576-android14.0-20250217.tar.gz
+```
+
+
 
 ### 配置环境
 
