@@ -21,7 +21,8 @@ RK Linux官方提供rknn_yolov5_demo，源码支持 `RK3576`，编译出工具�
 ### 网盘路径
 
 ```
-3-SoftwareData软件资料
+3-软件资料/rknn_yolov5_demo_Linux_rk3576.zip
+3-软件资料/yolov5_test.h264
 ```
 
 
