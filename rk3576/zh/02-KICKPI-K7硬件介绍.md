@@ -38,6 +38,8 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 │       │   ├── linaro-rootfs-20250210.img
 │       │   └── ubuntu-rootfs-20250217.img
 │       └── sdk
+│           ├── rk3576-linux-20250217.md5sum
+│           └── rk3576-linux-20250217.tar.gz
 ├── 2-Image镜像
 │   ├── Android14
 │   │   ├── back
