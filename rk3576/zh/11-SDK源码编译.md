@@ -287,16 +287,13 @@ Ubuntu系统版本：2404
 
 ```
 ├── 1-SDK软件源码
-│   ├── Android14
-│   │   ├── rk3576-android14.0-20250217.md5sum
-│   │   └── rk3576-android14.0-20250217.tar.gz
 │   └── Linux
 │       ├── rootfs
-│       │   ├── linaro-rootfs-20250210.img
-│       │   └── ubuntu-rootfs-20250217.img
+│       │   ├── linaro-rootfs-*.img
+│       │   └── ubuntu-rootfs-*.img
 │       └── sdk
-│           ├── rk3576-linux-20250217.md5sum
-│           └── rk3576-linux-20250217.tar.gz
+│           ├── rk3576-linux-*.md5sum
+│           └── rk3576-linux-*.tar.gz
 ```
 
 * 拷贝源码压缩包到编译主机目录
@@ -306,7 +303,7 @@ Ubuntu系统版本：2404
 * MD5校验文件完整性
 
 ```
-md5sum rk3576-android14.0-*.tar.gz
+md5sum rk3576-linux-*.tar.gz
 ```
 
 > 判断结果和 rk3576-android14.0-*.md5sum 内容一致，则文件完整下载
