@@ -107,7 +107,7 @@ loop count = 10 , average run  53.093000 ms
 
 生成识别图片 out.jpg
 
-```
+```shell
 root@kickpi:/rknn_yolov5_demo_Linux$ ls 
 out.jpg
 ```
@@ -121,6 +121,8 @@ out.jpg
 ```
 Usage: ./rknn_yolov5_video_demo <rknn_model> <video_path> <video_type 264/265>
 ```
+
+> 注意需要使用 h264/h265 码流视频
 
 rknn_yolov5_video_demo 使用示例
 
