@@ -79,11 +79,9 @@ md5sum rk3576-android14.0-*.tar.gz
 ```
 $ mkdir rk3576-android
 $ tar -zxvf rk3576-android14.0-*.tar.gz -C rk3576-android/
-$ cd rk356x-android13-*
+$ cd rk3576-android/
 $ git reset --hard
 ```
-
-
 
 
 
