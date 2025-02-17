@@ -37,19 +37,13 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-linux.dts
 Android defconfig 配置
 
 ```makefile
-arch/arm64/configs/rockchip_defconfig
+kernel-6.1/arch/arm64/configs/rockchip_defconfig
 ```
 
 Linux defconfig 配置
 
 ```
-./build.sh kernel-config
-```
-
-
-
-```
-arch/arm64/configs/rockchip_defconfig
+kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 ```
 
 
