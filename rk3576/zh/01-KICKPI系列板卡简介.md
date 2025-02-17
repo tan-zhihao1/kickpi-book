@@ -29,7 +29,7 @@
 | 红外接收器      | Y                                                            |
 | 实时时钟        | Y ( HYM8563 )                                                |
 | M.2硬盘         | Y                                                            |
-| 4G移动网络      | Y ( EC20 / EC200)                                            |
+| 移动网络        | Y (4G EC20 / EC200) (5G RG200U)                              |
 | WIFI/蓝牙       | RTL8822CS                                                    |
 | 以太网          | 1000M X2                                                     |
 | 按键            | * Boot KEY <br />* RESET KEY <br />* POWER KEY <br />* MASKROM KEY |
