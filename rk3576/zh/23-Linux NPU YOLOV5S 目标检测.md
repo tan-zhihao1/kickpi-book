@@ -36,6 +36,12 @@ $ export GCC_COMPILER=(SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07
 ```
 
 > SDK 指代Linux源码路径，详情见 11-SDK源码编译
+>
+> 例如：
+>
+> rk3576-linux$ pwd
+>
+> /home/test/rk3576-linux 即 SDK Linux源码路径
 
 编译对应的工具
 
