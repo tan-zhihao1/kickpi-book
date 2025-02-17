@@ -426,20 +426,20 @@ sudo apt-get install binfmt-support qemu-user-static --reinstall
 
 ```
 rockdev
-├── boot.img -> ../../kernel-6.1/boot.img
-├── MiniLoaderAll.bin -> ../../u-boot/rk3576_spl_loader_v1.05.105.bin
-├── misc.img -> ../misc.img
-├── oem.img -> ../extra-parts/oem.img
-├── parameter.txt -> ../../device/rockchip/.chips/rk3576/parameter.txt
-├── recovery.img -> ../recovery/ramboot.img
-├── rootfs.img -> ../../debian/linaro-rootfs.img
-├── uboot.img -> ../../u-boot/uboot.img
-├── update.img -> ../update/Image/update.img
-├── update-rk3576-kickpi-k7-linux-debian-20250217-171230.img -> ../update/Image/update.img
-└── userdata.img -> ../extra-parts/userdata.img
+├── boot.img
+├── MiniLoaderAll.bin
+├── misc.img
+├── oem.img 
+├── parameter.txt 
+├── recovery.img 
+├── rootfs.img 
+├── uboot.img 
+├── update.img 
+├── update-rk3576-kickpi-k7-linux-*-*.img 
+└── userdata.img 
 ```
 
-烧写的镜像为 `(源码)/rockdev/Image-rk3576_u/update-rk3576-kickpi-k7-android-*.img`
+烧写的镜像为 `(源码)/rockdev/update-rk3576-kickpi-k7-linux-*-*.img `
 
 烧录详见 - `10-系统镜像烧录`
 
