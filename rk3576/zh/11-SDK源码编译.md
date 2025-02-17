@@ -445,32 +445,6 @@ rockdev
 
 
 
-**userdebug 和 user 编译**
-
-默认为userdebug模式编译，如果需要user版本镜像则需要修改对应编译mk
-
-```diff
-vim device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
--export BUILD_VARIANT=userdebug
-+export BUILD_VARIANT=user
-```
-
-
-
-**android 环境配置**
-
-配置环境，可以使用 mm / get_build_var 等安卓环境下命令
-
-```shell
-// 配置环境
-source build/envsetup.sh
-lunch rk3576_u-userdebug
-
-// 比如
-$ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
-true
-```
-
 dts 路径
 
 ```
