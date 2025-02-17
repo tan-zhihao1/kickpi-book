@@ -106,7 +106,8 @@ loop count = 10 , average run  53.093000 ms
 >person @ / bus @ 为对应识别信息
 
 ```
-$ ls out.jpg
+root@kickpi:/rknn_yolov5_demo_Linux$ ls 
+out.jpg
 ```
 
 
