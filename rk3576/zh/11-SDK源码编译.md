@@ -383,17 +383,6 @@ make ARCH=arm64 rk3576-kickpi-k7-linux.img -j24
 
 **Debian 编译**
 
-用于自行定制化 Debian 操作系统
-
-```
-# lsb_release -a
-No LSB modules are available.
-Distributor ID: Debian
-Description:    Debian GNU/Linux 12 (bookworm)
-Release:        12
-Codename:       bookworm
-```
-
 配置环境
 
 ```
