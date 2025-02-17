@@ -91,5 +91,5 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 
 * 5-DevelopmentTool开发工具：  烧录调试相关工具，如烧录软件、ADB软件等。
 
-* 6-Docment文档：总资料
+* 6-Docment文档：开发指导相关文档资料。
 
