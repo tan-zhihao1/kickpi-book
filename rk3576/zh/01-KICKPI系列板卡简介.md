@@ -18,7 +18,7 @@
 | 散热风扇        | Y                                                            |
 | LED灯           | * Power LED <br />* Work LED                                 |
 | USB HOST        | USB3.0 HOST X3                                               |
-| USB OTG         | USB3.1 OTG / DP v1.4                                         |
+| USB Type-C      | USB3.1 OTG / DP v1.4                                         |
 | MIPI CSI 摄像头 | 4Lane X3                                                     |
 | MIPI DSI 显示   | X1                                                           |
 | HDMI 显示       | X1                                                           |
