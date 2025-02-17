@@ -425,25 +425,18 @@ sudo apt-get install binfmt-support qemu-user-static --reinstall
 完整编译后会生成如下文件：
 
 ```
-(源码)/rockdev/Image-rk3576_u/
-rockdev/Image-rk3576_u/
-├── baseparameter.img
-├── boot-debug.img
-├── boot.img
-├── config.cfg
-├── dtbo.img
-├── MiniLoaderAll.bin
-├── misc.img
-├── parameter.txt
-├── pcba_small_misc.img
-├── pcba_whole_misc.img
-├── recovery.img
-├── resource.img
-├── super.img
-├── uboot.img
-├── update.img
-├── update-rk3576-kickpi-k7-android-*.img
-└── vbmeta.img
+rockdev
+├── boot.img -> ../../kernel-6.1/boot.img
+├── MiniLoaderAll.bin -> ../../u-boot/rk3576_spl_loader_v1.05.105.bin
+├── misc.img -> ../misc.img
+├── oem.img -> ../extra-parts/oem.img
+├── parameter.txt -> ../../device/rockchip/.chips/rk3576/parameter.txt
+├── recovery.img -> ../recovery/ramboot.img
+├── rootfs.img -> ../../debian/linaro-rootfs.img
+├── uboot.img -> ../../u-boot/uboot.img
+├── update.img -> ../update/Image/update.img
+├── update-rk3576-kickpi-k7-linux-debian-20250217-171230.img -> ../update/Image/update.img
+└── userdata.img -> ../extra-parts/userdata.img
 ```
 
 烧写的镜像为 `(源码)/rockdev/Image-rk3576_u/update-rk3576-kickpi-k7-android-*.img`
