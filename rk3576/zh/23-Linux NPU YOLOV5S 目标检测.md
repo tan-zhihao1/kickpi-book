@@ -58,6 +58,10 @@ lib  model  rknn_yolov5_demo  rknn_yolov5_video_demo
 ```
 
 >将 rknn_yolov5_demo_Linux/ 拷贝到主板上运行使用
+>
+>chmod +x rknn_yolov5_demo
+>
+>chmod +x rknn_yolov5_video_demo
 
 
 
