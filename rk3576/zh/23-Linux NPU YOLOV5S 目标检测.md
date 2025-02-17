@@ -105,6 +105,10 @@ loop count = 10 , average run  53.093000 ms
 
 >person @ / bus @ 为对应识别信息
 
+```
+$ ls out.jpg
+```
+
 
 
 #### rknn_yolov5_video_demo
