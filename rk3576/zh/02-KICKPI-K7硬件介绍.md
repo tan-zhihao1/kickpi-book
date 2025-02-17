@@ -12,11 +12,9 @@
 
 ![K7_fun_label_map](D:\Desktop\K7\K7_fun_label_map.jpg)
 
-## 3. 配件列表
 
 
-
-## 4. 网盘资料
+## 3. 网盘资料
 
 KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDrive网盘
 
