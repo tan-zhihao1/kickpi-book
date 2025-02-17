@@ -87,7 +87,7 @@ $ git reset --hard
 
 ### 配置环境
 
-* 确保编译硬件要求，以及[编译环境搭建](#BuildEnv-K7)成功
+* 前提：确保编译硬件要求，以及[编译环境搭建](#BuildEnv-K7)成功
 
 单独编译或全部编译前先配置环境
 
@@ -272,6 +272,8 @@ $ vim device/rockchip/common/build/rockchip/build.sh
 ## Linux 编译
 
 ### 配置环境
+
+* 前提：确保编译硬件要求，以及[编译环境搭建](#BuildEnv-K7)成功
 
 单独编译或全部编译前先配置环境
 
