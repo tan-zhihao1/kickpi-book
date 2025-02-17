@@ -13,7 +13,7 @@
 | NPU             | 6 TOPS*@INT8                                                 |
 | 内存            | 4GB / 8GB / 16G                                              |
 | 存储            | 16GB / 32GB                                                  |
-| 系统            | Android14.0 / Debian 12                                      |
+| 系统            | Android14.0 / Debian 12 / Ubuntu2404                         |
 | 电源供电        | DC 12V                                                       |
 | 散热风扇        | Y                                                            |
 | LED灯           | * Power LED <br />* Work LED                                 |
