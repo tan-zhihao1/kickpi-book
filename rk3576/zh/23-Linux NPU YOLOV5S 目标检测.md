@@ -66,7 +66,7 @@ lib  model  rknn_yolov5_demo  rknn_yolov5_video_demo
 #### rknn_yolov5_demo
 
 ```
-Usage: ./rknn_yolov5_demo <rknn model> <jpg>
+Usage: ./rknn_yolov5_demo <rknn model> <input_image_path> <resize/letterbox> <output_image_path>
 ```
 
 rknn_yolov5_demo 使用示例
