@@ -77,6 +77,9 @@ md5sum rk3576-android14.0-*.tar.gz
 * 解压源码压缩包
 
 ```
+$ tar -zxvf rk356x-android13-*.tar.gz
+$ cd rk356x-android13-*
+$ git reset --hard
 ```
 
 
