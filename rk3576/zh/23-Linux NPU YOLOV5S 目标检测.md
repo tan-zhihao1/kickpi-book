@@ -168,6 +168,11 @@ car @ (702 263 716 273) 0.163944
 
 生成识别视频 out.h264
 
+```
+root@kickpi:/rknn_yolov5_demo_Linux$ ls 
+out.h264
+```
+
 
 
 ## 3. 解析本地视频流
