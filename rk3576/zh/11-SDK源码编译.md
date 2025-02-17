@@ -365,6 +365,10 @@ $ ./build.sh
 
 ### 单独编译
 
+配置 Kernel defconfig
+
+
+
 **kernel 编译**
 
 ```
@@ -454,10 +458,8 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-linux.dts
 defconfig 路径
 
 ```
-kernel-6.1/arch/arm64/configs/rockchip_defconfig
+kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 ```
-
-
 
 
 
