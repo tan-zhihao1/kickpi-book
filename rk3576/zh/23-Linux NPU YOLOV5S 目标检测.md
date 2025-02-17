@@ -47,7 +47,7 @@ $ export GCC_COMPILER=(SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07
 
 ```
 $ cd external/rknpu2/examples/rknn_yolov5_demo/
-$ ./build-linux_RK3562.sh
+$ ./build-linux.sh -t rk3576 -a aarch64 -b Release
 ```
 
 >build-android_RK3562.sh
