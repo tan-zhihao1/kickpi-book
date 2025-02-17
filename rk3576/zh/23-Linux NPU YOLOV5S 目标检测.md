@@ -112,7 +112,7 @@ root@kickpi:/rknn_yolov5_demo_Linux$ ls
 out.jpg
 ```
 
-
+![yolov5_out](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/yolov5_out.jpg)
 
 
 
