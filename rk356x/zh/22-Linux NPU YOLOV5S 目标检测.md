@@ -106,6 +106,8 @@ loop count = 10 , average run  23.615900 ms
 Usage: ./rknn_yolov5_video_demo <rknn_model> <video_path> <video_type 264/265>
 ```
 
+> 注意需要使用h264/265码流视频
+
 rknn_yolov5_video_demo 使用示例
 
 ```
