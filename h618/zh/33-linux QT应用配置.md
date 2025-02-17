@@ -32,6 +32,8 @@ sudo apt install clang libclang-dev
 虚拟机Ubuntu选
 ![1739790413797](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/1739790413797.png)
 
+​	这个直接放到板子运行 安装安装软件安装你要的库即可。
+
 ARM 选择single
 
 ![image-20241028093254591](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093254591.png)
