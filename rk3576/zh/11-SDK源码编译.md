@@ -72,7 +72,7 @@ Android系统版本：14.0
 md5sum rk3576-android14.0-*.tar.gz
 ```
 
-> 判断结果和 rk3576-android14.0-*.md5sum 内容一致，则文件完整下载
+> 判断结果和 rk3576-android14.0-*.md5sum 内容一致，则文件下载完整
 
 * 解压源码压缩包
 
@@ -306,7 +306,7 @@ Ubuntu系统版本：2404
 md5sum rk3576-linux-*.tar.gz
 ```
 
-> 判断结果和 rk3576-android14.0-*.md5sum 内容一致，则文件完整下载
+> 判断结果和 rk3576-linux-*.md5sum 内容一致，则文件下载完整
 
 * 解压源码压缩包
 
