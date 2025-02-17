@@ -365,7 +365,11 @@ $ ./build.sh
 
 ### 单独编译
 
-配置 Kernel defconfig
+**配置 Kernel defconfig**
+
+```
+./build.sh kernel-config
+```
 
 
 
