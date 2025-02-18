@@ -287,6 +287,8 @@ $ git reset --hard
 
 内核5.4版本SDK
 
+编译前确保编译环境能够正常联网，编译过程中会自动下载安装所需的工具
+
 ```
 $ ./build.sh
 $ ./build.sh auto_burn=true // 编译固件制作的SD卡为烧录卡
