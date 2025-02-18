@@ -85,17 +85,27 @@ Linux/rootfs/ - Debian12和Ubuntu2404 备份的文件系统
 
 Linux/sdk/ - Linux源码，可编译主板Debian12以及Ubuntu2404 镜像
 
-* 2-Image镜像：烧录镜像可以更新主板的系统。
+2-Image镜像：
 
-  支持 Android14 / Debian12 / Ubuntu2404 系统镜像
+烧录镜像可以更新主板的系统。
 
-* 3-SoftwareData软件资料：软件相关的资料，如程序例子、软件补丁等。
+支持 Android14 / Debian12 / Ubuntu2404 系统镜像
 
-* 4-HardwareData硬件资料：硬件相关的资料，如原理图等。
+3-SoftwareData软件资料：
 
-* 5-DevelopmentTool开发工具：  烧录调试相关工具，如烧录软件、ADB软件等。
+软件相关的资料，如程序例子、软件补丁等。
 
-* 6-Docment文档：用户指导、开发相关资料文档。
+4-HardwareData硬件资料：
+
+硬件相关的资料，如原理图等。
+
+5-DevelopmentTool开发工具： 
+
+烧录调试相关工具，如烧录软件、ADB软件等。
+
+6-Docment文档：
+
+用户指导、开发相关资料文档。
 
 
 
