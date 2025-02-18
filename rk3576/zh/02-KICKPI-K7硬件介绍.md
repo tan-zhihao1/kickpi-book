@@ -71,7 +71,7 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
     └── readme.txt
 ```
 
-0-Specifications规格书：
+0-Specifications规格书
 
 通过规格书可以快速了解产品的特性和性能。
 
