@@ -145,8 +145,7 @@ which board would you like (1-2):
 * 编译镜像
 
 ```shell
-$ ./build.sh
-$ ./build.sh pack
+$ ./build.sh && ./build.sh pack
 ```
 
 > 镜像生成目录：out/t113_linux_evb1_auto_uart0.img
@@ -200,5 +199,3 @@ $ ./build.sh buildroot_saveconfig
 ```
 
 
-
-添加
