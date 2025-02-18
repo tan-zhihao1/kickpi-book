@@ -41,10 +41,6 @@ $ sudo pip install pyelftools
 >
 > 不同UBUNTU版本安装失败，可网络搜索对应的解决方法
 
-
-
-
-
 ## 2. Linux SDK编译
 
 ### SDK介绍
