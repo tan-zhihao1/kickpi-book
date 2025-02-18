@@ -127,10 +127,6 @@ ubuntu-rootfs-*.tar.gz是ubuntu文件系统压缩包，搭配SDK源码编译可�
 
 首次执行build.sh进行SDK编译，必须要选择编译配置信息，如：CPU型号、板卡型号、文件系统型号
 
-具体板卡型号差异可查看 `入门文档介绍`
-
-
-
 * SDK编译配置
 
 ```shell
