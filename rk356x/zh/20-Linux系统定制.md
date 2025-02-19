@@ -105,7 +105,7 @@ HDMI-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis
 $ xrandr --output (dev) --rotate [normal|left|inverted|right]	
 ```
 
->normal：
+>normal：将显示设备正常的显示。
 >
 >left：将显示器逆时针旋转 90 度。
 >
