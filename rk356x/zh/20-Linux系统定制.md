@@ -107,18 +107,36 @@ $ xrandr --output HDMI-1 --rotate right				// 旋转270度
 
 - 旋转屏幕后触摸校准
 
+1. 安装工具
+
 ```
-$ apt install xinput xinput_calibrator //安装工具
-$ xinput_calibrator --list //查看Device和ID
+$ apt install xinput xinput_calibrator
+```
+
+2. 查看Device和ID
+
+```
+$ xinput_calibrator --list
 	Device "goodix-ts" id=10
-#第三歩 重置转置矩阵和校准矩阵，这里非常关键，转置矩阵需要根据屏幕旋转，校准矩阵设置默认值即可
+```
+
+3. 重置转置矩阵和校准矩阵，这里非常关键，转置矩阵需要根据屏幕旋转，校准矩阵设置默认值即可
+
+```
 $ xinput set-prop $id --type=float "Coordinate Transformation Matrix" 0 -1 1 1 0 0 0 0 1
 $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
+```
 
-#修改触摸方向（可根据名字修改） 默认方向
+4. 修改触摸方向
+
+
+
+```
+
+# 0°
 xinput set-prop 10 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
  
-#修改触摸方向（可根据名字修改） 向左90度
+# 修改触摸方向（可根据名字修改） 向左90度
 xinput set-prop 10 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
  
 #修改触摸方向（可根据名字修改） 向右90度
