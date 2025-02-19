@@ -93,7 +93,7 @@ HDMI-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis
    640x480       60.00    59.94    59.94  
 ```
 
-> 根据信息可知，当前系统为单屏幕显示，并且显示设备名称为 HDMI-1
+> 根据打印信息可知，当前系统为单屏幕显示，并且显示设备名称为 HDMI-1
 
 
 
@@ -138,7 +138,7 @@ $ xinput_calibrator --list
 	Device "goodix-ts" id=10
 ```
 
-> 
+> 根据打印信息可知，
 
 设置输入设备的校准矩阵
 
