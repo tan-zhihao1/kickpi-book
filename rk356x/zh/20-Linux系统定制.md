@@ -10,7 +10,7 @@
 $ /etc/init.d/kickpi.sh
 ```
 
-> 将开机启动程序命令添加到kickpi.sh脚本中即可实现开机自启动
+> 
 
 示例：
 
@@ -18,6 +18,8 @@ $ /etc/init.d/kickpi.sh
 $ vim /etc/init.d/kickpi.sh
 + source /usr/bin/test_boot.sh
 ```
+
+> 将开机启动程序命令添加到kickpi.sh脚本中即可实现开机自启动
 
 
 
