@@ -170,12 +170,12 @@ $ xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 >
 > 示例：
 >
-> 
+> 设置 goodix-ts 设备的
 
 校准
 
 ```
-$ /usr/bin/xinput_calibrator -v --device $DEVICE
+$ xinput_calibrator -v --device $id
 ```
 
 
