@@ -184,7 +184,7 @@ $ xinput_calibrator -v --device $id
 >
 > 校准 goodix-ts 设备
 >
-> xinput_calibrator -v --device 10
+> $ xinput_calibrator -v --device 10
 
 
 
