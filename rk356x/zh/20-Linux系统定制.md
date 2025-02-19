@@ -128,7 +128,9 @@ $ xrandr --output HDMI-1 --rotate left
 安装工具
 
 ```
-$ apt install xinput xinput_calibrator
+$ apt update
+$ apt install xinput
+$ apt install xinput-calibrator
 ```
 
 查看设备和ID
@@ -178,6 +180,7 @@ $ /usr/bin/xinput_calibrator -v --device $DEVICE
 
 
 
+```
 //第一歩 安装工具
 $ apt update
 $ apt install xinput
@@ -197,7 +200,7 @@ $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0
 //修改触摸方向（可根据名字修改） 默认方向
 $ xinput set-prop $id 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
-
+ 
 //修改触摸方向（可根据名字修改） 向左90度
 $ xinput set-prop $id 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
@@ -205,7 +208,7 @@ $ xinput set-prop $id 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
 //修改触摸方向（可根据名字修改） 向右90度
 $ xinput set-prop $id 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
-
+ 
 //修改触摸方向（可根据名字修改） 旋转180度
 $ xinput set-prop $id 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
@@ -213,6 +216,9 @@ $ xinput set-prop $id 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 //第四步 开始校准
 $ xinput_calibrator -v --device $id
 // xinput_calibrator -v --device 11
+```
+
+
 
 
 
