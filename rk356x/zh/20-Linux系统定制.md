@@ -138,7 +138,7 @@ $ xinput_calibrator --list
 	Device "goodix-ts" id=10
 ```
 
-> 根据打印信息可知，
+> 根据打印信息可知，当前触摸设备为"goodix-ts"，id为10
 
 设置输入设备的校准矩阵
 
