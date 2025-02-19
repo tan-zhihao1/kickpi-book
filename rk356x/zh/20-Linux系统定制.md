@@ -127,8 +127,6 @@ $ xinput set-prop $id --type=float "Coordinate Transformation Matrix" 0 -1 1 1 0
 $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
 ```
 
-4. 修改触摸方向
-
 
 
 ```
@@ -136,20 +134,22 @@ $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0
 # 0°
 xinput set-prop 10 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
  
-# 修改触摸方向（可根据名字修改） 向左90度
+# left 90°
 xinput set-prop 10 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
  
-#修改触摸方向（可根据名字修改） 向右90度
+# right 90°
 xinput set-prop 10 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
  
-#修改触摸方向（可根据名字修改） 旋转180度
+# 180°
 xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 
 
-#第四步 开始校准
+#第四步 
 $ /usr/bin/xinput_calibrator -v --device $DEVICE
 
 ```
+
+4.  开始校准
 
 
 
