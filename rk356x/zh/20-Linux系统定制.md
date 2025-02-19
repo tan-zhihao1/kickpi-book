@@ -131,7 +131,7 @@ $ xrandr --output HDMI-1 --rotate left
 $ apt install xinput xinput_calibrator
 ```
 
-查看Device和ID
+查看设备和ID
 
 ```
 $ xinput_calibrator --list
@@ -145,6 +145,8 @@ $ xinput_calibrator --list
 ```
 $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
 ```
+
+> 
 
 设置输入设备坐标转换矩阵
 
