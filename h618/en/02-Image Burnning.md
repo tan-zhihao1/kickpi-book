@@ -145,7 +145,7 @@ Follow the steps in the image below to install the driver.
 2. Wait for the burning progress bar to complete.
 3. After the burning is completed, the mainboard will automatically restart.
 
-![image-20240306171455427](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306171455427.png)
+![image-20250219160856586](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160856586.png)
 
 
 
