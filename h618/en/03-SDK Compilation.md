@@ -201,7 +201,7 @@ $ git reset --hard
 
 
 
-### 编译命令
+### Compile command
 
 ```
 $ ./build.sh
