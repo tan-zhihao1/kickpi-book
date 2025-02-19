@@ -27,13 +27,13 @@ All three parts can be downloaded from the cloud drive. Please contact customer 
 Below is the directory structure corresponding to the tools in the cloud drive:
 
 ```
-└── 2-System Image 系统镜像
+└── 2-System Image
     └── K2B
        	├── Android12 TV
        	├── Android12 Tablet
        	└── Ubuntu2204
-└── 5-DevelopmentTools开发工具
-    └── USB ImageBurnTool 镜像烧录工具
+└── 5-DevelopmentTools
+    └── USB ImageBurnTool
     	└── PhoenixSuit.zip
 ```
 
