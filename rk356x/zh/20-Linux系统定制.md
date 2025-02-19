@@ -107,11 +107,11 @@ $ xrandr --output (dev) --rotate [normal|left|inverted|right]
 
 >normal：将显示设备正常的显示。
 >
->left：将显示器逆时针旋转 90 度。
+>left：将显示设备逆时针旋转 90 度。
 >
->inverted：将显示器顺时针旋转 90 度。
+>inverted：将显示设备顺时针旋转 90 度。
 >
->right：将显示器旋转 180 度。
+>right：将显示设备旋转 180 度。
 
 示例：
 
