@@ -146,6 +146,8 @@ $ xinput_calibrator --list
 $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
 ```
 
+> 设置 goodix-ts 设备的校准矩阵
+>
 > $ xinput set-prop 10 --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
 
 设置输入设备坐标转换矩阵
