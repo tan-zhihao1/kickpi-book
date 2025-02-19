@@ -130,10 +130,12 @@ Follow the steps in the image below to install the driver.
 
 **Entering Burning Mode on the Mainboard**
 
-1. Press and hold the FEL upgrade button.
+1. Press and hold the RECOVERY button on the board (or the MaskRom button on the back).
 2. Power on the mainboard. If it's already powered on, power cycle it (press the reset button once).
 
-![image-20240306170600024](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306170600024.png)
+![image-20250219154733095](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219154733095.png)
+
+![image-20250219155121619](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155121619.png)
 
 
 
