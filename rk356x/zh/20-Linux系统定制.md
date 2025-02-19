@@ -109,27 +109,10 @@ $ xrandr --output (dev) --rotate [normal|left|inverted|right]
 
 ```
 $ xrandr --output HDMI-1 --rotate normal			// 旋转0度
-```
-
-
-
-```
 $ xrandr --output HDMI-1 --rotate left				// 旋转90度
-```
-
-
-
-```
 $ xrandr --output HDMI-1 --rotate inverted			// 旋转180度
-```
-
-
-
-```
 $ xrandr --output HDMI-1 --rotate right				// 旋转270度
 ```
-
-
 
 
 
