@@ -87,23 +87,19 @@ If the mainboard has successfully entered burning mode and the computer does not
 
 Follow the steps in the image below to install the driver.
 
-![image-20221129104615672](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20221129104615672.png)
+![image-20250219155858913](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155858913.png)
 
 
 
-![image-20221129104636689](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20221129104636689.png)
+![image-20250219155942874](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155942874.png)
 
 
 
-![image-20221129104649695](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20221129104649695.png)
+![image-20250219160431151](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160431151.png)
 
 
 
-![image-20221129104706378](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20221129104706378.png)
-
-
-
-![image-20221129104725698](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20221129104725698.png)
+![image-20250219160504707](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160504707.png)
 
 
 
@@ -117,7 +113,7 @@ Follow the steps in the image below to install the driver.
 
 **Burning Tool Interface**
 
-![image-20240306170835586](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306170835586.png)
+![image-20250219160538270](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160538270.png)
 
 
 
@@ -125,10 +121,10 @@ Follow the steps in the image below to install the driver.
 
 **Selecting Image for Burning**
 
-1. Enter the "One-click Flash" interface.
-2. Click on "Browse" to select the image.
+1. Enter the "Firmware" interface.
+2. Click on "Image" to select the image.
 
-![image-20240306171236404](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306171236404.png)
+![image-20250219160640908](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160640908.png)
 
 
 
