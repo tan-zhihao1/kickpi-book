@@ -95,7 +95,7 @@ HDMI-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis
 
 > 根据以上日志可知，当前系统为单屏幕显示，并且显示设备名称为 HDMI-1
 >
-> 显示设备名称 用于命令指定旋转显示设备 $DEV
+> 显示设备名称 用于命令指定设备 $DEV
 
 
 
@@ -106,6 +106,12 @@ $ xrandr --output HDMI-1 --rotate normal			// 旋转0度
 $ xrandr --output HDMI-1 --rotate left				// 旋转90度
 $ xrandr --output HDMI-1 --rotate inverted			// 旋转180度
 $ xrandr --output HDMI-1 --rotate right				// 旋转270度
+```
+
+
+
+```
+
 ```
 
 
