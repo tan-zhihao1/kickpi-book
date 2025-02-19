@@ -10,6 +10,8 @@
 
 ## 2. 开发板信息
 
+![K8_fun_v2](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K8_fun_v2.jpg)
+
 
 
 ## 3. 配件列表
