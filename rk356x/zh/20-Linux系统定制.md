@@ -137,6 +137,7 @@ xinput set-prop 10 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
 # 180°
 xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 ```
+> 根据旋转情况使用对应命令
 
 5. 校准
 
