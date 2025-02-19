@@ -1,4 +1,4 @@
-# 23-Android NPU YOLOV5 目标检测
+# 31-Android NPU YOLOV5 目标检测
 
 测试平台 K1-RK3568-Android13.0
 

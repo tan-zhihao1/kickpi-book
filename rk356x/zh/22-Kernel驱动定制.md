@@ -1,4 +1,4 @@
-# 41-Kernel 驱动配置
+# 22-Kernel 驱动配置
 
 ## 配置defconfig
 
