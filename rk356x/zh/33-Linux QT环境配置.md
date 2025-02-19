@@ -221,13 +221,17 @@ sudo make install
 
 Kits选择gcc为板子对应的编译工具链即可，一般qtcreator默认设配好
 
-gcc工具版本
+### gcc工具版本
 
-选择uname -r对应的交叉编译工具即可
-
-最好使用SDK里面相同版本号的交叉编译工具
+虚拟机：最好使用SDK里面的交叉编译工具
 
 ![image-20241028095022662](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028095022662.png)
+
+板子端： 安装gcc即可 无需交叉编译
+
+```
+sudo apt install gcc
+```
 
 
 
