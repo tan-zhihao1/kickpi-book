@@ -14,11 +14,10 @@ $ /etc/init.d/kickpi.sh
 
 示例：
 
-```
+```diff
 $ vim /etc/init.d/kickpi.sh
++ source /usr/bin/test_boot.sh
 ```
-
-
 
 
 
