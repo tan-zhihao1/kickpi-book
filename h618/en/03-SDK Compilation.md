@@ -152,24 +152,24 @@ $ ./build.sh android
 
 For Ubuntu 22.04 system, only image files are provided. Compilation can refer to ARMBIAN SDK.
 
-### 获取SDK源码
+### Download the SDK source code
 
-* 网盘下载目录
+* Download directory
 
 ```
-1-SDK软件源码\Linux\
+1-SDK\Linux\
 	h618-linux-20240320.tar.gz
 ```
 
 
 
-* 拷贝源码压缩包到编译主机目录
+* Copy the source code compression package to the compiled host directory
 
-  > 注意事项：
+  > warning：
   >
-  > 1. 源码不可放在共享目录下编译
+  > 1. The source code should not be compiled in a shared directory
   >
-  > 2. 编译主机不可用ROOT账号登陆
+  > 2. Compilation hosts are not allowed to log in with a ROOT account
 
 
 
@@ -181,17 +181,17 @@ $ md5sum -c *.md5
 
 
 
-* 解压源码压缩包
+* MD5 checksum file integrity
 
 ```
 $ tar -zxvf *.tar.gz
 ```
 
-> 解压完成后，查看源码目录仅有.git文件夹，需要执行下一步才能完成恢复出源码
+> After unzipping, you can see that there is only a .git folder in the source directory, and you need to perform the next step in order to restore the source code.
 
 
 
-* Git恢复源码目录
+* Git recovery source code
 
 ```
 $ git reset --hard
