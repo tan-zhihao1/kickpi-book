@@ -170,7 +170,9 @@ $ xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 >
 > 示例：
 >
-> 设置 goodix-ts 设备的
+> 设置 goodix-ts 设备的坐标转换矩阵为left
+>
+> 
 
 校准
 
