@@ -171,7 +171,6 @@ network:
 
 ```
 $ ifconfig 
-或
 $ ifconfig -a
 enP3p49s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         ether 82:76:b8:2f:96:6d  txqueuelen 1000  (Ethernet)
