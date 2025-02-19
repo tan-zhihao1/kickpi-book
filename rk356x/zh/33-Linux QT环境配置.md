@@ -230,7 +230,8 @@ Kits选择gcc为板子对应的编译工具链即可，一般qtcreator默认设�
 板子端： 安装gcc即可 无需交叉编译
 
 ```
-sudo apt install gcc
+$ sudo apt-get update
+$ sudo apt install gcc
 ```
 
 
