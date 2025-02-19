@@ -88,7 +88,7 @@ HDMI-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis
 
 > 根据以上日志可知，当前系统为单屏幕显示，并且显示设备名称为 HDMI-1
 >
-> 显示设备名称 用于指定旋转显示设备
+> 显示设备名称 用于指定旋转显示设备 $DEV
 
 
 
