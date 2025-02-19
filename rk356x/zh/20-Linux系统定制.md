@@ -146,6 +146,8 @@ $ xinput_calibrator --list
 $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
 ```
 
+> 示例：
+>
 > 设置 goodix-ts 设备的校准矩阵
 >
 > $ xinput set-prop 10 --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
@@ -163,6 +165,10 @@ xinput set-prop 10 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
 xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 ```
 > 根据旋转情况使用对应命令
+>
+> 示例：
+>
+> 
 
 校准
 
