@@ -12,6 +12,14 @@ $ /etc/init.d/kickpi.sh
 
 > 将开机启动程序命令添加到kickpi.sh脚本中即可实现开机自启动
 
+示例：
+
+```
+$ vim /etc/init.d/kickpi.sh
+```
+
+
+
 
 
 ## 2. 语言配置
