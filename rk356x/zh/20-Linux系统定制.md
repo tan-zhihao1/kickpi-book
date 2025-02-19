@@ -155,11 +155,11 @@ $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0
 设置输入设备坐标转换矩阵
 
 ```
-# 0°
-$ xinput set-prop 10 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
-# left 90°
+// normal
+$ xinput set-prop 10 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1 
+// left
 $ xinput set-prop 10 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
-// right 90°
+// right
 $ xinput set-prop 10 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
 // inverted
 $ xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
