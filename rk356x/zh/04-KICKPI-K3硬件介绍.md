@@ -2,8 +2,6 @@
 
 
 
-
-
 ## 1. 主控信息
 
 ### RK3562
@@ -15,8 +13,6 @@
 ## 2. 开发板信息
 
 ![image-20240603163703960](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240603163703960.png)
-
-
 
 
 

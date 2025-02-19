@@ -2,8 +2,6 @@
 
 
 
-
-
 ## 1. 主控信息
 
 ![rk3568基本信息](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/rk3568bd.png)
@@ -16,13 +14,9 @@
 
 
 
-
-
 ## 3. 配件列表
 
 ![img](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/O1CN01kcjuvi29djTNDfOhy_!!2216870748091.jpg)
-
-
 
 
 
