@@ -125,7 +125,7 @@ $ xinput set-prop $id --type=float "Coordinate Transformation Matrix" 0 -1 1 1 0
 $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
 ```
 
-4. 
+4. 设置输入设备坐标转换矩阵
 
 ```
 
