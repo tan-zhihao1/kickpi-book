@@ -231,7 +231,7 @@ Kits选择gcc为板子对应的编译工具链即可，一般qtcreator默认设�
 
 ```
 $ sudo apt-get update
-$ sudo apt install gcc
+$ sudo apt install gcc-9
 ```
 
 
