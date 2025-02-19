@@ -145,11 +145,15 @@ xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 
 
 #第四步 
-$ /usr/bin/xinput_calibrator -v --device $DEVICE
+
 
 ```
 
-4.  开始校准
+4.  校准
+
+```
+$ /usr/bin/xinput_calibrator -v --device $DEVICE
+```
 
 
 
