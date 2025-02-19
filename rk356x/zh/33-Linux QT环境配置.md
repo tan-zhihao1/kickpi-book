@@ -35,7 +35,15 @@ $ ./windows
 
 qmake工具
 
-1.查看当前Linux系统架构 uname -m 
+1.查看当前Linux系统架构 
+
+```
+uname -m 
+```
+
+> 板子系统是ARM架构 虚拟机则是X86架构
+
+
 
 2.安装依赖
 
@@ -55,6 +63,14 @@ sudo apt install clang libclang-dev
 选择你需要的版本
 
 ![image-20241028093459681](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093459681.png)
+
+虚拟机选择：
+
+![image-20250219155414011](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155414011.png)
+
+​	下载后到虚拟机中运行安装程序
+
+ARM架构选择：
 
 选择single
 
@@ -164,6 +180,8 @@ source /etc/profile/
 ![image-20241028094050024](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028094050024.png)
 
 ### 编译安装qtcreator
+
+> 虚拟机安装程序一般会同步安装qtcreator 无需再安装
 
 安装qtcreator必须先安装Qt，用Qt编译qtcreator，如果编译Qt出错，这个位置编译也会出错。如果Qt编译时，有未编译的模块或者含有不依赖的模块，qt编译不受影响，但是qtcreator会有影响。我试过加-no-opengl \，编译qt没有错误，安装也可以，编译qtcreator出错。
 
