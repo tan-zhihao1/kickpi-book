@@ -127,7 +127,7 @@ $ xinput set-prop $id --type=float "Coordinate Transformation Matrix" 0 -1 1 1 0
 $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
 ```
 
-
+4. 
 
 ```
 
@@ -149,7 +149,7 @@ xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 
 ```
 
-4.  校准
+5. 校准
 
 ```
 $ /usr/bin/xinput_calibrator -v --device $DEVICE
