@@ -101,20 +101,34 @@ HDMI-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis
 
 * 旋转屏幕显示方向
 
-设置指定显示设备的旋转方向为正常的横向显示模式
+设置指定显示设备的旋转方向为正常的显示模式
 
 ```
 $ xrandr --output HDMI-1 --rotate normal			// 旋转0度
+
+```
+
+
+
+```
 $ xrandr --output HDMI-1 --rotate left				// 旋转90度
+
+```
+
+
+
+```
 $ xrandr --output HDMI-1 --rotate inverted			// 旋转180度
+
+```
+
+
+
+```
 $ xrandr --output HDMI-1 --rotate right				// 旋转270度
 ```
 
 
-
-```
-
-```
 
 
 
