@@ -188,8 +188,6 @@ $ xinput_calibrator -v --device $id
 
 
 
-
-
 ## 5. 网络配置
 
 ### 静态IP地址配置
@@ -303,7 +301,7 @@ sudo apt install nfs-common
 
 1. 配置共享的文件
 
-```
+```diff
 $ mkdir /home/kickpi/nfs_share
 $ chmod 777 /home/kickpi/nfs_share
 $ vi /etc/exports
