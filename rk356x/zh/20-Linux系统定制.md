@@ -142,7 +142,7 @@ $ xinput_calibrator --list
 
 > 根据打印信息可知，当前触摸设备为"goodix-ts"，id为10
 
-设置输入设备的校准矩阵
+配置输入设备的校准矩阵
 
 ```
 $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
@@ -154,7 +154,7 @@ $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0
 >
 > $ xinput set-prop 10 --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
 
-设置输入设备坐标转换矩阵
+配置输入设备坐标转换矩阵
 
 ```
 // normal
@@ -174,7 +174,7 @@ $ xinput set-prop $id 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 >
 > xinput set-prop 10 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
 
-校准
+校准触摸
 
 ```
 $ xinput_calibrator -v --device $id
