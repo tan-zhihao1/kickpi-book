@@ -150,7 +150,9 @@ $ /usr/bin/xinput_calibrator -v --device $DEVICE
 
 ### 静态IP地址配置
 
-Linux系统示例：ens33网卡配置静态IP地址为192.168.1.50
+Linux系统
+
+示例：ens33网卡配置静态IP地址为192.168.1.50
 
 ```
 $ vim /etc/netplan/01-network-manager-all.yaml
