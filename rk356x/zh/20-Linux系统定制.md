@@ -158,13 +158,13 @@ $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0
 
 ```
 // normal
-$ xinput set-prop 10 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1 
+$ xinput set-prop $id 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1 
 // left
-$ xinput set-prop 10 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
+$ xinput set-prop $id 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
 // right
-$ xinput set-prop 10 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
+$ xinput set-prop $id 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
 // inverted
-$ xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
+$ xinput set-prop $id 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 ```
 > 根据旋转情况使用对应命令
 >
@@ -172,7 +172,7 @@ $ xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 >
 > 设置 goodix-ts 设备的坐标转换矩阵为left
 >
-> 
+> xinput set-prop 10 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
 
 校准
 
