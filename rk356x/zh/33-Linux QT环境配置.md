@@ -1,4 +1,4 @@
-# 25-Linux QT环境搭建
+# 33-Linux QT环境搭建
 
 
 
