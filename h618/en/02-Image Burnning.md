@@ -193,7 +193,7 @@ You can obtain the image from the following directory in the cloud drive:
 
 ### Creating an SD Boot Card
 
-![image-20240319142047775](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240319142047775.png)
+![image-20250219161011900](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219161011900.png)
 
 1. Choose the image to burn.
 2. Select the SD card disk to burn.
