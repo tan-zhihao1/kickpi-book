@@ -115,7 +115,7 @@ $ xrandr --output (dev) --rotate [normal|left|inverted|right]
 
 示例：
 
-设置 HDMI-1 逆时针旋转 90 度。
+配置 HDMI-1 显示逆时针旋转 90 度。
 
 ```
 $ xrandr --output HDMI-1 --rotate left
