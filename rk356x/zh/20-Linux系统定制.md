@@ -157,8 +157,6 @@ $ /usr/bin/xinput_calibrator -v --device $DEVICE
 
 ### 静态IP地址配置
 
-Linux系统
-
 示例：ens33网卡配置静态IP地址为192.168.1.50
 
 ```
@@ -256,7 +254,7 @@ $ ifconfig <dev> up
 
 ## 6. NFS配置
 
-**环境配置**
+环境配置
 
 ```
 sudo apt install nfs-kernel-server
@@ -299,7 +297,7 @@ Export list for localhost:
 /home/kickpi/nfs_share *
 ```
 
-**客户端**
+客户端
 
 1. 查看服务器共享文件
 
