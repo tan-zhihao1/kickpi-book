@@ -104,7 +104,7 @@ HDMI-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis
 设置指定显示设备的旋转方向
 
 ```
-$ xrandr --output HDMI-1 --rotate normal	
+$ xrandr --output $DEV --rotate [normal|left|inverted|right]	
 ```
 
 
