@@ -159,9 +159,9 @@ $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0
 $ xinput set-prop 10 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
 # left 90°
 $ xinput set-prop 10 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
-# right 90°
+// right 90°
 $ xinput set-prop 10 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
-# 180°
+// inverted
 $ xinput set-prop 10 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 ```
 > 根据旋转情况使用对应命令
