@@ -2,15 +2,9 @@
 
 
 
-
-
-
-
 ## 1. 主控信息
 
 ![rk3568基本信息](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/rk3568bd.png)
-
-
 
 
 
