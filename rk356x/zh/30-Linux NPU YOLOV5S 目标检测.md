@@ -188,18 +188,6 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 	CMakeLists.txt  convert_rknn_demo  include  install  model  README.md  src
 ```
 
-> 运行示例：
->
-> $ export LD_LIBRARY_PATH=/usr/local/opencv4/lib/
->
-> $ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opencv4/lib/
->
-> $ export PKG_CONFIG_LIBDIR=$PKG_CONFIG_LIBDIR:/usr/local/opencv4/lib/pkgconfig
->
-> $ cp  /rockchip-test/npu2/rknn_yolov5_demo_Linux/lib . -rf
->
-> $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
-
 
 
 ### 编译源码
@@ -236,6 +224,17 @@ $ ls install/rknn_yolov5_demo_Linux/
 > 拷贝方式可用U盘、网络等
 >
 > 若不想要编译，可从网盘目录获取可执行程序 1-SDK Source 软件源码/demo/rknn_yolov5_demo_Linux.tar.gz
+
+运行示例：
+
+```
+$ cd rknn_yolov5_demo_Linux/
+$ export LD_LIBRARY_PATH=/usr/local/opencv4/lib/
+$ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opencv4/lib/
+$ export PKG_CONFIG_LIBDIR=$PKG_CONFIG_LIBDIR:/usr/local/opencv4/lib/pkgconfig
+$ cp  /rockchip-test/npu2/rknn_yolov5_demo_Linux/lib . -rf
+$ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
+```
 
 
 
