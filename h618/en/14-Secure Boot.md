@@ -89,17 +89,17 @@ $ pack -v
 
 ​	3.Tool configuration
 
-![image-20241122102647734](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122102647734.png)
+![image-20250220111801669](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250220111801669.png)
 
-​							鼠标右键打开菜单栏
+​							Right-click to open the menu bar
 
-![image-20241122103219298](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122103219298.png)
+![image-20250220111935708](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250220111935708.png)
 
-![image-20241122103411818](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122103411818.png)
+![image-20250220112016793](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250220112016793.png)
 
-![image-20241122103517802](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122103517802.png)
+![image-20250220112035644](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250220112035644.png)
 
-![image-20241122103904903](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122103904903.png)
+![image-20250220112115728](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250220112115728.png)
 
 ![image-20241122104243353](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122104243353.png)
 
