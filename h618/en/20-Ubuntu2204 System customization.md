@@ -18,8 +18,6 @@ sudo passwd root
 
 /lib/systemd/system/serial-getty@.service.d/override.conf
 
-<img src="http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241105154155771.png" alt="image-20241105154155771" style="zoom:200%;" />
-
 ```
 Execstart=-/sbin/agetty -o '-p -f --\\u'--keep-baud --autologin (Automatic login username) 115200,57680,38408,9680 -$TERM
 ```

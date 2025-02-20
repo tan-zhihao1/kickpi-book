@@ -107,9 +107,7 @@ $ pack -v
 
 ​		5. Successful programming
 
-​	**FAQ：It can only be programmed once, and the programming failure is as follows:**
-
-![image-20241122105405421](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122105405421.png)
+​	**FAQ：It can only be programmed once, and the programming will faile**
 
 ### 6、Verify whether the write was successful
 
