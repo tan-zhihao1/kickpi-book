@@ -188,7 +188,11 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 	CMakeLists.txt  convert_rknn_demo  include  install  model  README.md  src
 ```
 
->  
+> $ 
+>
+> $ cp  /rockchip-test/npu2/rknn_yolov5_demo_Linux/lib . -rf
+>
+> $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 
 
 
