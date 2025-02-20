@@ -188,7 +188,7 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 	CMakeLists.txt  convert_rknn_demo  include  install  model  README.md  src
 ```
 
-> 运行示例
+> 运行示例：
 >
 > $ export LD_LIBRARY_PATH=/usr/local/opencv4/lib/
 >
