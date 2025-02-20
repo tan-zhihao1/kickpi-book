@@ -123,6 +123,7 @@ Choice [c3]: 3
 ```
 
 ```
+$ cd - 
 $ ./build.sh lunch //根据板型选择K5或K5C
 $ ./build.sh
 ```
