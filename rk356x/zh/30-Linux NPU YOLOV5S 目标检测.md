@@ -188,6 +188,8 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 	CMakeLists.txt  convert_rknn_demo  include  install  model  README.md  src
 ```
 
+>  
+
 
 
 ### 编译源码
