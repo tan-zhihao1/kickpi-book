@@ -221,6 +221,8 @@ $ ls install/rknn_yolov5_demo_Linux/
 	lib/              model/            rknn_yolov5_demo
 ```
 
+> 目前 rknn_yolov5_demo_Linux 的 /lib 需要使用主板上 /rockchip-test/npu2/rknn_yolov5_demo_Linux/lib
+>
 > 拷贝方式可用U盘、网络等
 >
 > 若不想要编译，可从网盘目录获取可执行程序 1-SDK Source 软件源码/demo/rknn_yolov5_demo_Linux.tar.gz
