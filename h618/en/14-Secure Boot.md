@@ -105,11 +105,7 @@ $ pack -v
 
 ​		4. Connect the PC to the board through USB or reset the board again (the board can only be recognized by the DrangonSN tool during shutdown and restart)
 
-![image-20241122104814617](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122104814617.png)
-
 ​		5. Successful programming
-
-![image-20241122104853169](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122104853169.png)
 
 ​	**FAQ：It can only be programmed once, and the programming failure is as follows:**
 
