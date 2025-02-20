@@ -232,7 +232,7 @@ $ cd rknn_yolov5_demo_Linux/
 $ export LD_LIBRARY_PATH=/usr/local/opencv4/lib/
 $ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opencv4/lib/
 $ export PKG_CONFIG_LIBDIR=$PKG_CONFIG_LIBDIR:/usr/local/opencv4/lib/pkgconfig
-$ cp  /rockchip-test/npu2/rknn_yolov5_demo_Linux/lib . -rf
+$ cp /rockchip-test/npu2/rknn_yolov5_demo_Linux/lib . -rf
 $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 ```
 
