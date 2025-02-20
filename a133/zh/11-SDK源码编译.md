@@ -88,11 +88,6 @@ git reset --hard
 
 ### 编译完整镜像
 
-
-### 编译问题
-
-**编译需要配置**
-
 ```
 $ cd longan/
 $ ./build.sh config
