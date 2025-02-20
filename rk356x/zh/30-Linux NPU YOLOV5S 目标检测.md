@@ -188,8 +188,12 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 	CMakeLists.txt  convert_rknn_demo  include  install  model  README.md  src
 ```
 
+> 运行示例
+>
 > $ export LD_LIBRARY_PATH=/usr/local/opencv4/lib/
+>
 > $ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opencv4/lib/
+>
 > $ export PKG_CONFIG_LIBDIR=$PKG_CONFIG_LIBDIR:/usr/local/opencv4/lib/pkgconfig
 >
 > $ cp  /rockchip-test/npu2/rknn_yolov5_demo_Linux/lib . -rf
