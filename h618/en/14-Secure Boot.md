@@ -101,7 +101,7 @@ $ pack -v
 
 ![image-20250220112115728](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250220112115728.png)
 
-![image-20241122104243353](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122104243353.png)
+![image-20250220112207955](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250220112207955.png)
 
 ​		4. Connect the PC to the board through USB or reset the board again (the board can only be recognized by the DrangonSN tool during shutdown and restart)
 
