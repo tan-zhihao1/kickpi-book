@@ -91,16 +91,6 @@ For `LOADER Mode`, press the RECOVERY button and power on (or press the reset bu
 
 
 
-#### **More Instructions**
-
-For more detailed instructions on the burning tool, see
-
-```
-/RKDevTool_v3.30_for_window/开发工具使用文档_v1.0.pdf
-```
-
-
-
 ## 工厂烧录
 
 ```
