@@ -1,10 +1,10 @@
 # KICKPI Document
 
 
-
+---
 ## Rockchip Series
 
----
+
 
 #### KICKPI-K1 (RK3568)
 
@@ -34,10 +34,10 @@
 
 * [RK3576 English Document](rk3576/en)
 * [RK3576 中文文档](rk3576/zh)
+---
 
 
-
-
+---
 
 ## Allwinner Series
 
@@ -64,4 +64,4 @@
 * [A133 中文文档](a133/zh)
 
 
-
+---
