@@ -311,7 +311,7 @@ $ sudo systemctl disable kickpi.service
 $ sudo systemctl enable kickpi.service 
 ```
 
-##### 编译详细步骤
+##### 编译详细步骤选择介绍
 
 在aw-image-build根目录运行 **./build.sh** 来进入交互式构建界面
 
