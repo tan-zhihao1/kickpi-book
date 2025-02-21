@@ -71,7 +71,7 @@ Unzip the RKDevTool_v3.30_for_window.zip compressed file, find RKDevTool.exe und
 
 
 
-#### **整包烧录**
+#### **Full Package Burning**
 
 LOADER / MASKROM Mode
 
@@ -101,5 +101,3 @@ Open the software.
 ![image-20250109172029374](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250109172029374.png)
 
 Select the firmware for burning. After connecting the motherboard, put the motherboard into MASKROM / LOADER mode.
-
-![image-20250109172203575](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250109172203575.png)
