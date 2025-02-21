@@ -1,4 +1,4 @@
-# 02-KICKPI-K7硬件介绍
+# 02-KICKPI-K7 Hardware Introduction
 
 
 
