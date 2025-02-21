@@ -14,15 +14,15 @@
 
 ## 3. Cloud Disk Materials
 
-KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDrive网盘
+The development materials of KICKPI are pushed through the cloud disk, and both Baidu Cloud Disk and OneDrive are supported.
 
-两份网盘资料内容一致，可根据实际情况自行选择
+The contents of the two cloud disk materials are the same. You can choose according to the actual situation.
 
-网盘链接可通过 购买平台或QQ 咨询客服获取
+The cloud disk link can be obtained by consulting the customer service through the purchasing platform or QQ.
 
 
 
-* 网盘目录说明
+* Cloud Disk Directory Description
 
 ```
 ├── 0-Specifications规格书
