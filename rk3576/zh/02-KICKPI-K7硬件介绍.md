@@ -79,7 +79,7 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 
 通过软件源码可以编译出主板镜像，定制系统软件。
 
-Android14 - 安卓源码，可编译主板Android 14.0镜像
+Android14/ - 安卓源码，可编译主板Android 14.0镜像
 
 Linux/rootfs/ - Debian12和Ubuntu2404 备份的文件系统
 
