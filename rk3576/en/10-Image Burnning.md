@@ -73,12 +73,7 @@ Unzip the RKDevTool_v3.30_for_window.zip compressed file, find RKDevTool.exe und
 
 #### **整包烧录**
 
-LOADER / MASKROM模式
-
-```
-LOADER模式：可分区烧录，分区烧录，详情见更多说明
-MASKROM模式：不可分区烧录
-```
+LOADER / MASKROM Mode
 
 1. `LOADER模式`按下RECOVERY按键，上电 （或者按复位进行复位）
 
