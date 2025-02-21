@@ -39,13 +39,9 @@ Windows Burning Tool，path in the cloud disk:
 
 3. Click "Install Driver" and a prompt indicating successful installation will appear.
 
-![image-20241025101606583](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101606583.png)
+**USB Device Verification**
 
-
-
-**USB设备验证**
-
-1. 主板上电，准备一个能传输文件的 type-c 线
+1. Power on the motherboard and prepare a type - c cable capable of file transfer.
 2. 使用 type-c 连接主板和PC电脑
 
 3. 打开电脑中设备管理器
