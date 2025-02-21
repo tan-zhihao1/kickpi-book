@@ -69,8 +69,6 @@ Windows Burning Tool，path in the cloud disk:
 
 Unzip the RKDevTool_v3.30_for_window.zip compressed file, find RKDevTool.exe under the file, and double - click to open it.
 
-![image-20241025161627415](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025161627415.png)
-
 
 
 #### **整包烧录**
