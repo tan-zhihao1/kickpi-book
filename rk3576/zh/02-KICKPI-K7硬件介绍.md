@@ -91,9 +91,9 @@ Linux/sdk/ - Linux源码，可编译主板Debian12以及Ubuntu2404 镜像
 
 2-Image镜像
 
-烧录镜像可以更新主板的系统。
-
 支持 Android14 / Debian12 / Ubuntu2404 系统镜像
+
+通过烧录镜像更新主板的系统。
 
 
 
