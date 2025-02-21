@@ -78,9 +78,9 @@ LOADER / MASKROM Mode
 1. 
 For `LOADER Mode`, press the RECOVERY button and power on (or press the reset button to reset). For `MASKROM Mode`, press the MASKROM button on the back of the board and power on (or press the reset button to reset).
 
-2. 瑞芯微开发工具上能够识别到LOADER设备或MASKROM设备
+2. The RKDevTool.exe can recognize the LOADER device or MASKROM device.
 
-3. 点击升级固件，跳转到升级固件界面
+3. Click "Upgrade Firmware" to jump to the firmware upgrade interface.
 
 4. 点击固件，选择要烧录的镜像 update-*.img
 
