@@ -42,11 +42,11 @@ Windows Burning Tool，path in the cloud disk:
 **USB Device Verification**
 
 1. Power on the motherboard and prepare a type - c cable capable of file transfer.
-2. 使用 type-c 连接主板和PC电脑
+2. Connect the motherboard to the PC using the type - c cable.
 
-3. 打开电脑中设备管理器
+3. Open the Device Manager on the computer.
 
-4. 可以查看到usb设备，说明USB驱动安装成功
+4. If the USB device can be seen, it means the USB driver is installed successfully.
 
 ![image-20241025101105194](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101105194.png)
 
