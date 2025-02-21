@@ -71,13 +71,11 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
     └── readme.txt
 ```
 
-0-Specifications规格书
+0-Specifications规格书：
 
 通过规格书可以快速了解产品的特性和性能。
 
-
-
-1-SDK软件源码
+1-SDK软件源码：
 
 通过软件源码可以编译出主板镜像，定制系统软件。
 
@@ -87,33 +85,23 @@ Linux/rootfs/ - Debian12和Ubuntu2404 备份的文件系统
 
 Linux/sdk/ - Linux源码，可编译主板Debian12以及Ubuntu2404 镜像
 
-
-
-2-Image镜像
+2-Image镜像：
 
 支持 Android14 / Debian12 / Ubuntu2404 系统镜像
 
 通过烧录镜像更新主板的系统，说明见[系统镜像烧录](10-系统镜像烧录.md)
 
-
-
-3-SoftwareData软件资料
+3-SoftwareData软件资料：
 
 软件相关的资料，如程序例子、软件补丁等。
 
-
-
-4-HardwareData硬件资料
+4-HardwareData硬件资料：
 
 硬件相关的资料，如原理图等。
 
-
-
-5-DevelopmentTool开发工具
+5-DevelopmentTool开发工具：
 
 烧录调试相关工具，如烧录软件、ADB软件等。
-
-
 
 6-Docment文档
 
