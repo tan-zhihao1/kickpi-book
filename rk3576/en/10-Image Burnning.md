@@ -82,11 +82,12 @@ For `LOADER Mode`, press the RECOVERY button and power on (or press the reset bu
 
 3. Click "Upgrade Firmware" to jump to the firmware upgrade interface.
 
-4. 点击固件，选择要烧录的镜像 update-*.img
+4. Click "Firmware" and select the image to be burned, update - *.img.
 
-5. 点击升级，等待烧录完成
+5. Click "Upgrade" and wait for the burning to complete.
 
-6. 重启即可
+6. Restart the device.
+
 
 
 
