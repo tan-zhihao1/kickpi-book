@@ -294,9 +294,19 @@ $ ./build.sh auto_burn=true // 编译固件制作的SD卡为烧录卡
 
 > 烧录卡想要取消自动烧录 可以通过板子SD烧录卡启动后输入系统下面命令控制
 >
-> systemctl disable kickpi.service //禁用自动烧录服务
->
-> systemctl enable kickpi.service //启动自动烧录服务（烧录卡默认启动）
+> 禁用自动烧录服务
+
+```
+systemctl disable kickpi.service 
+```
+
+> 启动自动烧录服务（烧录卡默认启动）
+
+```
+systemctl enable kickpi.service 
+```
+
+##### 编译详细步骤
 
 在aw-image-build根目录运行 **./build.sh** 来进入交互式构建界面
 
