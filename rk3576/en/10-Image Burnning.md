@@ -15,8 +15,7 @@ SDK - refers to the source code. For the specific name, please refer to the SDK 
 The tool can be found in the source code. A backup copy is available in the cloud disk under 5 - Development Tool.
 The USB driver of Android 14.0, DriverAssitant, needs to be updated to version V5.1.1. You can refer to the tool section below for the update.
 For the RK3576 platform, the Windows firmware burning tool must be version V3.28 or above.
-Windows Burning Tool:
-Path in the cloud disk:
+Windows Burning Tool，path in the cloud disk:
 
 ```
 5-DevelopmentTool
