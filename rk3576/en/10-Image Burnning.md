@@ -46,7 +46,7 @@ Windows Burning Tool，path in the cloud disk:
 
 3. Open the Device Manager on the computer.
 
-4. If the USB device can be seen, it means the USB driver is installed successfully.
+4. If the USB device can be seen (), it means the USB driver is installed successfully.
 
 ![image-20241025101105194](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101105194.png)
 
