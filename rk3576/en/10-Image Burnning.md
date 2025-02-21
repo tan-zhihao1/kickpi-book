@@ -23,12 +23,12 @@ Windows Burning Tool，path in the cloud disk:
 
 
 
-### 安装USB驱动
+### Installing the USB Driver
 
-**USB驱动路径**
+**USB Driver Path**
 
 ```
-5-DevelopmentTool开发工具/USB Driver USB驱动/DriverAssitant_v5.13.zip
+5-DevelopmentTool/USB Driver/DriverAssitant_v5.13.zip
 ```
 
 1. 将 DriverAssitant_v5.13.zip 解压，打开解压后的文件夹
