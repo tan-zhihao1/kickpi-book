@@ -8,19 +8,16 @@ SDK - refers to the source code. For the specific name, please refer to the SDK 
 
 
 
-## Firmware Burning
+## Image Burning
 
-### AndroidTool工具路径
+### Path of AndroidTool
 
-工具是在源码中可以找到，备份了一份在网盘 5-DevelopmentTool开发工具下
+The tool can be found in the source code. A backup copy is available in the cloud disk under 5 - Development Tool.
+The USB driver of Android 14.0, DriverAssitant, needs to be updated to version V5.1.1. You can refer to the tool section below for the update.
+For the RK3576 platform, the Windows firmware burning tool must be version V3.28 or above.
 
-Android14.0的USB驱动 DriverAssitant 需要更新到V5.1.1版本，可以参考下面的工具章节进行更新。
-
-RK3576平台windows固件烧写工具必须使用V3.28及以上版本
-
-Windows烧写工具：
-
-网盘中路径：
+Windows Burning Tool:
+Path in the cloud disk:
 
 ```
 5-DevelopmentTool
