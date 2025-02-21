@@ -141,6 +141,12 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtsi
 
 > 根据需要选择对应屏幕进行配置，重新编译即可
 
+
+
+### PWM
+
+PWM 框架在 /sys/class/pwm/ 目录下提供了用户层接口，详见 drivers/pwm/sysfs.c，PWM 驱动加载成功后，会在其下生成 pwmchipX 目录，如 pwmchip0、pwmchip1 等，此处的 X 与 PWM 的控制器或通道 id 无关，仅与 PWM 设备的 probe 顺序有关。
+
 * dts 打开的节点
 
 ```
@@ -207,10 +213,6 @@ $ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
 > 按照示例配置参数设置成功后，可用万用表测量PWM3引脚，正确电压应为1.6V左右
 
 
-
-### PWM
-
-PWM 框架在 /sys/class/pwm/ 目录下提供了用户层接口，详见 drivers/pwm/sysfs.c，PWM 驱动加载成功后，会在其下生成 pwmchipX 目录，如 pwmchip0、pwmchip1 等，此处的 X 与 PWM 的控制器或通道 id 无关，仅与 PWM 设备的 probe 顺序有关。
 
 
 
