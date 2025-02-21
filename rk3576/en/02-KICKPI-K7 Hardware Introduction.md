@@ -25,9 +25,9 @@ The cloud disk link can be obtained by consulting the customer service through t
 * Cloud Disk Directory Description
 
 ```
-├── 0-Specifications规格书
-│   └── KICKPI K7 产品规格书.pdf
-├── 1-SDK软件源码
+├── 0-Specifications
+│   └── KICKPI K7.pdf
+├── 1-SDK
 │   ├── Android14
 │   │   ├── rk3576-android14.0-20250217.md5sum
 │   │   └── rk3576-android14.0-20250217.tar.gz
@@ -38,7 +38,7 @@ The cloud disk link can be obtained by consulting the customer service through t
 │       └── sdk
 │           ├── rk3576-linux-20250217.md5sum
 │           └── rk3576-linux-20250217.tar.gz
-├── 2-Image镜像
+├── 2-Image
 │   ├── Android14
 │   │   └── update-rk3576-kickpi-k7-android-202502111421.img
 │   ├── Debian12
@@ -46,64 +46,64 @@ The cloud disk link can be obtained by consulting the customer service through t
 │   ├── Ubuntu2404
 │   │   └── update-rk3576-kickpi-k7-linux-ubuntu-20250217-160948.img
 │   └── UPDATE_LOG.txt
-├── 3-SoftwareData软件资料
+├── 3-SoftwareData
 │   ├── readme.txt
 │   ├── rknn_yolov5_demo_Linux_rk3576.zip
 │   └── yolov5_test.h264
-├── 4-HardwareData硬件资料
+├── 4-HardwareData
 │   └── K7_V1.1_20241211_SCH.pdf
-├── 5-DevelopmentTool开发工具
-│   ├── ADB Scrcpy 投屏
+├── 5-DevelopmentTool
+│   ├── ADB Scrcpy 
 │   │   └── QtScrcpy-win-x64-v2.1.2.zip
 │   ├── ADB Tool
 │   │   └── adb-tools.rar
-│   ├── FactoryTool 工厂镜像烧录工具
+│   ├── FactoryTool
 │   │   └── FactoryTool_v1.89.zip
-│   ├── UART DebugTool 串口调试工具
+│   ├── UART DebugTool
 │   │   └── MobaXterm_Portable_v20.3.zip
-│   ├── USB Driver USB驱动
+│   ├── USB Driver 
 │   │   └── DriverAssitant_v5.13.zip
-│   └── USB ImageBurnTool 镜像烧录工具
+│   └── USB ImageBurnTool
 │       └── RKDevTool_v3.30_for_window.zip
 └── 6-Docment文档
     └── readme.txt
 ```
 
-0-Specifications规格书：
+0-Specifications:
 
-通过规格书可以快速了解产品的特性和性能。
+You can quickly understand the characteristics and performance of the product through the specification.
 
-1-SDK软件源码：
+1-SDK Software Source Code:
 
-通过软件源码可以编译出主板镜像，定制系统软件。
+The mainboard image can be compiled through the software source code, and the system software can be customized.
 
-Android14/ - 安卓源码，可编译主板Android 14.0镜像
+Android14/ - Android source code, which can be used to compile the mainboard Android 14.0 image.
 
-Linux/rootfs/ - Debian12和Ubuntu2404 备份的文件系统
+Linux/rootfs/ - File systems backed up by Debian12 and Ubuntu2404.
 
-Linux/sdk/ - Linux源码，可编译主板Debian12以及Ubuntu2404 镜像
+Linux/sdk/ - Linux source code, which can be used to compile the mainboard Debian12 and Ubuntu2404 images.
 
-2-Image镜像：
+2-Image:
 
-支持 Android14 / Debian12 / Ubuntu2404 系统镜像
+System images of Android14 / Debian12 / Ubuntu2404 are supported.
 
-通过烧录镜像更新主板的系统，说明见[系统镜像烧录](10-系统镜像烧录.md)
+The system of the mainboard can be updated by burning the image. For instructions, see System Image Burning.
 
-3-SoftwareData软件资料：
+3-SoftwareData:
 
-软件相关的资料，如程序例子、软件补丁等。
+Software-related materials, such as program examples and software patches.
 
-4-HardwareData硬件资料：
+4-HardwareData:
 
-硬件相关的资料，如原理图等。
+Hardware-related materials, such as schematic diagrams.
 
-5-DevelopmentTool开发工具：
+5-DevelopmentTool:
 
-烧录调试相关工具，如烧录软件、ADB软件等。
+Burning and debugging related tools, such as burning software and ADB software.
 
-6-Docment文档：
+6-Docment:
 
-用户指导、开发相关资料文档。
+User guides and development-related documents.
 
 
 
