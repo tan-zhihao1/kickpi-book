@@ -1,10 +1,10 @@
-# 10-系统镜像烧录
+# 10-Image Burning
 
 
 
-## 说明
+## Instructions
 
-sdk - 指代源码 ，具体名称见 SDK源码编译
+sdk - refers to the source code. For the specific name, please refer to the SDK Source Code Compilation.
 
 
 
