@@ -143,7 +143,9 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtsi
 
 
 
-### CAN
+### PWM
+
+PWM 框架在 /sys/class/pwm/ 目录下提供了用户层接口，详见 drivers/pwm/sysfs.c，PWM 驱动加载成功后，会在其下生成 pwmchipX 目录，如 pwmchip0、pwmchip1 等，此处的 X 与 PWM 的控制器或通道 id 无关，仅与 PWM 设备的 probe 顺序有关。
 
 
 
