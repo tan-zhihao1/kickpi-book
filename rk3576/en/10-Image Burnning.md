@@ -61,13 +61,13 @@ Windows Burning Tool，path in the cloud disk:
 
 ### Using the Burning Tool
 
-Burning Tool path
+**Burning Tool Path**
 
 ```
-5-DevelopmentTool/USB ImageBurnTool 镜像烧录工具/RKDevTool_v3.30_for_window.zip
+5-DevelopmentTool/USB ImageBurnTool/RKDevTool_v3.30_for_window.zip
 ```
 
-解压 RKDevTool_v3.30_for_window.zip 压缩文件，在文件下找到 RKDevTool.exe ，双击打开
+Unzip the RKDevTool_v3.30_for_window.zip compressed file, find RKDevTool.exe under the file, and double - click to open it.
 
 ![image-20241025161627415](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025161627415.png)
 
