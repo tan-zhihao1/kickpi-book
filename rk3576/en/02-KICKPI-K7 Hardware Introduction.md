@@ -2,19 +2,17 @@
 
 
 
-## 1. 主控信息
+## 1. Main Control Information
 
 ![image-20250110141815408](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110141815408.png)
 
 
 
-## 2. 开发板信息
-
-![K7_fun_label_map](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_fun_label_map.jpg)
+## 2. Development Board Information
 
 
 
-## 3. 网盘资料
+## 3. Cloud Disk Materials
 
 KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDrive网盘
 
