@@ -164,6 +164,50 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtsi
 
 
 
+列举相关pwm节点
+
+```
+$ ls /sys/class/pwm/
+pwmchip0  pwmchip1  pwmchip2  pwmchip3
+```
+
+可查看对应pwm dts节点
+
+```
+$ cat /sys/class/pwm/pwmchip0/device/uevent | grep FULLNAME
+OF_FULLNAME=/pwm@27331000
+```
+
+>从 dts 确认对应的节点 
+>
+>pwm0_2ch_1: pwm@27331000
+>
+>pwm2_8ch_6: pwm@2ade6000
+>
+>pwm2_8ch_7: pwm@2ade7000
+>
+>更多详见：kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576.dtsi
+
+
+
+* 配置PWM通道
+
+示例：设置 PWM0_CH1 通道，周期10000ns，占空比5000ns，极性为normal
+
+根据上述信息可知，pwm0_ch1_m0 配置 dts 为 pwm0_2ch_1，即 pwmchip0
+
+```
+$ echo 0 > /sys/class/pwm/pwmchip0/export
+$ echo 10000 > /sys/class/pwm/pwmchip0/pwm0/period
+$ echo 5000 > /sys/class/pwm/pwmchip0/pwm0/duty_cycle
+$ echo normal > /sys/class/pwm/pwmchip0/pwm0/polarity
+$ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
+```
+
+> 按照示例配置参数设置成功后，可用万用表测量PWM3引脚，正确电压应为1.6V左右
+
+
+
 ### PWM
 
 PWM 框架在 /sys/class/pwm/ 目录下提供了用户层接口，详见 drivers/pwm/sysfs.c，PWM 驱动加载成功后，会在其下生成 pwmchipX 目录，如 pwmchip0、pwmchip1 等，此处的 X 与 PWM 的控制器或通道 id 无关，仅与 PWM 设备的 probe 顺序有关。
