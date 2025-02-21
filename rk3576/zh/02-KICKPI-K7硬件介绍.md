@@ -103,7 +103,7 @@ Linux/sdk/ - Linux源码，可编译主板Debian12以及Ubuntu2404 镜像
 
 烧录调试相关工具，如烧录软件、ADB软件等。
 
-6-Docment文档
+6-Docment文档：
 
 用户指导、开发相关资料文档。
 
