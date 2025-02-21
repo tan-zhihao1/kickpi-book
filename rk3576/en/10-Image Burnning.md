@@ -46,21 +46,16 @@ Windows Burning Tool，path in the cloud disk:
 
 3. Open the Device Manager on the computer.
 
-4. If the USB device can be seen (), it means the USB driver is installed successfully.
-
-![image-20241025101105194](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101105194.png)
+4. If the USB device can be seen (such as Class for rockusb devices), it means the USB driver is installed successfully.
 
 
 
+**Non - recognition Issue**
 
+1. Confirm that the motherboard is powered on.
 
-**不识别问题**
-
-1. 确认主板已经上电
-
-2. 打开DriverInstall.exe ，尝试驱动卸载，再进行驱动安装
-
-3. 反馈咨询客服
+2. Open DriverInstall.exe, try to uninstall the driver, and then reinstall it.
+3. Contact the customer service for feedback and consultation.
 
 
 
