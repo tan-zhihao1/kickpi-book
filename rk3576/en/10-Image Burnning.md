@@ -4,11 +4,11 @@
 
 ## Instructions
 
-sdk - refers to the source code. For the specific name, please refer to the SDK Source Code Compilation.
+SDK - refers to the source code. For the specific name, please refer to the SDK Source Code Compilation.
 
 
 
-## 固件烧录
+## Firmware Burning
 
 ### AndroidTool工具路径
 
