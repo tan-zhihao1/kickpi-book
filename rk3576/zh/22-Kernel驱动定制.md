@@ -141,6 +141,27 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtsi
 
 > 根据需要选择对应屏幕进行配置，重新编译即可
 
+* dts 打开的节点
+
+```
+&pwm2_8ch_6 {
+	pinctrl-0 = <&pwm2m2_ch6>;
+	status = "okay";
+};
+
+&pwm2_8ch_7 {
+	pinctrl-0 = <&pwm2m2_ch7>;
+	status = "okay";
+};
+
+&pwm0_2ch_1 {
+	pinctrl-0 = <&pwm0m0_ch1>;
+	status = "okay";
+};
+```
+
+* 确认 pwmchip 对应的 pwm
+
 
 
 ### PWM
