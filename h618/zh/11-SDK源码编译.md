@@ -292,7 +292,7 @@ $ ./build.sh
 $ ./build.sh auto_burn=true // 编译固件制作的SD卡为烧录卡
 ```
 
-> 烧录卡想要取消自动烧录 可以通过下面命令控制
+> 烧录卡想要取消自动烧录 可以通过板子SD烧录卡启动后输入系统下面命令控制
 >
 > systemctl disable kickpi.service //禁用自动烧录服务
 >
