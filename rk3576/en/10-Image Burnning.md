@@ -31,13 +31,13 @@ Windows Burning Tool，path in the cloud disk:
 5-DevelopmentTool/USB Driver/DriverAssitant_v5.13.zip
 ```
 
-1. 将 DriverAssitant_v5.13.zip 解压，打开解压后的文件夹
+1. Unzip DriverAssitant_v5.13.zip and open the unzipped folder.
 
-2. 找到 DriverInstall.exe ，双击运行
+2. Find DriverInstall.exe and double - click to run it.
 
 ![image-20241025101533688](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101533688.png)
 
-3. 点击驱动安装，提示安装成功
+3. Click "Install Driver" and a prompt indicating successful installation will appear.
 
 ![image-20241025101606583](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101606583.png)
 
