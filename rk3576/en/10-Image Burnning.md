@@ -59,9 +59,9 @@ Windows Burning Tool，path in the cloud disk:
 
 
 
-### 使用烧录工具
+### Using the Burning Tool
 
-调试烧录工具
+Burning Tool path
 
 ```
 5-DevelopmentTool/USB ImageBurnTool 镜像烧录工具/RKDevTool_v3.30_for_window.zip
