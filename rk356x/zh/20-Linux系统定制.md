@@ -17,6 +17,12 @@ $ vim /etc/init.d/kickpi.sh
 + source /usr/bin/test_boot.sh
 ```
 
+给脚本赋予运行权限
+
+```
+$ chmod +x /etc/init.d/kickpi.sh
+```
+
 > 将开机启动程序命令添加到kickpi.sh脚本中，可实现开机自启动。
 
 
