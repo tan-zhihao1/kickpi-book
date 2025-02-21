@@ -65,25 +65,25 @@ OneDrive Cloud Drive Link：
 * Directory Structure
 
 ```
-├── 1-SDK Source 软件源码
+├── 1-SDK Source 
 │   ├── rk356x-android13
 │   └── rk356x-linux
 │       ├── buildroot-dl-20230607.tar.gz
 │       ├── linaro-rootfs-20230524.tar.gz
 │       ├── rk356x-linux-20230524.tar.gz
 │       └── ubuntu-rootfs-20230523.tar.gz
-├── 2-System Image 系统镜像
+├── 2-System Image 
 │   └── RK3566-TX66
 │       ├── Android11-TV
 │       ├── Android13
 │       ├── Debian11
 │       └── Ubuntu2004
-├── 3-Hardware Data 硬件资料
-└── 4-Development Tools 开发工具
+├── 3-Hardware Data 
+└── 4-Development Tools 
     ├── ADB Tool
-    ├── UART Debug Tool 串口调试工具
-    ├── USB Driver USB驱动
-    └── USB Image Burn Tool 镜像烧录工具
+    ├── UART Debug Tool 
+    ├── USB Driver USB
+    └── USB Image Burn Tool 
 ```
 
 
