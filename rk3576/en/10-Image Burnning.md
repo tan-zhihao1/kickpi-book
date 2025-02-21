@@ -91,15 +91,15 @@ For `LOADER Mode`, press the RECOVERY button and power on (or press the reset bu
 
 
 
-## 工厂烧录
+## Factory Burning
 
 ```
-5-DevelopmentTool开发工具/FactoryTool 工厂镜像烧录工具/FactoryTool_v1.89.zip
+5-DevelopmentTool开发工具/FactoryTool/FactoryTool_v1.89.zip
 ```
-打开软件
+Open the software.
 
 ![image-20250109172029374](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250109172029374.png)
 
-选择固件，进行烧录，接入主板后，使主板进入 MASKROM / LOADER 模式
+Select the firmware for burning. After connecting the motherboard, put the motherboard into MASKROM / LOADER mode.
 
 ![image-20250109172203575](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250109172203575.png)
