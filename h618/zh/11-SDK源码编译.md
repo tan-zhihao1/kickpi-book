@@ -297,13 +297,13 @@ $ ./build.sh auto_burn=true // 编译固件制作的SD卡为烧录卡
 > 禁用自动烧录服务
 
 ```
-systemctl disable kickpi.service 
+$ sudo systemctl disable kickpi.service 
 ```
 
 > 启动自动烧录服务（烧录卡默认启动）
 
 ```
-systemctl enable kickpi.service 
+$ sudo systemctl enable kickpi.service 
 ```
 
 ##### 编译详细步骤
