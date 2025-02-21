@@ -75,9 +75,8 @@ Unzip the RKDevTool_v3.30_for_window.zip compressed file, find RKDevTool.exe und
 
 LOADER / MASKROM Mode
 
-1. `LOADER模式`按下RECOVERY按键，上电 （或者按复位进行复位）
-
-`MASKROM模式`按下板子背后的MASKROM按键，上电 （或者按复位进行复位）
+1. 
+`LOADER模式`按下RECOVERY按键，上电 （或者按复位进行复位）; `MASKROM模式`按下板子背后的MASKROM按键，上电 （或者按复位进行复位）
 
 2. 瑞芯微开发工具上能够识别到LOADER设备或MASKROM设备
 
