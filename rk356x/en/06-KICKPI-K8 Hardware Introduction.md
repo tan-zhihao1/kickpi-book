@@ -10,7 +10,7 @@
 
 ## 2. Development Board Information
 
-![K8_fun_v2](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K8_fun_v2.jpg)
+![image-20250222170435757](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170435757.png)
 
 
 
