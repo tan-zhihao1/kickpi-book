@@ -10,7 +10,7 @@
 
 ## 2. 开发板信息
 
-![image-20240420175652701](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420175652701.png)
+![image-20250222171153693](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222171153693.png)
 
 
 
