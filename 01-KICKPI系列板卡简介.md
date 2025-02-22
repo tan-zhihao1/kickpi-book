@@ -57,13 +57,3 @@
 
 
 
-### 客服QQ号
-
-![image-20231018142716705](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231018142716705.png)
-
-
-
-### 技术交流QQ群
-
-![image-20231018142017914](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231018142017914.png)
-
