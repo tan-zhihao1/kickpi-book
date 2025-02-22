@@ -161,7 +161,7 @@ configuration Kernel defconfig
 After complete compilation, the following file is generated:
 
 ```
-(SDK_PATH)/rockdev/Image-rk3576_u/
+(SDK PATH)/rockdev/Image-rk3576_u/
 rockdev/Image-rk3576_u/
 ├── baseparameter.img
 ├── boot-debug.img
@@ -182,15 +182,15 @@ rockdev/Image-rk3576_u/
 └── vbmeta.img
 ```
 
-烧写的镜像为 `(源码)/rockdev/Image-rk3576_u/update-rk3576-kickpi-k7-android-*.img`
+The printed image is' (SDK PATH)/rockdev/Image-rk3576_u/update-rk3576-kickpi-k7-android-*
 
-烧录详见 - `10-系统镜像烧录`
+For details of burning, see - '10-System image burning'.
 
 
 
-**userdebug 和 user 编译**
+** userdebug and user compile **
 
-默认为userdebug模式编译，如果需要user版本镜像则需要修改对应编译mk
+The default is to compile in userdebug mode. If you need a user version image, you need to modify the corresponding compilation mk.
 
 ```diff
 vim device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
@@ -200,27 +200,28 @@ vim device/rockchip/rk3576/BoardConfig-rk3576-kickpi-k7.mk
 
 
 
-**android 环境配置**
+** Android environment configuration **
 
-配置环境，可以使用 mm / get_build_var 等安卓环境下命令
+Configure the environment, you can use mm/get_build_var and other Android environment commands
 
 ```shell
-// 配置环境
 source build/envsetup.sh
 lunch rk3576_u-userdebug
+```
+> For example
 
-// 比如
+```
 $ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
 true
 ```
 
-dts 路径
+dts path
 
 ```
 kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 ```
 
-defconfig 路径
+defconfig path
 
 ```
 kernel-6.1/arch/arm64/configs/rockchip_defconfig
