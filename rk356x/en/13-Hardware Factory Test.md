@@ -1,4 +1,4 @@
-# 05-Hardware Factory Test
+# 13-Hardware Factory Test
 
 Hardware Factory Testing is a rapid hardware functionality test based on the DeviceTest application. It is suitable for test engineers or factory production line testing, providing simple operation and convenient testing.
 
