@@ -247,22 +247,21 @@ recompile all
 
 
 
-**编译空间不足**
+** Insufficient compilation space **
 
-目前默认线程 -j32，通过降低线程数进行编译
+Currently the default thread -j32, compile by reducing the number of threads
 
-方式一： 
+Method one:
 
-修改编译方式，带 -J 线程
-
+Modify the compilation method with -J thread
+For example, modify the thread to 16, -J16.
 ```shell
-如： 修改线程为16，-J16
 ./build.sh -AUCKu -J16
 ```
 
-方式二：
+Option two:
 
-修改默认线程
+Modify the default thread
 
 ```diff
 $ vim device/rockchip/common/build/rockchip/build.sh
@@ -272,24 +271,24 @@ $ vim device/rockchip/common/build/rockchip/build.sh
 
 
 
-## Linux 编译
+## Compile Linux
 
-### SDK介绍
+### SDK Introduction
 
-内核版本：6.1
+Kernel version: 6.1
 
-Debian系统版本：12
+Debian system version: 12
 
-Ubuntu系统版本：2404
+Ubuntu system version: 2404
 
 
 
-### 获取SDK源码
+Get the SDK source code
 
-* 网盘目录
+* Network disk directory
 
 ```
-├── 1-SDK软件源码
+├── 1-SDK
 │   └── Linux
 │       ├── rootfs
 │       │   ├── linaro-rootfs-*.img
@@ -299,21 +298,21 @@ Ubuntu系统版本：2404
 │           └── rk3576-linux-*.tar.gz
 ```
 
->  *这里一般指代日期，下面同，实际名称以网盘为准
+> * The date is generally referred to here, and the same is true below. The actual name is subject to the online disk.
 
-* 拷贝源码压缩包到编译主机目录
+Copy the source archive to the build host directory
 
-  若编译主机为虚拟机，不可放在共享目录下编译
+If the compilation host is a virtual machine, it cannot be compiled in a shared directory
 
-* MD5校验文件完整性
+* MD5 verifies file integrity
 
 ```
 md5sum rk3576-linux-*.tar.gz
 ```
 
-> 判断结果和 rk3576-linux-*.md5sum 内容一致，则文件下载完整
+> If the judgment result is consistent with the content of rk3576-linux- * .md5sum, the file will be downloaded completely.
 
-* 解压源码压缩包
+* Unzip the source code compressed package
 
 ```
 $ mkdir rk3576-linux
@@ -324,11 +323,11 @@ $ git reset --hard
 
 
 
-### 配置环境
+### Configure the environment
 
-* 前提：确保编译硬件要求，以及[编译环境搭建](#BuildEnv-K7)成功
+Prerequisites: Ensure the compilation hardware requirements and the success of the build environment (#BuildEnv-K7)
 
-单独编译或全部编译前先配置环境
+Configure the environment before compiling alone or all
 
 ```
 $ ./build.sh lunch
@@ -344,19 +343,19 @@ Pick a defconfig:
 Which would you like? [1]:
 ```
 
-> 根据需要选择对应的主板和系统
+> Select the corresponding main board and system as needed
 >
-> deiabn 默认使用 debian/linaro-rootfs.img 镜像，若不存在则会进行编译制作生成
+> deiabn uses the debian/linaro-rootfs.img image by default. If it does not exist, it will be compiled and generated.
 >
-> ubuntu 默认使用 ubuntu/ubuntu2204-rootfs.img 镜像，若不存在则会进行编译制作生成
+> Ubuntu uses the ubuntu/ubuntu2204-rootfs.img image by default. If it does not exist, it will be compiled and generated.
 >
-> 若需要快速编译debian，可使用网盘中的 linaro-rootfs-*.img，重命名存放到 debian/linaro-rootfs.img
+If you need to quickly compile debian, you can use linaro-rootfs- * .img in the network disk, rename and store it in debian/linaro-rootfs.img.
 >
-> 若需要快速编译ubuntu，可使用网盘中的 ubuntu2404-rootfs-*.img，重命名存放到 ubuntu/ubuntu-rootfs.img
+> If you need to quickly compile ubuntu, you can use ubuntu2404-rootfs- * .img in the network disk, rename and store it to ubuntu/ubuntu-rootfs.img
 
 
 
-### 全部编译
+### Compile all
 
 ```
 $ ./build.sh 
@@ -364,9 +363,9 @@ $ ./build.sh
 
 
 
-### 单独编译
+### Compile separately
 
-**配置 Kernel defconfig**
+**configuration Kernel defconfig**
 
 ```
 ./build.sh kernel-config
@@ -374,13 +373,13 @@ $ ./build.sh
 
 
 
-**kernel 编译**
+**kernel compilation **
 
 ```
 ./build.sh kernel
 ```
 
-或
+or
 
 ```
 export CROSS_COMPILE=../prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-
@@ -390,48 +389,49 @@ make ARCH=arm64 rk3576-kickpi-k7-linux.img -j24
 
 
 
-**Debian 编译**
+**Debian compilation **
 
-配置环境
+configuration environment
 
 ```
 sudo dpkg -i debian/ubuntu-build-service/packages/*
 sudo apt-get install -f
 ```
 
-编译
+compile
 
 ```
 ./build.sh debian
-或
-参考 debian/readme.md
+
 ```
 
+> compile debian/readme.md
 
 
-**Ubuntu 编译**
 
-配置环境
+**Ubuntu compilation **
+
+configuration environment
 
 ```
 sudo apt-get install binfmt-support qemu-user-static --reinstall
 ```
 
-编译
+compile
 
 ```
 ./build.sh ubuntu
-或
-参考 ubuntu/readme.md
 ```
+reference ubuntu/readme.md
 
 
 
-### 其他说明
 
-**固件说明**
+### Other instructions
 
-完整编译后会生成如下文件：
+** Firmware Description **
+
+After complete compilation, the following file is generated:
 
 ```
 rockdev
@@ -448,9 +448,9 @@ rockdev
 └── userdata.img 
 ```
 
-烧写的镜像为 `(源码)/rockdev/update-rk3576-kickpi-k7-linux-*-*.img `
+The printed image is' (SDK path)/rockdev/update-rk3576-kickpi-k7-linux-*-* .img'
 
-烧录详见 - `10-系统镜像烧录`
+For details of burning, see - '10-System image burning'.
 
 
 
