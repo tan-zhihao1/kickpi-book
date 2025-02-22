@@ -1,6 +1,4 @@
-# 24-Linux Docker
-
-
+# 32-Linux Docker
 
 
 
