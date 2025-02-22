@@ -162,9 +162,7 @@ Mobaxterm software address download: https://mobaxterm.mobatek.net/
 4. Select the serial port baud rate 1500000
 5. Start the session window
 
-
-
-![image-20230519113450846](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230519113450846.png)
+![image-20250222170801465](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170801465.png)
 
 
 
