@@ -18,19 +18,19 @@ The list of pins is marked with the default configuration of each pin (marked wi
 
 ### K1 pin list
 
-![image-20240420181207097](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420181207097.png)
+![image-20250222170528749](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170528749.png)
 
 
 
 ### K1B pin list 
 
-![image-20240914152349051](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240914152349051.png)
+![image-20250222170554561](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170554561.png)
 
 
 
 ### K3 pin list 
 
-![K3_产品详情页_10](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K3_产品详情页_10.jpg)
+![image-20250222170607362](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170607362.png)
 
 ### K8 pin list 
 
