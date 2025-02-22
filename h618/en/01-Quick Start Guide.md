@@ -50,15 +50,14 @@ The content of the resources in both cloud drives is the same, so you can choose
 │           └── h618-ubuntu2204-k2b-20240319.tar.gz
 ├── 3-SoftwareData
 ├── 4-HardwareData
-│   └── H618-K2B原理图.pdf
 └── 5-DevelopmentTools
     ├── ADB Tool
-    ├── ADB投屏
+    ├── ADB Screen Cast
     ├── FactoryTool 
     ├── SD卡烧录工具
     ├── SD启动卡工具
     ├── UART DebugTool
-    └── USB ImageBurnTool
+    └── USB ImageBurnTool 镜像烧录工具
 ```
 
 
