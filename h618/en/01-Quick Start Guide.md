@@ -37,10 +37,10 @@ The content of the resources in both cloud drives is the same, so you can choose
 - Explanation of Cloud Drive Directories
 
 ```
-├── 1-SDK软件源码
+├── 1-SDK
 │   └── Android12.0
 │       └── h618-android12.0-20240320.tar.gz
-├── 2-Image镜像
+├── 2-Image
 │   └── K2B
 │       ├── Android12.0 Tablet
 │       │   └── h618_android12_p2_uart0-20240202.img
@@ -48,17 +48,17 @@ The content of the resources in both cloud drives is the same, so you can choose
 │       │   └── h618_android12_p2_uart0-20240302.img
 │       └── Ubuntu2204
 │           └── h618-ubuntu2204-k2b-20240319.tar.gz
-├── 3-SoftwareData软件资料
-├── 4-HardwareData硬件资料
+├── 3-SoftwareData
+├── 4-HardwareData
 │   └── H618-K2B原理图.pdf
-└── 5-DevelopmentTools开发工具
+└── 5-DevelopmentTools
     ├── ADB Tool
     ├── ADB投屏
-    ├── FactoryTool 工厂镜像烧录工具
+    ├── FactoryTool 
     ├── SD卡烧录工具
     ├── SD启动卡工具
-    ├── UART DebugTool 串口调试工具
-    └── USB ImageBurnTool 镜像烧录工具
+    ├── UART DebugTool
+    └── USB ImageBurnTool
 ```
 
 
