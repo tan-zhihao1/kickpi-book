@@ -2,20 +2,20 @@
 
 
 
-## 编译环境搭建<a id="BuildEnv-K7"></a>
+## build environment<a id="BuildEnv-K7"></a>
 
-此编译环境配置 适用 Android/Linux SDK
+This build environment configuration for Android/Linux SDK
 
-### 硬件要求
+### Hardware requirements
 
-| 系统环境  | 要求              |
+| System Environment | Requirements |
 | --------- | ----------------- |
-| 系统版本  | Ubuntu22.04，64位 |
-| CPU核心数 | 4核以上           |
-| 内存容量  | 16GB以上          |
-| 硬盘容量  | 200GB以上         |
+| System Version | Ubuntu 22.04, 64-bit |
+| Number of CPU cores | More than 4 cores |
+| Memory capacity | 16GB or more |
+| Hard disk capacity | 200GB or more |
 
-### 安装依赖软件包
+### Install dependent packages
 
 ```
 sudo apt update
@@ -35,48 +35,48 @@ sudo apt install xsltproc yasm zip zlib1g-dev pip
 sudo pip install pyelftools
 ```
 
-> 软件包名称 会根据UBUNTU版本更新而变化
+The package name will change according to the UBUNTU version update
 >
-> 不同UBUNTU版本安装失败，可网络搜索对应的解决方法
+> The installation of different UBUNTU versions failed, you can search for the corresponding solution on the network
 
 
 
-## Android 编译
+## Android Compiler
 
-### SDK介绍
+### SDK Introduction
 
-内核版本：6.1
+Kernel version: 6.1
 
-Android系统版本：14.0
+Android system version: 14.0
 
 
 
-### 获取SDK源码
+Get the SDK source code
 
-* 网盘目录
+* Network disk directory
 
 ```
-1-SDK软件源码
+1-SDK
 ├── Android14
     ├── rk3576-android14.0-*.md5sum
     └── rk3576-android14.0-*.tar.gz
 ```
 
->  *这里一般指代日期，下面同，实际名称以网盘为准
+> * The date is generally referred to here, and the same is true below. The actual name is subject to the online disk.
 
-* 拷贝源码压缩包到编译主机目录
+Copy the source archive to the build host directory
 
-  若编译主机为虚拟机，不可放在共享目录下编译
+If the compilation host is a virtual machine, it cannot be compiled in a shared directory
 
-* MD5校验文件完整性
+* MD5 verifies file integrity
 
 ```
 md5sum rk3576-android14.0-*.tar.gz
 ```
 
-> 判断结果和 rk3576-android14.0-*.md5sum 内容一致，则文件下载完整
+> The judgment result is consistent with the content of rk3576-android14.0- * .md5sum, then the file is downloaded completely
 
-* 解压源码压缩包
+* Unzip the source code compressed package
 
 ```
 $ mkdir rk3576-android
@@ -87,11 +87,11 @@ $ git reset --hard
 
 
 
-### 配置环境
+### Configure the environment
 
-* 前提：确保编译硬件要求，以及[编译环境搭建](#BuildEnv-K7)成功
+Prerequisites: Ensure the compilation hardware requirements and the success of the build environment (#BuildEnv-K7)
 
-单独编译或全部编译前先配置环境
+Configure the environment before compiling alone or all
 
 ```bash
 $ ./build.sh lunch
