@@ -61,24 +61,3 @@ The content of the resources in both cloud drives is the same, so you can choose
 ```
 
 
-
-## 5. Technical Exchange/After-sales Support
-
-### KICKPI Official Store Link
-
-[淘宝店铺链接](https://shop183733283.taobao.com/?spm=a230r.7195193.1997079397.2.10f76f498zHqMG)
-
-[阿里巴巴店铺链接](https://shop122g2107958t7.1688.com/page/index.html?spm=0.0.wp_pc_common_header_companyName_undefined.0)
-
-
-
-### Customer Service QQ Number
-
-![image-20231018142716705](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231018142716705.png)
-
-
-
-### Technical Exchange QQ Group
-
-![image-20231018142017914](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231018142017914.png)
-
