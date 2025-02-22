@@ -208,7 +208,7 @@ The ubuntu-server version system has SSH installed by default.
 Open Windows cmd
 
 ```
-ssh kickpi@<IP>   //密码 kickpi
+ssh kickpi@<IP>   //password kickpi
 ```
 
 
