@@ -10,7 +10,7 @@
 
 ## 2. 开发板信息
 
-![K7_fun_label_map](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_fun_label_map.jpg)
+![image-20250222172318324](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222172318324.png)
 
 
 
