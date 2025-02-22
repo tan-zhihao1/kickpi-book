@@ -114,39 +114,39 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 
 
 
-### 全部编译
+### Compile all
 
 ```
 ./build.sh -AUCKu
 ```
 
->镜像 rockdev/Image-rk3576_u/update-rk3576-kickpi-k7-android-*.img
+> Mirror rockdev/Image- rk3576_u/update-rk3576-kickpi-k7-android-*
 
 
 
-### 单独编译
+### Compile separately
 
-* 以下命令需先进行配置环境一次
+* The following commands need to configure the environment once
 
-单编Uboot
+Single series Uboot
 
 ```
 ./build.sh -Uu
 ```
 
-单编安卓
+Single series Android
 
 ```
 ./build.sh -Au
 ```
 
-单编kernel
+monolithic kernel
 
 ```
 ./build.sh -CKu
 ```
 
-配置 Kernel defconfig
+configuration Kernel defconfig
 
 ```
 ./build.sh -M
@@ -154,14 +154,14 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 
 
 
-### 其他说明
+### Other instructions
 
-**固件说明**
+** Firmware Description **
 
-完整编译后会生成如下文件：
+After complete compilation, the following file is generated:
 
 ```
-(源码)/rockdev/Image-rk3576_u/
+(SDK_PATH)/rockdev/Image-rk3576_u/
 rockdev/Image-rk3576_u/
 ├── baseparameter.img
 ├── boot-debug.img
