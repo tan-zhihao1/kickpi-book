@@ -10,7 +10,7 @@
 
 ## 2. Development Board Information
 
-![image-20240420175652701](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420175652701.png)
+![image-20250222170351057](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170351057.png)
 
 
 
