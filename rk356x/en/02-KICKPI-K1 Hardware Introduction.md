@@ -16,7 +16,7 @@
 
 ## 3. Accessories List
 
-
+![K1 配件图英文（临时）](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K1 配件图英文（临时）.png)
 
 ## 4. Network disk data
 
