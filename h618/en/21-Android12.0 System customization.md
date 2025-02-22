@@ -286,9 +286,7 @@ To make the APP boot as a Launcher, you need to add two categories to AndroidMan
 </activity>
 ```
 
-H618 As a Launcher, there will be APP problems due to permission restrictions. You need to add permissions. Please refer to [APPspecial permission issue](## APP特殊权限问题)
-
-
+H618 As a Launcher, there will be APP problems due to permission restrictions. You need to add permissions. 
 
 There is no missing desktop attribute problem, you need to add the above two categories.
 
