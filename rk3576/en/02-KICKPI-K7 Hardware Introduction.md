@@ -65,7 +65,7 @@ The cloud disk link can be obtained by consulting the customer service through t
 │   │   └── DriverAssitant_v5.13.zip
 │   └── USB ImageBurnTool
 │       └── RKDevTool_v3.30_for_window.zip
-└── 6-Docment文档
+└── 6-Docment
     └── readme.txt
 ```
 
