@@ -54,10 +54,10 @@ The content of the resources in both cloud drives is the same, so you can choose
     ├── ADB Tool
     ├── ADB Screen Cast
     ├── FactoryTool 
-    ├── SD卡烧录工具
-    ├── SD启动卡工具
+    ├── SD card burning tool
+    ├── SD Boot Card Tool
     ├── UART DebugTool
-    └── USB ImageBurnTool 镜像烧录工具
+    └── USB ImageBurnTool
 ```
 
 
