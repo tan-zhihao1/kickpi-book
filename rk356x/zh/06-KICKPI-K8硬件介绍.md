@@ -10,7 +10,7 @@
 
 ## 2. 开发板信息
 
-![K8_fun_v2](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K8_fun_v2.jpg)
+![image-20250222171232295](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222171232295.png)
 
 
 
