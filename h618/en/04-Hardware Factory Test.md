@@ -66,7 +66,7 @@ Download Mobaxterm software from: https://mobaxterm.mobatek.net/
 4. Select the serial port baud rate as 115200.
 5. Start the session window.
 
-![image-20240319182217644](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240319182217644.png![1731493336424](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/1731493336424.png)
+![1731493336424](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/1731493336424.png)
 
 ## 2. LED
 
