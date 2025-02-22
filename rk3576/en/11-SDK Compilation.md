@@ -229,13 +229,13 @@ kernel-6.1/arch/arm64/configs/rockchip_defconfig
 
 
 
-### 常见问题
+### FAQ
 
-**由于代码位置移动，路径错误导致 android 编译错误**
+**Android compilation error due to code location move, path error **
 
 ![image-20241125155203743](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241125155203743.png)
 
-需要清除数据
+Data needs to be cleared
 
 ```shell
 source build/envsetup.sh
@@ -243,7 +243,7 @@ lunch rk3576_u-userdebug
 make clean -j32
 ```
 
-重新全部编译
+recompile all
 
 
 
@@ -454,13 +454,13 @@ rockdev
 
 
 
-dts 路径
+dts path
 
 ```
 kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-linux.dts
 ```
 
-defconfig 路径
+defconfig path
 
 ```
 kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
@@ -468,26 +468,26 @@ kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 
 
 
-## 文档参考
+## Documentation reference
 
-源码下有 RK 官方的指导文件
-
-```
-Android:
-	（Android源码）/RKDocs/
-Linux:
-	（Linux源码）/docs/
-```
-
-
-
-优先推荐查看，仔细的了解 RK 相关 SDK 指导说明
+There are RK official guidance documents under the source code.
 
 ```
 Android:
-	（Android源码）/RKDocs/android/RK3576_Developer_Guide_Android14_SDK_CN.pdf
+	（Android source code）/RKDocs/
 Linux:
-	（Linux源码）/docs/readme_cn.md
-	（Linux源码）/docs/cn/Rockchip_Developer_Guide_Linux_Software_CN.pdf
+	（Linux source code）/docs/
+```
+
+
+
+Priority is given to viewing and carefully understanding the RK-related SDK guidance instructions
+
+```
+Android:
+	（Android source code）/RKDocs/android/RK3576_Developer_Guide_Android14_SDK_CN.pdf
+Linux:
+	（Linux source code）/docs/readme_cn.md
+	（Linux source code）/docs/cn/Rockchip_Developer_Guide_Linux_Software_CN.pdf
 ```
 
