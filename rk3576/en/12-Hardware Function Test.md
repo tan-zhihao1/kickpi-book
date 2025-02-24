@@ -48,13 +48,14 @@ fan       GPIO3_B0  GPIO3_D5  mmc2::      SDMMC0_PWREN
 GPIO0_A5  GPIO3_D4  GPIO4_D1  PCIE_PWREN  work
 ```
 
-**控制GPIO输出电平状态**
+**Control GPIO output level status**
 
+GPIO3_D4 输出高电平
 ```
-// GPIO3_D4 输出高电平
 $ echo 1 >  /sys/class/leds/GPIO3_D4/brightness
-
-// GPIO3_D4 输出低电平
+```
+GPIO3_D4 输出低电平
+```
 $ echo 0 >  /sys/class/leds/GPIO3_D4/brightness
 ```
 
