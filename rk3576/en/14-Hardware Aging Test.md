@@ -54,8 +54,6 @@ VPU老化测试项 需要拷贝 视频文件 到 系统 或SD卡的指定目录�
 
 
 
-![image-20231021140920296](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231021140920296.png)
-
 
 
 
