@@ -1,4 +1,4 @@
-# 12-硬件功能使用说明
+# 12-Instructions for using hardware functions
 
 ## 拓展引脚<a id="ExpansionPin-K7"></a>
 
@@ -764,5 +764,4 @@ $ source /rockchip-test/gstreamer/gstreamer_mpp_fix.sh
 > 此命令需要联网，保证'apt update'成功
 >
 > 配置后，默认 gstreamer 可调用硬解码
-
 
