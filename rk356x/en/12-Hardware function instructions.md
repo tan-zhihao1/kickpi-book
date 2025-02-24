@@ -503,7 +503,7 @@ Three-way LCD interface supports three-screen display/touch
 
 ### MIPI screen hardware wiring
 
-** Cable requirements **
+**Cable requirements **
 
 The number of pins is 30Pin, and the direction of the cable is the same direction.
 
@@ -511,7 +511,7 @@ The number of pins is 30Pin, and the direction of the cable is the same directio
 
 
 
-** Wiring example diagram **
+**Wiring example diagram**
 
 ![image-20231215152820685](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231215152820685.png)
 
@@ -523,7 +523,7 @@ The number of pins is 30Pin, and the direction of the cable is the same directio
 
 ### Single LVDS screen hardware wiring
 
-** Cable requirements **
+**Cable requirements**
 
 The number of pins is 30Pin, and the direction of the cable is the same direction.
 
@@ -531,7 +531,7 @@ The number of pins is 30Pin, and the direction of the cable is the same directio
 
 
 
-** Wiring example diagram **
+**Wiring example diagram**
 
 ![image-20231215152838710](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231215152838710.png)
 
@@ -549,7 +549,7 @@ KICKPI K3 supports one Dual LVDS screen, and uses CS5518 chip to realize MIPI to
 
 
 
-** K3 Dual LVDS Interface Description **
+**K3 Dual LVDS Interface Description **
 
 ![image-20240517143001898](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240517143001898.png) 
 
@@ -559,7 +559,7 @@ KICKPI K3 supports one Dual LVDS screen, and uses CS5518 chip to realize MIPI to
 
 ### eDP screen hardware wiring
 
-** Cable requirements **
+**Cable requirements **
 
 The number of pins is 30Pin, and the direction of the cable is the same direction.
 
@@ -567,7 +567,7 @@ The number of pins is 30Pin, and the direction of the cable is the same directio
 
 
 
-** Wiring example diagram **
+**Wiring example diagram **
 
 ![image-20231021171209133](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231021171209133.png)
 
@@ -595,7 +595,7 @@ The K3 development board supports dual MIPI CSI 4Lane camera interface, which ca
 
 ![image-20231215153036711](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231215153036711.png)
 
-** Cable requirements **
+**Cable requirements **
 
 The number of pins is 40Pin, and the direction of the cable is reversed.
 
@@ -654,7 +654,7 @@ RGB888、YUV420、YUV422、YUV444
 
 ## 16. GPU
 
-** GPU Usage Rate **
+**GPU Usage Rate **
 
 ```
 $ cat /sys/devices/platform/*gpu/utilisation
@@ -683,7 +683,7 @@ $ source /rockchip-test/gpu/test_fullscreen_glmark2.sh
 
 
 
-** K8 test results **
+**K8 test results **
 
 ```
 $ source /rockchip-test/gpu/test_fullscreen_glmark2.sh
@@ -696,13 +696,13 @@ $ source /rockchip-test/gpu/test_fullscreen_glmark2.sh
 
 
 
-##17. NPU
+## 17. NPU
 
 RK3568 is equipped with 0.8T computing power NPU unit
 
 
 
-** Check NPU usage **
+**Check NPU usage **
 
 ```
 $ watch cat /sys/kernel/debug/rknpu/load
@@ -755,7 +755,7 @@ The following "0.057037-155", "0.003881-205", "0.003119-284", and "0.000172-285"
 
 
 
-** K8 NPU stress testing results **
+**K8 NPU stress testing results **
 
 Access HDMI_OUT0
 
@@ -847,13 +847,13 @@ $ mpi_dec_test -t 16777220 -i test.h265 -n 100
 
 
 
-** K8 codec test results **
+**K8 codec test results **
 
 ```
-编码 H.264 4096x2160 100帧测试 fps 44.65
-编码 H.265 4096x2160 100帧测试 fps 45.53
-解码 H.264 4096x2160 100帧测试 fps 206.22
-解码 H.265 4096x2160 100帧测试 fps 386.86
+Encoding H.264 4096x2160 100 frames test fps 44.65
+Encoding H.265 4096x2160 100 frames test fps 45.53
+Decode H.264 4096x2160 100 frames test fps 206.22
+Decode H.265 4096x2160 100 frames test fps 386.86
 ```
 
 
@@ -938,7 +938,7 @@ Currently compatible with Quecte EC20, Quecte EC200M-CN model modules
 
 ### Linux play test
 
-** alsa tool **
+**alsa tool **
 
 Linux system can generally control the sound card configuration and audio playback through the alsa tool. At present, Linux system software has built-in related tools.
 
@@ -952,7 +952,7 @@ $ sudo apt install alsa-utils
 
 
 
-** Tool Instructions **
+**Tool Instructions **
 
 ```shell
 $ amixer -h
@@ -984,7 +984,7 @@ Usage: arecord [OPTION]... [FILE]...
 
 
 
-** List to view sound cards **
+**List to view sound cards **
 
 ```
 $ cat /proc/asound/cards
@@ -1002,7 +1002,7 @@ $ cat /proc/asound/cards
 
 
 
-** View sound card control configuration list **
+**View sound card control configuration list **
 
 ```shell
 $ amixer -c 1
@@ -1026,7 +1026,7 @@ numid=31,iface=MIXER,name='PCM Volume'
 
 
 
-** Get the specified configuration of the sound card **
+**Get the specified configuration of the sound card **
 
 ```
 $ amixer cget -c 1 name='Speaker Switch'
@@ -1037,7 +1037,7 @@ numid=39,iface=MIXER,name='Speaker Switch'
 
 
 
-** Set the specified configuration of the sound card **
+**Set the specified configuration of the sound card **
 
 ```
 $ amixer sget -c 1 numid=39,iface=MIXER,name='Speaker Switch' 1
@@ -1045,7 +1045,7 @@ $ amixer sget -c 1 numid=39,iface=MIXER,name='Speaker Switch' 1
 
 
 
-** Speaker playback test **
+**Speaker playback test **
 
 ```
 $ amixer cset -c 1 name='Speaker Switch' 1
@@ -1059,7 +1059,7 @@ $ aplay -D hw:1,0 1.wav
 
 
 
-** Headphone playback test **
+**Headphone playback test **
 
 ```
 $ amixer cset -c 1 name='Headphone Switch' 1
@@ -1075,7 +1075,7 @@ $ aplay -D hw:1,0 1.wav
 
 ### Linux recording test
 
-** mic recording test **
+**mic recording test **
 
 ```
 $ amixer cset -c 1 numid=25,iface=MIXER,name='Capture Digital Volume' 192 192 
@@ -1092,7 +1092,7 @@ $ arecord -D hw:1,0 a.wav -r 48000 -f S16_LE -d 5 -c 2
 
 
 
-** Headset MIC recording test **
+**Headset MIC recording test **
 
 ```
 $ amixer cset -c 1 numid=25,iface=MIXER,name='Capture Digital Volume' 192 192 
@@ -1119,7 +1119,7 @@ The chip's native CAN interface cannot be used directly, and an external level s
 
 
 
-** Query the current network device **
+**Query the current network device **
 
 ```
 $ ifconfig -a
@@ -1127,7 +1127,7 @@ $ ifconfig -a
 
 
 
-** CAN configuration **
+**CAN configuration **
 
 Disable CAN
 
@@ -1155,7 +1155,7 @@ $ ip link set can0 up
 
 
 
-** CAN FD send **
+**CAN FD send **
 
 Sent (standard frame, dataframe, ID: 123, date: DEADBEEF):
 
@@ -1171,7 +1171,7 @@ $ cansend can0 123#R
 
 
 
-** CAN receive **
+**CAN receive **
 
 Start printing and wait for receiving.
 
@@ -1181,7 +1181,7 @@ $ candump can0
 
 
 
-** Loop mode test **
+**Loop mode test **
 
 After starting can, enter the io command to start the loop auto-test (the base address is configured according to the can started by the actual dts)
 
@@ -1195,7 +1195,7 @@ In loop mode, candump can be received after cansend.
 
 
 
-** Example **
+**Example **
 
 - end point 1
 
@@ -1221,7 +1221,7 @@ root@linaro-alip:/# cansend can0 123#DEADBEEF
 
 ##27. SPI
 
-** Tool Location **
+**Tool Location **
 
 ```
 $ kernel/tools/spi/spidev_test.c
@@ -1229,7 +1229,7 @@ $ kernel/tools/spi/spidev_test.c
 
 
 
-** Compile **
+**Compile **
 
 ```
 $ make CROSS_COMPILE=~/path-to-toolchain/gcc-xxxxx-toolchain/bin/xxxx-linux-gnu-
@@ -1239,7 +1239,7 @@ $ make CROSS_COMPILE=~/path-to-toolchain/gcc-xxxxx-toolchain/bin/xxxx-linux-gnu-
 
 
 
-** Loop mode test **
+**Loop mode test **
 
 ```
 $ spidev_test -D /dev/spidev0.0 -v -l -p "hello"
