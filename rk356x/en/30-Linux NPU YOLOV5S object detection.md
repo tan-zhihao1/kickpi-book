@@ -195,8 +195,8 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 * Specify the cross-compilation toolchain path
 
 ```
-$ export TOOL_CHAIN=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
-$ export GCC_COMPILER=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu
+$ export TOOL_CHAIN=SDK_PATH/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
+$ export GCC_COMPILER=SDK_PATH/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu
 ```
 
 > Cross-compilation toolchain built-in SDK directory, the specific path can be modified by referring to the above command

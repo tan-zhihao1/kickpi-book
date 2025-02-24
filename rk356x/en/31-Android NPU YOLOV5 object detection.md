@@ -56,7 +56,7 @@ compile
 >
 > Everything you need to generate is in the install directory
 
-###2. Run the demo
+### 2. Run the demo
 
 Compress the install file
 
