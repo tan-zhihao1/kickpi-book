@@ -203,34 +203,32 @@ Linux system USB defaults to HOST mode, does not support OTG for the time being
 
 Android supports adb debugging (type-c interface to connect to the host)
 
-The main commands of adb are as follows:
+The main commands of * adb are as follows:
 
-  	$ adb devices
-  	- Description: To view the currently connected devices, the devices connected to the computer or the emulator will be listed and displayed
-  	- adb start-server
-  	- Description: Start adb
-  	
-  	$ adb kill-server
-  	- Description: Close adb
-  	
-  	$ adb shell
-  	- Description: This command will log into the shell of the device, followed by the command to run the device directly, which is equivalent to executing a remote command
-  	
-  	$ adb push
-  	- Description: This command can copy files from the computer to the development board
-  	-Example: adb push hello.c /tmp/This copies the hello.c file on the computer to the/tmp directory on the development board
-  	
-  	$ adb pull
-  	- Description: This command can copy the files on the development board to the computer
-  	- Example: adb pull /tmp/hello.c./Copy the file hello.c in the/tmp directory on the development board to the current directory
-  	
-  	$ adb version
-  	- Description: Check the version of adb
-  	
-  	$ adb help
-  	- Description: adb help, for more command details, please use the adb help command to view
+##### adb devices
+- Description: To view the currently connected devices, the devices connected to the computer or the emulator will be listed and displayed
+- adb start-server
+- Description: Start adb
 
+#### adb kill-server
+- Description: Close adb
 
+#### adb shell
+- Description: This command will log into the shell of the device, followed by the command to run the device directly, which is equivalent to executing a remote command
+
+#### adb push
+- Description: This command can copy files from the computer to the development board
+-Example: adb push hello.c /tmp/This copies the hello.c file on the computer to the/tmp directory on the development board
+
+#### adb pull
+- Description: This command can copy the files on the development board to the computer
+- Example: adb pull /tmp/hello.c./Copy the file hello.c in the/tmp directory on the development board to the current directory
+
+#### adb version
+- Description: Check the version of adb
+
+#### adb help
+- Description: adb help, for more command details, please use the adb help command to view
 
 
 ## 6. PWM
