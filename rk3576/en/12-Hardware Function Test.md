@@ -135,7 +135,7 @@ Test UART8
 
 USB 3.0 - Type A (1 - 3 ports)
 
-** USB mouse/keyboard test **
+### ** USB mouse/keyboard test **
 
 Support USB mouse recognition, normal use
 Support USB keyboard recognition, normal use
@@ -159,7 +159,7 @@ HDCP v2.3 and HDCP v1.4
 
 You can check the corresponding ADC location and channel number through  [Expansion Pin](#ExpansionPin-K7)
 
-** Read ADC value **
+### ** Read ADC value **
 
 ```
 $ cat /sys/bus/iio/devices/iio\:device0/in_voltage*_raw
@@ -185,28 +185,28 @@ Support SD memory card, onboard Micro SD Card interface
 
 ## IR
 
-支持红外遥控，目前已适配 KICKPI 遥控器
+Support infrared remote control, currently adapted to KICKPI remote control
 
 
 
-## 以太网
+## Ethernet
 
-支持两路千兆以太网
-
-
-
-## WIFI & BT
-
-板载8822CS模块
+Supports two Gigabit Ethernet channels
 
 
 
-## 4G / 5G模块
+## WIFI & BTS
 
-4G已适配EC20 / EC200模块
-5G已适配RG200U模块
+Onboard 8822CS module
 
-### **硬件接线**
+
+
+## 4G/5G module
+
+4G has been adapted to EC20/EC200 modules
+5G has been adapted to RG200U module
+
+### ** Hardware wiring **
 
 ![image-20250110152808407](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250110152808407.png)
 
@@ -214,9 +214,9 @@ Support SD memory card, onboard Micro SD Card interface
 
 ## Headphone
 
-支持3.5mm耳机接口音频输出
+Support 3.5mm headphone jack audio output
 
-### **硬件接线**
+### ** Hardware wiring **
 
 ![image-20250110152818915](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250110152818915.png)
 
@@ -224,7 +224,7 @@ Support SD memory card, onboard Micro SD Card interface
 
 ## MIC
 
-支持录音座子，接入MIC咪头进行录音即可
+Support the recording seat, connect to the MIC microphone head for recording.
 
 ```
 PCM in:
@@ -236,7 +236,7 @@ PCM in:
 Period count:   min=2           max=32768
 ```
 
-### **硬件接线**
+### ** Hardware wiring **
 
 ![image-20250110152824237](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250110152824237.png)
 
@@ -244,7 +244,7 @@ Period count:   min=2           max=32768
 
 ## Speaker Output
 
-支持左声道及右声道喇叭音频输出
+Support left channel and right channel speaker audio output
 
 ```
 PCM out:
@@ -256,7 +256,7 @@ PCM out:
 Period count:   min=2           max=32768
 ```
 
-### **硬件接线**
+### ** Hardware wiring **
 
 ![image-20250110152830177](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250110152830177.png)
 
@@ -264,10 +264,10 @@ Period count:   min=2           max=32768
 
 ## RTC
 
-板载 RTC hym8563
-支持接入RTC电池，掉电RTC使用电池保持工作
+Onboard RTC hym8563
+Support access to RTC battery, power down RTC use battery to keep working
 
-### **硬件接线**
+### ** Hardware wiring **
 
 ![image-20250110153056417](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250110153056417.png)
 
@@ -275,19 +275,19 @@ Period count:   min=2           max=32768
 
 ## FAN
 
-### **硬件接线**
+### ** Hardware wiring **
 
 ![image-20250110153117263](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250110153117263.png)
 
-### **开关控制**
+### ** Switch control **
 
-打开风扇
+Turn on the fan
 
 ```
 $ echo 255 > /sys/class/leds/fan/brightness
 ```
 
-关闭风扇
+Turn off the fan
 
 ```
 $ echo 0 > /sys/class/leds/fan/brightness
@@ -297,9 +297,9 @@ $ echo 0 > /sys/class/leds/fan/brightness
 
 ## M.2 SSD
 
-K7开发板 配备一路 PCIE 2.0 M.2 SSD硬盘接口
+K7 development board, equipped with one PCIE 2.0 M.2 SSD hard disk interface
 
-### **硬件接线**
+### ** Hardware wiring **
 
 ![image-20250110153138855](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250110153138855.png)
 
