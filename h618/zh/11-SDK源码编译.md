@@ -160,6 +160,27 @@ Choice [arm64]: 1
 $ ./build.sh lunch
 ```
 
+> $ ./build.sh lunch
+> will lunch sdk
+>
+> You're building on Linux
+> Lunch menu...pick a combo:
+>
+> 1. BoardConfig-kickpi-k2b-tablet.mk
+> 2. BoardConfig-kickpi-k2b-tv.mk
+> 3. BoardConfig-kickpi-k2c-tablet.mk
+> 4. BoardConfig-kickpi-k2c-tv.mk
+>
+> Which would you like? [0]:
+>
+> 输入你要选择的编译选项
+>
+> BoardConfig-kickpi-'boadr'-'system'
+>
+> board：可以选择主板k2b或k2c
+>
+> system：
+
 
 
 ### 编译完整镜像
