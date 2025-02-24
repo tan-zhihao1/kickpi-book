@@ -307,9 +307,9 @@ K7 development board, equipped with one PCIE 2.0 M.2 SSD hard disk interface
 
 ## CAN
 
-支持 CAN FD标准，CAN FD继承了CAN的绝大多数特性，如同样的物理层，双线串行通信协议，基于非破坏性仲裁技术，分布式实时控制，可靠的错误处理和检测机制等，同时CAN FD弥补了CAN在总线带宽和数据长度方面的不足。
+Supporting the CAN FD standard, CAN FD inherits most of the characteristics of CAN, such as the same physical layer, two-wire serial communication protocol, based on non-destructive arbitration technology, distributed real-time control, reliable error handling and detection mechanism, etc. At the same time, CAN FD makes up for CAN's shortcomings in bus bandwidth and data length.
 
-**查询当前CAN设备**
+** Query current CAN device **
 
 ```
 $ ifconfig -a
@@ -324,55 +324,55 @@ can0      Link encap:UNSPEC    Driver rk3576_canfd
 ...
 ```
 
-**CAN启动**
+** CAN start **
 
-关闭CAN
+Disable CAN
 
 ```
 $ ip link set can0 down
 ```
 
-设置仲裁段1M波特率，数据段3M波特率
+Set 1M baud rate for arbitration segment and 3M baud rate for data segment
 
 ```
 $ ip link set can0 type can bitrate 1000000 dbitrate 3000000 fd on
 ```
 
-打印can0信息
+Print can0 information
 
 ```
 $ ip -details link show can0
 ```
 
-启动CAN
+Start CAN
 
 ```
 $ ip link set can0 up
 ```
 
-**CAN发送**
+** CAN send **
 
-发送（标准帧,数据帧,ID:123,date:DEADBEEF）
+Sent (standard frame, dataframe, ID: 123, date: DEADBEEF)
 
 ```
 $ cansend can0 123#DEADBEEF
 ```
 
-发送（扩展帧,数据帧,ID:00000123,date:DEADBEEF）
+Sent (extended frame, dataframe, ID: 00000123, date: DEADBEEF)
 
 ```
 $ cansend can0 00000123##1DEADBEEF
 ```
 
-**CAN接收**
+** CAN receive **
 
-开启打印，等待接收
+Start printing and wait for receiving.
 
 ```
 $ candump can0
 ```
 
-**回环模式测试**
+** Loop mode test **
 
 ```
 $ ip link set can0 down
@@ -383,15 +383,15 @@ $ echo 4096 > /sys/class/net/can0/tx_queue_len
 $ candump can0 &
 ```
 
-回环模式下，cansend后candump可以接收，说明控制器工作正常。
+In loop mode, the candump can be received after cansend, indicating that the controller is working normally.
 
 
 
 ## PWM
 
-Extend 40Pin 接口 包含多路PWM，具体引脚见[扩展引脚章节](#ExpansionPin-K7)
+Extend 40Pin interface, including multi-channel PWM, see [Extended Pin](#ExpansionPin-K7)
 
-pwmX_Ych_Z，X 表示控制器 id ，Y 表示当前控制器支持的通道总数，Z 表示通道 id 。
+pwmX_Ych_Z, X represents the controller id, Y represents the total number of channels currently supported by the controller, and Z represents the channel id.
 
 > pwm0_2ch_1: pwm@27331000
 >
@@ -399,26 +399,26 @@ pwmX_Ych_Z，X 表示控制器 id ，Y 表示当前控制器支持的通道总�
 >
 > pwm2_8ch_7: pwm@2ade7000
 
-列举相关pwm节点
+List the relevant PWM nodes
 
 ```
 $ ls /sys/class/pwm/
 pwmchip0  pwmchip1  pwmchip2  pwmchip3
 ```
 
-可查看对应pwm dts节点
+You can view the corresponding pwm dts node
 
 ```
 $ cat /sys/class/pwm/pwmchip0/device/uevent | grep FULLNAME
 OF_FULLNAME=/pwm@27331000
 ```
 
->表示 pwnchip0 对应位 PWM0 通道1
+>Represents pwnchip0 corresponding to bit PWM0 channel 1
 >
 
-配置PWM通道
+Configure PWM channel
 
-示例：设置 PWM0_CH1 通道，周期10000ns，占空比5000ns，极性为normal
+Example: Set PWM0_CH1 channel, period 10000ns, duty cycle 5000ns, polarity is normal
 
 ```
 $ echo 0 > /sys/class/pwm/pwmchip0/export
@@ -428,30 +428,30 @@ $ echo normal > /sys/class/pwm/pwmchip0/pwm0/polarity
 $ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
 ```
 
-> 按照示例配置参数设置成功后，可用万用表测量PWM0引脚，正确电压应为1.6V左右
+> After the configuration parameters are successfully set according to the example, the PWM0 pin can be measured with a multimeter, and the correct voltage should be about 1.6V
 
 
 
 ## SPI
 
-**回环模式测试**
+** Loop mode test **
 
-列出spi设备节点
+List spi device nodes
 
 ```
 $ ls /dev/spi*
 /dev/spidev4.0
 ```
 
-指定设备进行测试
+Specify equipment for testing
 
 ```
 $ spidev_test -D /dev/spidev4.0 -v -l -p "hello"
 ```
 
-> MISO、MOSI 进行硬件短接
+> MISO, MOSI for hardware shorting
 
-示例
+example
 
 ```
 root@linaro-alip:/data# ./spidev_test -D /dev/spidev4.0 -v -l -p "hello"
@@ -471,7 +471,7 @@ ARM Mali G52 MC3
 OpenGL ES 1.1, 2.0 and 3.2, OpenCL 2.1, Vulkan 1.2
 ```
 
-**查看GPU使⽤率**
+**View GPU Usage Rate**
 
 ```
 cat /sys/devices/platform/*gpu/utilisation
