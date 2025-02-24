@@ -215,7 +215,7 @@ network:
 
 ### Common configuration
 
-** Display all network interface information **
+**Display all network interface information **
 
 ```
 $ ifconfig -a
@@ -241,7 +241,7 @@ enP4p65s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 
 
 
-** Display specific network interface information **
+**Display specific network interface information **
 
 ```
 $ ifconfig <dev>
@@ -251,7 +251,7 @@ $ ifconfig <dev>
 
 
 
-** Set IP address **
+**Set IP address **
 
 ```
 $ ifconfig eth0 <ip> netmask <nmask>
@@ -261,7 +261,7 @@ $ ifconfig eth0 <ip> netmask <nmask>
 
 
 
-** Enable network interface **
+**Enable network interface **
 
 ```
 $ ifconfig <dev> up
@@ -271,7 +271,7 @@ $ ifconfig <dev> up
 
 
 
-** Disable network interface **
+**Disable network interface **
 
 ```
 $ ifconfig <dev> down
@@ -281,7 +281,7 @@ $ ifconfig <dev> down
 
 
 
-** Set MAC Address **
+**Set MAC Address **
 
 ```
 $ ifconfig <dev> down
@@ -303,7 +303,7 @@ sudo apt install rpcbind
 sudo apt install nfs-common
 ```
 
-** Server side **
+**Server side **
 
 1. Configure shared files
 
