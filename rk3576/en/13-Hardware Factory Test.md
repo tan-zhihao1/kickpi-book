@@ -1,19 +1,19 @@
-# 13-硬件工厂测试
+# 13 - Hardware Factory Testing
 
-硬件工厂测试 是基于DeviceTest 应用程序 的快速硬件功能测试。
+Hardware factory testing is a rapid hardware functional test based on the DeviceTest application.
 
-适用于测试工程师 或 工厂流水线测试，操作简单、测试便捷。
+It is suitable for test engineers or factory assembly line testing, with simple operation and convenient testing.
 
 
 
-## 进入硬件测试程序
+## Enter the hardware test program
 
-步骤：
+Steps:
 
-1. 打开系统应用列表中的 计算器
-2. 计算器输入 "000.=" 字符
-3. 选择 "DeviceTest" ，并且点击Just once 或 Always
-4. 硬件测试程序启动界面
+1. Open the calculator in the system application list
+2. Calculator Enter the character "000. ="
+3. Select "DeviceTest" and click Just once or Always
+4. Hardware test program startup interface
 
 
 
