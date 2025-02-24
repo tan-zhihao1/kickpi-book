@@ -605,21 +605,21 @@ AV1 Main10 L5.3: 4K 120fps
 4K@60fps video encoders for H.264/H.265
 ```
 
-**调试信息**
+** Debugging information **
 
-开启调试信息
+Enable debug information
 
 ```
 $ export mpp_syslog_perror=1
 $ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 ```
 
->开启调试信息后，在调用硬件编解码会有类似如下日志信息
+>After turning on the debugging information, there will be log information similar to the following when calling the hardware codec
 > [  893.134037] rk_vcodec: 27b00100.rkvdec:0 session 3705:19 time: 1333 us hw 1312 us
 > [  893.167444] rk_vcodec: 27b00100.rkvdec:0 session 3705:19 time: 1381 us hw 1313 us
 > [  893.200503] rk_vcodec: 27b00100.rkvdec:0 session 3705:19 time: 1420 us hw 1313 us
 
-关闭调试信息
+Turn off debug information
 
 ```
 $ export mpp_syslog_perror=0
@@ -628,9 +628,9 @@ $ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 
 **Debian / Ubuntu**
 
-Rockchip 提供了 MPP 相关工具进行使用
+Rockchip provides MPP related tools for use
 
-**硬编码测试**
+**hardcoding test**
 
 mpi_enc_test
 
@@ -660,31 +660,31 @@ usage: mpi_enc_test [options]
  -sm      scene mode          scene_mode, 0:default 1:ipc 
 ```
 
-* 编码H.264 4096x2160 100帧测试
+* Encoding H.264 4096x2160 100 frames test
 
 ```
 $ mpi_enc_test -w 4096 -h 2160 -t 7 -o ./test.h264 -n 100
 ```
 
-> 查看结果
+> View Results
 >
 > $ tail -f /var/log/syslog
 >
 > kickpi mpp[3557]: mpi_enc_test: chn 0 encode 100 frames time 3763 ms delay  27 ms fps 26.57 bps 10605252
 
-* 编码H.265 4096x2160 100帧测试
+* Encoding H.265 4096x2160 100 frames test
 
 ```
 $ mpi_enc_test -w 4096 -h 2160 -t 16777220 -o ./test.h265 -n 100
 ```
 
-> 查看结果
+> View Results
 >
 > $ tail -f /var/log/syslog
 >
 > kickpi mpp[3560]: mpi_enc_test: chn 0 encode 100 frames time 4086 ms delay  36 ms fps 24.47 bps 19594276
 
-**硬解码测试**
+**Hardware decoder test**
 
 mpi_dec_test
 
@@ -704,65 +704,65 @@ mpi_dec_test
  -bufmode buffer mode  hi - half internal (default) i -internal e - external
 ```
 
-* 解码H.264 4096x2160 100帧测试
+* Decoding H.264 4096x2160 100 frames test
 
 ```
 $ mpi_dec_test -t 7 -i test.h264 -n 100
 ```
 
-> 查看结果
+> View Results
 >
 > $ tail -f /var/log/syslog
 >
 > kickpi mpp[3564]: mpi_dec_test: decode 100 frames time 596 ms delay  25 ms fps 167.53
 
-* 解码H.265 4096x2160 100帧测试
+* Decoding H.265 4096x2160 100 frames test
 
 ```
 $ mpi_dec_test -t 16777220 -i test.h265 -n 100
 ```
 
-> 查看结果
+> View Results
 >
 > $ tail -f /var/log/syslog
 >
 > kickpi mpp[3569]: mpi_dec_test: decode 100 frames time 803 ms delay  49 ms fps 124.47
 
-**chromium视频测试**
+** chromium video test **
 
-板卡连接显示设备，打开虚拟终端 或 调试串口终端，执行以下命令开始 chromium 视频测试
+Connect the board to the display device, open the virtual end point or debug the serial port end point, and execute the following command to start the chromium video test
 
 ```
 $ source /rockchip-test/chromium/test_chromium_with_video.sh
 ```
 
-ubuntu 中 rockchip chromium 和 gstreamer 配置硬解码存在兼容性问题！
+There are compatibility issues with rockchip chromium and gstreamer configuration hardware decoders in Ubuntu!
 
-默认配置 chromium 进行调用，若chromium未调用硬解码，需要以下命令进行修复
+The default configuration chromium to call, if chromium does not call the hardware decoder, the following command is required to repair
 
 ```
 $ source /rockchip-test/chromium/chromium_mpp_fix.sh
 ```
 
-> 配置后，默认 chromium 可调用硬解码
+> After configuration, the default chromium hardware decoder can be called
 
-**gstreamer视频测试**
+**GStreamer Video Test**
 
 ```
 sudo GST_DEBUG=2 gst-launch-1.0 playbin uri=file:///usr/local/test.mp4 video-sink="autovideosink" audio-sink=fakesink
 ```
 
-> 如果有mpp调⽤的字样，说明硬件解码成功调用。
+> If there is the word mpp call, it means that the hardware decoding was successfully called.
 
-ubuntu 中 rockchip chromium 和 gstreamer 配置硬解码存在兼容性问题！
+There are compatibility issues with rockchip chromium and gstreamer configuration hardware decoders in Ubuntu!
 
-默认配置 chromium 进行调用，若需要 gstreamer 调用硬解码，需要以下命令进行修复
+The default configuration chromium is called. If you need gstreamer to call the hardware decoder, you need the following command to fix it.
 
 ```
 $ source /rockchip-test/gstreamer/gstreamer_mpp_fix.sh
 ```
 
-> 此命令需要联网，保证'apt update'成功
+> This command requires networking to ensure`apt update `is successful
 >
-> 配置后，默认 gstreamer 可调用硬解码
+> After configuration, the default gstreamer can invoke the hardware decoder
 
