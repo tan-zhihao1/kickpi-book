@@ -88,7 +88,7 @@ GPIO1-D0 calculation Pin num = 32 * 1 + 24 = 56
 
 
 
-** Step 1 **
+**Step 1**
 
 Note the corresponding GPIO pins first, '/sys/class/gpio/export' can only import unregistered gpio
 
@@ -102,11 +102,11 @@ kernel-5.10/arch/arm64/boot/dts/rockchip/
 20pin:	rk3568-kickpi-extend-20pin.dtsi
 ```
 
-** Step 2 **
+**Step 2**
 
 Compilation mirroring, reburning
 
-** Step three **
+**Step three**
 
 Confirm that gpio is not registered
 
@@ -114,25 +114,28 @@ Confirm that gpio is not registered
 cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins
 ```
 
-> 未注册如下：pin 56 (gpio1-24): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+> Unregistered as follows:pin 56 (gpio1-24): (MUX UNCLAIMED) (GPIO UNCLAIMED)
 
 **Step four**
 
 Register with /sys/class/gpio/export 56 and take control
-
+Register
 ```
-// 注册
 root@kickpi:~# echo  56 > /sys/class/gpio/export
-// 查看是否生成
+```
+Check if it is generated
+```
 root@kickpi:~# ls /sys/class/gpio/
 export  gpio56  gpiochip0  gpiochip352  unexport
-// 注册后的结点内容
+```
+Node content after registration
+```
 root@kickpi:~# ls /sys/class/gpio/gpio56
 active_low  device  direction  edge  power  subsystem  uevent  value
 root@kickpi:~#
 ```
 
-​			通过结点下的内容控制 gpio , 常用如下
+Control gpio through the content under the node, commonly used as follows
 
 ```
 direction
