@@ -492,11 +492,11 @@ $ ls /rockchip-test/gpu
 gpu_test.sh  test_fullscreen_glmark2.sh  test_normal_glmark2.sh test_offscreen_glmark2.sh  test_stress_glmark2.sh
 ```
 
-Debian / Ubuntu 文件系统已内置 glmark2-es 性能测试工具
+Debian/Ubuntu file systems have built-in glmark2-es performance testing tools
 
-1. 板卡连接显示设备
+1. Board connection display device
 
-2. 使用虚拟终端或调试串口终端，执行以下命令开始 GPU 性能测试
+2. Use virtual end point or debug serial end point, execute the following command to start GPU performance test
 
 ```
 $ source /rockchip-test/gpu/test_fullscreen_glmark2.sh
@@ -505,7 +505,7 @@ $ source /rockchip-test/gpu/test_fullscreen_glmark2.sh
 =======================================================
 ```
 
-> glmark2测试分数为 337
+> glmark2 test score is 337
 
 
 
@@ -519,14 +519,14 @@ Support deep learning frameworks: TensorFlow, Caffe, Tflite, Pytorch, Onnx NN, A
 
 **Debian / Ubuntu**
 
-Rockchip 提供 npu 测试脚本
+Rockchip provides npu test scripts
 
 ```
 # ls /rockchip-test/npu2
 model  npu_freq_scaling.sh  npu_stress_test.sh  npu_test.sh
 ```
 
-npu 频率测试脚本 `npu_freq_scaling.sh`
+NPU frequency test script `npu_freq_scaling.sh`
 
 ```
 usage()
@@ -537,7 +537,7 @@ usage()
 }
 ```
 
-示例：npu变频运行60秒，每10秒变频一次
+Example: npu frequency conversion runs for 60 seconds, every 10 seconds
 
 ```
 # ./npu_freq_scaling.sh 60 10
@@ -552,7 +552,7 @@ set ddr frequency to 700000000
 ======TEST SUCCESSFUL, QUIT=====
 ```
 
-npu 压力测试脚本 `npu_stress_test.sh`
+NPU stress testing script `npu_stress_test.sh`
 
 ```
 # ./npu_stress_test.sh
@@ -582,14 +582,14 @@ Begin perf ...
 0.000172 - 285
 ```
 
->在 `Begin perf...` 后的内容展示了模型多次运行的性能数据：
+The content after "Begin perf..." shows the performance data of the model running multiple times:
 >
->- 每次记录了运行的序号以及对应的耗时（`Elapse Time`）和每秒处理帧数（`FPS`）。例如，`0: Elapse Time = 2.85ms, FPS = 351.12`表示第 1 次运行模型推理时，总共花费了 2.85 毫秒的时间，由此计算出每秒可以处理 351.12 帧的数据（FPS 的计算方式就是 1000 除以每次的耗时，单位换算后得到每秒的帧数）。
+> - The sequence number of each run is recorded, along with the corresponding elapse time ('Elapse Time') and the number of frames per second ('FPS') processed. For example, '0: Elapse Time = 2.85ms, FPS = 351.12' means that the first run of model inference took a total of 2.85 milliseconds to calculate that 351.12 frames per second can be processed (FPS is calculated by dividing 1000 by the time taken each time, and the unit is converted to obtain the number of frames per second).
 >
->`---- Top5 ----` 部分呈现了模型推理输出结果中概率排名前 5 的类别及其对应的概率值和类别编号：
+>`---- Top5 ----` section presents the top 5 probability categories in the model inference output and their corresponding probability values and category numbers:
 >
->- `0.935059 - 156`表示模型认为输入的数据（比如可能是一张图像）最有可能属于编号为 156 的类别，其对应的概率高达 0.935059，这个概率值相对较高，说明模型对该判断有比较高的置信度。
->- 后续的`0.057037 - 155`、`0.003881 - 205`、`0.003119 - 284`、`0.000172 - 285`分别列出了概率排名第 2 到第 5 的类别编号及其概率值，这些概率值依次递减，表明模型对它们属于相应类别判断的把握程度也逐渐降低。
+> - '0.935059 - 156' indicates that the model believes that the input data (such as an image) is most likely to belong to the category numbered 156, and its corresponding probability is as high as 0.935059. This probability value is relatively high, indicating that the model has a relatively high confidence level in this judgment.
+The following "0.057037-155", "0.003881-205", "0.003119-284", and "0.000172-285" list the category numbers and their probability values from the 2nd to the 5th, respectively. These probability values decrease in turn, indicating that the model's confidence in their belonging to the corresponding category judgment is also gradually decreasing.
 
 
 
