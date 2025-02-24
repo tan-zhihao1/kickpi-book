@@ -348,7 +348,7 @@ $ git reset --hard
 
 According to the CPU model, select the corresponding compilation command; if the compilation fails, you can try to solve it yourself, or contact technical customer service to solve it.
 
-** Configure SDK compilation items **
+**Configure SDK compilation items **
 
 ```
 $ ./build.sh lunch
