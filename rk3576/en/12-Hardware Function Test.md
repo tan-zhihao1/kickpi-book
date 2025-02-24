@@ -477,15 +477,15 @@ OpenGL ES 1.1, 2.0 and 3.2, OpenCL 2.1, Vulkan 1.2
 cat /sys/devices/platform/*gpu/utilisation
 ```
 
-> 示例：实时查看使用率
+Example: Viewing usage in real time
 >
-> $ watch -n 1 'cat /sys/devices/platform/*gpu/utilisation'
+> $watch -n 1 `cat /sys/devices/platform/* gpu/utilisation `
 >
-> 移动鼠标或窗口或进行GPU测试，可以查看GPU使⽤率来确定硬加速是否有⽤起来
+Move the mouse or window or run a GPU test to see if hard acceleration is working
 
-**GLmark2 性能测试**
+** GLmark2 performance test **
 
-Rockchip 提供 npu 测试脚本
+Rockchip provides npu test scripts
 
 ```
 $ ls /rockchip-test/gpu
