@@ -203,7 +203,7 @@ Linux system USB defaults to HOST mode, does not support OTG for the time being
 
 Android supports adb debugging (type-c interface to connect to the host)
 
-The main commands of * adb are as follows:
+The main commands of adb are as follows:
 
   	$ adb devices
   	- Description: To view the currently connected devices, the devices connected to the computer or the emulator will be listed and displayed
