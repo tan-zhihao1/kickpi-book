@@ -1,40 +1,40 @@
-# 14-硬件老化测试
+# 14 - Hardware Aging Testing
 
-硬件工厂测试 是基于DeviceTest 应用程序 的硬件老化测试
+Hardware factory testing is a hardware aging test based on the DeviceTest application
 
-主要针对CPU、DDR、GPU、VPU老化测试
+Mainly for CPU, DDR, GPU, VPU aging test
 
 
 
-## 硬件老化程序
+## Hardware aging program
 
-> Android 平台
+> Android Platform
 
-### 拷贝VPU测试视频
+### Copy the VPU test video
 
-VPU老化测试项 需要拷贝 视频文件 到 系统 或SD卡的指定目录，老化程序会对视频进入解码测试
+VPU aging test item, you need to copy the video file to the designated directory of the system or SD card, and the aging program will enter the decoding test for the video.
 
-**视频文件要求**：
+** Video file requirements **:
 
-视频文件名称 和 视频文件路径 必须跟以下一致
+The video file name and video file path must match the following
 
 ```
 /sdcard/Aging_Test_Video.mp4
 ```
 
-拷贝视频的两个常见方法：
+There are two common ways to copy videos:
 
-1. 通过adb push 工具推送 Aging_Test_Video.mp4 视频文件到/sdcard目录
-2. 拷贝视频文件到 U盘 或 SD卡，通过文件管理器 拷贝到/sdcard目录
+1. Push the Aging_Test_Video .mp4 video file to the/sdcard directory through the adb push tool
+2. Copy the video file to a USB stick or SD card, through the file manager, to the/sdcard directory
 
 
 
-### 打开老化程序
+### Open the aging program
 
-1. 打开系统应用列表中的 计算器
-2. 计算器输入 "000.=" 字符
-3. 选择 "DeviceTest" ，并且点击Just once 或 Always
-4. 硬件测试程序启动界面
+1. Open the calculator in the system application list
+2. Calculator Enter the character "000. ="
+3. Select "DeviceTest" and click Just once or Always
+4. Hardware test program startup interface
 
 
 
