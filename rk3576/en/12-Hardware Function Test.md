@@ -157,7 +157,7 @@ HDCP v2.3 and HDCP v1.4
 
 ## ADC
 
-You can check the corresponding ADC location and channel number through [Expansion Pin Chapter] (#ExpansionPin-K7)
+You can check the corresponding ADC location and channel number through  [Expansion Pin](#ExpansionPin-K7)
 
 ** Read ADC value **
 
