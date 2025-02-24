@@ -158,12 +158,11 @@ Choice [arm64]: 1
 
 
 
-
-
 ### 编译完整镜像
 
 ```
-$ ./build.sh   //h618-android12.0下的build.sh
+$ ./build.sh lunch
+$ ./build.sh
 ```
 
 > 镜像生成目录：longan/out/h618_android12_p2_uart0.img
