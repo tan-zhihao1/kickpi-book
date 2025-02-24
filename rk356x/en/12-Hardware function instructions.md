@@ -1219,7 +1219,7 @@ root@linaro-alip:/# cansend can0 123#DEADBEEF
 
 
 
-##27. SPI
+## 27. SPI
 
 **Tool Location **
 
