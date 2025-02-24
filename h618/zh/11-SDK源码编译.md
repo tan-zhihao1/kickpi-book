@@ -119,8 +119,6 @@ $ cd longan
 $ ./build.sh config
 ```
 
-
-
 编译选项
 
 ```
@@ -156,12 +154,17 @@ All available arch:
 Choice [arm64]: 1
 ```
 
+选择主板
+
+```
+$ ./build.sh lunch
+```
+
 
 
 ### 编译完整镜像
 
 ```
-$ ./build.sh lunch
 $ ./build.sh
 ```
 
