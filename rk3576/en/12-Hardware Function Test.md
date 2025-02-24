@@ -83,37 +83,37 @@ The debugging serial cable currently provided has four wires, the red one is'VCC
 
 ![image-20241231145656021](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241231145656021.png)
 
-> 其他调试工具线同理，只需连接 TX RX GND即可
+> The same is true for other debugging Creative Tools, just connect TX RX GND
 
 
 
-**开发板调试串口接线**
+** Development board debugging serial port wiring **
 
-* 调试串口位置接线说明
+* Debugging serial port location wiring instructions
 
-调试线`TX`连接主板上的`RX`，`RX`连接主板上的`TX`，`GND`连接主板上的`GND`，不需要连接`VCC`。
+The debugging line "TX" is connected to "RX" on the main board, "RX" is connected to "TX" on the main board, and "GND" is connected to "GND" on the main board. There is no need to connect "VCC".
 
-> 主板上的PIN：RX	TX	GND
+> PIN on main board: RX TX GND
 >
-> 调试线的PIN：TX	RX	GND
+> PIN of debugging line: TX RX GND
 
 
 
-**下载串口助手软件**
+** Download Serial Port Assistant Software **
 
-串口助手软件 可自行下载，下面以Mobaxterm为例
+Serial assistant software can be downloaded by yourself. The following is an example of Mobaxterm
 
-Mobaxterm软件地址下载：https://mobaxterm.mobatek.net/
+Mobaxterm software address download: https://mobaxterm.mobatek.net/
 
 
 
-**Mobaxterm操作步骤**
+** Mobaxterm operation steps **
 
-1. 新建会话窗口
-2. 选择会话窗口类型为serial
-3. 选择串口COM编号（打开Windows系统 设备管理器 -> 端口界面可查看COM编号）
-4. 选择串口波特率1500000
-5. 启动会话窗口
+1. Create a new session window
+2. Select the session window type as serial
+3. Select the COM number of the serial port (open the Windows System Facility Management - > Port interface to view the COM number)
+4. Select the serial port baud rate 1500000
+5. Start the session window
 
 
 
@@ -121,9 +121,9 @@ Mobaxterm软件地址下载：https://mobaxterm.mobatek.net/
 
 
 
-### 普通串口使用
+### Ordinary serial port use
 
-测试 UART8
+Test UART8
 
 ```
  $ microcom -s 115200 /dev/ttyS8
@@ -133,51 +133,51 @@ Mobaxterm软件地址下载：https://mobaxterm.mobatek.net/
 
 ## USB
 
-### USB 3.0 - Type A ( 1 - 3 口)
+USB 3.0 - Type A (1 - 3 ports)
 
-**USB鼠标/键盘测试**
+** USB mouse/keyboard test **
 
-支持USB鼠标识别，正常使用
-支持USB键盘识别，正常使用
+Support USB mouse recognition, normal use
+Support USB keyboard recognition, normal use
 
 ### USB Type C
 
-支持HOST模式，U盘、鼠标等设备接入
-支持DEVICE模式，adb等功能
-支持DP v1.4 显示输出模式
-支持自动识别切换模式
+Support HOST mode, U disk, mouse and other devices access
+Support DEVICE mode, adb and other functions
+Support DP v1.4 display output mode
+Support automatic recognition switching mode
 
-## HDMI TX 
+## HDMI TX
 
 HDMI v2.1
 Supports up to 4K@120Hz
 Output data format: RGB/YUV444/YUV422/YUV420 8/10-bit
-Supports CEC (Consumer Electronic Control) and ARC (Audio Return Channel)
+Supports CEC (Consumer Electronics Control) and ARC (Audio Return Channel)
 HDCP v2.3 and HDCP v1.4
 
 ## ADC
 
-可通过[扩展引脚章节](#ExpansionPin-K7) 查看对应的 ADC 位置及通道号
+You can check the corresponding ADC location and channel number through [Expansion Pin Chapter] (#ExpansionPin-K7)
 
-### **读取ADC值**
+** Read ADC value **
 
 ```
 $ cat /sys/bus/iio/devices/iio\:device0/in_voltage*_raw
 ```
 
-> 示例：
+> Example:
 >
-> 读取通道4的电压值 
+> Read the voltage value of channel 4 
 >
 > $ cat /sys/bus/iio/devices/iio\:device0/in_voltage4_raw
 
 
 
-## SD 卡
+## SD card
 
-支持SD存储卡，板载Micro SD Card接口
+Support SD memory card, onboard Micro SD Card interface
 
-### 硬件接线
+### Hardware wiring
 
 ![image-20250110152735195](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250110152735195.png)
 
