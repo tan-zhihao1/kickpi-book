@@ -1,26 +1,26 @@
 # 12-Instructions for using hardware functions
 
-## 拓展引脚<a id="ExpansionPin-K7"></a>
+## Expand pin<a id="ExpansionPin-K7"></a>
 
-**K7拓展引脚列表**
+**K7 Extended Pin List**
 
 ![K7_40pin](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_40pin.jpg)
 
 ## LED
 
-开发板配备2个LED，绿色LED为电源指示灯，上电默认长亮
+The development board is equipped with 2 LEDs, the green LED is the power indicator, and it is always on by default when powered on.
 
-蓝色LED为系统工作心跳灯。若心跳灯持续闪烁，则表示内核正常运行。
+The blue LED is the system working heartbeat light. If the heartbeat light continues to flash, it indicates that the core is running normally.
 
-另外，系统工作心跳灯可参考以下方面控制LED作为其他功能。
+In addition, the system working heartbeat light can refer to the following aspects to control LED as other functions.
 
-### 用户层控制LED状态
+### User layer control LED status
 
-**命令行控制LED状态**
+** Command line control LED status **
 
-默认LED触发方式为heartbeat，此方式下LED状态不可人为控制。
+The default LED trigger mode is heartbeat, and the LED state cannot be controlled by humans in this mode.
 
-若想要实现命令控制LED状态的话，可通过以下命令设置为none，然后再设置LED的brightness
+If you want to control the LED state by command, you can set it to none by the following command, and then set the brightness of the LED
 
 ```bash
 $ echo none > /sys/class/leds/work/trigger
@@ -28,7 +28,7 @@ $ echo 1 > /sys/class/leds/work/brightness
 $ echo 0 > /sys/class/leds/work/brightness
 ```
 
-恢复心跳模式
+Restore heartbeat mode
 
 ```bash
 $ echo heartbeat > /sys/class/leds/work/trigger
@@ -38,9 +38,9 @@ $ echo heartbeat > /sys/class/leds/work/trigger
 
 ## GPIO
 
-首先，通过拓展引脚章节，确认GPIO的引脚位置以及编号，参考以下步骤可对指定GPIO输出高电平或低电平控制
+First, by expanding the pin chapter, confirm the pin position and number of the GPIO, and refer to the following steps to control the output high or low level of the specified GPIO
 
-**列举已经注册的GPIO控制节点**
+** List the registered GPIO control nodes **
 
 ```
 $ ls /sys/class/leds/
