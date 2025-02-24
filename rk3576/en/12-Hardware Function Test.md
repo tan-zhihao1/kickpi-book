@@ -63,23 +63,23 @@ $ echo 0 >  /sys/class/leds/GPIO3_D4/brightness
 
 ## UART
 
-### 调试串口使用
+### Debug serial port use
 
-**波特率：1500000** 
+** Baud rate: 1500000 **
 
->接入座子的USB转串口线也需要支持 1500000 波特率才能正常通信
-
-
-
-**查看DEBUG引脚**
-
-kickpi开发板调试串口一般内嵌到扩展引脚上，可通过[扩展引脚章节](#ExpansionPin-K7) 查看对应的 DEBUG 引脚位置，一般按顺序排列为 `UART_RX_DEBUG`、`UART_TX_DEBUG`、`GND`。
+> The USB to serial cable connected to the seat also needs to support 1500000 baud rate to communicate normally
 
 
 
-**调试串口线说明**
+** View DEBUG pin **
 
-目前提供的调试串口线有四根线，红色的为`VCC`，绿色的为`TX`，白色的为`RX`，黑色的为`GND`，一般不需要连接`VCC`。
+Kickpi development board debugging serial port is generally embedded in the expansion pin, you can see the corresponding DEBUG pin position through [Expand pin](#ExpansionPin-K7), generally arranged in order as "UART_RX_DEBUG", "UART_TX_DEBUG", "GND".
+
+
+
+** Debugging serial cable instructions **
+
+The debugging serial cable currently provided has four wires, the red one is'VCC ', the green one is'TX', the white one is'RX ', and the black one is'GND'. Generally, it is not necessary to connect to'VCC '.
 
 ![image-20241231145656021](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241231145656021.png)
 
