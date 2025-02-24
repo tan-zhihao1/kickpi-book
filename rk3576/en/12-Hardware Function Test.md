@@ -762,7 +762,7 @@ The default configuration chromium is called. If you need gstreamer to call the 
 $ source /rockchip-test/gstreamer/gstreamer_mpp_fix.sh
 ```
 
-> This command requires networking to ensure`apt update `is successful
+> This command requires networking to ensure`apt update`is successful
 >
 > After configuration, the default gstreamer can invoke the hardware decoder
 
