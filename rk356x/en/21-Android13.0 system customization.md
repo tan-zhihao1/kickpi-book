@@ -132,7 +132,7 @@ PRODUCT_PACKAGES += \
 
 ## 7. Boot the self-starting APP
 
-** After receiving the boot broadcast, start the APP **
+**After receiving the boot broadcast, start the APP **
 
 1. Modify and increase the permissions of the APP and broadcast to receive AndroidManifest.xml
 
@@ -198,7 +198,7 @@ public class MyReceiver extends BroadcastReceiver {
 
 
 
-#8. Default language
+## 8. Default language
 
 ```
 $ vim build/target/product/full_base.mk
@@ -256,7 +256,7 @@ old.apk new.apk
 
 
 
-** Re-sign with signature-related documents **
+**Re-sign with signature-related documents **
 
 Signature-related files required in the SDK
 
@@ -284,7 +284,7 @@ old.apk new.apk
 
 
 
-## 13.网络 ADB
+## 13.Network ADB
 
 The network port ADB needs to start the 5555 port service first.
 

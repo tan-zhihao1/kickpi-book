@@ -76,7 +76,7 @@ When there is a need to configure the extension pin as an input, the default sof
 
 Release the GPIO and control it through /sys/class/gpio
 
-** PIN PIN Calculation **
+**PIN PIN Calculation **
 
 Take GPIO1-D0 (gpio1-24) as an example:
 
