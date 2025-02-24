@@ -53,7 +53,7 @@ SDK source package kernel version 5.10, support Ubuntu 20.04, Debian11 file syst
 
 ### Get the SDK source code
 
-** Network disk download SDK source code compressed package **
+**Network disk download SDK source code compressed package**
 
 The network disk SDK directory is as follows
 
@@ -65,7 +65,7 @@ The network disk SDK directory is as follows
 
 
 
-** Copy the source zip to the build host directory **
+**Copy the source zip to the build host directory**
 
 > Precautions
 >
@@ -94,7 +94,7 @@ $ ls -al
 
 
 
-** Restore source files **
+**Restore source files**
 
 Enter the extracted directory and restore the source code through git.
 
@@ -115,7 +115,7 @@ The network disk provides debian and ubuntu file system images, which can be dow
 
 
 
-** File system network disk directory **
+**File system network disk directory**
 
 ```
 1-SDK\rk356x-linux\
@@ -125,7 +125,7 @@ The network disk provides debian and ubuntu file system images, which can be dow
 
 
 
-** MD5 verifies file integrity **
+**MD5 verifies file integrity**
 
 ```
 $ md5sum -c *.md5
@@ -133,7 +133,7 @@ $ md5sum -c *.md5
 
 
 
-** Unzip the debian image file **
+**Unzip the debian image file**
 
 ```
 $ tar -zxvf linaro-rootfs-*.tar.gz
@@ -150,7 +150,7 @@ $ ls debian/linaro-rootfs.img
 
 
 
-** Unzip the Ubuntu image file **
+**Unzip the Ubuntu image file**
 
 ```
 $ tar -zxvf ubuntu-rootfs-*.tar.gz
@@ -205,7 +205,7 @@ $ ./build.sh lunch
 
 
 
-** compilation mirroring **
+**compilation mirroring**
 
 ```
 $ ./build.sh
@@ -219,7 +219,7 @@ $ ./build.sh
 
 ### Compile partition images separately
 
-** Compile Uboot separately **
+**Compile Uboot separately**
 
 ```
 $ ./build.sh uboot
@@ -227,7 +227,7 @@ $ ./build.sh uboot
 
 > Image generation directory: rockdev/uboot.img
 
-** Compile Kernel Separately **
+**Compile Kernel Separately**
 
 ```
 $ ./build.sh kernel
@@ -235,7 +235,7 @@ $ ./build.sh kernel
 
 > Image generation directory: rockdev/boot.img
 
-** Compile Buildroot separately **
+**Compile Buildroot separately**
 
 ```
 $ ./build.sh buildroot
@@ -245,21 +245,21 @@ $ ./build.sh buildroot
 
 
 
-###Other commonly used commands
+### Other commonly used commands
 
-** Kernel Configuration **
+**Kernel Configuration**
 
 ```
 $ ./build.sh kernel-config
 ```
 
-** buildroot configuration **
+**buildroot configuration**
 
 ```
 $ ./build.sh menuconfig
 ```
 
-** Compile multi-screen adaptive mirroring **
+**Compile multi-screen adaptive mirroring**
 
 ```
 $ ./build.sh all_multi_dtb
@@ -271,7 +271,7 @@ $ ./build.sh all_multi_dtb
 
 ### SDK Add Compile Item
 
-** Example: Added RK3568 K1 Buildroot compilation option **
+**Example: Added RK3568 K1 Buildroot compilation option**
 
 * New configuration file
 
@@ -375,7 +375,7 @@ $ ./build.sh lunch
 
 
 
-** Compile full image **
+**Compile full image**
 
 ```
 $ ./build.sh -AUCKu
@@ -412,7 +412,7 @@ $ ./build.sh -AUCKu
 
 ### Compile partition images separately
 
-** Compile Uboot separately **
+**Compile Uboot separately **
 
 ```
 $ ./build.sh -U
@@ -422,7 +422,7 @@ $ ./build.sh -U
 
 
 
-** Compile Kernel Separately **
+**Compile Kernel Separately**
 
 ```
 $ ./build.sh -CK
@@ -432,7 +432,7 @@ $ ./build.sh -CK
 
 
 
-** Compile Android separately **
+**Compile Android separately**
 
 ```
 $ ./build.sh -A
@@ -442,7 +442,7 @@ $ ./build.sh -A
 
 
 
-** Android environment configuration **
+**Android environment configuration**
 
 Configure the command environment, you can use the command in the Android environment such as mm/get_build_var
 
@@ -470,18 +470,18 @@ true
 
 
 
-###Other commonly used commands
+### Other commonly used commands
 
-** Kernel Configuration **
+**Kernel Configuration**
 
 ```
 $ ./build.sh -CKM
 ```
 
-** Compile multi-screen adaptive mirroring **
+**Compile multi-screen adaptive mirroring**
 
 ```
 $ ./build.sh -AUCKum
 ```
 
-> 出厂Android/Linux镜像默认为多屏自适应镜像，兼容官方7寸/10寸/15寸显示屏，连接任一显示屏可直接点亮
+> Factory Android/Linux mirror defaults to multi-screen adaptive mirror, compatible with official 7-inch/10-inch/15-inch display, connected to any display can be directly lit
