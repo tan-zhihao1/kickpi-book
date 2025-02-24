@@ -175,9 +175,9 @@ Which would you like? [0]:
 >
 > BoardConfig-kickpi-'boadr'-'desktop'
 >
-> board：选择主板k2b / k2c
+> board：主板 k2b / k2c
 >
-> desktop：选择桌面 tv / tablet
+> desktop：桌面 tv / tablet
 
 
 
