@@ -48,7 +48,7 @@ In addition, the system working heartbeat light can refer to the following aspec
 
 User layer control LED status
 
-** Command line control LED status **
+**Command line control LED status**
 
 The default LED trigger mode is heartbeat, and the LED state cannot be controlled by humans in this mode.
 
@@ -84,7 +84,7 @@ First, through the [Expansion Pin] (#ExpansionPin) section, confirm the GPIO pin
 
 
 
-** View GPIO registration list **
+**View GPIO registration list**
 
 ```
 $ ls /sys/class/leds/
@@ -116,13 +116,13 @@ You need to modify the software and re-burn it. Details
 
 ### Debug serial port use
 
-** View DEBUG pin **
+**View DEBUG pin**
 
 The Kickpi development board debugging serial port is generally embedded in the extension pin, and the corresponding DEBUG pin position can be viewed through the [Extension Pin] (#ExpansionPin) chapter, which is generally arranged in order as UART_RX_DEBUG, UART_TX_DEBUG, and GND.
 
 
 
-** Debugging serial cable instructions **
+**Debugging serial cable instructions**
 
 The debugging serial cable currently provided has four wires, the red one is'VCC ', the green one is'TX', the white one is'RX ', and the black one is'GND'. Generally, it is not necessary to connect to'VCC '.
 
@@ -132,7 +132,7 @@ The debugging serial cable currently provided has four wires, the red one is'VCC
 
 
 
-** Development board debugging serial port wiring **
+**Development board debugging serial port wiring**
 
 * Debugging serial port location wiring instructions
 
@@ -146,7 +146,7 @@ The debugging line "TX" is connected to "RX" on the main board, "RX" is connecte
 
 
 
-** Download Serial Port Assistant Software **
+**Download Serial Port Assistant Software**
 
 Serial assistant software can be downloaded by yourself. The following is an example of Mobaxterm
 
@@ -154,7 +154,7 @@ Mobaxterm software address download: https://mobaxterm.mobatek.net/
 
 
 
-** Mobaxterm operation steps **
+**Mobaxterm operation steps**
 
 1. Create a new session window
 2. Select the session window type as serial
@@ -166,7 +166,7 @@ Mobaxterm software address download: https://mobaxterm.mobatek.net/
 
 
 
-###Ordinary serial port use
+### Ordinary serial port use
 
 1. Confirm the string slogan used
 
@@ -205,29 +205,29 @@ Android supports adb debugging (type-c interface to connect to the host)
 
 The main commands of * adb are as follows:
 
-  	#####** adb devices **
+  	$ adb devices
   	- Description: To view the currently connected devices, the devices connected to the computer or the emulator will be listed and displayed
   	- adb start-server
   	- Description: Start adb
   	
-  	####adb kill-server
+  	$ adb kill-server
   	- Description: Close adb
   	
-  	####adb shell
+  	$ adb shell
   	- Description: This command will log into the shell of the device, followed by the command to run the device directly, which is equivalent to executing a remote command
   	
-  	####adb push
+  	$ adb push
   	- Description: This command can copy files from the computer to the development board
   	-Example: adb push hello.c /tmp/This copies the hello.c file on the computer to the/tmp directory on the development board
   	
-  	####adb pull
+  	$ adb pull
   	- Description: This command can copy the files on the development board to the computer
   	- Example: adb pull /tmp/hello.c./Copy the file hello.c in the/tmp directory on the development board to the current directory
   	
-  	####adb version
+  	$ adb version
   	- Description: Check the version of adb
   	
-  	####adb help
+  	$ adb help
   	- Description: adb help, for more command details, please use the adb help command to view
 
 

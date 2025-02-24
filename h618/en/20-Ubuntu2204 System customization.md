@@ -31,10 +31,6 @@ Ubuntu 22.04 system, only image files are provided, please refer to the ARMBIAN 
 
 
 
-
-
-
-
 ## Backup SD card system
 
 #### Allwinner-tina
@@ -76,14 +72,6 @@ index a5fa88c88..67fb67b5b 100755
 ```
 
 Then `pack` it into firmware and burn it.
-
-## Customize system functions
-
-
-
-
-
-
 
 ## Replace the boot animation picture.
 
