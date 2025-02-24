@@ -175,7 +175,7 @@ $ ./build.sh lunch
 >
 > 输入你要选择的编译选项
 >
-> BoardConfig-kickpi-'boadr'-'system'
+> BoardConfig-kickpi-'boadr'-'desktop'
 >
 > board：可以选择主板k2b或k2c
 >
