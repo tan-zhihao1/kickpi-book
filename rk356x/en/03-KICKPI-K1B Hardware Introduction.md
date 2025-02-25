@@ -16,4 +16,4 @@
 
 ## 3. Accessories List
 
-![K1B 配件图英文（临时）](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K1B 配件图英文（临时）.png)
+![image-20250225144334160](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250225144334160.png)
