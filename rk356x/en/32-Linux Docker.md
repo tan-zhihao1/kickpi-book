@@ -18,6 +18,13 @@ $ sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 $ sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 ```
 
+* Detect the docker service and start running without starting it.
+
+```shell
+$ sudo systemctl status docker
+$ sudo systemctl start docker
+```
+
 * Docker Run Test
 
 ```bash
