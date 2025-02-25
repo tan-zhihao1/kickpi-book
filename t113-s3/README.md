@@ -1,2 +1,2 @@
-# K4B（Allwinner T113-S3）
+# K4B（T113-S3）
 

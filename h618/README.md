@@ -1,2 +1,2 @@
-# K2B/K2C（Allwinner H618）
+# K2B/K2C（H618）
 
