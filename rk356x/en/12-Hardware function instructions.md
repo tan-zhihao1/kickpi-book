@@ -551,7 +551,7 @@ KICKPI K3 supports one Dual LVDS screen, and uses CS5518 chip to realize MIPI to
 
 **K3 Dual LVDS Interface Description **
 
-![image-20240517143001898](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240517143001898.png) 
+![image-20250225160426210](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250225160426210.png)
 
 > LVDS power supply voltage can be selected from 3.3V, 5V, 12V. The corresponding voltage must be selected according to the specification, otherwise it will not light up or burn the screen.
 
