@@ -33,7 +33,7 @@ $ ls device/rockchip/common/bootanimation.zip
 ```
 $ vim device/rockchip/rk356x/BoardConfig.mk
 
-	SF_PRIMARY_DISPLAY_ORIENTATION := 0 	//默认
+	SF_PRIMARY_DISPLAY_ORIENTATION := 0 	//default
 	SF_PRIMARY_DISPLAY_ORIENTATION := 90 	//90°
 	SF_PRIMARY_DISPLAY_ORIENTATION := 180	//180°
 	SF_PRIMARY_DISPLAY_ORIENTATION := 270	//270°
@@ -98,7 +98,7 @@ include $(BUILD_PREBUILT)
 
 ```
 
-Android.bp 方式
+Android.bp way
 
 ```makefile
 android_app_import {
