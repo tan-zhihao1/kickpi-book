@@ -1,4 +1,4 @@
-# K5(Allwinner A133)
+# K5（Allwinner A133）
 
 
 
