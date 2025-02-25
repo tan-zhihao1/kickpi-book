@@ -14,7 +14,7 @@
 
 
 
-## 3. 配件列表
+## 3. Accessories List
 
 
 

@@ -4,7 +4,7 @@
 
 ## 1. Master information
 
-![rk3568基本信息](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/rk3568bd.png)
+![Basic information of rk3568](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/rk3568bd.png)
 
 
 
