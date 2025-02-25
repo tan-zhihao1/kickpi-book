@@ -1,2 +1,4 @@
-# K5-A133
+# K5(Allwinner A133)
+
+
 
