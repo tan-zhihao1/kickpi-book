@@ -173,7 +173,7 @@ For Ubuntu 22.04 system, only image files are provided. Compilation can refer to
 
 
 
-* MD5校验文件完整性
+* Verify File Integrity with MD5 Checksum
 
 ```
 $ md5sum -c *.md5
