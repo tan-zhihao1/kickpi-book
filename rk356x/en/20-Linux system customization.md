@@ -285,11 +285,11 @@ $ ifconfig <dev> down
 
 ```
 $ ifconfig <dev> down
-$ ifconfig <dev> hw ether <新的MAC地址>
+$ ifconfig <dev> hw ether <New MAC Address>
 $ ifconfig <dev> up
 ```
 
-> Different operating systems may have some differences, and some systems may not allow MAC address setting directly through'ifconfig ', or require additional steps
+> Different operating systems may have some differences, and some systems may not allow MAC address setting directly through`ifconfig`, or require additional steps
 
 
 
