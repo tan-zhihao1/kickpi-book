@@ -203,7 +203,7 @@ Linux system USB defaults to HOST mode, does not support OTG for the time being
 
 Android supports adb debugging (type-c interface to connect to the host)
 
-The main commands of * adb are as follows:
+The main commands of **adb** are as follows:
 
 ##### adb devices
 - Description: To view the currently connected devices, the devices connected to the computer or the emulator will be listed and displayed
@@ -247,7 +247,7 @@ After the configuration parameters are successfully set according to the example
 
 Example: Set PWM3 channel, period 10000ns, duty cycle 5000ns, polarity is normal
 
-The PWM path is/sys/class/pwm, and pwmchip * is sorted from 0 in your enable order. Set pwmchip0 as follows:
+The PWM path is/sys/class/pwm, and pwmchip* is sorted from 0 in your enable order. Set pwmchip0 as follows:
 
 ```
 $ echo 0 > /sys/class/pwm/pwmchip0/export
