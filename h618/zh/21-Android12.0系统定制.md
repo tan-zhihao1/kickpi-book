@@ -515,6 +515,38 @@ debug           hdcp_dump  hdmi_source  phy_read   scdc_read
 
 ## ADB 功能
 
+### adb连接
+
+板卡使用type-c线连接电脑，等板卡蓝灯闪烁时查看系统设备管理器是否识到是安卓设备，如果识别到的设备如图所示则需手动安装驱动
+
+![image-20250226152046272](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152046272.png)
+
+手动安装驱动
+
+![370849870429aae4906079eb686ee326](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/370849870429aae4906079eb686ee326.jpg)
+
+![image-20250226152541205](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152541205.png)
+
+![image-20250226152555933](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152555933.png)
+
+![image-20250226152618854](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152618854.png)
+
+![image-20250226152635425](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152635425.png)
+
+![image-20250226152643858](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152643858.png)
+
+![image-20250226152654260](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152654260.png)
+
+win键+R打开“运行” 输入cmd打开命令行
+
+![image-20250226152824342](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152824342.png)
+
+命令行中输入adb shell即可连接
+
+系统若没有adb命令支持可自行参考安装[Windows 10 安装 ADB (Android Debug Bridge，Android 调试桥)-CSDN博客](https://blog.csdn.net/chengyq116/article/details/108291213)
+
+![image-20250226152859458](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152859458.png)
+
 **adb offline 问题**
 
 ```
@@ -530,11 +562,7 @@ $ adb reconnect
 reconnecting 6c00107150d147e1d52 [offline]
 ```
 
-
-
-
-
-## 网络ADB
+### 网络ADB
 
 网口ADB需要先adb启动5555端口服务后
 
