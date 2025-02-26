@@ -76,12 +76,6 @@ find out/t113/evb1_auto/buildroot/buildroot -name ".stamp_target_installed" |xar
 
 
 
-
-
-可能编译不生效
-
-
-
 ### 添加用户应用或工具
 
 方法一
