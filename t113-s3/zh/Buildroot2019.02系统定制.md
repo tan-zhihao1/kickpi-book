@@ -59,9 +59,9 @@ buildroot/buildroot-201902/configs/sun8iw20p1_t113_defconfig
 
 会自动保存在sun8iw20p1_t113_defconfig中
 
-然后重新并打包./build.sh && ./build.sh pack 
+然后重新编译打包./build.sh && ./build.sh pack 
 
-buildroot里的工具不保证所有都能正常编译，编译失败尝试可自行解决
+buildroot里的工具不保证所有都能正常编译，编译失败可尝试自行解决
 
 常见问题：
 
