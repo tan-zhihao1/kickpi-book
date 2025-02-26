@@ -111,3 +111,6 @@ find out/t113/evb1_auto/buildroot/buildroot -name ".stamp_target_installed" |xar
 ```
 
 
+
+
+
