@@ -39,9 +39,21 @@ buildroot/config/buildroot/allwinner/system/busybox-init-base-files/etc/init.d/
 
 ## 添加应用
 
+使用的defconfig文件为
+
+buildroot/buildroot-201902/configs/sun8iw20p1_t113_defconfig
+
 ### 添加或裁剪buildroot工具
 
+``` shell
+./build.sh buildroot_menuconfig
+```
 
+在图像化界面配置后，保存退出
+
+``` 
+./build.sh buildroot_saveconfig
+```
 
 添加工具
 
