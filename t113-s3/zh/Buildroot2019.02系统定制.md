@@ -55,13 +55,15 @@ buildroot/buildroot-201902/configs/sun8iw20p1_t113_defconfig
 ./build.sh buildroot_saveconfig
 ```
 
+
+
 添加工具
 
 裁剪可能会不生效
 
 可能编译不生效
 
-
+buildroot里的工具不保证所有都能正常编译，编译失败可自行解决
 
 
 
