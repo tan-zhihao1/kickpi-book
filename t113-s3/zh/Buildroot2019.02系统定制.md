@@ -1,10 +1,8 @@
-# 开机自启动
+# Buildroot系统定制
 
+## 开机自启动
 
-
-
-
-## 关闭开机自启动QT程序
+### 关闭开机自启动QT程序
 
 删除S90deviceTest_QT或重命名为非‘S’开头
 
@@ -21,7 +19,7 @@ SDK里的路径为
 buildroot/config/buildroot/allwinner/system/busybox-init-base-files/etc/init.d/S90deviceTest_QT
 ```
 
-## 添加开机自启动程序
+### 添加开机自启动程序
 
 板卡系统上
 
