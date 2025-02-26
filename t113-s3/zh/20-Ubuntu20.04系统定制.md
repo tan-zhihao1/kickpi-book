@@ -13,15 +13,11 @@ Ubuntu系统用户名/密码：kickpi/kickpi
 sudo apt-get install qemu-user-static
 ```
 
-
-
 修改前先备份保留原本的镜像
 
 ```shell
 cp device/config/rootfs_tar/ubuntu-armhf.tar.gz device/config/rootfs_tar/ubuntu-armhf.tar.gz-backup
 ```
-
-
 
 解压
 
@@ -29,8 +25,6 @@ cp device/config/rootfs_tar/ubuntu-armhf.tar.gz device/config/rootfs_tar/ubuntu-
 mkdir rootfs_k4b
 tar -zxf device/config/rootfs_tar/ubuntu-armhf.tar.gz -C rootfs_k4b
 ```
-
-
 
 chroot 进行挂载，等同于在 root 下进行修改ubuntu镜像
 
