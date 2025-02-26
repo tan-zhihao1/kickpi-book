@@ -55,15 +55,30 @@ buildroot/buildroot-201902/configs/sun8iw20p1_t113_defconfig
 ./build.sh buildroot_saveconfig
 ```
 
+会自动保存在sun8iw20p1_t113_defconfig中
+
+然后重新并打包./build.sh && ./build.sh pack 
+
+buildroot里的工具不保证所有都能正常编译，编译失败尝试可自行解决
+
+常见问题：
+
+添加可编译通过的工具大概率成功，但是裁剪可能会不生效
+
+如果遇到裁剪不生效的参考尝试以下方法解决
+
+``` shell
+rm -rf out/t113/evb1_auto/buildroot/buildroot/target -rf
+find out/t113/evb1_auto/buildroot/buildroot -name ".stamp_target_installed" |xargs rm -rf
+之后重新./build.sh lunch
+重新编译打包./build.sh && ./build.sh pack
+```
 
 
-添加工具
 
-裁剪可能会不生效
+
 
 可能编译不生效
-
-buildroot里的工具不保证所有都能正常编译，编译失败可自行解决
 
 
 
