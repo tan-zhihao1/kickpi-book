@@ -45,11 +45,13 @@ buildroot/buildroot-201902/configs/sun8iw20p1_t113_defconfig
 
 ### 添加或裁剪buildroot工具
 
+执行命令使用图形化界面配置
+
 ``` shell
 ./build.sh buildroot_menuconfig
 ```
 
-在图像化界面配置后，保存退出
+在图形化界面配置后，保存退出
 
 ``` 
 ./build.sh buildroot_saveconfig
