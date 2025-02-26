@@ -324,3 +324,10 @@ public class MyReceiver extends BroadcastReceiver {
 
 
 
+# 常见问题
+
+## 1.安卓系统耳机一直是连接状态
+
+我们喇叭和耳机是同一通路 所以为了喇叭能够直接使用所以把驱动里耳机连接状态默认开启，所以安卓会一直识有耳机， 要想恢复可以还原以下修改
+
+![538c0528ac148df300bf0408eada0234](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/538c0528ac148df300bf0408eada0234.jpg)
