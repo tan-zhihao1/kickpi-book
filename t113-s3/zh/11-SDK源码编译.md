@@ -189,7 +189,9 @@ $ ./build.sh menuconfig
 $ ./build.sh saveconfig
 ```
 
+使用的defconfig文件为
 
+device/config/chips/t113/configs/evb1_auto/linux-5.4/config-5.4
 
 **buildroot配置**
 
@@ -198,4 +200,6 @@ $ ./build.sh buildroot_menuconfig
 $ ./build.sh buildroot_saveconfig
 ```
 
+使用的defconfig文件为
 
+buildroot/buildroot-201902/configs/sun8iw20p1_t113_defconfig
