@@ -37,5 +37,41 @@ buildroot/config/buildroot/allwinner/system/busybox-init-base-files/etc/init.d/
 
 
 
+## 添加应用
 
+### 添加或裁剪buildroot工具
+
+
+
+添加工具
+
+裁剪可能会不生效
+
+可能编译不生效
+
+
+
+
+
+### 添加用户应用或工具
+
+方法一
+
+> 注意：需要完整正常编译过一次SDK
+
+SDK路径中
+
+``` shell
+t113-linux/out/t113/evb1_auto/buildroot/buildroot/target
+```
+
+此目录buildroot文件系统根目录，直接将shuoy
+
+
+
+
+
+
+
+t113-linux/buildroot/buildroot-201902/system/skeleton
 
