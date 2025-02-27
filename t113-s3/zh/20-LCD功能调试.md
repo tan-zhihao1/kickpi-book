@@ -52,8 +52,6 @@ t113-linux/brandy/brandy-2.0/u-boot-2018/drivers/video/sunxi/disp2/disp/lcd
 
 
 
-
-
 ## 调试信息
 
 查看当前显示输出的属性
