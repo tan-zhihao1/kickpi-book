@@ -179,26 +179,26 @@ For specific board model differences, please check the "Introduction to the Gett
 
 ```
 $ ./build.sh lunch
-	
-    You're building on Linux
-    Lunch menu...pick a combo:
-    1. rk356x
-    2. rk3588
-    Which would you like? [0]:	# Select the CPU model
 
-    You're building on Linux
-    Lunch menu...pick a combo:
-	1. BoardConfig-rk3566-kickpi-tx66.mk
-	2. BoardConfig-rk3568-kickpi-tx68.mk
-    Which would you like? [0]:	# Select board model
+Pick a chip:
 
-    You're building on Linux
-    Lunch menu...pick a combo:
-    0. default RootfsConfig.mk
-    1. RootfsConfig-buildroot.mk
-    2. RootfsConfig-debian.mk
-    3. RootfsConfig-ubuntu.mk
-    Which would you like? [0]:	# Select the file system model
+1. rk3566_rk3568
+2. rk3588
+Which would you like? [1]: 
+Switching to chip: rk3566_rk3568
+Pick a defconfig:
+
+1. rockchip_defconfig
+2. rockchip_rk3562_kickpi_k3_buildroot_defconfig
+3. rockchip_rk3562_kickpi_k3_debian_defconfig
+4. rockchip_rk3562_kickpi_k3_ubuntu_defconfig
+5. rockchip_rk3568_kickpi_k1_buildroot_defconfig
+6. rockchip_rk3568_kickpi_k1_debian_defconfig
+7. rockchip_rk3568_kickpi_k1_ubuntu_defconfig
+8. rockchip_rk3568_kickpi_k1b_buildroot_defconfig
+9. rockchip_rk3568_kickpi_k1b_debian_defconfig
+10. rockchip_rk3568_kickpi_k1b_ubuntu_defconfig
+Which would you like? [1]: 
 ```
 
 > The configuration command can be compiled and executed once for the first time.
