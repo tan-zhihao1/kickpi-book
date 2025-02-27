@@ -27,7 +27,7 @@ kernel/linux-5.4/arch/arm/boot/dts/t113-s3-kickpi-k4b.dts
 
 ### Uboot设备树
 
-```shell
+```bash
 t113-linux/brandy/brandy-2.0/u-boot-2018/arch/arm/dts/t113-s3-kickpi-k4b-uboot.dts
 此文件选择了生效的屏幕设备树文件只能选择一个，默认为7寸lvds屏幕，需选择和内核相同规格的设备树文件
 
