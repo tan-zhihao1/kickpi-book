@@ -2,7 +2,9 @@
 
 
 
-## 内核设备树
+## 设备树文件
+
+### 内核设备树
 
 ```bash
 kernel/linux-5.4/arch/arm/boot/dts/t113-s3-kickpi-k4b.dts
@@ -15,7 +17,7 @@ kernel/linux-5.4/arch/arm/boot/dts/t113-s3-kickpi-k4b.dts
 
 ```
 
-Uboot设备树
+### Uboot设备树
 
 ```shell
 t113-linux/brandy/brandy-2.0/u-boot-2018/arch/arm/dts/t113-s3-kickpi-k4b-uboot.dts
@@ -28,7 +30,16 @@ t113-linux/brandy/brandy-2.0/u-boot-2018/arch/arm/dts/t113-s3-kickpi-k4b-uboot.d
 
 ```
 
-## LCD驱动
+## LCD驱动源码
+
+* KERNEL
+
+```shell
+t113-linux/kernel/linux-5.4/drivers/video/fbdev/sunxi/disp2/disp/lcd
+	panels.c			//7寸 LVDS LCD驱动
+	mipi_8_800x1280.c	//8寸 MIPI LCD驱动
+	mipi_10_800x1280.c	//10寸 MIPI LCD驱动
+```
 
 * UBOOT
 
@@ -39,14 +50,7 @@ t113-linux/brandy/brandy-2.0/u-boot-2018/drivers/video/sunxi/disp2/disp/lcd
 	mipi_10_800x1280.c	//10寸 MIPI LCD驱动
 ```
 
-* KERNEL
 
-```shell
-t113-linux/kernel/linux-5.4/drivers/video/fbdev/sunxi/disp2/disp/lcd
-	panels.c			//7寸 LVDS LCD驱动
-	mipi_8_800x1280.c	//8寸 MIPI LCD驱动
-	mipi_10_800x1280.c	//10寸 MIPI LCD驱动
-```
 
 
 
