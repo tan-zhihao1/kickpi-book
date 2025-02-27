@@ -83,14 +83,13 @@ ARM架构选择：
 下载后进行解压在opt文件夹中
 
 ```
-sudo tar -xvf qt-everywhere-src-5.14.2.tar.xz -C /opt/
+$ sudo tar -xvf qt-everywhere-src-5.14.2.tar.xz -C /opt/
 ```
 
 解压完成后进入文件夹，并建立auto.sh脚本文件。
 
 ```
-sudo vim auto.sh
-sudo chmod 755 auto.sh
+$ sudo vim auto.sh
 ```
 
 ```
@@ -114,7 +113,8 @@ sudo chmod 755 auto.sh
 ```
 
 ```
-sudo ./auto.sh
+$ sudo chmod 755 auto.sh
+$ sudo ./auto.sh
 ```
 
 > 脚本是为了执行./configure
