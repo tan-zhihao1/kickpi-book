@@ -2,7 +2,7 @@
 
 
 
-### 内核设备树
+## 内核设备树
 
 * 顶层设备树目录
 
@@ -58,7 +58,7 @@ $ vim longan/device/config/chips/a133/configs/c3/board.dts
 
 
 
-### LCD驱动
+## LCD驱动
 
 * UBOOT
 
@@ -77,3 +77,8 @@ longan/kernel/linux-4.9/drivers/video/fbdev/sunxi/disp2/disp/lcd/
 
 
 ## 调试信息
+
+```
+cat /sys/class/disp/disp/attr/sys 
+```
+
