@@ -38,7 +38,7 @@ qmake工具
 1.查看当前Linux系统架构 
 
 ```
-uname -m 
+$ uname -m 
 ```
 
 > 板子系统是ARM架构 虚拟机则是X86_64架构
@@ -141,7 +141,7 @@ $ sudo ./auto.sh
 执行编译
 
 ```
-sudo make -j4
+$ sudo make -j4
 ```
 
 > 时间较长，基于板子功能4-12小时
@@ -149,20 +149,20 @@ sudo make -j4
 ##### FAQ ：如果已经安装python3，但是构建过程中提示缺少了 Python 解释器。可以创建一个符号链接：
 
 ```
-sudo ln -s /usr/bin/python3 /usr/bin/python
+$ sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
 
 完成后执行
 
 ```
-sudo make install
+$ sudo make install
 ```
 
 此命令会将程序安装在/opt/Qt/ 中。
 安装成功后修改环境变量：
 
 ```
-sudo vim /etc/profile
+$ sudo vim /etc/profile
 ```
 
 ```
@@ -173,7 +173,7 @@ export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH
 ```
 
 ```
-source /etc/profile/
+$ source /etc/profile/
 ```
 
 最后执行`qmake -v`
@@ -196,20 +196,20 @@ Qtcreator最好和Qt版本相对应
 进入解压路径，执行
 
 ```
-qmaek -r
+$ qmaek -r
 ```
 
 等待完成后生成MakeFile文件。
 然后执行
 
 ```
-sudo make -j4
+$ sudo make -j4
 ```
 
 等待编译完成后，执行
 
 ```
-sudo make install
+$ sudo make install
 ```
 
 执行完
