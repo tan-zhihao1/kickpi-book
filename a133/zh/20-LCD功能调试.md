@@ -78,6 +78,8 @@ longan/kernel/linux-4.9/drivers/video/fbdev/sunxi/disp2/disp/lcd/
 
 ## 调试信息
 
+查看当前显示输出的属性
+
 ```
 cat /sys/class/disp/disp/attr/sys 
 ```
