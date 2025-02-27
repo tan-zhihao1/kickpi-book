@@ -303,6 +303,18 @@ All available flash:
 Choice [default]: 0
 ```
 
+如果提示缺少文件
+
+```
+aarch64-linux-gnu-gcc: error: /home/A/sdk/a133/a133-linux-test1/kernel/linux-4.9/modules/gpu/img-rgx/linux/rogue_km/binary_sunxi_linux_release/target_aarch64/kbuild/services/server/env/linux/event.c: No such file or directory
+```
+
+需要进行清除操作
+
+```
+$ ./build.sh clean
+```
+
 
 
 ### 工具链
