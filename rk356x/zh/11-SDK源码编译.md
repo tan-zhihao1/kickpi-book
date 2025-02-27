@@ -133,6 +133,8 @@ SDK源码包不包含文件系统镜像，需要参考下面步骤，单独解�
 ```
 $ tar -zxvf buildroot-dl-*.tar.gz 
 $ cp -rf dl buildroot/
+
+$ ls buildroot/dl
 ```
 
 > buildroot-dl-20230607.tar.gz :为dl库离线包用于节约第一次编译时间
