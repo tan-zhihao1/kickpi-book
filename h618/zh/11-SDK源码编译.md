@@ -114,9 +114,10 @@ $ git reset --hard
 
 首次编译需要配置一下编译环境，后续不改变sdk位置，则无需重复配置
 
-```
+```shell
 $ cd longan
 $ ./build.sh config
+$ cd -
 ```
 
 编译选项
