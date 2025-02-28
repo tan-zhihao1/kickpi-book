@@ -216,5 +216,5 @@ value
 rk356x-linux\kernel\include\uapi\linux\input-event-codes.h
 ```
 
-测试方法参考：[KEY test](KEY test)
+测试方法参考：[KEY 测试](#KEY test)
 
