@@ -566,6 +566,8 @@ $ su
 
 ## 14.关闭Ubuntu图形化桌面
 
+输入下面命令禁用桌面服务
+
 ```shell
 $ sudo systemctl disable slim.service
 $ sudo systemctl stop slim.service
