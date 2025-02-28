@@ -95,13 +95,13 @@ $ sudo apt-get install xz-utils
 
 ![image-20241028093459681](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093459681.png)
 
-虚拟机选择：
+虚拟机X86_64架构选择：
 
 ![image-20250219155414011](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155414011.png)
 
 ​	下载后到虚拟机中运行安装程序
 
-ARM架构选择：
+板子ARM架构选择：
 
 选择single
 
