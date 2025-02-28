@@ -150,9 +150,9 @@ car @ (702 263 716 273) 0.163944
 
 
 
-## 3. 解析本地视频流
+## 3. 解析本地视频流<a id="ParseLocalVideoStreams"></a>
 
-### 硬件环境
+硬件环境
 
 测试环境：RK3568 Debian11
 
@@ -284,4 +284,10 @@ $ cd /rockchip-test/npu2/rknn_yolov5_demo_Linux/
 ```
 $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn /dev/video10
 ```
+
+
+
+### 获取示例程序源码
+
+与解析本地视频流使用demo为同一个，故源码参考[解析本地视频流](#ParseLocalVideoStreams)
 
