@@ -210,5 +210,11 @@ value
 (END)
 ```
 
+其中code值可以参考驱动中的宏定义
+
+```
+rk356x-linux\kernel\include\uapi\linux\input-event-codes.h
+```
+
 
 
