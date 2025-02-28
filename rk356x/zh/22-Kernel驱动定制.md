@@ -70,8 +70,6 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 
 
 
-
-
 ## PWM 配置
 
 例如：将K1拓展引脚上的GPIO0_C0（pwm1m0）配置成PWM
