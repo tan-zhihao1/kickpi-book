@@ -56,6 +56,8 @@ $ sudo ./mainwindow
 
 ## 2. QT应用编译环境搭建
 
+​	下面介绍虚拟机下安装QT和板子下安装QT的过程
+
 ### qmake工具安装
 
 ​	qmake工具是用于Qt项目根据工程文件.pro生成MakeFile的工具。对于简单的工程，只需要在工程的顶层目录运行qmake。默认情况下，qmake会生成一个构建工程的MakeFile，此时可以运行平台相关的make工具构建工程。
@@ -253,7 +255,7 @@ $ sudo make install
 
 Kits选择gcc为板子对应的编译工具链即可，一般qtcreator默认设配好
 
-### gcc工具版本
+### gcc交叉编译工具
 
 虚拟机：最好使用SDK里面的交叉编译工具(或者自己去官网下载安装一样的交叉工具链)
 
@@ -261,14 +263,7 @@ Kits选择gcc为板子对应的编译工具链即可，一般qtcreator默认设�
 (SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
 ```
 
-板子端： 安装gcc即可 无需交叉编译
-
-```
-$ sudo apt-get update
-$ sudo apt install gcc-9
-```
-
-
+板子端：无需交叉编译
 
 
 
