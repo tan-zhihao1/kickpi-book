@@ -215,14 +215,9 @@ cd longan
 
 ## 3.Linux SDK编译
 
-
-
-
-
 ### 完整编译
-```
+```shell
 $ ./build.sh config
-
 Welcome to mkscript setup progress
 All available platform:
    0. android
@@ -257,10 +252,9 @@ Choice [default]: 0
 ```
 
 
-```
+```shell
 ./build.sh lunch  选择K5或者K5C
-
-
+./build.sh 编译完整镜像
 ```
 
 >镜像生成目录：out/a133_linux_c3_uart0.img
