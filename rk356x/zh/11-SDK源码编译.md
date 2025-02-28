@@ -49,6 +49,8 @@ Rockchip Linux SDK由SDK源码包、文件系统镜像组成
 
 SDK源码包内核版本5.10，支持Ubuntu20.04、Debian11文件系统
 
+> SDK里有提供buildroot系统但**buildroot系统不做维护**
+
 
 
 ### 获取SDK源码
@@ -112,8 +114,6 @@ $ git reset --hard
 SDK源码包不包含文件系统镜像，需要参考下面步骤，单独解压拷贝文件系统到SDK源码
 
 网盘提供debian、ubuntu文件系统镜像，可根据需求自行下载
-
-> SDK里有提供buildroot系统但**buildroot系统不做维护**
 
 
 
