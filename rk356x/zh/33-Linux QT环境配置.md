@@ -85,6 +85,8 @@ $ sudo apt install clang libclang-dev
 $ sudo apt-get install xz-utils
 ```
 
+3.官网下载安装Qt
+
 [qt不在维护版本](https://download.qt.io/new_archive/qt/)
 
 [qt在维护版本](https://download.qt.io/official_releases/qt/)
