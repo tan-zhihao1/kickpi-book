@@ -183,7 +183,7 @@ value
 
 ```
 
-测试方法参考
+测试方法参考:12-硬件功能测试 [KEY 测试]()
 
 ### gpio-key配置
 
@@ -241,5 +241,5 @@ value
 rk356x-linux\kernel\include\uapi\linux\input-event-codes.h
 ```
 
-测试方法参考文档：12-硬件功能测试 [KEY 测试](./12-硬件功能测试.md#KEYtest)
+测试方法参考文档：12-硬件功能测试 [KEY 测试](12-硬件功能测试.md#KEYtest)
 
