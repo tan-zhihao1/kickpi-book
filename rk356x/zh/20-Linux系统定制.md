@@ -511,7 +511,7 @@ PermitRootLogin yes
 
 
 
-## 12 备份SD卡系统
+## 12.备份SD卡系统
 
 > 注意：这种方式替换后的rootfs 可能存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
 
@@ -531,7 +531,7 @@ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 
 
-## 13 Ubuntu桌面版进入root用户
+## 13.Ubuntu桌面版进入root用户
 
 最新桌面版系统默认登录用户为：kickpi
 
