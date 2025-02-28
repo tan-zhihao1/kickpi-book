@@ -86,7 +86,7 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 +};
 ```
 
-
+测试方法参考:12-硬件功能测试 [PWM](12-硬件功能测试.md#PWM)
 
 ## GPIO配置
 
