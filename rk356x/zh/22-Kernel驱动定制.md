@@ -74,7 +74,7 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 
 ## PWM 配置
 
-例如：将K1拓展引脚上的GPIO配置成PWM
+例如：将K1拓展引脚上的GPIO0_C配置成PWM
 
 ```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
