@@ -285,7 +285,7 @@ $ cd /rockchip-test/npu2/rknn_yolov5_demo_Linux/
 $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn /dev/video10
 ```
 
-
+> 运行时间过长会因内存不足，终止进程
 
 ### 获取示例程序源码
 
