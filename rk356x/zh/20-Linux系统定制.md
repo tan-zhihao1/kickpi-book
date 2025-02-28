@@ -570,6 +570,16 @@ $ su
 
 暂时关闭桌面
 
+```shell
+$ sudo systemctl stop slim.service
+```
+
+临时启动桌面
+
+```shell
+$ sudo systemctl start slim.service
+```
+
 永久禁用桌面
 
 ```shell
