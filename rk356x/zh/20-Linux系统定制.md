@@ -566,10 +566,15 @@ $ su
 
 ## 14.关闭Ubuntu图形化桌面
 
-输入下面命令禁用桌面服务并重启
+永久禁用桌面
 
 ```shell
 $ sudo systemctl disable slim.service
-$ sudo reboot
+```
+
+永久启动桌面
+
+```
+$ sudo systemctl enable slim.service
 ```
 
