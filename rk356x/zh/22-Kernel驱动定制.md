@@ -158,11 +158,13 @@ value
 
 
 
-## GPIO_KEY配置
+## GPIO配置
 
-​	GPIO需要配置输入或者按键时可以配置成KEY模式
+​	GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树这部分修改的示例，供参考修改
 
-例如：将K1拓展引脚上的GPIO1_D4配置成KEY_1，可以参考下面的修改
+### LED配置
+
+例如：将K1拓展引脚上的GPIO1_D4配置成LED，可以参考下面的修改
 
 ```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
@@ -171,18 +173,21 @@ value
          gpios = <&gpio1 RK_PD0 GPIO_ACTIVE_HIGH>;
          default-state = "off";
      };
--    gpio1d4 {
--        gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;
--        default-state = "off";
--    };
-+    // gpio1d4 {
-+    //     gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;
-+    //     default-state = "off";
-+    // };
++    gpio1d4 {
++        gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;
++        default-state = "off";
++    };
      gpio3b5 {
          gpios = <&gpio3 RK_PB5 GPIO_ACTIVE_HIGH>;
          default-state = "off";
 
+```
+
+### gpio-key配置
+
+例如：将K1拓展引脚上的GPIO1_D4配置成KEY_1，可以参考下面的修改
+
+```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi
 +++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi
 @@ -76,6 +76,21 @@ fan0: gpio-fan {
