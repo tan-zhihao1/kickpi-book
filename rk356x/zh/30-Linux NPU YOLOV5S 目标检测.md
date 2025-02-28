@@ -282,6 +282,6 @@ $ cd /rockchip-test/npu2/rknn_yolov5_demo_Linux/
 运行示例程序
 
 ```
-$ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
+$ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn /dev/video10
 ```
 
