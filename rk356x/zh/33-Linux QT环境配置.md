@@ -87,11 +87,11 @@ $ sudo apt-get install xz-utils
 
 3.官网下载安装Qt
 
-[qt不在维护版本](https://download.qt.io/new_archive/qt/)
+[qt不在维护版本](https://download.qt.io/new_archive/qt/) 
 
 [qt在维护版本](https://download.qt.io/official_releases/qt/)
 
-选择你需要的版本
+访问官网选择下载需要的版本
 
 ![image-20241028093459681](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093459681.png)
 
