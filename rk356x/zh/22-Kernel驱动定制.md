@@ -179,8 +179,7 @@ value
 +    };
      gpio3b5 {
          gpios = <&gpio3 RK_PB5 GPIO_ACTIVE_HIGH>;
-         default-state = "off";
-
+         default-state = "off";xxxxxxxxxx --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi+++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi@@ -29,10 +29,10 @@ gpio1d0 {         gpios = <&gpio1 RK_PD0 GPIO_ACTIVE_HIGH>;         default-state = "off";     };+    gpio1d4 {+        gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;+        default-state = "off";+    };     gpio3b5 {         gpios = <&gpio3 RK_PB5 GPIO_ACTIVE_HIGH>;         default-state = "off";&leds {    gpio1d4 {         gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;         default-state = "off";    };};
 ```
 
 ### gpio-key配置
@@ -188,6 +187,24 @@ value
 例如：将K1拓展引脚上的GPIO1_D4配置成KEY_1，可以参考下面的修改
 
 ```diff
+--- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
++++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
+@@ -29,10 +29,10 @@ gpio1d0 {
+         gpios = <&gpio1 RK_PD0 GPIO_ACTIVE_HIGH>;
+         default-state = "off";
+     };
+-    gpio1d4 {
+-        gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;
+-        default-state = "off";
+-    };
++    // gpio1d4 {
++    //     gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;
++    //     default-state = "off";
++    // };
+     gpio3b5 {
+         gpios = <&gpio3 RK_PB5 GPIO_ACTIVE_HIGH>;
+         default-state = "off";
+
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi
 +++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi
 @@ -76,6 +76,21 @@ fan0: gpio-fan {
