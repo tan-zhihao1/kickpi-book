@@ -6,7 +6,7 @@
 
 ### Ubuntu20.04
 
-Ubuntu20.04系统默认配置好QT运行环境，QT版本为5.12.8
+Ubuntu20.04系统默认配置好QT5.12.8运行环境
 
 查看QT库：
 
@@ -31,7 +31,7 @@ $ sudo ./mainwindow
 
 ### Debian11
 
-Debian11系统默认配置好QT运行环境，QT版本为5.15.2
+Debian11系统默认配置好QT5.15.2运行环境
 
 查看QT库：
 
@@ -89,9 +89,11 @@ $ sudo apt-get install xz-utils
 
 3.官网下载安装Qt
 
-[qt不在维护版本](https://download.qt.io/new_archive/qt/) 
+官网链接：
 
-[qt在维护版本](https://download.qt.io/official_releases/qt/)
+​	[qt不在维护版本](https://download.qt.io/new_archive/qt/) 
+
+​	[qt在维护版本](https://download.qt.io/official_releases/qt/)
 
 访问官网选择下载需要的版本
 
