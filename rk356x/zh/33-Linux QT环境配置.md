@@ -20,7 +20,7 @@ $ ls -l /usr/lib/aarch64-linux-gnu/libQt*
 3-SoftwareData软件资料\Qt_demo\mainwindow
 ```
 
-将demo拷贝进系统任意目录下
+将demo拷贝进系统任意目录下，进行测试：
 
 ```shell
 $ sudo chmod +x ./mainwindow
@@ -45,7 +45,7 @@ $ ls -l /usr/lib/aarch64-linux-gnu/libQt*
 3-SoftwareData软件资料\Qt_demo\mainwindow
 ```
 
-将demo拷贝进系统任意目录下
+将demo拷贝进系统任意目录下，进行测试：
 
 ```shell
 $ sudo chmod +x ./mainwindow
