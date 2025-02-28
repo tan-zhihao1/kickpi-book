@@ -179,8 +179,11 @@ value
 +    };
      gpio3b5 {
          gpios = <&gpio3 RK_PB5 GPIO_ACTIVE_HIGH>;
-         default-state = "off";xxxxxxxxxx --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi+++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi@@ -29,10 +29,10 @@ gpio1d0 {         gpios = <&gpio1 RK_PD0 GPIO_ACTIVE_HIGH>;         default-state = "off";     };+    gpio1d4 {+        gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;+        default-state = "off";+    };     gpio3b5 {         gpios = <&gpio3 RK_PB5 GPIO_ACTIVE_HIGH>;         default-state = "off";&leds {    gpio1d4 {         gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;         default-state = "off";    };};
+         default-state = "off";
+
 ```
+
+测试方法参考
 
 ### gpio-key配置
 
