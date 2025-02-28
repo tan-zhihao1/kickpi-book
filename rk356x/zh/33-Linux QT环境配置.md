@@ -10,17 +10,47 @@ Ubuntu20.04系统默认配置好QT运行环境，QT版本为5.12.8
 
 查看QT库：
 
-```
-ls -l /usr/lib/aarch64-linux-gnu/libQt*
+```shell
+$ ls -l /usr/lib/aarch64-linux-gnu/libQt*
 ```
 
-测试demo：
+测试demo位于网盘目录：
+
+```
+3-SoftwareData软件资料\Qt_demo\mainwindow
+```
+
+将demo拷贝进系统任意目录下
+
+```shell
+$ sudo chmod +x ./mainwindow
+$ sudo ./mainwindow
+```
 
 
 
 ### Debian11
 
 Debian11系统默认配置好QT运行环境，QT版本为5.15.2
+
+查看QT库：
+
+```shell
+$ ls -l /usr/lib/aarch64-linux-gnu/libQt*
+```
+
+测试demo位于网盘目录：
+
+```
+3-SoftwareData软件资料\Qt_demo\mainwindow
+```
+
+将demo拷贝进系统任意目录下
+
+```shell
+$ sudo chmod +x ./mainwindow
+$ sudo ./mainwindow
+```
 
 
 
