@@ -56,9 +56,9 @@ $ sudo ./mainwindow
 
 ## 2. QT应用编译环境搭建
 
-### QT Creator环境配置
+### qmake工具
 
-qmake工具
+​	qmake工具是用于Qt项目根据工程文件.pro生成MakeFile的工具
 
 1.查看当前Linux系统架构 
 
