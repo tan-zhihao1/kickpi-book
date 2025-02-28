@@ -261,4 +261,27 @@ $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 
 ## 4. 解析摄像头视频流
 
-待完善
+### 硬件环境
+
+测试环境：RK3568 Debian11
+
+> 目前 RK3568、RK3588 可使用此demo
+
+
+
+### 示例程序测试
+
+YOLOV5S目标检测 示例程序 已内置在Debian11文件系统
+
+进入示例程序目录
+
+```
+$ cd /rockchip-test/npu2/rknn_yolov5_demo_Linux/
+```
+
+运行示例程序
+
+```
+$ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
+```
+
