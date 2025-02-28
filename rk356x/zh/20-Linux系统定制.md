@@ -564,7 +564,11 @@ $ su
 
 
 
-## 14.关闭Ubuntu图形化桌面
+## 14.Ubuntu图形化桌面
+
+​	关闭Ubuntu图形化桌面会进入Linux命令行界面，下面介绍怎么开关Ubuntu图形化桌面
+
+暂时关闭桌面
 
 永久禁用桌面
 
@@ -574,7 +578,7 @@ $ sudo systemctl disable slim.service
 
 永久启动桌面
 
-```
+```shell
 $ sudo systemctl enable slim.service
 ```
 
