@@ -76,7 +76,20 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 
 例如：将K1拓展引脚上的GPIO配置成PWM
 
+```
+--- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
++++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
 
++&pwm1 {
++    status = "okay";
++    pinctrl-0 = <&pwm1m0_pins>;
++};
++
++&pwm2 {
++    status = "okay";
++    pinctrl-0 = <&pwm2m0_pins>;
++};
+```
 
 
 
