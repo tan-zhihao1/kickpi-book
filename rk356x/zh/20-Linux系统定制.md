@@ -570,6 +570,6 @@ $ su
 
 ```shell
 $ sudo systemctl disable slim.service
-$ sudo systemctl stop slim.service
+$ reboot
 ```
 
