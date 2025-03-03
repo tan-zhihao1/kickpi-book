@@ -20,7 +20,7 @@ $ ./build.sh kernel-config
 kernel-5.10
 ```
 
-kernel config 命令通用配置
+kernel config 通用配置命令
 
 ```
 cd kernel-5.10/
@@ -29,7 +29,7 @@ make ARCH=arm64 menuconfig
 make saveconfig
 make ARCH=arm64 rockchip_defconfig
 ```
-> ARCH=arm64&emsp;配置架构，目前rk356x/3588选用arm64
+> ARCH=arm64&emsp;配置架构，目前rk356x/3588为arm64
 > menuconfig&emsp;启动图形化配置界面
 > saveconfig&emsp;将当前配置精简后保存为 `defconfig` 文件‌
 > rockchip_defconfig&emsp;加载 Rockchip 官方预置的 ARM64 架构配置文件
