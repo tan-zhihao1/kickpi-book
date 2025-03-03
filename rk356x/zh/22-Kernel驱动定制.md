@@ -29,10 +29,10 @@ make ARCH=arm64 menuconfig
 make saveconfig
 make ARCH=arm64 rockchip_defconfig
 ```
-> loadconfig恢复旧的
->menuconfig启动图形化配置界面，根据IC架构，目前rk356x/3588选用arm64
-> saveconfig将当前配置精简后保存为 `defconfig` 文件‌
-> rockchip_defconfig加载 Rockchip 官方预置的 ARM64 架构配置文件
+> loadconfig&emsp;恢复旧的
+> menuconfig&emsp;启动图形化配置界面，根据IC架构，目前rk356x/3588选用arm64
+> saveconfig&emsp;将当前配置精简后保存为 `defconfig` 文件‌
+> rockchip_defconfig&emsp;加载 Rockchip 官方预置的 ARM64 架构配置文件
 
 ```
 cp defconfig arch/arm64/configs/rockchip_defconfig
