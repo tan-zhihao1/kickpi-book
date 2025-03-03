@@ -597,6 +597,16 @@ apollo-p2:/ $ su
 
 
 
+### ADB投屏
+
+下载工具网盘路径
+
+h618_data\5-DevelopmentTools开发工具\ADB Screen Cast 投屏
+
+![image-20250303103950558](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250303103950558.png)
+
+![image-20250303104027819](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250303104027819.png)
+
 ## 旋转功能
 
 支持使用adb命令进行旋转
