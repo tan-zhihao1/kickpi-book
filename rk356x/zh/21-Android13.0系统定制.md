@@ -43,7 +43,7 @@ $ vim device/rockchip/rk356x/BoardConfig.mk
 
 ### 修改触摸方向
 
-以7寸屏的TP为例，可以通过这个修改你要的方向
+以7寸屏的TP为例，可以通过这个修改你要的方向参考[](RK3568LCD配置.md#TouchDriver)
 
 ```
 $ vim kernel-5.10\arch\arm64\boot\dts\rockchip\rk3568-kickpi-lcd-lvds0-7-1024-600.dtsi
