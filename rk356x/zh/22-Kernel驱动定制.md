@@ -178,4 +178,4 @@ rk356x-linux\kernel\include\uapi\linux\input-event-codes.h
 
 通过软件LCD屏幕配置，点亮不同的屏幕
 
-详情参考：[RK3568 LCD配置](40-RK3568 LCD配置.md)
+配置参考文档：[RK3568 LCD配置](40-RK3568 LCD配置.md)
