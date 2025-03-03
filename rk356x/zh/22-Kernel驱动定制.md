@@ -32,6 +32,11 @@ make saveconfig //保存为默认配置
 make ARCH=arm64 rockchip_defconfig //加载这个路径下的defconfig
 ```
 
+```
+```
+
+
+
 > 具体配置可通过 build.sh 进行追踪
 
 make  saveconfig生成defconfig 需要cp 到SDK编译使用的*defconfig文件进行使用
