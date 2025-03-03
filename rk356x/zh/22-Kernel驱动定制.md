@@ -24,28 +24,20 @@ kernel config 命令通用配置
 
 ```
 cd kernel-5.10/
-make ARCH=arm64 menuconfig 
+make ARCH=arm64 menuconfig
+make loadconfig
+make menuconfig
+make saveconfig
+make ARCH=arm64 rockchip_defconfig
 ```
 > 根据IC架构，目前rk356x/3588选用arm64
 >
-> make loadconfig //恢复旧的
-> make menuconfig //进入配置图形化界面
-> make saveconfig //保存为默认配置
-> make ARCH=arm64 rockchip_defconfig //加载这个路径下的defconfig
-```
-make loadconfig //恢复旧的
-make menuconfig //进入配置图形化界面
-make saveconfig //保存为默认配置
-make ARCH=arm64 rockchip_defconfig //加载这个路径下的defconfig
-```
-
-```
-```
-
-
-
+> loadconfig //恢复旧的
+> menuconfig //进入配置图形化界面
+> saveconfig //保存为默认配置
+> rockchip_defconfig //加载这个路径下的defconfig
+>
 > 具体配置可通过 build.sh 进行追踪
-
 make  saveconfig生成defconfig 需要cp 到SDK编译使用的*defconfig文件进行使用
 
 ```
