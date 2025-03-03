@@ -60,13 +60,13 @@ $ vim kernel-5.10\arch\arm64\boot\dts\rockchip\rk3568-kickpi-lcd-lvds0-7-1024-60
 
 ## 4. 默认隐藏状态栏
 
-
+待完善
 
 
 
 ## 5. 默认隐藏导航栏
 
-
+待完善
 
 
 
