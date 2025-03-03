@@ -36,13 +36,13 @@ make ARCH=arm64 rockchip_defconfig
 > menuconfig 启动图形化配置界面
 > saveconfig 将当前配置精简后保存为 `defconfig` 文件‌
 > rockchip_defconfig 加载 Rockchip 官方预置的 ARM64 架构配置文件
-> 具体配置可通过 build.sh 进行追踪
-make  saveconfig生成defconfig 需要cp 到SDK编译使用的*defconfig文件进行使用
 
 ```
 cp defconfig arch/arm64/configs/rockchip_defconfig
 ```
 
+> make  saveconfig生成defconfig 需要cp 到SDK编译使用的*defconfig文件进行使用
+>
 > 不同版本的defconfig可能不同，可在git历史记录中查找对应的版本文件
 >
 > $ git log --name-only   kernel-5.10/ | grep defconfig
