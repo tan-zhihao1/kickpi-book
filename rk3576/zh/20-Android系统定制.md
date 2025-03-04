@@ -3,7 +3,7 @@
 ## 系统平台
 
 ```
-$ get_build_var TARGET_BOARD_PLATFORM_PRODUCT
+(SDK)$ get_build_var TARGET_BOARD_PLATFORM_PRODUCT
 tablet
 ```
 
@@ -18,7 +18,7 @@ Uboot阶段解析显示图片kernel-6.1/logo.bmp
 Kernel阶段解析显示图片kernel-6.1/logo_kernel.bmp
 
 ```
-$ ls kernel-6.1/*.bmp
+(SDK)$ ls kernel-6.1/*.bmp
 kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
 ```
 
@@ -27,7 +27,7 @@ kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
 ## 开机动画
 
 ```
-$ ls device/rockchip/common/bootanimation.zip
+(SDK)$ ls device/rockchip/common/bootanimation.zip
 ```
 
 
@@ -46,7 +46,7 @@ SF_PRIMARY_DISPLAY_ORIENTATION ?= 0
 ## 默认永不休眠
 
 ```diff
-$ vim device/rockchip/rk3576/overlay/frameworks/base/packages/SettingsProvider/res/values/defaults.xml
+(SDK)$ vim device/rockchip/rk3576/overlay/frameworks/base/packages/SettingsProvider/res/values/defaults.xml
 -    <integer name="def_screen_off_timeout">60000</integer>
 +    <integer name="def_screen_off_timeout">2147483647</integer>
 ```
@@ -56,7 +56,7 @@ $ vim device/rockchip/rk3576/overlay/frameworks/base/packages/SettingsProvider/r
 ## 默认无锁屏
 
 ```diff
-$ vim device/rockchip/rk3576/overlay/frameworks/base/packages/SettingsProvider/res/values/defaults.xml
+(SDK)$ vim device/rockchip/rk3576/overlay/frameworks/base/packages/SettingsProvider/res/values/defaults.xml
 -    <bool name="def_lockscreen_disabled">false</bool>
 +    <bool name="def_lockscreen_disabled">true</bool>
 
