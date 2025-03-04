@@ -2,7 +2,9 @@
 
 SDK - 指代源码路径
 
-console - 指代主板控制台
+console - 指代调试控制台
+
+ADB - 指代Android Debug Bridge
 
 ## 系统平台
 
