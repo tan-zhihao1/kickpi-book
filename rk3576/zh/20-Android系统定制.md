@@ -9,9 +9,13 @@ ADB - 指代Android Debug Bridge命令行工具
 ## 系统平台
 
 ```
+(SDK)$ source build/envsetup.sh
+(SDK)$ lunch 
 (SDK)$ get_build_var TARGET_BOARD_PLATFORM_PRODUCT
 tablet
 ```
+
+> lunch 选择 rk3576_u-userdebug
 
 
 
