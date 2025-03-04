@@ -473,9 +473,9 @@ kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 
 ```
 Android:
-	（Android源码）/RKDocs/
+	（Android SDK）/RKDocs/
 Linux:
-	（Linux源码）/docs/
+	（Linux SDK）/docs/
 ```
 
 
@@ -484,9 +484,9 @@ Linux:
 
 ```
 Android:
-	（Android源码）/RKDocs/android/RK3576_Developer_Guide_Android14_SDK_CN.pdf
+	（Android SDK）/RKDocs/android/RK3576_Developer_Guide_Android14_SDK_CN.pdf
 Linux:
-	（Linux源码）/docs/readme_cn.md
-	（Linux源码）/docs/cn/Rockchip_Developer_Guide_Linux_Software_CN.pdf
+	（Linux SDK）/docs/readme_cn.md
+	（Linux SDK）/docs/cn/Rockchip_Developer_Guide_Linux_Software_CN.pdf
 ```
 
