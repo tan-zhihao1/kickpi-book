@@ -18,7 +18,7 @@ kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
 ## 开机动画
 
 ```
-device/rockchip/common/bootanimation.zip
+$ ls device/rockchip/common/bootanimation.zip
 ```
 
 
