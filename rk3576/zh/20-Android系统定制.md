@@ -4,9 +4,9 @@
 
 开机LOGO分两个部分，分别是Uboot阶段、Kernel阶段
 
-Uboot阶段解析图片kernel-5.10/logo.bmp
+Uboot阶段解析显示图片kernel-6.1/logo.bmp
 
-Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
+Kernel阶段解析显示图片kernel-6.1/logo_kernel.bmp
 
 ```
 $ ls kernel-6.1/*.bmp
