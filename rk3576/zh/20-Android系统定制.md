@@ -1,5 +1,14 @@
 # 20-Android系统定制
 
+## 系统平台
+
+```
+$ get_build_var TARGET_BOARD_PLATFORM_PRODUCT
+tablet
+```
+
+
+
 ## 开机LOGO
 
 开机LOGO分两个部分，分别是Uboot阶段、Kernel阶段
@@ -54,15 +63,6 @@ $ vim device/rockchip/rk3576/overlay/frameworks/base/packages/SettingsProvider/r
 $ vim device/rockchip/rk3576/overlay/frameworks/base/core/res/res/values/config.xml
 +    <!-- Is the lock-screen disabled for new users by default -->
 +    <bool name="config_disableLockscreenByDefault">true</bool>
-```
-
-
-
-## 软件平台
-
-```
-$ get_build_var TARGET_BOARD_PLATFORM_PRODUCT
-tablet
 ```
 
 
