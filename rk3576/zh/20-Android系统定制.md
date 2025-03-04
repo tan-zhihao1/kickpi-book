@@ -1,6 +1,12 @@
 # 20-Android系统定制
 
+## 开机LOGO
 
+开机LOGO分两个部分，分别是Uboot阶段、Kernel阶段
+
+Uboot阶段解析图片kernel-5.10/logo.bmp
+
+Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
 
 
 
