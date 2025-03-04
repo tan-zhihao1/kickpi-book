@@ -1,6 +1,14 @@
 # 20-Android系统定制
 
+
+
+
+
 ## 开机动画
+
+```
+device/rockchip/common/bootanimation.zip
+```
 
 
 
