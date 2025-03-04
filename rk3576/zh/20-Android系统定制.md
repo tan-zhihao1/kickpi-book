@@ -8,6 +8,14 @@ Uboot阶段解析图片kernel-5.10/logo.bmp
 
 Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
 
+```
+$ ls kernel-5.10/
+	logo.bmp
+	logo_kernel.bmp
+```
+
+
+
 
 
 ## 开机动画
