@@ -23,6 +23,12 @@ $ ls device/rockchip/common/bootanimation.zip
 
 
 
+## 显示旋转
+
+
+
+
+
 ## 默认永不休眠
 
 ```diff
