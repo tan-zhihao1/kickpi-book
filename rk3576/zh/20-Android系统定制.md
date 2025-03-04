@@ -88,6 +88,6 @@ $ vim device/rockchip/rk3576/overlay/frameworks/base/core/res/res/values/config.
 如果不想出现，配置 captive_portal_server ，重启即可
 
 ```
-adb shell settings put global captive_portal_server 204.gentool.top
+(ADB)$ adb shell settings put global captive_portal_server 204.gentool.top
 ```
 
