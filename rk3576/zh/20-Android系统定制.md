@@ -25,7 +25,12 @@ $ ls device/rockchip/common/bootanimation.zip
 
 ## 显示旋转
 
+Android系统显示旋转，可以修改如下配置，配置参数为0/90/180/270
 
+```
+# For Surface Flinger Rotation
+SF_PRIMARY_DISPLAY_ORIENTATION ?= 0
+```
 
 
 
