@@ -194,6 +194,12 @@ $ xinput_calibrator -v --device $id
 
 
 
+### 永久修改触摸方向
+
+可以参考LCD配置文档：[单触摸屏驱动配置](40-RK3568 LCD配置.md#TouchDriver)
+
+
+
 ## 5. 网络配置
 
 ### 静态IP地址配置
