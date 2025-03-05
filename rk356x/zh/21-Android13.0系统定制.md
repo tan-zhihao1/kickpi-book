@@ -55,7 +55,21 @@ $ vim device/rockchip/rk356x/BoardConfig.mk
 
 ## 5. 默认隐藏导航栏
 
-待完善
+Android13默认隐藏导航栏修改如下：
+
+```diff
+--- a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/CentralSurfacesImpl.java
++++ b/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/CentralSurfacesImpl.java
+@@ -1234,7 +1234,7 @@ public class CentralSurfacesImpl implements CoreStartable, CentralSurfaces {
+         mStatusBarTouchableRegionManager.setup(this, mNotificationShadeWindowView);
+         mNotificationPanelViewController.setHeadsUpManager(mHeadsUpManager);
+ 
+-        createNavigationBar(result);
++        // createNavigationBar(result);
+ 
+         if (ENABLE_LOCKSCREEN_WALLPAPER && mWallpaperSupported) {
+             mLockscreenWallpaper = mLockscreenWallpaperLazy.get();
+```
 
 
 
