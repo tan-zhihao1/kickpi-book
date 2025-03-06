@@ -572,6 +572,8 @@ $ su
 
 ## 14.开关图形化桌面
 
+### Ubuntu系统
+
 ​	关闭Ubuntu图形化桌面会进入Linux命令行界面，下面介绍怎么开关Ubuntu图形化桌面
 
 暂时关闭桌面
@@ -596,5 +598,33 @@ $ sudo systemctl disable slim.service
 
 ```shell
 $ sudo systemctl enable slim.service
+```
+
+
+
+### Debian系统
+
+暂时关闭桌面
+
+```shell
+$ sudo systemctl stop lightdm.service
+```
+
+临时启动桌面
+
+```shell
+$ sudo systemctl start lightdm.service
+```
+
+永久禁用桌面
+
+```shell
+$ sudo systemctl disable lightdm.service
+```
+
+永久启动桌面
+
+```shell
+$ sudo systemctl enable lightdm.service
 ```
 
