@@ -612,6 +612,12 @@ $ sudo systemctl enable slim.service
 systemctl set-default multi-user.target
 ```
 
+查看当前系统运行模式
+
+```
+systemctl get-default
+```
+
 重启
 
 ```
@@ -632,11 +638,4 @@ systemctl set-default graphical.target
 systemctl reboot
 ```
 
-
-
-查看当前系统运行模式
-
-```
-systemctl get-default
-```
 
