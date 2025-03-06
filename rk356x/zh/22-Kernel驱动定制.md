@@ -75,6 +75,8 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 
 例如：将K1拓展引脚上的GPIO0_C0（pwm1m0）配置成PWM
 
+注意：任何IO都只能配置一种功能
+
 ```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
 +++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
@@ -89,7 +91,9 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 
 ## GPIO配置
 
-​	GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树这部分修改的示例，供参考修改
+GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树这部分修改的示例，供参考修改
+
+注意：任何IO都只能配置一种功能
 
 ### LED配置
 
