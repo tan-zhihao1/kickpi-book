@@ -81,6 +81,28 @@ index 7a4e35f159a..bdbcd6bdffa 100644
          mStatusBarWindowView.addView(view, layoutParams);
 ```
 
+Android13默认禁止状态栏下拉修改如下：
+
+```diff
+--- a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/CommandQueue.java
++++ b/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/CommandQueue.java
+@@ -536,10 +536,12 @@ public class CommandQueue extends IStatusBar.Stub implements
+ 
+     // TODO(b/118592525): add multi-display support if needed.
+     public boolean panelsEnabled() {
+-        final int disabled1 = getDisabled1(mDisplayTracker.getDefaultDisplayId());
+-        final int disabled2 = getDisabled2(mDisplayTracker.getDefaultDisplayId());
+-        return (disabled1 & StatusBarManager.DISABLE_EXPAND) == 0
+-                && (disabled2 & StatusBarManager.DISABLE2_NOTIFICATION_SHADE) == 0;
++        return false;
++        // final int disabled1 = getDisabled1(mDisplayTracker.getDefaultDisplayId());
++        // final int disabled2 = getDisabled2(mDisplayTracker.getDefaultDisplayId());
++        // return (disabled1 & StatusBarManager.DISABLE_EXPAND) == 0
++        //         && (disabled2 & StatusBarManager.DISABLE2_NOTIFICATION_SHADE) == 0;
++        
+     }
+```
+
 
 
 ## 5. 默认隐藏导航栏
