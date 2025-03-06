@@ -608,34 +608,34 @@ $ sudo systemctl enable slim.service
 
 修改默认的运行模式
 
-```
-systemctl set-default multi-user.target
+```shell
+$ systemctl set-default multi-user.target
 ```
 
 查看当前系统运行模式
 
-```
-systemctl get-default
+```shell
+$ systemctl get-default
 ```
 
 重启
 
-```
-reboot
+```shell
+$ reboot
 ```
 
 #### 启用桌面环境
 
 修改默认的运行模式
 
-```
-systemctl set-default graphical.target
+```shell
+$ systemctl set-default graphical.target
 ```
 
 重启
 
-```
-reboot
+```shell
+$ reboot
 ```
 
 
