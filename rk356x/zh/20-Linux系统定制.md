@@ -621,7 +621,7 @@ systemctl get-default
 重启
 
 ```
-systemctl reboot
+reboot
 ```
 
 #### 启用桌面环境
@@ -635,7 +635,7 @@ systemctl set-default graphical.target
 重启
 
 ```
-systemctl reboot
+reboot
 ```
 
 
