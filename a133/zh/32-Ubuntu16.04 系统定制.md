@@ -521,6 +521,43 @@ $ sudo apt-get clean
 
 
 
+## 禁止桌面环境，纯命令行启动
+
+修改默认的运行模式
+
+```shell
+$ systemctl set-default multi-user.target
+```
+
+查看当前系统运行模式
+
+```shell
+$ systemctl get-default
+```
+
+重启
+
+```shell
+$ reboot
+```
+
+#### 启用桌面环境
+
+修改默认的运行模式
+
+```shell
+$ systemctl set-default graphical.target
+```
+
+重启
+
+```shell
+$ reboot
+```
+
+
+
+
 ## 添加USB转UART模块支持
 
 > 由于不同的USB转UART模块存在不同ID，内核默认不一定包含
