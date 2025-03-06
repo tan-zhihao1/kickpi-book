@@ -604,27 +604,38 @@ $ sudo systemctl enable slim.service
 
 ### Debian系统
 
-暂时关闭桌面
+#### 禁止桌面环境，纯命令行启动
 
-```shell
-$ sudo systemctl stop lightdm.service
+修改默认的运行模式
+
+```
+systemctl set-default multi-user.target
 ```
 
-临时启动桌面
+查看当前系统运行模式
 
-```shell
-$ sudo systemctl start lightdm.service
+```
+systemctl get-default
 ```
 
-永久禁用桌面
+重启
 
-```shell
-$ sudo systemctl disable lightdm.service
+```
+systemctl reboot
 ```
 
-永久启动桌面
+#### 启用桌面环境
 
-```shell
-$ sudo systemctl enable lightdm.service
+修改默认的运行模式
+
 ```
+systemctl set-default graphical.target
+```
+
+重启
+
+```
+systemctl reboot
+```
+
 
