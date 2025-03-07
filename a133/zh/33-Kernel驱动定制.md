@@ -10,6 +10,8 @@ K5C 拓展引脚中如PL2，PL3默认配置成GPIO，可复用成UART
 $ ls longan/out/a133/c3/android/.board.dtb.dts.tmp
 ```
 
+> Android 平台
+>
 > 此文件需要编译后才会生成
 
 从.dts.tmp文件中可以确认UART7是PL2，PL3配置，配置信息类似如下
