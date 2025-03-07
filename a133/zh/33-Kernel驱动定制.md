@@ -1,7 +1,5 @@
 # Kernel 驱动定制
 
-
-
 ### UART
 
 K5C 拓展引脚中如PL2，PL3默认配置成GPIO，可复用成UART
@@ -42,13 +40,15 @@ K5C 拓展引脚中如PL2，PL3默认配置成GPIO，可复用成UART
 
 打开UART7
 
-```
+```diff
 --- a/longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
 +++ b/longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
 +&uart7 {
 +    status = "okay";
 +};
 ```
+
+测试
 
 
 
