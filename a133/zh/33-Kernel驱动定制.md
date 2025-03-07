@@ -54,13 +54,13 @@ K5C 拓展引脚中如PL2，PL3默认配置成GPIO，可复用成UART
 
 首先连接好硬件，RX连接TX，GND连GND
 
-
+板端可通过microcom进行测试
 
 ```
 microcom -s 115200 /dev/ttyS2
 ```
 
-
+另一端可通过
 
 
 
