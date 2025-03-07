@@ -5,8 +5,12 @@
 确认pin功能
 
 ```
-/huangcm/A/sdk/a133/a133-android10.0-v2.0/longan/out/a133/c3/android/.board.dtb.dts.tmp
+$ ls longan/out/a133/c3/android/.board.dtb.dts.tmp
 ```
+
+
+
+
 
 
 
