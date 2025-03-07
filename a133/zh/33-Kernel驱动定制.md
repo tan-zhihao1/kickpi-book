@@ -2,13 +2,15 @@
 
 ### UART
 
-确认pin功能
+K5C 拓展引脚中如PL2，PL3默认配置成GPIO，可复用成UART
+
+**快速确认pin功能**
 
 ```
 $ ls longan/out/a133/c3/android/.board.dtb.dts.tmp
 ```
 
-
+c
 
 ```
 s_uart0_pins_a: s_uart0@0 {
@@ -42,15 +44,7 @@ uart7: uart@07080000 {
 };
 ```
 
-
-
-
-
-
-
 **dts配置UART**
-
-K5C 拓展引脚中如PL2，PL3默认配置成GPIO，可复用成UART
 
 单个引脚仅能用于一个功能，取消PL2，PL3 的GPIO配置
 
