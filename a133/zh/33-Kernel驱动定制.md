@@ -52,6 +52,10 @@ K5C 拓展引脚中如PL2，PL3默认配置成GPIO，可复用成UART
 
 **测试UART**
 
+```
+microcom -s 115200 /dev/ttyS2
+```
+
 
 
 
