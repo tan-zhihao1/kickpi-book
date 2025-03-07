@@ -10,6 +10,40 @@ $ ls longan/out/a133/c3/android/.board.dtb.dts.tmp
 
 
 
+```
+   s_uart0_pins_a: s_uart0@0 {
+    allwinner,pins = "PL2", "PL3";
+    allwinner,function = "s_uart0";
+    allwinner,muxsel = <2>;
+    allwinner,drive = <1>;
+    allwinner,pull = <1>;
+   };
+
+   s_uart0_pins_b: s_uart0@1 {
+    allwinner,pins = "PL2", "PL3";
+    allwinner,function = "io_disabled";
+    allwinner,muxsel = <7>;
+    allwinner,drive = <1>;
+    allwinner,pull = <1>;
+   };
+   
+     uart7: uart@07080000 {
+   compatible = "allwinner,sun50i-uart";
+   device_type = "uart7";
+   reg = <0x0 0x07080000 0x0 0x400>;
+   interrupts = <0 112 4>;
+   clocks = <&clk_suart>;
+   pinctrl-names = "default", "sleep";
+   pinctrl-0 = <&s_uart0_pins_a>;
+   pinctrl-1 = <&s_uart0_pins_b>;
+   uart7_port = <7>;
+   uart7_type = <2>;
+   status = "disabled";
+  };
+```
+
+
+
 
 
 
