@@ -2,7 +2,7 @@
 
 ### UART
 
-**配置UART**
+**dts配置UART**
 
 K5C 拓展引脚中如PL2，PL3默认配置成GPIO，可复用成UART
 
@@ -60,7 +60,7 @@ K5C 拓展引脚中如PL2，PL3默认配置成GPIO，可复用成UART
 microcom -s 115200 /dev/ttyS2
 ```
 
-另一端可通过
+另一端可通过 Mobaxterm 或其他串口工具进行测试
 
 
 
