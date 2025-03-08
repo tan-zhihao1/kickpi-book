@@ -60,7 +60,7 @@ Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
 
 ## 4. 默认隐藏状态栏
 
-Android13默认隐藏状态栏修改如下：
+Android13 SDK默认隐藏状态栏修改如下：
 
 ```diff
 --- a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/CentralSurfacesImpl.java
