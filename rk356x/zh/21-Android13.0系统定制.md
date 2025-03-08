@@ -39,7 +39,11 @@ $ vim device/rockchip/rk356x/BoardConfig.mk
 	SF_PRIMARY_DISPLAY_ORIENTATION := 270	//270°
 ```
 
-> 
+> K1 / K1B rk356x
+>
+> K3 rk3562
+>
+> K8 rk3588
 
 ### 修改触摸方向
 
