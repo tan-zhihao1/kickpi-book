@@ -330,21 +330,19 @@ $ hwclock
 
 ### RTC 中断测试：
 
-设置闹钟
-
-  清空
+1. 清空还原
 
 ```shell
 $ echo 0 > /sys/class/rtc/rtc0/wakealarm
 ```
 
-  设置报警时间 
+2. 设置时间 
 
 ```shell
 $ echo +60 > /sys/class/rtc/rtc0/wakealarm 
 ```
 
-> 60秒后报警(即触发中断)
+> +60：表示60秒后触发中断
 
 查看rtc信息
 
