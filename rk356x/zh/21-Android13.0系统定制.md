@@ -38,7 +38,7 @@ Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
 (SDK)$ vim device/rockchip/$(dev)/BoardConfig.mk
 (SDK)$ vim device/rockchip/rk356x/BoardConfig.mk // K1
 
-	SF_PRIMARY_DISPLAY_ORIENTATION := 0 	//默认
+	SF_PRIMARY_DISPLAY_ORIENTATION := 0 	//0°
 	SF_PRIMARY_DISPLAY_ORIENTATION := 90 	//90°
 	SF_PRIMARY_DISPLAY_ORIENTATION := 180	//180°
 	SF_PRIMARY_DISPLAY_ORIENTATION := 270	//270°
