@@ -184,7 +184,7 @@ car @ (702 263 716 273) 0.163944
 生成识别视频 out.h264
 
 ```
-root@kickpi:/rknn_yolov5_demo_Linux$ ls 
+(console)$ ls *.h264
 out.h264
 ```
 
