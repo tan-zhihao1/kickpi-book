@@ -435,7 +435,7 @@ hdmi in 画面全屏配置
 修改路径：
 
 ```
-(SDK)$ rk-android13.0\kernel-5.10\arch\arm64\boot\dts\rockchip\rk3568-android.dtsi
+rk-android13.0\kernel-5.10\arch\arm64\boot\dts\rockchip\rk3568-android.dtsi
 ```
 
 修改rockchip,baudrate内容：
