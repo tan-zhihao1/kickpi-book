@@ -6,6 +6,8 @@ console - 指代调试控制台
 
 ADB - Android Debug Bridge命令行工具，下文指代可运行ADB的环境
 
+
+
 ## 1. 开机LOGO定制
 
 开机LOGO分两个部分，分别是Uboot阶段、Kernel阶段
@@ -16,8 +18,8 @@ Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
 
 ```
 (SDK)$ ls kernel-5.10/*.bmp
-	logo.bmp
-	logo_kernel.bmp
+logo.bmp
+logo_kernel.bmp
 ```
 
 
