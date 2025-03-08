@@ -49,8 +49,11 @@ kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
 Android系统显示旋转，可以修改如下配置，配置参数为0/90/180/270
 
 ```
-$ device/rockchip/rk3576/BoardConfig.mk
+(SDK)$ vim device/rockchip/rk3576/BoardConfig.mk
 # For Surface Flinger Rotation
+SF_PRIMARY_DISPLAY_ORIENTATION ?= 0
+SF_PRIMARY_DISPLAY_ORIENTATION ?= 0
+SF_PRIMARY_DISPLAY_ORIENTATION ?= 0
 SF_PRIMARY_DISPLAY_ORIENTATION ?= 0
 ```
 
