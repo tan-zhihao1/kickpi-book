@@ -122,7 +122,7 @@ loop count = 10 , average run  53.093000 ms
 
 生成识别图片 out.jpg
 
-```shell
+```
 console:/rknn_yolov5_demo_Linux$ ls 
 out.jpg
 ```
