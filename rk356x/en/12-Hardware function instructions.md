@@ -2,7 +2,7 @@
 
 
 
-## 1. ExpansionPin<a id="ExpansionPin"></a>
+## 1. ExpansionPin<a id="ExpansionPin"> </a>
 
 Development board expansion pin capabilities
 
@@ -36,7 +36,7 @@ The list of pins is marked with the default configuration of each pin (marked wi
 
 
 
-## 2. LED
+## 2. LED<a id="LED"> </a>
 
 The development board is equipped with 2 LEDs, the green LED is the power indicator, and it is always on by default when powered on.
 
@@ -233,7 +233,7 @@ The main commands of **adb** are as follows:
 
 
 
-## 6. PWM
+## 6. PWM<a id="PWM"> </a>
 
 RK3568 has 4 PWM modules, each PWM module has 4 channels of PWM, a total of 16 channels of PWM.
 
