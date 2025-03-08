@@ -1,5 +1,11 @@
 # 22-Kernel驱动定制
 
+SDK - 指代源码路径
+
+console - 指代调试控制台
+
+
+
 ## version
 
 ```
