@@ -165,21 +165,22 @@ android_app_import {
     apk: "test.apk",
 
     //presigned: true,
-    certificate: "platform",  //platform表示系统应用，可设置
+    certificate: "platform",
     dex_preopt: {
         enabled: true,
     },
 
-    privileged: true, //指应用是特权应用 具有高权限
+    privileged: true,
     //product_specific: true,
     //proprietary: true,
     enforce_uses_libs: false,
 }
 ```
 
-在rk-android13.0\vendor\rockchip\common\apps\apps.mk加入编译
+在加入编译
 
 ```makefile
+$ rk-android13.0\vendor\rockchip\common\apps\apps.mk
 PRODUCT_PACKAGES += \
        Settings2
 ```
