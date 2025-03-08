@@ -1,6 +1,10 @@
 # 21-Android13.0系统定制
 
+SDK - 指代源码路径
 
+console - 指代调试控制台
+
+ADB - Android Debug Bridge命令行工具，下文指代可运行ADB的环境
 
 ## 1. 开机LOGO定制
 
@@ -11,7 +15,7 @@ Uboot阶段解析图片kernel-5.10/logo.bmp
 Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
 
 ```
-$ ls kernel-5.10/*.bmp
+(SDK)$ ls kernel-5.10/*.bmp
 	logo.bmp
 	logo_kernel.bmp
 ```
