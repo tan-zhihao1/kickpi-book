@@ -379,12 +379,12 @@ $ adb push .\build.prop /system/build.prop
 
 ## 14. HDMI RX APK 定制
 
-K8 有一路 HDMI RX 输入，Android 可以通过打开 HdmiIn APK 显示 HDMI in 画面。 
+K8 有一路 HDMI RX 输入，Android 可以通过打开 HdmiIn APK 显示 HDMI RX 画面。 
 
 HdmiIn APK 路径
 
 ```
-packages/apps/rkCamera2/
+(SDK)$ packages/apps/rkCamera2/
 ```
 
 hdmi in 画面全屏配置
