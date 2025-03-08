@@ -224,7 +224,7 @@ rk-android13.0\kernel-5.10\drivers\rtc\
 修改驱动路径下Kconfig ：
 
 ```diff
-+//make menuconfig 的选项
++//make menuconfig
 +config RTC_DRV_HYM8563
 +	tristate "Haoyu Microelectronics HYM8563"
 +	depends on OF
@@ -381,7 +381,7 @@ static irqreturn_t hym8563_irq(int irq, void *dev_id)
   struct i2c_client *client = hym8563->client;
   struct mutex *lock = &hym8563->rtc->ops_lock;
   int data, ret;
-+  printk("kickpi %s %d\n",__FUNCTION__,__LINE__); //加的打印
++  printk("kickpi %s %d\n",__FUNCTION__,__LINE__); //add log
   mutex_lock(lock);
 
   /* Clear the alarm flag */
