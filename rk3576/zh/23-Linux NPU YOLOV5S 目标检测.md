@@ -94,7 +94,7 @@ rknn_yolov5_demo 使用示例
 
 ```
 (console)$ export LD_LIBRARY_PATH=./lib
-root@kickpi:/rknn_yolov5_demo_Linux$ ./rknn_yolov5_demo model/RK3576/yolov5s-640-640.rknn model/bus.jpg
+(console)$ ./rknn_yolov5_demo model/RK3576/yolov5s-640-640.rknn model/bus.jpg
 post process config: box_conf_threshold = 0.25, nms_threshold = 0.45
 Loading mode...
 sdk version: 2.0.0b0 (35a6907d79@2024-03-24T10:31:14) driver version: 0.9.7
