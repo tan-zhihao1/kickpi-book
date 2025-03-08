@@ -62,7 +62,7 @@ RK Linux官方提供rknn_yolov5_demo，源码支持 `RK3576`，可以下载网�
 
 ```
 (SDK)$ cd external/rknpu2/examples/rknn_yolov5_demo/
-(SDK)$ ./build-linux.sh -t rk3576 -a aarch64 -b Release
+rknn_yolov5_demo$ ./build-linux.sh -t rk3576 -a aarch64 -b Release
 ```
 
 生成工具路径
@@ -93,7 +93,7 @@ Usage: ./rknn_yolov5_demo <rknn model> <input_image_path> <resize/letterbox> <ou
 rknn_yolov5_demo 使用示例
 
 ```
-$ export LD_LIBRARY_PATH=./lib
+(console)$ export LD_LIBRARY_PATH=./lib
 root@kickpi:/rknn_yolov5_demo_Linux$ ./rknn_yolov5_demo model/RK3576/yolov5s-640-640.rknn model/bus.jpg
 post process config: box_conf_threshold = 0.25, nms_threshold = 0.45
 Loading mode...
