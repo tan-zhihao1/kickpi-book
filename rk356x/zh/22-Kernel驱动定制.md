@@ -210,7 +210,7 @@ LCD屏幕配置，点亮不同的屏幕
 
 ​	驱动路径：rk-android13.0\kernel-5.10\drivers\rtc\rtc-pcf8563.c
 
-​	修改Makefile 增加 obj-$(CONFIG_RTC_DRV_PCF8563)	+= rtc-pcf8563.o 
+​	修改Makefile 增加 obj-$(CONFIG_RTC_DRV_HYM8563)	+= rtc-hym8563.o 
 ​	修改Kconfig 增加
 
 ```
