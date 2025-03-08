@@ -70,11 +70,11 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 
 
 
-## PWM 配置
+## PWM configuration
 
-例如：将K1拓展引脚上的GPIO0_C0（pwm1m0）配置成PWM
+For example: Configure the GPIO0_C0 (pwm1m0) on the K1 extension pin as PWM
 
-注意：任何IO都只能配置一种功能，如果要修改已经有使用的IO需要找到对应位置注释掉原本的使用
+Note: Any IO can only be configured with one function. If you want to modify the IO that is already in use, you need to find the corresponding position and comment out the original use.
 
 ```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
@@ -86,17 +86,17 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 +};
 ```
 
-测试方法参考:12-硬件功能测试 [PWM](12-硬件功能测试.md#PWM)
+Test method reference:12-Hardware function instructions.md [PWM](12-Hardware function instructions.md#PWM)
 
-## GPIO配置
+## GPIO configuration
 
-GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树这部分修改的示例，供参考修改
+The common configuration of GPIO is generally matched with LED output or key input. The following is an example of modifying this part of the device tree for reference and modification
 
-注意：任何IO都只能配置一种功能，如果要修改已经有使用的IO需要找到对应位置注释掉原本的使用
+Note: Any IO can only be configured with one function. If you want to modify the IO that is already in use, you need to find the corresponding position and comment out the original use.
 
-### LED配置
+### LED configuration
 
-例如：将K1拓展引脚上的GPIO1_D4配置成LED，可以参考下面的修改
+For example: configure the GPIO1_D4 on the K1 extension pin to LED, you can refer to the following modification
 
 ```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
@@ -115,11 +115,11 @@ GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树�
 
 ```
 
-测试方法参考:12-硬件功能测试 [LED](12-硬件功能测试.md#LED)
+Test method reference:12-Hardware function instructions.md [LED](12-Hardware function instructions.md#LED)
 
 ### gpio-key配置
 
-例如：将K1拓展引脚上的GPIO1_D4配置成KEY_1，可以参考下面的修改
+For example: configure the GPIO1_D4 on the K1 extension pin to KEY_1, you can refer to the following modifications
 
 ```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
@@ -167,21 +167,21 @@ GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树�
 (END)
 ```
 
-其中code值可以参考驱动中的宏定义
+Where the code value can refer to the macro definition in the driver
 
 ```
 rk356x-linux\kernel\include\uapi\linux\input-event-codes.h
 ```
 
-测试方法参考文档：12-硬件功能测试 [KEY 测试](12-硬件功能测试.md#KEYtest)
+Test method reference document:12-Hardware function instructions.md [KEY test](12-Hardware function instructions.md#KEYtest)
 
 
 
-## LCD 配置
+## LCD configuration
 
-LCD屏幕配置，点亮不同的屏幕
+LCD screen configuration to light up different screens
 
-配置参考文档：[RK3568 LCD配置](40-RK3568 LCD配置.md)
+Configuration reference documentation：[RK3568 LCD Configuration](40-RK3568 LCD Configuration.md)
 
 
 
