@@ -379,9 +379,9 @@ $ adb push .\build.prop /system/build.prop
 
 ## 14. HDMI in APK 定制
 
-K8 支持 HDMI in 显示输入，Android 可以通过 HdmiIn APK 显示 HDMI in 画面。 
+K8 有一路 HDMI in 输入，Android 可以通过 HdmiIn APK 显示 HDMI in 画面。 
 
-hdmi in APK 路径
+HdmiIn APK 路径
 
 ```
 packages/apps/rkCamera2/
