@@ -112,7 +112,7 @@ Rockchip Pin的ID按照 控制器(bank)+端口(port)+索引序号(pin) 组成。
 列举pin及引脚复用
 
 ```
-cat /d/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins
+(console)$ cat /d/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins
 ```
 
 计算方式
