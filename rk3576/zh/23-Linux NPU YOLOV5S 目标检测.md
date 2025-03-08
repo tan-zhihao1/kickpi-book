@@ -4,7 +4,7 @@ SDK - 指代源码路径
 
 console - 指代主板的调试控制台
 
-ADB - Android Debug Bridge命令行工具，指代可运行ADB的环境
+ADB - 指代可运行ADB的环境
 
 
 
