@@ -11,8 +11,8 @@ Linux version 6.1
 ## cross compile
 
 ```
-(android SDK)$ ls prebuilts/clang/host/linux-x86/clang-r487747c/bin
-prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
+(android SDK)$ ls prebuilts/clang/host/linux-x86/clang-r487747c/bin/
+(linux SDK)$ ls prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
 ```
 
 
@@ -22,7 +22,7 @@ prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-g
 k7 安卓 dts 路径
 
 ```
-kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
+(android SDK)$ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 ```
 
 k7 Linux dts 路径
