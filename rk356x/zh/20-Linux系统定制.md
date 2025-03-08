@@ -600,7 +600,11 @@ $ sudo systemctl disable slim.service
 $ sudo systemctl enable slim.service
 ```
 
-GUI 桌面被冻结 可以接入键盘 输入以下快捷键 CTRL + ALT + F3。要返回 GUI 桌面，请输入 ALT + F2 快捷方式。
+GUI 桌面被冻结可以用键盘进入命令行界面
+
+* 进入命令行界面： 输入快捷键  CTRL + ALT + F3。
+
+* 要返回 GUI 桌面：输入快捷键  ALT + F2 。
 
 ### Debian系统
 
