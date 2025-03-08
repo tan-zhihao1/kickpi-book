@@ -44,7 +44,7 @@ kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
 
 
 
-## 显示旋转
+## 显示方向配置
 
 Android系统显示旋转，可以修改如下配置，配置旋转度数为0/90/180/270
 
@@ -55,6 +55,24 @@ SF_PRIMARY_DISPLAY_ORIENTATION ?= 0
 SF_PRIMARY_DISPLAY_ORIENTATION ?= 90
 SF_PRIMARY_DISPLAY_ORIENTATION ?= 180
 SF_PRIMARY_DISPLAY_ORIENTATION ?= 270
+```
+
+
+
+### ADB修改显示方向
+
+```
+// 0°
+(ADB)$ adb shell settings put system user_rotation 0
+
+// 90°
+(ADB)$ adb shell settings put system user_rotation 1
+
+// 180°
+(ADB)$ adb shell settings put system user_rotation 2
+
+// 270°
+(ADB)$ adb shell settings put system user_rotation 3
 ```
 
 
