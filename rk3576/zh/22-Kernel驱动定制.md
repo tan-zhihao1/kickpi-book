@@ -70,8 +70,9 @@ kernel-6.1/arch/arm64/configs/
 
 默认软件拓展 gpio 引脚配置为gpio-led进行控制，可以方便的输出高或低电平
 
+查看可以控制的GPIO
+
 ```shell
-// 查看可以控制的GPIO
 console:/ # ls /sys/class/leds/
 GPIO2_D6  GPIO3_D5  GPIO4_B0  GPIO4_C7  PCIE_PWREN    mmc1::
 GPIO2_D7  GPIO4_A4  GPIO4_B1  GPIO4_D0  SDMMC0_PWREN  work
