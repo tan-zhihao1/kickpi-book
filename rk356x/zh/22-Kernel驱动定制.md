@@ -196,6 +196,8 @@ LCD屏幕配置，点亮不同的屏幕
 
 
 
+![image-20250308154357655](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250308154357655.png)
+
 设备驱动移植
 
 ​	RK356x的SDK默认自带有pcf8563的驱动移植，这里不做详细介绍

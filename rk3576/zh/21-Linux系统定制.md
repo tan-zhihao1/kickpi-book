@@ -31,7 +31,7 @@ Ubuntu系统用户名/密码：kickpi/kickpi
 ROOT用户默认未设置密码，可用以下命令配置ROOT密码
 
 ```
-$ sudo passwd root
+console$ sudo passwd root
 ```
 
 
@@ -39,7 +39,7 @@ $ sudo passwd root
 ## SSH 登录
 
 ```
-ssh <用户名>@<IP>
+ssh <username>@<IP>
 ```
 
 > 注意事项：
