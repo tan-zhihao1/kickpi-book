@@ -65,7 +65,7 @@ kernel-6.1/arch/arm64/configs/
 **说明**
 
 ```
-(源码)/kernel-6.1/Documentation/devicetree/bindings/leds/leds-gpio.yaml
+(SDK)/kernel-6.1/Documentation/devicetree/bindings/leds/leds-gpio.yaml
 ```
 
 默认软件拓展 gpio 引脚配置为gpio-led进行控制，可以方便的输出高或低电平
