@@ -188,15 +188,21 @@ LCD屏幕配置，点亮不同的屏幕
 
 ## 外接RTC模块
 
-有些板子没有板载RTC模块，有需求的客户就可以选择外接一个RTC模块解决时间需求
+有些板子没有板载RTC模块，有需求的客户就可以选择外接一个RTC模块解决时间保存需求
 
-如K1B外接RTC模块的做法：
+下面的例子是K1B外接RTC模块的做法：
 
 ### 设备硬件连接
 
+#### 板子上使用的IO口：
 
+![image-20250308154448877](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250308154448877.png)
+
+#### 实物接线如下：
 
 ![image-20250308154357655](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250308154357655.png)
+
+>其中CLK_OUT一般不使用不接 INT脚根据需求接，因板子没有带上拉的IO脚故不接
 
 设备驱动移植
 

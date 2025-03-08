@@ -4,8 +4,6 @@ SDK - 指代源码路径
 
 console - 指代主板的调试控制台
 
-ADB - 指代可运行ADB的环境
-
 
 
 ## 1. NPU YOLOV5S 是什么
