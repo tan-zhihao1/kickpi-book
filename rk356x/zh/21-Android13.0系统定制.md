@@ -354,15 +354,15 @@ old.apk new.apk
 网口ADB需要先adb启动5555端口服务后
 
 ```
-PS C:\Users\16708\Desktop> adb tcpip 5555
-PS C:\Users\16708\Desktop> adb connect 192.168.77.170
+(ADB)$ adb tcpip 5555
+(ADB)$ adb connect 192.168.77.170
 connected to 192.168.77.170:5555
-PS C:\Users\16708\Desktop> adb devices
+(ADB)$ adb devices
 List of devices attached
 7c001075a313c7c1c12     device
 192.168.77.170:5555     device
 
-PS C:\Users\16708\Desktop> adb -s 192.168.77.170:5555 shell
+(ADB)$ adb -s 192.168.77.170:5555 shell
 apollo-p2:/ $ su
 ```
 
