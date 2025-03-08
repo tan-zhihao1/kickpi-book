@@ -207,16 +207,14 @@ OF_FULLNAME=/pwm@27331000
 根据上述信息可知，pwm0_ch1_m0 配置 dts 为 pwm0_2ch_1，即 pwmchip0
 
 ```
-$ echo 0 > /sys/class/pwm/pwmchip0/export
-$ echo 10000 > /sys/class/pwm/pwmchip0/pwm0/period
-$ echo 5000 > /sys/class/pwm/pwmchip0/pwm0/duty_cycle
-$ echo normal > /sys/class/pwm/pwmchip0/pwm0/polarity
-$ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
+(console)$ echo 0 > /sys/class/pwm/pwmchip0/export
+(console)$ echo 10000 > /sys/class/pwm/pwmchip0/pwm0/period
+(console)$ echo 5000 > /sys/class/pwm/pwmchip0/pwm0/duty_cycle
+(console)$ echo normal > /sys/class/pwm/pwmchip0/pwm0/polarity
+(console)$ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
 ```
 
 > 按照示例配置参数设置成功后，可用万用表测量PWM3引脚，正确电压应为1.6V左右
-
-
 
 
 
@@ -225,7 +223,7 @@ $ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
 * Android
 
 ```
-RKDocs/android/wifi/
+(SDK)$ ls RKDocs/android/wifi/
 Rockchip_Introduction_REALTEK_WIFI_Driver_Porting_CN&EN.pdf
 Rockchip_Introduction_WIFI_Configuration_CN&EN.pdf
 ```
