@@ -37,22 +37,16 @@ Kernel配置
 (linux SDK)$ls kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 ```
 
-
-
-```
-
-```
-
 其他 config 路径
 
 ```
-kernel-6.1/kernel/configs
-	android-14.config 
-	pcie_wifi.config 
+(android SDK)$ ls kernel-6.1/kernel/configs
+android-14.config 
+pcie_wifi.config 
 	
-kernel-6.1/arch/arm64/configs/
-	rockchip_defconfig 
-	rk3576.config
+(linux SDK)$ ls kernel-6.1/arch/arm64/configs/
+rockchip_defconfig 
+rk3576.config
 ```
 
 
