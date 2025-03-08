@@ -190,7 +190,7 @@ LCD屏幕配置，点亮不同的屏幕
 
 有些板子没有板载RTC模块，有需求的客户就可以选择外接一个RTC模块解决时间保存需求
 
-下面的例子是K1B外接RTC模块的做法：
+下面的例子是K1B-Android外接RTC模块的做法：
 
 ### 设备硬件连接
 
@@ -204,12 +204,11 @@ LCD屏幕配置，点亮不同的屏幕
 
 >其中CLK_OUT一般不使用不接 INT脚根据需求接，因板子没有带上拉的IO脚故不接
 
-设备驱动移植
+#### 设备驱动移植
 
-​	RK356x的SDK默认自带有pcf8563的驱动移植，这里不做详细介绍
+​	RK356x的SDK默认自带有一部分型号的RTC的驱动移植，如果发现没有自己使用型号就需要移植
 
-​	驱动移植
-​	将驱动放到 h618-android12.0\longan\kernel\linux-5.4\drivers\rtc 下，
+​	驱动路径：rk-android13.0\kernel-5.10\drivers\rtc\rtc-pcf8563.c
 
 ​	修改Makefile 增加 obj-$(CONFIG_RTC_DRV_PCF8563)	+= rtc-pcf8563.o 
 ​	修改Kconfig 增加
