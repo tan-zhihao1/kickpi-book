@@ -379,7 +379,7 @@ $ adb push .\build.prop /system/build.prop
 
 ## 14. HDMI in APK 定制
 
-K8 支持 HDMI in 显示输入，可以通过 HDMI in
+K8 支持 HDMI in 显示输入，Android 可以通过 HdmiIn APK 
 
 hdmi in APK 路径
 
