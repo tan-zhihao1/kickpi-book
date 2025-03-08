@@ -186,7 +186,7 @@ pwmchip0  pwmchip1  pwmchip2  pwmchip3
 可查看对应pwm dts节点
 
 ```
-$ cat /sys/class/pwm/pwmchip0/device/uevent | grep FULLNAME
+(console)$ cat /sys/class/pwm/pwmchip0/device/uevent | grep FULLNAME
 OF_FULLNAME=/pwm@27331000
 ```
 
@@ -198,9 +198,7 @@ OF_FULLNAME=/pwm@27331000
 >
 >pwm2_8ch_7: pwm@2ade7000
 >
->更多详见：kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576.dtsi
-
-
+>更多详见：(SDK)/kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576.dtsi
 
 * 配置PWM通道
 
