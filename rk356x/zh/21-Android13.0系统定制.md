@@ -25,7 +25,7 @@ Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
 ## 2. 开机动画定制
 
 ```
-$ ls device/rockchip/common/bootanimation.zip
+(SDK)$ ls device/rockchip/common/bootanimation.zip
 ```
 
 
@@ -35,8 +35,8 @@ $ ls device/rockchip/common/bootanimation.zip
 ### 修改显示方向
 
 ```
-$ vim device/rockchip/$(dev)/BoardConfig.mk
-$ vim device/rockchip/rk356x/BoardConfig.mk // K1
+(SDK)$ vim device/rockchip/$(dev)/BoardConfig.mk
+(SDK)$ vim device/rockchip/rk356x/BoardConfig.mk // K1
 
 	SF_PRIMARY_DISPLAY_ORIENTATION := 0 	//默认
 	SF_PRIMARY_DISPLAY_ORIENTATION := 90 	//90°
