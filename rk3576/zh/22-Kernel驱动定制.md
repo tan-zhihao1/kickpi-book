@@ -70,7 +70,7 @@ kernel-6.1/arch/arm64/configs/
 
 默认软件拓展 gpio 引脚配置为gpio-led进行控制，可以方便的输出高或低电平
 
-查看GPIO列表，对应[K7 拓展引脚](12-硬件功能测试.md#ExpansionPin-K7)
+查看GPIO列表，对应[K7拓展引脚](12-硬件功能测试.md#ExpansionPin-K7)章节
 
 ```shell
 console:/ # ls /sys/class/leds/
