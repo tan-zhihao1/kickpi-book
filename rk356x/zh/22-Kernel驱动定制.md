@@ -276,7 +276,7 @@ rk-android13.0\kernel-5.10\drivers\rtc\
  };
 ```
 
-> rtc-irq-gpio就是对应INT脚接线的IO口，我这边没有接故没有使用
+> rtc-irq-gpio就是对应INT脚接线的IO口，我测试没有接，所以注释了
 
 ### 用date和hwclock测试rtc驱动工作是否正常
 1.显示当前Linux系统时间
