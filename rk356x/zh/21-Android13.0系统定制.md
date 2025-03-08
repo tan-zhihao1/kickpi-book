@@ -187,7 +187,7 @@ android_app_import {
 在 PRODUCT_PACKAGES 加入编译目标
 
 ```makefile
-(SDK)$ vim rk-android13.0\vendor\rockchip\common\apps\apps.mk
+(SDK)$ vim vendor/rockchip/common/apps/apps.mk
 PRODUCT_PACKAGES += \
        Settings2
 ```
