@@ -257,7 +257,8 @@ rk-android13.0\kernel-5.10\drivers\rtc\
 ```diff
 --- a/kernel-5.10/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-20pin.dtsi
 +++ b/kernel-5.10/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-20pin.dtsi
-@@ -15,6 +15,17 @@ &i2c3 {
+@@ -15,6 +15,17 @@ 
+&i2c3 {
      status = "okay";
      pinctrl-names = "default";
      pinctrl-0 = <&i2c3m0_xfer>;
