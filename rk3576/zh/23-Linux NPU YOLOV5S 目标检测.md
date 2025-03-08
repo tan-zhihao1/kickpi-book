@@ -46,8 +46,8 @@ RK Linux官方提供rknn_yolov5_demo，源码支持 `RK3576`，可以下载网�
 工具链路径 `(SDk)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/`
 
 ```
-$ export TOOL_CHAIN=(SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
-$ export GCC_COMPILER=(SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu
+SDK$ export TOOL_CHAIN=(SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
+SDK$ export GCC_COMPILER=(SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu
 ```
 
 > SDK 指代Linux源码路径，详情见 11-SDK源码编译
@@ -61,8 +61,8 @@ $ export GCC_COMPILER=(SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07
 编译对应的工具
 
 ```
-$ cd external/rknpu2/examples/rknn_yolov5_demo/
-$ ./build-linux.sh -t rk3576 -a aarch64 -b Release
+SDK$ cd external/rknpu2/examples/rknn_yolov5_demo/
+SDK$ ./build-linux.sh -t rk3576 -a aarch64 -b Release
 ```
 
 生成工具路径
