@@ -31,6 +31,7 @@ $ ls device/rockchip/common/bootanimation.zip
 ### 修改显示方向
 
 ```
+$ vim device/rockchip/$(dev)/BoardConfig.mk
 $ vim device/rockchip/rk356x/BoardConfig.mk
 
 	SF_PRIMARY_DISPLAY_ORIENTATION := 0 	//默认
