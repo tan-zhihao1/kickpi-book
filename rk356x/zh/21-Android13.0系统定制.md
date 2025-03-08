@@ -270,7 +270,6 @@ $ vim build/target/product/full_base.mk
 | ----- | ---- |
 | en_US | 英文 |
 | zh_CN | 中文 |
-|       |      |
 
 
 
