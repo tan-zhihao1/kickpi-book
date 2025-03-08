@@ -32,7 +32,7 @@ Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
 
 ## 3. 默认屏幕方向
 
-### 修改显示方向
+### 修改默认显示方向
 
 ```
 (SDK)$ vim device/rockchip/$(dev)/BoardConfig.mk
@@ -51,6 +51,22 @@ Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
 > K3 - rk3562
 >
 > K8 - rk3588
+
+
+
+// 正常显示
+adb shell settings put system user_rotation 0
+
+// 90°
+adb shell settings put system user_rotation 1
+
+// 180°
+adb shell settings put system user_rotation 2
+
+// 270°
+adb shell settings put system user_rotation 3
+
+
 
 ### 修改触摸方向
 
