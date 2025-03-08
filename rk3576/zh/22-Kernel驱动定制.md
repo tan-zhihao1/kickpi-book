@@ -33,13 +33,13 @@ K7 dts 路径
 Android defconfig 配置
 
 ```makefile
-kernel-6.1/arch/arm64/configs/rockchip_defconfig
+(android SDK)$ls kernel-6.1/arch/arm64/configs/rockchip_defconfig
 ```
 
 Linux defconfig 配置
 
 ```
-kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
+(linux SDK)$ls kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 ```
 
 其他 config 路径
