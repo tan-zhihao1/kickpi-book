@@ -60,7 +60,7 @@ Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
 
 ## 4. 默认隐藏状态栏
 
-Android13 SDK默认隐藏状态栏修改如下：
+Android13 默认隐藏状态栏修改如下：
 
 ```diff
 --- a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/CentralSurfacesImpl.java
@@ -187,7 +187,7 @@ android_app_import {
 在 PRODUCT_PACKAGES 加入编译目标
 
 ```makefile
-$ vim rk-android13.0\vendor\rockchip\common\apps\apps.mk
+(SDK)$ vim rk-android13.0\vendor\rockchip\common\apps\apps.mk
 PRODUCT_PACKAGES += \
        Settings2
 ```
