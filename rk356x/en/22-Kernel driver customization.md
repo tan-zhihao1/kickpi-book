@@ -70,94 +70,340 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 
 
 
-### sys gpio control
+## PWM 配置
 
-When there is a need to configure the extension pin as an input, the default software's GPIO-LED does not meet the requirement.
+例如：将K1拓展引脚上的GPIO0_C0（pwm1m0）配置成PWM
 
-Release the GPIO and control it through /sys/class/gpio
+注意：任何IO都只能配置一种功能，如果要修改已经有使用的IO需要找到对应位置注释掉原本的使用
 
-**PIN PIN Calculation **
+```diff
+--- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
++++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
 
-Take GPIO1-D0 (gpio1-24) as an example:
-
-```
-Each GPIO has 32 bits: 0-32
-A (0-7) B (8-15) C (16-23) D (24-31)
-GPIO1-D0 calculation Pin num = 32 * 1 + 24 = 56
-```
-
-
-
-**Step 1**
-
-Note the corresponding GPIO pins first, '/sys/class/gpio/export' can only import unregistered gpio
-
-Unenable the device tree corresponding IO
-
-The device tree is located at:
-
-```
-kernel-5.10/arch/arm64/boot/dts/rockchip/
-40pin:	rk3568-kickpi-extend-40pin.dtsi
-20pin:	rk3568-kickpi-extend-20pin.dtsi
++&pwm1 {
++    status = "okay";
++    pinctrl-0 = <&pwm1m0_pins>;
++};
 ```
 
-**Step 2**
+测试方法参考:12-硬件功能测试 [PWM](12-硬件功能测试.md#PWM)
 
-Compilation mirroring, reburning
+## GPIO配置
 
-**Step three**
+GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树这部分修改的示例，供参考修改
 
-Confirm that gpio is not registered
+注意：任何IO都只能配置一种功能，如果要修改已经有使用的IO需要找到对应位置注释掉原本的使用
 
-```
-cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins
-```
+### LED配置
 
-> Unregistered as follows:pin 56 (gpio1-24): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+例如：将K1拓展引脚上的GPIO1_D4配置成LED，可以参考下面的修改
 
-**Step four**
-
-Register with /sys/class/gpio/export 56 and take control
-Register
-```
-root@kickpi:~# echo  56 > /sys/class/gpio/export
-```
-Check if it is generated
-```
-root@kickpi:~# ls /sys/class/gpio/
-export  gpio56  gpiochip0  gpiochip352  unexport
-```
-Node content after registration
-```
-root@kickpi:~# ls /sys/class/gpio/gpio56
-active_low  device  direction  edge  power  subsystem  uevent  value
-root@kickpi:~#
-```
-
-Control gpio through the content under the node, commonly used as follows
+```diff
+--- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
++++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
+@@ -29,10 +29,10 @@ gpio1d0 {
+         gpios = <&gpio1 RK_PD0 GPIO_ACTIVE_HIGH>;
+         default-state = "off";
+     };
++    gpio1d4 {
++        gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;
++        default-state = "off";
++    };
+     gpio3b5 {
+         gpios = <&gpio3 RK_PB5 GPIO_ACTIVE_HIGH>;
+         default-state = "off";
 
 ```
-direction
-	in / out
-	echo in > /sys/class/gpio/gpio56/direction
-	echo out > /sys/class/gpio/gpio56/direction
-value
-	0 / 1
-	cat /sys/class/gpio/gpio56/value 		// read
-	echo 1 > /sys/class/gpio/gpio56/value	// Configure High
-	echo 0 > /sys/class/gpio/gpio56/value  // Configure low
+
+测试方法参考:12-硬件功能测试 [LED](12-硬件功能测试.md#LED)
+
+### gpio-key配置
+
+例如：将K1拓展引脚上的GPIO1_D4配置成KEY_1，可以参考下面的修改
+
+```diff
+--- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
++++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
+@@ -29,10 +29,10 @@ gpio1d0 {
+         gpios = <&gpio1 RK_PD0 GPIO_ACTIVE_HIGH>;
+         default-state = "off";
+     };
+-    gpio1d4 {
+-        gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;
+-        default-state = "off";
+-    };
++    // gpio1d4 {
++    //     gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;
++    //     default-state = "off";
++    // };
+     gpio3b5 {
+         gpios = <&gpio3 RK_PB5 GPIO_ACTIVE_HIGH>;
+         default-state = "off";
+
+--- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi
++++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi
+@@ -76,6 +76,21 @@ fan0: gpio-fan {
+                status = "okay";
+        };
+        */
++
++       
++       gpio-keys {
++               compatible = "gpio-keys";
++               autorepeat;
++           status = "okay";
++       
++               key_1D4 {
++                       label = "GPIO_KEY_1D4";
++                       linux,code = <KEY_1>;
++                       gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_LOW>;
++                       debounce-interval = <100>;
++               };
++       };
++
+ };
+ 
+ &leds {
+(END)
+```
+
+其中code值可以参考驱动中的宏定义
+
+```
+rk356x-linux\kernel\include\uapi\linux\input-event-codes.h
+```
+
+测试方法参考文档：12-硬件功能测试 [KEY 测试](12-硬件功能测试.md#KEYtest)
+
+
+
+## LCD 配置
+
+LCD屏幕配置，点亮不同的屏幕
+
+配置参考文档：[RK3568 LCD配置](40-RK3568 LCD配置.md)
+
+
+
+## 外接RTC模块
+
+有些板子没有板载RTC模块，有需求的客户就可以选择外接一个RTC模块解决时间保存需求
+
+下面的例子是K1B-Android外接I2C-RTC模块的做法：
+
+### 设备硬件连接
+
+#### 板子上使用的IO口：
+
+![image-20250308154448877](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250308154448877.png)
+
+#### 实物接线如下：
+
+![image-20250308154357655](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250308154357655.png)
+
+>其中CLK_OUT一般不使用不接 INT脚根据需求接，因板子没有带上拉的IO脚故不接
+
+#### device driver porting
+
+​	The SDK of RK356x comes with driver porting for some models of RTC by default. If you find that you do not use the model yourself, you need to port it. The driver used in the example is hym8563 (the SDK comes with it), but the following is a brief introduction to the steps of driver porting if there is no driver.
+
+RK-RTC drive path:
+
+```
+rk-android13.0\kernel-5.10\drivers\rtc\
+```
+
+Modify the Makefile under the driver path:
+
+```diff
++ obj-$(CONFIG_RTC_DRV_HYM8563)	+= rtc-hym8563.o 
 ```
 
 
+Modify Kconfig under the driver path:
 
+```diff
++//make menuconfig
++config RTC_DRV_HYM8563
++	tristate "Haoyu Microelectronics HYM8563"
++	depends on OF
++	help
++	  Say Y to enable support for the HYM8563 I2C RTC chip. Apart
++	  from the usual rtc functions it provides a clock output of
++	  up to 32kHz.
++
++	  This driver can also be built as a module. If so, the module
++	  will be called rtc-hym8563.
+```
 
+kernel enable
 
-## PWM configuration
+```diff
+--- a/kernel-5.10/arch/arm64/configs/rockchip_defconfig
++++ b/kernel-5.10/arch/arm64/configs/rockchip_defconfig
+@@ -864,7 +864,6 @@ CONFIG_LEDS_TRIGGER_BACKLIGHT=y
+ CONFIG_LEDS_TRIGGER_DEFAULT_ON=y
+ CONFIG_RTC_CLASS=y
++CONFIG_RTC_DRV_HYM8563=y
+ CONFIG_DMADEVICES=y
+ CONFIG_PL330_DMA=y
+ CONFIG_RK_DMABUF_DEBUG=y
 
-For example, configure the GPIO on the K1 extension pin to PWM.
+```
 
+### Add rtc node on device tree I2C3
 
+```diff
+--- a/kernel-5.10/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-20pin.dtsi
++++ b/kernel-5.10/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-20pin.dtsi
+@@ -15,6 +15,17 @@ 
+&i2c3 {
+     status = "okay";
+     pinctrl-names = "default";
+     pinctrl-0 = <&i2c3m0_xfer>;
++
++    hym8563: hym8563@51 {
++               compatible = "haoyu,hym8563";
++               reg = <0x51>;
++               #clock-cells = <0>;
++               clock-frequency = <32768>;
++               clock-output-names = "hym8563";
++               // IRQ GPIO IS MODIFYED FOR UPDATE HYM8562 DRIVER 
++               //rtc-irq-gpio = <&gpio0 RK_PC2 IRQ_TYPE_EDGE_FALLING>;
++       };
++
+ };
+```
 
+> rtc-irq-gpio is the IO port corresponding to the INT pin wiring. I didn't connect it in my test, so I commented it.
+
+### Use date and hwclock to test whether the rtc driver is working properly
+
+1. Display the current Linux system time
+
+```shell
+$ date
+```
+
+2. If the date time is not normal, such as 1970 or something, instead of my current time, such as 2009, then manually set the correct time yourself
+
+```shell
+$ date MMDDhhmm[[[CC]YY][.ss]]
+```
+
+>MM is the month (01-12)
+>
+> DD is the date (01-31)
+>
+> hh is the hour (00-23)
+>
+> mm is minutes (00-59) '
+>
+> [[CC] YY] is the year (optional, CC is the century, YY is the year)
+>
+> [.ss] is the number of seconds (optional)
+
+3.Show hardware rtc time
+
+```shell
+$ hwclock
+```
+Since this is the first time the RTC driver has been loaded, the correct time has not been set, so the time displayed at this time is mostly incorrect in 1969 and 1970.
+4. Set Linux system time to hardware rtc
+
+```shell
+$ hwclock -w
+```
+
+5. Check again whether the hardware rtc time is consistent with the system
+
+```shell
+$ hwclock
+```
+
+If the driver is working correctly, the time shown here should be the same as your current system time, which is said to be synchronized...
+Otherwise, it means that your driver is not working correctly, and you have not correctly set the system time into the hardware RTC. You will have to go back and debug the driver yourself to find the reason.
+6. Wait a few minutes for the power to be turned on after the power is cut off, and enter again:
+
+```shell
+$ hwclock
+```
+
+Normally, you will see that the time here has increased by a few minutes and seconds compared to the time shown in step 5.
+That means the RTC is working normally.
+
+### RTC interrupt test:
+
+1. empty restore
+
+```shell
+$ echo 0 > /sys/class/rtc/rtc0/wakealarm
+```
+
+2. set time 
+
+```shell
+$ echo +60 > /sys/class/rtc/rtc0/wakealarm 
+```
+
+> +60：表示60秒后触发中断
+
+View rtc information
+
+```shell
+$ cat /proc/driver/rtc
+rtc_time        : 07:16:39
+rtc_date        : 2025-03-08
+alrm_time       : 06:42:53
+alrm_date       : 2025-03-08
+alarm_IRQ       : yes
+alrm_pending    : no
+update IRQ enabled      : no
+periodic IRQ enabled    : no
+periodic IRQ frequency  : 1
+max user IRQ frequency  : 64
+24hr            : yes
+```
+
+Review system interrupt information:
+
+```shell
+$ cat /proc/interrupts
+```
+
+To see the interrupt visually, you can add time to the RTC interrupt print in the RTC intermediate function. You can refer to the following modification:
+
+```diff
+---a\kernel-5.10\drivers\rtc\rtc-hym8563.c
++++b\kernel-5.10\drivers\rtc\rtc-hym8563.c
+
+static irqreturn_t hym8563_irq(int irq, void *dev_id)
+{
+  struct hym8563 *hym8563 = (struct hym8563 *)dev_id;
+  struct i2c_client *client = hym8563->client;
+  struct mutex *lock = &hym8563->rtc->ops_lock;
+  int data, ret;
++  printk("kickpi %s %d\n",__FUNCTION__,__LINE__); //add log
+  mutex_lock(lock);
+
+  /* Clear the alarm flag */
+  data = i2c_smbus_read_byte_data(client, HYM8563_CTL2);
+  if (data < 0) {
+    dev_err(&client->dev, "%s: error reading i2c data %d\n",
+      __func__, data);
+    goto out;
+  }
+  data &= ~HYM8563_CTL2_AF;
+  
+  ret = i2c_smbus_write_byte_data(client, HYM8563_CTL2, data);
+  if (ret < 0) {
+   dev_err(&client->dev, "%s: error writing i2c data %d\n",
+     __func__, ret);
+  }
+out:
+  mutex_unlock(lock);
+  return IRQ_HANDLED;
+}
+```
 
 
