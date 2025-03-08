@@ -185,23 +185,25 @@ LCD屏幕配置，点亮不同的屏幕
 
 
 
-## 外接RTC模块
+## External RTC module
 
-有些板子没有板载RTC模块，有需求的客户就可以选择外接一个RTC模块解决时间保存需求
+Some boards do not have an onboard RTC module. Customers who need it can choose an external RTC module to solve the time preservation needs.
 
-下面的例子是K1B-Android外接I2C-RTC模块的做法：
+The following example is the approach of the K1B-Android external I2C-RTC module:
 
-### 设备硬件连接
+### Device hardware connection
 
-#### 板子上使用的IO口：
+#### IO ports used on the board:
 
-![image-20250308154448877](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250308154448877.png)
+![K1B-20PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250308164933546.png)
 
-#### 实物接线如下：
+#### The physical wiring is as follows:
 
 ![image-20250308154357655](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250308154357655.png)
 
->其中CLK_OUT一般不使用不接 INT脚根据需求接，因板子没有带上拉的IO脚故不接
+>CLK_OUT are generally not used
+>
+>The INT foot is connected according to demand. The K1B board does not have a pulled IO foot, so it is not connected.
 
 #### device driver porting
 
@@ -213,9 +215,9 @@ RK-RTC drive path:
 rk-android13.0\kernel-5.10\drivers\rtc\
 ```
 
->将你从RTC厂家拿到的内核驱动放到此目录下。
+>Put the kernel driver you got from the RTC manufacturer in this directory.
 >
->有些厂家可能没有内核驱动的代码，只有单片机的，哪你只能自己想办法了。
+>Some manufacturers may not have the kernel driver code, only the single-chip microcomputer, so you can only figure it out yourself.
 
 Modify the Makefile under the driver path:
 
