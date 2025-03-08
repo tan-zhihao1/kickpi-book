@@ -180,7 +180,7 @@ android_app_import {
 在加入编译
 
 ```makefile
-$ rk-android13.0\vendor\rockchip\common\apps\apps.mk
+$ vim rk-android13.0\vendor\rockchip\common\apps\apps.mk
 PRODUCT_PACKAGES += \
        Settings2
 ```
