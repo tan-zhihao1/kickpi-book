@@ -213,6 +213,10 @@ RK-RTC drive path:
 rk-android13.0\kernel-5.10\drivers\rtc\
 ```
 
+>将你从RTC厂家拿到的内核驱动放到此目录下。
+>
+>有些厂家可能没有内核驱动的代码，只有单片机的，哪你只能自己想办法了。
+
 Modify the Makefile under the driver path:
 
 ```diff
@@ -405,5 +409,4 @@ out:
   return IRQ_HANDLED;
 }
 ```
-
 
