@@ -1,8 +1,10 @@
 # 23-Linux NPU YOLOV5S 目标检测
 
-# 说明
+SDK - 指代源码路径
 
-SDK 指代源码路径，详情见 SDK源码编译
+console - 指代调试控制台
+
+ADB - Android Debug Bridge命令行工具，下文指代可运行ADB的环境
 
 
 
