@@ -366,13 +366,13 @@ apollo-p2:/ $ su
 
 需要通过USB adb操作
 
-```
-$ adb root
-$ adb remount
-$ adb pull /system/build.prop .
-$ vim build.prop
-	service.adb.tcp.port=5555
-$ adb push .\build.prop /system/build.prop
+```diff
+(ADB)$ adb root
+(ADB)$ adb remount
+(ADB)$ adb pull /system/build.prop .
+(ADB)$ vim build.prop
++ service.adb.tcp.port=5555
+(ADB)$ adb push .\build.prop /system/build.prop
 ```
 
 
