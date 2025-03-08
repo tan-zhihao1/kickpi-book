@@ -46,7 +46,7 @@ kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
 
 ## 显示方向配置
 
-Android系统显示旋转，可以修改如下配置，配置旋转度数为0/90/180/270
+修改 SF_PRIMARY_DISPLAY_ORIENTATION 配置，配置旋转度数为0/90/180/270
 
 ```
 (SDK)$ vim device/rockchip/rk3576/BoardConfig.mk
