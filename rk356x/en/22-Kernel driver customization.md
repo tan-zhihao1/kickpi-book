@@ -117,7 +117,7 @@ For example: configure the GPIO1_D4 on the K1 extension pin to LED, you can refe
 
 Test method reference:12-Hardware function instructions.md [LED](12-Hardware function instructions.md#LED)
 
-### gpio-key配置
+### gpio-key configuration
 
 For example: configure the GPIO1_D4 on the K1 extension pin to KEY_1, you can refer to the following modifications
 
