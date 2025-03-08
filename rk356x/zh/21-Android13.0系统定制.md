@@ -32,7 +32,7 @@ $ ls device/rockchip/common/bootanimation.zip
 
 ```
 $ vim device/rockchip/$(dev)/BoardConfig.mk
-$ vim device/rockchip/rk356x/BoardConfig.mk
+$ vim device/rockchip/rk356x/BoardConfig.mk // K1
 
 	SF_PRIMARY_DISPLAY_ORIENTATION := 0 	//默认
 	SF_PRIMARY_DISPLAY_ORIENTATION := 90 	//90°
@@ -40,11 +40,13 @@ $ vim device/rockchip/rk356x/BoardConfig.mk
 	SF_PRIMARY_DISPLAY_ORIENTATION := 270	//270°
 ```
 
-> K1/K1B rk356x
+> $(dev) 根据主板cpu进行选择
 >
-> K3 rk3562
+> K1/K1B - rk356x
 >
-> K8 rk3588
+> K3 - rk3562
+>
+> K8 - rk3588
 
 ### 修改触摸方向
 
