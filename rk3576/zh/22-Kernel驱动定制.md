@@ -37,7 +37,7 @@ Kernel配置
 (linux SDK)$ls kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 ```
 
-其他 config 路径
+其他配置路径
 
 ```
 (android SDK)$ ls kernel-6.1/kernel/configs
