@@ -437,7 +437,7 @@ fiq-debugger {
 
 ## rockchip 官方文档
 
-rockchip官方在代码中存放了文档，可通过官方文档
+rockchip官方在代码中存放了文档 RKDocs
 
 ```
 (SDK)$ tree -L 1 RKDocs/
