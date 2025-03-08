@@ -56,25 +56,19 @@ Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
 
 ### ADB修改显示方向
 
-// 正常显示
-
 ```
 // 0°
-adb shell settings put system user_rotation 0
+(ADB)$ adb shell settings put system user_rotation 0
 
 // 90°
-adb shell settings put system user_rotation 1
+(ADB)$ adb shell settings put system user_rotation 1
 
 // 180°
-adb shell settings put system user_rotation 2
+(ADB)$ adb shell settings put system user_rotation 2
 
 // 270°
-adb shell settings put system user_rotation 3
+(ADB)$ adb shell settings put system user_rotation 3
 ```
-
-
-
-
 
 
 
