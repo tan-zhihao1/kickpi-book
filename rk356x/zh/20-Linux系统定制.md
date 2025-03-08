@@ -570,7 +570,7 @@ $ su
 
 
 
-## 14.开关图形化桌面
+## 14.进入Linux命令行界面
 
 ### Ubuntu系统
 
@@ -600,7 +600,7 @@ $ sudo systemctl disable slim.service
 $ sudo systemctl enable slim.service
 ```
 
-
+GUI 桌面被冻结 可以接入键盘 输入以下快捷键 CTRL + ALT + F3。要返回 GUI 桌面，请输入 ALT + F2 快捷方式。
 
 ### Debian系统
 
