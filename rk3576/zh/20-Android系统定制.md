@@ -46,7 +46,7 @@ kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
 
 ## 显示方向配置
 
-默认配置显示方向
+**默认配置显示方向**
 
 修改 SF_PRIMARY_DISPLAY_ORIENTATION 配置，配置旋转度数为0/90/180/270
 
@@ -59,18 +59,15 @@ SF_PRIMARY_DISPLAY_ORIENTATION ?= 180
 SF_PRIMARY_DISPLAY_ORIENTATION ?= 270
 ```
 
-### ADB修改显示方向
+**ADB配置显示方向**
 
 ```
 // 0°
 (ADB)$ adb shell settings put system user_rotation 0
-
 // 90°
 (ADB)$ adb shell settings put system user_rotation 1
-
 // 180°
 (ADB)$ adb shell settings put system user_rotation 2
-
 // 270°
 (ADB)$ adb shell settings put system user_rotation 3
 ```
