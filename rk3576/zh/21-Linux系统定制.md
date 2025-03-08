@@ -1,5 +1,11 @@
 # 21-Linux系统定制
 
+SDK - 指代源码路径
+
+console - 指代调试控制台
+
+ADB - Android Debug Bridge命令行工具，下文指代可运行ADB的环境
+
 
 
 ## 系统启动
