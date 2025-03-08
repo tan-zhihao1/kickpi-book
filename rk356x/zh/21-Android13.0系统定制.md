@@ -322,7 +322,7 @@ old.apk new.apk
 SDK中需要的签名相关文件
 
 ```
-out/host/linux-x86/lib64	// 避免Java库问题
+out/host/linux-x86/lib64
 out/host/linux-x86/framework/signapk.jar
 build/target/product/security/platform.x509.pem
 build/target/product/security/platform.pk8
