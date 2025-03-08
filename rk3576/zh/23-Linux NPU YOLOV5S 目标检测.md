@@ -123,7 +123,7 @@ loop count = 10 , average run  53.093000 ms
 生成识别图片 out.jpg
 
 ```
-console:/rknn_yolov5_demo_Linux$ ls 
+(console)$ ls *.jpg
 out.jpg
 ```
 
@@ -142,7 +142,7 @@ Usage: ./rknn_yolov5_video_demo <rknn_model> <video_path> <video_type 264/265>
 rknn_yolov5_video_demo 使用示例
 
 ```
-$ ./rknn_yolov5_video_demo model/RK3576/yolov5s-640-640.rknn yolov5_test.h264 264
+(console)$ ./rknn_yolov5_video_demo model/RK3576/yolov5s-640-640.rknn yolov5_test.h264 264
 Loading mode...
 sdk version: 1.5.2 (c6b7b351a@2023-08-23T15:28:22) driver version: 0.9.2
 model input num: 1, output num: 3
