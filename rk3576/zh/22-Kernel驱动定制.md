@@ -237,7 +237,7 @@ Rockchip_Introduction_WIFI_Configuration_CN&EN.pdf
 SD_Boot / SDMMC / SDIO / eMMC
 
 ```
-RKDocs/common/MMC
+(SDK)$ ls RKDocs/common/MMC
 Rockchip_Developer_Guide_SD_Boot_CN.pdf
 Rockchip_Developer_Guide_SDMMC_SDIO_eMMC_CN.pdf
 ```
