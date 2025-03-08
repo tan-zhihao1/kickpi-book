@@ -176,8 +176,6 @@ PWM 框架在 /sys/class/pwm/ 目录下提供了用户层接口，详见 drivers
 
 * 确认 pwmchip 对应的 pwm
 
-
-
 列举相关pwm节点
 
 ```
