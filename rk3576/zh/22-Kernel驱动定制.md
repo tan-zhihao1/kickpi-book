@@ -133,7 +133,7 @@ kernel/include/uapi/linux/input-event-codes.h
 **说明**
 
 ```
-(SDK)/kernel-6.1/Documentation/devicetree/bindings/leds/leds-gpio.yaml
+$ more kernel-6.1/Documentation/devicetree/bindings/leds/leds-gpio.yaml
 ```
 
 默认软件拓展 gpio 引脚配置为gpio-led进行控制，可以方便的输出高或低电平
@@ -166,7 +166,7 @@ console:/ # echo 255 > /sys/class/leds/GPIO2_D6/brightness
 console:/ # echo 0 > /sys/class/leds/GPIO2_D6/brightness
 ```
 
-
+示例：
 
 ```
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
