@@ -62,7 +62,7 @@ rk3576.config
 ## GPIO
 
 ```
-kernel-6.1/Documentation/devicetree/bindings/input/gpio-keys.yaml
+$ ls kernel-6.1/Documentation/devicetree/bindings/input/gpio-keys.yaml
 ```
 
 
