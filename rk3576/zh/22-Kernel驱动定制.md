@@ -87,7 +87,7 @@ $ more kernel-6.1/Documentation/devicetree/bindings/input/gpio-keys.yaml
         pinctrl-names = "default";
         pinctrl-0 = <&uart8m0_xfer>;
 -       status = "okay";
-+       status = "disabled";^M
++       status = "disabled";
  };
  
  /*
@@ -95,28 +95,28 @@ $ more kernel-6.1/Documentation/devicetree/bindings/input/gpio-keys.yaml
  &i2c8 {
      pinctrl-0 = <&i2c8m2_xfer>;
      status = "okay";
-+};^M
-+^M
-+/ {^M
-+    gpio-keys {^M
-+        compatible = "gpio-keys";^M
-+        autorepeat;^M
-+        status = "okay";^M
-+^M
-+        gpio3c5 {^M
-+                label = "gpio3c5";^M
-+                linux,code = <KEY_1>;^M
-+                gpios = <&gpio3 RK_PC5 GPIO_ACTIVE_LOW>;^M
-+                debounce-interval = <100>;^M
-+        };^M
-+^M
-+        gpio3c6 {^M
-+                label = "gpio3c6";^M
-+                linux,code = <KEY_2>;^M
-+                gpios = <&gpio3 RK_PC6 GPIO_ACTIVE_LOW>;^M
-+                debounce-interval = <100>;^M
-+        };^M
-+    };^M
++};
++
++/ {
++    gpio-keys {
++        compatible = "gpio-keys";
++        autorepeat;
++        status = "okay";
++
++        gpio3c5 {
++                label = "gpio3c5";
++                linux,code = <KEY_1>;
++                gpios = <&gpio3 RK_PC5 GPIO_ACTIVE_LOW>;
++                debounce-interval = <100>;
++        };
++
++        gpio3c6 {
++                label = "gpio3c6";
++                linux,code = <KEY_2>;
++                gpios = <&gpio3 RK_PC6 GPIO_ACTIVE_LOW>;
++                debounce-interval = <100>;
++        };
++    };
  };
 ```
 
