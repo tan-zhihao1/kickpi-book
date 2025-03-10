@@ -61,6 +61,12 @@ rk3576.config
 
 ## GPIO
 
+```
+Documentation/devicetree/bindings/gpio/gpio-keys.txt
+```
+
+
+
 ### gpio-key
 
 例如：将K1拓展引脚上的GPIO1_D4配置成KEY_1，可以参考下面的修改
