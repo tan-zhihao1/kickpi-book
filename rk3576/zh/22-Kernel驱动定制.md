@@ -75,7 +75,7 @@ CONFIG_KEYBOARD_GPIO=y
 $ more kernel-6.1/Documentation/devicetree/bindings/input/gpio-keys.yaml
 ```
 
-示例：
+示例:
 
 根据[拓展引脚章节](12-硬件功能测试#ExpansionPin-K7)将K7拓展引脚上默认配置的UART8配置成gpio-keys
 
