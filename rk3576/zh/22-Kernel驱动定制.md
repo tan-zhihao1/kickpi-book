@@ -309,31 +309,3 @@ OF_FULLNAME=/pwm@27331000
 
 
 
-## WIFI
-
-* Android
-
-```
-(SDK)$ ls RKDocs/android/wifi/
-Rockchip_Introduction_REALTEK_WIFI_Driver_Porting_CN&EN.pdf
-Rockchip_Introduction_WIFI_Configuration_CN&EN.pdf
-```
-
-
-
-## MMC
-
-* Android
-
-SD_Boot / SDMMC / SDIO / eMMC
-
-```
-(SDK)$ ls RKDocs/common/MMC
-Rockchip_Developer_Guide_SD_Boot_CN.pdf
-Rockchip_Developer_Guide_SDMMC_SDIO_eMMC_CN.pdf
-```
-
-
-
-
-
