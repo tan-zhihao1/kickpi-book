@@ -25,6 +25,8 @@ Linux version 6.1
 
 ## dts
 
+[什么是设备树？](https://www.kernel.org/doc/html/latest/devicetree/)
+
 ```
 (android SDK)$ ls kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 (linux SDK)$ ls kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-linux.dts
