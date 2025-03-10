@@ -63,6 +63,12 @@ rk3576.config
 
 ### gpio-keys
 
+内核配置
+
+```
+CONFIG_KEYBOARD_GPIO=y
+```
+
 说明:
 
 ```
