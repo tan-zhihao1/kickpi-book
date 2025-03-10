@@ -63,13 +63,15 @@ rk3576.config
 
 ### gpio-key
 
-说明
+说明:
 
 ```
 $ ls kernel-6.1/Documentation/devicetree/bindings/input/gpio-keys.yaml
 ```
 
-例如：将K1拓展引脚上的GPIO1_D4配置成KEY_1，可以参考下面的修改
+示例：
+
+将K1拓展引脚上的GPIO1_D4配置成KEY_1，可以参考下面的修改
 
 ```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
