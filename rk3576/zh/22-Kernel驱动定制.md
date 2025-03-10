@@ -80,49 +80,44 @@ $ more kernel-6.1/Documentation/devicetree/bindings/input/gpio-keys.yaml
 根据[拓展引脚章节](12-硬件功能测试#ExpansionPin-K7)将K7拓展引脚上默认配置的UART8配置成gpio-keys
 
 ```diff
---- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
-+++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
-@@ -29,10 +29,10 @@ gpio1d0 {
-         gpios = <&gpio1 RK_PD0 GPIO_ACTIVE_HIGH>;
-         default-state = "off";
-     };
--    gpio1d4 {
--        gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;
--        default-state = "off";
--    };
-+    // gpio1d4 {
-+    //     gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_HIGH>;
-+    //     default-state = "off";
-+    // };
-     gpio3b5 {
-         gpios = <&gpio3 RK_PB5 GPIO_ACTIVE_HIGH>;
-         default-state = "off";
-
---- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi
-+++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi
-@@ -76,6 +76,21 @@ fan0: gpio-fan {
-                status = "okay";
-        };
-        */
-+
-+       
-+       gpio-keys {
-+               compatible = "gpio-keys";
-+               autorepeat;
-+               status = "okay";
-+       
-+               key_1D4 {
-+                       label = "GPIO_KEY_1D4";
-+                       linux,code = <KEY_1>;
-+                       gpios = <&gpio1 RK_PD4 GPIO_ACTIVE_LOW>;
-+                       debounce-interval = <100>;
-+               };
-+       };
-+
+--- a/kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-extend-40pin.dtsi
++++ b/kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-extend-40pin.dtsi
+@@ -30,7 +30,7 @@ &uart6 {
+ &uart8 {
+        pinctrl-names = "default";
+        pinctrl-0 = <&uart8m0_xfer>;
+-       status = "okay";
++       status = "disabled";^M
  };
  
- &leds {
-(END)
+ /*
+@@ -142,4 +142,26 @@ &i2c5 {
+ &i2c8 {
+     pinctrl-0 = <&i2c8m2_xfer>;
+     status = "okay";
++};^M
++^M
++/ {^M
++    gpio-keys {^M
++        compatible = "gpio-keys";^M
++        autorepeat;^M
++        status = "okay";^M
++^M
++        gpio3c5 {^M
++                label = "gpio3c5";^M
++                linux,code = <KEY_1>;^M
++                gpios = <&gpio3 RK_PC5 GPIO_ACTIVE_LOW>;^M
++                debounce-interval = <100>;^M
++        };^M
++^M
++        gpio3c6 {^M
++                label = "gpio3c6";^M
++                linux,code = <KEY_2>;^M
++                gpios = <&gpio3 RK_PC6 GPIO_ACTIVE_LOW>;^M
++                debounce-interval = <100>;^M
++        };^M
++    };^M
+ };
 ```
 
 其中code值可以参考驱动中的宏定义
