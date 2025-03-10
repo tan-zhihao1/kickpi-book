@@ -34,7 +34,9 @@ Linux version 6.1
 
 
 
-## defconfig
+## kconfig
+
+[什么是kconfig?](https://www.kernel.org/doc/html/latest/kbuild/kconfig.html)
 
 Kernel配置
 
