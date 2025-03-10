@@ -203,3 +203,14 @@ $ ./build.sh buildroot_saveconfig
 使用的defconfig文件为
 
 buildroot/buildroot-201902/configs/sun8iw20p1_t113_defconfig
+
+## 3. 编译工具链
+
+编译完成时工具链位于
+
+``` shell
+out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf/bin
+```
+
+
+
