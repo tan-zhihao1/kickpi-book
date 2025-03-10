@@ -118,10 +118,8 @@ GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树�
 其中code值可以参考驱动中的宏定义
 
 ```
-rk356x-linux\kernel\include\uapi\linux\input-event-codes.h
+kernel/include/uapi/linux/input-event-codes.h
 ```
-
-测试方法参考文档：12-硬件功能测试 [KEY 测试](12-硬件功能测试.md#KEYtest)
 
 
 
