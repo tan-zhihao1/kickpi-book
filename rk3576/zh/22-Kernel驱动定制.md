@@ -38,7 +38,7 @@ Linux version 6.1
 
 [什么是kconfig?](https://www.kernel.org/doc/html/latest/kbuild/kconfig.html)
 
-Kernel配置
+默认Kernel配置
 
 ```makefile
 (android SDK)$ls kernel-6.1/arch/arm64/configs/rockchip_defconfig
