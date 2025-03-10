@@ -38,14 +38,14 @@ Linux version 6.1
 
 [什么是kconfig?](https://www.kernel.org/doc/html/latest/kbuild/kconfig.html)
 
-默认Kconfig配置
+默认kconfig配置
 
 ```makefile
 (android SDK)$ls kernel-6.1/arch/arm64/configs/rockchip_defconfig
 (linux SDK)$ls kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 ```
 
-其他Kconfig配置
+其他kconfig配置
 
 ```
 (android SDK)$ ls kernel-6.1/kernel/configs
@@ -60,12 +60,6 @@ rk3576.config
 
 
 ## GPIO
-
-GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树这部分修改的示例，供参考修改
-
-注意：任何IO都只能配置一种功能，如果要修改已经有使用的IO需要找到对应位置注释掉原本的使用
-
-
 
 ### gpio-key
 
