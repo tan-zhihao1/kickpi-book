@@ -99,7 +99,7 @@ GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树�
 +       gpio-keys {
 +               compatible = "gpio-keys";
 +               autorepeat;
-+           status = "okay";
++               status = "okay";
 +       
 +               key_1D4 {
 +                       label = "GPIO_KEY_1D4";
