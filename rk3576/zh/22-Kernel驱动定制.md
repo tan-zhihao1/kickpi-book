@@ -25,8 +25,6 @@ Linux version 6.1
 
 ## dts
 
-K7 dts 路径
-
 ```
 (android SDK)$ ls kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android.dts
 (linux SDK)$ ls kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-linux.dts
