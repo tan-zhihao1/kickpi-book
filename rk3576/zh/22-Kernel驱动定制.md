@@ -168,7 +168,7 @@ console:/ # echo 0 > /sys/class/leds/GPIO2_D6/brightness
 
 示例：
 
-```
+```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
 +++ b/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
 @@ -29,10 +29,10 @@ gpio1d0 {
@@ -183,8 +183,6 @@ console:/ # echo 0 > /sys/class/leds/GPIO2_D6/brightness
          gpios = <&gpio3 RK_PB5 GPIO_ACTIVE_HIGH>;
          default-state = "off";
 ```
-
-
 
 
 
