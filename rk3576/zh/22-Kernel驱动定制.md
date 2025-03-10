@@ -57,7 +57,7 @@ rk3576.config
 
 
 
-## GPIO配置
+## GPIO
 
 GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树这部分修改的示例，供参考修改
 
@@ -146,7 +146,7 @@ rk356x-linux\kernel\include\uapi\linux\input-event-codes.h
 
 
 
-## gpio-led 
+### gpio-led 
 
 **说明**
 
@@ -186,7 +186,7 @@ console:/ # echo 0 > /sys/class/leds/GPIO2_D6/brightness
 
 
 
-## gpio-sysfs
+### gpio-sysfs
 
 **Pinctrl 引脚控制计算**  
 
