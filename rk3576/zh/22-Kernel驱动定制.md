@@ -61,7 +61,7 @@ rk3576.config
 
 ## GPIO
 
-### gpio-key
+### gpio-keys
 
 说明:
 
@@ -71,7 +71,7 @@ $ more kernel-6.1/Documentation/devicetree/bindings/input/gpio-keys.yaml
 
 示例：
 
-根据[拓展引脚章节](12-硬件功能测试#ExpansionPin-K7)将K7拓展引脚上默认配置的UART8配置成gpio-key，可以参考下面的修改
+根据[拓展引脚章节](12-硬件功能测试#ExpansionPin-K7)将K7拓展引脚上默认配置的UART8配置成gpio-keys
 
 ```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
