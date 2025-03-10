@@ -78,7 +78,7 @@ logo_kernel.bmp
 
 可以参考LCD配置文档： [单触摸屏驱动配置](40-RK3568LCD配置.md#TouchDriver)
 
-测试方法参考:12-硬件功能测试 [PWM](12-硬件功能测试.md#PWM)
+
 
 ## 4. 默认隐藏状态栏
 
