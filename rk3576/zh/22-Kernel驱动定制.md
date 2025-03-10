@@ -66,7 +66,7 @@ rk3576.config
 说明:
 
 ```
-$ ls kernel-6.1/Documentation/devicetree/bindings/input/gpio-keys.yaml
+$ more kernel-6.1/Documentation/devicetree/bindings/input/gpio-keys.yaml
 ```
 
 示例：
