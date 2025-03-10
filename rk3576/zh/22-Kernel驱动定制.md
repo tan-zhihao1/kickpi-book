@@ -71,6 +71,8 @@ $ ls kernel-6.1/Documentation/devicetree/bindings/input/gpio-keys.yaml
 
 示例：
 
+[拓展引脚章节](#)
+
 将K1拓展引脚上的GPIO1_D4配置成KEY_1，可以参考下面的修改
 
 ```diff
