@@ -463,17 +463,17 @@ $ ./build.sh -A
 配置命令环境，可以使用 mm / get_build_var 等安卓环境下命令
 
 ```shell
-// 配置环境
-source build/envsetup.sh
+(SDK)$ source build/envsetup.sh
 ```
 
 设备配置选择
 
 ```
 $ lunch
-根据实际，选择对应的设备，比如'K1'和'K1B'为 rk3568
 61
 ```
+
+> 根据实际，选择对应的设备，比如'K1'和'K1B'为 rk3568
 
 ![2a41026b5899c13dcc725f59858abd7](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/2a41026b5899c13dcc725f59858abd7.png)
 
