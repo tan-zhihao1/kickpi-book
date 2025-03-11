@@ -557,6 +557,18 @@ $ reboot
 
 
 
+## 开机LOGO修改
+
+可直接修改此文件
+
+``` shell
+/media/kickpi/Volumn/bootlogo.bmp
+```
+
+桌面双击Volumn即可直接将此文件所在分区挂载出来
+
+![image-20250311194606624](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250311194606624.png)
+
 
 ## 添加USB转UART模块支持
 
