@@ -477,7 +477,7 @@ $ lunch
 
 ![2a41026b5899c13dcc725f59858abd7](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/2a41026b5899c13dcc725f59858abd7.png)
 
-Android下相关命令使用，比如
+环境配置成功，可以使用Android下相关命令，比如
 
 ```
 $ get_build_var PRODUCT_HAVE_RKPHONE_FEATURES
@@ -501,3 +501,4 @@ $ ./build.sh -AUCKum
 ```
 
 > 出厂Android/Linux镜像默认为多屏自适应镜像，兼容官方7寸/10寸/15寸显示屏，连接任一显示屏可直接点亮
+
