@@ -206,7 +206,7 @@ $ xinput_calibrator -v --device $id
 
 示例：ens33网卡配置静态IP地址为192.168.1.50
 
-```
+```shell
 $ vim /etc/netplan/01-network-manager-all.yaml
 
 network:
@@ -218,6 +218,14 @@ network:
             optional: true
             gateway4: 192.168.1.1
 ```
+
+重启服务
+
+```shell
+$ reboot
+```
+
+
 
 ### 常用配置
 
