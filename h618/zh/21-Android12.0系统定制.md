@@ -517,6 +517,8 @@ debug           hdcp_dump  hdmi_source  phy_read   scdc_read
 
 ### adb连接
 
+![image-20250312140738317](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250312140738317.png)
+
 板卡使用type-c线连接电脑，等板卡蓝灯闪烁时查看系统设备管理器是否识到是安卓设备，如果识别到的设备如图所示则需手动安装驱动
 
 ![image-20250226152046272](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152046272.png)
