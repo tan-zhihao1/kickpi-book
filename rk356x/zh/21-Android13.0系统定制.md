@@ -35,7 +35,7 @@ logo_kernel.bmp
 打开配置
 
 ```diff
-device\rockchip\common\BoardConfig.mk
+(SDK)$ vim device\rockchip\common\BoardConfig.mk
 -BOOT_SHUTDOWN_ANIMATION_RINGING ?= false
 +BOOT_SHUTDOWN_ANIMATION_RINGING ?= true
 ```
