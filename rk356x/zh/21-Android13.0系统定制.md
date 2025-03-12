@@ -27,7 +27,7 @@ logo_kernel.bmp
 ## 2. 开机动画定制
 
 ```
-(SDK)$ ls device/rockchip/common/bootanimation.zip
+(SDK)$ ls device/rockchip/common/bootshutdown/bootanimation.zip
 ```
 
 
