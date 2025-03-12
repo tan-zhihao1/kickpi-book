@@ -164,6 +164,22 @@ Android13默认隐藏导航栏修改如下：
              mLockscreenWallpaper = mLockscreenWallpaperLazy.get();
 ```
 
+Android13默认使用手势导航：
+
+```diff
+--- a/device/rockchip/rk356x/overlay/frameworks/base/core/res/res/values/config.xml
++++ b/device/rockchip/rk356x/overlay/frameworks/base/core/res/res/values/config.xml
+@@ -61,7 +61,7 @@
+          0: 3 button mode (back, home, overview buttons)
+          1: 2 button mode (back, home buttons + swipe up for overview)
+          2: gestures only for back, home and overview -->
+-    <integer name="config_navBarInteractionMode">0</integer>
++    <integer name="config_navBarInteractionMode">2</integer>
+     <bool name="config_swipe_up_gesture_setting_available">true</bool>
+ </resources>
+ 
+```
+
 
 
 ## 6. 内置第三方APP
