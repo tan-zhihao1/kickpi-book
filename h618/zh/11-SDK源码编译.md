@@ -345,7 +345,7 @@ $ sudo systemctl enable kickpi.service
 
 ![image-20241025181249872](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181249872.png)
 
-选择我们要构建的根文件系统的发行版和release版本
+选择我们要构建的根文件系统的发行版和release版本，选择jammy Ubuntu
 
 ![image-20241025181345456](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181345456.png)
 
