@@ -463,6 +463,12 @@ rockdev
 
 ```
 $ ./build.sh all_multi_dtb
+
+```
+
+多屏识别单独编译kernel
+
+```
 $ ./build.sh kernel_multi_dtb
 ```
 
