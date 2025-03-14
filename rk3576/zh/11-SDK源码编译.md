@@ -462,7 +462,8 @@ rockdev
 **多屏识别编译**
 
 ```
-$ ./build.sh all_
+$ ./build.sh all_multi_dtb
+$ ./build.sh kernel_multi_dtb
 ```
 
 
