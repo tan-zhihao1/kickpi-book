@@ -134,7 +134,7 @@ $ ./build.sh -UCKAum
 
 ### 单独编译
 
-* 以下命令需先进行[配置环境](#androidEnv-K7)一次
+* 以下命令需先进行[配置环境](#androidEnv-K7)
 
 单编Uboot
 
