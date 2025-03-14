@@ -373,10 +373,18 @@ $ ./build.sh
 
 
 
+**uboot 编译**
+
+```
+$ ./build.sh uboot
+```
+
+
+
 **kernel 编译**
 
 ```
-./build.sh kernel
+$ ./build.sh kernel
 ```
 
 或
