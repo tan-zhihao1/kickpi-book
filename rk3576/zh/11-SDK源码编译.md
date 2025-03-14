@@ -116,6 +116,8 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 
 ### 全部编译
 
+标准镜像
+
 ```
 ./build.sh -AUCKu
 ```
@@ -125,7 +127,7 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 多屏识别
 
 ```
-./build.sh -UCKAum
+$ ./build.sh -UCKAum
 ```
 
 
