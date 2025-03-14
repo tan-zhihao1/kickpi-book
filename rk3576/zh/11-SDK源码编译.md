@@ -186,16 +186,12 @@ rockdev/Image-rk3576_u/
 
 烧录详见 - `10-系统镜像烧录`
 
+
+
 **多屏识别编译**
 
 ```
-$ ./build.sh all_multi_dtb
-```
-
-**多屏识别单独编译kernel**
-
-```
-$ ./build.sh kernel_multi_dtb
+$ ./build.sh -UCKAum
 ```
 
 
