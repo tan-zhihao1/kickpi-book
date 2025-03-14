@@ -476,10 +476,8 @@ kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 u-boot 配置路径
 
 ```
-u-boot configs/rk3576_defconfig
+u-boot/configs/rk3576_defconfig
 ```
-
-
 
 修改u-boot配置
 
@@ -489,12 +487,6 @@ $ make rk3576_defconfig
 $ make menuconfig
 $ make savedefconfig
 $ cp defconfig configs/rk3576_defconfig
-```
-
-保存u-boot配置修改
-
-```
-
 ```
 
 
