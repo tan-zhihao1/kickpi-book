@@ -478,6 +478,7 @@ $ make savedefconfig
 $ diff defconfig configs/rk3576_defconfig 
 $ cp defconfig configs/rk3576_defconfig 
 $ git diff configs/rk3576_defconfig
+$ build.sh uboot
 ```
 
 
