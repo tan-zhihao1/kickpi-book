@@ -473,13 +473,12 @@ defconfig 路径
 kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 ```
 
-
-
 修改u-boot配置
+
+
 
 ```
 $ cd u-boot/
-$ ls configs/rk3576_defconfig 
 $ make rk3576_defconfig 
 $ make menuconfig
 $ make savedefconfig
@@ -488,8 +487,6 @@ $ cp defconfig configs/rk3576_defconfig
 $ git diff configs/rk3576_defconfig
 $ build.sh uboot
 ```
-
-
 
 
 
