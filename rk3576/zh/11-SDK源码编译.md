@@ -87,7 +87,7 @@ $ git reset --hard
 
 
 
-### 配置环境
+### 配置环境<a id="androidEnv-K7"></a>
 
 * 前提：确保编译硬件要求，以及[编译环境搭建](#BuildEnv-K7)成功
 
