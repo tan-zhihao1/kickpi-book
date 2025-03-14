@@ -479,7 +479,6 @@ kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 $ cd u-boot/
 $ make rk3576_defconfig 
 $ make menuconfig
-
 ```
 
 保存u-boot配置修改
