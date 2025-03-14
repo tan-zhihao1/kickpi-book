@@ -470,14 +470,14 @@ kernel-6.1/arch/arm64/configs/rockchip_linux_defconfig
 修改u-boot配置
 
 ```
-  635  cd u-boot/
-  636  ls configs/rk3576_defconfig 
-  637  make rk3576_defconfig 
-  638  make menuconfig
-  639  make savedefconfig
-  640  diff defconfig configs/rk3576_defconfig 
-  641  cp defconfig configs/rk3576_defconfig 
-  642  git diff configs/rk3576_defconfig
+$ cd u-boot/
+$ ls configs/rk3576_defconfig 
+$ make rk3576_defconfig 
+$ make menuconfig
+$ make savedefconfig
+$ diff defconfig configs/rk3576_defconfig 
+$ cp defconfig configs/rk3576_defconfig 
+$ git diff configs/rk3576_defconfig
 ```
 
 
