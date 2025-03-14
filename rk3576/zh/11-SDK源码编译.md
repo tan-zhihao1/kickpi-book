@@ -124,7 +124,7 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 
 >镜像 rockdev/Image-rk3576_u/update-rk3576-kickpi-k7-android-*.img
 
-多屏识别
+多屏识别镜像
 
 ```
 $ ./build.sh -UCKAum
