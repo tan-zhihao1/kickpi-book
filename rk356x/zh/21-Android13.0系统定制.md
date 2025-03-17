@@ -254,7 +254,7 @@ PRODUCT_PACKAGES += \
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
-<application
+<application>
         <receiver
             android:name=".MyReceiver"
             android:enabled="true"
