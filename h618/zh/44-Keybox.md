@@ -26,7 +26,7 @@
  setargs_mmc=setenv  bootargs earlyprintk=${earlyprintk} initcall_debug=${initcall_debug} console=${console} loglevel=${loglevel} root=${mmc_root} rootwait init=${init} partitions=${partitions} cma=${cma} snum=${snum} mac_addr=${mac} wifi_mac=${wifi_mac} bt_mac=${bt_mac} selinux=${selinux} specialstr=${specialstr} gpt=1
 ```
 
-## 1.2 读取Keybox配置
+### 1.2 读取Keybox配置
 
 ​	读取Keybox使用的全志提供的API，并且Tina下已经存放有这些API调用的demo。Keybox读取需要通过TA/CA。
 
@@ -34,7 +34,7 @@ CA：属于 Linux 端应用程序，同其他应用程序一样，编译比较�
 
 TA：属于安全应用程序，编译需要借助 TA dev‑kit。
 
-### 1.2.1 TA/CA的编译配置
+#### 1.2.1 TA/CA的编译配置
 
 执行内核配置命令
 
@@ -93,7 +93,7 @@ $ cd package/security/optee-os-dev-kit/dev_kit/
 $ cp -rp arm-plat-sun50iw1p1 arm-plat-sun50iw9p1
 ```
 
-### 1.2.2 optee-efuse-read 对应修改介绍
+#### 1.2.2 optee-efuse-read 对应修改介绍
 
 ​	optee-efuse-read 要能正常读取keybox并打印，需要对原本的demo进行对应的修改，增加对keybox读取到的缓存区进行打印。下面是测试时做的修改，可供参考：
 
@@ -133,7 +133,7 @@ $ cp -rp arm-plat-sun50iw1p1 arm-plat-sun50iw9p1
 
 > dump为demo自带的16进制打印函数
 
-### 1.2.3 全志特有API的介绍
+#### 1.2.3 全志特有API的介绍
 
 * utee_sunxi_keybox
 
@@ -201,5 +201,24 @@ wr_buf：待烧录的数据，长度必须大于等于 write_len。
 
 其他：失败
 
-### 1.2.4 编译固件
+### 1.3 编译安全固件
 
+配置burn_key 属性  
+
+​	设置 burn_key 属性值为 1 后，设备才会接收 DragonSN 通过 usb 传输的信息，进行相应的烧录工作。该属性在文件 longan/device/config/chips/h618/configs/p2/sys_config.fex中， [target] 项下，如图。如果未显式配置，按 burn_key=0 处理。  
+
+![image-20241122101659346](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122101659346.png)
+
+```
+$ source build/envsetup.sh
+$ lunch apollo_p2-userdebug
+$ pack -sv
+```
+
+> 生成的安全固件位于：longan/out/  h618_android12_p2_uart0_secure_secure_v0.img 
+>
+> 后面的v0就是你设置的版本号，芯片出厂默认是0
+
+## 2 烧写Keybox
+
+​	烧写keybox方法和
