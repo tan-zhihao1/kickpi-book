@@ -214,16 +214,16 @@ $ pack -sv
 
 ### 1.4 burn confirmation
 
-确保keybox_list 已经存在要烧录的key名称
+Make sure keybox_list key name to burn already exists
 
-uboot中确认，开机上电后一直按s按键进入uboot命令行界面
+Confirm in uboot, keep pressing the s button after booting and powering on to enter the uboot command line interface.
 
 ```
 => printenv
 keybox_list=hdcpkey,widevine,xie
 ```
 
-系统中确认TA/CA 正常
+The system confirms that TA/CA is normal.
 
 ```shell
 # tee-supplicant &
@@ -239,45 +239,45 @@ TA:hello world!
 NA:finish with 0
 ```
 
-## 2 烧写Keybox
+## 2 Burn Keybox
 
-​	烧写keybox方法和rotpk 一样，通过 PC 端工具 dragonSN 进行烧录。 DragonSN 工具通过 usb 与设备通信，控制设备烧录指定的 keybox信息。具体烧录步骤如下:  
+​	The method of burning the keybox is the same as that of rotpk. It is burned through the PC-side tool dragonSN. The dragonSN tool communicates with the device through USB and controls the device to burn the specified keybox information. The specific burning steps are as follows:
 
-打开dragonSN ：
+Open dragonSN.
 
 ![image-20250318152318389](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152318389.png)
 
-鼠标选择配置key
+Mouse selection configuration key
 
 ![image-20250318152340301](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152340301.png)
 
-选择确定
+Select OK(确定)
 
 ​										![image-20250318152416786](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152416786.png)
 
 ![image-20250318152535419](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152535419.png)
 
-鼠标右键列表可以选择删除不要的配置
+Right mouse button list can choose to delete unwanted configurations
 
 ![image-20250318152745256](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152745256.png)
 
-添加配置
+Add configuration
 
 ![image-20250318152809796](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152809796.png)
 
 ![image-20250318152837932](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152837932.png)
 
-key详细配置如下：key name 为你Keybox_list添加的名称
+The detailed configuration of key is as follows: key name is the name you Keybox_list add
 
 ![image-20250318152922597](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152922597.png)
 
-确定添加
+OK Add
 
 ![image-20250318153052923](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153052923.png)
 
 ![image-20250318153112853](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153112853.png)
 
-添加完成后返回烧录工具主界面
+After the addition is completed, return to the main interface of the burning tool
 
 ![image-20250318153137093](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153137093.png)
 
@@ -285,35 +285,35 @@ key详细配置如下：key name 为你Keybox_list添加的名称
 
 ![image-20250318153238161](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153238161.png)
 
-选择你要烧录的key文件
+Select the key file you want to burn
 
 ![image-20250318153520969](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153520969.png)
 
-确定选择的文件后选择配置 擦除之前烧录 和 烧写后关机，非生产阶段不要选择自动烧录，以免烧错。
+Select the configuration after confirming the selected file, burn before erasing, and shut down after programming. Do not choose automatic burning in the non-production stage to avoid burning mistakes.
 
 ![image-20250318153626900](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153626900.png)
 
-板子上电后，界面如下：
+After the board is powered on, the interface is as follows:
 
 ![image-20250318154116349](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318154116349.png)
 
-点击烧录
+Click to write
 
 ![image-20250318154134143](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318154134143.png)
 
-烧写中
+Burning
 
 ![image-20250318154147718](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318154147718.png)
 
-烧写完成
+Programming is complete
 
 ![image-20250318154206857](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318154206857.png)
 
-完成后记得关闭工具，以免重启板子后再次识别
+Remember to close the tool after finishing, so as not to identify it again after restarting the board.
 
-## 3.读取keybox
+## 3.Read keybox
 
-uboot中读取加密后的keybox
+Read the encrypted keybox in uboot
 
 ```
 => pst read
@@ -343,7 +343,7 @@ cc 00 00 00 78 69 65 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 ```
 
-系统中调用demo读取keybox
+Call the demo in the system to read the keybox.
 
 ```shell
 # tee-supplicant &
@@ -381,4 +381,4 @@ read efuse failed with:254
 NA:finish with 254
 ```
 
-> 读取出的对比你烧写的key，一样就是成功了
+> The key you read is the same as the key you burned
