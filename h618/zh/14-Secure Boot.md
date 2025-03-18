@@ -81,10 +81,10 @@ $ cp longan/out/h618/common/keys/* android/vendor/security/toc_keys/ -rf
 ```
 $ source build/envsetup.sh
 $ lunch apollo_p2-userdebug
-$ pack -v
+$ pack -sv
 ```
 
-> 生成的安全固件位于：longan/out/  h618_android12_p2_uart0_secure_v0.img 
+> 生成的安全固件位于：longan/out/  h618_android12_p2_uart0_secure_secure_v0.img 
 >
 > 后面的v0就是你设置的版本号，芯片出厂默认是0
 
