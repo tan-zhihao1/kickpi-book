@@ -100,15 +100,7 @@ $ cp -rp arm-plat-sun50iw1p1 arm-plat-sun50iw9p1
 ```diff
 --- a/package/security/optee-efuse-read/src/ta/efuse_read_demo_ta.c
 +++ b/package/security/optee-efuse-read/src/ta/efuse_read_demo_ta.c
-@@ -54,7 +54,7 @@ TEE_Result TA_InvokeCommandEntryPoint(void *pSessionContext,
-                                      TEE_Param pParams[4])
- {
-        char *strsrc = (char *)pParams[0].memref.buffer;
--       uint8_t rdbuf[200];
-+       uint8_t rdbuf[2000];
-        uint8_t i, rd_len;
-        uint8_t keyname[50] = "chipid";
- 
+
 @@ -96,13 +96,16 @@ TEE_Result TA_InvokeCommandEntryPoint(void *pSessionContext,
                         memcpy(keyname,"testkey",sizeof("testkey"));
                         keyname[49]=0;
@@ -132,6 +124,8 @@ $ cp -rp arm-plat-sun50iw1p1 arm-plat-sun50iw9p1
 ```
 
 > dump为demo自带的16进制打印函数
+>
+> 128 为我烧写的key长度
 
 #### 1.2.3 全志特有API的介绍
 
@@ -388,3 +382,4 @@ read efuse failed with:254
 NA:finish with 254
 ```
 
+> 读取出的对比你烧写的key，一样就是成功了
