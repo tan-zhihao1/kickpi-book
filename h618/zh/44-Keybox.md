@@ -223,4 +223,5 @@ $ pack -sv
 
 ​	烧写keybox方法和rotpk 一样，通过 PC 端工具 dragonSN 进行烧录。 DragonSN 工具通过 usb 与设备通信，控制设备烧录指定的 keybox信息。具体烧录步骤如下:  
 
-1.
+
+
