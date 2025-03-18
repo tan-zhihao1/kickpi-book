@@ -219,9 +219,140 @@ $ pack -sv
 >
 > 后面的v0就是你设置的版本号，芯片出厂默认是0
 
+### 1.4 烧录确认
+
+确保keybox_list 已经存在要烧录的key名称xie
+
+uboot中确认，开机上电后一直按s按键进入uboot命令行界面
+
+```
+=> printenv
+keybox_list=hdcpkey,widevine,xie
+```
+
+系统中确认TA/CA 正常
+
+```shell
+# tee-supplicant &
+# hello_world_na 
+NA:init context
+NA:open session
+TA:creatyentry!
+TA:open session!
+NA:allocate memory
+NA:invoke command
+TA:rec cmd 0x210
+TA:hello world!
+NA:finish with 0
+```
+
 ## 2 烧写Keybox
 
 ​	烧写keybox方法和rotpk 一样，通过 PC 端工具 dragonSN 进行烧录。 DragonSN 工具通过 usb 与设备通信，控制设备烧录指定的 keybox信息。具体烧录步骤如下:  
 
+打开dragonSN ：
 
+![image-20250318152318389](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152318389.png)
+
+鼠标选择配置key
+
+![image-20250318152340301](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152340301.png)
+
+选择确定
+
+​										![image-20250318152416786](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152416786.png)
+
+![image-20250318152535419](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152535419.png)
+
+鼠标右键列表可以选择删除不要的配置
+
+![image-20250318152745256](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152745256.png)
+
+添加配置
+
+![image-20250318152809796](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152809796.png)
+
+![image-20250318152837932](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152837932.png)
+
+key详细配置如下：key name 为你Keybox_list添加的名称
+
+![image-20250318152922597](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152922597.png)
+
+确定添加
+
+![image-20250318153052923](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153052923.png)
+
+![image-20250318153112853](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153112853.png)
+
+添加完成后返回烧录工具主界面
+
+![image-20250318153137093](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153137093.png)
+
+![image-20250318153220826](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153220826.png)
+
+![image-20250318153238161](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153238161.png)
+
+选择你要烧录的key文件
+
+![image-20250318153520969](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153520969.png)
+
+确定选择的文件后选择配置 擦除之前烧录 和 烧写后关机，非生产阶段不要选择自动烧录，以免烧错。
+
+![image-20250318153626900](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318153626900.png)
+
+板子上电后，界面如下：
+
+![image-20250318154116349](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318154116349.png)
+
+点击烧录
+
+![image-20250318154134143](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318154134143.png)
+
+烧写中
+
+![image-20250318154147718](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318154147718.png)
+
+烧写完成
+
+![image-20250318154206857](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318154206857.png)
+
+完成后记得关闭工具，以免重启板子后再次识别
+
+## 3.读取keybox
+
+uboot中读取加密后的keybox
+
+```
+=> pst read
+[259.435]name in map xie
+[259.450]1 data:
+48 39 25 17 00 00 00 00 78 69 65 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 
+0f 82 d3 8a 00 00 00 00 00 00 00 00 00 00 00 00 
+cc 00 00 00 78 69 65 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 80 00 00 00 00 00 00 00 01 00 00 00 
+3e 53 6c 79 17 a6 95 48 5e f0 46 bd a7 c6 a3 e6 
+3e 53 6c 79 17 a6 95 48 5e f0 46 bd a7 c6 a3 e6 
+3e 53 6c 79 17 a6 95 48 5e f0 46 bd a7 c6 a3 e6 
+3e 53 6c 79 17 a6 95 48 5e f0 46 bd a7 c6 a3 e6 
+3e 53 6c 79 17 a6 95 48 5e f0 46 bd a7 c6 a3 e6 
+3e 53 6c 79 17 a6 95 48 5e f0 46 bd a7 c6 a3 e6 
+3e 53 6c 79 17 a6 95 48 5e f0 46 bd a7 c6 a3 e6 
+3e 53 6c 79 17 a6 95 48 5e f0 46 bd a7 c6 a3 e6 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+```
+
+系统中调用demo读取keybox
+
+```
+
+```
 
