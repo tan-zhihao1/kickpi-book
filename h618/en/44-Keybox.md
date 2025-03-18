@@ -1,16 +1,16 @@
 # 44-Keybox
 
-​	由于 efuse 空间受限， Tina 上支持了 keybox Secure Storage 功能，该功能默认开启。下面介绍如何自定义keybox进行烧录并读取
+​	Due to the limited efuse space, the keybox Secure Storage function is supported on Tina, which is enabled by default. The following describes how to customize the keybox to burn and read
 
- ## 1 固件配置
+ ## 1 firmware configuration
 
-​	要想烧录Keybox的前提是安全固件，安全固件的介绍在文档[14-Secure Boot](14-Secure%20Boot.md#Generate%20secure%20firmware)
+​	To burn the Keybox, the premise is the security firmware. The introduction of the security firmware is in the document.[14-Secure Boot](14-Secure%20Boot.md#Generate%20secure%20firmware)
 
-### 1.1 Keybox_list 自定义
+### 1.1 Keybox_list
 
-​	uboot会根据环境变量keybox_list来选择加载至secure os中的key。 keybox_list环境变量在env文件中进行配置，使用逗号分隔各 key。  
+​	Uboot will select keys to be loaded into the secure OS according to the environment variable keybox_list. The keybox_list environment variable is configured in the env file, and each key is separated by a comma.
 
-如下：添加自定义的key名称
+As follows: Add custom key name
 
 ```diff
 --- a/device/config/chips/h618/configs/default/env.cfg
@@ -26,23 +26,23 @@
  setargs_mmc=setenv  bootargs earlyprintk=${earlyprintk} initcall_debug=${initcall_debug} console=${console} loglevel=${loglevel} root=${mmc_root} rootwait init=${init} partitions=${partitions} cma=${cma} snum=${snum} mac_addr=${mac} wifi_mac=${wifi_mac} bt_mac=${bt_mac} selinux=${selinux} specialstr=${specialstr} gpt=1
 ```
 
-### 1.2 读取Keybox配置
+### 1.2 Read Keybox Configuration
 
-​	读取Keybox使用的全志提供的API，并且Tina下已经存放有这些API调用的demo。Keybox读取需要通过TA/CA。
+​	Read the API provided by Allwinner used by Keybox, and there is already a demo of these API calls stored under Tina. Keybox reading needs to go through TA/CA. 
 
-CA：属于 Linux 端应用程序，同其他应用程序一样，编译比较简单，只需要依赖 optee‑client 所提供的库，即可编译完成。
+CA: belongs to the Linux-side application, like other applications, the compilation is relatively simple, only need to rely on the library provided by optee-client to compile. 
 
-TA：属于安全应用程序，编译需要借助 TA dev‑kit。
+TA: belongs to the security application, and the compilation needs to use TA dev-kit.
 
-#### 1.2.1 TA/CA的编译配置
+#### 1.2.1 Compilation configuration of TA/CA
 
-执行内核配置命令
+Execute kernel configuration commands
 
 ```shell
 $ make menuconfig
 ```
 
-将下面的选项使能
+Enable the following options
 
 ```
 Tina Configuration
