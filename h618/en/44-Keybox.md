@@ -157,21 +157,21 @@ Return value:
 TEE_Result utee_sunxi_read_efuse(const char *keyname, uint8_t *result_len, uint8_t *rd_buf);
 ```
 
-功能：读取 efuse。
+Function: Read efuse.
 
-参数：
+Parameter:
 
-keyname： key 数据名称。
+Keyname: key data name.
 
-result_len：返回读取数据的长度。
+result_len: Returns the length of the read data.
 
-rd_buf：待读取的数据存放空间，空间大小必须大于等于 efuse 中数据的长度。
+rd_buf: The data storage space to be read must be greater than or equal to the length of the data in the efuse.
 
-返回值：
+Return value:
 
-0：成功
+0: success
 
-其他：失败
+Other: failure
 
 * utee_sunxi_write_efuse
 
@@ -179,21 +179,21 @@ rd_buf：待读取的数据存放空间，空间大小必须大于等于 efuse �
 TEE_Result utee_sunxi_write_efuse(const char* keyname, uint8_t write_len, uint8_t *wr_buf);
 ```
 
-功能：烧录 efuse。
+Function: Burn efuse.
 
-参数：
+Parameter:
 
-keyname： key 数据名称。
+Keyname: key data name.
 
-write_len：烧录数据的长度，单位 byte。
+write_len: The length of the burned data in bytes.
 
-wr_buf：待烧录的数据，长度必须大于等于 write_len。
+wr_buf: The length of the data to be burned must be greater than or equal to write_len.
 
-返回值：
+Return value:
 
-0：成功
+0: success
 
-其他：失败
+Other: failure
 
 ### 1.3 编译安全固件
 
