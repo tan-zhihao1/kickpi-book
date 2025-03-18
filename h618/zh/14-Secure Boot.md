@@ -70,7 +70,7 @@ $ cp longan/out/h618/common/keys/* android/vendor/security/toc_keys/ -rf
 
 
 
-## 4、生成安全固件
+## 4、生成安全固件<a id='Generate secure firmware'> </a>
 
 配置burn_key 属性  
 
