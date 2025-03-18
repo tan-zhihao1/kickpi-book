@@ -195,11 +195,10 @@ Return value:
 
 Other: failure
 
-### 1.3 编译安全固件
+### 1.3 Compile security firmware
 
-配置burn_key 属性  
-
-​	设置 burn_key 属性值为 1 后，设备才会接收 DragonSN 通过 usb 传输的信息，进行相应的烧录工作。该属性在文件 longan/device/config/chips/h618/configs/p2/sys_config.fex中， [target] 项下，如图。如果未显式配置，按 burn_key=0 处理。  
+Configuring burn_key properties 
+Set the burn_key attribute value to 1, the device will receive the information transmitted by DragonSN through usb and perform the corresponding burning work. This attribute is in the file longan/device/config/chips/h618/configs/p2/sys_config .fex, under the item [target], as shown in the figure. If not explicitly configured, press burn_key = 0 to process. 
 
 ![image-20241122101659346](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122101659346.png)
 
@@ -209,13 +208,13 @@ $ lunch apollo_p2-userdebug
 $ pack -sv
 ```
 
-> 生成的安全固件位于：longan/out/  h618_android12_p2_uart0_secure_secure_v0.img 
+> The generated secure firmware is located at.：longan/out/  h618_android12_p2_uart0_secure_secure_v0.img 
 >
-> 后面的v0就是你设置的版本号，芯片出厂默认是0
+> The v0 at the back is the version number you set, and the factory default of the chip is 0.
 
-### 1.4 烧录确认
+### 1.4 burn confirmation
 
-确保keybox_list 已经存在要烧录的key名称xie
+确保keybox_list 已经存在要烧录的key名称
 
 uboot中确认，开机上电后一直按s按键进入uboot命令行界面
 
