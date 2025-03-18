@@ -48,7 +48,9 @@ $ make menuconfig
 Tina Configuration
 └─> Security ‑‑‑>
 	└─> OPTEE ‑‑‑>
-		└─> ‑*‑ optee‑os‑dev‑kit
+		└─> ‑*‑ optee-client................................................ optee-client 
+		└─> <*> optee-efuse-read................................... OPTEE efuse read demo
+		└─> -*- optee-os-dev-kit........................................ optee-os-dev-kit  
 ```
 
 
