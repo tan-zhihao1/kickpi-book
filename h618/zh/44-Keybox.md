@@ -50,6 +50,7 @@ Tina Configuration
 	└─> OPTEE ‑‑‑>
 		└─> ‑*‑ optee-client................................................ optee-client 
 		└─> <*> optee-efuse-read................................... OPTEE efuse read demo
+		└─> <*> optee-helloworld....................................... OPTEE Hello World
 		└─> -*- optee-os-dev-kit........................................ optee-os-dev-kit  
 ```
 
