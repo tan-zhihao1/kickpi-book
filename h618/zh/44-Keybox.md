@@ -34,7 +34,7 @@ CA：属于 Linux 端应用程序，同其他应用程序一样，编译比较�
 
 TA：属于安全应用程序，编译需要借助 TA dev‑kit。
 
-### 1.2.1 TA/CA的编译
+### 1.2.1 TA/CA的编译配置
 
 执行内核配置命令
 
@@ -90,14 +90,48 @@ index c6c47b5f4..d3b2737eb 100755
 
 ```shell
 $ cd package/security/optee-os-dev-kit/dev_kit/
-$ cp arm-plat-sun50iw1p1 arm-plat-sun50iw9p1
+$ cp -rp arm-plat-sun50iw1p1 arm-plat-sun50iw9p1
 ```
-
-
 
 ### 1.2.2 optee-efuse-read 对应修改介绍
 
-​	optee-efuse-read 要能正常读取并打印，需要对原本的demo进行对应的修改
+​	optee-efuse-read 要能正常读取keybox并打印，需要对原本的demo进行对应的修改，增加对keybox读取到的缓存区进行打印。下面是测试时做的修改，可供参考：
+
+```diff
+--- a/package/security/optee-efuse-read/src/ta/efuse_read_demo_ta.c
++++ b/package/security/optee-efuse-read/src/ta/efuse_read_demo_ta.c
+@@ -54,7 +54,7 @@ TEE_Result TA_InvokeCommandEntryPoint(void *pSessionContext,
+                                      TEE_Param pParams[4])
+ {
+        char *strsrc = (char *)pParams[0].memref.buffer;
+-       uint8_t rdbuf[200];
++       uint8_t rdbuf[2000];
+        uint8_t i, rd_len;
+        uint8_t keyname[50] = "chipid";
+ 
+@@ -96,13 +96,16 @@ TEE_Result TA_InvokeCommandEntryPoint(void *pSessionContext,
+                        memcpy(keyname,"testkey",sizeof("testkey"));
+                        keyname[49]=0;
+                }
+-               i = utee_sunxi_keybox((const char*)keyname, rdbuf, 16);
++               printf("keyname: %s \n",keyname);
++               i = utee_sunxi_keybox((const char*)keyname, rdbuf, 1024);
+                if (i != TEE_SUCCESS) {
+                        printf("read key:%s from keybox failed with:%d\n",keyname,i);
+                        return i;
+                } else {
+-                       i = utee_sunxi_read_efuse("oem_secure", &rd_len,
+-                                                 rdbuf + 16);
++                       printf("keybox:\n");
++                       dump(rdbuf, 1024);
++                       i = utee_sunxi_read_efuse("widevine", &rd_len,
++                                                 rdbuf + 1024);
+                        if (i == TEE_SUCCESS) {
+                                printf("read result:\n");
+                                dump(rdbuf, rd_len + 16);
+```
+
+> dump为demo自带的16进制打印函数
 
 ### 1.2.3 全志特有API的介绍
 
@@ -166,3 +200,6 @@ wr_buf：待烧录的数据，长度必须大于等于 write_len。
 0：成功
 
 其他：失败
+
+### 1.2.4 编译固件
+
