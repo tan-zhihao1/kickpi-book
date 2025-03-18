@@ -54,9 +54,52 @@ Tina Configuration
 		└─> -*- optee-os-dev-kit........................................ optee-os-dev-kit  
 ```
 
+> optee-efuse-read 为我们使用的示例
+>
+> optee-helloworld 用于确认TA/CA环境是否正常示例
+
+查看是否修改成功
+
+```shell
+$ git diff  target/allwinner/h618-p2/defconfig
+```
+
+```diff
+diff --git a/target/allwinner/h618-p2/defconfig b/target/allwinner/h618-p2/defconfig
+index c6c47b5f4..d3b2737eb 100755
+--- a/target/allwinner/h618-p2/defconfig
++++ b/target/allwinner/h618-p2/defconfig
+@@ -4232,10 +4232,10 @@ CONFIG_PACKAGE_wpa_supplicant_rtl=y
+ #
+ # CONFIG_PACKAGE_optee-aes-hmac is not set
+ # CONFIG_PACKAGE_optee-base64 is not set
+-# CONFIG_PACKAGE_optee-client is not set
+-# CONFIG_PACKAGE_optee-efuse-read is not set
+-# CONFIG_PACKAGE_optee-helloworld is not set
+-# CONFIG_PACKAGE_optee-os-dev-kit is not set
++CONFIG_PACKAGE_optee-client=y
++CONFIG_PACKAGE_optee-efuse-read=y
++CONFIG_PACKAGE_optee-helloworld=y
++CONFIG_PACKAGE_optee-os-dev-kit=y
+ # CONFIG_PACKAGE_optee-rotpk is not set
+ # CONFIG_PACKAGE_optee-secure-storage is not set
+ # CONFIG_PACKAGE_optee-test is not set
+```
+
+添加符合平台版本的dev_kit
+
+```shell
+$ cd package/security/optee-os-dev-kit/dev_kit/
+$ cp arm-plat-sun50iw1p1 arm-plat-sun50iw9p1
+```
 
 
-### 1.2.2 全志特有API的介绍
+
+### 1.2.2 optee-efuse-read 对应修改介绍
+
+​	optee-efuse-read 要能正常读取并打印，需要对原本的demo进行对应的修改
+
+### 1.2.3 全志特有API的介绍
 
 * utee_sunxi_keybox
 
