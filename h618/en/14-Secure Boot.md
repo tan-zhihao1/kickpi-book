@@ -55,7 +55,7 @@ The anti-rollback version number of the firmware, the available range is 0-31. C
 
 
 
-### 4、Generate secure firmware
+### 4、Generate secure firmware <a id='Generate secure firmware '> </a>
 
 Configuring burn_key properties  
 
