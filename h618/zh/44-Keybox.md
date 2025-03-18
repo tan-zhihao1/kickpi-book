@@ -38,8 +38,17 @@ TA：属于安全应用程序，编译需要借助 TA dev‑kit。
 
 执行内核配置命令
 
+```shell
+$ make menuconfig
 ```
-(SDK)$ 
+
+将下面的选项使能
+
+```
+Tina Configuration
+└─> Security ‑‑‑>
+	└─> OPTEE ‑‑‑>
+		└─> ‑*‑ optee‑os‑dev‑kit
 ```
 
 
