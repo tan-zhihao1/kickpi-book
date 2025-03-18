@@ -54,11 +54,11 @@ Tina Configuration
 		└─> -*- optee-os-dev-kit........................................ optee-os-dev-kit  
 ```
 
-> optee-efuse-read 为我们使用的示例
+> Opt-efuse-read for our example
 >
-> optee-helloworld 用于确认TA/CA环境是否正常示例
+> Example of opte-helloworld used to confirm whether the TA/CA environment is normal
 
-查看是否修改成功
+Check if the modification was successful.
 
 ```shell
 $ git diff  target/allwinner/h618-p2/defconfig
@@ -86,16 +86,16 @@ index c6c47b5f4..d3b2737eb 100755
  # CONFIG_PACKAGE_optee-test is not set
 ```
 
-添加符合平台版本的dev_kit
+Add platform version compliant dev_kit
 
 ```shell
 $ cd package/security/optee-os-dev-kit/dev_kit/
 $ cp -rp arm-plat-sun50iw1p1 arm-plat-sun50iw9p1
 ```
 
-#### 1.2.2 optee-efuse-read 对应修改介绍
+#### 1.2.2 opte-efuse-read corresponding modification introduction
 
-​	optee-efuse-read 要能正常读取keybox并打印，需要对原本的demo进行对应的修改，增加对keybox读取到的缓存区进行打印。下面是测试时做的修改，可供参考：
+​	 For opte-efuse-read to read the keybox and print normally, it is necessary to modify the original demo accordingly and increase the buffer area read by the keybox for printing. The following are the modifications made during testing, for reference:
 
 ```diff
 --- a/package/security/optee-efuse-read/src/ta/efuse_read_demo_ta.c
@@ -123,11 +123,11 @@ $ cp -rp arm-plat-sun50iw1p1 arm-plat-sun50iw9p1
                                 dump(rdbuf, rd_len + 16);
 ```
 
-> dump为demo自带的16进制打印函数
+> dump(); The hexadecimal printing function that comes with the demo
 >
-> 128 为我烧写的key长度
+> 128 The length of the key burned for me
 
-#### 1.2.3 全志特有API的介绍
+#### 1.2.3 Introduction to Allwinner's unique API
 
 * utee_sunxi_keybox
 
@@ -135,21 +135,21 @@ $ cp -rp arm-plat-sun50iw1p1 arm-plat-sun50iw9p1
 TEE_Result utee_sunxi_keybox(const char *keyname, uint8_t *out_buf, uint32_t size);
 ```
 
-功能：读取 keybox 中特定名称的数据。
+Function: Read the data of a specific name in the keybox.
 
-参数：
+Parameter:
 
-• keyname： key 数据名称，需与 env*.cfg 文件中 keybox_list 指定的名称相同。
+Keyname: The key data name, which should be the same as the name specified keybox_list in the env * .cfg file.
 
-• out_buf：待读取的数据存放空间，空间大小必须大于等于 size。
+out_buf: The data storage space to be read must be greater than or equal to size.
 
-• size：待读取的长度。
+Size: The length to be read.
 
-返回值：
+Return value:
 
-• 0：成功
+0: success
 
-• ‑1：失败
+1: Failure
 
 * utee_sunxi_read_efuse
 
