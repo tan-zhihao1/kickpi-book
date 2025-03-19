@@ -504,6 +504,24 @@ $ 4G_dialing.sh
 
 
 
+判断是否拨号成功
+
+```
+enx3e003a5bd6ad: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.2.22.239  netmask 255.255.255.0  broadcast 10.2.22.255
+        inet6 fe80::f4b:d7dc:4468:e700  prefixlen 64  scopeid 0x20<link>
+        inet6 240e:47c:3201:282b:68c2:4a24:a296:87f0  prefixlen 64  scopeid 0x0<global>
+        ether 3e:00:3a:5b:d6:ad  txqueuelen 1000  (Ethernet)
+        RX packets 99  bytes 10215 (9.9 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 105  bytes 10213 (9.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
+
+
+
+
 ## 其他
 
 **Debian第⼀次更新系统会重启显⽰服务**
