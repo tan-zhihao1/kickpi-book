@@ -492,7 +492,7 @@ $ cat /usr/bin/hardware-optimization
 拨号脚本，已适配 RG200U / EC200 / EC20
 
 ```
-$ ls /usr/bin/4G_dialing.sh
+(consloe)$ ls /usr/bin/4G_dialing.sh
 ```
 
 
