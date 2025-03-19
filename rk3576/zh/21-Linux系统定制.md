@@ -465,6 +465,32 @@ ff_export_rootfs (存储设备路径) -t ext4
 
 ## 4G/5G配置
 
+系统检测是否存在4G/5G移动模块，进行配置拨号
+
+```
+$ cat /usr/bin/hardware-optimization 
+4g_config() {
+    wait_time=30
+        for((i=1;i<=$wait_time;i++));
+        do 
+                if [ -c /dev/ttyUSB2 ]; then
+                        echo "$i: 4g /dev/ttyUSB2 exists and is a character device." >> $LOG_FILE
+                        /usr/bin/4G_dialing.sh
+            break;
+                else
+                        echo "$i: 4g /dev/ttyUSB2 does not exist or is not a character device." >> $LOG_FILE
+                        sleep 1
+                fi
+        done
+}
+```
+
+拨号脚本
+
+```
+$ ls /usr/bin/4G_dialing.sh
+```
+
 
 
 
