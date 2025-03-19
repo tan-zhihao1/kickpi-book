@@ -463,7 +463,7 @@ ff_export_rootfs (存储设备路径) -t ext4
 
 
 
-## 4G / 5G 配置
+## 4G/5G配置
 
 
 
