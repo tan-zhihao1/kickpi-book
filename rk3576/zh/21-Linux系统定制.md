@@ -538,7 +538,7 @@ $ cat /tmp/kickpi-hardware.log
 >
 > 代表设备识别成功
 
-/dev/ttyUSB2是否存在
+或查看 /dev/ttyUSB2 是否存在
 
 ```
 $ ls /dev/ttyUSB*
