@@ -465,6 +465,8 @@ ff_export_rootfs (存储设备路径) -t ext4
 
 ## 4G/5G配置
 
+### 脚本配置
+
 4G/5G移动模块开机配置，检测模块是否存在，进行配置拨号
 
 ```
@@ -505,13 +507,15 @@ RG200U由模块自动拨号，可通过强制配置并重启此模块
 >
 > 即：
 >
-> $ 4G_dialing.sh force
+> 1. $ 4G_dialing.sh force
 >
-> 等待 /dev/ttyUSB2
+> 2. 等待 /dev/ttyUSB2
 >
-> $ 4G_dialing.sh
+> 3. $ 4G_dialing.sh
 
-判断是否接入模块
+### 上网识别
+
+开机判断是否接入模块
 
 ```
 $ cat /tmp/kickpi-hardware.log 
@@ -525,6 +529,8 @@ $ cat /tmp/kickpi-hardware.log
 > /dev/ttyUSB2 exists and is a character device. 
 >
 > 代表设备识别成功
+
+
 
 判断是否拨号成功
 
@@ -542,6 +548,8 @@ enx3e003a5bd6ad: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 ```
 
 > 代表获取IP成功
+
+
 
 
 
