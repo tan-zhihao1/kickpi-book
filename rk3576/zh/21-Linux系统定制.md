@@ -534,11 +534,17 @@ $ cat /tmp/kickpi-hardware.log
 25: 4g /dev/ttyUSB2 exists and is a character device.
 ```
 
-判断/dev/ttyUSB2是否存在
-
 > /dev/ttyUSB2 exists and is a character device. 
 >
 > 代表设备识别成功
+
+/dev/ttyUSB2是否存在
+
+```
+$ ls /dev/ttyUSB2
+```
+
+> 
 
 
 
