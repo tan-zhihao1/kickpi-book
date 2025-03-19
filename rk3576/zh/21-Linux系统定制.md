@@ -502,7 +502,36 @@ RG200U由模块自动拨号，可通过强制配置并重启此模块
 (console)$ 4G_dialing.sh
 ```
 
+判断是否接入模块
 
+```
+ cat /tmp/kickpi-hardware.log 
+1: 4g /dev/ttyUSB2 does not exist or is not a character device.
+2: 4g /dev/ttyUSB2 does not exist or is not a character device.
+3: 4g /dev/ttyUSB2 does not exist or is not a character device.
+4: 4g /dev/ttyUSB2 does not exist or is not a character device.
+5: 4g /dev/ttyUSB2 does not exist or is not a character device.
+6: 4g /dev/ttyUSB2 does not exist or is not a character device.
+7: 4g /dev/ttyUSB2 does not exist or is not a character device.
+8: 4g /dev/ttyUSB2 does not exist or is not a character device.
+9: 4g /dev/ttyUSB2 does not exist or is not a character device.
+10: 4g /dev/ttyUSB2 does not exist or is not a character device.
+11: 4g /dev/ttyUSB2 does not exist or is not a character device.
+12: 4g /dev/ttyUSB2 does not exist or is not a character device.
+13: 4g /dev/ttyUSB2 does not exist or is not a character device.
+14: 4g /dev/ttyUSB2 does not exist or is not a character device.
+15: 4g /dev/ttyUSB2 does not exist or is not a character device.
+16: 4g /dev/ttyUSB2 does not exist or is not a character device.
+17: 4g /dev/ttyUSB2 does not exist or is not a character device.
+18: 4g /dev/ttyUSB2 does not exist or is not a character device.
+19: 4g /dev/ttyUSB2 does not exist or is not a character device.
+20: 4g /dev/ttyUSB2 does not exist or is not a character device.
+21: 4g /dev/ttyUSB2 does not exist or is not a character device.
+22: 4g /dev/ttyUSB2 does not exist or is not a character device.
+23: 4g /dev/ttyUSB2 does not exist or is not a character device.
+24: 4g /dev/ttyUSB2 does not exist or is not a character device.
+25: 4g /dev/ttyUSB2 exists and is a character device.
+```
 
 判断是否拨号成功
 
