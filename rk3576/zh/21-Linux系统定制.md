@@ -541,10 +541,9 @@ $ cat /tmp/kickpi-hardware.log
 /dev/ttyUSB2是否存在
 
 ```
-$ ls /dev/ttyUSB2
+$ ls /dev/ttyUSB*
+/dev/ttyUSB0  /dev/ttyUSB1  /dev/ttyUSB2  /dev/ttyUSB3  /dev/ttyUSB4
 ```
-
-> 
 
 
 
