@@ -521,7 +521,9 @@ RG200U由模块自动拨号，可通过强制配置并重启此模块
 
 ### 上网识别
 
-**开机判断是否接入模块**
+**判断是否接入模块**
+
+查看日志进行判断
 
 ```
 $ cat /tmp/kickpi-hardware.log 
@@ -531,6 +533,8 @@ $ cat /tmp/kickpi-hardware.log
 24: 4g /dev/ttyUSB2 does not exist or is not a character device.
 25: 4g /dev/ttyUSB2 exists and is a character device.
 ```
+
+判断/dev/ttyUSB2是否存在
 
 > /dev/ttyUSB2 exists and is a character device. 
 >
