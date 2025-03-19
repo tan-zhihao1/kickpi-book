@@ -567,6 +567,8 @@ PING www.wshifen.com (103.235.46.115) from 10.138.192.102 enxca7f24fb0e94: 56(84
 64 bytes from 103.235.46.115 (103.235.46.115): icmp_seq=3 ttl=45 time=1870 ms
 ```
 
+> 指定设备 enx3e003a5bd6ad 进行ping网络测试
+
 
 
 ## 其他
