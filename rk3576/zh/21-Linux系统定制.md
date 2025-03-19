@@ -491,7 +491,7 @@ $ cat /usr/bin/hardware-optimization
 $ ls /usr/bin/4G_dialing.sh
 ```
 
-
+在信号不好或通讯异常情况，由于拨号存在差异，
 
 RG200U由模块自动拨号，可通过强制配置重启此模块
 
