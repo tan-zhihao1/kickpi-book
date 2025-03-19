@@ -521,7 +521,7 @@ RG200U由模块自动拨号，可通过强制配置并重启此模块
 
 ### 上网识别
 
-开机判断是否接入模块
+**开机判断是否接入模块**
 
 ```
 $ cat /tmp/kickpi-hardware.log 
@@ -538,7 +538,7 @@ $ cat /tmp/kickpi-hardware.log
 
 
 
-判断是否拨号成功
+**判断是否拨号成功**
 
 ```
 (console)$ ifconfig
@@ -557,7 +557,7 @@ enx3e003a5bd6ad: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 
 
-指定设备 enx3e003a5bd6ad 进行ping网络测试
+**ping网络测试**
 
 ```
 (console)$ ping www.baidu.com -I enxca7f24fb0e94
