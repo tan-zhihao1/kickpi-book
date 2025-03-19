@@ -465,7 +465,7 @@ ff_export_rootfs (存储设备路径) -t ext4
 
 ## 4G/5G配置
 
-系统检测是否存在4G/5G移动模块，进行配置拨号
+4G/5G移动模块开机配置，检测模块是否存在，进行配置拨号
 
 ```
 $ cat /usr/bin/hardware-optimization 
