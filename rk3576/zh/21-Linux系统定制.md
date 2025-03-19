@@ -485,13 +485,15 @@ $ cat /usr/bin/hardware-optimization
 }
 ```
 
-拨号脚本
+拨号脚本，已适配 RG200U / EC200 / EC20
 
 ```
 $ ls /usr/bin/4G_dialing.sh
 ```
 
 
+
+RG200U由模块自动拨号，可通过强制配置重启此模块
 
 
 
