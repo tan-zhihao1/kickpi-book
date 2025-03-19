@@ -53,19 +53,19 @@ ssh <username>@<IP>
 默认不支持root ssh 连接，root连接需要配置
 
 ```shell
-$ vim /etc/ssh/ssh_config
+(console)$ vim /etc/ssh/ssh_config
 + PermitRootLogin yes
-$ vim /etc/ssh/sshd_config
+(console)$ vim /etc/ssh/sshd_config
 + PermitRootLogin yes
-$ sudo /etc/init.d/ssh restart
+(console)$ sudo /etc/init.d/ssh restart
 ```
 
 root登陆需要确认配置
 
 ```
-$ cat /etc/ssh/ssh_config | grep PermitRootLogin
+(console)$ cat /etc/ssh/ssh_config | grep PermitRootLogin
 PermitRootLogin yes
-$ cat /etc/ssh/sshd_config | grep PermitRootLogin
+(console)$ cat /etc/ssh/sshd_config | grep PermitRootLogin
 PermitRootLogin yes
 ```
 
@@ -107,7 +107,7 @@ xrandr -help
 * 查看屏幕信息
 
 ```
-root@linaro-alip:/# xrandr
+(console)/# xrandr
 Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 16384 x 16384
 HDMI-1 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 0mm x 0mm
    1920x1080     60.00*+  60.00    50.00    50.00    59.94
@@ -139,10 +139,10 @@ DP-1 disconnected (normal left inverted right x axis y axis)
 
 对 HDMI-1 进行旋转设置
 ```
-$ xrandr --output HDMI-1 --rotate normal			// 画面正常显示
-$ xrandr --output HDMI-1 --rotate right				// 向右旋转，顺时针旋转90度
-$ xrandr --output HDMI-1 --rotate left				// 向左旋转，顺时针旋转270度
-$ xrandr --output HDMI-1 --rotate inverted			// 反转，顺时针旋转180度
+(console)$ xrandr --output HDMI-1 --rotate normal			// 画面正常显示
+(console)$ xrandr --output HDMI-1 --rotate right				// 向右旋转，顺时针旋转90度
+(console)$ xrandr --output HDMI-1 --rotate left				// 向左旋转，顺时针旋转270度
+(console)$ xrandr --output HDMI-1 --rotate inverted			// 反转，顺时针旋转180度
 ```
 
 
