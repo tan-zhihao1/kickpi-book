@@ -468,7 +468,7 @@ ff_export_rootfs (存储设备路径) -t ext4
 4G/5G移动模块开机配置，检测模块是否存在，进行配置拨号
 
 ```
-$ cat /usr/bin/hardware-optimization 
+(console)$ cat /usr/bin/hardware-optimization 
 4g_config() {
     wait_time=30
         for((i=1;i<=$wait_time;i++));
@@ -492,7 +492,7 @@ $ cat /usr/bin/hardware-optimization
 拨号脚本，已适配 RG200U / EC200 / EC20
 
 ```
-(consloe)$ ls /usr/bin/4G_dialing.sh
+(console)$ ls /usr/bin/4G_dialing.sh
 ```
 
 
