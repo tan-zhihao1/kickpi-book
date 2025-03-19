@@ -498,8 +498,8 @@ ff_export_rootfs (存储设备路径) -t ext4
 RG200U由模块自动拨号，可通过强制配置并重启此模块
 
 ```
-$ 4G_dialing.sh force
-$ 4G_dialing.sh
+(console)$ 4G_dialing.sh force
+(console)$ 4G_dialing.sh
 ```
 
 
@@ -507,6 +507,7 @@ $ 4G_dialing.sh
 判断是否拨号成功
 
 ```
+(console)$ ifconfig
 enx3e003a5bd6ad: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 10.2.22.239  netmask 255.255.255.0  broadcast 10.2.22.255
         inet6 fe80::f4b:d7dc:4468:e700  prefixlen 64  scopeid 0x20<link>
