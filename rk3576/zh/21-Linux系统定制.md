@@ -499,8 +499,9 @@ RG200U由模块自动拨号，可通过强制配置并重启此模块
 
 ```
 (console)$ 4G_dialing.sh force
-(console)$ 4G_dialing.sh
 ```
+
+> 此操作会重置模块，需要等待 /dev/ttyUSB2 重新挂载后，4G_dialing.sh
 
 判断是否接入模块
 
