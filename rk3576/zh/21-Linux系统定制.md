@@ -491,11 +491,15 @@ ff_export_rootfs (存储设备路径) -t ext4
 >
 > 若无网络，可运行拨号脚本进行重试
 
+
+
 拨号脚本，已适配 RG200U / EC200 / EC20
 
 ```
 (console)$ ls /usr/bin/4G_dialing.sh
 ```
+
+
 
 RG200U由模块自动拨号，可通过强制配置并重启此模块
 
@@ -512,6 +516,8 @@ RG200U由模块自动拨号，可通过强制配置并重启此模块
 > 2. 等待 /dev/ttyUSB2
 >
 > 3. $ 4G_dialing.sh
+
+
 
 ### 上网识别
 
@@ -551,6 +557,8 @@ enx3e003a5bd6ad: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 
 
+指定设备 enx3e003a5bd6ad 进行ping网络测试
+
 ```
 (console)$ ping www.baidu.com -I enxca7f24fb0e94
 PING www.wshifen.com (103.235.46.115) from 10.138.192.102 enxca7f24fb0e94: 56(84) bytes of data.
@@ -558,8 +566,6 @@ PING www.wshifen.com (103.235.46.115) from 10.138.192.102 enxca7f24fb0e94: 56(84
 64 bytes from 103.235.46.115 (103.235.46.115): icmp_seq=2 ttl=45 time=3924 ms
 64 bytes from 103.235.46.115 (103.235.46.115): icmp_seq=3 ttl=45 time=1870 ms
 ```
-
-
 
 
 
