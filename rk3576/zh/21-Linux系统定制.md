@@ -498,7 +498,7 @@ ff_export_rootfs (存储设备路径) -t ext4
 RG200U由模块自动拨号，可通过强制配置重启此模块
 
 ```
-$ /usr/bin/4G_dialing.sh force
+$ 4G_dialing.sh force
 ```
 
 
