@@ -499,6 +499,7 @@ RG200U由模块自动拨号，可通过强制配置并重启此模块
 
 ```
 $ 4G_dialing.sh force
+$ 4G_dialing.sh
 ```
 
 
