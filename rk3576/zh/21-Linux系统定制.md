@@ -551,14 +551,13 @@ $ ls /dev/ttyUSB*
 
 ```
 (console)$ ifconfig
-enx3e003a5bd6ad: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 10.2.22.239  netmask 255.255.255.0  broadcast 10.2.22.255
-        inet6 fe80::f4b:d7dc:4468:e700  prefixlen 64  scopeid 0x20<link>
-        inet6 240e:47c:3201:282b:68c2:4a24:a296:87f0  prefixlen 64  scopeid 0x0<global>
-        ether 3e:00:3a:5b:d6:ad  txqueuelen 1000  (Ethernet)
-        RX packets 99  bytes 10215 (9.9 KiB)
+enxca7f24fb0e94: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.138.192.102  netmask 255.255.255.0  broadcast 10.138.192.255
+        inet6 fe80::583f:ed51:782d:318d  prefixlen 64  scopeid 0x20<link>
+        ether ca:7f:24:fb:0e:94  txqueuelen 1000  (Ethernet)
+        RX packets 181  bytes 15185 (14.8 KiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 105  bytes 10213 (9.9 KiB)
+        TX packets 194  bytes 17394 (16.9 KiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
