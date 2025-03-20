@@ -513,3 +513,11 @@ sudo nand-sata-install
 
 运行 **./build.sh** 进入交互式构建界面，选择 **step3.Build base-rootfs and deb packages** 再按Enter键进入下一步
 
+### 编译工具链
+
+编译完成时会在此目录有编译工具链
+
+``` shell
+aw-image-build/toolchains/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabi/bin
+```
+
