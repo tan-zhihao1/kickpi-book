@@ -148,6 +148,26 @@ Android13默认禁止状态栏下拉修改如下：
 
 ## 5. 默认隐藏导航栏
 
+最新的固件可以命名或者app发送广播控制
+
+命令行隐藏导航栏
+
+```shell
+$ am broadcast -a android.intent.action.HIDE_NAVIGATION_BAR
+```
+
+命令行显示导航栏
+
+```shell
+$ am broadcast -a android.intent.action.SHOW_NAVIGATION_BAR
+```
+
+APP广播测试apk位于网盘下：
+
+```
+rk356x_data\3-SoftwareData软件资料\Navigation-Status-test\
+```
+
 Android13默认隐藏导航栏修改如下： 
 
 ```diff
