@@ -115,31 +115,14 @@ Android13 默认隐藏状态栏修改如下：
 ```diff
 --- a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/CentralSurfacesImpl.java
 +++ b/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/CentralSurfacesImpl.java
-@@ -945,6 +945,9 @@ public class CentralSurfacesImpl implements CoreStartable, CentralSurfaces {
+@@ -952,6 +952,8 @@ public class CentralSurfacesImpl implements CoreStartable, CentralSurfaces {
+         mRegisterStatusBarResult = result;
  
          createAndAddWindows(result);
++        hideStatusBar();
  
-+        mStatusBarWindowController.setBarVisibility(View.GONE);
-+
-+
          if (mWallpaperSupported) {
              // Make sure we always have the most current wallpaper info.
-             IntentFilter wallpaperChangedFilter = new IntentFilter(Intent.ACTION_WALLPAPER_CHANGED);
-diff --git a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/window/StatusBarWindowController.java b/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/window/StatusBarWindowController.java
-index 7a4e35f159a..bdbcd6bdffa 100644
---- a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/window/StatusBarWindowController.java
-+++ b/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/window/StatusBarWindowController.java
-@@ -149,6 +149,10 @@ public class StatusBarWindowController {
-         apply(mCurrentState);
-     }
- 
-+    public void setBarVisibility(int visibility) {
-+        mStatusBarWindowView.setVisibility(visibility);
-+    }
-+
-     /** Adds the given view to the status bar window view. */
-     public void addViewToWindow(View view, ViewGroup.LayoutParams layoutParams) {
-         mStatusBarWindowView.addView(view, layoutParams);
 ```
 
 Android13默认禁止状态栏下拉修改如下：
@@ -193,15 +176,14 @@ Android13默认隐藏导航栏修改如下：
 ```diff
 --- a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/CentralSurfacesImpl.java
 +++ b/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/CentralSurfacesImpl.java
-@@ -1234,7 +1234,7 @@ public class CentralSurfacesImpl implements CoreStartable, CentralSurfaces {
-         mStatusBarTouchableRegionManager.setup(this, mNotificationShadeWindowView);
-         mNotificationPanelViewController.setHeadsUpManager(mHeadsUpManager);
+@@ -952,6 +952,8 @@ public class CentralSurfacesImpl implements CoreStartable, CentralSurfaces {
+         mRegisterStatusBarResult = result;
  
--        createNavigationBar(result);
-+        // createNavigationBar(result);
+         createAndAddWindows(result);
++        hideNavigation();
  
-         if (ENABLE_LOCKSCREEN_WALLPAPER && mWallpaperSupported) {
-             mLockscreenWallpaper = mLockscreenWallpaperLazy.get();
+         if (mWallpaperSupported) {
+             // Make sure we always have the most current wallpaper info.
 ```
 
 Android13默认使用手势导航：
