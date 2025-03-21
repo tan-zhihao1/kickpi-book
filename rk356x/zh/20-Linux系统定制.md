@@ -531,6 +531,12 @@ PermitRootLogin yes
 
 接好U盘在板子上，大小至少16GB以上，打包出来的镜像会比较大
 
+脚本位于网盘：
+
+```
+rk356x_data\3-SoftwareData软件资料\backup rootfs
+```
+
 在板子上运行我们的打包脚本
 
 ```
