@@ -539,7 +539,7 @@ rk356x_data\3-SoftwareData软件资料\backup rootfs
 
 将脚本拷贝到板子Linux系统上运行
 
-```
+```shell
 $ sudo chmod +x ./ff_export_rootfs
 $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 ```
