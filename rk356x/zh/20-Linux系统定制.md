@@ -537,10 +537,11 @@ PermitRootLogin yes
 rk356x_data\3-SoftwareData软件资料\backup rootfs
 ```
 
-在板子上运行我们的打包脚本
+将脚本拷贝到板子Linux系统上运行
 
 ```
-sudo ./ff_export_rootfs /mnt/usb -t ext4
+$ sudo chmod +x ./ff_export_rootfs
+$ sudo ./ff_export_rootfs /mnt/usb -t ext4
 ```
 
 > 生成的包名格式如：rootfs.img
