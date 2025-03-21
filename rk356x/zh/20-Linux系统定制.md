@@ -525,7 +525,7 @@ PermitRootLogin yes
 
 
 
-## 12.备份SD卡系统
+## 12.备份系统
 
 > 注意：这种方式替换后的rootfs 可能存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
 
