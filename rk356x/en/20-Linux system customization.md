@@ -514,7 +514,7 @@ The website is https://ubuntu.pkgs.org/20.04/ubuntu-main-arm64/gcc-9_9.3.0-10ubu
 
 
 
-## 12 Backup SD card system
+## 12 Backup system
 
 > Note: The rootfs replaced in this way may have a mount-mounted UUID problem. You can blkid to check the correct UUID and then modify/etc/fstab.
 
