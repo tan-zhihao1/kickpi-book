@@ -106,8 +106,6 @@ vim device/config/chips/a133/configs/c3/kickpi-k5.dts
 
 ​		编译镜像，重新烧录
 
-
-
 步骤三
 
 ​		确认gpio未被注册
