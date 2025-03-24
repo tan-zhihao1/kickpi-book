@@ -93,7 +93,7 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 
 ### 红外使用的PWM
 
-永久关闭板子红外遥控
+永久关闭板子红外遥控，修改设备树目录下rk3568-kickpi-ir.dtsi文件
 
 Android_SDK为例：
 
