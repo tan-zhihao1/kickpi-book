@@ -201,7 +201,13 @@ $ ./build.sh kernel
 
 > 镜像生成目录：longan/out/h618_android12_p2_uart0.img
 
+### 配置内核
 
+``` 
+cd longan
+
+./build.sh menuconfig
+```
 
 **单独编译Android**
 
