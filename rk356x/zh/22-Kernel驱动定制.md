@@ -73,6 +73,8 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 
 ## PWM 配置
 
+### 普通PWM
+
 例如：将K1拓展引脚上的GPIO0_C0（pwm1m0）配置成PWM
 
 注意：任何IO都只能配置一种功能，如果要修改已经有使用的IO需要找到对应位置注释掉原本的使用
@@ -88,6 +90,20 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 ```
 
 测试方法参考:12-硬件功能测试 [PWM](12-硬件功能测试.md#PWM)
+
+### 红外使用的PWM
+
+永久关闭板子红外遥控
+
+```diff
+rk3568-kickpi-ir.dtsi
+&pwm7 {
+    status = "okay";
+    compatible = "rockchip,remotectl-pwm";
++
+```
+
+
 
 ## GPIO配置
 
