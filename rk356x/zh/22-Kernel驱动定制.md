@@ -97,8 +97,10 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 
 Android_SDK为例：
 
-```
-kernel-5.10\arch\arm64\boot\dts\rockchip\rk3568-kickpi-ir.dtsi
+```diff
+---kernel-5.10\arch\arm64\boot\dts\rockchip\rk3568-kickpi-ir.dtsi
++++kernel-5.10\arch\arm64\boot\dts\rockchip\rk3568-kickpi-ir.dtsi
+
 &pwm7 {
 -   status = "okay";
 +   status = "disabled";
