@@ -95,12 +95,14 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
 
 永久关闭板子红外遥控
 
-```diff
-rk3568-kickpi-ir.dtsi
+Android_SDK为例：
+
+```
+kernel-5.10\arch\arm64\boot\dts\rockchip\rk3568-kickpi-ir.dtsi
 &pwm7 {
-    status = "okay";
+-   status = "okay";
++   status = "disabled";
     compatible = "rockchip,remotectl-pwm";
-+
 ```
 
 
