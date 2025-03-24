@@ -259,7 +259,15 @@ Kits选择gcc为板子对应的编译工具链即可，一般qtcreator默认设�
 
 ### gcc交叉编译工具
 
-虚拟机：最好使用SDK里面的交叉编译工具(或者自己去官网下载安装一样的交叉工具链)
+虚拟机：
+
+可以在网盘中获取，网盘路径：
+
+```
+rk356x_data\3-SoftwareData软件资料\gcc
+```
+
+SDK自带交叉编译工具链：
 
 ```
 (SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
