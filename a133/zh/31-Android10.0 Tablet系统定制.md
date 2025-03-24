@@ -320,11 +320,10 @@ public class MyReceiver extends BroadcastReceiver {
   adb push ./app /system/priv-app/
   ```
 
-  
 
 
 
-ADB投屏
+## ADB投屏
 
 下载工具网盘路径
 
