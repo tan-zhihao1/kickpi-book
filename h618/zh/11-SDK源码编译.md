@@ -104,14 +104,11 @@ $ git reset --hard
 首次编译需要配置一下编译环境，后续不改变sdk位置，则无需重复配置
 
 ```shell
+先进入longan目录
 $ cd longan
+然后执行命令
 $ ./build.sh config
-$ cd -
-```
-
-编译选项
-
-```
+选择如下配置
 Welcome to mkscript setup progress
 All available platform:
    0. android
@@ -142,6 +139,9 @@ All available arch:
    0. arm
    1. arm64
 Choice [arm64]: 1
+
+然后再执行
+$ cd -
 ```
 
 选择主板
