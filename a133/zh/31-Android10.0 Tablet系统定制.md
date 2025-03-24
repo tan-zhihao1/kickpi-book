@@ -324,6 +324,18 @@ public class MyReceiver extends BroadcastReceiver {
 
 
 
+ADB投屏
+
+下载工具网盘路径
+
+5-DevelopmentTools开发工具\ADB Screen Cast 投屏
+
+![image-20250303103950558](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250303103950558.png)
+
+![image-20250303104027819](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250303104027819.png)
+
+
+
 # 常见问题
 
 ## 1.安卓系统耳机一直是连接状态
