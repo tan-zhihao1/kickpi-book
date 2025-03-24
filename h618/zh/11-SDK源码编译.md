@@ -340,9 +340,9 @@ $ sudo systemctl enable kickpi.service
 
 如果我们只是需要构建一个用于板卡启动的镜像，选择 **Build all step** 再按Enter键进入下一步
 
-![image-20241025181221880](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181221880.png)
+![image-20250324091854498](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250324091854498.png)
 
-选择我们要构建镜像的板卡，如 **lubancat-a1 Allwinner H618**
+选择我们要构建镜像的板卡，如kickpi-k2b Allwinner H618**
 
 ![image-20241025181249872](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181249872.png)
 
