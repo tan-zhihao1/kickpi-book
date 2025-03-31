@@ -356,7 +356,7 @@ public class MyReceiver extends BroadcastReceiver {
 命令行配置DPI
 
 ```
-ceres-c3:/ # wm density 120
+(console)# wm density 120
 ```
 
 
