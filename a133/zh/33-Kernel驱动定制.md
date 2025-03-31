@@ -116,4 +116,4 @@ Linux-4.9
 gpios = <&r_pio PL 0x4 0x0 0x1 0x0 0x1>
 ```
 
-> 
+> 指向哪个**pio**，属于**cpus**要用**&r_pio**
