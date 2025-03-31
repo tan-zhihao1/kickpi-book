@@ -135,5 +135,14 @@ gpios = <&r_pio PL 0x4 0x0 0x1 0x0 0x1>
 > **int of_get_named_gpio_flags(struct device_node \*np, const char \*list_name, int index,**
 >
 > **enum of_gpio_flags \*flags)** 拿到**gpio**的配置信息后
->
-> 
+
+
+
+查看pin配置
+
+```
+cd /sys/kernel/debug/sunxi_pinctrl
+echo PC2 > sunxi_pin
+cat sunxi_pin_configure
+```
+
