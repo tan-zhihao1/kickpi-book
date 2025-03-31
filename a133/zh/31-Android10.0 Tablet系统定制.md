@@ -337,7 +337,7 @@ public class MyReceiver extends BroadcastReceiver {
 
 ## DPI 配置
 
-默认DPI配置
+系统默认DPI配置
 
 ````diff
 --- a/android/device/softwinner/ceres-c3/ceres_c3.mk
