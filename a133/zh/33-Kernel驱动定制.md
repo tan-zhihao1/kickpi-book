@@ -1,6 +1,6 @@
 # Kernel 驱动定制
 
-### UART
+## UART
 
 K5C 拓展引脚中如PL2，PL3默认配置成GPIO，可复用成UART
 
@@ -108,7 +108,7 @@ microcom -s 115200 /dev/ttyS2
 
 
 
-### GPIO
+## GPIO
 
 Linux-4.9
 
