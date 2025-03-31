@@ -109,3 +109,11 @@ microcom -s 115200 /dev/ttyS2
 
 
 ## GPIO
+
+Linux-4.9
+
+```
+gpios = <&r_pio PL 0x4 0x0 0x1 0x0 0x1>
+```
+
+> 
