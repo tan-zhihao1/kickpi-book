@@ -335,6 +335,32 @@ public class MyReceiver extends BroadcastReceiver {
 
 
 
+## DPI 配置
+
+默认DPI配置
+
+````diff
+--- a/android/device/softwinner/ceres-c3/ceres_c3.mk
++++ b/android/device/softwinner/ceres-c3/ceres_c3.mk
+@@ -256,7 +256,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+ endif
+ 
+ PRODUCT_PROPERTY_OVERRIDES += \
+-    ro.sf.lcd_density=160
++    ro.sf.lcd_density=120
+ 
+ #language pack
+ PRODUCT_PRODUCT_PROPERTIES  += \
+````
+
+命令行配置DPI
+
+```
+ceres-c3:/ # wm density 120
+```
+
+
+
 # 常见问题
 
 ## 1.安卓系统耳机一直是连接状态
