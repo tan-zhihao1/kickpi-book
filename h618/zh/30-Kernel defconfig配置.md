@@ -1,6 +1,22 @@
 # 30-Kernel defconfig配置
 
-## Android配置defconfig
+## 配置defconfig
+
+### Linux
+
+内核文件：
+
+```
+source/kernel/linux-5.4-h618/arch/arm64/configs/linux_h618_defconfig
+```
+
+设备树
+
+```
+source/kernel/linux-5.4-h618/arch/arm64/boot/dts/sun50iw9-kickpi-k2*.dts
+```
+
+### Android
 
 内核路径
 
