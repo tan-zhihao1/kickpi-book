@@ -554,7 +554,23 @@ DAEMON_CONF段修改为
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
 ```
 
+配置dnsmasq
 
+``` 
+备份原文件
+mv /etc/dnsmasq.conf /etc/dnsmasq.conf.bak
+vim /etc/dnsmasq.conf
+
+interface=wlan0
+dhcp-range=192.168.42.2,192.168.42.254,255.255.255.0,24h
+```
+
+启动服务
+
+``` 
+systemctl start hostapd dnsmasq
+systemctl enable hostapd dnsmasq
+```
 
 
 
