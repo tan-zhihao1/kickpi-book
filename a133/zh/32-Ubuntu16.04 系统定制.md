@@ -514,7 +514,8 @@ vnc软件下载
 [Download VNC Viewer by RealVNC®](https://www.realvnc.com/en/connect/download/viewer/?lai_vid=EW3mEzvVmIeJO&lai_sr=10-14&lai_sl=l)
 
 ``` shell
-板卡开启VNC服务，并配置密码
+板卡安装并开启VNC服务，并配置密码
+apt-get install tightvncserver
 vncserver
 ```
 
@@ -533,6 +534,12 @@ startxfce4 &
 ```
 
 ![image-20250317142240671](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250317142240671.png)
+
+输入ip端口号和密码
+
+![image-20250317142654795](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250317142654795.png)
+
+![image-20250401152018198](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250401152018198.png)
 
 ## 卸载xfce桌面
 
