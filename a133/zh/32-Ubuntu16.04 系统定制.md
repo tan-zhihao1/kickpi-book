@@ -507,7 +507,32 @@ $ vim usr/lib/lbc/hardware-optimization
 - 4g_config &
 ```
 
+## VNC远程桌面登陆
 
+vnc软件下载
+
+[Download VNC Viewer by RealVNC®](https://www.realvnc.com/en/connect/download/viewer/?lai_vid=EW3mEzvVmIeJO&lai_sr=10-14&lai_sl=l)
+
+``` shell
+板卡开启VNC服务，并配置密码
+vncserver
+```
+
+![image-20250317141556644](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250317141556644.png)
+
+修改VNC配置
+
+vim /home/kickpi/.vnc/xstartup
+
+注释所有内容并添加一下内容
+
+``` shell
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+startxfce4 &
+```
+
+![image-20250317142240671](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250317142240671.png)
 
 ## 卸载xfce桌面
 
