@@ -495,6 +495,61 @@ $ cat /etc/ssh/sshd_config | grep PermitRootLogin
 PermitRootLogin yes
 ```
 
+## WIFI配置
+
+### WIFI AP热点
+
+查看硬件支持
+
+``` 
+iw list | grep "AP"
+```
+
+安装工具
+
+``` 
+apt-get update
+apt-get install hostapd dnsmasq
+```
+
+配置静态IP
+
+``` 
+vim /etc/network/interfaces
+
+auto wlan0
+iface wlan0 inet static
+    address 192.168.42.1
+    netmask 255.255.255.0
+    
+systemctl restart networking
+```
+
+配置hostapt
+
+``` 
+vim /etc/hostapd/hostapd.conf
+
+interface=wlan0
+driver=nl80211
+ssid=MyHotspot            //热点名
+wpa_passphrase=88888888   //密码
+hw_mode=g
+channel=6
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=CCMP
+beacon_int=100
+ieee80211n=1
+wme_enabled=1
+ht_capab=[SHORT-GI-20][SHORT-GI-40][HT40+]
+max_num_sta=8
+wpa_group_rekey=86400
+
+```
+
+
+
 
 
 ## 关闭开机4G配置
