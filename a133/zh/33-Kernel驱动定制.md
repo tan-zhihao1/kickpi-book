@@ -146,3 +146,13 @@ echo PC2 > sunxi_pin
 cat sunxi_pin_configure
 ```
 
+
+
+```
+console:/ # cat /d/pinctrl/pio/pinmux-pins | grep 118                          
+pin 118 (PD22): (MUX UNCLAIMED) pio:118
+console:/ # cat /d/pinctrl/pio/pinmux-pins | grep 130                          
+pin 130 (PE2): (MUX UNCLAIMED) pio:130
+console:/ # 
+```
+
