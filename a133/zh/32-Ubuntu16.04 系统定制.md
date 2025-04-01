@@ -525,7 +525,7 @@ iface wlan0 inet static
 systemctl restart networking
 ```
 
-配置hostapt
+配置hostapd
 
 ``` 
 vim /etc/hostapd/hostapd.conf
@@ -546,6 +546,12 @@ ht_capab=[SHORT-GI-20][SHORT-GI-40][HT40+]
 max_num_sta=8
 wpa_group_rekey=86400
 
+```
+
+``` 
+vim /etc/default/hostapd
+DAEMON_CONF段修改为
+DAEMON_CONF="/etc/hostapd/hostapd.conf"
 ```
 
 
