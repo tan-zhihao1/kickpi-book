@@ -68,10 +68,10 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 android/device/softwinner/ceres-c3/media/bootanimation.zip
 ```
 
-修改路径
+修改拷贝路径
 
 ```
-device/softwinner/apollo/common/media/config.mk
+android/device/softwinner/ceres-c3/ceres_c3.mk
 ```
 
 bootanimation.zip 格式
