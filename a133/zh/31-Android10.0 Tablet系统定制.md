@@ -46,9 +46,9 @@ logo 替换路径
 longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 ```
 
-> 图片格式需要为32bit bmp
+> 图片格式 - 32bit
 >
-> 图片分辨率需要小于实际屏幕分辨率
+> 图片分辨率 - 小于实际屏幕分辨率
 
 
 
