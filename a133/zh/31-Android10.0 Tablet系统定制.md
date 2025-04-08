@@ -60,6 +60,14 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 
 
 
+公版动画路径
+
+```
+android/device/softwinner/ceres-c3/media/bootanimation.zip
+```
+
+
+
 修改路径
 
 ```
