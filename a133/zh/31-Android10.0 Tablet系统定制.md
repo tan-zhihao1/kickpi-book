@@ -96,6 +96,12 @@ PRODUCT_COPY_FILES += \
 
 
 
+## bootanimation.zip 制作
+
+
+
+
+
 ## 默认语言
 
 persist.sys.locale 属性
