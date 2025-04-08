@@ -98,6 +98,22 @@ PRODUCT_COPY_FILES += \
 
 ## bootanimation.zip 制作
 
+```
+$ zipinfo android/device/softwinner/ceres-c3/media/bootanimation.zip
+ part0/
+ part0/0000.png
+ part0/0001.png
+ part0/0002.png
+ ...
+ part1
+ part1/0013.png
+ part1/0014.png
+ part1/0015.png
+ ...
+ audio_conf.txt
+ desc.txt
+```
+
 
 
 
