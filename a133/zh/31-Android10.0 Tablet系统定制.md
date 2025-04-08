@@ -129,7 +129,27 @@ p 0 0 part1
 
 ```
 
-> 
+> 第一行
+>
+> width height fps
+>
+> WIDTH	 800	图片的宽度
+>
+> HEIGHT	480	图片的高度
+>
+> FPS			15		帧率
+>
+> 后面每行
+>
+> TYPE	COUNT	PAUSE	PATH
+>
+> TYPE		p			播放直到开机完成
+>
+> COUNT	1			播放次数，0代表无线循环直到开机结束
+>
+> PAUSE	 0			part结束后暂停帧数
+>
+> PATH		part1	路径
 
 
 
