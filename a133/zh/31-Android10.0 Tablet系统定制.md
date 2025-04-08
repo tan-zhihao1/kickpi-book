@@ -159,13 +159,15 @@ window 压缩，压缩标准需要选择 Store
 
 ![image-20250408175807082](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250408175807082.png)
 
+
+
 linux 压缩，指定压缩等级为最低等级stored，只归档不压缩
 
 ```
-$ zip -0qry bootanimation.zip  *.txt part0/
+$ zip -0qry bootanimation.zip  *.txt part0/ part1/
 ```
 
-
+> 注意压缩包下 part0 part1 txt 为同一级根目录
 
 
 
