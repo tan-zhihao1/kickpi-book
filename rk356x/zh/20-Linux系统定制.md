@@ -2,7 +2,7 @@
 
 
 
-## 1. 开机自启动程序
+## 开机自启动程序
 
 ### 开机自启动脚本
 
@@ -27,7 +27,19 @@ $ chmod +x /etc/init.d/kickpi.sh
 
 
 
-## 2. 语言配置
+## 修改串口自动登录用户
+
+默认串口自动登陆root，下面示例为修改为kickpi
+
+```
+$ vim /lib/systemd/system/serial-getty@.service
+-ExecStart=-/sbin/agetty --autologin root --keep-baud 115200,38400,9600 %I $TERM
++ExecStart=-/sbin/agetty --autologin kickpi --keep-baud 115200,38400,9600 %I $TERM
+```
+
+
+
+## 语言配置
 
 > 命令执行后，重启生效
 
@@ -57,7 +69,7 @@ $ echo "export LANGUAGE=zh_CN:zh" >> /etc/profile.d/zh_CN.sh
 
 
 
-## 3. 时区配置
+## 时区配置
 
 > 命令执行后，重启生效
 
@@ -75,7 +87,7 @@ $ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 
 
 
-## 4. 配置屏幕显示方向
+## 配置屏幕显示方向
 
 * 查看当前屏幕信息
 
@@ -200,7 +212,7 @@ $ xinput_calibrator -v --device $id
 
 
 
-## 5. 网络配置
+##  网络配置
 
 ### 静态IP地址配置
 
@@ -307,7 +319,7 @@ $ ifconfig <dev> up
 
 
 
-## 6. NFS配置
+## NFS配置
 
 环境配置
 
@@ -368,7 +380,7 @@ $ ls nfs_tmp/
 
    
 
-## 7. 镜像源设置
+## 镜像源设置
 
 查看软件版本，根据版本查找镜像源替换
 
@@ -394,7 +406,7 @@ $ sudo apt update
 
 
 
-## 8. Chrome 硬件加速测试
+## Chrome 硬件加速测试
 
 测试平台：RK3568 Debian11 Chrome
 
@@ -467,7 +479,7 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 
 
 
-## 9.SSH配置
+## SSH配置
 
 ```
 用户：kickpi
@@ -503,7 +515,7 @@ PermitRootLogin yes
 
 
 
-## 10.触摸屏 图像界面文件管理器打不开文件
+## 触摸屏 图像界面文件管理器打不开文件
 
 1.打开桌面Home 进入文件管理器
 
@@ -513,7 +525,7 @@ PermitRootLogin yes
 
 
 
-## 11.UBUNTU从官网安装软件包
+## UBUNTU从官网安装软件包
 
 安装gcc为例子
 
@@ -525,7 +537,7 @@ PermitRootLogin yes
 
 
 
-## 12.备份rootfs系统
+## 备份rootfs系统
 
 > 注意：这种方式替换后的rootfs 可能存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
 
@@ -552,7 +564,7 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 
 
-## 13.Ubuntu桌面版进入root用户
+## Ubuntu桌面版进入root用户
 
 最新桌面版系统默认登录用户为：kickpi
 
@@ -585,7 +597,7 @@ $ su
 
 
 
-## 14.进入Linux命令行界面
+## 进入Linux命令行界面
 
 ### Ubuntu系统
 
