@@ -162,7 +162,7 @@ window 压缩，压缩标准需要选择 Store
 linux
 
 ```
-$ zip -0qry -i *.txt *.png *.wav bootanimation.zip 
+$ zip -0qry -i bootanimation.zip  *.txt *.png *.wav 
 ```
 
 
