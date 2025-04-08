@@ -68,15 +68,11 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 android/device/softwinner/ceres-c3/media/bootanimation.zip
 ```
 
-
-
 修改路径
 
 ```
 device/softwinner/apollo/common/media/config.mk
 ```
-
-
 
 bootanimation.zip 格式
 
@@ -85,8 +81,6 @@ bootanimation.zip 格式
      $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
 ```
 
-
-
 bootanimation.mp4 格式
 
 ```makefile
@@ -94,7 +88,7 @@ bootanimation.mp4 格式
      $(LOCAL_PATH)/media/bootanimation.mp4:system/media/bootanimation.mp4
 ```
 
-* 烧录镜像后第一次启动的开机动画是原生Android，需要重启显示替换的开机动画
+> mp4 方式烧录镜像后第一次启动的开机动画是原生Android，需要重启显示替换的开机动画
 
 
 
