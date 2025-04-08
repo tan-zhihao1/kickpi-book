@@ -81,8 +81,8 @@ device/softwinner/apollo/common/media/config.mk
 bootanimation.zip 格式
 
 ```makefile
-PRODUCT_COPY_FILES += \
-     $(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
+ PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
 ```
 
 
@@ -90,8 +90,8 @@ PRODUCT_COPY_FILES += \
 bootanimation.mp4 格式
 
 ```makefile
-PRODUCT_COPY_FILES += \
-    $(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
+ PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/media/bootanimation.mp4:system/media/bootanimation.mp4
 ```
 
 * 烧录镜像后第一次启动的开机动画是原生Android，需要重启显示替换的开机动画
