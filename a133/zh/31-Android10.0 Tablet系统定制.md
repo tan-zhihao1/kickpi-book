@@ -100,8 +100,6 @@ PRODUCT_COPY_FILES += \
 
 **文件结构**
 
-bootanimation.zip 包含 part0 part1 文件夹和 desc.txt 文件，part0 part1 等文件夹里面放的是动画拆分的图片，格式为 png。
-
 ```
 $ zipinfo android/device/softwinner/ceres-c3/media/bootanimation.zip
  part0/
@@ -118,11 +116,20 @@ $ zipinfo android/device/softwinner/ceres-c3/media/bootanimation.zip
  desc.txt
 ```
 
+> bootanimation.zip 包含 part0 part1 文件夹和 desc.txt 文件，part0 part1 等文件夹里面放的是动画拆分的图片，格式为 png。
+
 
 
 **desc.txt 配置文件**
 
+```
+800 480 15
+p 1 0 part0 
+p 0 0 part1
 
+```
+
+> 
 
 
 
