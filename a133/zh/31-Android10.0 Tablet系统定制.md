@@ -155,9 +155,9 @@ p 0 0 part1
 
 **打包zip**
 
-window 压缩，压缩标准需要选择'save'
+window 压缩，压缩标准需要选择 Store
 
-
+![image-20250408175807082](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250408175807082.png)
 
 linux
 
