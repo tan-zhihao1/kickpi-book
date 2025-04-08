@@ -54,6 +54,8 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 
 ## 开机动画
 
+### 替换说明
+
 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
 
 两种文件同时存在播放 mp4 优先级比 zip 高 ，具体优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
@@ -96,7 +98,7 @@ PRODUCT_COPY_FILES += \
 
 
 
-## bootanimation.zip 制作
+### bootanimation.zip 制作
 
 **文件结构**
 
