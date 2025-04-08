@@ -157,6 +157,8 @@ p 0 0 part1
 
 window 压缩，压缩标准需要选择'save'
 
+
+
 linux
 
 ```
