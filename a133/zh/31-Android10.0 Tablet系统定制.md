@@ -150,6 +150,12 @@ p 0 0 part1
 > PAUSE 0 part结束后暂停帧数
 >
 > PATH part1 路径
+>
+> 最后一行需为空行
+
+
+
+
 
 
 
