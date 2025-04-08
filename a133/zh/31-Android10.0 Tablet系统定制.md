@@ -155,6 +155,14 @@ p 0 0 part1
 
 **打包zip**
 
+window 压缩，压缩标准需要选择'save'
+
+linux
+
+```
+$ zip -0qry -i *.txt *.png *.wav bootanimation.zip 
+```
+
 
 
 
