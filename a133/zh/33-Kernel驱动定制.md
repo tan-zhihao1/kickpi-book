@@ -156,3 +156,7 @@ pin 130 (PE2): (MUX UNCLAIMED) pio:130
 console:/ # 
 ```
 
+
+
+## WATCHDOG
+
