@@ -170,6 +170,8 @@ CONFIG_SUNXI_WATCHDOG=y
 驱动路径
 
 ```
-longan/kernel/linux-4.9/drivers/watchdog
+longan/kernel/linux-4.9/drivers/watchdog/sunxi_wdt.c
 ```
+
+
 
