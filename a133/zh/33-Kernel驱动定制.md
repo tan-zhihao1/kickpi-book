@@ -160,3 +160,10 @@ console:/ #
 
 ## WATCHDOG
 
+内核配置
+
+```
+CONFIG_WATCHDOG=y
+CONFIG_SUNXI_WATCHDOG=y
+```
+
