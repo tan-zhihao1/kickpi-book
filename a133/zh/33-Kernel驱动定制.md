@@ -175,17 +175,15 @@ longan/kernel/linux-4.9/drivers/watchdog/sunxi_wdt.c
 
 
 
-写入任意内容（大写字母‘V’除外），开启看门狗，一段实际内需要写入一次
+写入任意内容（大写字母‘V’除外），开启看门狗，16s内需要写入一次
 
 ```
-# 
 echo A > /dev/watchdog
-
-echo V > /dev/watchdog
 ```
 
 开启看门狗
 
 ```
+echo V > /dev/watchdog
 ```
 
