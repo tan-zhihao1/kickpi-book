@@ -50,6 +50,23 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 >
 > 图片分辨率 - 小于实际屏幕分辨率
 
+## 旋转功能
+
+支持使用adb命令进行旋转
+
+```
+// 正常显示
+adb shell settings put system user_rotation 0
+
+// 90°
+adb shell settings put system user_rotation 1
+
+// 180°
+adb shell settings put system user_rotation 2
+
+// 270°
+adb shell settings put system user_rotation 3
+```
 
 
 ## 开机动画
