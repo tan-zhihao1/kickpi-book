@@ -82,7 +82,7 @@ logo_kernel.bmp
 (ADB)$ adb shell settings put system user_rotation 3
 ```
 
-
+> 修改没有生效的话 请检测控制栏，是否开了自动旋转屏幕功能
 
 ### 修改触摸方向
 
