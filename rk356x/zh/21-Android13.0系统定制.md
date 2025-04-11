@@ -507,10 +507,11 @@ fiq-debugger {
 
 系统UI默认分辨率是1080P，也可以通过命令去修改UI的分辨率
 
-下面修改命令：
+下面不同shell下的修改命令：
 
-```
+```shell
 (console)$ wm size 4096x2560
+(ADB)$ adb shell wm size 4096x2560
 ```
 
 
