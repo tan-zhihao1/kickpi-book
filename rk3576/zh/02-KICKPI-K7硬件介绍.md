@@ -30,16 +30,7 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 ├── 0-Specifications规格书
 │   └── KICKPI K7 产品规格书.pdf
 ├── 1-SDK软件源码
-│   ├── Android14
-│   │   ├── rk3576-android14.0-20250217.md5sum
-│   │   └── rk3576-android14.0-20250217.tar.gz
-│   └── Linux
-│       ├── rootfs
-│       │   ├── linaro-rootfs-20250210.img
-│       │   └── ubuntu-rootfs-20250217.img
-│       └── sdk
-│           ├── rk3576-linux-20250217.md5sum
-│           └── rk3576-linux-20250217.tar.gz
+│   └── readme.txt
 ├── 2-Image镜像
 │   ├── Android14
 │   │   └── update-rk3576-kickpi-k7-android-202502111421.img
