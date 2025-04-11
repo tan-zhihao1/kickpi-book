@@ -514,7 +514,7 @@ fiq-debugger {
 (ADB)$ adb shell wm size 4096x2560
 ```
 
-
+> 命令的格式：wm size <宽度>x<高度>
 
 ## rockchip 官方文档
 
