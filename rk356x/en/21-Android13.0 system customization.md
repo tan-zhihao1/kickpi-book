@@ -372,3 +372,17 @@ fiq-debugger {
 	};
 ```
 
+
+
+## 16.Modify UI resolution
+
+The default resolution of the Android system UI is 1080P, and you can also modify the resolution of the UI through commands.
+
+The following modification commands are available under different shells:
+
+```shell
+(console)$ wm size 4096x2560
+(ADB)$ adb shell wm size 4096x2560
+```
+
+> Command format: wm size < width > x < height >
