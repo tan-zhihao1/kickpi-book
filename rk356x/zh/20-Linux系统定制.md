@@ -4,7 +4,24 @@
 
 ## 开机自启动程序
 
-### 开机自启动脚本
+### Ubuntu开机自启动脚本
+
+```
+$ /etc/profile.d/kickpi.sh
+```
+
+示例：
+
+```
+if [ -z "$HAS_RUN" ]; then
+ your_command 
+ export HAS_RUN=1
+ fi
+```
+
+
+
+### Debian开机自启动脚本
 
 ```
 $ /etc/init.d/kickpi.sh
