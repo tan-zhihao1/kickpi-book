@@ -193,15 +193,16 @@ $ zip -0qry bootanimation.zip  *.txt part0/ part1/
 源码路径
 
 ```
-SDK$
+SDK$ ls android/packages/apps/Launcher3/
 ```
 
 单编APK
 
 ```
-$ cd android/
-$ source build/envsetup.sh
-$ lunch ceres_c3-userdebug
+SDK$ cd android/
+SDK$ . build/envsetup.sh
+SDK$ lunch ceres_c3-userdebug
+SDK$ BUILD_NUMBER=ido-a133 m Launcher3QuickStepGo -j32
 ```
 
 
