@@ -188,6 +188,12 @@ $ zip -0qry bootanimation.zip  *.txt part0/ part1/
 
 
 
+## 桌面定制
+
+
+
+
+
 ## 默认语言
 
 persist.sys.locale 属性
