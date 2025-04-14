@@ -206,7 +206,7 @@ export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH
 ```
 
 ```
-$ source /etc/profile/
+$ source /etc/profile
 ```
 
 最后执行`qmake -v`
