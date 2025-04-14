@@ -209,7 +209,7 @@ $ source /etc/profile
 
 安装qtcreator必须先安装Qt，用Qt编译qtcreator，如果编译Qt出错，这个位置编译也会出错。如果Qt编译时，有未编译的模块或者含有不依赖的模块，qt编译不受影响，但是qtcreator会有影响。我试过加-no-opengl \，编译qt没有错误，安装也可以，编译qtcreator出错。
 
-* 虚拟机可以选择安装包程序安装
+* 虚拟机可以选择安装包程序安装，同时可以安装其他的可能你会用上的东西
 
 ![image-20250219155414011](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155414011.png)
 
