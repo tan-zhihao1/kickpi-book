@@ -58,7 +58,7 @@ $ sudo ./mainwindow
 
 ​	下面介绍虚拟机下安装QT和板子下安装QT的过程
 
-qmake工具安装
+### qmake工具安装
 
 ​	qmake工具是用于Qt项目根据工程文件.pro生成MakeFile的工具。对于简单的工程，只需要在工程的顶层目录运行qmake。默认情况下，qmake会生成一个构建工程的MakeFile，此时可以运行平台相关的make工具构建工程。
 
@@ -81,14 +81,6 @@ $ uname -m
 访问官网选择下载需要的版本
 
 ![image-20241028093459681](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093459681.png)
-
-### 虚拟机X86_64架构选择：
-
-![image-20250219155414011](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155414011.png)
-
-​	下载后到虚拟机中运行安装程序
-
-### 板子ARM架构选择：
 
 选择single
 
@@ -215,9 +207,13 @@ $ source /etc/profile
 
 ### 编译安装qtcreator
 
-> 虚拟机安装程序一般会同步安装qtcreator 无需再安装 
-
 安装qtcreator必须先安装Qt，用Qt编译qtcreator，如果编译Qt出错，这个位置编译也会出错。如果Qt编译时，有未编译的模块或者含有不依赖的模块，qt编译不受影响，但是qtcreator会有影响。我试过加-no-opengl \，编译qt没有错误，安装也可以，编译qtcreator出错。
+
+* 虚拟机可以选择安装包程序安装
+
+![image-20250219155414011](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155414011.png)
+
+​	下载后到虚拟机中运行安装程序
 
 Qtcreator最好和Qt版本相对应
 [Qtcreator源码](https://download.qt.io/archive/qtcreator/)
