@@ -58,13 +58,11 @@ $ sudo ./mainwindow
 
 ​	下面介绍虚拟机下安装QT和板子下安装QT的过程
 
-### qmake工具安装
+qmake工具安装
 
 ​	qmake工具是用于Qt项目根据工程文件.pro生成MakeFile的工具。对于简单的工程，只需要在工程的顶层目录运行qmake。默认情况下，qmake会生成一个构建工程的MakeFile，此时可以运行平台相关的make工具构建工程。
 
-
-
-1.查看当前Linux系统架构 
+查看当前Linux系统架构 
 
 ```
 $ uname -m 
@@ -72,9 +70,35 @@ $ uname -m
 
 > 板子系统是ARM架构 虚拟机则是X86_64架构
 
+官网下载安装Qt
 
+官网链接：
 
-2.安装依赖
+​	[qt不在维护版本](https://download.qt.io/new_archive/qt/) 
+
+​	[qt在维护版本](https://download.qt.io/official_releases/qt/)
+
+访问官网选择下载需要的版本
+
+![image-20241028093459681](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093459681.png)
+
+### 虚拟机X86_64架构选择：
+
+![image-20250219155414011](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155414011.png)
+
+​	下载后到虚拟机中运行安装程序
+
+### 板子ARM架构选择：
+
+选择single
+
+![image-20241028093254591](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093254591.png)
+
+选择tar.xz
+
+![image-20241028093434074](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093434074.png)
+
+安装依赖
 
 ```
 $ sudo apt-get install build-essential perl python3 git
@@ -87,33 +111,7 @@ $ sudo apt install clang libclang-dev
 $ sudo apt-get install xz-utils
 ```
 
-3.官网下载安装Qt
 
-官网链接：
-
-​	[qt不在维护版本](https://download.qt.io/new_archive/qt/) 
-
-​	[qt在维护版本](https://download.qt.io/official_releases/qt/)
-
-访问官网选择下载需要的版本
-
-![image-20241028093459681](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093459681.png)
-
-* 虚拟机X86_64架构选择：
-
-![image-20250219155414011](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155414011.png)
-
-​	下载后到虚拟机中运行安装程序
-
-* 板子ARM架构选择：
-
-选择single
-
-![image-20241028093254591](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093254591.png)
-
-选择tar.xz
-
-![image-20241028093434074](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028093434074.png)
 
 下载后进行解压在opt文件夹中
 
