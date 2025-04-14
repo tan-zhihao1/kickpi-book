@@ -190,6 +190,20 @@ $ zip -0qry bootanimation.zip  *.txt part0/ part1/
 
 ## 桌面定制
 
+源码路径
+
+```
+SDK$
+```
+
+单编APK
+
+```
+$ cd android/
+$ source build/envsetup.sh
+$ lunch ceres_c3-userdebug
+```
+
 
 
 
