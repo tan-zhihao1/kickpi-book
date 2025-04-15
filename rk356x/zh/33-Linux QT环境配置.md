@@ -124,6 +124,7 @@ $ sudo vim auto.sh
 -nomake examples \
 -nomake tests \
 -release \
+-xplatform linux-aarch64-gnu-g++ \
 -skip qt3d \
 -skip qtcharts \
 -skip qtandroidextras \
