@@ -249,7 +249,7 @@ $ sudo make install
 最后配置qtcreator即可。
 工具—>选项—>Kits
 
-Kits选择gcc为板子对应的编译工具链，qmake 使用编译出的qmake
+Kits选择gcc g++ gdb为板子对应的编译工具链，qmake 使用编译出的qmake
 
 ### gcc交叉编译工具
 
