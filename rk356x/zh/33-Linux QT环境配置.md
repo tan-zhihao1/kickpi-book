@@ -149,6 +149,8 @@ $ sudo ./auto.sh
 > -nomake examples \ 不编译安装例子
 > -nomake tests \ 不编译安装测试
 > -release \ release编译
+>
+> -xplatform \指定目标平台
 > -skip qt3d \ 跳过编译模块
 > -skip qtcharts \ 跳过编译模块
 > -skip qtandroidextras \ 跳过编译模块
