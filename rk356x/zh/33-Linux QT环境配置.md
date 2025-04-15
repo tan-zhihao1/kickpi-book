@@ -171,7 +171,7 @@ $ sudo make -j4
 
 > 时间较长，基于性能4-12小时
 
-##### FAQ ：如果已经安装python3，但是构建过程中提示缺少了 Python 解释器。可以创建一个符号链接：
+**FAQ** ：如果已经安装python3，但是构建过程中提示缺少了 Python 解释器。可以创建一个符号链接：
 
 ```
 $ sudo ln -s /usr/bin/python3 /usr/bin/python
@@ -205,7 +205,7 @@ $ source /etc/profile
 
 ![image-20241028094050024](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028094050024.png)
 
-### 编译安装qtcreator
+### 安装qtcreator
 
 安装qtcreator必须先安装Qt，用Qt编译qtcreator，如果编译Qt出错，这个位置编译也会出错。如果Qt编译时，有未编译的模块或者含有不依赖的模块，qt编译不受影响，但是qtcreator会有影响。我试过加-no-opengl \，编译qt没有错误，安装也可以，编译qtcreator出错。
 
