@@ -531,31 +531,14 @@ systemctl restart networking
 ``` shell
 vim /etc/hostapd/hostapd.conf
 
-interface=wlan0
-driver=nl80211
-ssid=MyHotspot            //热点名
-wpa_passphrase=88888888   //密码
-hw_mode=g
-channel=6
-wpa=2
-wpa_key_mgmt=WPA-PSK
-wpa_pairwise=CCMP
-beacon_int=100
-ieee80211n=1
-wme_enabled=1
-ht_capab=[SHORT-GI-20][SHORT-GI-40][HT40+]
-max_num_sta=8
-wpa_group_rekey=86400
-
-或者
 ##### hostapd configuration file ##############################################
 
 interface=wlan0
 ctrl_interface=/var/run/hostapd
 ssid=MyHotspot
+wpa_passphrase=88888888
 channel=6
 wpa=2
-wpa_passphrase=88888888
 #bridge=br0
 
 ##### default configuration #######################################
