@@ -118,23 +118,32 @@ $ sudo vim auto.sh
 ```
 
 ```
-#! /bin/bash
-./configure -prefix /opt/Qt/ \
--opensource -confirm-license \
--nomake examples \
--nomake tests \
--release \
--xplatform linux-aarch64-gnu-g++ \
--skip qt3d \
--skip qtcharts \
--skip qtandroidextras \
--skip qtlocation \
--skip qtmultimedia \
--skip qtsensors \
--skip qtserialbus \
--skip qtserialport \
--skip qtwayland \
--skip qtwebengine \
+#!/bin/bash
+
+./configure \
+    -prefix /opt/Qt/ \
+    -opensource -confirm-license \
+    -nomake examples \
+    -nomake tests \
+    -release \
+    -xplatform linux-aarch64-gnu-g++ \
+    -device-option CROSS_COMPILE=/opt/gcc-arm/bin/aarch64-none-linux-gnu- \
+    -no-eglfs \
+    -no-xcb \
+    -no-opengl \
+    -skip qt3d \
+    -skip qtcharts \
+    -skip qtandroidextras \
+    -skip qtlocation \
+    -skip qtmultimedia \
+    -skip qtsensors \
+    -skip qtserialbus \
+    -skip qtserialport \
+    -skip qtwayland \
+    -skip qtdeclarative \
+    -skip qtxmlpatterns \
+    -skip qtwebchannel \
+    -skip qtwebengine \
 
 ```
 
