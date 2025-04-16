@@ -166,8 +166,6 @@ $ sudo apt install clang libclang-dev
 $ sudo apt-get install xz-utils
 ```
 
-
-
 下载后进行解压在opt文件夹中
 
 ```
@@ -216,23 +214,14 @@ $ sudo ./auto.sh
 ```
 
 > 脚本是为了执行./configure
-> -prefix /opt/Qt/ \ Qt安装路径
+> -prefix /opt/Qt/  \ Qt安装路径
 > -opensource -confirm-license \ 安装版本，社区版还是商业版
 > -nomake examples \ 不编译安装例子
 > -nomake tests \ 不编译安装测试
 > -release \ release编译
 > -xplatform \指定目标平台
-> -skip qt3d \ 跳过编译模块
-> -skip qtcharts \ 跳过编译模块
-> -skip qtandroidextras \ 跳过编译模块
-> -skip qtlocation \ 跳过编译模块，此模块容易出错
-> -skip qtmultimedia \ 跳过编译模块
-> -skip qtsensors \ 跳过编译模块
-> -skip qtserialbus \ 跳过编译模块
-> -skip qtserialport \ 跳过编译模块
-> -skip qtwayland \ 跳过编译模块
-> -skip qtwebengine \ 跳过编译模块，此模块容易出错
->
+> -skip  \跳过编译模块
+> 
 > qtlocation qtwebengine ，如果不是特别需要这两个模块，建议放弃编译
 > 这些命令在解压后的README中有说明
 > 执行后根据提示进行改进，大部分提示错误是依赖安装不全
