@@ -108,7 +108,7 @@ $ sudo apt-get install xz-utils
 下载后进行解压在opt文件夹中
 
 ```
-$ sudo tar -xvf qt-everywhere-src-5.12.8.tar.xz -C /opt/
+$ sudo tar -xvf qt-everywhere-src-5.12.2.tar.xz -C /opt/
 ```
 
 解压完成后进入文件夹，并建立auto.sh脚本文件。
