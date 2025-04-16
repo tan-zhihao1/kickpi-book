@@ -60,7 +60,7 @@ $ sudo ./mainwindow
 
 ### gcc交叉编译工具
 
-虚拟机：
+**虚拟机：**
 
 可以在网盘中获取，网盘路径：
 
@@ -74,23 +74,66 @@ SDK自带交叉编译工具链：（不推荐，会出现版本不兼容）
 (SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
 ```
 
-开发板主板：无需交叉编译
+* gcc 交叉编译链安装
 
+将获取的压缩包放到虚拟机目录下进行解压
 
+```shell
+$ sudo tar -xvf gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar.xz -C /opt/gcc-arm
+```
+
+> -C /opt/gcc-arm 指定解压出的路径
+
+* 配置环境变量
+
+为了让系统能够识别交叉编译工具链，需要将其路径添加到环境变量中。
+
+**临时生效（仅当前终端会话有效）**
+运行以下命令：
+
+```shell
+$ export PATH=/opt/gcc-arm/bin:$PATH
+```
+
+**永久生效**
+编辑用户或系统的环境变量配置文件。
+
+```shell
+$ sudo vim /etc/profile
+export PATH=/opt/gcc-arm/bin:$PATH
+```
+
+```shell
+source /etc/profile
+```
+
+验证安装
+运行以下命令验证是否成功安装并配置了工具链：
+
+```shell
+aarch64-none-linux-gnu-gcc --version
+```
+
+如果输出类似以下内容，则说明安装成功：
+
+```
+aarch64-none-linux-gnu-gcc (GNU Toolchain for the A-profile Architecture) 9.2.1 20191203
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
 
 ### qmake工具安装
 
 ​	qmake工具是用于Qt项目根据工程文件.pro生成MakeFile的工具。对于简单的工程，只需要在工程的顶层目录运行qmake。默认情况下，qmake会生成一个构建工程的MakeFile，此时可以运行平台相关的make工具构建工程。
 
-查看当前Linux系统架构 
+* 网盘只提供一个版本的QT
 
 ```
-$ uname -m 
+rk356x_data\5-DevelopmentTools开发工具\QT
 ```
 
-> 板子系统是ARM架构 虚拟机则是X86_64架构
-
-官网下载安装Qt源码
+* 官网下载Qt
 
 官网链接：
 
