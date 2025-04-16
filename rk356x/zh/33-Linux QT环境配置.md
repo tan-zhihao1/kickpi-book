@@ -155,7 +155,7 @@ rk356x_data\5-DevelopmentTools开发工具\QT
 
 安装依赖
 
-```
+```shell
 $ sudo apt-get install build-essential perl python3 git
 $ sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev
 $ sudo apt-get install flex bison gperf libicu-dev libxslt-dev ruby
@@ -164,21 +164,22 @@ $ sudo apt-get install libasound2-dev libgstreamer1.0-dev libgstreamer-plugins-b
 $ sudo apt-get install libgstreamer-plugins-bad1.0-dev
 $ sudo apt install clang libclang-dev
 $ sudo apt-get install xz-utils
+$ sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
 
 下载后进行解压在opt文件夹中
 
-```
+```shell
 $ sudo tar -xvf qt-everywhere-src-5.12.2.tar.xz -C /opt/
 ```
 
 解压完成后进入文件夹，并建立auto.sh脚本文件。
 
-```
+```shell
 $ sudo vim auto.sh
 ```
 
-```
+```bash
 #!/bin/bash
 
 ./configure \
@@ -208,7 +209,7 @@ $ sudo vim auto.sh
 
 ```
 
-```
+```shell
 $ sudo chmod 755 auto.sh
 $ sudo ./auto.sh
 ```
@@ -228,43 +229,41 @@ $ sudo ./auto.sh
 
 执行编译
 
-```
+```shell
 $ sudo make -j4
 ```
 
 > 时间较长，基于性能4-12小时
 
-**FAQ** ：如果已经安装python3，但是构建过程中提示缺少了 Python 解释器。可以创建一个符号链接：
-
-```
-$ sudo ln -s /usr/bin/python3 /usr/bin/python
-```
-
 完成后执行
 
-```
+```shell
 $ sudo make install
 ```
 
 此命令会将程序安装在上面-prefix指定的/opt/Qt/ 中。
 安装成功后修改环境变量：
 
-```
+```shell
 $ sudo vim /etc/profile
 ```
 
-```
+```shell
 export QTDIR=/opt/Qt
 export PATH=$QTDIR/bin:$PATH
 export MANPATH=$QTDIR/man:$MANPATH
 export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH
 ```
 
-```
+```shell
 $ source /etc/profile
 ```
 
-最后执行`qmake -v`
+最后执行
+
+```shell
+$ qmake -v
+```
 
 ![image-20241028094050024](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241028094050024.png)
 
@@ -287,32 +286,40 @@ Qtcreator最好和Qt版本相对应
 这里默认上面教程以完成好以后：
 进入解压路径，执行
 
-```
+```shell
 $ qmaek -r
 ```
 
 等待完成后生成MakeFile文件。
 然后执行
 
-```
+```shell
 $ sudo make -j4
 ```
 
 等待编译完成后，执行
 
-```
+```shell
 $ sudo make install
 ```
 
 执行完
 
 打开bin文件夹就会有qtcreator和qtcreator.sh
-执行`./qtcreator.sh &`
+执行
+
+```shell
+$ ./qtcreator.sh &
+```
+
 这样qtcreator会在后台运行。
 最后配置qtcreator即可。
-工具—>选项—>Kits
 
-Kits选择gcc g++ gdb为板子对应的编译工具链，qmake 使用编译出的qmake
+* QT交叉编译的Kit配置
+
+​	Kits主要是选择gcc、g++为交叉编译工具链中的，qmake使用编译出的qmake
+
+
 
 
 
