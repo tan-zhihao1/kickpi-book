@@ -315,17 +315,23 @@ $ ./qtcreator.sh &
 这样qtcreator会在后台运行。
 最后配置qtcreator即可。
 
-* QT交叉编译的Kit配置
+### QT交叉编译的Kit配置
+
+​	下面介绍QT创建QT项目时的使用交叉编译工具的配置
 
 ​	Kits主要是选择gcc、g++为交叉编译工具链中的，qmake使用编译出的qmake
 
+添加GCC中**C、C++** 
 
+![image-20250416112806987](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250416112806987.png)
 
+添加qmake
 
+![image-20250416112845224](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250416112845224.png)
 
+最终配置
 
-
-
+![image-20250416112945015](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250416112945015.png)
 
 
 
