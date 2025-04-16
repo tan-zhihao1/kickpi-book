@@ -246,7 +246,7 @@ $ sudo ln -s /usr/bin/python3 /usr/bin/python
 $ sudo make install
 ```
 
-此命令会将程序安装在/opt/Qt/ 中。
+此命令会将程序安装在上面-prefix指定的/opt/Qt/ 中。
 安装成功后修改环境变量：
 
 ```
