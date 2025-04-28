@@ -6,6 +6,8 @@
 
 此编译环境配置 适用 Android/Linux SDK
 
+
+
 ### 硬件要求
 
 | 系统环境  | 要求              |
@@ -14,6 +16,8 @@
 | CPU核心数 | 4核以上           |
 | 内存容量  | 32GB以上          |
 | 硬盘容量  | 500GB以上         |
+
+
 
 ### 安装依赖软件包
 
@@ -38,6 +42,23 @@ sudo pip install pyelftools
 > 软件包名称 会根据UBUNTU版本更新而变化
 >
 > 不同UBUNTU版本安装失败，可网络搜索对应的解决方法
+
+
+
+## LINUX SDK 特殊环境搭建
+
+**编译 Debian rootfs 配置环境**
+
+```
+$ sudo dpkg -i debian/ubuntu-build-service/packages/*
+$ sudo apt-get install -f
+```
+
+**编译 Ubuntu rootfs 配置环境**
+
+```
+$ sudo apt-get install binfmt-support qemu-user-static --reinstall
+```
 
 
 
@@ -422,13 +443,13 @@ sudo dpkg -i debian/ubuntu-build-service/packages/*
 sudo apt-get install -f
 ```
 
-编译
+编译 linaro-rootfs.img
 
 ```
 ./build.sh debian
-或
-参考 debian/readme.md
 ```
+
+> 此命令若 debian/linaro-rootfs.img 不存在，则 debian/linaro-rootfs.img 会通过编译生成
 
 
 
@@ -440,13 +461,13 @@ sudo apt-get install -f
 sudo apt-get install binfmt-support qemu-user-static --reinstall
 ```
 
-编译
+编译 ubuntu-rootfs.img
 
 ```
 ./build.sh ubuntu
-或
-参考 ubuntu/readme.md
 ```
+
+> 此命令若 ubuntu/ubuntu-rootfs.img 不存在，则 ubuntu-rootfs.img 会通过编译生成
 
 
 

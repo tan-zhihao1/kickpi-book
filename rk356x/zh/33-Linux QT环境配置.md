@@ -11,7 +11,7 @@ Ubuntu20.04系统默认配置好QT5.12.8运行环境
 查看QT库：
 
 ```shell
-$ ls -l /usr/lib/aarch64-linux-gnu/libQt*
+$ ls -l /usr/lib/aarch64-none-linux-gnu/libQt*
 ```
 
 测试demo位于网盘目录：
@@ -36,7 +36,7 @@ Debian11系统默认配置好QT5.15.2运行环境
 查看QT库：
 
 ```shell
-$ ls -l /usr/lib/aarch64-linux-gnu/libQt*
+$ ls -l /usr/lib/aarch64-none-linux-gnu/libQt*
 ```
 
 测试demo位于网盘目录：
@@ -208,6 +208,26 @@ $ sudo vim auto.sh
     -skip qtwebengine \
 
 ```
+
+修改qmake.conf文件
+
+QT源码中的qtbase/mkspecs/目录下有各种不同的平台，我们示例中使用的是linux-aarch64-gun-g++目录下的qmake配置文件，但是交叉工具不一样，得修改qmake.conf文件以适配工具
+
+```c++
+# modifications to g++.conf
+QMAKE_CC                =/opt/gcc-arm/bin/aarch64-none-linux-gnu-gcc
+QMAKE_CXX               =/opt/gcc-arm/bin/aarch64-none-linux-gnu-g++
+QMAKE_LINK              =/opt/gcc-arm/bin/aarch64-none-linux-gnu-g++
+QMAKE_LINK_SHLIB        =/opt/gcc-arm/bin/aarch64-none-linux-gnu-g++
+ 
+# modifications to linux.conf
+QMAKE_AR                =/opt/gcc-arm/bin/aarch64-none-linux-gnu-ar cqs
+QMAKE_OBJCOPY           =/opt/gcc-arm/bin/aarch64-none-linux-gnu-objcopy
+QMAKE_NM                =/opt/gcc-arm/bin/aarch64-none-linux-gnu-nm -P
+QMAKE_STRIP             =/opt/gcc-arm/bin/aarch64-none-linux-gnu-strip
+```
+
+运行脚本交叉配置QT源码
 
 ```shell
 $ sudo chmod 755 auto.sh

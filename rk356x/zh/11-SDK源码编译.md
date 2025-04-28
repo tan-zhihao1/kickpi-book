@@ -502,3 +502,69 @@ $ ./build.sh -AUCKum
 
 > 出厂Android/Linux镜像默认为多屏自适应镜像，兼容官方7寸/10寸/15寸显示屏，连接任一显示屏可直接点亮
 
+
+
+## 常见问题
+
+下面列举SDK编译过程中遇到的各种常见问题和解决方法或解决思路
+
+### 路径出现特殊符合错误
+
+SDK的存放路径尽量纯英文路径，存在特殊符合会出现一些奇奇怪怪的路径报错
+
+### 配置不足
+
+因内存配置不足，常见日志报错
+
+* 出现**Killed** 
+
+```
+[hardware/rockchip/libgralloc/bifrost frameworks/native/include system/core/libs
+ync system/core/libsync/include external/libdrm/include/drm] 33
+Optee Version: v2
+librknnrt disabled on RK3562
+librknnrt disabled on RK3562
+librknnrt disabled on RK3562
+libeptz disabled on RK3562
+libeptz disabled on RK3562
+libeptz disabled on RK3562
+[] 33
+librockx disabled on RK3562
+librockx disabled on RK3562
+librockx disabled on RK3562
+rk3562 WILL COMPILE rkaiq_tool_server binary
+Killed
+13:30:35 soong bootstrap failed with: exit status 1
+ninja: build stopped: subcommand failed.
+
+#### failed to build some targets (01:00:21 (hh:mm:ss)) ####
+
+Build android failed!
+```
+
+* 解决方法：
+
+增加实际内存，Android一般内存推荐32G，如果增加不了可以尝试，增加swap分区大小并且使用单线程编译看看
+
+配置线程选项，指定单线程
+
+```
+$ ./build.sh -AUCKu -J1
+```
+
+### 缺失python
+
+很多版本安装依赖时没有python，只能安装python3，就会出现报错
+
+关键日志：
+
+```
+/usr/bin/env: "python": Not a directory
+```
+
+此时如果你已经安装了python3，用下面命名链接一个即可
+
+```shell
+$ sudo ln -s /usr/bin/python3 /usr/bin/python
+```
+

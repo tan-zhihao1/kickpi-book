@@ -96,9 +96,15 @@ longan/device/config/chips/h618/boot-resource/boot-resource/bootlogo.bmp
 
 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
 
+bootanimation.zip可直接通过adb替换原先动画
+
+``` shell
+adb root
+adb remount
+adb push .\bootanimation.zip /system/media
+```
+
 两种文件同时存在播放 mp4 优先级比 zip 高 ，具体优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
-
-
 
 修改路径
 

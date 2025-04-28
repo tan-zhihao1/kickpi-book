@@ -24,7 +24,7 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
 
 
 
-* 网盘目录说明
+**目录列表**
 
 ```
 ├── 0-Specifications规格书
@@ -62,35 +62,55 @@ KICKPI 开发资料通过网盘方式推送，同时支持 百度网盘、OneDri
     └── readme.txt
 ```
 
-0-Specifications规格书：
+
+
+**目录说明**
+
+0-Specifications
 
 通过规格书可以快速了解产品的特性和性能。
 
-1-SDK软件源码：
 
-readme.txt
 
-2-Image镜像：
+1-SDK
+
+RK3576 SDK暂不开放
+
+功能定制请联系技术支持
+
+
+
+2-Image
 
 支持 Android14 / Debian12 / Ubuntu2404 系统镜像
 
-通过烧录镜像更新主板的系统，说明见[系统镜像烧录](10-系统镜像烧录.md)
+通过烧录镜像更新主板的系统，说明见镜像烧录章节
 
-3-SoftwareData软件资料：
+
+
+3-SoftwareData
 
 软件相关的资料，如程序例子、软件补丁等。
 
-4-HardwareData硬件资料：
+
+
+4-HardwareData
 
 硬件相关的资料，如原理图等。
 
-5-DevelopmentTool开发工具：
+
+
+5-DevelopmentTool
 
 烧录调试相关工具，如烧录软件、ADB软件等。
 
-6-Docment文档：
+
+
+6-Docment
 
 用户指导、开发相关资料文档。
+
+
 
 
 

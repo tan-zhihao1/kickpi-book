@@ -38,24 +38,12 @@ android 为惰性编译，直接替换后编译，一些APP、文件不一定编
 
 
 
-## 开机LOGO
-
-logo 替换路径
-
-```
-longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
-```
-
-> 图片格式 - 32bit
->
-> 图片分辨率 - 小于实际屏幕分辨率
-
 ## 旋转功能
 
 支持使用adb命令进行旋转
 
 ```
-// 正常显示
+// 0
 adb shell settings put system user_rotation 0
 
 // 90°
@@ -69,9 +57,24 @@ adb shell settings put system user_rotation 3
 ```
 
 
+
+## 开机LOGO
+
+logo 替换路径
+
+```
+longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
+```
+
+> 图片格式 - 32bit
+>
+> 图片分辨率 - 小于实际屏幕分辨率
+
+
+
 ## 开机动画
 
-### 替换说明
+### 默认替换
 
 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
 
@@ -108,6 +111,17 @@ bootanimation.mp4 格式
 ```
 
 > mp4 方式烧录镜像后第一次启动的开机动画是原生Android，需要重启显示替换的开机动画
+
+
+
+### **在线替换**
+
+```
+$ adb root
+$ adb remount
+$ adb push $(bootanimation_path) /system/media/bootanimation.zip
+$ adb reboot
+```
 
 
 
@@ -170,13 +184,18 @@ p 0 0 part1
 
 
 
-**打包zip**
+**window 压缩打包zip**
 
-window 压缩，压缩标准需要选择 Store
+1. 左键选中 part0、part1、desc.txt等文件；（保证part0、part1等文件位于压缩包根目录级别）
+2. 右键选择压缩，选择其他；
+
+3. 进行ZIP压缩，压缩标准需要选择 Store；
 
 ![image-20250408175807082](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250408175807082.png)
 
 
+
+**Linux 压缩打包zip**
 
 linux 压缩，指定压缩等级为最低等级stored，只归档不压缩
 
@@ -185,6 +204,14 @@ $ zip -0qry bootanimation.zip  *.txt part0/ part1/
 ```
 
 > 注意压缩包下 part0 part1 txt 为同一级根目录
+
+
+
+## 开机音乐
+
+如需开机音乐，将开机音乐放入part0目录中，命名为Audio.wav。
+
+在根目录加入audio_conf.txt，复制原有动画配置即可
 
 
 

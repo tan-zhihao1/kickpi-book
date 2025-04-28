@@ -127,46 +127,6 @@ $ ./build.sh
 
 
 
-### 单独编译分区镜像
-
-**单独编译Uboot**
-
-```
-$ ./build.sh uboot
-```
-
-> 镜像生成目录：longan/out/kickpi-*_a133_android10_c3_uart0.img
-
-
-
-**单独编译Kernel**
-
-```
-$ ./build.sh kernel
-```
-
-> 镜像生成目录：longan/out/kickpi-*_a133_android10_c3_uart0.img
-
-
-
-**单独编译Android**
-
-```
-$ ./build.sh android
-```
-
-> 镜像生成目录：longan/out/kickpi-*_a133_android10_c3_uart0.img
-
-
-
-**内核路径**
-
-```
-longan/kernel/linux-4.9
-```
-
-
-
 ### **defconfig **
 
 路径

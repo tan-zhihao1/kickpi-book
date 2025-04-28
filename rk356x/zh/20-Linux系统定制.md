@@ -4,43 +4,31 @@
 
 ## 开机自启动程序
 
-### Ubuntu开机自启动脚本
+### Ubuntu
 
-```
-$ /etc/profile.d/kickpi.sh
-```
-
-示例：
-
-```
-if [ -z "$HAS_RUN" ]; then
- your_command 
- export HAS_RUN=1
- fi
+```shell
+$ /etc/init.d/rpdzkj-mobilenet.sh 
 ```
 
+文件末尾添加想要运行的命令/程序/脚本：
 
+```diff
+$ sudo vim /etc/init.d/rpdzkj-mobilenet.sh 
++ source /usr/bin/test_boot.sh
+```
 
-### Debian开机自启动脚本
+### Debian
 
 ```
 $ /etc/init.d/kickpi.sh
 ```
 
-示例：
+文件末尾添加想要运行的命令/程序/脚本：
 
 ```diff
-$ vim /etc/init.d/kickpi.sh
+$ sudo vim /etc/init.d/kickpi.sh
 + source /usr/bin/test_boot.sh
 ```
-
-给脚本赋予运行权限
-
-```
-$ chmod +x /etc/init.d/kickpi.sh
-```
-
-> 将开机启动程序命令添加到kickpi.sh脚本中，可实现开机自启动。
 
 
 
@@ -52,6 +40,50 @@ $ chmod +x /etc/init.d/kickpi.sh
 $ vim /lib/systemd/system/serial-getty@.service
 -ExecStart=-/sbin/agetty --autologin root --keep-baud 115200,38400,9600 %I $TERM
 +ExecStart=-/sbin/agetty --autologin kickpi --keep-baud 115200,38400,9600 %I $TERM
+```
+
+## 修改桌面登录为root
+
+图形化界面默认登录为kickpi，按照下面修改文件，重启后就可以修改登录用户会root
+
+### Ubuntu
+
+修改默认登录用户
+
+```diff
+$ sudo /etc/silm.conf
+--default_user        kickpi
+++default_user        root
+```
+
+重启
+
+```shell
+$ sudo reboot
+```
+
+### Debian
+
+修改默认登录用户
+
+```diff
+$ sudo vim /etc/lightdm/lightdm.conf 
+--autologin-user=linaro
+++autologin-user=root
+```
+
+添加root登录权限
+
+```diff
+$ sudo vim /etc/pam.d/lightdm-autologin
+--auth required pam_succeed_if.so user != root quiet_success
+++#auth required pam_succeed_if.so user != root quiet_success
+```
+
+重启
+
+```shell
+$ sudo reboot
 ```
 
 
@@ -546,11 +578,22 @@ PermitRootLogin yes
 
 安装gcc为例子
 
-`wget http://ports.ubuntu.com/pool/main/g/gcc-9/gcc-9_9.3.0-10ubuntu2_arm64.deb`
-`sudo dpkg -i *.deb`
-网站是https://ubuntu.pkgs.org/20.04/ubuntu-main-arm64/gcc-9_9.3.0-10ubuntu2_arm64.deb.html 可以直接搜索想要的依赖包名
+UBUNTU官网：https://ubuntu.pkgs.org/20.04/ubuntu-main-arm64 可以直接搜索想要的依赖包名
+
+搜索包名
+
+![image-20250421115625211](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421115625211.png)
+
+根据网址安装
 
 ![f78e90f7748d198d11dbbd163bb33a9](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/f78e90f7748d198d11dbbd163bb33a9.png)
+
+安装
+
+```shell
+$ wget http://ports.ubuntu.com/pool/main/g/gcc-9/gcc-9_9.3.0-10ubuntu2_arm64.deb
+$ sudo dpkg -i *.deb
+```
 
 
 
