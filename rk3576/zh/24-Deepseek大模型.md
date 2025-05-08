@@ -42,8 +42,6 @@ rkllm-toolkit
 
 
 
-
-
 ## 模型下载
 
 
@@ -84,6 +82,8 @@ rkllm-runtime
 
 ## 板端部署环境
 
+百度网盘目录：3-SoftwareData软件资料 / rk35xx-rkllm-deepseek.tar.gz
+
 ```
 $ ls /rkllm-DeepSeek/
 	DeepSeek-R1-Distill-Qwen-1.5B.rkllm
@@ -100,6 +100,8 @@ $ ls /rkllm-DeepSeek/
 
 
 * 拷贝测试包到RK3588
+
+
 
 
 
