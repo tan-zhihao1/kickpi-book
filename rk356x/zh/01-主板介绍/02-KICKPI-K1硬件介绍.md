@@ -18,7 +18,7 @@
 
 ## 配件列表
 
-### 显示屏
+### 显示屏<a id="display"> </a>
 
 K1主板可接的显示屏接口有：两路MIPI/LVDS接口（正面-翻盖式FPC接口 背面-抽拉式FPC接口）  一路eDP接口  （翻盖式FPC接口）HDMI OUT接口（HDMI-A）
 

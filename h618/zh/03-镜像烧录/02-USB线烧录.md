@@ -41,9 +41,9 @@ h618_data\2-Image镜像\
 > 镜像说明：
 >
 > 	开发板提供3个镜像，分别是Android12 TV 、Android12 Tablet、Ubuntu2004
-> 					
+> 							
 > 	TV 跟 Tablet 都是由Android12.0 SDK编译出来，只是桌面界面区别
-> 					
+> 							
 > 	TV是机顶盒界面，Tablet是平板界面，可按需下载
 
 
@@ -70,7 +70,7 @@ PhoenixSuit/Drivers/AW_Driver/
 
 **主板进入烧录模式**
 
-1. 按住RECOVERY烧录按键（或板子背面的maskrom按键进入强烧模式）
+1. 按住板子背面的maskrom按键
 
 2. 主板上电，如果已上电则需重新上电（按一下复位键）
 
@@ -78,7 +78,7 @@ PhoenixSuit/Drivers/AW_Driver/
 
    > 详细教程如下面
 
-![image-20240306170511855](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306170511855.png)
+![image-20250509191757297](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509191757297.png)
 
 
 

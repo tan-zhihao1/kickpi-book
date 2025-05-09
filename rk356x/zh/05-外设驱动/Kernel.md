@@ -1,4 +1,4 @@
-# 01-Kernel
+# Kernel
 
 ## 配置defconfig
 

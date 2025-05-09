@@ -1,4 +1,4 @@
-# 24-DeepSeek大模型
+# 04-DeepSeek大模型
 
 本文将讲解如何使用 RKLLM 将提炼后的模型DeepSeek-R1-Distill-Qwen-1.5B部署到Rockchip平台，利用 NPU 进行硬件加速推理。
 
