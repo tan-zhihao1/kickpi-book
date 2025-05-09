@@ -1,94 +1,6 @@
-# 10-系统镜像烧录
+# 02-USB线烧录
 
 此文档用于用户烧录或升级主板系统。
-
-
-
-## 获取镜像文件<a id="IMG-K7"></a>
-
-镜像文件可通过以下两种方式获取：网盘下载、SDK编译
-
-SDK编译详细步骤参考文档 SDK 源码编译。
-
-### 镜像网盘目录
-
-```
-2-Image/
-├── Android14
-│   ├── boot
-│   │   └── 20250414
-│   │       ├── boot-10.1-MX101BA1340.img
-│   │       ├── boot-5-F050008M01.img
-│   │       ├── boot-8-MX080B2140.img
-│   │       └── parameter.txt
-│   ├── update-rk3576-kickpi-k7-android-10.1-AT101DS40I-202504171511.img
-│   ├── update-rk3576-kickpi-k7-android-10.1-MX101BA1340-202504171555.img
-│   ├── update-rk3576-kickpi-k7-android-5-F050008M01-202504171536.img
-│   ├── update-rk3576-kickpi-k7-android-8-MX080B2140-202504171436.img
-│   └── update-rk3576-kickpi-k7-android-HDMI-202504171451.img
-├── Debian12
-│   ├── update-rk3576-kickpi-k7-linux-debian-10.1-AT101DS40I-20250417-110424.img
-│   ├── update-rk3576-kickpi-k7-linux-debian-10.1-MX101BA1340-20250417-114626.img
-│   ├── update-rk3576-kickpi-k7-linux-debian-5-F050008M01-20250417-111519.img
-│   ├── update-rk3576-kickpi-k7-linux-debian-8-MX080B2140-20250417-113537.img
-│   └── update-rk3576-kickpi-k7-linux-debian-HDMI-20250417-115658.img
-├── Ubuntu2404
-│   ├── update-rk3576-kickpi-k7-linux-ubuntu-10.1-AT101DS40I20250417-104317.img
-│   ├── update-rk3576-kickpi-k7-linux-ubuntu-10.1-MX101BA1340-20250417-093953.img
-│   ├── update-rk3576-kickpi-k7-linux-ubuntu-5-F050008M01-20250417-102300.img
-│   ├── update-rk3576-kickpi-k7-linux-ubuntu-8-MX080B2140-20250417-100614.img
-│   └── update-rk3576-kickpi-k7-linux-ubuntu-HDMI-20250417-092759.img
-└── UPDATE_LOG.txt
-```
-
-
-
-### 镜像名称解析
-
-```
-update-rk3576-kickpi-k7-android-HDMI-202504171451.img
-A(update)-B(rk3576-kickpi-k7)-C(android)-D(HDMI)-E(202504171451).img
-```
-
-**A部分**
-
-update - 指完整镜像包。
-
-
-
-**B部分**
-
-主控型号、硬件版型部分。
-
-rk3576-kickpi-k7 - 指代主控型号rk3576、硬件板型k7。
-
-
-
-**C部分**
-
-系统名称部分。
-
-android - Android系统镜像
-
-ubuntu - Ubuntu系统镜像
-
-debian - Debian系统镜像
-
-
-
-**D部分**
-
-镜像名称的其他标志，用于指示镜像一些特殊的区别。
-
-hdmi ，默认显示hdmi接口
-
-8-MX080B2140，默认显示型号 MX080B2140屏幕
-
-
-
-**E部分**
-
-202504171451 - 镜像更新日期。
 
 
 
@@ -157,7 +69,7 @@ hdmi ，默认显示hdmi接口
 
 3. 点击 **Upgrade Firmware**，跳转到升级固件界面；
 
-4. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](#IMG-K7)
+4. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
 
 ![image-20250422093506005](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093506005.png)
 
@@ -221,7 +133,7 @@ hdmi ，默认显示hdmi接口
 
 ## 常见问题
 
-### **Loader或Maskrom模式不识别问题**
+**Loader或Maskrom模式不识别问题**
 
 1. 进入**LOADER模式**需要按下RECOVERY按键，上电（主板已上电可按复位进行复位）；进入**MASKROM模式**需要按下板子背后的MASKROM按键，上电（主板已上电可按复位进行复位）。
 
@@ -241,7 +153,7 @@ hdmi ，默认显示hdmi接口
 
 
 
-### **RKDevTool其他功能**
+**烧录工具的其他功能使用**
 
 烧录工具更多说明见
 

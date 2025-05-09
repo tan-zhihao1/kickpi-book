@@ -23,7 +23,7 @@ console$ sudo apt install x11vnc
 
 
 
-**创建密码**
+**创建/修改密码**
 
 ```
 console$ x11vnc -storepasswd
@@ -39,7 +39,7 @@ Write password to /home/kickpi/.vnc/passwd?  [y]/n y
 Password written to: /home/kickpi/.vnc/passwd
 ```
 
-> 可知密码存放路径为 /home/kickpi/.vnc/passwd
+> 可知密码存放路径 $(passwd_path) 为 /home/kickpi/.vnc/passwd
 
 
 
@@ -47,8 +47,19 @@ Password written to: /home/kickpi/.vnc/passwd
 
 ```
 console$ export DISPLAY=:0
-console$ x11vnc -auth guess -once -loop -noxdamage -repeat -rfbauth /home/kickpi/.vnc/passwd -rfbport 5900 -shared
+console$ export VNC_PASSWD=$(passwd_path)
+console$ x11vnc -auth guess -once -loop -noxdamage -repeat -rfbauth $VNC_PASSWD -rfbport 5900 -shared
 ```
+
+示例：
+
+```
+kickpi@kickpi:~$ export DISPLAY=:0
+kickpi@kickpi:~$ export VNC_PASSWD=/home/kickpi/.vnc/passwd
+kickpi@kickpi:~$ x11vnc -auth guess -once -loop -noxdamage -repeat -rfbauth $VNC_PASSWD -rfbport 5900 -shared
+```
+
+
 
 
 

@@ -1,5 +1,15 @@
 # Buildroot系统定制
 
+
+
+## 开机LOGO
+
+挂载/dev/mmcblk0p1
+
+替换其中的bootlogo.bmp文件
+
+
+
 ## 开机自启动
 
 ### 关闭开机自启动QT程序

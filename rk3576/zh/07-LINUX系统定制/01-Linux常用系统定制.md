@@ -1,10 +1,12 @@
-# 21-Linux系统定制
+# 01-Linux常用系统定制
 
-SDK - 指代源码路径
 
-console - 指代调试控制台
 
-ADB - Android Debug Bridge命令行工具，下文指代可运行ADB的环境
+> SDK$ - 下文指代源码路径
+>
+> console$ - 下文泛指主板命令行控制台
+>
+> ADB$ - Android Debug Bridge命令行工具，下文泛指可运行ADB的环境
 
 
 
@@ -91,6 +93,30 @@ adb pull /data/2.txt .
 
 
 
+## SCP 文件传输
+
+```
+$ scp $local_path usrname@$ip:$target_path
+```
+
+$local_path - 本地文件路径
+
+$username - 用户名
+
+$ip - 主板ip
+
+$target_path - 目标路径
+
+示例：
+
+```
+$ scp .\1.wav linaro@192.168.77.165:/home/linaro/Desktop/
+```
+
+
+
+
+
 ## 屏幕显示方向配置
 
 Debian12
@@ -138,6 +164,7 @@ DP-1 disconnected (normal left inverted right x axis y axis)
 >根据xrandr，已知目前显示设备 HDMI-1
 
 对 HDMI-1 进行旋转设置
+
 ```
 (console)$ xrandr --output HDMI-1 --rotate normal			// 画面正常显示
 (console)$ xrandr --output HDMI-1 --rotate right				// 向右旋转，顺时针旋转90度
@@ -198,7 +225,7 @@ debian12
 
 * 设置英文语言
 
-```
+```bash
 $ locale-gen en_US.UTF-8
 $ sed -i 's/^# *\(en_US.UTF-8\)/\1/' /etc/locale.gen
 $ echo "LANG=en_US.UTF-8" > /etc/default/locale
@@ -210,7 +237,7 @@ $ reboot
 
 * 设置中文语言
 
-```
+```bash
 $ locale-gen zh_CN.UTF-8
 $ sed -i 's/^# *\(zh_CN.UTF-8\)/\1/' /etc/locale.gen
 $ echo "LANG=zh_CN.UTF-8" > /etc/default/locale
@@ -431,10 +458,6 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 
 
 
-
-
-
-
 ## 备份文件系统
 
 当修改文件系统后，需要将其拷贝到其他相同板卡需求。
@@ -588,6 +611,322 @@ PING www.wshifen.com (103.235.46.115) from 10.138.192.102 enxca7f24fb0e94: 56(84
 libmali isp等packages. 安装完后会重启显⽰服务. 如果是独⽴项⽬可以放到制作镜像的时候处理这部分差
 
 异即可。
+
+
+
+## GPU
+
+```
+ARM Mali G52 MC3
+OpenGL ES 1.1, 2.0 and 3.2, OpenCL 2.1, Vulkan 1.2
+```
+
+**查看GPU使⽤率**
+
+```
+cat /sys/devices/platform/*gpu/utilisation
+```
+
+> 示例：实时查看使用率
+>
+> $ watch -n 1 'cat /sys/devices/platform/*gpu/utilisation'
+>
+> 移动鼠标或窗口或进行GPU测试，可以查看GPU使⽤率来确定硬加速是否有⽤起来
+
+**GLmark2 性能测试**
+
+Rockchip 提供 npu 测试脚本
+
+```
+$ ls /rockchip-test/gpu
+gpu_test.sh  test_fullscreen_glmark2.sh  test_normal_glmark2.sh test_offscreen_glmark2.sh  test_stress_glmark2.sh
+```
+
+Debian / Ubuntu 文件系统已内置 glmark2-es 性能测试工具
+
+使用虚拟终端或调试串口终端，执行以下命令开始 GPU 性能测试
+
+```
+root@linaro-alip:/# source /rockchip-test/gpu/test_offscreen_glmark2.sh 
+run glmark2 x11 with offscreen......
+arm_release_ver: g13p0-01eac0, rk_so_ver: 10
+=======================================================
+    glmark2 2023.01
+=======================================================
+    OpenGL Information
+    GL_VENDOR:      ARM
+    GL_RENDERER:    Mali-G52
+    GL_VERSION:     OpenGL ES 3.2 v1.g13p0-01eac0.0fd2effaec483a5f4c440d2ffa25eb7a
+    Surface Config: buf=32 r=8 g=8 b=8 a=8 depth=24 stencil=0 samples=0
+    Surface Size:   800x600 windowed
+=======================================================
+=======================================================
+                                  glmark2 Score: 1405 
+=======================================================
+```
+
+> 800x600 glmark2测试分数为  1405
+>
+> 测试结果仅做参考，实际分数以实际测量为准
+
+
+
+## NPU
+
+```
+6 TOPS*@INT8
+Support int4/int8/int16/FP16/BF16/TF32
+Support deep learning frameworks: TensorFlow, Caffe, Tflite, Pytorch, Onnx NN, Android NN, etc
+```
+
+**Debian / Ubuntu**
+
+Rockchip 提供 npu 测试脚本
+
+```
+# ls /rockchip-test/npu2
+model  npu_freq_scaling.sh  npu_stress_test.sh  npu_test.sh
+```
+
+npu 频率测试脚本 `npu_freq_scaling.sh`
+
+```
+usage()
+{
+    echo "Usage: npu_freq_scaling.sh [test_second] [every_freq_stay_second]"
+    echo "example: ./npu_freq_scaling.sh 3600 30"
+    echo "means npu_freq_scaling.sh will run 1 hour and every cpu frequency stay 30s"
+}
+```
+
+示例：npu变频运行60秒，每10秒变频一次
+
+```
+# ./npu_freq_scaling.sh 60 10
+test will run 60 seconds
+every npu frqeucny will stay 10 seconds
+set ddr frequency to 700000000
+set ddr frequency to 300000000
+set ddr frequency to 700000000
+set ddr frequency to 950000000
+set ddr frequency to 500000000
+set ddr frequency to 700000000
+======TEST SUCCESSFUL, QUIT=====
+```
+
+npu 压力测试脚本 `npu_stress_test.sh`
+
+```
+# ./npu_stress_test.sh
+rknn_api/rknnrt version: 2.0.0b0 (35a6907d79@2024-03-24T10:31:14), driver version: 0.9.7
+model input num: 1, output num: 1
+input tensors:
+  index=0, name=input, n_dims=4, dims=[1, 224, 224, 3], n_elems=150528, size=150528, fmt=NHWC, type=INT8, qnt_type=AFFINE, zp=0, scale=0.007812
+output tensors:
+  index=0, name=MobilenetV1/Predictions/Reshape_1, n_dims=2, dims=[1, 1001, 0, 0], n_elems=1001, size=2002, fmt=UNDEFINED, type=FP16, qnt_type=AFFINE, zp=0, scale=1.000000
+custom string: 
+Begin perf ...
+   0: Elapse Time = 2.85ms, FPS = 351.12
+   1: Elapse Time = 2.70ms, FPS = 370.37
+   2: Elapse Time = 2.59ms, FPS = 386.85
+   3: Elapse Time = 2.69ms, FPS = 371.61
+   4: Elapse Time = 2.62ms, FPS = 381.97
+   5: Elapse Time = 2.61ms, FPS = 383.44
+   6: Elapse Time = 2.58ms, FPS = 387.75
+   7: Elapse Time = 2.70ms, FPS = 370.51
+   8: Elapse Time = 2.64ms, FPS = 378.36
+   9: Elapse Time = 2.68ms, FPS = 372.44
+---- Top5 ----
+0.935059 - 156
+0.057037 - 155
+0.003881 - 205
+0.003119 - 284
+0.000172 - 285
+```
+
+>在 `Begin perf...` 后的内容展示了模型多次运行的性能数据：
+>
+>- 每次记录了运行的序号以及对应的耗时（`Elapse Time`）和每秒处理帧数（`FPS`）。例如，`0: Elapse Time = 2.85ms, FPS = 351.12`表示第 1 次运行模型推理时，总共花费了 2.85 毫秒的时间，由此计算出每秒可以处理 351.12 帧的数据（FPS 的计算方式就是 1000 除以每次的耗时，单位换算后得到每秒的帧数）。
+>
+>`---- Top5 ----` 部分呈现了模型推理输出结果中概率排名前 5 的类别及其对应的概率值和类别编号：
+>
+>- `0.935059 - 156`表示模型认为输入的数据（比如可能是一张图像）最有可能属于编号为 156 的类别，其对应的概率高达 0.935059，这个概率值相对较高，说明模型对该判断有比较高的置信度。
+>- 后续的`0.057037 - 155`、`0.003881 - 205`、`0.003119 - 284`、`0.000172 - 285`分别列出了概率排名第 2 到第 5 的类别编号及其概率值，这些概率值依次递减，表明模型对它们属于相应类别判断的把握程度也逐渐降低。
+
+
+
+## MPP
+
+```
+H.265 HEVC Main10 L5.1 yuv444: 4K 120fps
+H.264 AVC High10 L5.1 yuv422: 4K 60fps
+H.264 MVC up to 1080P 60fps
+VP9 Profile0/2 L5.1: 4K 120fps
+AVS2 Profile0/2 L10.2.6: 4K 120fps
+AV1 Main10 L5.3: 4K 120fps
+4K@60fps video encoders for H.264/H.265
+```
+
+**调试信息**
+
+开启调试信息
+
+```
+$ export mpp_syslog_perror=1
+$ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
+```
+
+>开启调试信息后，在调用硬件编解码会有类似如下日志信息
+>[  893.134037] rk_vcodec: 27b00100.rkvdec:0 session 3705:19 time: 1333 us hw 1312 us
+>[  893.167444] rk_vcodec: 27b00100.rkvdec:0 session 3705:19 time: 1381 us hw 1313 us
+>[  893.200503] rk_vcodec: 27b00100.rkvdec:0 session 3705:19 time: 1420 us hw 1313 us
+
+关闭调试信息
+
+```
+$ export mpp_syslog_perror=0
+$ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
+```
+
+**Debian / Ubuntu**
+
+Rockchip 提供了 MPP 相关工具进行使用
+
+**硬编码测试**
+
+mpi_enc_test
+
+```
+usage: mpi_enc_test [options]
+ -i       input_file          input frame file                       
+ -o       output_file         output encoded bitstream file          
+ -w       width               the width of input picture             
+ -h       height              the height of input picture            
+ -hstride hor_stride          the horizontal stride of input picture 
+ -vstride ver_stride          the vertical stride of input picture   
+ -f       format              the format of input picture            
+ -t       type                output stream coding type              
+ -tsrc    source type         input file source coding type          
+ -n       max frame number    max encoding frame number              
+ -g       gop reference mode  gop_mode:gop_len:vi_len                
+ -rc      rate control mode   set rc_mode, 0:vbr 1:cbr 2:fixqp 3:avbr
+ -bps     bps target:min:max  set tareget:min:max bps                
+ -fps     in/output fps       set input and output frame rate        
+ -qc      quality control     set qp_init:min:max:min_i:max_i        
+ -fqc     frm quality control set fqp min_i:max_i:min_p:max_p        
+ -s       instance_nb         number of instances                    
+ -v       trace option        q - quiet f - show fps                 
+ -l       loop count          loop encoding times for each frame     
+ -ini     ini file            encoder extra ini config file          
+ -slt     slt file            slt verify data file                   
+ -sm      scene mode          scene_mode, 0:default 1:ipc 
+```
+
+* 编码H.264 4096x2160 100帧测试
+
+```
+$ mpi_enc_test -w 4096 -h 2160 -t 7 -o ./test.h264 -n 100
+```
+
+> 查看结果
+>
+> $ tail -f /var/log/syslog
+>
+> kickpi mpp[3557]: mpi_enc_test: chn 0 encode 100 frames time 3763 ms delay  27 ms fps 26.57 bps 10605252
+
+* 编码H.265 4096x2160 100帧测试
+
+```
+$ mpi_enc_test -w 4096 -h 2160 -t 16777220 -o ./test.h265 -n 100
+```
+
+> 查看结果
+>
+> $ tail -f /var/log/syslog
+>
+> kickpi mpp[3560]: mpi_enc_test: chn 0 encode 100 frames time 4086 ms delay  36 ms fps 24.47 bps 19594276
+
+**硬解码测试**
+
+mpi_dec_test
+
+```
+ usage: mpi_dec_test [options]
+ -i       input_file   input bitstream file                                 
+ -o       output_file  output decoded frame file                            
+ -w       width        the width of input bitstream                         
+ -h       height       the height of input bitstream                        
+ -t       type         input stream coding type                             
+ -f       format       output frame format type                             
+ -n       frame_number max output frame number                              
+ -s       instance_nb  number of instances                                  
+ -v       trace option q - quiet f - show fps                               
+ -slt     slt file     slt verify data file                                 
+ -help    help         show help                                            
+ -bufmode buffer mode  hi - half internal (default) i -internal e - external
+```
+
+* 解码H.264 4096x2160 100帧测试
+
+```
+$ mpi_dec_test -t 7 -i test.h264 -n 100
+```
+
+> 查看结果
+>
+> $ tail -f /var/log/syslog
+>
+> kickpi mpp[3564]: mpi_dec_test: decode 100 frames time 596 ms delay  25 ms fps 167.53
+
+* 解码H.265 4096x2160 100帧测试
+
+```
+$ mpi_dec_test -t 16777220 -i test.h265 -n 100
+```
+
+> 查看结果
+>
+> $ tail -f /var/log/syslog
+>
+> kickpi mpp[3569]: mpi_dec_test: decode 100 frames time 803 ms delay  49 ms fps 124.47
+
+**chromium视频测试**
+
+板卡连接显示设备，打开虚拟终端 或 调试串口终端，执行以下命令开始 chromium 视频测试
+
+```
+$ source /rockchip-test/chromium/test_chromium_with_video.sh
+```
+
+ubuntu 中 rockchip chromium 和 gstreamer 配置硬解码存在兼容性问题！
+
+默认配置 chromium 进行调用，若chromium未调用硬解码，需要以下命令进行修复
+
+```
+$ source /rockchip-test/chromium/chromium_mpp_fix.sh
+```
+
+> 配置后，默认 chromium 可调用硬解码
+
+**gstreamer视频测试**
+
+```
+sudo GST_DEBUG=2 gst-launch-1.0 playbin uri=file:///usr/local/test.mp4 video-sink="autovideosink" audio-sink=fakesink
+```
+
+> 如果有mpp调⽤的字样，说明硬件解码成功调用。
+
+ubuntu 中 rockchip chromium 和 gstreamer 配置硬解码存在兼容性问题！
+
+默认配置 chromium 进行调用，若需要 gstreamer 调用硬解码，需要以下命令进行修复
+
+```
+$ source /rockchip-test/gstreamer/gstreamer_mpp_fix.sh
+```
+
+> 此命令需要联网，保证'apt update'成功
+>
+> 配置后，默认 gstreamer 可调用硬解码
 
 
 

@@ -1,10 +1,12 @@
-# 20-Android系统定制
+# 01-Android常用系统定制
 
-SDK - 指代源码路径
 
-console - 指代调试控制台
 
-ADB - Android Debug Bridge命令行工具，下文指代可运行ADB的环境
+> SDK$ - 下文指代源码路径
+>
+> console$ - 下文泛指主板命令行控制台
+>
+> ADB$ - Android Debug Bridge命令行工具，下文泛指可运行ADB的环境
 
 
 

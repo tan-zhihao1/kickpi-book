@@ -1,8 +1,12 @@
 # 23-Linux NPU YOLOV5S 目标检测
 
-SDK - 指代源码路径
 
-console - 指代主板的调试控制台
+
+> SDK$ - 下文指代源码路径
+>
+> console$ - 下文泛指主板命令行控制台
+>
+> ADB$ - Android Debug Bridge命令行工具，下文泛指可运行ADB的环境
 
 
 

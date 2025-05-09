@@ -80,6 +80,16 @@ android 为惰性编译，直接替换后编译，一些APP、文件不一定编
 
 3. 编译的条件发生变化（比如文件名、APK名）
 
+## APP安装
+
+可通ADB命令安装apk
+
+``` shell
+adb root
+adb remount
+adb install app.apk
+```
+
 
 
 ## 开机LOGO
