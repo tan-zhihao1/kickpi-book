@@ -141,7 +141,7 @@ $ sudo systemctl enable kickpi.service
 
 ![image-20241025183117623](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025183117623.png)
 
-选择我们要**编译**内核的板卡，如 **lubancat-a1 Allwinner H618**
+选择我们要**编译**内核的板卡，如 **kickpi-k2b Allwinner H618**
 
 ![image-20250512093014049](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512093014049.png)
 
