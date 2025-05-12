@@ -5,7 +5,7 @@
 镜像可通过网盘这个路径下载
 
 ``` 
-h618_data\2-Image镜像\
+h618_data\2-Image\K2*\Android12.0_*
 ```
 
 开发板出厂默认烧录好镜像，若不需要更换系统的话，可直接跳过此步骤，启动系统
@@ -41,9 +41,9 @@ h618_data\2-Image镜像\
 > 镜像说明：
 >
 > 	开发板提供3个镜像，分别是Android12 TV 、Android12 Tablet、Ubuntu2004
-> 								
+> 									
 > 	TV 跟 Tablet 都是由Android12.0 SDK编译出来，只是桌面界面区别
-> 								
+> 									
 > 	TV是机顶盒界面，Tablet是平板界面，可按需下载
 
 
