@@ -20,7 +20,7 @@
 
 ## 配件列表
 
-### 显示屏
+### 显示屏<a id="display"> </a>
 
 K1B 主板可接的显示屏接口有：一路MIPI/LVDS接口（翻盖式FPC接口）  HDMI OUT接口（HDMI-A）
 
