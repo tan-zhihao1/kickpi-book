@@ -7,7 +7,7 @@
 * 网盘下载目录
 
 ```
-1-SDK软件源码\Linux\
+1-SDK\Linux\
 	h618-linux-xxxxxxx.tar.gz
 ```
 
