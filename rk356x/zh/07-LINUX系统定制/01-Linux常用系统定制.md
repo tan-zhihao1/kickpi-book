@@ -644,6 +644,13 @@ PermitRootLogin yes
 $ ls /dev/video*
 ```
 
+ffmpeg 打开摄像头
+
+```
+$ sudo apt install ffmpeg 
+$ ffplay -f v4l2 -i /dev/video0 
+```
+
 
 
 
