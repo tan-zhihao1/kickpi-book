@@ -638,20 +638,18 @@ PermitRootLogin yes
 
 ## USB 摄像头
 
-#### **检查摄像头设备节点**
+**检查摄像头设备节点**
 
 ```
 $ ls /dev/video*
 ```
 
-ffmpeg 打开摄像头
+**ffmpeg 打开摄像头**
 
 ```
 $ sudo apt install ffmpeg 
 $ ffplay -f v4l2 -i /dev/video0 
 ```
-
-
 
 
 
