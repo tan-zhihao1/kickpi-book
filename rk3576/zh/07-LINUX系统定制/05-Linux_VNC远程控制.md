@@ -49,14 +49,14 @@ Password written to: /home/kickpi/.vnc/passwd
 console$ export DISPLAY=:0
 console$ export VNC_PASSWD=$(passwd_path)
 console$ x11vnc -auth guess -once -loop -noxdamage -repeat -rfbauth $VNC_PASSWD -rfbport 5900 -shared
+x11vnc -display :0 -auth /home/kickpi/.Xauthority -rfbport 5900 -rfbauth /home/kickpi/.vnc/passwd
 ```
 
 示例：
 
 ```
 kickpi@kickpi:~$ export DISPLAY=:0
-kickpi@kickpi:~$ export VNC_PASSWD=/home/kickpi/.vnc/passwd
-kickpi@kickpi:~$ x11vnc -auth guess -once -loop -noxdamage -repeat -rfbauth $VNC_PASSWD -rfbport 5900 -shared
+kickpi@kickpi:~$ x11vnc -display :0 -auth /home/kickpi/.Xauthority -rfbport 5900 -rfbauth /home/kickpi/.vnc/passwd
 ```
 
 
