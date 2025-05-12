@@ -143,7 +143,7 @@ $ sudo systemctl enable kickpi.service
 
 选择我们要**编译**内核的板卡，如 **lubancat-a1 Allwinner H618**
 
-![image-20241025183126142](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025183126142.png)
+![image-20250512093014049](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512093014049.png)
 
 接下来就进入了内核的构建过程，在构建过程中，会有一些内核构建的提示信息
 
