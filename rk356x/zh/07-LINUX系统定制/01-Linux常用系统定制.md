@@ -320,6 +320,126 @@ $ ifconfig <dev> up
 
 
 
+### 命令行配置WIFI热点（AP）模式
+
+**查看是否支持AP模式**
+
+```shell
+$ iw list | grep AP
+Device supports AP-side u-APSD.
+		 * AP
+		 * AP/VLAN
+		HE Iftypes: AP
+		HE Iftypes: AP
+		 * wake up on EAP identity request
+		 * AP/VLAN
+		 * #{ managed } <= 1, #{ AP, P2P-client, P2P-GO } <= 1, #{ P2P-device } <= 1,
+	Driver supports full state transitions for AP/GO clients
+	Driver/device bandwidth changes during BSS lifetime (AP/GO mode)
+		 * AP: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+		 * AP/VLAN: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+		 * AP: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0
+		 * AP/VLAN: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0
+
+```
+
+> AP/VLAN则可以表示硬件支持
+
+创建依赖
+
+```shell
+$ sudo apt-get install util-linux hostapd dnsmasq iptables iproute2 haveged 
+```
+
+创建虚拟网卡
+
+```shell
+$ sudo iw dev <wirelessname> interface add <virtualwlanname> type __ap  
+```
+
+> <wirelessname> 是真实无线网卡名，可通过ifconfig查看，<virtualwlanname>是虚拟的无线网卡名
+
+例如命令 
+
+```shell
+$ sudo iw dev wlan0 interface add wlo2 type __ap
+```
+
+为虚拟网卡添加物理地址
+
+```shell
+$ sudo ip link set dev <virtualwlanname> address 22:33:44:55:66:00
+```
+
+> 随意填写，假如冲突则换一个，<virtualwlanname>是虚拟的无线网卡名
+
+例如命令：
+
+```shell
+$ sudo ip link set dev wlo2 address 22:33:44:55:66:00
+```
+
+查看创建情况
+
+```shell
+$ sudo iw dev wlo2 info
+   Interface wlo2
+	ifindex 5
+	wdev 0x5
+	addr 22:33:44:55:66:00
+	type managed
+	wiphy 0
+	txpower 0.00 dBm
+	multicast TXQ:
+		qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytestx-packets
+		0	0	0	0	0	0	0	0	0
+```
+
+> 注意：重启电脑后，这里创建的虚拟网卡就会失效
+
+
+
+下载安装工具 create_ap
+
+```shell
+$ git clone https://github.com/oblique/create_ap
+$ cd */create_ap
+$ sudo make install
+```
+
+使用create_ap创建热点
+
+```shell
+$ sudo create_ap -c 11 <virtualwlanname> <wirelessname> <SSID> <password> 
+```
+
+>  <wirelessname> 是你的无线网卡的姓名，<virtualwlanname> 虚拟网卡名，<SSID> <password>分别是创建的热点wifi名和密码
+
+例如 
+
+```shell
+$ sudo create_ap -c 11 wlo2 wlan0 m3 88888888
+```
+
+如果创建的热点卡住，开启热点时报如下错误:
+
+```
+#RTNETLINK answers: Device or resource busy
+
+#ERROR: Maybe your WiFi adapter does not fully support virtual interfaces.
+     #  Try again with --no-virt.
+```
+
+可以如下操作停止之前创建的热点，然后重启开启热点。
+
+```shell
+$ sudo create_ap --stop <virtualwlanname>  
+```
+
+> <virtualwlanname> 虚拟网卡名
+
+
+
 ## NFS配置
 
 环境配置
