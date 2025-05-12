@@ -18,6 +18,7 @@ VNC（Virtual Network Computing）是一种基于远程帧缓冲协议（RFB）�
 
 ```
 console$ sudo apt update
+console$ sudo apt install x11-utils
 console$ sudo apt install x11vnc
 ```
 
