@@ -191,23 +191,20 @@ git diff arch/arm64/configs/linux_h618_defconfig
 
 运行 **./build.sh** 进入交互式构建界面，选择 **step2.Build U-boot** 再按Enter键进入下一步
 
-选择我们要**编译**u-boot的板卡，如 **lubancat-a1 Allwinner H618**
+![image-20250512095441502](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512095441502.png)
 
-如果我们的板卡支持多种版本的内核，为了配合内核的启动，就会有不同版本的u-boot， 这一步还会有**编译**分支版本的选择，选择与内核分支一致的版本，如果仅支持一个版本的话，将会使用默认版本，不会弹出选择页面。
+选择我们要**编译**u-boot的板卡，如 **kickpi-k2b Allwinner H618**
 
-接下来就进入了u-boot的**编译**过程，在编译时会有一些构建的提示信息
-
-- Compiler uboot info：**编译**的u-boot版本
-- Compiler uboot path：**编译**的u-boot保存路径
-- Compiler uboot config：使用的u-boot配置文件
-- Compiler uboot command：u-boot构建命令
+![image-20250512093014049](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512093014049.png)
 
 结束后还会打印一些辅助信息
+
+![image-20250512095748694](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512095748694.png)
 
 - Target directory：构建生成的u-boot deb文件保存路径
 - File name：构建生成的u-boot deb包名称
 
-如果我们对u-boot内容做了修改，此时将生成的u-boot deb包传输到正在运行的板卡中， 使用dpkg -i lubancat-a1-uboot-xxx.deb将u-boot镜像解压到板卡根文件系统中， 最后还需要使用脚本将u-boot镜像写入进我们存储设备的指定位置覆盖原来的u-boot。
+将生成的u-boot deb包传输到正在运行的板卡中， 使用dpkg -i lubancat-a1-uboot-xxx.deb将u-boot镜像解压到板卡根文件系统中， 最后还需要使用脚本将u-boot镜像写入进我们存储设备的指定位置覆盖原来的u-boot。
 
 ```
 # 使用管理员权限运行脚本 
