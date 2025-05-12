@@ -322,8 +322,6 @@ $ ifconfig <dev> up
 
 ## 命令行配置WIFI热点（AP）模式
 
-
-
 **查看是否支持AP模式**
 
 ```shell
@@ -350,7 +348,7 @@ Device supports AP-side u-APSD.
 安装依赖包
 
 ```shell
-$ sudo apt-get install util-linux hostapd dnsmasq iptables iproute2 haveged 
+$ sudo apt-get install util-linux hostapd dnsmasq iptables iproute2 haveged make
 ```
 
 创建虚拟网卡
