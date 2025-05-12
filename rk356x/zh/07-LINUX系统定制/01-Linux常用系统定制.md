@@ -320,7 +320,7 @@ $ ifconfig <dev> up
 
 
 
-### 命令行配置WIFI热点（AP）模式
+## 命令行配置WIFI热点（AP）模式
 
 **查看是否支持AP模式**
 
