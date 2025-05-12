@@ -41,9 +41,9 @@ h618_data\2-Image镜像\
 > 镜像说明：
 >
 > 	开发板提供3个镜像，分别是Android12 TV 、Android12 Tablet、Ubuntu2004
-> 							
+> 								
 > 	TV 跟 Tablet 都是由Android12.0 SDK编译出来，只是桌面界面区别
-> 							
+> 								
 > 	TV是机顶盒界面，Tablet是平板界面，可按需下载
 
 
@@ -158,7 +158,7 @@ https://support.microsoft.com/zh-cn/windows/%E6%97%A0%E6%B3%95%E5%9C%A8%E6%AD%A4
 3. 按一下复位后，烧录键三秒左右松开
 4. 如果电脑有打开烧录软件，会有弹窗提示 (如果没有请多尝试几次上面步骤)
 
-![image-20240306170600024](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306170600024.png)
+![image-20250509191757297](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509191757297.png)
 
 
 
