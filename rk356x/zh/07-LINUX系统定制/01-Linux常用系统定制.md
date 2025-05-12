@@ -345,7 +345,7 @@ Device supports AP-side u-APSD.
 
 > AP/VLAN则可以表示硬件支持
 
-创建依赖
+安装依赖包
 
 ```shell
 $ sudo apt-get install util-linux hostapd dnsmasq iptables iproute2 haveged 
