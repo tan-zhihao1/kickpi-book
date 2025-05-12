@@ -25,7 +25,23 @@ GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树�
 
 ```
 
-测试方法参考:12-硬件功能测试 [LED](12-硬件功能测试.md#LED)
+**测试**
+
+* 查看GPIO注册列表
+
+```
+$ ls /sys/class/leds/
+
+gpio1b0/ gpio1b2/ gpio1d4/ gpio3b6/ 
+gpio1a4/ gpio1b1/ gpio1d0/ gpio3b5/ gpio4c4/
+```
+
+* 命令行控制GPIO
+
+```
+$ echo 1 > /sys/class/leds/gpio1d4/brightness
+$ echo 0 > /sys/class/leds/gpio1d4/brightness
+```
 
 
 
