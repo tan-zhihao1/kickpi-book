@@ -15,7 +15,7 @@ Android系统版本：12.0
 * 网盘下载目录
 
 ```shell
-1-SDK软件源码\Android12.0\
+1-SDK\Android12.0\
 	h618-android12.0-xxxxxxxxxx.tar.gz
 建议下载日期最新的版本
 ```
