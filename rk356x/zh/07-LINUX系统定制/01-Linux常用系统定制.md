@@ -322,6 +322,8 @@ $ ifconfig <dev> up
 
 ## 命令行配置WIFI热点（AP）模式
 
+
+
 **查看是否支持AP模式**
 
 ```shell
@@ -437,6 +439,19 @@ $ sudo create_ap --stop <virtualwlanname>
 ```
 
 > <virtualwlanname> 虚拟网卡名
+
+### 使用物理接口创建热点模式
+
+```
+$ sudo apt-get install util-linux hostapd dnsmasq iptables iproute2 haveged  make
+$ git clone https://github.com/oblique/create_ap
+$ cd */create_ap
+$ sudo make install
+$ sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
+$ sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
+$ iptables --version
+$ sudo create_ap --no-virt wlan0 eth0 MyAccessPoint 12345678 &
+```
 
 
 
