@@ -638,6 +638,12 @@ PermitRootLogin yes
 
 ## USB 摄像头
 
+#### **检查摄像头设备节点**
+
+```
+$ ls /dev/video*
+```
+
 
 
 
