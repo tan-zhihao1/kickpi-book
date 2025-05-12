@@ -145,24 +145,18 @@ $ sudo systemctl enable kickpi.service
 
 ![image-20250512093014049](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512093014049.png)
 
-接下来就进入了内核的构建过程，在构建过程中，会有一些内核构建的提示信息
 
-![image-20241025183152847](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025183152847.png)
-
-- Compiler kernel info：**编译**的内核版本
-- Compiler kernel path：**编译**的内核保存路径
-- Copy kernel config：使用的内核配置文件
-- Compiler kernel command：内核构建命令
-- Compiler kernel deb：内核deb包的构建命令
 
 在构建结束后还会打印一些辅助信息
 
-![image-20241025183417053](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025183417053.png)
+![image-20250512095408332](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512095408332.png)
 
 - Kernel deb path：构建生成的内核deb文件保存路径
 - Kernel deb name：构建生成的内核deb包名称
 
-如果我们对内核内容做了修改，此时将生成的内核deb包传输到正在运行的板卡中， 使用dpkg -i linux-***.deb，然后重启板卡，就可以更新升级内核了
+将生成的内核deb包传输到正在运行的板卡中， 使用dpkg -i linux-***.deb，然后重启板卡，就可以更新升级内核了
+
+**修改内核配置项**
 
 如果我们想要修改内核配置文件来开启或关闭内核的某项功能，应该如何操作（需先正常编译一次）:
 
@@ -188,6 +182,8 @@ git diff arch/arm64/configs/linux_h618_defconfig
 ```
 
 至此，板卡的内核配置文件的修改就完成了，我们可以通过构建工具来重新**编译**内核
+
+
 
 ####  step2.Build U-boot
 
