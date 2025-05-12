@@ -162,3 +162,63 @@ Event: time 1699275783.647094, type 1 (EV_KEY), code 2 (KEY_1), value 0
 Event: time 1699275783.647094, -------------- SYN_REPORT ------------
 ```
 
+
+
+## sys gpio控制
+
+当GPIO没有任何使用时，可以通过 /sys/class/gpio 进行控制
+
+**PIN 脚计算**
+
+GPIO1-D0 (gpio1-24)为例：
+
+```
+每组GPIO有32位：0-32
+A（0-7）B（8-15）C（16-23）D（24-31）
+GPIO1-D0  计算 Pin num = 32 * 1 + 24 = 56
+```
+
+**步骤一 确保GPIO没有任何使用**
+
+先将对应GPIO引脚注释，`/sys/class/gpio/export` 只能导入未注册的 gpio，将设备树对应IO取消使能
+
+**步骤二 编译镜像，重新烧录**
+
+**步骤三 确认gpio未被注册**
+
+```
+cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins
+```
+
+> 未注册如下：pin 56 (gpio1-24): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+**步骤四 对IO口进行控制**
+
+通过 /sys/class/gpio/export 注册 56并进行控制
+
+```
+// 注册
+root@kickpi:~# echo  56 > /sys/class/gpio/export
+// 查看是否生成
+root@kickpi:~# ls /sys/class/gpio/
+export  gpio56  gpiochip0  gpiochip352  unexport
+// 注册后的结点内容
+root@kickpi:~# ls /sys/class/gpio/gpio56
+active_low  device  direction  edge  power  subsystem  uevent  value
+root@kickpi:~#
+```
+
+通过结点下的内容控制 gpio , 常用如下
+
+```
+direction
+	in / out
+	echo in > /sys/class/gpio/gpio56/direction
+	echo out > /sys/class/gpio/gpio56/direction
+value
+	0 / 1
+	cat /sys/class/gpio/gpio56/value 		// 读取
+	echo 1 > /sys/class/gpio/gpio56/value	// 配置高电平
+	echo 0 > /sys/class/gpio/gpio56/value  // 配置低电平
+```
+
