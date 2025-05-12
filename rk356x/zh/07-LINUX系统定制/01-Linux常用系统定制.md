@@ -563,6 +563,8 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 对需要替换这个系统的板子单独烧录rootfs即可
 
+如果需要重新打包进完整镜像，参考
+
 
 
 ## Ubuntu桌面版进入root用户
