@@ -199,7 +199,7 @@ git diff arch/arm64/configs/linux_h618_defconfig
 
 结束后还会打印一些辅助信息
 
-![image-20250512095748694](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512095748694.png)
+![image-20250512095830562](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512095830562.png)
 
 - Target directory：构建生成的u-boot deb文件保存路径
 - File name：构建生成的u-boot deb包名称
