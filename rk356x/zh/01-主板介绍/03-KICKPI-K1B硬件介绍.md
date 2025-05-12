@@ -37,7 +37,7 @@ K1B 默认适配的MIPI屏
 
 * LVDS
 
-K1 默认适配的LVDS屏
+K1B 默认适配的LVDS屏
 
 | **LVDS Panel Model** | **Diagonal Size** | **Resolution** |
 | -------------------- | ----------------- | -------------- |
