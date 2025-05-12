@@ -440,7 +440,9 @@ $ sudo create_ap --stop <virtualwlanname>
 
 ### 使用物理接口创建热点模式
 
-```
+安装依赖和create_ap
+
+```shell
 $ sudo apt-get install util-linux hostapd dnsmasq iptables iproute2 haveged  make
 $ git clone https://github.com/oblique/create_ap
 $ cd */create_ap
@@ -448,6 +450,11 @@ $ sudo make install
 $ sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 $ sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 $ iptables --version
+```
+
+创建热点MyAccessPoint，密码：12345678，共享eth0网络
+
+```shell
 $ sudo create_ap --no-virt wlan0 eth0 MyAccessPoint 12345678 &
 ```
 
