@@ -649,7 +649,13 @@ $ ls /dev/video*
 
 ```
 $ sudo apt install ffmpeg 
-$ ffplay -f v4l2 -i /dev/video0 
+$ ffplay -f v4l2 -i /dev/video* 
+```
+
+示例：
+
+```
+$ ffplay -f v4l2 -i /dev/video1
 ```
 
 
