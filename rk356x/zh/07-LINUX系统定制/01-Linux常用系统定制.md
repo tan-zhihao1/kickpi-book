@@ -642,6 +642,7 @@ PermitRootLogin yes
 
 ```
 $ ls /dev/video*
+/dev/video-dec0  /dev/video-enc0  /dev/video0  /dev/video1  /dev/video2
 ```
 
 **ffmpeg 打开摄像头**
