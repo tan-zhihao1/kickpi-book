@@ -14,39 +14,11 @@ h618_data\2-Image\K2*\Android12.0_*
 
 ### 准备工具
 
-**下载软件工具**
-
-软件工具分为三部分，分别为 USB驱动、镜像烧录工具、系统镜像
-
-三部分都可通过网盘下载，网盘地址可联系客服获取
-
-以下为工具在网盘中所对应的目录结构
+**下载烧录工具**
 
 ```
-└── 2-System Image 系统镜像
-    └── K2B
-       	├── Android12 TV
-       	├── Android12 Tablet
-       	└── Ubuntu2204
-└── 5-DevelopmentTools开发工具
-    └── USB ImageBurnTool 镜像烧录工具
-    	└── PhoenixSuit.zip
+h618_data\5-DevelopmentTools\USB_ImageBurnTool\PhoenixSuit.zip
 ```
-
-> 系统镜像获取途径：
->
-> 1. 从网盘下载
-> 2. 通过SDK编译获取
-
-> 镜像说明：
->
-> 	开发板提供3个镜像，分别是Android12 TV 、Android12 Tablet、Ubuntu2004
-> 									
-> 	TV 跟 Tablet 都是由Android12.0 SDK编译出来，只是桌面界面区别
-> 									
-> 	TV是机顶盒界面，Tablet是平板界面，可按需下载
-
-
 
 **硬件准备工具**
 
