@@ -8,7 +8,7 @@ The following example shows how to connect an I2C-RTC module externally to a K1B
 
 ### IO ports used on the board:
 
-![image-20250308154448877](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250308154448877.png)
+![image-20250222170554561](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170554561.png)
 
 ## Physical wiring is as follows:
 
