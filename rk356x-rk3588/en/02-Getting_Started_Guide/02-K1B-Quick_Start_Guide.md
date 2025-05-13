@@ -57,7 +57,7 @@ The K1B motherboard has display interfaces. You can check the number of interfac
 
 The K1B is default compatible with LVDS 7-inch screens, MIPI 5-inch, 8-inch, and 10.1-inch screens sold by KICKPI.
 
-LVDS/MIPI 0 Interface: [Flip-down FPC Interface](../../../common/zh/display/FPC_Interface_Introduction#FPC-1)
+LVDS/MIPI 0 Interface: [Flip-down FPC Interface](../../../common/en/display/FPC_Interface_Introduction#FPC-1)
 
 ![image-20250512140834526](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512140834526.png)
 
