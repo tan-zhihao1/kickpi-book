@@ -1,20 +1,20 @@
-# 05-Linux NPU YOLOV5S 目标检测
+# 30- Linux NPU YOLOV5S object detection
 
 
 
-## 1. NPU YOLOV5S 是什么
+## 1.What is NPU YOLOV5S?
 
-YOLOV5S 是计算机视觉中的一个目标检测算法，它是YOLO（You Only Look Once）系列的一部分，由Joseph Redmon和Alexey Bochkovskiy等人开发。YOLO 算法系列以其快速的实时目标检测能力而闻名，能够在图像或视频中检测和定位多个对象，包括物体的类别和位置。
+YOLOV5S is an object detection algorithm in computer vision. It is part of the YOLO (You Only Look Once) series, developed by Joseph Redmon and Alexey Bochkovskiy, among others. The YOLO family of algorithms is known for its fast real-time object detection capabilities, capable of detecting and locating multiple objects in an image or video, including the object's category and location.
 
-YOLOv5S 是 YOLOv5 系列中的一个变种，不同版本的 YOLOv5 具有不同的性能和模型复杂度。通常，"S" 在 YOLOv5S 中可能代表 "Small"，这意味着它可能是一种轻量级的模型，适合在资源受限的环境下运行，如移动设备或嵌入式系统。 YOLOv5S 可能在速度和准确性之间进行权衡，以适应不同的应用场景。
+YOLOv5S is a variant in the YOLOv5 family. Different versions of YOLOv5 have different performance and model complexity. In general, "S" may stand for "Small" in YOLOv5S, which means it may be a lightweight model suitable for operating in resource-constrained environments, such as mobile devices or embedded systems. YOLOv5S may trade off between speed and accuracy to suit different application scenarios.
 
 
 
-## 2. 解析图片及视频
+## 2. Analyze images and videos
 
-RK Linux官方提供rknn_yolov5_demo，源码支持 `RK3562`、`RK3566`、`RK3568`、`RK3588`，编译出工具可进行图像解析和视频解析
+RK Linux official rknn_yolov5_demo, source code support'RK3562 ',' RK3566 ',' RK3568 ',' RK3588 ', compile tools for image analysis and video analysis
 
-### 源码路径
+### source code path
 
 ```
 (SDK)/external/rknpu2/examples/rknn_yolov5_demo
@@ -22,18 +22,18 @@ RK Linux官方提供rknn_yolov5_demo，源码支持 `RK3562`、`RK3566`、`RK356
 
 
 
-### 源码参考及编译
+### Source code reference and compilation
 
-配置环境
+configuration environment
 
 ```
-$ export TOOL_CHAIN=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
-$ export GCC_COMPILER=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu
+$ export TOOL_CHAIN=(SDK PATH)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
+$ export GCC_COMPILER=(SDK PATH)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu
 ```
 
-> SDK目录为指代 实际中要替换成自己的实际目录
+> SDK directory refers to, in fact, it should be replaced with its own actual directory
 
-编译对应的工具
+Compile the corresponding tool
 
 ```
 $ cd external/rknpu2/examples/rknn_yolov5_demo/
@@ -47,20 +47,20 @@ $ ./build-linux_RK3562.sh
 >build-linux_RK3566_RK3568.sh
 >build-linux_RK3588.sh
 >
->根据实际IC选择对应的脚本进行编译
+>Select the corresponding script according to the actual IC for compilation
 
-生成工具路径
+build tool path
 
 ```
 rknn_yolov5_demo$ ls install/rknn_yolov5_demo_Linux/
 lib  model  rknn_yolov5_demo  rknn_yolov5_video_demo
 ```
 
->拷贝到主板上运行使用
+> Copy to the main board to run
 
 
 
-### 工具使用
+### tool use
 
 #### rknn_yolov5_demo
 
@@ -68,7 +68,7 @@ lib  model  rknn_yolov5_demo  rknn_yolov5_video_demo
 Usage: ./rknn_yolov5_demo <rknn model> <jpg>
 ```
 
-rknn_yolov5_demo 使用示例
+Examples rknn_yolov5_demo use
 
 ```
 $ ./rknn_yolov5_demo model/RK3588/yolov5s-640-640.rknn model/bus.jpg
@@ -94,7 +94,7 @@ person @ (79 354 122 516) 0.339254
 loop count = 10 , average run  23.615900 ms
 ```
 
->person @ / bus @ 为对应识别信息
+> person @/bus @is the corresponding identification information
 
 
 
@@ -104,12 +104,12 @@ loop count = 10 , average run  23.615900 ms
 Usage: ./rknn_yolov5_video_demo <rknn_model> <video_path> <video_type 264/265>
 ```
 
-> 注意需要使用 h264/h265 码流视频
+> Note that h264/h265 code streaming video is required
 
-rknn_yolov5_video_demo 使用示例
+Examples rknn_yolov5_video_demo use
 
 ```
-$ ./rknn_yolov5_video_demo model/RK3588/yolov5s-640-640.rknn model/yolov5_test.h264 264
+$ ./rknn_yolov5_video_demo model/RK3588/yolov5s-640-640.rknn model/test.h264 264
 Loading mode...
 sdk version: 1.5.2 (c6b7b351a@2023-08-23T15:28:22) driver version: 0.9.2
 model input num: 1, output num: 3
@@ -146,31 +146,31 @@ car @ (494 297 516 312) 0.168131
 car @ (702 263 716 273) 0.163944
 ```
 
->car @ / bus @ 为对应视频识别信息
+> car @/bus @is the corresponding video identification information
 
 
 
-## 3. 解析本地视频流<a id="ParseLocalVideoStreams"> </a>
+## 3. Parse local video streams
 
-硬件环境
+### Hardware environment
 
-测试环境：RK3568 Debian11
+Testing environment: RK3568 Debian11
 
-> 目前 RK3568、RK3588 可使用此demo
+> Currently RK3568, RK3588 can use this demo
 
 
 
-### 示例程序测试
+### Sample program testing
 
-YOLOV5S目标检测 示例程序 已内置在Debian11文件系统
+YOLOV5S object detection sample program, built into the Debian11 file system
 
-进入示例程序目录
+Go to the sample program directory
 
 ```
 $ cd /rockchip-test/npu2/rknn_yolov5_demo_Linux/
 ```
 
-运行示例程序
+Run the sample program
 
 ```
 $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
@@ -178,9 +178,9 @@ $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 
 
 
-### 获取示例程序源码
+### Get the sample program source code
 
-* 程序源码内置SDK目录
+* Program source code built-in SDK directory
 
 ```
 $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
@@ -190,44 +190,44 @@ $ ls external/rknpu2/examples/rknn_yolov5_video_demo/
 
 
 
-### 编译源码
+### Compile the source code
 
-* 指定交叉编译工具链路径
+* Specify the cross-compilation toolchain path
 
 ```
-$ export TOOL_CHAIN=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
-$ export GCC_COMPILER=SDK目录/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu
+$ export TOOL_CHAIN=SDK_PATH/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
+$ export GCC_COMPILER=SDK_PATH/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu
 ```
 
-> 交叉编译工具链内置SDK目录，具体路径可参考以上命令修改
+> Cross-compilation toolchain built-in SDK directory, the specific path can be modified by referring to the above command
 
 
 
-* 编译源码
+* Compile source code
 
 ```
 $ cd external/rknpu2/examples/rknn_yolov5_video_demo/
 $ ./build-linux_RK356X.sh
 ```
 
-> 编译成功后，执行程序生成目录 install/rknn_yolov5_demo_Linux/
+> After the compilation is successful, execute the program to generate the directory install/rknn_yolov5_demo_Linux/
 
 
 
-* 拷贝程序到开发板
+* Copy the program to the development board
 
 ```
 $ ls install/rknn_yolov5_demo_Linux/
 	lib/              model/            rknn_yolov5_demo
 ```
 
-> 目前 rknn_yolov5_demo_Linux 的 /lib 需要使用主板上 /rockchip-test/npu2/rknn_yolov5_demo_Linux/lib
+> Currently rknn_yolov5_demo_Linux /lib need to use the main board /rockchip-test/npu2/rknn_yolov5_demo_Linux/lib
 >
-> 拷贝方式可用U盘、网络等
+> Copy method can be used with U disk, network, etc
 >
-> 若不想要编译，可从网盘目录获取可执行程序 1-SDK Source 软件源码/demo/rknn_yolov5_demo_Linux.tar.gz
+> If you don't want to compile, you can get the executable program from the network disk directory 1-SDK Source software source code/demo/rknn_yolov5_demo_Linux .tar.gz
 
-运行示例：
+Run example:
 
 ```
 $ cd rknn_yolov5_demo_Linux/
@@ -240,26 +240,28 @@ $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 
 
 
-### 程序运行
+### program running
 
-* 程序运行命令
+* Program run command
 
 ```
 $ cd rknn_yolov5_demo_Linux/
 $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 ```
 
-> RK356X只能运行到7帧/秒，可自行优化程序性能
+> RK356X can only run to 7 frames per second, and can optimize the program performance by itself
 
 
 
-* 程序运行界面
+* Program running interface
 
 ![f8944680e7bd81aeec4cbddf2eab4b0](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/f8944680e7bd81aeec4cbddf2eab4b0.jpg)
 
 
 
-## 4. 解析摄像头视频流
+## 4. Parse the camera video stream
+
+
 
 ### 硬件环境
 
