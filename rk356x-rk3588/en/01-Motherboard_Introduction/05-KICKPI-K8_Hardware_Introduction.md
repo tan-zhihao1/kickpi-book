@@ -1,4 +1,6 @@
-# 05-KICKPI-K8 Hardware Introduction
+# 05-KICKPI-K8_Hardware_Introduction
+
+
 
 ## Main Controller Information
 
@@ -6,7 +8,7 @@
 
 ## Development Board Information
 
-![image-20250222171232295](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222171232295.png)
+![image-20250222170435757](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170435757.png)
 
 ## Accessory List
 
