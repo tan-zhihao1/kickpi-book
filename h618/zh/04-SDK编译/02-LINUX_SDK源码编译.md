@@ -98,7 +98,7 @@ $ sudo systemctl enable kickpi.service
 
 ![image-20250324091854498](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250324091854498.png)
 
-选择我们要构建镜像的板卡，如kickpi-k2b Allwinner H618**
+选择我们要构建镜像的板卡，如kickpi-k2b Allwinner H618
 
 ![image-20241025181249872](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181249872.png)
 
