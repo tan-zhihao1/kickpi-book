@@ -1,73 +1,58 @@
-## 2. Android SDK编译
+# 03-ANDROID_SDK Source Code Compilation
 
-### SDK介绍
+### SDK Overview
 
-Android SDK版本信息
+**Version Information**  
+- Kernel version: 5.4  
+- Android OS version: 12.0  
 
-内核版本：5.4
+---
 
-Android系统版本：12.0
+### Obtaining the SDK Source Code
 
-
-
-### 获取SDK源码
-
-* 网盘下载目录
-
+* **Network Disk Download Directory**:  
 ```shell
 1-SDK\Android12.0\
 	h618-android12.0-xxxxxxxxxx.tar.gz
-建议下载日期最新的版本
+# Download the latest dated version.
 ```
 
+* **Copy the source code archive to the compilation host**:  
+  > Notes:  
+  > 1. Do not compile the source code in a shared directory.  
+  > 2. Do not use the ROOT account to log in to the compilation host.  
 
-
-* 拷贝源码压缩包到编译主机目录
-
-  > 注意事项：
-  >
-  > 1. 源码不可放在共享目录下编译
-  >
-  > 2. 编译主机不可用ROOT账号登陆
-
-
-
-* MD5校验文件完整性
-
+* **Verify file integrity with MD5**:  
 ```
 $ md5sum -c *.md5
 ```
 
-
-
-* 解压源码压缩包
-
+* **Extract the source code archive**:  
 ```
 $ tar -zxvf *.tar.gz
 ```
+> After extraction, only the `.git` folder will be visible. Proceed to the next step to fully restore the source code.  
 
-> 解压完成后，查看源码目录仅有.git文件夹，需要执行下一步才能完成恢复出源码
-
-
-
-* Git恢复源码目录
-
+* **Restore the source code using Git**:  
 ```
 $ git reset --hard
 ```
 
+---
 
+### Initial Compilation Environment Setup
 
-### 首次编译环境配置
-
-首次编译需要配置一下编译环境，后续不改变sdk位置，则无需重复配置
+First-time compilation requires environment configuration. Skip this step if the SDK location remains unchanged.  
 
 ```shell
-先进入longan目录
+# Navigate to the "longan" directory
 $ cd longan
-然后执行命令
+# Execute the configuration command
 $ ./build.sh config
-选择如下配置
+```
+
+Select the following configurations:  
+```
 Welcome to mkscript setup progress
 All available platform:
    0. android
@@ -98,13 +83,14 @@ All available arch:
    0. arm
    1. arm64
 Choice [arm64]: 1
+```
 
-然后再执行
+Return to the previous directory:  
+```
 $ cd -
 ```
 
-选择主板
-
+**Select the Target Board**:  
 ```
 $ ./build.sh lunch
 will lunch sdk
@@ -120,56 +106,57 @@ Lunch menu...pick a combo:
 Which would you like? [0]:
 ```
 
-> 说明
->
-> BoardConfig-kickpi-'boadr'-'desktop'
->
-> board：主板 k2b / k2c
->
-> desktop：桌面 tv / tablet
+> **Note**:  
+> `BoardConfig-kickpi-'board'-'desktop'`  
+> - `board`: Options include `k2b` / `k2c`  
+> - `desktop`: Options include `tv` / `tablet`  
 
+---
 
-
-### 编译完整镜像
+### Compile the Full Image
 
 ```
 $ ./build.sh
 ```
+> **Output directory**: `longan/out/h618_android12_p2_uart0.img`  
 
-> 镜像生成目录：longan/out/h618_android12_p2_uart0.img
+> **Troubleshooting**:  
+> If the Android compilation fails without clear errors, reduce the parallel build processes in `build.sh` (e.g., change `make -j32` to `make -j8` based on your hardware).  
 
-注意：如果编译Android的时候失败了，没有明显的报错，可以修改build.sh 里面Android编译的进程数，将make -j32减小至你设备的实际情况。
+---
 
-### 单独编译分区镜像
+### Compile Partition Images Separately
 
-**单独编译Uboot**
-
+**Compile U-Boot Only**:  
 ```
 $ ./build.sh uboot
 ```
+> **Output directory**: `longan/out/h618_android12_p2_uart0.img`  
 
-> 镜像生成目录：longan/out/h618_android12_p2_uart0.img
-
-**单独编译Kernel**
-
+**Compile Kernel Only**:  
 ```
 $ ./build.sh kernel
 ```
+> **Output directory**: `longan/out/h618_android12_p2_uart0.img`  
 
-> 镜像生成目录：longan/out/h618_android12_p2_uart0.img
-
-### 配置内核
-
-``` 
-cd longan
-
-./build.sh menuconfig
-```
-
-**单独编译Android**
-
+**Compile Android Only**:  
 ```
 $ ./build.sh android
 ```
+> **Output directory**: `longan/out/h618_android12_p2_uart0.img`  
 
-> 镜像生成目录：longan/out/h618_android12_p2_uart0.img
+---
+
+### Configure the Kernel
+
+```
+cd longan
+./build.sh menuconfig
+```
+
+---
+
+### Notes
+- Ensure the compilation environment has sufficient disk space and memory.  
+- Use `git pull` regularly to update the SDK source code.  
+- Generated images can be flashed to the target device using tools like `PhoenixSuit` or `Fastboot`.
