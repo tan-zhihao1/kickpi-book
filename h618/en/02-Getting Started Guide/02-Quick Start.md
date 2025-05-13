@@ -101,7 +101,7 @@ Software official website download:https://mobaxterm.mobatek.net/
 
 
 
-**Mobaxterm操作步骤**
+**Mobaxterm Operation steps**
 
 1. Create a new session window.
 2. Select the session window type as "serial".
