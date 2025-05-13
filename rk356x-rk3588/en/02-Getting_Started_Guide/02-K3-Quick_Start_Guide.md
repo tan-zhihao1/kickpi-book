@@ -136,7 +136,7 @@ Mobaxterm software download address: https://mobaxterm.mobatek.net/
 
 ## ADB
 
-The K3 Android/Debian system supports the use of the ADB function. For details, see the [ADB Tutorial](../../../common/zh/adb/ADB Tutorial.md).
+The K3 Android/Debian system supports the use of the ADB function. For details, see the  [ADB Tutorial](../../../common/zh/adb/ADB_Tutorial.md).
 
 ## SSH
 

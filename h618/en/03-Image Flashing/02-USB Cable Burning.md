@@ -73,7 +73,7 @@ https://support.microsoft.com/zh-cn/windows/%E6%97%A0%E6%B3%95%E5%9C%A8%E6%AD%A4
 ![image-20250513163349688](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250513163349688.png)  
 
 **Burning Tool Interface**  
-![image-20240306170835586](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306170835586.png)  
+![image-20250219160538270](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160538270.png)  
 
 ---
 
@@ -82,7 +82,7 @@ https://support.microsoft.com/zh-cn/windows/%E6%97%A0%E6%B3%95%E5%9C%A8%E6%AD%A4
 **Select Image**  
 1. Go to the **One-Click Flash** interface.  
 2. Click **Browse** to select the image.  
-![image-20240306171236404](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306171236404.png)  
+![image-20250219160640908](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160640908.png)  
 
 **Enter Burning Mode on the Board**  
 Steps:  
