@@ -82,7 +82,18 @@ android 为惰性编译，直接替换后编译，一些APP、文件不一定编
 
 
 
-默认修改显示方向
+## 默认屏幕方向
+
+### 默认修改显示方向
+
+```
+(SDK)$ android/device/softwinner/ceres-c3/ceres_c3.mk
+(SDK)$ 
+
+
+```
+
+
 
 
 
