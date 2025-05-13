@@ -47,11 +47,11 @@ The K8 is default compatible with the MIPI 5-inch, 8-inch, 10.1-inch, etc. displ
 
 * Wiring method:
 
-MIPI 0 interface: [Flip-down FPC interface](../../../common/zh/display/FPC_Interface_Introduction#FPC-1)
+MIPI 0 interface: [Flip-down FPC interface](../../../common/en/display/FPC_Interface_Introduction#FPC-1)
 
 ![image-20250513145744893](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250513145744893.png)
 
-MIPI 1 interface: [Pull-up FPC interface](../../../common/zh/display/FPC_Interface_Introduction#FPC-2)
+MIPI 1 interface: [Pull-up FPC interface](../../../common/en/display/FPC_Interface_Introduction#FPC-2)
 
 ![image-20250513145800459](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250513145800459.png)
 
