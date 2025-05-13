@@ -28,7 +28,7 @@ Extract `PhoenixCard.rar` and run the tool. The interface is shown below:
 - **Product**: Automatically burns the system image from the SD card into eMMC. It cannot boot directly.  
 - **Start up**: Boots the system directly from the SD card.  
 
-#### Boot Card Burning Steps  
+#### Start up Card Burning Steps  
 1. Insert the SD card into the computer.  
 2. Follow the steps below in the burning tool:  
 ![image-20250509190012699](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509190012699.png)  
