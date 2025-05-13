@@ -345,7 +345,7 @@ Device supports AP-side u-APSD.
 
 > AP/VLAN则可以表示硬件支持
 
-### 创建虚拟接口启动热点模式
+### 创建虚拟接口创建热点模式
 
 安装依赖包
 
