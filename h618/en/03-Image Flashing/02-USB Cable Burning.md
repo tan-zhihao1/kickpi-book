@@ -5,7 +5,7 @@
 The image can be downloaded from the network drive at:  
 ``` 
 h618_data\2-Image\K2*\Android12.0_* 
-```  
+```
 
 The development board comes pre-installed with the default image. Skip this step if no system replacement is needed.  
 
@@ -16,7 +16,7 @@ The development board comes pre-installed with the default image. Skip this step
 **Download Burning Tool**  
 ``` 
 h618_data\5-DevelopmentTools\USB_ImageBurnTool\PhoenixSuit.zip 
-```  
+```
 
 **Hardware Preparation**  
 Prepare a USB A-to-C cable for connecting the host PC to the development board.  
@@ -29,7 +29,7 @@ Prepare a USB A-to-C cable for connecting the host PC to the development board.
 The USB driver directory:  
 ``` 
 PhoenixSuit/Drivers/AW_Driver/ 
-```  
+```
 
 > The driver cannot be installed directly. It requires recognizing an "Unknown Device" in Device Manager first.  
 
