@@ -46,8 +46,8 @@ Detailed steps:
 **Open Device Manager on PC**  
 If the board enters burning mode successfully and the PC lacks the USB driver, an "Unknown Device" will appear. Follow the steps below to install the driver:  
 
-![image-20221129104615672](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20221129104615672.png)  
-![image-20221129104636689](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20221129104636689.png)  
+![image-20250219155858913](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155858913.png)  
+![image-20250219155942874](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155942874.png)  
 ![image-20221129104649695](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20221129104649695.png)  
 ![image-20221129104706378](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20221129104706378.png)  
 ![image-20241204152947830](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241204152947830.png)  
