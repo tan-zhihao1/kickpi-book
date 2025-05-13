@@ -1,4 +1,4 @@
-# 02-Quick_Start_Guide
+# 02-K1B-Quick_Start_Guide
 
 This guide aims to assist users in quickly getting started with the motherboard, covering topics such as powering on the board, connecting the display, using the debug serial port, ADB, and SSH connections.
 
