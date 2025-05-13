@@ -70,7 +70,7 @@ https://support.microsoft.com/zh-cn/windows/%E6%97%A0%E6%B3%95%E5%9C%A8%E6%AD%A4
 **Extract PhoenixSuit.zip**  
 
 **Open PhoenixSuit.exe**  
-![image-20240306170759670](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306170759670.png)  
+![image-20250513163349688](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250513163349688.png)  
 
 **Burning Tool Interface**  
 ![image-20240306170835586](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306170835586.png)  
