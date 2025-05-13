@@ -1,4 +1,4 @@
-# 02-K8 - Quick Start Guide
+# 02-K8-Quick_Start_Guide
 
 This guide aims to assist users in quickly getting started with the motherboard. It covers topics such as powering on the board, connecting the display, using the debug serial port, ADB, and SSH connections.
 
