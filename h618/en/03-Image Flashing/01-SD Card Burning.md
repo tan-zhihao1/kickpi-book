@@ -35,9 +35,9 @@ Extract `PhoenixCard.rar` and run the tool. The interface is shown below:
 
 Insert the burned SD card into the development board and power on to boot automatically.  
 
-#### Production Card Burning Steps  
+#### ProductCard Burning Steps  
 1. Select the image file.  
-2. Choose **Production Card**.  
+2. Choose **Product**.  
 3. Start burning.  
 ![image-20250509190047639](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509190047639.png)  
 
