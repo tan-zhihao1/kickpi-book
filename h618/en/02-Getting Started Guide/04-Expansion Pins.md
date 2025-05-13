@@ -105,6 +105,8 @@ vim longan/device/config/chips/h618/configs/p2/linux-5.4/board-*.dts  // Android
 vim source/kernel/linux-5.4-h618/arch/arm64/boot/dts/sunxi/sun50iw9-kickpi-k2b.dts // Linux
 ```
 
+![image-20250326133713399](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250326133713399.png)
+
 **Step 2: Rebuild and flash the firmware.**  
 **Step 3: Confirm GPIO is unclaimed:**
 
