@@ -449,6 +449,11 @@ $ sudo apt-get install util-linux hostapd dnsmasq iptables iproute2 haveged  mak
 $ git clone https://github.com/oblique/create_ap
 $ cd */create_ap
 $ sudo make install
+```
+
+修改防火墙
+
+```shell
 $ sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 $ sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 $ iptables --version
