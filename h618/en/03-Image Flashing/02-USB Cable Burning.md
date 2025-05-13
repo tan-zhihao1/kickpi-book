@@ -80,9 +80,8 @@ https://support.microsoft.com/zh-cn/windows/%E6%97%A0%E6%B3%95%E5%9C%A8%E6%AD%A4
 ### Burn the Image  
 
 **Select Image**  
-1. Go to the **One-Click Flash** interface.  
-2. Click **Browse** to select the image.  
-![image-20250219160640908](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160640908.png)  
+1. Enter the "Firmware" interface.
+2. Click on "Image" to select the image.![image-20250219160640908](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160640908.png)  
 
 **Enter Burning Mode on the Board**  
 Steps:  

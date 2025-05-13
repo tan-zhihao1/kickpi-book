@@ -147,7 +147,7 @@ Mobaxterm software download address: https://mobaxterm.mobatek.net/
 
 ## ADB
 
-The K1B Android/Debian system supports the use of ADB. For details, refer to the [ADB Tutorial](../../../common/zh/adb/ADB Tutorial.md).
+The K1B Android/Debian system supports the use of ADB. For details, refer to the  [ADB Tutorial](../../../common/zh/adb/ADB_Tutorial.md).
 
 ## SSH
 
