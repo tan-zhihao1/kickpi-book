@@ -81,7 +81,10 @@ Refer to Microsoft’s official solution:
 
 **Select Image**  
 1. Enter the "Firmware" interface.
-2. Click on "Image" to select the image.![image-20250219160640908](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160640908.png)  
+
+2. Click on "Image" to select the image.
+
+   ![image-20250219160640908](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160640908.png)  
 
 **Enter Burning Mode on the Board**  
 Steps:  
@@ -96,7 +99,7 @@ Steps:
 3. The board will reboot automatically after burning.  
 ![image-20250219160856586](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160856586.png)  
 
----
+
 
 ### Android Desktop Interface  
 
