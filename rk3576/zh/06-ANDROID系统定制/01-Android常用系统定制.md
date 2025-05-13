@@ -2,11 +2,13 @@
 
 
 
-> SDK$ - 下文指代源码路径
->
-> console$ - 下文泛指主板命令行控制台
->
-> ADB$ - Android Debug Bridge命令行工具，下文泛指可运行ADB的环境
+## 符号说明
+
+* `SDK$`：指代源码路径
+
+* `console$`：泛指主板的命令行控制台。[主板命令行控制台](#console_readme)
+
+* `ADB$`：Android Debug Bridge 命令行工具，泛指可运行 ADB 的环境
 
 
 
