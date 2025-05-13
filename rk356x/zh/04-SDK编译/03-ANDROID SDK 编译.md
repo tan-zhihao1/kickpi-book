@@ -154,6 +154,12 @@ $ lunch
 
 ![2a41026b5899c13dcc725f59858abd7](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/2a41026b5899c13dcc725f59858abd7.png)
 
+加载对应环境脚本
+
+```
+source device/rockchip/rk356x/BoardConfig-rk3568-kickpi-k1.mk 
+```
+
 环境配置成功，可以使用Android下相关命令，比如
 
 ```
