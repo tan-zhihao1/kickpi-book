@@ -1,4 +1,4 @@
-# 04-KICKPI-K3 Hardware Introduction
+# 04-KICKPI-K3_Hardware_Introduction
 
 ## Main Controller Information
 
@@ -6,7 +6,7 @@
 
 ## Development Board Information
 
-![image-20250222171213291](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222171213291.png)
+![image-20250222170410745](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170410745.png)
 
 ## Accessory List
 
