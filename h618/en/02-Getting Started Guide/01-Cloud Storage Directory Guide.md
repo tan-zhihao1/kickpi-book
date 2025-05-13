@@ -6,8 +6,6 @@ Cloud storage links can be obtained through the purchase platform or by contacti
 
 ## Directory Structure
 
-## 目录说明
-
 ```
 ├── 0-Specifications
 │   ├── K2B
