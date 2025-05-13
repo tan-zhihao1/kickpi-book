@@ -1,43 +1,42 @@
 # RTC
 
-有些板子没有板载RTC模块，有需求的客户就可以选择外接一个RTC模块解决时间保存需求
+Some boards do not have an on-board RTC module. Customers with time-saving requirements can choose to connect an external RTC module.
 
-下面的例子是K1B-Android外接I2C-RTC模块的做法：
+The following example shows how to connect an I2C-RTC module externally to a K1B-Android board:
 
-## 设备硬件连接
+## Device Hardware Connection
 
-### 板子上使用的IO口：
+### IO ports used on the board:
 
 ![image-20250308154448877](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250308154448877.png)
 
-## 实物接线如下：
+## Physical wiring is as follows:
 
 ![image-20250308154357655](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250308154357655.png)
 
->其中CLK_OUT一般不使用不接 INT脚根据需求接，因板子没有带上拉的IO脚故不接
+> Usually, the CLK_OUT pin is not used and not connected. The INT pin can be connected according to requirements. Since the board does not have IO ports with pull-up resistors, it is not connected here.
 
-## 设备驱动移植
+## Device Driver Transplantation
 
-​	RK356x的SDK默认自带有一部分型号的RTC的驱动，如果发现没有自己使用型号就需要移植。示例中使用的驱动为hym8563（SDK自带有了），但是下面还是简单介绍一下驱动移植的步骤。
+The RK356x SDK comes with drivers for some RTC models by default. If the model you are using is not included, you need to transplant the driver. In the example, the hym8563 driver is used (which is already included in the SDK), but the following briefly introduces the steps for driver transplantation.
 
-RK-RTC驱动位置路径：
+RK-RTC driver location path:
 
 ```
 rk-android13.0\kernel-5.10\drivers\rtc\
 ```
 
-> 将你从RTC厂家拿到的内核驱动放到此目录下。
+> Place the kernel driver obtained from the RTC manufacturer in this directory.
 >
-> 有些厂家可能没有内核驱动的代码，只有单片机的，哪你只能自行将单片机驱动改成Linux内核驱动。
+> Some manufacturers may not provide kernel driver code, only MCU code. In this case, you have to convert the MCU driver to a Linux kernel driver by yourself.
 
-修改驱动路径下Makefile：
+Modify the Makefile in the driver path:
 
 ```diff
 + obj-$(CONFIG_RTC_DRV_HYM8563)	+= rtc-hym8563.o 
 ```
 
-
-修改驱动路径下Kconfig ：
+Modify the Kconfig in the driver path:
 
 ```diff
 +//make menuconfig
@@ -53,7 +52,7 @@ rk-android13.0\kernel-5.10\drivers\rtc\
 +	  will be called rtc-hym8563.
 ```
 
-内核使能
+Enable the kernel:
 
 ```diff
 --- a/kernel-5.10/arch/arm64/configs/rockchip_defconfig
@@ -68,7 +67,7 @@ rk-android13.0\kernel-5.10\drivers\rtc\
 
 ```
 
-## 设备树I2C3上增加rtc节点
+## Add an RTC node to I2C3 in the device tree
 
 ```diff
 --- a/kernel-5.10/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-20pin.dtsi
@@ -92,83 +91,83 @@ rk-android13.0\kernel-5.10\drivers\rtc\
  };
 ```
 
-> rtc-irq-gpio就是对应INT脚接线的IO口，我测试没有接，所以注释了
+> The rtc-irq-gpio corresponds to the IO port where the INT pin is connected. Since it was not connected in the test, it is commented out.
 
-## 用date和hwclock测试rtc驱动工作是否正常
+## Test whether the RTC driver works properly using `date` and `hwclock`
 
-​	下面测试步骤适用所有系统，其中步骤6是最关键的测试。
+The following test steps are applicable to all systems. Step 6 is the most critical test.
 
-1.显示当前Linux系统时间
+1. Display the current Linux system time
 
 ```shell
 $ date
 ```
 
-2.如果date时间也不正常，比如是1970年之类的，而不是我当前的时间，比如2009年，那么就自己手动设置一下正确时间
+2. If the `date` time is incorrect, for example, it shows a time like 1970 instead of the current time (e.g., 2009), manually set the correct time.
 
 ```shell
 $ date MMDDhhmm[[[CC]YY][.ss]]
 ```
 
->MM 是月份（01-12）
+> MM is the month (01 - 12)
 >
->DD 是日期（01-31）
+> DD is the day (01 - 31)
 >
->hh 是小时（00-23）
+> hh is the hour (00 - 23)
 >
->mm  是分钟（00-59）` 
+> mm is the minute (00 - 59)
 >
->[[CC]YY] 是年份（可选，CC是世纪，YY是年份）
+> [[CC]YY] is the year (optional, CC is the century, YY is the year)
 >
->[.ss] 是秒数（可选）
+> [.ss] is the second (optional)
 
-3.显示硬件rtc时间
+3. Display the hardware RTC time
 
 ```shell
 $ hwclock
 ```
 
-由于此处是rtc驱动第一次加载，有些平台可能还没设置正确的时间，此时显示的时间会是是不正确的，如：1969，1970年。
-4.将Linux系统时间设置到硬件rtc中
+Since this is the first time the RTC driver is loaded, some platforms may not have the correct time set yet. The displayed time may be incorrect, such as 1969 or 1970.
+
+4. Set the Linux system time to the hardware RTC
 
 ```shell
 $ hwclock -w
 ```
 
-5.再次查看硬件rtc时间是否和系统中的一致
+5. Check again whether the hardware RTC time is consistent with the system time
 
 ```shell
 $ hwclock
 ```
 
-如果驱动正确工作的话，此处显示的时间，就应该和你当前的系统时间一致了，也就是传说中的，时间同步了。。。
-否则，就说明你驱动工作不正确，没有正确地把系统时间设置进入硬件rtc中，就要你自己回去调试驱动，找原因去。
-6.断电等个几分钟上电，再次输入：
+If the driver is working correctly, the displayed time here should be consistent with the current system time, which means the time is synchronized. Otherwise, it indicates that the driver is not working correctly and has not set the system time to the hardware RTC properly. You need to go back and debug the driver to find the cause.
+
+6. Power off the device, wait for a few minutes, then power it on again and enter:
 
 ```shell
 $ hwclock
 ```
 
-正常的话，会看到此处的时间，相对步骤5中显示的时间，增加了对应的那几分几秒
-那就说明rtc正常工作了。
+Normally, you will see that the time here has increased by the corresponding minutes and seconds compared to the time displayed in step 5, indicating that the RTC is working properly.
 
-## RTC 中断测试：
+## RTC Interrupt Test:
 
-1. 清空还原
+1. Clear and restore
 
 ```shell
 $ echo 0 > /sys/class/rtc/rtc0/wakealarm
 ```
 
-2. 设置时间 
+2. Set the time
 
 ```shell
 $ echo +60 > /sys/class/rtc/rtc0/wakealarm 
 ```
 
-> +60：表示60秒后触发中断
+> +60: indicates that the interrupt will be triggered after 60 seconds
 
-查看rtc信息
+View RTC information
 
 ```shell
 $ cat /proc/driver/rtc
@@ -185,13 +184,13 @@ max user IRQ frequency  : 64
 24hr            : yes
 ```
 
-查看系统中断信息：
+View system interrupt information:
 
 ```shell
 $ cat /proc/interrupts
 ```
 
-想直观看到中断，可以在RTC中间函数中加时间到RTC中断打印，可以参考下面这种修改：
+To visually observe the interrupt, you can add a print statement for the RTC interrupt time in the RTC interrupt function. You can refer to the following modification:
 
 ```diff
 ---a\kernel-5.10\drivers\rtc\rtc-hym8563.c
@@ -225,6 +224,3 @@ out:
   return IRQ_HANDLED;
 }
 ```
-
-
-
