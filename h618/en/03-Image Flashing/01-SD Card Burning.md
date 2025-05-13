@@ -23,9 +23,10 @@ Extract `PhoenixCard.rar` and run the tool. The interface is shown below:
 
 ### Burn the Image
 
-**Differences between Production Card and Boot Card**  
-- **Production Card**: Automatically burns the system image from the SD card into eMMC. It cannot boot directly.  
-- **Boot Card**: Boots the system directly from the SD card.  
+**Differences between “Product” and “Start up”**  
+
+- **Product**: Automatically burns the system image from the SD card into eMMC. It cannot boot directly.  
+- **Start up**: Boots the system directly from the SD card.  
 
 #### Boot Card Burning Steps  
 1. Insert the SD card into the computer.  
@@ -87,7 +88,7 @@ Wait for completion:
 After booting, execute the following command in the terminal:  
 ```shell
 sudo nand-sata-install 2 1
-```  
+```
 Press Enter, then enter the password: `kickpi`.  
 
 Process screenshots:  
