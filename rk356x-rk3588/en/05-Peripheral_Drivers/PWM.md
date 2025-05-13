@@ -1,12 +1,10 @@
 # PWM
 
+### Regular PWM
 
+For example: Configure GPIO0_C0 (pwm1m0) on the K1 expansion pin as PWM.
 
-### 普通PWM
-
-例如：将K1拓展引脚上的GPIO0_C0（pwm1m0）配置成PWM
-
-注意：任何IO都只能配置一种功能，如果要修改已经有使用的IO需要找到对应位置注释掉原本的使用
+Note: Any IO can only be configured with one function. If you need to modify an already used IO, you need to find the corresponding position and comment out the original usage.
 
 ```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
@@ -18,13 +16,13 @@
 +};
 ```
 
-测试方法参考:12-硬件功能测试 [PWM](12-硬件功能测试.md#PWM)
+Refer to the testing method in: 12-Hardware Function Testing [PWM](12-硬件功能测试.md#PWM)
 
-### 红外使用的PWM
+### PWM for Infrared Use
 
-永久关闭板子红外遥控，修改设备树目录下rk3568-kickpi-ir.dtsi文件
+To permanently disable the infrared remote control of the board, modify the rk3568-kickpi-ir.dtsi file in the device tree directory.
 
-Android_SDK为例：
+Taking the Android_SDK as an example:
 
 ```diff
 ---kernel-5.10\arch\arm64\boot\dts\rockchip\rk3568-kickpi-ir.dtsi
@@ -35,6 +33,3 @@ Android_SDK为例：
 +   status = "disabled";
     compatible = "rockchip,remotectl-pwm";
 ```
-
-
-
