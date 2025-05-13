@@ -10,7 +10,7 @@
 
 ![image-20250222170321575](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170321575.png)
 
-## Pin List
+## Expansion Pins <a id="ExpansionPin"> </a>
 
 ![image-20250222170528749](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170528749.png)
 
