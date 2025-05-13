@@ -49,7 +49,7 @@ Additionally, the system heartbeat LED can be controlled for other functions as 
 
 ## Display
 
-The K1B motherboard has display interfaces. You can check the number of interfaces and the types of default compatible displays in the [K1B Hardware Introduction](../01- Motherboard Introduction/03-KICKPI-K1B Hardware Introduction.md#display) section. You can connect display peripherals as needed.
+The K1B motherboard has display interfaces. You can check the number of interfaces and the types of default compatible displays in the [K1B Hardware Introduction](../01-Motherboard_Introduction/03-KICKPI-K1B_Hardware_Introduction.md#display) section. You can connect display peripherals as needed.
 
 **All display interfaces on the KICKPI development board are used with corresponding display adapter boards. The purchased displays will be shipped with the adapter boards already connected.**
 
@@ -57,7 +57,7 @@ The K1B motherboard has display interfaces. You can check the number of interfac
 
 The K1B is default compatible with LVDS 7-inch screens, MIPI 5-inch, 8-inch, and 10.1-inch screens sold by KICKPI.
 
-LVDS/MIPI 0 Interface: [Flip-down FPC Interface](../../../common/zh/display/FPC Interface Introduction#FPC-1)
+LVDS/MIPI 0 Interface: [Flip-down FPC Interface](../../../common/zh/display/FPC_Interface_Introduction#FPC-1)
 
 ![image-20250512140834526](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512140834526.png)
 
