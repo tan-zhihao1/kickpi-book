@@ -1,20 +1,18 @@
-# 01-Android常用系统定制
+# 01-Common_Android_System_Customizations
 
-SDK - 指代源码路径
+SDK - Refers to the source code path
 
-console - 指代调试控制台
+console - Refers to the debugging console
 
-ADB - Android Debug Bridge命令行工具，下文指代可运行ADB的环境
+ADB - Android Debug Bridge command-line tool. Hereinafter, it refers to an environment where ADB can be run.
 
+## 1. Boot Logo Customization
 
+The boot logo is divided into two parts: the Uboot stage and the Kernel stage.
 
-## 1. 开机LOGO定制
+The Uboot stage parses the image `kernel-5.10/logo.bmp`.
 
-开机LOGO分两个部分，分别是Uboot阶段、Kernel阶段
-
-Uboot阶段解析图片kernel-5.10/logo.bmp
-
-Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
+The Kernel stage parses the image `kernel-5.10/logo_kernel.bmp`.
 
 ```
 (SDK)$ ls kernel-5.10/*.bmp
@@ -22,17 +20,15 @@ logo.bmp
 logo_kernel.bmp
 ```
 
+## 2. Boot Animation Customization
 
-
-## 2. 开机动画定制
-
-你制作的开机动画放到指定目录
+Place the boot animation you created in the specified directory.
 
 ```
 (SDK)$ ls device/rockchip/common/bootshutdown/bootanimation.zip
 ```
 
-打开配置
+Open the configuration.
 
 ```diff
 (SDK)$ vim device\rockchip\common\BoardConfig.mk
@@ -40,23 +36,21 @@ logo_kernel.bmp
 +BOOT_SHUTDOWN_ANIMATION_RINGING ?= true
 ```
 
+## 3. Default Screen Orientation
 
-
-## 3. 默认屏幕方向
-
-### 默认修改显示方向
+### Default Modification of Display Orientation
 
 ```
 (SDK)$ vim device/rockchip/$(dev)/BoardConfig.mk
 (SDK)$ vim device/rockchip/rk356x/BoardConfig.mk // K1
 
-	SF_PRIMARY_DISPLAY_ORIENTATION := 0 	//0°
-	SF_PRIMARY_DISPLAY_ORIENTATION := 90 	//90°
-	SF_PRIMARY_DISPLAY_ORIENTATION := 180	//180°
-	SF_PRIMARY_DISPLAY_ORIENTATION := 270	//270°
+    SF_PRIMARY_DISPLAY_ORIENTATION := 0 	// 0°
+    SF_PRIMARY_DISPLAY_ORIENTATION := 90 	// 90°
+    SF_PRIMARY_DISPLAY_ORIENTATION := 180	// 180°
+    SF_PRIMARY_DISPLAY_ORIENTATION := 270	// 270°
 ```
 
-> $(dev) 根据主板cpu进行选择
+> $(dev) is selected according to the motherboard CPU.
 >
 > K1/K1B - rk356x
 >
@@ -64,9 +58,7 @@ logo_kernel.bmp
 >
 > K8 - rk3588
 
-
-
-### ADB修改显示方向
+### Modify Display Orientation via ADB
 
 ```
 // 0°
@@ -82,35 +74,33 @@ logo_kernel.bmp
 (ADB)$ adb shell settings put system user_rotation 3
 ```
 
+### Modify Touch Orientation
 
+You can refer to the LCD configuration document: [Single Touch Screen Driver Configuration](40-RK3568%20LCD Configuration.md#TouchDriver)
 
-### 修改触摸方向
+## 4. Default Hide Status Bar
 
-可以参考LCD配置文档：[单触摸屏驱动配置](40-RK3568%20LCD配置.md#TouchDriver)
+The latest firmware can be controlled by naming or sending broadcasts from an app.
 
-## 4. 默认隐藏状态栏
-
-最新的固件可以命名或者app发送广播控制
-
-命令行隐藏导航栏
+Hide the navigation bar via the command line.
 
 ```shell
 $ am broadcast -a android.intent.action.HIDE_STATUSBAR_BAR
 ```
 
-命令行显示导航栏
+Show the navigation bar via the command line.
 
 ```shell
 $ am broadcast -a android.intent.action.SHOW_STATUSBAR_BAR
 ```
 
-APP广播测试apk位于网盘下：
+The APK for testing app broadcasts is located under the network drive:
 
 ```
-rk356x_data\3-SoftwareData软件资料\Navigation-Status-test\
+rk356x_data\3-SoftwareData Software Materials\Navigation-Status-test\
 ```
 
-Android13 默认隐藏状态栏修改如下：
+To modify the default hiding of the status bar in Android 13:
 
 ```diff
 --- a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/CentralSurfacesImpl.java
@@ -125,7 +115,7 @@ Android13 默认隐藏状态栏修改如下：
              // Make sure we always have the most current wallpaper info.
 ```
 
-Android13默认禁止状态栏下拉修改如下：
+To modify the default prohibition of status bar pull-down in Android 13:
 
 ```diff
 --- a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/CommandQueue.java
@@ -147,31 +137,29 @@ Android13默认禁止状态栏下拉修改如下：
      }
 ```
 
+## 5. Default Hide Navigation Bar
 
+The latest firmware can be controlled by naming or sending broadcasts from an app.
 
-## 5. 默认隐藏导航栏
-
-最新的固件可以命名或者app发送广播控制
-
-命令行隐藏导航栏
+Hide the navigation bar via the command line.
 
 ```shell
 $ am broadcast -a android.intent.action.HIDE_NAVIGATION_BAR
 ```
 
-命令行显示导航栏
+Show the navigation bar via the command line.
 
 ```shell
 $ am broadcast -a android.intent.action.SHOW_NAVIGATION_BAR
 ```
 
-APP广播测试apk位于网盘下：
+The APK for testing app broadcasts is located under the network drive:
 
 ```
-rk356x_data\3-SoftwareData软件资料\Navigation-Status-test\
+rk356x_data\3-SoftwareData Software Materials\Navigation-Status-test\
 ```
 
-Android13默认隐藏导航栏修改如下： 
+To modify the default hiding of the navigation bar in Android 13:
 
 ```diff
 --- a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/CentralSurfacesImpl.java
@@ -186,7 +174,7 @@ Android13默认隐藏导航栏修改如下：
              // Make sure we always have the most current wallpaper info.
 ```
 
-Android13默认使用手势导航：
+To use gesture navigation by default in Android 13:
 
 ```diff
 --- a/device/rockchip/rk356x/overlay/frameworks/base/core/res/res/values/config.xml
@@ -199,18 +187,15 @@ Android13默认使用手势导航：
 +    <integer name="config_navBarInteractionMode">2</integer>
      <bool name="config_swipe_up_gesture_setting_available">true</bool>
  </resources>
- 
 ```
 
+## 6. Embed Third-Party APPs
 
+Refer to `Settings2.apk`.
 
-## 6. 内置第三方APP
+Place your APK and `Android.bp` in `rk-android13.0\vendor\rockchip\common\apps\Settings2`.
 
-参考 Settings2.apk 
-
-rk-android13.0\vendor\rockchip\common\apps\Settings2 放你的apk和Android.bp 
-
-Android.mk 方式
+### Android.mk Method
 
 ```
 ###############################################################################
@@ -229,10 +214,9 @@ LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
 #LOCAL_REQUIRED_MODULES :=
 #LOCAL_PREBUILT_JNI_LIBS :=
 include $(BUILD_PREBUILT)
-
 ```
 
-Android.bp 方式
+### Android.bp Method
 
 ```makefile
 android_app_import {
@@ -252,7 +236,7 @@ android_app_import {
 }
 ```
 
-在 PRODUCT_PACKAGES 加入编译目标
+Add the compilation target to `PRODUCT_PACKAGES`.
 
 ```makefile
 (SDK)$ vim vendor/rockchip/common/apps/apps.mk
@@ -260,15 +244,11 @@ PRODUCT_PACKAGES += \
        Settings2
 ```
 
+## 7. Start APP Automatically on Boot
 
+### Start the APP after Receiving the Boot Broadcast
 
-
-
-## 7. 开机自启动APP
-
-**通过接收开机广播完成后，启动APP**
-
-1、修改增加 APP 的权限以及广播接收  AndroidManifest.xml
+1. Modify and add the APP's permissions and broadcast receiver in `AndroidManifest.xml`.
 
 ```
 <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
@@ -288,11 +268,9 @@ PRODUCT_PACKAGES += \
 </application>
 ```
 
+2. Add the broadcast receiver `MyReceiver.java`.
 
-
-2、增加广播接收 MyReceiver.java
-
-```
+```java
 package com.example.myapplication;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -315,68 +293,49 @@ public class MyReceiver extends BroadcastReceiver {
 }
 ```
 
+3. Preinstall the app to `/system/priv-app/`.
 
+- **Method 1: Compile and preinstall into the source code. Refer to [Embed Third-Party APPs](# 6. Embed Third-Party APPs).**
+- **Method 2: Preinstall via the push method.**
 
-3、预装app 到 /system/priv-app/
+```
+adb root; adb remount;
+adb push ./app /system/priv-app/
+```
 
-* 方式一，编译预装到源码，参考 [内置第三方APP](# 6. 内置第三方APP)
-
-* 方式二，push 方式预装
-
-  ```
-  adb root; adb remount;
-  adb push ./app /system/priv-app/
-  ```
-
-  
-
-
-
-## 8. 默认语言
+## 8. Default Language
 
 ```
 $ vim build/target/product/full_base.mk
-	PRODUCT_LOCALES := en_US
+    PRODUCT_LOCALES := en_US
 ```
 
+| Option | Description |
+| ------ | ----------- |
+| en_US  | English     |
+| zh_CN  | Chinese     |
 
+## 9. Default Time Zone
 
-| 选项  | 描述 |
-| ----- | ---- |
-| en_US | 英文 |
-| zh_CN | 中文 |
+[To be supplemented]
 
-
-
-## 9. 默认时区
-
-
-
-
-
-## 10. 默认永不休眠
+## 10. Default Never Sleep
 
 ```
 $ vim device/rockchip/rk356x/overlay/frameworks/base/packages/SettingsProvider/res/values/defaults.xml
-	<integer name="def_screen_off_timeout">2147483647</integer>
+    <integer name="def_screen_off_timeout">2147483647</integer>
 ```
 
-
-
-## 11. 默认禁止锁屏
+## 11. Default Disable Lock Screen
 
 ```
 $ vim frameworks/base/packages/SettingsProvider/res/values/defaults.xml
-	<bool name="def_lockscreen_disabled">true</bool>
+    <bool name="def_lockscreen_disabled">true</bool>
 ```
 
+## 12. Sign APK
 
-
-## 12. 签名APK
-
-
-
-**SDK源码中进行重签**
+### Resign in the SDK Source Code
 
 ```shell
 $ cd rk-android13.0/
@@ -387,11 +346,9 @@ build/target/product/security/platform.pk8 \
 old.apk new.apk
 ```
 
+### Resign Using Signing-Related Files
 
-
-**使用签名相关文件重签**
-
-SDK中需要的签名相关文件
+The signing-related files required in the SDK:
 
 ```
 out/host/linux-x86/lib64
@@ -400,12 +357,10 @@ build/target/product/security/platform.x509.pem
 build/target/product/security/platform.pk8
 ```
 
-
-
-根据提供文件进行重签，具体路径自行调整
+Resign according to the provided files. Adjust the specific paths as needed.
 
 ```shell
-签名包 rk-android13.0-key.tar.gz
+Signing package rk-android13.0-key.tar.gz
 $ tar -xvf rk-android13.0-key-20240919.tar.gz
 $ ls rk-android13.0-key
 $ java -Xmx2048m -Djava.library.path="rk-android13.0-key/lib64" \
@@ -415,11 +370,9 @@ rk-android13.0-key/platform.pk8 \
 old.apk new.apk
 ```
 
+## 13. Network ADB
 
-
-## 13.网络ADB
-
-网口ADB需要先adb启动5555端口服务后
+For network ADB, you need to start the 5555 port service via ADB first.
 
 ```
 (ADB)$ adb tcpip 5555
@@ -434,9 +387,9 @@ List of devices attached
 apollo-p2:/ $ su
 ```
 
-#### 开机默认启动5555端口
+### Start Port 5555 Automatically on Boot
 
-需要通过USB adb操作
+You need to operate via USB ADB.
 
 ```diff
 (ADB)$ adb root
@@ -447,19 +400,17 @@ apollo-p2:/ $ su
 (ADB)$ adb push .\build.prop /system/build.prop
 ```
 
+## 14. HDMI RX APK Customization
 
+The K8 has one HDMI RX input. Android can display the HDMI RX screen by opening the HdmiIn APK.
 
-## 14. HDMI RX APK 定制
-
-K8 有一路 HDMI RX 输入，Android 可以通过打开 HdmiIn APK 显示 HDMI RX 画面。 
-
-HdmiIn APK 路径
+The path of the HdmiIn APK:
 
 ```
 (SDK)$ packages/apps/rkCamera2/
 ```
 
-hdmi in 画面全屏配置
+Configure the HDMI in screen to be full-screen.
 
 ```diff
 --- a/packages/apps/rkCamera2/src/com/android/rockchip/camera2/activity/MainActivity.java
@@ -474,38 +425,34 @@ hdmi in 画面全屏配置
          rootView.setOnClickListener(this);
 ```
 
+## 15. Modify Debug Port Baud Rate
 
-
-## 15.修改debug口波特率
-
-修改路径：
+### Modify the Path
 
 ```
 rk-android13.0\kernel-5.10\arch\arm64\boot\dts\rockchip\rk3568-android.dtsi
 ```
 
-修改rockchip,baudrate内容：
+### Modify the `rockchip,baudrate` Content
 
 ```
 fiq-debugger {
-		compatible = "rockchip,fiq-debugger";
-		rockchip,serial-id = <2>;
-		rockchip,wake-irq = <0>;
-		/* If enable uart uses irq instead of fiq */
-		rockchip,irq-mode-enable = <1>;
-		rockchip,baudrate = <1500000>;  /* Only 115200 and 1500000 */
-		interrupts = <GIC_SPI 252 IRQ_TYPE_LEVEL_LOW>;
-		pinctrl-names = "default";
-		pinctrl-0 = <&uart2m0_xfer>;
-		status = "okay";
-	};
+        compatible = "rockchip,fiq-debugger";
+        rockchip,serial-id = <2>;
+        rockchip,wake-irq = <0>;
+        /* If enable uart uses irq instead of fiq */
+        rockchip,irq-mode-enable = <1>;
+        rockchip,baudrate = <1500000>;  /* Only 115200 and 1500000 */
+        interrupts = <GIC_SPI 252 IRQ_TYPE_LEVEL_LOW>;
+        pinctrl-names = "default";
+        pinctrl-0 = <&uart2m0_xfer>;
+        status = "okay";
+    };
 ```
 
+## Rockchip Official Documentation
 
-
-## rockchip 官方文档
-
-rockchip官方在代码中存放了文档 RKDocs
+Rockchip has stored official documentation in the code: `RKDocs`.
 
 ```
 (SDK)$ tree -L 1 RKDocs/
@@ -513,4 +460,3 @@ RKDocs/
 ├── android
 └── common
 ```
-
