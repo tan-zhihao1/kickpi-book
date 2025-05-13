@@ -1,28 +1,24 @@
 # LCD
 
-RK3568 配备四路显示输出接口，分别为 HDMI、MIPI、LVDS、EDP，其中最高支持三路同时显示输出
+The RK3568 is equipped with four display output interfaces, namely HDMI, MIPI, LVDS, and EDP. It supports a maximum of three simultaneous display outputs.
 
-
-
-## 1. 显示接口资源介绍
+## 1. Introduction to Display Interface Resources
 
 ### RK3568
 
-RK3568 有三个VP节点，每个VP节点可挂接一个显示屏，对应关系如下表格示
+The RK3568 has three VP nodes, and each VP node can be connected to a display. The corresponding relationships are shown in the following table:
 
-| VP编号 | VP支持显示接口                    | VP最大分辨率   |
+| VP Number | Supported Display Interfaces | Maximum VP Resolution |
 | ------ | --------------------------------- | -------------- |
 | VP0    | MIPI0 / MIPI1 / HDMI / EDP        | 4096x2304@60Hz |
 | VP1    | MIPI0 / MIPI1 / LVDS / HDMI / EDP | 2048x1536@60Hz |
 | VP2    | LVDS / RGB                        | 1920x1080@60Hz |
 
-> MIPI0与LVDS接口引脚冲突，只能二选一
+> The pins of the MIPI0 and LVDS interfaces conflict, so only one can be selected.
 >
-> VP2节点仅支持LVDS/RGB，所以三屏显示时其中一路必须是LVDS（RGB接口未引出）
+> The VP2 node only supports LVDS/RGB. Therefore, one of the three displays must be LVDS (the RGB interface is not led out) in a triple-screen display setup.
 
-
-
-| 显示接口  | 显示最大分辨率 | 格式             |
+| Display Interface | Maximum Display Resolution | Format |
 | --------- | -------------- | ---------------- |
 | HDMI      | 4096x2160@60Hz | RGB/YUV420 10Bit |
 | MIPI      | 1920x1080@60Hz | RGB 8Bit         |
@@ -31,11 +27,9 @@ RK3568 有三个VP节点，每个VP节点可挂接一个显示屏，对应关系
 | EDP       | 2560x1600@60Hz | RGB 10Bit        |
 | RGB       | 1920x1080@60Hz | RGB 8Bit         |
 
+## 2. Single Display Driver Configuration <a id='LCDDriver'> </a>
 
-
-## 2. 单显示屏驱动配置<a id='LCDDriver'> </a>
-
-显示屏配置 主要修改设备树LCD配置文件，RK3568 设备树LCD配置目录如下：
+Display configuration mainly involves modifying the device tree LCD configuration file. The device tree LCD configuration directory for the RK3568 is as follows:
 
 ```
 $ vim kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi //linux
@@ -49,45 +43,32 @@ $ vim kernel-5.10/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi //android
 //#include "rk3568-kickpi-lcd-lvds-7-1024-600.dtsi"
 ```
 
-> 其中的rk3568-kickpi-lcd-hdmi.dtsi需要默认保持使能
+> The `rk3568-kickpi-lcd-hdmi.dtsi` file needs to be enabled by default.
 >
-> 若显示屏调试有问题，可联系售后，获取技术支持
-
-
+> If there are problems with display debugging, you can contact after-sales for technical support.
 
 ### MIPI
 
-RK3568 有两路MIPI LCD，分别为MIPI0、MIPI1，其中MIPI0与LVDS复用
+The RK3568 has two MIPI LCD interfaces, namely MIPI0 and MIPI1. Among them, MIPI0 is multiplexed with LVDS.
 
-MIPI0接口 参考 rk3568-kickpi-lcd-mipi0-10.1-800-1280.dtsi 
-
-MIPI1接口 参考 rk3568-kickpi-lcd-mipi1-10.1-800-1280.dtsi
-
-
+For the MIPI0 interface, refer to `rk3568-kickpi-lcd-mipi0-10.1-800-1280.dtsi`.
+For the MIPI1 interface, refer to `rk3568-kickpi-lcd-mipi1-10.1-800-1280.dtsi`.
 
 ### LVDS
 
-LVDS接口 参考 rk3568-kickpi-lcd-lvds-7-1024-600.dtsi
-
-
+For the LVDS interface, refer to `rk3568-kickpi-lcd-lvds-7-1024-600.dtsi`.
 
 ### EDP
 
-EDP接口 参考 rk3568-kickpi-lcd-edp-15.6-1920-1080.dtsi   
+For the EDP interface, refer to `rk3568-kickpi-lcd-edp-15.6-1920-1080.dtsi`.
 
+## 3. Multi-Screen Display System Configuration
 
+In a multi-screen display solution, pay attention to the following when selecting LCD parameters:
 
+It is recommended to choose displays with the same aspect ratio; otherwise, the picture may be stretched or have black borders.
 
-
-## 3. 多屏显示系统配置
-
-多屏显示方案中，LCD参数选择注意事项：
-
-推荐选择显示长宽比例一致的显示屏，否则会出现画面拉伸或者画面黑边
-
-
-
-### 内核设备树配置
+### Kernel Device Tree Configuration
 
 ```
 $ vim kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi
@@ -97,60 +78,54 @@ $ vim kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi
 //#include "rk3568-kickpi-triple-lcd-edp-mipi1-lvds.dtsi"
 ```
 
-> 在完成单屏调试的基础上，参考以上提供的多屏设备树配置文件
+> On the basis of completing single-screen debugging, refer to the above-provided multi-screen device tree configuration files.
 
+### Android Multi-Screen Configuration
 
-
-### Android多屏配置
-
-* DSI作为主屏，HDMI-A作为副屏
+* Use DSI as the primary screen and HDMI-A as the secondary screen
 
 ```
 PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.primary=DSI
 PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.extend=HDMI-A
 ```
 
-* DSI\eDP作为主屏，LVDS\HDMI-A作为副屏
+* Use DSI/eDP as the primary screen and LVDS/HDMI-A as the secondary screen
 
 ```
 PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.primary=DSI,eDP
 PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.extend=LVDS,HDMI-A
 ```
 
+## 4. Single Touchscreen Driver Configuration <a id='TouchDriver'> </a>
 
+> Take GT9XX as an example.
 
-## 4. 单触摸屏驱动配置<a id='TouchDriver'> </a>
+### Driver Porting
 
-> 以GT9XX为例
+Port the driver provided by the manufacturer to the SDK directory and modify the compilation files.
 
-### 驱动移植
+Copy the driver files to the touch driver folder `$(SDK_DIR)\kernel-5.10\drivers\input\touchscreen`.
 
-将厂商提供的驱动移植进SDK目录，并修改添加进编译文件
-
-驱动文件copy到触摸驱动的文件夹下$(SDK_DIR)\kernel-5.10\drivers\input\touchscreen
-
-修改kconfig：添加如下
+Modify the `kconfig` file by adding the following:
 
 ```
 config TOUCHSCREEN_GT9XX
 	tristate "GT9XX touchscreens support"
 ```
 
-修改Makefile：添加如下
+Modify the `Makefile` by adding the following:
 
 ```
 obj-$(CONFIG_TOUCHSCREEN_GT9XX)		+= gt9xx/
 ```
 
-内核配置添加CONFIG_TOUCHSCREEN_GT9XX=y
+Add `CONFIG_TOUCHSCREEN_GT9XX=y` to the kernel configuration.
 
-内核配置文件如arch/arm64/configs/rockchip_defconfig，不同版本的defconfig请自行在git历史记录中查找对应的版本文件
+The kernel configuration file is, for example, `arch/arm64/configs/rockchip_defconfig`. For different versions of `defconfig`, please find the corresponding version file in the Git history.
 
+### Kernel Device Tree Configuration
 
-
-### 内核设备树配置
-
-i2c_gt9xx配置：
+i2c_gt9xx configuration:
 
 ```
 &i2c1 {
@@ -198,13 +173,11 @@ i2c_gt9xx配置：
 };
 ```
 
+### Rotating the Touch Direction
 
+Adjust the touchscreen direction based on the device tree. The following directions are only applicable to the GT9XX driver.
 
-### 旋转触摸方向
-
-基于设备树调整触摸屏方向，以下方向仅适用于GT9XX驱动
-
-0度（默认）
+0 degrees (default)
 
 ```
 gt9xx:gt9xx@5d {
@@ -214,7 +187,7 @@ gt9xx:gt9xx@5d {
 };
 ```
 
-90度
+90 degrees
 
 ```
 gt9xx:gt9xx@5d {
@@ -224,7 +197,7 @@ gt9xx:gt9xx@5d {
 };
 ```
 
-180度
+180 degrees
 
 ```
 gt9xx:gt9xx@5d {
@@ -234,7 +207,7 @@ gt9xx:gt9xx@5d {
 };
 ```
 
-270度
+270 degrees
 
 ```
 gt9xx:gt9xx@5d {
@@ -244,23 +217,17 @@ gt9xx:gt9xx@5d {
 };
 ```
 
+## 5. Multi-Screen Touch System Configuration
 
-
-
-
-## 5. 多屏触摸系统配置
-
-### 内核设备树配置
+### Kernel Device Tree Configuration
 
 I2C + I2C
 
+### Android Single-Screen Touch Configuration
 
+* Android 13.0
 
-### Android单屏触摸配置
-
-* Android13.0
-
-禁止副屏触摸，不论external 或 internal类型设备，都作用在主屏
+Disable touch on the secondary screen. Whether it is an external or internal device, the touch function only works on the primary screen.
 
 ```
 $ vim frameworks/native/services/inputflinger/reader/EventHub.cpp
@@ -272,11 +239,9 @@ $ vim frameworks/native/services/inputflinger/reader/EventHub.cpp
     }
 ```
 
+### Android Multi-Screen Touch Configuration
 
-
-### Android多屏触摸配置
-
-* 判断设备名称
+* Determine the device name
 
 ```
 $ vim frameworks/native/services/inputflinger/reader/EventHub.cpp
@@ -293,24 +258,7 @@ bool EventHub::isExternalDeviceLocked(Device* device) {
 }
 ```
 
-
-
-* 添加IDC配置文件
+* Add an IDC configuration file
 
 ```
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
