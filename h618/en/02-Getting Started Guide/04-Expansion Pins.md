@@ -42,7 +42,7 @@ cat /dev/ttyAS5
 
 > Board: K2B
 
-Tool download path (network drive):  
+Tool download path: 
 `h618_data\3-SoftwareData\GPIO_tools`
 
 Extract `wiringKP.tar.gz` on the board. Place executables and libraries into `/usr/bin` and `/usr/lib`.
