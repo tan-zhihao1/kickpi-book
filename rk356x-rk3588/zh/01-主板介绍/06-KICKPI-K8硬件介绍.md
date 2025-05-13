@@ -18,11 +18,11 @@
 
 ### 显示屏<a id="display"> </a>
 
-K1主板可接的显示屏接口有：两路MIPI/LVDS接口（正面-翻盖式FPC接口 背面-抽拉式FPC接口） 两路HDMI OUT接口（HDMI-A）1路HDMI IN接口（HDMI-A）
+K8主板可接的显示屏接口有：两路MIPI/LVDS接口（正面-翻盖式FPC接口 背面-抽拉式FPC接口） 两路HDMI OUT接口（HDMI-A）1路HDMI IN接口（HDMI-A）
 
 * MIPI-DSI
 
-K1 默认适配的MIPI屏
+K8 默认适配的MIPI屏
 
 | **MIPI Panel Model** | **Diagonal Size** | **Resolution** |
 | -------------------- | ----------------- | -------------- |
