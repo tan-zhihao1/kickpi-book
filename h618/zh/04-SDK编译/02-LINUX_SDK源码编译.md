@@ -92,7 +92,6 @@ $ sudo systemctl enable kickpi.service
 - step2.Build U-boot：单独**编译**u-boot
 - step3.Build base-rootfs and deb packages：构建根文件系统镜像并打包自定义deb软件包
 - step4.Pack image：将系统镜像的各个部分按规则打包成一个完整的用于烧录的镜像
-- update source repository：下载或更新软件源码
 - clean source/build/out files：清理拉取的源代码、构建过程中产生的文件、最终输出的镜像
 
 如果我们只是需要构建一个用于板卡启动的镜像，选择 **Build all step** 再按Enter键进入下一步
