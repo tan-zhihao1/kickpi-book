@@ -150,17 +150,13 @@ $ vim scripts/debootstrap.sh
 
 ![aefb737ab69097882aedfad9c2fdb27](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/aefb737ab69097882aedfad9c2fdb27.png)
 
-
-
-### 设置开机自启动命令
+## 设置开机自启动命令
 
 把需要的命令写到系统里面的/etc/rc.local
 
 或者在/etc/systemd/system/下写服务文件启动脚本
 
-
-
-### 设置wifi热点（AP）模式
+## 设置wifi热点（AP）模式
 
 查看是否支持AP模式
 
@@ -295,46 +291,7 @@ wpa-conf /etc/wpa_supplicant.conf
 
 
 
-
-
-
-
-### SSH 登录
-
-### 打开Windows cmd
-
-```
-ssh kickpi@<IP>   //密码 kickpi
-```
-
-### SSH root登陆
-
-默认不支持root连接，root连接需要配置
-
-```shell
-$ vim /etc/ssh/ssh_config
-+ PermitRootLogin yes
-$ vim /etc/ssh/sshd_config
-+ PermitRootLogin yes
-$ sudo /etc/init.d/ssh restart
-```
-
-注意事项：
-
-确保板子IP正常
-
-确保能正常连通板子的IP
-
-```
-$ cat /etc/ssh/ssh_config | grep PermitRootLogin
-PermitRootLogin yes
-$ cat /etc/ssh/sshd_config | grep PermitRootLogin
-PermitRootLogin yes
-```
-
-
-
-### VNC远程桌面登陆
+## VNC远程桌面登陆
 
 vnc软件下载
 
@@ -377,7 +334,7 @@ vncserver -geometry 1920x1080
 
 ![image-20250317142740629](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250317142740629.png)
 
-### UBUNTU从官网安装软件包
+## UBUNTU从官网安装软件包
 
 安装gcc为例子
 
