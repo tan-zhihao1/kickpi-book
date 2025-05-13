@@ -8,11 +8,11 @@
 
 ## Development Board Information
 
-![image-20250222171126273](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222171126273.png)
+![image-20250222170321575](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170321575.png)
 
 ## Pin List
 
-![image-20240420181207097](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420181207097.png)
+![image-20250222170528749](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170528749.png)
 
 ## Accessory List
 
@@ -50,4 +50,4 @@ The EDP screens that K1 is default - adapted to
 
 
 
-![img](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/O1CN01kcjuvi29djTNDfOhy_!!2216870748091.jpg)
+![image-20250225144314914](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250225144314914.png)
