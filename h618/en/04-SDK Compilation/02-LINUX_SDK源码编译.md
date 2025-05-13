@@ -1,233 +1,165 @@
-# 02-LINUX_SDK源码编译
+# 02-LINUX_SDK Source Code Compilation
 
+### Obtaining the SDK Source Code
 
-
-### 获取SDK源码
-
-* 网盘下载目录
+* Network Disk Download Directory:
 
 ```
 1-SDK\Linux\
 	h618-linux-xxxxxxx.tar.gz
 ```
 
+* Copy the source code archive to the compilation host directory:
 
-
-* 拷贝源码压缩包到编译主机目录
-
-  > 注意事项：
+  > Notes:
   >
-  > 1. 源码不可放在共享目录下编译
-  >
-  > 2. 编译主机不可用ROOT账号登陆
+  > 1. Do not place the source code in a shared directory for compilation.
+  > 2. Do not use the ROOT account to log in to the compilation host.
 
-
-
-* MD5校验文件完整性
+* Verify file integrity using MD5:
 
 ```
 $ md5sum -c *.md5
 ```
 
-
-
-* 解压源码压缩包
+* Extract the source code archive:
 
 ```
 $ tar -zxvf *.tar.gz
 ```
 
-> 解压完成后，查看源码目录仅有.git文件夹，需要执行下一步才能完成恢复出源码
+> After extraction, only the `.git` folder will be visible in the source directory. Proceed to the next step to fully restore the source code.
 
-
-
-* Git恢复源码目录
+* Restore the source code using Git:
 
 ```
 $ git reset --hard
 ```
 
+---
 
+### Compilation Commands
 
+Ensure the compilation environment has internet access. Required tools will be automatically downloaded during compilation.
 
-
-### 编译命令
-
-编译前确保编译环境能够正常联网，编译过程中会自动下载安装所需的工具
-
+Basic compilation:
 ```
 $ ./build.sh
 ```
 
-下面命令编译固件制作的SD卡为烧录卡
-
+Compile firmware for creating a bootable SD card:
 ```
 $ ./build.sh auto_burn=true
 ```
 
-> 烧录卡想要取消自动烧录 可以通过板子SD烧录卡启动后输入系统下面命令控制
->
-> 禁用自动烧录服务
-
+> To disable the auto-burn service after booting from the SD card:
 ```
 $ sudo systemctl disable kickpi.service 
 ```
 
-> 启动自动烧录服务（烧录卡默认启动）
-
+> To enable the auto-burn service (enabled by default):
 ```
 $ sudo systemctl enable kickpi.service 
 ```
 
-##### 编译详细步骤选择介绍
+##### Interactive Build Interface
 
-在aw-image-build根目录运行 **./build.sh** 来进入交互式构建界面
+Run `./build.sh` in the `aw-image-build` root directory to enter the interactive build interface:
 
 ![image-20241025181130073](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181130073.png)
 
-可以看到，在我们的功能选择界面，总共有7个选项
+Options:
+- **Build all step**: Full image build (automatically executes step1 to step4).
+- **step1.Build Kernel**: Compile the kernel separately.
+- **step2.Build U-boot**: Compile U-boot separately.
+- **step3.Build base-rootfs and deb packages**: Build the root filesystem and package custom deb files.
+- **step4.Pack image**: Package all components into a complete burnable image.
+- **clean source/build/out files**: Clean source code, build files, and output images.
 
-- Build all step ：构建完整镜像，自动执行step1到step4
-- step1.Build Kernel：单独**编译**内核
-- step2.Build U-boot：单独**编译**u-boot
-- step3.Build base-rootfs and deb packages：构建根文件系统镜像并打包自定义deb软件包
-- step4.Pack image：将系统镜像的各个部分按规则打包成一个完整的用于烧录的镜像
-- clean source/build/out files：清理拉取的源代码、构建过程中产生的文件、最终输出的镜像
-
-如果我们只是需要构建一个用于板卡启动的镜像，选择 **Build all step** 再按Enter键进入下一步
+For a standard bootable image, select **Build all step** and press Enter.
 
 ![image-20250324091854498](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250324091854498.png)
 
-选择我们要构建镜像的板卡，如kickpi-k2b Allwinner H618
+Select the target board (e.g., **kickpi-k2b Allwinner H618**):
 
 ![image-20241025181249872](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181249872.png)
 
-选择我们要构建的根文件系统的发行版和release版本，选择jammy Ubuntu
+Choose the root filesystem distribution and release (e.g., **jammy Ubuntu**):
 
 ![image-20241025181345456](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181345456.png)
 
-选择我们要构建的根文件系统是否为桌面版，如 **desktop**
+Select the root filesystem type (e.g., **desktop**):
 
 ![image-20241025181414687](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181414687.png)
 
-选择我们要构建的根文件系统的桌面环境，如 **Xfce**
+Choose the desktop environment (e.g., **Xfce**):
 
 ![image-20241025181456150](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181456150.png)
 
-选择我们要构建的根文件系统的桌面环境的配置文件，默认是 **base configuration**
+Select the desktop configuration profile (default: **base configuration**):
 
 ![image-20241025181509226](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181509226.png)
 
-选择我们要构建的根文件系统预装的软件包，使用空格键选中，再按Enter键开始构建过程
+Select pre-installed software packages using the spacebar, then press Enter to start the build. The output image will be saved in `out/images`.
 
-构建完成后镜像保存在out/images目录下
+---
 
-### 单步构建镜像
+### Single-Step Build
 
-对用户而言，如果要对板卡进行二次开发，需要预装应用、修改调试内核等，可能就涉及到了根文件系统或内核的单独构建， 此时就可以选择单步构建的方式。
-
-在aw-image-build根目录运行 **./build.sh** 来进入交互式构建界面
+For customization (e.g., modifying the kernel or root filesystem), use single-step builds. Run `./build.sh` to access the interactive interface.
 
 ![image-20241025182302642](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025182302642.png)
 
-可以看到，除了使用 **Build all step** 进行一键构建以外，还有step1到step4的单步构建选项， 实际上一键构建的过程，就是顺序调用这四部分脚本的过程。
+#### step1.Build Kernel
 
-####  step1.Build Kernel
+Compile the kernel and generate a deb package.
 
-这一步是单独**编译**内核源码并生成内核deb包
+1. Select **step1.Build Kernel** and choose the target board (e.g., **kickpi-k2b Allwinner H618**).
+2. After compilation, transfer the generated `.deb` file to the board and install it:
+   ```
+   $ dpkg -i linux-***.deb
+   ```
+   Reboot the board to apply the new kernel.
 
-运行 **./build.sh** 进入交互式构建界面，选择 **step1.Build Kernel** 再按Enter键进入下一步
+**Modifying Kernel Configuration**
 
-![image-20241025183117623](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025183117623.png)
+1. Navigate to the kernel source directory (see **Compiler kernel path** from build logs):
+   ```
+   cd /home/jiawen/Allwinner/H618/aw-image-build/source/kernel/linux-5.4-h618 
+   ```
+2. Modify the configuration:
+   ```
+   make ARCH=arm64 menuconfig
+   ```
+3. Save and update the board's kernel configuration:
+   ```
+   make ARCH=arm64 savedefconfig
+   cp defconfig arch/arm64/configs/linux_h618_defconfig
+   git diff arch/arm64/configs/linux_h618_defconfig
+   ```
 
-选择我们要**编译**内核的板卡，如 **kickpi-k2b Allwinner H618**
+---
 
-![image-20250512093014049](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512093014049.png)
+#### step2.Build U-boot
 
+Compile U-boot and package it into a deb file.
 
+1. Select **step2.Build U-boot** and choose the target board.
+2. Transfer the generated `.deb` to the board and install it:
+   ```
+   $ dpkg -i lubancat-a1-uboot-xxx.deb
+   ```
+3. Update the bootloader:
+   ```
+   $ sudo nand-sata-install
+   ```
+   Select **5 Install/Update the bootloader on SD/EMMC**, confirm warnings, and reboot.
 
-在构建结束后还会打印一些辅助信息
+---
 
-![image-20250512095408332](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512095408332.png)
+### Compilation Toolchain
 
-- Kernel deb path：构建生成的内核deb文件保存路径
-- Kernel deb name：构建生成的内核deb包名称
-
-将生成的内核deb包传输到正在运行的板卡中， 使用dpkg -i linux-***.deb，然后重启板卡，就可以更新升级内核了
-
-**修改内核配置项**
-
-如果我们想要修改内核配置文件来开启或关闭内核的某项功能，应该如何操作（需先正常编译一次）:
-
-首先我们需要进入内核所在的目录，可以查看构建时的提示信息 **Compiler kernel path** 进入对应的目录
-
+The compiled toolchain is located at:
 ```
-# 进入内核源码目录 
-cd /home/jiawen/Allwinner/H618/aw-image-build/source/kernel/linux-5.4-h618 
-
-# 修改内核配置文件 
-make ARCH=arm64 menuconfig
-
-# 修改完成后保存并退出menuconfig配置页面，此时修改的配置保存在.config中，我们还需要将修改 同步到板卡的内核配置文件中 
-
-# 保存defconfig配置文件 
-make ARCH=arm64 savedefconfig 
-
-# 使用生成的defconfig文件替换板卡配置文件 
-cp defconfig arch/arm64/configs/linux_h618_defconfig 
-
-# 查看板卡配置文件修改的内容 
-git diff arch/arm64/configs/linux_h618_defconfig
-```
-
-至此，板卡的内核配置文件的修改就完成了，我们可以通过构建工具来重新**编译**内核
-
-
-
-####  step2.Build U-boot
-
-这一步是单独**编译**u-boot并将生成的u-boot镜像打包为deb
-
-运行 **./build.sh** 进入交互式构建界面，选择 **step2.Build U-boot** 再按Enter键进入下一步
-
-![image-20250512095441502](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512095441502.png)
-
-选择我们要**编译**u-boot的板卡，如 **kickpi-k2b Allwinner H618**
-
-![image-20250512093014049](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512093014049.png)
-
-结束后还会打印一些辅助信息
-
-![image-20250512095830562](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512095830562.png)
-
-- Target directory：构建生成的u-boot deb文件保存路径
-- File name：构建生成的u-boot deb包名称
-
-将生成的u-boot deb包传输到正在运行的板卡中， 使用dpkg -i lubancat-a1-uboot-xxx.deb将u-boot镜像解压到板卡根文件系统中， 最后还需要使用脚本将u-boot镜像写入进我们存储设备的指定位置覆盖原来的u-boot。
-
-```
-# 使用管理员权限运行脚本 
-sudo nand-sata-install 
-```
-
-![image-20241025183525874](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025183525874.png)
-
-选择选项 **5 Install/Update the bootloader on SD/EMMC **
-
-![image-20241025183646097](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025183646097.png)
-
-遇到警告选yes
-
-![image-20241025183611510](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025183611510.png)
-
-完成后，我们重启板卡即可使用更新后的u-boot
-
-
-
-### 编译工具链
-
-编译完成时会在此目录有编译工具链
-
-``` shell
 aw-image-build/toolchains/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabi/bin
 ```
