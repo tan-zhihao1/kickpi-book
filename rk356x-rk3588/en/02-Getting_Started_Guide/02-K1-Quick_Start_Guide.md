@@ -37,7 +37,7 @@ Additionally, the system heartbeat indicator can be controlled for other functio
 
 ## Display
 
-The K1 motherboard has display interfaces. The number of interfaces and the default compatible display types can be found in the [K1 Hardware Introduction](../01-Introduction to the Motherboard/02-KICKPI-K1 Hardware Introduction.md#display) section. You can connect display peripherals as needed.
+The K1 motherboard has display interfaces. The number of interfaces and the default compatible display types can be found in the [K1 Hardware Introduction](../01-Motherboard_Introduction/02-KICKPI-K1_Hardware_Introduction.md#display) section. You can connect display peripherals as needed.
 
 **All display interfaces on the KICKPI development board are used with the corresponding display adapter boards. The adapter boards will be pre-connected and shipped when you purchase the display.**
 
@@ -47,11 +47,11 @@ The K1 is default compatible with LVDS 7-inch screens, MIPI 5-inch, 8-inch, and 
 
 * Wiring method:
 
-LVDS/MIPI 0 interface: [Flip-down FPC interface](../../../common/zh/display/FPC Interface Introduction#FPC-1)
+LVDS/MIPI 0 interface: [Flip-down FPC interface](../../../common/zh/display/FPC_Interface_Introduction#FPC-1)
 
 ![image-20250512100410963](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512100410963.png)
 
-LVDS/MIPI 1 interface: [Pull-up FPC interface](../../../common/zh/display/FPC Interface Introduction#FPC-2)
+LVDS/MIPI 1 interface: [Pull-up FPC interface](../../../common/zh/display/FPC_Interface_Introduction#FPC-2)
 
 ![image-20250512100640644](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512100640644.png)
 
@@ -59,7 +59,7 @@ LVDS/MIPI 1 interface: [Pull-up FPC interface](../../../common/zh/display/FPC In
 
 The K1 board is designed with one eDP screen interface.
 
-eDP interface: [Flip-down FPC interface](../../../common/zh/display/FPC Interface Introduction#FPC-1)
+eDP interface: [Flip-down FPC interface](../../../common/zh/display/FPC_Interface_Introduction#FPC-1)
 
 ![image-20250512141137367](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512141137367.png)
 
