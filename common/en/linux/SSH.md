@@ -1,41 +1,35 @@
 # SSH
 
-## 支持平台
+## Supported Platforms
 
 Debian / Ubuntu
 
+## **User and Password**
 
+The default usernames and passwords for different systems are as follows:
 
-## **用户及密码**
-
-不同系统的默认用户名和密码如下：
-
-| 系统   | 用户名 | 密码   |
+| System | Username | Password |
 | ------ | ------ | ------ |
 | Debian | linaro | linaro |
-| Debian | root   | root   |
+| Debian | root | root |
 | Ubuntu | kickpi | kickpi |
-| Ubuntu | root   | root   |
+| Ubuntu | root | root |
 
+## **Using SSH**
 
-
-## **SSH使用**
-
-在命令行中输入以下命令进行 SSH 连接：
+Enter the following command in the command line to establish an SSH connection:
 
 ```bash
 $ ssh <username>@<IP>
 ```
 
-**注意事项**
+**Precautions**
 
-- 确保主板网络连接正常。
-- 确保电脑能够正常 ping 通主板的 IP 地址。
-- 确保输入的用户名和密码存在且正确。
+- Ensure that the motherboard is properly connected to the network.
+- Ensure that the computer can successfully ping the IP address of the motherboard.
+- Ensure that the entered username and password exist and are correct.
 
-
-
-示例：
+Example:
 
 ```
 PS C:\Users\16708> ssh kickpi@192.168.77.186
@@ -61,15 +55,13 @@ See "man sudo_root" for details.
 kickpi@kickpi:~$
 ```
 
+## Common Issues
 
+### Problem with Failed Root User Login
 
-## 常见问题
+**1. Confirm Configuration Success**
 
-### ROOT用户登陆失败问题
-
-**1、确认配置是否成功**
-
-运行以下命令，若输出结果为 `PermitRootLogin yes`，则表示配置成功：
+Run the following commands. If the output is `PermitRootLogin yes`, it indicates successful configuration:
 
 ```
 console$ cat /etc/ssh/ssh_config | grep PermitRootLogin
@@ -78,9 +70,9 @@ console$ cat /etc/ssh/sshd_config | grep PermitRootLogin
 PermitRootLogin yes
 ```
 
-**2、root用户登陆配置**
+**2. Root User Login Configuration**
 
-修改 SSH 配置文件：
+Modify the SSH configuration files:
 
 ```bash
 console$ vim /etc/ssh/ssh_config
@@ -89,4 +81,3 @@ console$ vim /etc/ssh/sshd_config
 + PermitRootLogin yes
 console$ sudo /etc/init.d/ssh restart
 ```
-
