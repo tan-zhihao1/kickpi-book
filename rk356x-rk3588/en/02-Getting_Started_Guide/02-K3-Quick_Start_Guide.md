@@ -44,7 +44,7 @@ The display interfaces available on the K3 motherboard can be found in the [K3 H
 
 The K3 is compatible with the LVDS 7-inch screen, MIPI 5-inch, 8-inch, and 10.1-inch screens sold by KICKPI by default.
 
-LVDS/MIPI interface: [Flip-type bottom-connect FPC interface](../../../common/zh/display/FPC Interface Introduction#FPC-1)
+LVDS/MIPI interface: [Flip-type bottom-connect FPC interface](../../../common/zh/display/FPC_Interface_Introduction#FPC-1)
 
 ![image-20250512142600611](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512142600611.png)
 
