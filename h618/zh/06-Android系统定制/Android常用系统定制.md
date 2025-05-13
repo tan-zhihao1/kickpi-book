@@ -95,11 +95,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     #feisi 
     #ro.surface_flinger.primary_display_orientation=ORIENTATION_90
     #ro.surface_flinger.primary_display_orientation=ORIENTATION_270
-
-
 ```
 
+将ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 
+修改为
+
+ro.surface_flinger.primary_display_orientation=ORIENTATION_90
+
+即可修改屏幕默认显示旋转90°
 
 
 
