@@ -1,9 +1,4 @@
-# Inputs
-
-## Relevant code snippets from the current codebase
-filePath: 01-Compilation Environment Setup.md
-```
-# 01-Compilation Environment Setup
+# 01-Compilation_Environment_Setup
 
 
 ## 1. Compilation Environment Setup
@@ -36,5 +31,3 @@ $ sudo pip install pyelftools
 > The names of software packages may change with the updates of the UBUNTU version.
 >
 > If the installation fails on different UBUNTU versions, you can search for corresponding solutions online.
-
-```
