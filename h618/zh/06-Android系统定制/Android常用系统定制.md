@@ -88,7 +88,13 @@ android 为惰性编译，直接替换后编译，一些APP、文件不一定编
 
 ```
 (SDK)$ android/device/softwinner/ceres-c3/ceres_c3.mk
-(SDK)$ 
+
+# set primary display orientation to 270
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+    #feisi 
+    #ro.surface_flinger.primary_display_orientation=ORIENTATION_90
+    #ro.surface_flinger.primary_display_orientation=ORIENTATION_270
 
 
 ```
