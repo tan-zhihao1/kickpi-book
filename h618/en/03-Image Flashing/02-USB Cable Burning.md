@@ -59,7 +59,7 @@ If the board enters burning mode successfully and the PC lacks the USB driver, a
 1. **Compatibility Error**   
 
 Refer to Microsoft’s official solution:  
-https://support.microsoft.com/zh-cn/windows/%E6%97%A0%E6%B3%95%E5%9C%A8%E6%AD%A4%E8%AE%BE%E5%A4%87%E4%B8%8A%E5%8A%A0%E8%BD%BD%E9%A9%B1%E5%8A%A8%E7%A8%8B%E5%BA%8F-8eea34e5-ff4b-16ec-870d-61a4a43b3dd5  
+[A driver can't load on this device - Microsoft Support](https://support.microsoft.com/en-us/windows/a-driver-can-t-load-on-this-device-8eea34e5-ff4b-16ec-870d-61a4a43b3dd5)
 
   
 
