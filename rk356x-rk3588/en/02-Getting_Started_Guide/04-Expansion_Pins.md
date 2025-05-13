@@ -141,7 +141,7 @@ $ find /sys/devices/ | grep pwmchip | grep uevent
 
 ## ADC
 
-The expansion pins of the mainboard are equipped with ADC. You can view the corresponding ADC position and channel number through the [Expansion Pins section](#ExpansionPin-K7).
+The expansion pins of the mainboard are equipped with ADC. You can view the corresponding ADC position and channel number through the [Expansion Pins section](#ExpansionPin).
 
 The following uses `SARADC_VIN3` as an example for illustration.
 
