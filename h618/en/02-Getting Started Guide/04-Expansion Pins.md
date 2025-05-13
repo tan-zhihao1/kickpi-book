@@ -16,10 +16,6 @@ Connect using a serial port tool.
 
 **Software Testing Methods**
 
-*PC Serial Port Configuration*
-
-*Mainboard Serial Port Configuration*
-
 `ttyAS5` corresponds to serial port 5 (pins PH2 and PH3) with a baud rate of 115200.
 
 ```shell
