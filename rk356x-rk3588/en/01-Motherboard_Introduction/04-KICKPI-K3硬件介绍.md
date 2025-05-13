@@ -1,28 +1,25 @@
-# 04-KICKPI-K3硬件介绍
+# 04-KICKPI-K3_Hardware_Introduction
 
 
 
-## 主控信息
+
+## Main Controller Information
 
 ![image-20231214152205552](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231214152205552.png)
 
-
-
-## 开发板信息
+## Development Board Information
 
 ![image-20250222171213291](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222171213291.png)
 
+## Accessory List
 
+### Display <a id="display"> </a>
 
-## 配件列表
-
-### 显示屏<a id="display"> </a>
-
-K3 主板可接的显示屏接口有：一路MIPI/LVDS接口（翻盖式FPC接口） DUAL LVDS接口
+The display interfaces that the K3 main board can connect to are: one MIPI/LVDS interface (flip-type FPC interface) and a DUAL LVDS interface.
 
 * MIPI-DSI
 
-K3 默认适配的MIPI屏
+The MIPI screens that K3 is default compatible with:
 
 | **MIPI Panel Model** | **Diagonal Size** | **Resolution** |
 | -------------------- | ----------------- | -------------- |
@@ -33,7 +30,7 @@ K3 默认适配的MIPI屏
 
 * LVDS
 
-K3 默认适配的LVDS屏
+The LVDS screens that K3 is default compatible with:
 
 | **LVDS Panel Model** | **Diagonal Size** | **Resolution** |
 | -------------------- | ----------------- | -------------- |
@@ -42,8 +39,8 @@ K3 默认适配的LVDS屏
 
 * DUAL LVDS
 
-K3 默认适配的DUAL LVDS屏
+The DUAL LVDS screens that K3 is default compatible with:
 
-| DUAL  **LVDS Panel Model** | **Diagonal Size** | **Resolution** |
+| DUAL **LVDS Panel Model** | **Diagonal Size** | **Resolution** |
 | -------------------------- | ----------------- | -------------- |
 | DV320FHB                   | 32-inch           | 1920x1080      |
