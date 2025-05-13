@@ -94,7 +94,7 @@ Steps:
 1. Click **Yes** to begin.  
 2. Wait for the progress bar to complete.  
 3. The board will reboot automatically after burning.  
-![image-20240306171455427](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306171455427.png)  
+![image-20250219160856586](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160856586.png)  
 
 ---
 
