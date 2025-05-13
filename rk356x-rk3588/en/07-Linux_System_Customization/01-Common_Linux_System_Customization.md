@@ -1,5 +1,7 @@
 # 01-Common_Linux_System_Customization
 
+
+
 ## Boot Autostart Programs
 
 ### Boot Autostart Script
@@ -23,6 +25,8 @@ $ chmod +x /etc/init.d/kickpi.sh
 
 > Add the boot autostart program commands to the `kickpi.sh` script to achieve boot autostart.
 
+
+
 ## Modify Serial Port Auto-Login User
 
 By default, the serial port auto-logs in as the `root` user. The following example shows how to change it to `kickpi`:
@@ -32,6 +36,8 @@ $ vim /lib/systemd/system/serial-getty@.service
 -ExecStart=-/sbin/agetty --autologin root --keep-baud 115200,38400,9600 %I $TERM
 +ExecStart=-/sbin/agetty --autologin kickpi --keep-baud 115200,38400,9600 %I $TERM
 ```
+
+
 
 ## Language Configuration
 
@@ -61,6 +67,8 @@ $ echo "export LANG=zh_CN.UTF-8" >> /etc/profile.d/zh_CN.sh
 $ echo "export LANGUAGE=zh_CN:zh" >> /etc/profile.d/zh_CN.sh
 ```
 
+
+
 ## Time Zone Configuration
 
 > After executing the commands, restart the system for the changes to take effect.
@@ -76,6 +84,8 @@ $ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 $ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 ```
+
+
 
 ## Configure Screen Display Orientation
 
@@ -195,6 +205,8 @@ $ xinput_calibrator -v --device $id
 
 You can refer to the LCD configuration document: [Single Touch Screen Driver Configuration](40-RK3568 LCD configuration.md#TouchDriver)
 
+
+
 ## Network Configuration
 
 ### Static IP Address Configuration
@@ -287,6 +299,8 @@ $ ifconfig <dev> up
 ```
 
 > Different operating systems may have some differences. Some systems may not allow you to directly set the MAC address through `ifconfig`, or additional steps may be required.
+
+
 
 ## Command-Line Configuration of WIFI Hotspot (AP) Mode
 
@@ -431,6 +445,8 @@ Create a hotspot named `MyAccessPoint` with a password of `12345678` and share t
 $ sudo create_ap --no-virt wlan0 eth0 MyAccessPoint 12345678 &
 ```
 
+
+
 ## NFS Configuration
 
 Environment configuration:
@@ -490,6 +506,8 @@ $ ls nfs_tmp/
 1.txt
 ```
 
+
+
 ## Mirror Source Settings
 
 Check the software version and find the mirror source to replace according to the version:
@@ -511,6 +529,8 @@ $ sudo apt update
 ```
 
 Note: Use the ARM mirror source.
+
+
 
 ## Chrome Hardware Acceleration Test
 
@@ -581,6 +601,8 @@ Log snippet of the test results for each frame decoding time:
 [  939.058137] rk_vcodec: fdf80200.rkvdec:0 session 2799:80 time: 96464 us hw 32684 us
 ```
 
+
+
 ## SSH Configuration
 
 ```
@@ -614,6 +636,8 @@ $ cat /etc/ssh/sshd_config | grep PermitRootLogin
 PermitRootLogin yes
 ```
 
+
+
 ## USB Camera
 
 **Check the camera device nodes**
@@ -636,11 +660,15 @@ Example:
 $ ffplay -f v4l2 -i /dev/video1
 ```
 
+
+
 ## The File Manager in the Touch Screen GUI Cannot Open Files
 
 1. Open the desktop `Home` and enter the file manager.
 2. Click the second option in the upper right corner: `Edit` >> `Preferences...`
 3. On the `Preferences` interface, go to the third page `Navigation` and select `Single click to activate items`.
+
+
 
 ## Install Software Packages from the Official Ubuntu Website
 
@@ -654,6 +682,8 @@ sudo dpkg -i *.deb
 The website is [https://ubuntu.pkgs.org/20.04/ubuntu-main-arm64/gcc-9_9.3.0-10ubuntu2_arm64.deb.html](https://ubuntu.pkgs.org/20.04/ubuntu-main-arm64/gcc-9_9.3.0-10ubuntu2_arm64.deb.html). You can directly search for the name of the required dependency package.
 
 ![f78e90f7748d198d11dbbd163bb33a9](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/f78e90f7748d198d11dbbd163bb33a9.png)
+
+
 
 ## Backup the rootfs System
 
@@ -679,6 +709,8 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 > `/mnt/usb` is the mount directory of the USB drive.
 
 For the board that needs to replace this system, you can burn the rootfs separately. If you need to repackage it into a complete image, refer to [Firmware Unpacking and Packing](../08-Advanced/03-Firmware Unpacking and Packing.md).
+
+
 
 ## Enter the root User in the Ubuntu Desktop Edition
 
@@ -708,6 +740,8 @@ $ su
 ```
 
 Enter the password you just set, and the current Terminal will enter the root user mode.
+
+
 
 ## Enter the Linux Command-Line Interface
 
