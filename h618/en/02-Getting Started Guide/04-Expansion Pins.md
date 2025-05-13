@@ -114,6 +114,8 @@ vim source/kernel/linux-5.4-h618/arch/arm64/boot/dts/sunxi/sun50iw9-kickpi-k2b.d
 cat /sys/kernel/debug/pinctrl/300b000.pinctrl/pinmux-pins | grep PH
 ```
 
+![image-20250326142700157](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250326142700157.png)
+
 **Step 4: Export and control GPIO (e.g., PH2=226, PH3=227):**
 
 ![image-20250326142738724](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250326142738724.png)
