@@ -1,12 +1,12 @@
 # GPIO
 
-GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树这部分修改的示例，供参考修改
+Common GPIO configurations are typically set as LED outputs or key inputs. The following are examples of modifying this part of the device tree for reference.
 
-注意：任何IO都只能配置一种功能，如果要修改已经有使用的IO需要找到对应位置注释掉原本的使用
+Note: Any IO can only be configured with one function. If you need to modify an already used IO, you need to find the corresponding position and comment out the original usage.
 
-## LED配置
+## LED Configuration
 
-例如：将K1拓展引脚上的GPIO1_D4配置成LED，可以参考下面的修改
+For example, to configure GPIO1_D4 on the K1 expansion pin as an LED, you can refer to the following modifications.
 
 ```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
@@ -25,9 +25,9 @@ GPIO常用配置一般是配成LED输出或者key输入，下面是对设备树�
 
 ```
 
-**测试**
+**Testing**
 
-* 查看GPIO注册列表
+* View the GPIO registration list
 
 ```
 $ ls /sys/class/leds/
@@ -36,18 +36,16 @@ gpio1b0/ gpio1b2/ gpio1d4/ gpio3b6/
 gpio1a4/ gpio1b1/ gpio1d0/ gpio3b5/ gpio4c4/
 ```
 
-* 命令行控制GPIO
+* Control the GPIO from the command line
 
 ```
 $ echo 1 > /sys/class/leds/gpio1d4/brightness
 $ echo 0 > /sys/class/leds/gpio1d4/brightness
 ```
 
+## gpio-key Configuration
 
-
-## gpio-key配置
-
-例如：将K1拓展引脚上的GPIO1_D4配置成KEY_1，可以参考下面的修改
+For example, to configure GPIO1_D4 on the K1 expansion pin as KEY_1, you can refer to the following modifications.
 
 ```diff
 --- a/kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-extend-40pin.dtsi
@@ -95,15 +93,15 @@ $ echo 0 > /sys/class/leds/gpio1d4/brightness
 (END)
 ```
 
-其中code值可以参考驱动中的宏定义
+The code values can be referred to in the macro definitions in the driver.
 
 ```
 rk356x-linux\kernel\include\uapi\linux\input-event-codes.h
 ```
 
-**测试**
+**Testing**
 
-* Android测试使用命令getevent:
+* Use the command `getevent` for Android testing:
 
 ```
 console:/ # getevent
@@ -122,7 +120,7 @@ add device 4: /dev/input/event1
 /dev/input/event2: 0003 0032 0000001e
 ```
 
-* Linux测试使用evtest：
+* Use `evtest` for Linux testing:
 
 ```
 root@ubuntu2004:~# evtest 
@@ -163,53 +161,51 @@ Event: time 1699275783.647094, -------------- SYN_REPORT ------------
 
 ```
 
+## sys GPIO Control
 
+When a GPIO is not in use, it can be controlled through `/sys/class/gpio`.
 
-## sys gpio控制
+**PIN Calculation**
 
-当GPIO没有任何使用时，可以通过 /sys/class/gpio 进行控制
-
-**PIN 脚计算**
-
-GPIO1-D0 (gpio1-24)为例：
+Take GPIO1-D0 (gpio1-24) as an example:
 
 ```
-每组GPIO有32位：0-32
-A（0-7）B（8-15）C（16-23）D（24-31）
-GPIO1-D0  计算 Pin num = 32 * 1 + 24 = 56
+Each GPIO group has 32 bits: 0 - 32
+A (0 - 7) B (8 - 15) C (16 - 23) D (24 - 31)
+For GPIO1-D0, calculate the Pin num = 32 * 1 + 24 = 56
 ```
 
-**步骤一 确保GPIO没有任何使用**
+**Step 1: Ensure the GPIO is not in use**
 
-先将对应GPIO引脚注释，`/sys/class/gpio/export` 只能导入未注册的 gpio，将设备树对应IO取消使能
+First, comment out the corresponding GPIO pin. `/sys/class/gpio/export` can only import unregistered GPIOs. Disable the corresponding IO in the device tree.
 
-**步骤二 编译镜像，重新烧录**
+**Step 2: Compile the image and re-flash**
 
-**步骤三 确认gpio未被注册**
+**Step 3: Confirm the GPIO is not registered**
 
 ```
 cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins
 ```
 
-> 未注册如下：pin 56 (gpio1-24): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+> If not registered, it will be as follows: pin 56 (gpio1-24): (MUX UNCLAIMED) (GPIO UNCLAIMED)
 
-**步骤四 对IO口进行控制**
+**Step 4: Control the IO port**
 
-通过 /sys/class/gpio/export 注册 56并进行控制
+Register 56 through `/sys/class/gpio/export` and control it.
 
 ```
-// 注册
+// Register
 root@kickpi:~# echo  56 > /sys/class/gpio/export
-// 查看是否生成
+// Check if it is generated
 root@kickpi:~# ls /sys/class/gpio/
 export  gpio56  gpiochip0  gpiochip352  unexport
-// 注册后的结点内容
+// Contents of the node after registration
 root@kickpi:~# ls /sys/class/gpio/gpio56
 active_low  device  direction  edge  power  subsystem  uevent  value
 root@kickpi:~#
 ```
 
-通过结点下的内容控制 gpio , 常用如下
+Control the GPIO through the contents under the node. Commonly used ones are as follows:
 
 ```
 direction
@@ -218,8 +214,7 @@ direction
 	echo out > /sys/class/gpio/gpio56/direction
 value
 	0 / 1
-	cat /sys/class/gpio/gpio56/value 		// 读取
-	echo 1 > /sys/class/gpio/gpio56/value	// 配置高电平
-	echo 0 > /sys/class/gpio/gpio56/value  // 配置低电平
+	cat /sys/class/gpio/gpio56/value 		// Read
+	echo 1 > /sys/class/gpio/gpio56/value	// Configure high level
+	echo 0 > /sys/class/gpio/gpio56/value  // Configure low level
 ```
-
