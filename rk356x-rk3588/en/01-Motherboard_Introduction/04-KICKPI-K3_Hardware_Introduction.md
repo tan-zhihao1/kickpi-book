@@ -27,4 +27,3 @@ The MIPI screens that K8 is default - adapted to:
 | MX080B2140           | 8.0 - inch        | 800x1280       |
 | F050008M01           | 5.0 - inch        | 720x1280       |
 
-![WeChat Image_20250508154222](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/微信图片_20250508154222.jpg)
