@@ -13,13 +13,13 @@ This guide is designed to help users quickly get started with the motherboard, i
 K2B supports TYPE-C 5V power supply, as shown in the following figure:
 
 
-![image-20250426165041732](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426165041732.png)
+![TYPE-C 5V](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426165041732.png)
 
 **K2C**
 
 K2C supports DC 12V power supply, as shown in the following figure:
 
-![image-20250426165015167](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426165015167.png)
+![DC 12V](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426165015167.png)
 
 ### LED Status  
 - **Green LED**: Power indicator (steady on when powered).  
@@ -34,7 +34,7 @@ K2C supports DC 12V power supply, as shown in the following figure:
 
 Supports HDMI output:
 
-![image-20250426171612371](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426171612371.png)
+![HDMI](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426171612371.png)
 
 
 
