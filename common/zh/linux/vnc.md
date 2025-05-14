@@ -42,15 +42,16 @@ root@linaro-alip:/#
 
 
 
-**启动VNC服务器**
+**配置VNC服务**
 
 ```
-sudo nano /etc/systemd/system/vncserver@.service
+sudo vim /etc/systemd/system/vncserver@.service
 ```
 
 
 
 ```
+x console$ vncpasswd
 [Unit]  
 Description=Remote desktop service (VNC)  
 After=syslog.target network.target  
