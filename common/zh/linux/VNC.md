@@ -96,6 +96,8 @@ console$ sudo systemctl disable vncserver@1.service
 4. 输入端口号
 5. 启动会话窗口
 
+![image-20250514194756724](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250514194756724.png)
+
 ![image-20250421141430650](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421141430650.png)
 
 6. 输入密码，点击OK
