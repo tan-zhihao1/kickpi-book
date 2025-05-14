@@ -10,7 +10,7 @@
 
 ## Accessory List
 
-![20250508154136](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/微信图片_20250508154136.jpg)
+
 
 ## Expansion Pins
 
