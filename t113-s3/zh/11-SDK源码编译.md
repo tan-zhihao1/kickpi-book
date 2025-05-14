@@ -145,7 +145,8 @@ which board would you like (1-2):
 * 编译镜像
 
 ```shell
-$ ./build.sh && ./build.sh pack
+./build.sh       \\编译
+./build.sh pack  \\打包生成镜像
 ```
 
 > 镜像生成目录：out/t113_linux_evb1_auto_uart0.img

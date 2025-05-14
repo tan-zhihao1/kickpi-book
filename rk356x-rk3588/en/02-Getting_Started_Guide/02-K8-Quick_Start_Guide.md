@@ -37,7 +37,7 @@ In addition, the system heartbeat indicator can be controlled for other function
 
 ## Display
 
-The K8 motherboard has display interfaces. You can check the number of interfaces and the default compatible display types in the [K8 Hardware Introduction](../01-Motherboard_Introduction/05-KICKPI-K8_Hardware_Introduction.md#display) section. You can connect display peripherals as needed.
+The K8 motherboard has display interfaces. You can check the number of interfaces and the default compatible display types in the [K8 Hardware Introduction](../01-Development_board_Introduction/05-KICKPI-K8_Hardware_Introduction.md#display) section. You can connect display peripherals as needed.
 
 **The display interfaces of the KICKPI development board are all used with corresponding display adapter boards. The adapter boards will be pre-connected and shipped when you purchase the display.**
 
