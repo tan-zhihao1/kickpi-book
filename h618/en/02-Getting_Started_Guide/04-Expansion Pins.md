@@ -91,13 +91,14 @@ gpio pwm 3 1024 //Set CCR to 1024 Duty cycle to 1024/2048=50%
 
 ``` shell
 gpio mode 3 pwm //The default output frequency is 23475Hz
-gpio pwmc 3 5   //设置分频系数为5 则输出频率为23475/5=4695Hz，实际频率为4688Hz 误差可忽略
+//Set the frequency division coefficient to 5, then the output frequency is 23475/5=4695Hz, the actual frequency is 4688Hz, the error can be ignored
+gpio pwmc 3 5   
 ```
 
 ![image-20250514115800211](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115800211.png)
 
 ``` shell
-gpio pwmTone 3 20000 //直接设置频率为20000Hz
+gpio pwmTone 3 20000 //Directly set the frequency to 20000Hz
 ```
 
 ![image-20250514115920195](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115920195.png)
