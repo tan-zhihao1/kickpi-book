@@ -4,14 +4,6 @@ This document aims to help users quickly get started or test the functions of th
 
 
 
-## Symbol Explanation
-
-* `SDK$`: Represents the source code path.
-* `console$`: Generally refers to the command-line console of the motherboard. [Motherboard command-line console](../02-Getting Started/02-Quick Start.md#console_readme)
-* `ADB$`: Android Debug Bridge command-line tool, generally referring to an environment where ADB can be run.
-
-
-
 ## LED
 
 There are 2 LED indicators on the motherboard:
@@ -56,15 +48,11 @@ The motherboard is equipped with two Gigabit Ethernet interfaces. After connecti
 
 ![K7-ETH](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250409105330162.png)
 
-Debian Desktop
+**Debian Desktop**
 
 ![image-20250427161324832](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250427161326046.png)
 
-View network configuration via the command line
 
-```
-$ ifconfig -a
-```
 
 ## USB
 
@@ -93,7 +81,7 @@ The motherboard is equipped with one 3.5mm headphone jack.
 
 ![image-20250110152818915](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110152818915.png)
 
-Debian Desktop
+**Debian Desktop**
 
 ![image-20250421151540565](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421151540565.png)
 

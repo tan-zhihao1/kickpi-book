@@ -69,14 +69,14 @@ root@kickpi:~# gpio mode 3 pwm #Default output frequency 23475Hz Square wave wit
 
 **调节占空比**
 
-PWM占空比 = CCR/ARR
+PWM duty cycle = CCR/ARR
 
-CCR范围0~65535 默认512
+CCR range: 0~65535 (default 512)
 
-ARR范围1~65536 默认1024
+ARR range: 1~65536 (default 1024)
 
 ``` shell
-gpio pwmr 3 2048 //设置ARR为2048 占空比为512/2048=25%
+gpio pwmr 3 2048 //Set ARR to 2048 Duty cycle to 512/2048=25%
 ```
 
 ![image-20250514115347443](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115347443.png)
