@@ -6,7 +6,7 @@
 
 ## Development Board Information
 
-![3](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/3.jpg)
+![image-20250514095329088](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514095329088.png)
 
 ## Accessories List
 
