@@ -1,4 +1,4 @@
-# 04-DeepSeek Large Model
+# 04-Linux_DeepSeek_Large_Model
 
 This article will explain how to use RKLLM to deploy the refined model DeepSeek-R1-Distill-Qwen-1.5B to the Rockchip platform and utilize the NPU for hardware-accelerated inference.
 

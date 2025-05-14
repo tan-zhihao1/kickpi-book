@@ -1,4 +1,4 @@
-# 05-Linux_VNC Remote Control
+# 05-Linux_VNC_Remote_Control
 
 VNC (Virtual Network Computing) is a graphical desktop sharing system based on the Remote Frame Buffer protocol (RFB). It allows users to connect to a remote computer over the network and operate the desktop of the remote computer as if it were a local one.
 
