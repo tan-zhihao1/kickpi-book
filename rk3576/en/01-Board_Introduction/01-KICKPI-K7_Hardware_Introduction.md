@@ -12,7 +12,7 @@
 
 
 
-## Expansion Pins
+## Expansion Pins Information
 
 **K7 Expansion Pin List**
 
