@@ -1,6 +1,6 @@
 # 01-KICKPI-K7 Hardware Introduction
 
-## Main Controller Information
+## SOC Information
 
 ![image-20250110141815408](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110141815408.png)
 
