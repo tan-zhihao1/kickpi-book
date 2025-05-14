@@ -99,8 +99,6 @@ This document is used for users to burn or upgrade the motherboard system.
 2. Open the Device Manager on your computer.
 3. If you can see the USB device, it means the USB driver is installed successfully.
 
-![image-20241025101105194](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101105194.png)
-
 If the "Class for rockusb devices" cannot be recognized, you can try the following steps:
 
 1. Open `DriverInstall.exe`, try to uninstall the driver, and then install the driver again. [USB driver installation](#USBDRV)
