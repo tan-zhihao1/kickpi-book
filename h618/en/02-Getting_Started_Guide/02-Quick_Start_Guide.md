@@ -1,4 +1,4 @@
-# 02-Quick_Start
+# 02-Quick_Start_Guide
 
 This guide is designed to help users quickly get started with the motherboard, including board power-on, display connection, debug serial port, ADB, SSH connection, and other contents.
 
