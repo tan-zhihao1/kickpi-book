@@ -208,11 +208,11 @@ Test steps:
 
 The motherboard is equipped with one fan interface. The fan is turned on by default after power-on.
 
-### Hardware Wiring
+**Hardware Wiring**
 
 ![image-20250110153117263](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110153117263.png)
 
-### Switch Control
+**Switch Control**
 
 Turn on the fan
 
@@ -230,7 +230,7 @@ console$ echo 0 > /sys/class/leds/fan/brightness
 
 The motherboard is equipped with one PCIE 2.0 M.2 SSD hard drive interface, which can be connected to a hard drive for file read and write operations.
 
-### Hardware Wiring
+**Hardware Wiring**
 
 ![image-20250110153138855](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110153138855.png)
 
@@ -246,7 +246,7 @@ AV1 Main10 L5.3: 4K 120fps
 4K@60fps video encoders for H.264/H.265
 ```
 
-### Debug Information
+**Debug Information**
 
 Enable debug information
 
@@ -267,11 +267,11 @@ $ export mpp_syslog_perror=0
 $ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 ```
 
-### Debian / Ubuntu
+**Debian / Ubuntu**
 
 Rockchip provides MPP-related tools for use.
 
-### Hardware Encoding Test
+**Hardware Encoding Test**
 
 mpi_enc_test
 
@@ -325,7 +325,7 @@ $ mpi_enc_test -w 4096 -h 2160 -t 16777220 -o ./test.h265 -n 100
 >
 > kickpi mpp[3560]: mpi_enc_test: chn 0 encode 100 frames time 4086 ms delay  36 ms fps 24.47 bps 19594276
 
-### Hardware Decoding Test
+**Hardware Decoding Test**
 
 mpi_dec_test
 
@@ -369,7 +369,7 @@ $ mpi_dec_test -t 16777220 -i test.h265 -n 100
 >
 > kickpi mpp[3569]: mpi_dec_test: decode 100 frames time 803 ms delay  49 ms fps 124.47
 
-### Chromium Video Test
+**Chromium Video Test**
 
 Connect the board to a display device, open a virtual terminal or a debug serial terminal, and execute the following command to start the Chromium video test.
 
@@ -387,7 +387,7 @@ $ source /rockchip-test/chromium/chromium_mpp_fix.sh
 
 > After configuration, Chromium can call hardware decoding by default.
 
-### GStreamer Video Test
+**GStreamer Video Test**
 
 ```
 sudo GST_DEBUG=2 gst-launch-1.0 playbin uri=file:///usr/local/test.mp4 video-sink="autovideosink" audio-sink=fakesink
@@ -415,7 +415,7 @@ Support int4/int8/int16/FP16/BF16/TF32
 Support deep learning frameworks: TensorFlow, Caffe, Tflite, Pytorch, Onnx NN, Android NN, etc
 ```
 
-### Debian / Ubuntu
+**Debian / Ubuntu**
 
 Rockchip provides NPU test scripts.
 
@@ -491,7 +491,7 @@ Begin perf ...
 
 ## GPU
 
-### Check GPU Utilization
+**Check GPU Utilization**
 
 ```
 console$ cat /sys/devices/platform/*gpu/utilisation
@@ -503,7 +503,7 @@ console$ cat /sys/devices/platform/*gpu/utilisation
 >
 > Move the mouse or drag the window to check the GPU utilization to determine if hardware acceleration is working.
 
-### GLmark2 Performance Test
+**GLmark2 Performance Test**
 
 Rockchip provides GPU test scripts.
 
