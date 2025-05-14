@@ -82,13 +82,13 @@ console$ sudo systemctl disable vncserver@1.service
 
 ## Windows连接VNC
 
-vnc软件下载
+**RealVNC软件下载**
 
 [Download VNC Viewer by RealVNC®](https://www.realvnc.com/en/connect/download/viewer/?lai_vid=EW3mEzvVmIeJO&lai_sr=10-14&lai_sl=l)
 
 
 
-**Mobaxterm操作步骤**
+**RealVNC操作步骤**
 
 1. 新建会话窗口
 2. 选择会话窗口类型为VNC
