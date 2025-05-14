@@ -1,5 +1,7 @@
 # VNC
 
+VNC（Virtual Network Computing）是一种基于远程帧缓冲协议（RFB）的图形桌面共享系统，它允许用户通过网络连接到远程计算机，并像操作本地计算机一样操作远程计算机的桌面。
+
 
 
 **TigerVNC**
