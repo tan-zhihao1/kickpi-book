@@ -133,7 +133,7 @@ adb shell ls /sdcard
 
 ### 应用管理
 
-> 仅 Android 平台
+> 仅 Android 平台支持
 
 **安装应用**
 
@@ -185,7 +185,7 @@ adb shell
 
 **查看系统日志**
 
-> 仅 Android 平台
+> 仅 Android 平台支持
 
 ```bash
 adb logcat
@@ -195,7 +195,7 @@ adb logcat
 
 **屏幕截图**
 
-> 仅 Android 平台
+> 仅 Android 平台支持
 
 ```bash
 adb shell screencap -p /sdcard/screenshot.png
