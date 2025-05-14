@@ -155,7 +155,7 @@ If the MIPI screen cannot display, you can check if the wiring is correct and if
 
 **Solution**:
 
-- If the backlight is not lit, check the wiring. [MIPI_DSI Wiring](#MIPIDSI)
+- If the backlight is not lit, check the wiring.
 - If the backlight is lit, check the software. (K7 V1.2 does not support automatic recognition of MIPI screens yet. Different software needs to be flashed for corresponding screens.)
 
 ### **Abnormal Use of the Debugging Serial Port**

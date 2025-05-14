@@ -19,6 +19,8 @@ Tool download path:
 
 Extract `wiringKP.tar.gz` on the board. Place executables and libraries into `/usr/bin` and `/usr/lib`.
 
+**Example Usage**  
+
 ```shell
 gpio readall // Get all pin status
 ```
@@ -31,7 +33,6 @@ gpio mode <wPi> <mode> // Set pin mode (supports out/in/up/down)
 gpio write <wPi> <val> // Set pin output level
 ```
 
-**Example Usage**  
 Set PH5 to output mode and output high level (Note: PC pins output 1.8V, PH pins output 3.3V):
 
 ```shell
@@ -202,9 +203,7 @@ Receive data:
 cat /dev/ttyAS5 
 ```
 
----
 
-## 
 
 
 
