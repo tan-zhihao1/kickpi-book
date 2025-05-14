@@ -54,7 +54,7 @@ For function customization, please contact technical support.
 **2-Image**
 
 It supports system images for Android14, Debian12, and Ubuntu2404.
-Update the motherboard's system by burning the image. Refer to the "Image Burning" section for instructions.
+Update the motherboard's system by burning the image. Refer to the "Image Flashing" section for instructions.
 
 **3-SoftwareData**
 
