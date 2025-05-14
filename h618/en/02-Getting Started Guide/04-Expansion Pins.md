@@ -40,8 +40,6 @@ cat /dev/ttyAS5
 
 ### WiringKP Tool Usage
 
-> Board: K2B
-
 Tool download path: 
 `h618_data\3-SoftwareData\GPIO_tools`
 
