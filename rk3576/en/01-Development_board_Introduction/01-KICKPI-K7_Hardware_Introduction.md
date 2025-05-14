@@ -1,4 +1,4 @@
-# 01-KICKPI-K7 Hardware Introduction
+# 01-KICKPI-K7_Hardware_Introduction
 
 ## SOC Information
 
