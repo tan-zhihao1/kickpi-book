@@ -1,4 +1,4 @@
-# 02-KICKPI-K2B Hardware Introduction
+# 02-KICKPI-K2B_Hardware_Introduction
 
 ## Controller Information
 
