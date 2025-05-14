@@ -70,8 +70,6 @@ switching to board: /home/huangcm/A/sdk/rk3576-android14.0/device/rockchip/rk357
 
 ### Full Compilation
 
-> Note: Ensure the hardware requirements for compilation and the successful [setup of the compilation environment](01-Compilation Environment Setup#BuildEnv-K7).
-
 Standard image
 
 ```
