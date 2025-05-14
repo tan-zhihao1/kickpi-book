@@ -1,4 +1,4 @@
-# 01-Obtain Image Files
+# 01-How_to_Get_Image_File
 
 Image files can be obtained in the following two ways: downloading from the cloud disk and compiling the SDK.
 

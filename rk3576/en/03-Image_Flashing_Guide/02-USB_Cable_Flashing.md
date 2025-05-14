@@ -1,4 +1,4 @@
-# 02-USB Cable Image Burning
+# 02-USB_Cable_Flashing
 
 This document is used for users to burn or upgrade the motherboard system.
 
