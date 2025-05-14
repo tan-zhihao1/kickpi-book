@@ -45,6 +45,12 @@ root@linaro-alip:/#
 **启动VNC服务器**
 
 ```
+sudo nano /etc/systemd/system/vncserver@.service
+```
+
+
+
+```
 [Unit]  
 Description=Remote desktop service (VNC)  
 After=syslog.target network.target  
@@ -58,7 +64,7 @@ ExecStart=/usr/bin/vncserver :%i -geometry 1920x1080 -depth 24
 ExecStop=/usr/bin/vncserver -kill :%i  
 
 [Install]  
-WantedBy=multi-user.target  
+WantedBy=multi-user.target
 ```
 
 示例：
