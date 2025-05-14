@@ -53,7 +53,7 @@ Set to **115200**.
 - Black: GND  
 - Red: VCC (do not connect)
 
-![image-20241231145656021](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241231145656021.png)
+![Serial port cable](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241231145656021.png)
 
 ### Board DEBUG Pins
 
