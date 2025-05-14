@@ -16,7 +16,7 @@
 
 ## 配件列表
 
-![K2B详情页_13](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K2B详情页_13.png)
+![Accessories](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K2B详情页_13.png)
 
 
 
