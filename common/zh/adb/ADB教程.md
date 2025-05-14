@@ -26,7 +26,7 @@ ADB软件工具从KICKPI网盘中获取，Windows x64平台使用，位于网盘
 
 **安装步骤**
 
-1. 解压 `adb - tools.rar` 压缩包，如解压到 `D:\ADB Tool\adb - tools` 路径。
+1. 解压 `adb-tools.rar` 压缩包，如解压到 `D:\ADB Tool\adb-tools` 路径。
 2. 打开命令行窗口，切换到解压目录：
 
 ```
