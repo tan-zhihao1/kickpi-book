@@ -17,9 +17,7 @@ sudo apt-get install libasound2-dev libgstreamer1.0-dev libgstreamer-plugins-bas
 sudo apt install clang libclang-dev
 ```
 
-[qt不在维护版本](https://download.qt.io/new_archive/qt/)
 
-[qt在维护版本](https://download.qt.io/official_releases/qt/)
 
 推荐使用qt5.12.2 qtcreator 4.11.1
 
