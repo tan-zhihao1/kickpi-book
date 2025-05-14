@@ -1,7 +1,7 @@
 
 # 01-Cloud Drive Introduction
 
-The KICKPI development materials are distributed via cloud drives, supporting both BaiduNetdisk and OneDrive.
+The KICKPI development materials are distributed via cloud drives, supporting both Baidu Cloud Drive and OneDrive.
 
 The contents of the two cloud drive materials are identical. You can choose according to your actual situation.
 
