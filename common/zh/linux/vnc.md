@@ -35,14 +35,6 @@ console$ vncpasswd
 ```
 root@linaro-alip:/# vncpasswd  
 Password:
-Password must be at least 6 characters - try again
-Password:
-Verify:
-Passwords don't match - try again
-Password:
-Verify:
-Passwords don't match - try again
-Password:
 Verify:
 Would you like to enter a view-only password (y/n)? y
 Password:
