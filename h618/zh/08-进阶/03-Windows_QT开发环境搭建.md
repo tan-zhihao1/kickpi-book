@@ -1,4 +1,4 @@
-# 03-Windows_QT开发环境搭建
+# Windows_QT开发环境搭建
 
 Windows10/11下交叉编译aarch64(ARMv8)架构Qt5.12.10
 
