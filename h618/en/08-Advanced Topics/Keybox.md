@@ -13,6 +13,7 @@ Due to limited efuse space, Tina supports the Keybox Secure Storage feature by d
 U-Boot loads keys into Secure OS based on the `keybox_list` environment variable. Configure this variable in the `env.cfg` file using comma-separated key names.  
 
 **Example**: Add a custom key name `xie`:  
+
 ```diff
 --- a/device/config/chips/h618/configs/default/env.cfg
 +++ b/device/config/chips/h618/configs/default/env.cfg
@@ -208,10 +209,17 @@ Use the **DragonSN** tool to burn keyboxes via USB.
 
 2. Configure key settings:  
    - Select **Key Configuration**:  
-     ![image-20250318152340301](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152340301.png)  
+     ![image-20250514092816895](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514092816895.png)  
+   
+   
+
+   ![image-20250514093013109](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514093013109.png)
+   
+   
+   
    - Add key entry (`xie` in this example):  
      ![image-20250318152922597](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250318152922597.png)  
-
+   
 3. Select key file and burn options:  
    - Enable **Erase Before Burn** and **Power Off After Burn** (for production).  
    - Select key file:  
