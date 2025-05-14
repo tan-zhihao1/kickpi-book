@@ -16,8 +16,6 @@ h618_data\3-SoftwareData\Qt_environment_installation
 
 ![image-20250305154700903](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250305154700903.png)
 
-![image-20250305154721393](C:\Users\10539\AppData\Roaming\Typora\typora-user-images\image-20250305154721393.png)
-
 ![image-20250305154733307](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250305154733307.png)
 
 如下图选择工具
