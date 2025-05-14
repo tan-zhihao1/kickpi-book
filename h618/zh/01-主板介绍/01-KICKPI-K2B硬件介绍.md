@@ -10,7 +10,7 @@
 
 ## 开发板信息
 
-![3](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/3.jpg)
+![K2B](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/3.jpg)
 
 
 
