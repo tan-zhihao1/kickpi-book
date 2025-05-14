@@ -1,4 +1,4 @@
-# 02-Linux SDK Compilation
+# 02-Linux_SDK_Compilation
 
 ### SDK Introduction
 
