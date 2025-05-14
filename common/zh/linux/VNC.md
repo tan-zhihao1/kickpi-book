@@ -64,7 +64,7 @@ WantedBy=multi-user.target
 
 
 
-**启动服务**
+**启动VNC服务**
 
 ```
 console$ sudo systemctl daemon-reload  
@@ -74,7 +74,7 @@ console$ sudo systemctl start vncserver@1.service
 
 
 
-**停止vnc服务**
+**停止VNC服务**
 
 ```
 console$ sudo systemctl disable vncserver@1.service  
