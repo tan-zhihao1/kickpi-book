@@ -47,9 +47,3 @@ PhoenixSuit/Drivers/AW_Driver/
 烧录步骤详见[USB线烧录](../../../common\zh\全志烧录\USB线烧录.md)
 
 
-
-### Android桌面界面
-
-主板连接HDMI显示器，系统启动成功后，界面如下
-
-![image-20240306171855522](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306171855522.png)
