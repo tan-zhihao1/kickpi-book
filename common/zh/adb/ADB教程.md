@@ -18,10 +18,10 @@ ADB（Android Debug Bridge）是安卓开发调试桥接工具，支持通过 US
 
 **工具获取**
 
-ADB软件工具从KICKPI网盘中获取，Windows平台使用，位于网盘目录
+ADB软件工具从KICKPI网盘中获取，Windows x64平台使用，位于网盘目录
 
 ```
-5-DevelopmentTool\ADB Tool\adb-tools.rar
+5-DevelopmentTool/win_x64_ADB_Tool/adb-tools.rar
 ```
 
 **安装步骤**
