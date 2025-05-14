@@ -17,26 +17,26 @@ There are 2 LED indicators on the motherboard:
 
 The motherboard is equipped with four buttons with the following functions:
 
-### LOADER Button
+**LOADER Button**
 
 - **During system startup**: Used as a programming button.
 - **When the system is running normally**: Can be configured as any button as required.
 
 ![K7-loader](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250409114942724.png)
 
-### RESET Button
+**RESET Button**
 
 System reset button. Pressing this button resets the system.
 
 ![K7-RESET](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250409115008226.png)
 
-### POWER Button
+**POWER Button**
 
 Power button, used to control the power switch of the motherboard.
 
 ![image-20250409115024353](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250409115024353.png)
 
-### MASKROM Button
+**MASKROM Button**
 
 The Maskrom mode is the initial state of the system when the firmware is not programmed or the firmware data is cleared. This button is usually used for system repair when the bootloader is damaged, such as flashing new firmware, unlocking the device, or rescuing a bricked device.
 
@@ -56,13 +56,13 @@ The motherboard is equipped with two Gigabit Ethernet interfaces. After connecti
 
 ## USB
 
-### USB Type A (1 - 3)
+**USB Type A (1 - 3)**
 
 The motherboard has three USB 3.0 TYPE - A interfaces, supporting HOST mode. They can be connected to common USB peripherals such as mice, keyboards, cameras, and docking stations.
 
 ![K7-TYPE A](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250409110423938.png)
 
-### USB Type C
+**USB Type C**
 
 The motherboard is equipped with one USB 3.0 TYPE - C interface with the following features:
 
@@ -77,7 +77,7 @@ The motherboard is equipped with one USB 3.0 TYPE - C interface with the followi
 
 The motherboard is equipped with one 3.5mm headphone jack.
 
-### Hardware Wiring
+**Hardware Wiring**
 
 ![image-20250110152818915](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110152818915.png)
 
@@ -85,9 +85,13 @@ The motherboard is equipped with one 3.5mm headphone jack.
 
 ![image-20250421151540565](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421151540565.png)
 
+
+
 ## LCD
 
 See [Quick Start](02-Quick_Start_Guide.md#K7-LCD) for details.
+
+
 
 ## 4G/5G
 
@@ -99,7 +103,9 @@ The motherboard is equipped with one MINI - PCIE interface, which can be connect
 | EC200  | 4G               |
 | RG200U | 5G               |
 
-### Hardware Wiring
+
+
+**Hardware Wiring**
 
 Wiring for connecting the motherboard to a 4G or 5G mobile network module via MINI-PCIE.
 
@@ -109,13 +115,17 @@ Inserting a SIM card into the motherboard.
 
 ![image-20250421110846476](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421110846476.png)
 
+
+
 ## SD Card
 
 The motherboard is equipped with one Micro SD Card interface, which can be connected to an SD memory card for file read and write operations.
 
-### Hardware Wiring
+**Hardware Wiring**
 
 ![image-20250110152735195](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110152735195.png)
+
+
 
 ## IR
 
@@ -129,13 +139,15 @@ Infrared Remote Control Receiver
 
 ![K7-IR](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250409113253649.png)
 
+
+
 ## WIFI
 
 An onboard 8822CS module is provided.
 
 ![K7-8822CS](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250409115703655.png)
 
-### Debian Desktop
+**Debian Desktop**
 
 ![image-20250421151111641](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421151111641.png)
 
@@ -143,28 +155,7 @@ Enter the password.
 
 ![image-20250421151235254](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421151235254.png)
 
-### Command-line Configuration
-
-```shell
-$ sudo nmcli dev wifi connect "your_WIFI_name" password "WiFi_password" ifname wlan0
-```
-
-> your_WIFI_name: The name of the WiFi you want to connect to.
->
-> WiFi_password: The password of the WiFi you want to connect to.
-
-* After connecting, the WiFi information is in this directory:
-
-```shell
-$ ls /etc/NetworkManager/system-connections
-wifi_oranth_5G.nmconnection
-```
-
-* To cancel the automatic connection of the corresponding WiFi, for example, WiFi: wifi_oranth_5G
-
-```shell
-$ sudo rm -rf /etc/NetworkManager/system-connections/wifi_oranth_5G.nmconnection
-```
+### 
 
 ## BT
 
@@ -176,21 +167,13 @@ Debian Desktop
 
 ![image-20250421150613646](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421150613646.png)
 
+
+
 ## MIC
 
 The motherboard is equipped with one MIC interface, which can be connected to a MIC microphone for recording.
 
-```
-PCM in:
- Format Name:   S16_LE, S24_LE
-        Rate:   min=8000Hz      max=96000Hz
-    Channels:   min=1           max=2
- Sample bits:   min=16          max=32
- Period size:   min=8           max=131072
-Period count:   min=2           max=32768
-```
-
-### Hardware Wiring
+**Hardware Wiring**
 
 ![image-20250110152824237](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110152824237.png)
 
@@ -198,17 +181,7 @@ Period count:   min=2           max=32768
 
 The motherboard is equipped with two speaker interfaces, supporting audio output for left and right channel speakers.
 
-```
-PCM out:
- Format Name:   S16_LE, S24_LE
-        Rate:   min=8000Hz      max=96000Hz
-    Channels:   min=1           max=2
- Sample bits:   min=16          max=32
- Period size:   min=8           max=131072
-Period count:   min=2           max=32768
-```
-
-### Hardware Wiring
+**Hardware Wiring**
 
 ![image-20250110152830177](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110152830177.png)
 
@@ -220,7 +193,7 @@ Debian Desktop
 
 The motherboard has an onboard RTC module `hym8563` and is equipped with one RTC battery interface. After connecting the battery, the RTC can continue to work using the battery when the motherboard loses power.
 
-### Hardware Wiring
+**Hardware Wiring**
 
 ![image-20250110153056417](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110153056417.png)
 
