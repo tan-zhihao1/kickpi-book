@@ -5,7 +5,7 @@ VNC (Virtual Network Computing) is a graphical desktop sharing system based on t
 ## Symbol Explanation
 
 * `SDK$`: Represents the source code path.
-* `console$`: Generally refers to the command-line console of the motherboard. [Motherboard command-line console](#console_readme)
+* `console$`: Generally refers to the command-line console of the motherboard. [Mainboard Command-line Console](..\02-Getting_Started_Guide\02-Quick_Start_Guide.md#console_readme)
 * `ADB$`: Android Debug Bridge command-line tool, generally refers to an environment where ADB can be run.
 
 ## Configure the VNC Server on the Motherboard
