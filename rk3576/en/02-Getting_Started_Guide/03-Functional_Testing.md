@@ -87,7 +87,7 @@ The motherboard is equipped with one 3.5mm headphone jack.
 
 ## LCD
 
-See [Quick Start](02-Getting_Started_Guide\02-Quick_Start_Guide.md#K7-LCD) for details.
+See [Quick Start](02-Quick_Start_Guide.md#K7-LCD) for details.
 
 ## 4G/5G
 

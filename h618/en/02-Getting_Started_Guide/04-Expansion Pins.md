@@ -67,7 +67,7 @@ root@kickpi:~# gpio mode 3 pwm #Default output frequency 23475Hz Square wave wit
 
 ![image-20250514115200103](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115200103.png)
 
-**调节占空比**
+**Adjust duty cycle**
 
 PWM duty cycle = CCR/ARR
 
@@ -87,10 +87,10 @@ gpio pwm 3 1024 //Set CCR to 1024 Duty cycle to 1024/2048=50%
 
 ![image-20250514115517926](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115517926.png)
 
-**调节频率**
+**Adjust frequency**
 
 ``` shell
-gpio mode 3 pwm //默认输出频率为23475Hz
+gpio mode 3 pwm //The default output frequency is 23475Hz
 gpio pwmc 3 5   //设置分频系数为5 则输出频率为23475/5=4695Hz，实际频率为4688Hz 误差可忽略
 ```
 
