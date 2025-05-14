@@ -1,6 +1,6 @@
 # 02-Linux_SDK_Compilation
 
-### SDK Introduction
+## SDK Introduction
 
 Kernel version: 6.1
 
@@ -8,7 +8,7 @@ Debian system version: 12
 
 Ubuntu system version: 2404
 
-### Obtain the SDK Source Code
+## Obtain the SDK Source Code
 
 * Network disk directory
 
@@ -44,9 +44,9 @@ $ cd rk3576-linux/
 $ git reset --hard
 ```
 
-### Configure the Environment
+## Configure the Environment
 
-> Prerequisite: Ensure the compilation hardware requirements are met and the [Compilation Environment Setup](01-Compilation Environment Setup.md) is successful.
+> Prerequisite: Ensure the compilation hardware requirements are met and the [Compilation Environment Setup](01-Compilation_Environment_Setup.md) is successful.
 
 Configure the environment before individual compilation or full compilation.
 
