@@ -8,7 +8,7 @@
 
 * `ADB$`: Android Debug Bridge command-line tool, generally refers to an environment where ADB can be run.
 
-The Extend 40Pin interface contains multiple channels of PWM. The specific pins are shown in the [Expansion Pin Section](#ExpansionPin-K7).
+The Extend 40Pin interface contains multiple channels of PWM. The specific pins are shown in the Expansion Pin Section.
 
 The following uses PWM2_CH7_M2 as an example for explanation.
 
