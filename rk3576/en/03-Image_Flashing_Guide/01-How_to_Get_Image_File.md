@@ -2,7 +2,7 @@
 
 Image files can be obtained in the following two ways: downloading from the cloud disk and compiling the SDK.
 
-For the detailed steps of SDK compilation, refer to the SDK Compilation.
+
 
 ## Cloud Disk Directory
 
