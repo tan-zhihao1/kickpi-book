@@ -50,10 +50,6 @@ The motherboard is equipped with two Gigabit Ethernet interfaces. After connecti
 
 ![K7-ETH](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250409105330162.png)
 
-**Debian Desktop**
-
-![image-20250427161324832](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250427161326046.png)
-
 
 
 ## USB
@@ -82,10 +78,6 @@ The motherboard is equipped with one 3.5mm headphone jack.
 **Hardware Wiring**
 
 ![image-20250110152818915](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110152818915.png)
-
-**Debian Desktop**
-
-![image-20250421151540565](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421151540565.png)
 
 
 
@@ -149,14 +141,6 @@ An onboard 8822CS module is provided.
 
 ![K7-8822CS](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250409115703655.png)
 
-**Debian Desktop**
-
-![image-20250421151111641](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421151111641.png)
-
-Enter the password.
-
-![image-20250421151235254](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421151235254.png)
-
 
 
 ## BT
@@ -164,10 +148,6 @@ Enter the password.
 An onboard 8822CS module is provided.
 
 ![K7-8822CS](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250409115703655.png)
-
-Debian Desktop
-
-![image-20250421150613646](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421150613646.png)
 
 
 
@@ -186,10 +166,6 @@ The motherboard is equipped with two speaker interfaces, supporting audio output
 **Hardware Wiring**
 
 ![image-20250110152830177](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110152830177.png)
-
-**Debian Desktop**
-
-![image-20250421151540565](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421151540565.png)
 
 
 
