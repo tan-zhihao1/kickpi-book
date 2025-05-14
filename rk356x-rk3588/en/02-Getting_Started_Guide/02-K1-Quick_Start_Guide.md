@@ -47,11 +47,11 @@ The K1 is default compatible with LVDS 7-inch screens, MIPI 5-inch, 8-inch, and 
 
 * Wiring method:
 
-LVDS/MIPI 0 interface: [Flip-down FPC interface](../../../common/en/display/FPC_Interface_Introduction#FPC-1)
+LVDS/MIPI 0 interface: [Flip-down FPC interface](../../../common/en/display/FPC_Interface_Introduction.md#FPC-1)
 
 ![image-20250512100410963](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512100410963.png)
 
-LVDS/MIPI 1 interface: [Pull-up FPC interface](../../../common/en/display/FPC_Interface_Introduction#FPC-2)
+LVDS/MIPI 1 interface: [Pull-up FPC interface](../../../common/en/display/FPC_Interface_Introduction.md#FPC-2)
 
 ![image-20250512100640644](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512100640644.png)
 
