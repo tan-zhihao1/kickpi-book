@@ -6,12 +6,17 @@ When the motherboard is connected to multiple peripherals, resulting in high pow
 
 **Solution**: This is generally a power supply issue. Please check whether the power consumption of the corresponding power supply is sufficient to support the power supply of the connected peripheral modules.
 
+
+
 ## MIPI Screen Display Issues
+
 If the MIPI screen fails to display, check whether the wiring is correct and whether the backlight is lit normally.
 
 **Solution**:
-- If the backlight is not lit, check the wiring. [MIPI_DSI Wiring](#MIPIDSI)
+- If the backlight is not lit, check the wiring.
 - If the backlight is lit, check the software. (K7 V1.2 does not support automatic recognition of MIPI screens yet. Different software needs to be burned for corresponding screens.)
+
+
 
 ## Debug Serial Port Usage Issues
 
