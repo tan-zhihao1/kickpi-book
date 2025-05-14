@@ -85,6 +85,7 @@ $ md5sum -c *.md5
 $ tar -zxvf t113-linux-*.tar.gz
 ```
 
+> 不要使用root权限！！！
 > SDK源码压缩包仅包含Git仓库，可用ls -al命令查看到.git文件夹
 
 
@@ -95,8 +96,7 @@ $ tar -zxvf t113-linux-*.tar.gz
 $ cd t113-linux
 $ git reset --hard
 ```
-
-
+> 不要使用root权限！！！
 
 ### 获取Rootfs镜像
 
