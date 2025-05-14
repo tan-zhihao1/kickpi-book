@@ -80,6 +80,12 @@ sudo systemctl start vncserver@1.service
 
 ## Windows连接VNC
 
+vnc软件下载
+
+[Download VNC Viewer by RealVNC®](https://www.realvnc.com/en/connect/download/viewer/?lai_vid=EW3mEzvVmIeJO&lai_sr=10-14&lai_sl=l)
+
+
+
 **下载Mobaxterm**
 
 Mobaxterm软件地址下载：https://mobaxterm.mobatek.net/
