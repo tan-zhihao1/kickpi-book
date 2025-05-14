@@ -40,7 +40,7 @@ PhoenixSuit/Drivers/AW_Driver/
 
 **主板进入烧录模式**
 
-按住板子背面的MASKROM按键 再上电。
+先按住板子背面的MASKROM按键 再连接TYPE-C口和电脑。
 
 > 详细教程如下面
 
