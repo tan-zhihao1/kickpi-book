@@ -8,8 +8,6 @@
 h618_data\2-Image\K2*\Android12.0_*
 ```
 
-开发板出厂默认烧录好镜像，若不需要更换系统的话，可直接跳过此步骤，启动系统
-
 
 
 ### 准备工具
@@ -42,13 +40,9 @@ PhoenixSuit/Drivers/AW_Driver/
 
 **主板进入烧录模式**
 
-1. 按住板子背面的maskrom按键
+按住板子背面的MASKROM按键 再上电。
 
-2. 主板上电，如果已上电则需重新上电（按一下复位键）
-
-3. 复位后，烧录键三秒左右后松开
-
-   > 详细教程如下面
+> 详细教程如下面
 
 ![image-20250509191757297](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509191757297.png)
 
