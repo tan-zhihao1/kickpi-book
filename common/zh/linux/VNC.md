@@ -70,9 +70,11 @@ console$ sudo systemctl enable vncserver@1.service
 console$ sudo systemctl start vncserver@1.service  
 ```
 
+> 开启后，开机会自动启动VNC服务
 
 
-**停止VNC服务**
+
+**关闭VNC服务**
 
 ```
 console$ sudo systemctl disable vncserver@1.service  
