@@ -64,6 +64,8 @@ WantedBy=multi-user.target
 
 
 
+**启动服务**
+
 ```
 sudo systemctl daemon-reload  
 sudo systemctl enable vncserver@1.service  
