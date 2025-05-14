@@ -35,7 +35,7 @@ Image files can be obtained in the following two ways: downloading from the clou
 └── UPDATE_LOG.txt
 ```
 
-## Image Name Parsing
+## Image Name Description
 
 ```
 update-rk3576-kickpi-k7-android-HDMI-202504171451.img
