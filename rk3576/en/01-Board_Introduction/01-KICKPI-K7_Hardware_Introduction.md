@@ -4,7 +4,7 @@
 
 ![image-20250110141815408](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110141815408.png)
 
-## Development Board Information
+## Board Information
 
 ![image-20250222172318324](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222172318324.png)
 
