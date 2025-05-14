@@ -40,6 +40,16 @@ cat /dev/ttyAS5
 
 ### WiringKP Tool Usage
 
+Check whether the system has WiringKP tools
+
+``` 
+which gpio
+```
+
+![image-20250514102207335](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514102207335.png)
+
+If not, download and copy it from the network disk to the board system
+
 Tool download path: 
 `h618_data\3-SoftwareData\GPIO_tools`
 
