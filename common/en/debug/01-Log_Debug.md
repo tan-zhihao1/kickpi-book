@@ -1,117 +1,88 @@
-# 01-日志抓取
+# 01 - Log Collection
 
-SDK - 指代源码路径
+SDK - Refers to the source code path.
 
-console - 指代调试控制台
+Console - Refers to the debugging console.
 
-ADB - Android Debug Bridge命令行工具，下文指代可运行ADB的环境
+ADB - Android Debug Bridge command-line tool. Hereinafter, it refers to an environment where ADB can be run.
 
+## Kernel Log Collection Methods
 
+### General Method
 
-## 内核日志抓取方法
+Command line - Debug serial port
 
-### 通用方法
-
-命令行-调试串口
-
-1. 参考[12-硬件功能测试.md](12-硬件功能测试.md#UART)连接调试串口
-
-1. 内核日志打印命令
-
+1. Refer to [12 - Hardware Function Testing.md](12 - Hardware Function Testing.md#UART) to connect the debug serial port.
+2. Kernel log printing command:
    ```shell
    (console) $ dmesg
-   ```
-
-1. 日志保存
-
-   Windows下各种串口软件都有保存方法，下面只介绍网盘上提供的MobaXterm_Personal_20.3工具的保存方法
-
-   鼠标右键点击对应的窗口，选择保存当前窗口输出
-
+```
+3. Log saving:
+   Various serial port software on Windows has its own saving methods. The following only introduces the saving method of the MobaXterm_Personal_20.3 tool provided on the network disk.
+   Right-click on the corresponding window and select "Save current window output".
    ![image-20250328102712644](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250328102712644.png)
 
 ### Linux
 
-命令行-虚拟终端
+Command line - Virtual terminal
 
-1. 主板连接显示器、键盘
-
-2. 输入命令打印内核日志
-
+1. Connect the motherboard to a monitor and a keyboard.
+2. Enter the command to print the kernel log:
    ```shell
    (console) $ dmesg
+```
+3. Save the log as a file:
+   ```shell
+   (console) $ dmesg > dmesg.txt
    ```
-
-3. 将日志保存为文件
-
-      ```shell
-      (console) $ dmesg > dmesg.txt
-      ```
-
-4. 将文件通过U盘拷贝出来
-
-
-
+4. Copy the file out via a USB flash drive.
 
 ### Android
 
-命令行-ADB
+Command line - ADB
 
-1. 板子开机，电脑连接好板子usb-typeC口
-
-2. 打开Windows的cmd，输入下面命令，确保有设备
-
+1. Power on the board and connect the computer to the board's USB - Type C port.
+2. Open the Windows command prompt (cmd) and enter the following command to ensure that the device is detected:
    ```
    (ADB) # adb devices
    ```
-
-3. 输入命令将内核日志保存到D盘下dmesg.txt
-
+3. Enter the command to save the kernel log to the dmesg.txt file on the D drive:
    ```
    (ADB) # adb shell dmesg > D:/dmesg.txt
    ```
 
+Android system logs
 
-
-Andorid 系统日志
-
-1. 开机，命令进行抓取。
-
+1. Power on the device and start the collection with the following command:
 ```
 (ADB) # adb logcat > D:/logcat.txt
 ```
+2. Reproduce the problem.
+3. Press Ctrl + C to stop.
+4. Provide the logcat.txt file.
 
-2. 复现问题。
+## Common Problem Troubleshooting
 
-3. Ctrl + C 停止
-4. 提供logcat.txt
+Please ensure that the firmware being flashed is the one provided on the network disk so that technical support can assist you in troubleshooting.
 
+### Boot Stuck at the Logo Screen
 
+1. Check if the firmware is the one provided. Only when using the firmware from the network disk can technical support help troubleshoot the problem.
+2. Restart the device multiple times to see if the problem persists.
+3. If you are using the Ubuntu system, the boot process may be slow. Wait patiently to see if it eventually enters the graphical interface.
+4. After the above checks, if the device is still stuck at the logo screen, perform the following checks:
+5. Confirm if the blue system running indicator is blinking.
+6. Connect the debug serial port and keep all the boot logs for technical support to assist in troubleshooting.
 
+### Serial Port Printing Issues
 
+If there is no printing or the printing is garbled:
 
-## 常见问题排查
+1. Check the wiring. Refer to [12 - Hardware Function Testing.md](12 - Hardware Function Testing.md#UART) to connect the debug serial port.
+2. Ensure that the serial port tool you are using is the one provided by our company. If not, make sure it supports a baud rate of 1500000.
 
-​	以下常见问题请确保烧录的固件为网盘提供的固件，技术支持才能同步帮你排查。
+### System Keeps Restarting
 
-### 启动卡在logo界面
-
-1. 固件是否是为提供的固件，确保使用网盘提供的固件，技术支持才能帮助排查问题。
-2. 重启多次，是否每次都这样
-3. 如果是使用的Ubuntu系统有时启动会比较慢，需耐心等待一会，观察是否后续正常进入图形化界面
-4. 上述确定完，依旧卡在logo界面，如下排查
-5. 确认蓝色系统运行灯是否闪烁
-6. 接调试串口，保持所有打印的开机日志，方便提供给技术支持帮助排查问题
-
-### 串口打印问题
-
-如没有打印或者打印乱码
-
-1. 检查接线是正确，参考[12-硬件功能测试.md](12-硬件功能测试.md#UART)连接调试串口
-2. 使用的串口工具是否是我们家的，不是请确保能支持波特率1500000
-
-### 系统一直重启
-
-1. 除去所有外设，排除外设干扰
-2. 接串口查看日志进行排查
-3. 尝试更换电源供电，供电不良好会让板子部分功能异常导致重启
+1. Remove all peripherals to eliminate peripheral interference.
+2. Connect the serial port to view the logs for troubleshooting.
+3. Try replacing the power supply. Poor power supply can cause some functions of the board to malfunction and lead to restarts.
