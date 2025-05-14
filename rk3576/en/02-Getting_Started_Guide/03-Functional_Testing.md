@@ -191,6 +191,8 @@ The motherboard is equipped with two speaker interfaces, supporting audio output
 
 ![image-20250421151540565](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421151540565.png)
 
+
+
 ## RTC
 
 The motherboard has an onboard RTC module `hym8563` and is equipped with one RTC battery interface. After connecting the battery, the RTC can continue to work using the battery when the motherboard loses power.
@@ -205,6 +207,8 @@ Test steps:
 2. Disconnect the network connection and the power supply of the development board.
 3. After waiting for some time, reconnect the power supply of the development board.
 4. If the system time is consistent with the current time, the RTC function is normal.
+
+
 
 ## FAN
 
@@ -228,6 +232,8 @@ Turn off the fan
 console$ echo 0 > /sys/class/leds/fan/brightness
 ```
 
+
+
 ## M.2 SSD
 
 The motherboard is equipped with one PCIE 2.0 M.2 SSD hard drive interface, which can be connected to a hard drive for file read and write operations.
@@ -235,6 +241,8 @@ The motherboard is equipped with one PCIE 2.0 M.2 SSD hard drive interface, whic
 **Hardware Wiring**
 
 ![image-20250110153138855](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110153138855.png)
+
+
 
 ## MPP
 
@@ -409,6 +417,8 @@ $ source /rockchip-test/gstreamer/gstreamer_mpp_fix.sh
 >
 > After configuration, GStreamer can call hardware decoding by default.
 
+
+
 ## NPU
 
 ```
@@ -490,6 +500,8 @@ Begin perf ...
 >
 > - `0.935059 - 156` means that the model believes the input data (such as an image) is most likely to belong to category number 156, with a corresponding probability as high as 0.935059. This relatively high probability value indicates that the model has a relatively high confidence in this judgment.
 > - The subsequent `0.057037 - 155`, `0.003881 - 205`, `0.003119 - 284`, and `0.000172 - 285` list the category numbers and probability values of the second to fifth most probable categories respectively. These probability values decrease successively, indicating that the model's confidence in their belonging to the corresponding categories also gradually decreases.
+
+
 
 ## GPU
 

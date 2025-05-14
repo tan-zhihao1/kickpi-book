@@ -6,16 +6,16 @@
 
 ## Development Board Information
 
-![image-20250514095507899](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514095507899.png)
+![K2C](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514095507899.png)
 
 
 
 ## Accessories List
 
-![K2c详情页_11](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K2c详情页_11.jpg)
+![Accessories](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K2c详情页_11.jpg)
 
 ## Expansion Pins
 
-![image-20250514101007102](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514101007102.png)
+![Expansion Pins](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514101007102.png)
 
 > Pins marked with * are the default software configuration functions.

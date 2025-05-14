@@ -14,16 +14,16 @@
 
 ## 开发板信息
 
-![image-20250509174842735](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509174842735.png)
+![K2C](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509174842735.png)
 
 
 
 ## 配件信息
 
-![K2c详情页_11](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K2c详情页_11.jpg)
+![Accessories](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K2c详情页_11.jpg)
 
 ## 扩展引脚
 
-![image-20250514101010786](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514101010786.png)
+![Expansion Pins](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514101010786.png)
 
 > 带 * 号为软件默认配置功能
