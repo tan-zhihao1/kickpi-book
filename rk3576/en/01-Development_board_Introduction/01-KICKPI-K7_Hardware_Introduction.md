@@ -6,7 +6,7 @@
 
 ## Board Information
 
-![image-20250222172318324](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222172318324.png)
+
 
 ## Optional Components
 
