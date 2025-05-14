@@ -150,7 +150,7 @@ adb install app.apk
 **卸载应用**
 
 ```bash
-adb uninstall <应用包名>
+adb uninstall <APK Packname>
 ```
 
 例如卸载包名为 `com.example.app` 的应用，可使用：
