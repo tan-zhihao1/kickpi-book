@@ -5,7 +5,7 @@ This document is used for users to quickly use or test the expansion pin functio
 ## Symbol Explanation
 
 * `SDK$`: Refers to the source code path.
-* `console$`: Generally refers to the command-line console of the motherboard. [Motherboard command-line console](../02-Getting Started/02-Quick Start.md#console_readme)
+* `console$`: Generally refers to the command-line console of the motherboard. [Motherboard command-line console](02-Quick Start.md#console_readme)
 * `ADB$`: Android Debug Bridge command-line tool, generally refers to an environment where ADB can be run.
 
 ## Expansion Pins <a id="ExpansionPin-K7"></a>
