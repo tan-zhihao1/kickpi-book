@@ -24,20 +24,6 @@ h618_data\5-DevelopmentTools\USB_ImageBurnTool\PhoenixSuit.zip
 
 
 
-### 安装USB驱动
-
-**解压PhoenixSuit.zip**
-
-USB驱动目录
-
-```
-PhoenixSuit/Drivers/AW_Driver/
-```
-
-> 驱动不支持直接打开安装，必须在设备管理器中 识别出未知设备后才能安装驱动
-
-
-
 **主板进入烧录模式方法**
 
 先按住板子背面的MASKROM按键 再连接TYPE-C口和电脑。
