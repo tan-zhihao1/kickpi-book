@@ -88,12 +88,6 @@ vnc软件下载
 
 
 
-**下载Mobaxterm**
-
-Mobaxterm软件地址下载：https://mobaxterm.mobatek.net/
-
-
-
 **Mobaxterm操作步骤**
 
 1. 新建会话窗口
