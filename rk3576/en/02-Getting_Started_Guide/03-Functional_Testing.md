@@ -42,6 +42,8 @@ The Maskrom mode is the initial state of the system when the firmware is not pro
 
 ![image-20250409115150900](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250409115150900.png)
 
+
+
 ## Ethernet
 
 The motherboard is equipped with two Gigabit Ethernet interfaces. After connecting the network cable, the motherboard will automatically obtain an IP address and connect to the network.
@@ -185,7 +187,7 @@ The motherboard is equipped with two speaker interfaces, supporting audio output
 
 ![image-20250110152830177](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250110152830177.png)
 
-Debian Desktop
+**Debian Desktop**
 
 ![image-20250421151540565](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250421151540565.png)
 

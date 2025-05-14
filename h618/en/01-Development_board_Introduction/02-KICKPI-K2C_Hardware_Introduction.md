@@ -2,7 +2,7 @@
 
 ## Controller Information
 
-![image-20240320092438171](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240320092438171.png)
+![H618](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240320092438171.png)
 
 ## Development Board Information
 
