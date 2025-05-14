@@ -190,7 +190,7 @@ kernel-6.1/arch/arm64/configs/rockchip_defconfig
 ```
 
 
-### Common Issues
+### FAQ
 
 **Android compilation error due to path errors caused by code location changes**
 
