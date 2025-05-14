@@ -45,13 +45,7 @@ root@linaro-alip:/#
 **配置VNC服务**
 
 ```
-sudo vim /etc/systemd/system/vncserver@.service
-```
-
-
-
-```
-x console$ vncpasswd
+console$ sudo vim /etc/systemd/system/vncserver@.service
 [Unit]  
 Description=Remote desktop service (VNC)  
 After=syslog.target network.target  
@@ -68,12 +62,15 @@ ExecStop=/usr/bin/vncserver -kill :%i
 WantedBy=multi-user.target
 ```
 
-示例：
+
 
 ```
-kickpi@kickpi:~$ export DISPLAY=:0
-kickpi@kickpi:~$ x11vnc -display :0 -auth /home/kickpi/.Xauthority -rfbport 5900 -rfbauth /home/kickpi/.vnc/passwd
+sudo systemctl daemon-reload  
+sudo systemctl enable vncserver@1.service  
+sudo systemctl start vncserver@1.service  
 ```
+
+
 
 
 
