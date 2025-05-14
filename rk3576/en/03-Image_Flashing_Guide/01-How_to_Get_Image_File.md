@@ -2,7 +2,7 @@
 
 Image files can be obtained in the following two ways: downloading from the cloud disk and compiling the SDK.
 
-For the detailed steps of SDK compilation, refer to the documents [LINUX_SDK Source Code Compilation](../04-SDK Compilation/02-LINUX_SDK Compilation.md) and [ANDROID_SDK Source Code Compilation](../04-SDK Compilation/03-ANDROID_SDK Compilation.md).
+For the detailed steps of SDK compilation, refer to the SDK Compilation.
 
 ## Cloud Disk Directory
 
