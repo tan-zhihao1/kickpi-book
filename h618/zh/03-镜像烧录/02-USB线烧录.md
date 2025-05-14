@@ -26,7 +26,9 @@ h618_data\5-DevelopmentTools\USB_ImageBurnTool\PhoenixSuit.zip
 
 **主板进入烧录模式方法**
 
-先按住板子背面的MASKROM按键 再连接TYPE-C口和电脑。
+先按住板子背面的MASKROM按键 
+
+再连接TYPE-C口和电脑。
 
 ![image-20250509191757297](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509191757297.png)
 

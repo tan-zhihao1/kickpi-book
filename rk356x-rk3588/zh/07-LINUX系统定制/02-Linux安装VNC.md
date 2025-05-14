@@ -54,7 +54,7 @@ console$ chmod +x $HOME/.vnc/xstartup
 
 ### 设置 systemd 服务以启动和停止 VNC
 
-要创建 systemd 服务以启动 VNC 服务器，请创建文件`/etc/systemd/system/vncserver@1.service`
+要创建 systemd 服务以启动 VNC 服务器，请创建文件`/etc/systemd/system/vncserver@.service`
 
 使用 sudo 或 root，因为它位于只读区域。
 
