@@ -29,8 +29,14 @@ gpio readall // Get all pin status
 
 ```shell
 gpio read <wPi>        // Read pin level
-gpio mode <wPi> <mode> // Set pin mode (supports out/in/up/down)
+gpio mode <wPi> <mode> // Set pin mode (supports out/in/up/down/pwm)
 gpio write <wPi> <val> // Set pin output level
+
+pwm related command
+gpio pwmr <wPi> <val>    //Setting ARR
+gpio pwm <wPi> <val>     //Setting CCR
+gpio pwmc <wPi> <val>    //Setting Frequency Dividing Coefficient
+gpio pwmTone <wPi> <val> //Setting Frequency
 ```
 
 **Set PH5 to output mode and output high level **
