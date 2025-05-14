@@ -32,7 +32,7 @@ The development board is equipped with two LED lights:
    - The power indicator should stay lit after power-on. If it doesn't light up, check if there is an issue with the power supply.
    - The heartbeat light should flash continuously after the kernel starts. If it doesn't flash, the system may be running abnormally.
 
-## Display Screen <a id="K7-LCD"> </a>
+## Display Screen<a id="K7-LCD"> </a>
 
 The motherboard supports three types of display interfaces: TYPE-C DP, HDMI OUT, and MIPI DSI. You can connect corresponding display screens to show the system interface.
 
