@@ -2,11 +2,15 @@
 
 This document is used for users to quickly use or test the expansion pin functions of the motherboard.
 
+
+
 ## Symbol Explanation
 
 * `SDK$`: Refers to the source code path.
 * `console$`: Generally refers to the command-line console of the motherboard. [Motherboard command-line console](02-Quick_Start_Guide.md#console_readme)
 * `ADB$`: Android Debug Bridge command-line tool, generally refers to an environment where ADB can be run.
+
+
 
 ## Expansion Pins<a id="ExpansionPin-K7"></a>
 
@@ -20,13 +24,15 @@ For specific function expansion details, refer to the pin list.
 
 The pin list marks the default configuration of each pin (marked with an asterisk) and provides the available alternative configurations for that pin.
 
-**K7 Pin List**
+**K7 Expansion Pin List**
 
 ![K7_PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_PIN.png)
 
 **K7 Pin Voltage**
 
 ![K7_PIN_DOMAIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_PIN_DOMAIN.png)
+
+
 
 ## GPIO
 
@@ -70,6 +76,8 @@ Control GPIO3_D4 to output a low level
 ```
 console$ echo 0 >  /sys/class/leds/GPIO3_D4/brightness
 ```
+
+
 
 ## CAN
 
