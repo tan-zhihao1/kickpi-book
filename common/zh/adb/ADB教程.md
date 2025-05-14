@@ -138,7 +138,7 @@ adb shell ls /sdcard
 **安装应用**
 
 ```bash
-adb install <APK 文件路径>
+adb install <APK FilePath>
 ```
 
 如安装本地的 `app.apk` 文件，使用：
