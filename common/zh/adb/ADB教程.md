@@ -8,8 +8,9 @@ ADB（Android Debug Bridge）是安卓开发调试桥接工具，支持通过 US
 
 ### 调试线与接口
 
-- 调试线：使用 USB Type-C 数据线。
-- 调试接口：主板的 USB Type-C 接口。
+调试线：USB Type-C 数据线。
+
+调试接口：主板的 USB Type-C 接口。
 
 
 
@@ -69,8 +70,6 @@ List of devices attached
 
 
 ## ADB功能使用
-
-ADB ，全称 Android Debug Bridge，是安卓开发调试桥接工具，支持通过 USB 或网络连接设备，可实现应用安装、文件传输、命令执行等设备管理与调试操作。
 
 下文是一些常用 ADB 命令的介绍。
 
