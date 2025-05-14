@@ -44,24 +44,7 @@ PhoenixSuit/Drivers/AW_Driver/
 
 ![image-20250509191757297](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509191757297.png)
 
-
-
-
-
-
-
-**主板进入烧录模式**
-
-操作步骤：
-
-1. 按住板子背面的maskrom按键
-2. 主板上电，如果已上电则需重新上电（按一下复位键）
-
-3. 复位后，烧录键三秒左右后松开
-
-![image-20250509191757297](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509191757297.png)
-
-
+烧录步骤详见[USB线烧录](../../../common\zh\全志烧录\USB线烧录.md)
 
 
 
