@@ -6,9 +6,7 @@ VNC（Virtual Network Computing）是一种基于远程帧缓冲协议（RFB）�
 
 ## 符号说明
 
-* `SDK$`：指代源码路径
 * `console$`：泛指主板的命令行控制台。[主板命令行控制台](#console_readme)
-* `ADB$`：Android Debug Bridge 命令行工具，泛指可运行 ADB 的环境
 
 
 
