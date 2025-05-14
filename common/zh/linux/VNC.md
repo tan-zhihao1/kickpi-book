@@ -93,11 +93,8 @@ console$ sudo systemctl disable vncserver@1.service
 **RealVNC操作步骤**
 
 1. 输入主板IP和端口，例如 `192.168.77.162:5901`，ENTER键进行连接。
-3. 点击 continue 跳过警告
-4. ![image-20250514194756724](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250514194756724.png)
+2. 点击 continue 跳过警告
+ ![image-20250514194756724](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250514194756724.png)
 
+3. 输入密码，连接VNC。
 
-
-6. 输入密码，点击OK
-
-![image-20250422152029118](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422152029118.png)
