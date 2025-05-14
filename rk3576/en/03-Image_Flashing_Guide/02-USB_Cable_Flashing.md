@@ -91,7 +91,7 @@ This document is used for users to burn or upgrade the motherboard system.
 6. Wait for the light to turn green and repeat steps 3, 4, and 5 to burn new devices simultaneously.
 7. After burning all the devices, click **Stop**.
 
-## Common Problems
+## FAQ
 
 ### The Loader or Maskrom mode is not recognized
 
@@ -104,10 +104,4 @@ If the "Class for rockusb devices" cannot be recognized, you can try the followi
 1. Open `DriverInstall.exe`, try to uninstall the driver, and then install the driver again. [USB driver installation](#USBDRV)
 2. Contact customer service for feedback and consultation.
 
-### Other functions of the burning tool
 
-For more instructions on the burning tool, see
-
-```
-RKDevTool_v3.30_for_window/开发工具使用文档_v1.0.pdf
-```
