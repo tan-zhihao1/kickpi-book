@@ -48,7 +48,7 @@ Version 4797878
 Installed as D:\ADB Tool\adb-tools\adb.exe
 ```
 
-
+![image-20250509185455550](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185455550.png)
 
 ### **ADB 检测设备**
 
@@ -203,3 +203,32 @@ adb shell screencap -p /sdcard/screenshot.png
 
 该命令会在设备的 `/sdcard` 目录下生成一个名为 `screenshot.png` 的屏幕截图文件，之后可使用 `adb pull` 命令将其下载到本地。
 
+## 常见问题
+
+### ADB设备无法识别
+
+进行ADB调试时，等板卡蓝灯闪烁时查看系统设备管理器是否识到是如下设备，
+
+![image-20250509185304921](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185304921.png)
+
+如果识别到的是未知设备，如图所示则需手动安装驱动
+
+![image-20250226152046272](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152046272.png)
+
+手动安装驱动
+
+![370849870429aae4906079eb686ee326](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/370849870429aae4906079eb686ee326.jpg)
+
+![image-20250226152541205](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152541205.png)
+
+![image-20250226152555933](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152555933.png)
+
+![image-20250226152618854](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152618854.png)
+
+![image-20250226152635425](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152635425.png)
+
+
+
+![image-20250226152643858](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152643858.png)
+
+![image-20250226152654260](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152654260.png)
