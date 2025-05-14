@@ -1,41 +1,5 @@
 # 04-Expansion_Pins
 
-## Serial Port
-
-**Test Tools**
-
-Use USB-to-TTL cable.
-
-![image-20241231145656021](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241231145656021.png)
-
-**TTL Standard Serial Port**
-
-Connect using a serial port tool.
-
-![66637824ee48c91b31130503a4400149](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/66637824ee48c91b31130503a4400149.jpg)
-
-**Software Testing Methods**
-
-`ttyAS5` corresponds to serial port 5 (pins PH2 and PH3) with a baud rate of 115200.
-
-```shell
-stty -F /dev/ttyAS5 ispeed 115200 ospeed 115200 cs8 
-```
-
-Send data to the serial port:
-
-```shell
-echo kickpi > /dev/ttyAS5  
-```
-
-Receive data:
-
-```shell
-cat /dev/ttyAS5 
-```
-
----
-
 ## GPIO
 
 ### WiringKP Tool Usage
@@ -203,6 +167,46 @@ echo 0 > /sys/class/gpio_sw/PC12/data  // Low
 ```
 
 ---
+
+## Serial Port
+
+**Test Tools**
+
+Use USB-to-TTL cable.
+
+![image-20241231145656021](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241231145656021.png)
+
+**TTL Standard Serial Port**
+
+Connect using a serial port tool.
+
+![66637824ee48c91b31130503a4400149](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/66637824ee48c91b31130503a4400149.jpg)
+
+**Software Testing Methods**
+
+`ttyAS5` corresponds to serial port 5 (pins PH2 and PH3) with a baud rate of 115200.
+
+```shell
+stty -F /dev/ttyAS5 ispeed 115200 ospeed 115200 cs8 
+```
+
+Send data to the serial port:
+
+```shell
+echo kickpi > /dev/ttyAS5  
+```
+
+Receive data:
+
+```shell
+cat /dev/ttyAS5 
+```
+
+---
+
+## 
+
+
 
 ## Modify UART Control Port
 
