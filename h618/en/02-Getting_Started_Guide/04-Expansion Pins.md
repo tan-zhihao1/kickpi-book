@@ -82,7 +82,7 @@ gpio pwmr 3 2048 //Set ARR to 2048 Duty cycle to 512/2048=25%
 ![image-20250514115347443](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115347443.png)
 
 ``` shell
-gpio pwm 3 1024 //设置CCR为1024 占空比为1024/2048=50%
+gpio pwm 3 1024 //Set CCR to 1024 Duty cycle to 1024/2048=50%
 ```
 
 ![image-20250514115517926](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115517926.png)
