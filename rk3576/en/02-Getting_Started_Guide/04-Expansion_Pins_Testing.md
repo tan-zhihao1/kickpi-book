@@ -165,6 +165,8 @@ console$ cansend can0 00000123##1DEADBEEF
 
 > In loopback mode, the data sent by cansend can be received by candump.
 
+
+
 ## PWM
 
 The expansion pins of the K7 motherboard can be configured as PWM interfaces. Check the corresponding PWM positions and channel numbers in the [Expansion Pins section](#ExpansionPin-K7).
@@ -211,6 +213,8 @@ console$ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
 
 > After successful configuration, you can use a multimeter to measure the PWM0_CH1_M0 pin, and the voltage should be around 1.6V.
 
+
+
 ## UART
 
 The expansion pins of the K7 motherboard can be configured as UART interfaces. Check the corresponding UART positions and channel numbers in the [Expansion Pins section](#ExpansionPin-K7).
@@ -240,6 +244,8 @@ hello uart word!
 ```
 
 > In the loopback test, microcom can receive the output characters simultaneously.
+
+
 
 ## SPI
 
@@ -280,6 +286,8 @@ RX | 68 65 6C 6C 6F __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ 
 > The tool's network disk path
 >
 > 3-SoftwareData\Linux_Spi_Tool\spidev_test
+
+
 
 ## ADC
 
