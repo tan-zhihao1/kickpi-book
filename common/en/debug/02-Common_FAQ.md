@@ -24,7 +24,10 @@ When using Mobaxterm software or other serial port tools to connect to the seria
 
 **Solution**: Generally, the debug serial port tool does not support a baud rate of 1,500,000. It is recommended to use a debug serial port tool that supports a baud rate of 1,500,000.
 
+
+
 ## System Startup Stuck at the Logo Screen
+
 1. Ensure that the firmware being used is the one provided. Only when using the firmware provided on the network disk can technical support assist in troubleshooting.
 2. Restart the system multiple times and check if the issue persists every time.
 3. If you are using the Ubuntu system, the startup may sometimes be slow. Please wait patiently and observe if the system subsequently enters the graphical interface normally.
@@ -32,12 +35,18 @@ When using Mobaxterm software or other serial port tools to connect to the seria
 5. Confirm whether the blue system running light is blinking.
 6. Connect to the debug serial port and keep all printed startup logs for technical support to assist in troubleshooting.
 
+
+
 ## System Continuously Restarting
+
 1. Remove all peripherals to eliminate peripheral interference.
 2. Connect to the serial port to view the logs for troubleshooting.
 3. Try replacing the power supply. Poor power supply can cause some functions of the board to malfunction and lead to restarts.
 
+
+
 ## Username and Password Errors
+
 When logging in via ssh, the password is incorrect.
 
 **Solution**: Please confirm whether the relevant account exists and whether the password is correct. You can use the following command to change the user password:
@@ -55,7 +64,10 @@ Retype new password:
 passwd: password updated successfully
 ```
 
+
+
 ## What is the Motherboard Command Line Console? <a id="console_readme"> </a>
+
 The command line console, as referred to in the documentation, generally refers to an operating interface that allows users to interact with the computer system through text commands. Users execute operations (such as file management, program execution, and system configuration) by entering specific instructions, rather than relying on mouse clicks and visual operations in a graphical user interface (GUI).
 
 Examples of command line consoles:

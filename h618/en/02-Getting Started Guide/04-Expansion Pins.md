@@ -1,4 +1,4 @@
-# 04-Expansion Pins
+# 04-Expansion_Pins
 
 ## Serial Port
 
