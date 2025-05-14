@@ -1,4 +1,4 @@
-# 44-Keybox
+# Keybox
 
 ​	由于 efuse 空间受限， Tina 上支持了 keybox Secure Storage 功能，该功能默认开启。下面介绍如何自定义keybox进行烧录并读取。
 
