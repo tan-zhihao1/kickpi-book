@@ -8,25 +8,25 @@
 
 #### KICKPI-K1 (RK3568)
 
-* [RK356X English Document](rk356x-rk3588/en)
+* [RK356X-RK3588 English Document](rk356x-rk3588/en)
 
-* [RK356X 中文文档](rk356x-rk3588/zh)
+* [RK356X-RK3588 中文文档](rk356x-rk3588/zh)
 
 
 
 #### KICKPI-K1B (RK3568)
 
-* [RK356X English Document](rk356x-rk3588/en)
+* [RK356X-RK3588 English Document](rk356x-rk3588/en)
 
-* [RK356X 中文文档](rk356x-rk3588/zh)
+* [RK356X-RK3588 中文文档](rk356x-rk3588/zh)
 
 
 
 #### KICKPI-K3 (RK3562)
 
-* [RK356X English Document](rk356x-rk3588/en)
+* [RK356X-RK3588 English Document](rk356x-rk3588/en)
 
-* [RK356X 中文文档](rk356x-rk3588/zh)
+* [RK356X-RK3588 中文文档](rk356x-rk3588/zh)
 
 
 
@@ -39,9 +39,9 @@
 
 #### KICKPI-K8 (RK3588)
 
-* [RK356X English Document](rk356x-rk3588/en)
+* [RK356X-RK3588 English Document](rk356x-rk3588/en)
 
-* [RK356X 中文文档](rk356x-rk3588/zh)
+* [RK356X-RK3588 中文文档](rk356x-rk3588/zh)
 
 
 
