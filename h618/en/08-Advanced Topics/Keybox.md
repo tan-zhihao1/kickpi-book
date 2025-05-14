@@ -1,4 +1,4 @@
-# 44-Keybox
+# Keybox
 
 Due to limited efuse space, Tina supports the Keybox Secure Storage feature by default. This document describes how to customize and burn keyboxes, as well as read them.
 
@@ -41,7 +41,7 @@ Keybox reading uses Allwinner-provided APIs. Tina includes demo implementations 
 1. Run kernel configuration:  
    ```shell
    $ make menuconfig
-   ```  
+   ```
 2. Enable the following options:  
    ```
    Tina Configuration
@@ -51,14 +51,14 @@ Keybox reading uses Allwinner-provided APIs. Tina includes demo implementations 
            └─> <*> optee-efuse-read................... OPTEE efuse read demo
            └─> <*> optee-helloworld....................... OPTEE Hello World
            └─> -*- optee-os-dev-kit...................... optee-os-dev-kit  
-   ```  
+   ```
    > `optee-efuse-read`: Example for keybox reading.  
    > `optee-helloworld`: Example to verify TA/CA environment.
 
 3. Verify changes:  
    ```shell
    $ git diff target/allwinner/h618-p2/defconfig
-   ```  
+   ```
    ```diff
    diff --git a/target/allwinner/h618-p2/defconfig b/target/allwinner/h618-p2/defconfig
    index c6c47b5f4..d3b2737eb 100755
@@ -85,7 +85,7 @@ Keybox reading uses Allwinner-provided APIs. Tina includes demo implementations 
    ```shell
    $ cd package/security/optee-os-dev-kit/dev_kit/
    $ cp -rp arm-plat-sun50iw1p1 arm-plat-sun50iw9p1
-   ```  
+   ```
 
 #### 1.2.2 Modifications for `optee-efuse-read` Demo
 
@@ -122,7 +122,7 @@ Add debug prints for keybox buffer:
 - **`utee_sunxi_keybox`**  
   ```c
   TEE_Result utee_sunxi_keybox(const char *keyname, uint8_t *out_buf, uint32_t size);
-  ```  
+  ```
   **Purpose**: Read keybox data by name.  
   **Parameters**:  
   - `keyname`: Key name (must match entries in `keybox_list`).  
@@ -133,7 +133,7 @@ Add debug prints for keybox buffer:
 - **`utee_sunxi_read_efuse`**  
   ```c
   TEE_Result utee_sunxi_read_efuse(const char *keyname, uint8_t *result_len, uint8_t *rd_buf);
-  ```  
+  ```
   **Purpose**: Read efuse data.  
   **Parameters**:  
   - `keyname`: Key name.  
@@ -144,7 +144,7 @@ Add debug prints for keybox buffer:
 - **`utee_sunxi_write_efuse`**  
   ```c
   TEE_Result utee_sunxi_write_efuse(const char* keyname, uint8_t write_len, uint8_t *wr_buf);
-  ```  
+  ```
   **Purpose**: Burn data to efuse.  
   **Parameters**:  
   - `keyname`: Key name.  
@@ -160,7 +160,7 @@ Add debug prints for keybox buffer:
    ```
    [target]
    burn_key = 1
-   ```  
+   ```
    ![image-20241122101659346](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241122101659346.png)  
 
 2. Build firmware:  
@@ -168,7 +168,7 @@ Add debug prints for keybox buffer:
    $ source build/envsetup.sh
    $ lunch apollo_p2-userdebug
    $ pack -sv
-   ```  
+   ```
    > Output: `longan/out/h618_android12_p2_uart0_secure_secure_v0.img`  
    > (`v0` is the default version number).  
 
@@ -180,7 +180,7 @@ Add debug prints for keybox buffer:
    ```
    => printenv
    keybox_list=hdcpkey,widevine,xie
-   ```  
+   ```
 
 2. Verify TA/CA functionality:  
    ```shell
@@ -195,7 +195,7 @@ Add debug prints for keybox buffer:
    TA:rec cmd 0x210
    TA:hello world!
    NA:finish with 0
-   ```  
+   ```
 
 ---
 
@@ -234,13 +234,13 @@ Use the **DragonSN** tool to burn keyboxes via USB.
    [259.450]1 data:
    48 39 25 17 00 00 00 00 78 69 65 00 00 00 00 00 
    ... (truncated)
-   ```  
+   ```
 
 2. **System-Level Read**:  
    ```shell
    # tee-supplicant &
    # efuse_read_demo_na -ext_key xie
-   ```  
+   ```
    Output:  
    ```
    NA:init context
@@ -248,11 +248,11 @@ Use the **DragonSN** tool to burn keyboxes via USB.
    TA:creatyentry!
    TA:open session!
    NA:allocate memoryTA:rec cmd 0x220
-
+   
    NA:invoke command
    keyname: xie 
    keybox:
    0x11 0x11 0x11 0x11 0x11 0x11 0x11 0x11 
    ... (truncated)
-   ```  
+   ```
    > Compare the output with your burned key for verification.
