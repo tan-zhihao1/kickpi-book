@@ -87,8 +87,6 @@ $ ./build.sh -UCKAum
 
 ### Single Compilation
 
-* The following commands require [configuring the environment](#androidEnv-K7) first.
-
 Single compile Uboot
 
 ```
