@@ -16,4 +16,4 @@
 
 ## Expansion Pins
 
-![K2c详情页_07](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K2c详情页_07.jpg)
+![image-20250514101007102](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514101007102.png)
