@@ -27,7 +27,7 @@ console$ sudo apt-get install tigervnc-tools -y
 **创建/修改密码**
 
 ```
-console$ x11vnc -storepasswd
+console$ vncpasswd
 ```
 
 示例：
