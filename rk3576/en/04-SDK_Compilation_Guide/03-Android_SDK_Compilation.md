@@ -44,7 +44,7 @@ $ git reset --hard
 
 ### Configure the Environment
 
-> Prerequisite: Ensure the hardware requirements for compilation and the successful [setup of the compilation environment](01-Compilation Environment Setup.md).
+> Prerequisite: Ensure the hardware requirements for compilation and the successful [setup of the compilation environment](01-Compilation_Environment_Setup.md).
 
 Configure the environment before single compilation or full compilation.
 
