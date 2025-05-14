@@ -11,29 +11,33 @@ You can obtain the cloud drive links through the purchasing platform or by consu
 
 ```
 ├── 0-Specifications
-│   └── KICKPI K7 Product Specification.pdf
+│   └── KICKPI_K7_Product_Specification_CN.pdf
 ├── 1-SDK
-│   └── README.txt
+│   └── README.txt
 ├── 2-Image
-│   ├── Android14
-│   ├── Debian12
-│   ├── Ubuntu2404
-│   └── UPDATE_LOG.txt
+│   ├── Android14
+│   ├── Debian12
+│   ├── Ubuntu2404
+│   └── UPDATE_LOG.txt
 ├── 3-SoftwareData
-│   ├── Linux_Pack_Firmware.zip
-│   ├── readme.txt
-│   ├── rk35xx-rkllm-deepseek.tar.gz
-│   ├── rknn_yolov5_demo_Linux_rk3576.zip
-│   └── yolov5_test.h264
+│   ├── Android_app_signkey
+│   ├── Linux_backup_rootfs_script
+│   ├── Linux_rkllm_deepseek
+│   ├── Linux_rknn_yolov5
+│   ├── Linux_spi_tool
+│   ├── readme.txt
+│   └── Rockchip_pack_firmware_tool
 ├── 4-HardwareData
-│   └── K7_V1.1_20241211_SCH.pdf
+│   ├── K7_PCB_Dimension_Drawing.pdf
+│   └── K7_V1.1_20241211_SCH.pdf
 └── 5-DevelopmentTool
-    ├── ADB Scrcpy
-    ├── ADB Tool
-    ├── FactoryTool
-    ├── UART DebugTool
-    ├── USB Driver
-    └── USB ImageBurnTool
+    ├── win_x64_ADB_Tool
+    ├── win_x64_FactoryTool
+    ├── win_x64_QtScrcpy
+    ├── win_x64_SDDiskTool
+    ├── win_x64_UartDebugTool
+    ├── win_x64_UsbDriver
+    └── win_x64_UsbImageBurnTool
 ```
 
 ## Directory Explanations
