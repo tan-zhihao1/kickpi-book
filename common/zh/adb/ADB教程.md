@@ -48,7 +48,7 @@ Version 4797878
 Installed as D:\ADB Tool\adb-tools\adb.exe
 ```
 
-![image-20250509185455550](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185455550.png)
+
 
 ### **ADB 检测设备**
 
@@ -93,7 +93,13 @@ adb reboot
 
 此命令能让连接的设备重启。
 
+**adb登录**
 
+``` 
+adb shell
+```
+
+![image-20250509185455550](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185455550.png)
 
 ### 文件操作
 
