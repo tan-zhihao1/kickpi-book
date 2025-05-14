@@ -33,7 +33,9 @@ gpio mode <wPi> <mode> // Set pin mode (supports out/in/up/down)
 gpio write <wPi> <val> // Set pin output level
 ```
 
-Set PH5 to output mode and output high level (Note: PC pins output 1.8V, PH pins output 3.3V):
+**Set PH5 to output mode and output high level **
+
+(Note: PC pins output 1.8V, PH pins output 3.3V):
 
 ```shell
 kickpi@kickpi:~$ gpio mode 0 out
@@ -45,7 +47,7 @@ kickpi@kickpi:~$ gpio read 0
 ```
 
 Use a multimeter to verify PH5 is high.  
-Set PH5 to input mode with pull-down:
+**Set PH5 to input mode with pull-down**
 
 ```shell
 kickpi@kickpi:~$ gpio mode 0 in
@@ -57,7 +59,50 @@ kickpi@kickpi:~$ gpio read 0
 1
 ```
 
----
+**Set PH2 to PWM mode**
+
+``` shell
+root@kickpi:~# gpio mode 3 pwm #Default output frequency 23475Hz Square wave with duty cycle 50%
+```
+
+![image-20250514115200103](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115200103.png)
+
+**调节占空比**
+
+PWM占空比 = CCR/ARR
+
+CCR范围0~65535 默认512
+
+ARR范围1~65536 默认1024
+
+``` shell
+gpio pwmr 3 2048 //设置ARR为2048 占空比为512/2048=25%
+```
+
+![image-20250514115347443](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115347443.png)
+
+``` shell
+gpio pwm 3 1024 //设置CCR为1024 占空比为1024/2048=50%
+```
+
+![image-20250514115517926](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115517926.png)
+
+**调节频率**
+
+``` shell
+gpio mode 3 pwm //默认输出频率为23475Hz
+gpio pwmc 3 5   //设置分频系数为5 则输出频率为23475/5=4695Hz，实际频率为4688Hz 误差可忽略
+```
+
+![image-20250514115800211](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115800211.png)
+
+``` shell
+gpio pwmTone 3 20000 //直接设置频率为20000Hz
+```
+
+![image-20250514115920195](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514115920195.png)
+
+### 
 
 ### sys GPIO Control
 
