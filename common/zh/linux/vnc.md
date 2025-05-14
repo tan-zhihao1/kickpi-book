@@ -45,8 +45,20 @@ root@linaro-alip:/#
 **启动VNC服务器**
 
 ```
-console$ export DISPLAY=:0
-console$ x11vnc -display :0 -auth /home/kickpi/.Xauthority -rfbport 5900 -rfbauth $(passwd_path)
+[Unit]  
+Description=Remote desktop service (VNC)  
+After=syslog.target network.target  
+
+[Service]  
+Type=forking  
+User=user  
+PIDFile=/home/user/.vnc/%H:%i.pid  
+ExecStartPre=-/usr/bin/vncserver -kill :%i > /dev/null 2>&1  
+ExecStart=/usr/bin/vncserver :%i -geometry 1920x1080 -depth 24  
+ExecStop=/usr/bin/vncserver -kill :%i  
+
+[Install]  
+WantedBy=multi-user.target  
 ```
 
 示例：
