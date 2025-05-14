@@ -1,4 +1,4 @@
-## 33-linux QT应用编译环境搭建
+## 02-Linux_QT开发环境搭建
 
 ### QT Creator环境配置
 

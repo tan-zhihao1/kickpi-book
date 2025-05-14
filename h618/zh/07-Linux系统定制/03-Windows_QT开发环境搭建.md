@@ -1,10 +1,10 @@
-# QT开发环境搭建
+# 03-Windows_QT开发环境搭建
 
 Windows10/11下交叉编译aarch64(ARMv8)架构Qt5.12.10
 
 下载QT开发环境相关软件包，网盘这个目录下的都要下载
 
-h618_data\3-SoftwareData软件资料\Qt_environment_installation
+h618_data\3-SoftwareData\Qt_environment_installation
 
 ## 安装QT
 
