@@ -1,6 +1,6 @@
 # 01-Compilation_Environment_Setup
 
-## Build Environment Setup <a id="BuildEnv-K7"></a>
+## Build Environment Setup
 
 This build environment configuration is applicable to Android/Linux SDK.
 
