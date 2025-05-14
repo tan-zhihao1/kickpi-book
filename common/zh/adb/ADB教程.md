@@ -52,7 +52,7 @@ Installed as D:\ADB Tool\adb-tools\adb.exe
 
 ### **ADB 检测设备**
 
-1. 使用 TYPE - C 数据线将电脑和主板连接起来。
+1. 使用 USB Type-C 数据线将电脑和主板连接起来。
 2. 打开命令行窗口，切换到 ADB 工具解压目录，运行以下命令，若接入成功，可检测到对应 device：
 
 ```
