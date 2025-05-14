@@ -1,4 +1,4 @@
-# 02-USB Cable Burning
+# 02-USB_Cable_Flashing
 
 ## 1. Android USB Cable Image Burning
 
