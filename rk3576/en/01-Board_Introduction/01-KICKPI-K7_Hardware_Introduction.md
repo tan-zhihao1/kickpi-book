@@ -14,7 +14,7 @@
 
 ## Expansion Pins Information
 
-**K7 Expansion Pin List**
+**K7**
 
 ![K7_PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_PIN.png)
 
