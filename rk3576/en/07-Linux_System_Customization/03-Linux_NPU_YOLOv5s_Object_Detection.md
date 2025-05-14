@@ -1,4 +1,4 @@
-# 03-Linux NPU YOLOV5S Object Detection
+# 03-Linux_NPU_YOLOv5s_Object_Detection
 
 ## Symbol Explanation
 

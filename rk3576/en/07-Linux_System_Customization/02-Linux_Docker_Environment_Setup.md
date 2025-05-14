@@ -1,4 +1,4 @@
-# 02 - Linux Docker Environment Setup
+# 02-Linux_Docker_Environment_Setup
 
 Test platform: K7 (RK3567)
 
