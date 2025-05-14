@@ -14,7 +14,10 @@ If the MIPI screen fails to display, check whether the wiring is correct and whe
 
 **Solution**:
 - If the backlight is not lit, check the wiring.
-- If the backlight is lit, check the software. (K7 V1.2 does not support automatic recognition of MIPI screens yet. Different software needs to be burned for corresponding screens.)
+
+- If the backlight is lit, check the software.
+
+   (K7 V1.2 does not support automatic recognition of MIPI screens yet. Different software needs to be burned for corresponding screens.)
 
 
 
