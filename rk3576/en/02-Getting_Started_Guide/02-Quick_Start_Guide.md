@@ -149,6 +149,8 @@ When the motherboard is connected to multiple peripherals, resulting in high pow
 
 **Solution**: This is generally a power supply issue. Please check if the power consumption of the corresponding power supply is sufficient to support the power supply of the connected peripheral modules.
 
+
+
 ### **MIPI Screen Not Displaying Issue**
 
 If the MIPI screen cannot display, you can check if the wiring is correct and if the backlight is lit normally.
@@ -158,11 +160,15 @@ If the MIPI screen cannot display, you can check if the wiring is correct and if
 - If the backlight is not lit, check the wiring.
 - If the backlight is lit, check the software. (K7 V1.2 does not support automatic recognition of MIPI screens yet. Different software needs to be flashed for corresponding screens.)
 
+
+
 ### **Abnormal Use of the Debugging Serial Port**
 
 When using the Mobaxterm software or other serial port tools to connect to the serial port, you may find that the serial port has garbled characters or can only display but cannot write.
 
 **Solution**: Generally, the debugging serial port tool does not support a baud rate of 1500000. It is recommended to use a debugging serial port tool that supports a baud rate of 1500000.
+
+
 
 ### What is the Motherboard Command-Line Console? <a id="console_readme"> </a>
 

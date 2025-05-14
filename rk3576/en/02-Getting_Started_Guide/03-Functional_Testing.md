@@ -2,11 +2,15 @@
 
 This document aims to help users quickly get started or test the functions of the motherboard's peripheral interfaces.
 
+
+
 ## Symbol Explanation
 
 * `SDK$`: Represents the source code path.
 * `console$`: Generally refers to the command-line console of the motherboard. [Motherboard command-line console](../02-Getting Started/02-Quick Start.md#console_readme)
 * `ADB$`: Android Debug Bridge command-line tool, generally referring to an environment where ADB can be run.
+
+
 
 ## LED
 
