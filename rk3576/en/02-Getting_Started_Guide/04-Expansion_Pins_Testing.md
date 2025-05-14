@@ -8,7 +8,7 @@ This document is used for users to quickly use or test the expansion pin functio
 * `console$`: Generally refers to the command-line console of the motherboard. [Motherboard command-line console](02-Quick_Start_Guide.md#console_readme)
 * `ADB$`: Android Debug Bridge command-line tool, generally refers to an environment where ADB can be run.
 
-## Expansion Pins <a id="ExpansionPin-K7"></a>
+## Expansion Pins<a id="ExpansionPin-K7"></a>
 
 The development board is equipped with on-board expansion pin functions.
 
