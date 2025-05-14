@@ -3,7 +3,7 @@
 ## Symbol Explanation
 
 * `SDK$`: Refers to the source code path.
-* `console$`: Generally refers to the command-line console of the motherboard. [Motherboard command-line console](../02-Getting Started/02-Quick Start.md#console_readme)
+* `console$`: Generally refers to the command-line console of the motherboard. [Mainboard Command-line Console](..\02-Getting_Started_Guide\02-Quick_Start_Guide.md#console_readme)
 * `ADB$`: Android Debug Bridge command-line tool, generally refers to the environment where ADB can be run.
 
 ## System Platform
