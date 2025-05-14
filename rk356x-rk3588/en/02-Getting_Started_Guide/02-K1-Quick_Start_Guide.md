@@ -59,7 +59,7 @@ LVDS/MIPI 1 interface: [Pull-up FPC interface](../../../common/en/display/FPC_In
 
 The K1 board is designed with one eDP screen interface.
 
-eDP interface: [Flip-down FPC interface](../../../common/en/display/FPC_Interface_Introduction#FPC-1)
+eDP interface: [Flip-down FPC interface](../../../common/en/display/FPC_Interface_Introduction.md#FPC-1)
 
 ![image-20250512141137367](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250512141137367.png)
 
