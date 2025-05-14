@@ -6,7 +6,7 @@ VNC（Virtual Network Computing）是一种基于远程帧缓冲协议（RFB）�
 
 ## 符号说明
 
-* `console$`：泛指主板的命令行控制台。[主板命令行控制台](#console_readme)
+* `console$`：泛指主板的命令行控制台。
 
 
 
