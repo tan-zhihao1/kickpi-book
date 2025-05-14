@@ -36,13 +36,9 @@ console$ vncpasswd
 root@linaro-alip:/# vncpasswd  
 Password:
 Verify:
-Would you like to enter a view-only password (y/n)? y
-Password:
-Verify:
+Would you like to enter a view-only password (y/n)? n
 root@linaro-alip:/# 
 ```
-
-> 可知密码存放路径 $(passwd_path) 为 /home/kickpi/.vnc/passwd
 
 
 
