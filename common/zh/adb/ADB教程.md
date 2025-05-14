@@ -162,7 +162,7 @@ adb uninstall com.example.app
 **清除应用数据**
 
 ```bash
-adb shell pm clear <应用包名>
+adb shell pm clear <APK Packname>
 ```
 
 该命令会清除指定应用的所有数据，如清除 `com.example.app` 的数据：
