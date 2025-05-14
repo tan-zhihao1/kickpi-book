@@ -1,6 +1,4 @@
-# Inputs
-
-## Frequently Asked Questions
+# 02-Common FAQ
 
 ### Power-on and Power Supply Issues
 When the motherboard is connected to multiple peripherals, resulting in high power consumption, after the power is connected, the power-on green light may be dim or not stay lit constantly, and the system startup may also encounter abnormalities.
