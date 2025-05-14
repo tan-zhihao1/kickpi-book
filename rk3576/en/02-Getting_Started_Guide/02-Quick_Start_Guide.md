@@ -170,7 +170,7 @@ When using the Mobaxterm software or other serial port tools to connect to the s
 
 
 
-### What is the Motherboard Command-Line Console? <a id="console_readme"> </a>
+### What is the Motherboard Command-Line Console?<a id="console_readme"> </a>
 
 The command-line console generally refers to the operating interface in the document that allows users to interact with the computer system through text commands. Users execute operations (such as file management, program running, system configuration, etc.) by entering specific instructions, rather than relying on the mouse clicks and visual operations of the graphical user interface (GUI).
 
