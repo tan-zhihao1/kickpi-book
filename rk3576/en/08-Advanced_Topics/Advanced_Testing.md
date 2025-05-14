@@ -30,7 +30,7 @@ Hardware factory testing is a hardware aging test based on the DeviceTest applic
 
 It mainly targets the aging tests of CPU, DDR, GPU, and VPU.
 
-### Android
+### **Android**
 
 **Copy the VPU test video**
 
