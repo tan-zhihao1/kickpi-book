@@ -14,4 +14,4 @@
 
 ## Expansion Pins
 
-![image-20250424171339077](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250424171339077.png)
+![image-20250514100540080](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514100540080.png)
