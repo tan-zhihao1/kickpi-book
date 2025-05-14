@@ -2,7 +2,7 @@
 
 This document is used for users to burn or upgrade the motherboard system.
 
-## Image Burning
+## Image Flashing
 
 ### Install USB Driver <a id="USBDRV"></a>
 
@@ -60,7 +60,7 @@ This document is used for users to burn or upgrade the motherboard system.
 
 ![image-20250422093934098](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093934098.png)
 
-## Factory Burning
+## Factory Flashing
 
 ### Install FactoryTool
 

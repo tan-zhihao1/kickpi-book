@@ -59,7 +59,7 @@ Set to **115200**.
 
 **K2B**
 
-![image-20250426173419507](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426173419507.png)
+![K2B DEBUG PORT](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426173419507.png)
 
 ![image-20250426173855683](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426173855683.png)
 
