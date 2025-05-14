@@ -23,6 +23,7 @@ The left network port light being on indicates a 100M connection, and the right 
 K2C has no network port lights.
 
 You can view the board's IP address through the router background or the serial port terminal.
+
 ![image-20250412164019949](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250412164019949.png)
 
 
