@@ -1,9 +1,5 @@
 # 01-KICKPI-K2B硬件介绍
 
-
-
-
-
 ## 主控信息
 
 ![image-20240320092438171](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240320092438171.png)
