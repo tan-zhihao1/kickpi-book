@@ -36,7 +36,7 @@ In addition, the system heartbeat LED can be controlled for other functions as d
 
 ## Display
 
-The display interfaces available on the K3 motherboard can be found in the [K3 Hardware Introduction](../01-Motherboard_Introduction/04-KICKPI-K3_Hardware_Introduction.md#display) section, which shows the number of interfaces and the types of displays they are compatible with by default. You can choose to connect display peripherals as needed.
+The display interfaces available on the K3 motherboard can be found in the [K3 Hardware Introduction](../01-Development_board_Introduction/04-KICKPI-K3_Hardware_Introduction.md#display) section, which shows the number of interfaces and the types of displays they are compatible with by default. You can choose to connect display peripherals as needed.
 
 **The display interfaces on the KICKPI development board are all used with the corresponding display adapter boards. The adapter boards will be pre-connected and shipped when you purchase the display.**
 

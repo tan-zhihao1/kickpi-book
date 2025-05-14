@@ -37,7 +37,7 @@ Additionally, the system heartbeat indicator can be controlled for other functio
 
 ## Display
 
-The K1 motherboard has display interfaces. The number of interfaces and the default compatible display types can be found in the [K1 Hardware Introduction](../01-Motherboard_Introduction/02-KICKPI-K1_Hardware_Introduction.md#display) section. You can connect display peripherals as needed.
+The K1 motherboard has display interfaces. The number of interfaces and the default compatible display types can be found in the [K1 Hardware Introduction](../01-Development_board_Introduction/02-KICKPI-K1_Hardware_Introduction.md#display) section. You can connect display peripherals as needed.
 
 **All display interfaces on the KICKPI development board are used with the corresponding display adapter boards. The adapter boards will be pre-connected and shipped when you purchase the display.**
 
