@@ -37,6 +37,14 @@
 
 
 
+#### KICKPI-K8 (RK3588)
+
+* [RK356X English Document](rk356x-rk3588/en)
+
+* [RK356X 中文文档](rk356x-rk3588/zh)
+
+
+
 ---
 
 ## Allwinner Series
