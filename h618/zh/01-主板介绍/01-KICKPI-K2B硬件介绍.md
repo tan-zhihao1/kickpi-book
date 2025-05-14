@@ -28,3 +28,5 @@
 ## 扩展引脚
 
 ![image-20250514100544929](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514100544929.png)
+
+> 带 * 号为软件默认配置功能
