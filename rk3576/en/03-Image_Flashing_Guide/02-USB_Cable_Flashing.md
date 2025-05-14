@@ -22,7 +22,7 @@ This document is used for users to burn or upgrade the motherboard system.
 3. Click "Driver Installation". When the installation is successful, a prompt will appear.
 (If an old version of the driver is already installed, you can uninstall the driver first and then install the driver again to keep the driver version up-to-date.)
 
-![image-20241025101606583](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101606583.png)
+
 
 ### Install RKDevTool
 
