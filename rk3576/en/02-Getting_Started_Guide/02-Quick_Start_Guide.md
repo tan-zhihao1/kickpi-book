@@ -127,15 +127,21 @@ You can download the serial assistant software by yourself. Here is an example u
 
 ![image-20250418175523261](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250418175523261.png)
 
+
+
 ## ADB
 
-The K7 supports the use of the ADB function. For details, see [ADB Tutorial](../../../common/zh/adb/ADB教程.md).
+The K7 supports the use of the ADB function. For details, see [ADB Tutorial](../../../common/en/adb/ADB_Tutorial.md).
+
+
 
 ## SSH
 
-The K7 supports the use of the SSH function. For details, see [SSH](../../../common/zh/linux/SSH.md).
+The K7 supports the use of the SSH function. For details, see [SSH](../../../common/en/linux/SSH.md).
 
-## Common Issues
+
+
+## FAQ
 
 ### **Power Supply Issues after Power-On**
 
