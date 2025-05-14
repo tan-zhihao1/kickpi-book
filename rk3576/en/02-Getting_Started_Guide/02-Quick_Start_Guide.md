@@ -1,5 +1,5 @@
 
-# 02-Quick Start Guide
+# 02-Quick_Start_Guide
 
 This guide aims to help users quickly get started with using the motherboard, covering topics such as powering on the board, connecting the display screen, using the debugging serial port, ADB, and SSH connections.
 

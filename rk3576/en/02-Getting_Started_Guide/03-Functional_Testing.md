@@ -1,4 +1,4 @@
-# 03 - Functional Testing
+# 03-Functional_Testing
 
 This document aims to help users quickly get started or test the functions of the motherboard's peripheral interfaces.
 

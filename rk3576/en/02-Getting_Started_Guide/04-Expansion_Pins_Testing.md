@@ -1,4 +1,4 @@
-# 04 - Expansion Pins
+# 04-Expansion_Pins_Testing
 
 This document is used for users to quickly use or test the expansion pin functions of the motherboard.
 
