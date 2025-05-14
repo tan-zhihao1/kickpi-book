@@ -1,4 +1,4 @@
-# 02-LINUX_SDK Source Code Compilation
+# 02-Linux_SDK_Compilation
 
 ### Obtaining the SDK Source Code
 
