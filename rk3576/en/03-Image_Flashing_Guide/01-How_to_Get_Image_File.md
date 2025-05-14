@@ -42,23 +42,28 @@ update-rk3576-kickpi-k7-android-HDMI-202504171451.img
 A(update)-B(rk3576-kickpi-k7)-C(android)-D(HDMI)-E(202504171451).img
 ```
 
-### Part A
+**Part A**
+
 update - Refers to the complete image package.
 
-### Part B
+**Part B**
+
 This part represents the main control model and hardware board type.
 rk3576-kickpi-k7 - Represents the main control model rk3576 and the hardware board type k7.
 
-### Part C
+**Part C**
+
 This part represents the system name.
 android - Android system image
 ubuntu - Ubuntu system image
 debian - Debian system image
 
-### Part D
+**Part D**
+
 Other identifiers in the image name, used to indicate some special differences of the image.
 hdmi - The default display is through the HDMI interface.
 8-MX080B2140 - The default display is the screen of model MX080B2140.
 
-### Part E
+**Part E**
+
 202504171451 - The update date of the image.
