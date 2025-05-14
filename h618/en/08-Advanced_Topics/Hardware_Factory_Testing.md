@@ -1,4 +1,4 @@
-# Hardware Factory Testing
+# Hardware_Factory_Testing
 
 This document applies to the factory-default Android system.
 

@@ -1,4 +1,4 @@
-# Android Common System Customization
+# 01-Android_Common_System_Customization
 
 H618 Android 12.0 is an official TV system compatible with TV-version apps. Installing tablet or phone apps may cause compatibility issues.
 
@@ -72,7 +72,7 @@ Android uses lazy compilation. Directly replacing files may not trigger recompil
 2. Delete specific files:  
    ```
    rm out/target/product/apollo-p2/xxx/xxx
-   ```  
+   ```
 3. Modify compilation conditions (e.g., filenames or APK names).  
 
 ---
@@ -173,7 +173,7 @@ Options:
 1. Place your APK and `Android.bp`/`Android.mk` in:  
    ```
    h618-android12.0/vendor/aw/public/prebuild/apk
-   ```  
+   ```
 2. Example `Android.mk`:  
    ```makefile
    LOCAL_PATH := $(call my-dir)
@@ -185,7 +185,7 @@ Options:
    LOCAL_MODULE := test
    LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
    include $(BUILD_PREBUILT)
-   ```  
+   ```
 3. Example `Android.bp`:  
    ```makefile
    android_app_import {
@@ -196,12 +196,12 @@ Options:
        privileged: true,
        enforce_uses_libs: false,
    }
-   ```  
+   ```
 4. Add the app to `vendor/aw/homlet/homlet.mk`:  
    ```makefile
    PRODUCT_PACKAGES += \
           test
-   ```  
+   ```
 
 ---
 
@@ -221,11 +221,11 @@ Override existing launchers using:
 - **Android.bp**:  
   ```makefile
   overrides: ["Launcher2", "Launcher3", ...]
-  ```  
+  ```
 - **Android.mk**:  
   ```makefile
   LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 ...
-  ```  
+  ```
 
 ### **Background Broadcast Method**  
 1. Add permissions and a broadcast receiver to `AndroidManifest.xml`:  
@@ -239,7 +239,7 @@ Override existing launchers using:
            <action android:name="android.intent.action.BOOT_COMPLETED" />
        </intent-filter>
    </receiver>
-   ```  
+   ```
 2. Implement the receiver:  
    ```java
    public class MyReceiver extends BroadcastReceiver {
@@ -252,7 +252,7 @@ Override existing launchers using:
            }
        }
    }
-   ```  
+   ```
 3. Pre-install the app to `/system/priv-app/` (see [Pre-installing Third-party Apps](#pre-installing-third-party-apps)).  
 
 ---
@@ -284,7 +284,7 @@ out/host/linux-x86/framework/signapk.jar
 If privileged permissions are missing, modify:  
 ```
 frameworks/base/data/etc/privapp-permissions-platform.xml
-```  
+```
 Example fix:  
 ```diff
 --- a/frameworks/base/data/etc/privapp-permissions-platform.xml
@@ -334,7 +334,7 @@ make installclean -j32
    ```bash
    adb tcpip 5555
    adb connect <DEVICE_IP>
-   ```  
+   ```
 2. Auto-start TCP/IP on boot:  
    ```bash
    adb root
@@ -343,13 +343,13 @@ make installclean -j32
    # Add: service.adb.tcp.port=5555
    adb push build.prop /system/build.prop
    adb reboot
-   ```  
+   ```
 
 ### **ADB Screen Casting**  
 Use tools from:  
 ```
 h618_data\5-DevelopmentTools\ADB Screen Cast
-```  
+```
 
 ---
 
