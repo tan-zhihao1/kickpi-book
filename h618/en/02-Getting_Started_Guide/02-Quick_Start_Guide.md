@@ -44,7 +44,7 @@ Supports HDMI output:
 
 Set to **115200**.
 
-### Cable Wiring
+### Debug Serial Cable Description
 
 UART Debug dongle has 4 wires：
 
