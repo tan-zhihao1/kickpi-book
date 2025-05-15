@@ -25,7 +25,7 @@ The K1 motherboard only supports 12V power supply. The power supply method is th
 The development board is equipped with 2 LEDs:
 
 The green LED is the power indicator, which is normally on when powered on.
-The blue LED is the system heartbeat indicator. If the heartbeat light flashes continuously, it indicates that the kernel is running normally.
+The blue LED is the system heartbeat indicator. If the heartbeat LED indicator flashes continuously, it indicates that the kernel is running normally.
 Additionally, the system heartbeat indicator can be controlled for other functions as described below.
 
 ### **Power-On Steps**
