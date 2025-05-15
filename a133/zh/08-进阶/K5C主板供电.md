@@ -169,9 +169,13 @@ $ echo 0xf > /sys/class/axp/debug_mask
 
 ### 系统按键无法正常休眠问题
 
-目前系统支持假待机，熄屏时仅关闭屏幕。
+查看是否配置了假待机
+
+
 
 开启假待机
+
+假待机熄屏时仅关闭屏幕。
 
 ```
 consloe$ setprop persist.sys.kickpi_holding_wakelock true
