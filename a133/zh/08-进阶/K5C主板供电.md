@@ -2,7 +2,7 @@
 
 K5C 主板支持多种供电方式，注意硬件版本是否支持！
 
-| 供电方式 | 供电电压 | 主板版本 |
+| 供电方式 | 供电电压 | 主板支持 |
 | -------- | -------- | -------- |
 | DC       | 12V      | >= V1.0  |
 | Type-C   | 5V       | >= V1.1  |
@@ -146,6 +146,12 @@ battery_power_supply: battery-power-supply {
 $ echo 8 > /proc/sys/kernel/printk
 $ echo 0xf > /sys/class/axp/debug_mask
 ```
+
+
+
+## 休眠
+
+
 
 
 
