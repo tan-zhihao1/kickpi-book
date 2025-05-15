@@ -171,3 +171,7 @@ $ echo 0xf > /sys/class/axp/debug_mask
 
 目前系统支持假待机，熄屏时仅关闭屏幕。
 
+```
+consloe$ setprop persist.sys.kickpi_holding_wakelock=true
+```
+
