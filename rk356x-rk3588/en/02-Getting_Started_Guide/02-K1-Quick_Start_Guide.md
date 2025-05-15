@@ -32,8 +32,8 @@ Additionally, the system heartbeat indicator can be controlled for other functio
 
 1. Plug in the DC12V power supply to  board.
 2. checking the status of the two LED lights:
-   - The power indicator should be constantly on when powered on. If it is not on, check if there are any abnormalities in the power supply section.
-   - The heartbeat light should flash continuously after the kernel starts. If it does not flash, the system may be running abnormally.
+   - The power indicator should be constantly ON after powered on. If it keeps off, check if there are any abnormalities in the power supply section.
+   - The heartbeat indicator should blink continuously after the kernel starts. If not, the system may be running abnormally.
 
 ## Display
 
