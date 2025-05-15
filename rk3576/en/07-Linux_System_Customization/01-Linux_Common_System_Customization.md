@@ -1,11 +1,9 @@
 # 01-Linux_Common_System_Customization
 
-# 01 - Common System Customization for Linux
-
 ## Symbol Explanation
 
 * `SDK$`: Represents the source code path.
-* `console$`: Generally refers to the command-line console of the motherboard. [Motherboard command-line console](../02-Getting Started/02-Quick Start.md#console_readme)
+* `console$`: Generally refers to the command-line console of the motherboard.
 * `ADB$`: Android Debug Bridge command-line tool, generally refers to an environment where ADB can be run.
 
 ## ADB Function
