@@ -109,7 +109,7 @@ The debug serial port is a UART port on the motherboard, mainly used during the 
 
 **Debug Serial Cable Description**
 
-The currently provided debug serial cable has four wires. The red one is `VCC`, the green one is `TX`, the white one is `RX`, and the black one is `GND`.  `VCC` connection is not needed.
+The currently provided debug serial cable has four wires. The red one is `VCC`, the green one is `TX`, the white one is `RX`, and the black one is `GND`.  `VCC` is not needed actually.
 
 ![image-20241231145656021](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241231145656021.png)
 
