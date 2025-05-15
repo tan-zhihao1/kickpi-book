@@ -169,7 +169,9 @@ $ echo 0xf > /sys/class/axp/debug_mask
 
 ### 系统按键无法正常休眠问题
 
-**查看是否配置了假待机**
+**情况一：是否接入了TypeC，进行了ADB连接。**
+
+**情况二：查看是否配置了假待机**
 
 ```
 consloe$ getprop persist.sys.kickpi_holding_wakelock 
