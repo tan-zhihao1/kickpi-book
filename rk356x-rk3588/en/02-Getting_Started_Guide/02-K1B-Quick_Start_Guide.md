@@ -42,7 +42,7 @@ Additionally, the system heartbeat LED can be controlled for other functions as 
 
 ### Power-On Steps
 
-1. Plug in the DC12V power supply's circular output connector to power on the board.
+1. Plug in the DC12V power supply to  board..
 2. Initially assess the operating status of the development board based on the status of the two LEDs:
    - The power indicator should remain lit as soon as power is applied. If it does not light up, check the power supply section for any abnormalities.
    - The heartbeat LED should keep blinking after the kernel starts. If it does not flash, the system may be running abnormally.
