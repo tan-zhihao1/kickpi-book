@@ -46,7 +46,7 @@ Set to **115200**.
 
 ### Cable Wiring
 
-目前提供的调试串口线共有四根线，各线功能如下：
+Serial Debug dongle has 4 wires：
 
 - Green: TX  
 - White: RX  
