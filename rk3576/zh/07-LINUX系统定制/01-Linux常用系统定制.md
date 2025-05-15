@@ -137,29 +137,30 @@ $ xinput set-prop $id 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
 ```
 
-//修改触摸方向（可根据名字修改） 向左90度
+修改触摸方向（可根据名字修改） 向左90度
 ```
 $ xinput set-prop $id 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
 ```
 
-//修改触摸方向（可根据名字修改） 向右90度
+修改触摸方向（可根据名字修改） 向右90度
 ```
 $ xinput set-prop $id 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
 ```
 
-//修改触摸方向（可根据名字修改） 旋转180度
+修改触摸方向（可根据名字修改） 旋转180度
 ```
 $ xinput set-prop $id 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 ```
 
-//第四步 开始校准
+第四步 开始校准
 ```
 $ xinput_calibrator -v --device $id
 // xinput_calibrator -v --device 11
 ```
+
 
 
 ## 语言配置
@@ -223,7 +224,7 @@ $ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 1. **使用 `ifconfig` 命令设置 IP 地址、子网掩码和广播地址**：
 
 ```
-sudo ifconfig eth0 <IP 地址> netmask <子网掩码> broadcast <广播地址>
+sudo ifconfig eth0 <IP> netmask <netmask_num> broadcast <broadcast ip>
 ```
 
 例如：
@@ -242,7 +243,7 @@ sudo ifconfig eth0 192.168.1.100 netmask 255.255.255.0 broadcast 192.168.1.255
 2. **使用 `route` 命令设置网关**：
 
 ```
-sudo route add default gw <网关地址> eth0
+sudo route add default gw <gw addr> eth0
 ```
 
 例如：
