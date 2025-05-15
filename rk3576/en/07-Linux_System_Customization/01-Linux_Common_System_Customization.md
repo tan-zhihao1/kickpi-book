@@ -1,10 +1,14 @@
 # 01-Linux_Common_System_Customization
 
+
+
 ## Symbol Explanation
 
 * `SDK$`: Represents the source code path.
 * `console$`: Generally refers to the command-line console of the motherboard.
 * `ADB$`: Android Debug Bridge command-line tool, generally refers to an environment where ADB can be run.
+
+
 
 ## ADB Function
 
@@ -28,6 +32,8 @@ Example:
 ```
 $ scp .\1.wav linaro@192.168.77.165:/home/linaro/Desktop/
 ```
+
+
 
 ## Screen Display Orientation Configuration
 
@@ -150,6 +156,8 @@ $ xinput_calibrator -v --device $id
 // xinput_calibrator -v --device 11
 ```
 
+
+
 ## Language Configuration
 
 Debian 12
@@ -180,6 +188,8 @@ $ echo "export LANGUAGE=zh_CN:zh" >> /etc/profile.d/zh_CN.sh
 $ reboot
 ```
 
+
+
 ## Time Zone Configuration
 
 > The changes take effect after the system is restarted.
@@ -195,6 +205,8 @@ $ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 $ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 ```
+
+
 
 ## Network Configuration
 
@@ -355,6 +367,8 @@ $ ls nfs_tmp/
 1.txt
 ```
 
+
+
 ## Chrome Hardware Acceleration
 
 Test platform: K7 Debian 12 Chrome
@@ -377,6 +391,8 @@ export h264d_debug=1
 export mpp_syslog_perror=1
 echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 ```
+
+
 
 ## Backup the File System
 
@@ -403,6 +419,8 @@ The format of the generated package name
 > Since the file system is large, it takes a long time to back up the system.
 >
 > Since the maximum single-file size of FAT32 is 4GB, it is not recommended to use a storage device with the FAT32 file system for backup.
+
+
 
 ## 4G/5G Configuration
 
