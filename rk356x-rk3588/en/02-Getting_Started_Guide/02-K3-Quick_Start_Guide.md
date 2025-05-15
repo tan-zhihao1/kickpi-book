@@ -120,7 +120,7 @@ Connect the `TX` of the debug cable to the `RX` of the motherboard, the `RX` of 
 
 **Downloading Serial Assistant Software**
 
-You can download the serial assistant software according to your personal preference. There is no need for a specific tool. The following uses Mobaxterm as an example.
+There are many free/commercial serial assistant tools, no need to use a special one, you can choose the one you preferred. Here we use Mobaxterm as an example.
 
 Mobaxterm software download address: https://mobaxterm.mobatek.net/
 
@@ -128,7 +128,7 @@ Mobaxterm software download address: https://mobaxterm.mobatek.net/
 
 1. Open Mobaxterm and click the "Session" button to create a new session window.
 2. In the session type list, select "Serial".
-3. Select the serial port COM number, which can be viewed by opening the Windows System Device Manager -> Ports interface.
+3. Select the serial port COM index, which can be retrieved by checking the Windows System Device Manager -> COM and LPT.
 4. Set the serial port baud rate to 1500000.
 5. Click "OK" to start the session window.
 
