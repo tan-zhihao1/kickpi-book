@@ -19,7 +19,7 @@ The ADB software tools can be obtained from the KICKPI cloud disk for use on the
 5-DevelopmentTool\ADB Tool\adb-tools.rar
 ```
 
-Google's latest Android SDK Platform-Tools can be download from https://developer.android.com/tools/releases/platform-tools .
+>Google's latest Android SDK Platform-Tools can be downloaded from https://developer.android.com/tools/releases/platform-tools .
 
 **Installation Steps**
 
