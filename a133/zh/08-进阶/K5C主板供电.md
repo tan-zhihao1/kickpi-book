@@ -169,11 +169,13 @@ $ echo 0xf > /sys/class/axp/debug_mask
 
 ### 系统按键无法正常休眠问题
 
-查看是否配置了假待机
+**查看是否配置了假待机**
 
+```
+consloe$ getprop persist.sys.kickpi_holding_wakelock 
+```
 
-
-开启假待机
+**开启假待机**
 
 假待机熄屏时仅关闭屏幕。
 
@@ -181,11 +183,13 @@ $ echo 0xf > /sys/class/axp/debug_mask
 consloe$ setprop persist.sys.kickpi_holding_wakelock true
 ```
 
-关闭假待机
+**关闭假待机**
 
 ```
 consloe$ setprop persist.sys.kickpi_holding_wakelock false
 ```
+
+**软件默认配置开启假待机**
 
 
 
