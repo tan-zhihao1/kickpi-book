@@ -25,7 +25,7 @@ The tools required for image flashing are as follows:
 
 ### Install the USB Driver
 
-The network disk path of the USB driver is:
+The cloud disk path of the USB driver is:
 
 ```
 DevelopmentTools\USB Driver\DriverAssitant_v5.12.zip
