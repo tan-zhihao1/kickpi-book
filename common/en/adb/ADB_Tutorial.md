@@ -13,7 +13,7 @@ ADB (Android Debug Bridge) is a debugging bridge tool from Google's Android SDK 
 
 **Obtaining the Tools**
 
-The ADB software tools can be obtained from the KICKPI network disk for use on the Windows platform. They are located in the following directory on the network disk:
+The ADB software tools can be obtained from the KICKPI cloud disk for use on the Windows platform. They are located in the following directory on the cloud disk:
 
 ```
 5-DevelopmentTool\ADB Tool\adb-tools.rar
