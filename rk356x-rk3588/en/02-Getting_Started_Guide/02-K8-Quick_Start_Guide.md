@@ -139,7 +139,7 @@ Mobaxterm software download address: https://mobaxterm.mobatek.net/
 
 1. Open Mobaxterm and click the "Session" button to create a new session window.
 2. In the session type list, select "Serial".
-3. Select the serial port COM number, which can be viewed by opening the Windows Device Manager -> Ports interface.
+3. Select the serial port COM index, which can be retrieved by opening the Windows Device Manager -> COM and LPT.
 4. Set the serial port baud rate to 1500000.
 5. Click "OK" to start the session window.
 
