@@ -193,7 +193,7 @@ consloe$ setprop persist.sys.kickpi_holding_wakelock false
 
 **软件默认配置开启假待机**
 
-```
+```diff
 --- a/android/device/softwinner/ceres-c3/ceres_c3.mk
 +++ b/android/device/softwinner/ceres-c3/ceres_c3.mk
 +PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
