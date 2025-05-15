@@ -12,86 +12,9 @@
 
 
 
-## 系统启动
-
-### Linux系统登陆用户密码
-
-Debian系统用户名/密码：linaro/linaro
-
-Ubuntu系统用户名/密码：kickpi/kickpi
-
-
-
-### 图形桌面登陆
-
-图形桌面依赖显示设备，开机前需要先连接HDMI或LCD
-
-
-
-### 调试串口登录
-
-默认自动登录ROOT用户
-
-ROOT用户默认未设置密码，可用以下命令配置ROOT密码
-
-```
-console$ sudo passwd root
-```
-
-
-
-## SSH 登录
-
-```
-ssh <username>@<IP>
-```
-
-> 注意事项：
->
-> 确保板子网络正常
->
-> 确保能正常连通板子的IP
->
-> 确保用户名和密码存在及正确
-
-默认不支持root ssh 连接，root连接需要配置
-
-```shell
-(console)$ vim /etc/ssh/ssh_config
-+ PermitRootLogin yes
-(console)$ vim /etc/ssh/sshd_config
-+ PermitRootLogin yes
-(console)$ sudo /etc/init.d/ssh restart
-```
-
-root登陆需要确认配置
-
-```
-(console)$ cat /etc/ssh/ssh_config | grep PermitRootLogin
-PermitRootLogin yes
-(console)$ cat /etc/ssh/sshd_config | grep PermitRootLogin
-PermitRootLogin yes
-```
-
-
-
 ## ADB 功能
 
-```
-adb shell
-```
 
-上传文件 1.txt 到主板 /data/ 下
-
-```
-adb push ./1.txt /data/
-```
-
-下载文件 2.txt 到PC本地当前目录
-
-```
-adb pull /data/2.txt .
-```
 
 
 
@@ -117,16 +40,16 @@ $ scp .\1.wav linaro@192.168.77.165:/home/linaro/Desktop/
 
 
 
-
-
 ## 屏幕显示方向配置
 
 Debian12
 
 xrandr 进行配置屏幕
 
-```
 # 获取使用帮助
+
+```
+
 xrandr -help
 ```
 
