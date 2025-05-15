@@ -12,7 +12,7 @@ This guide aims to assist users in quickly getting started with the motherboard,
 
 Currently, all series of boards are set to boot automatically upon power-on by default. The following introduces the power supply methods for each board and the signs indicating the normal startup of the board.
 
-### Power Supply Methods
+### Power Supply
 
 The K1B board operates at a supply voltage of 5V and supports two power supply methods: TYPE-C and expansion pins.
 
