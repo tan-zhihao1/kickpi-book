@@ -117,7 +117,7 @@ The currently provided debug serial cable has four wires. The red one is `VCC`, 
 
 **Viewing the DEBUG Pins**
 
-Each model of the motherboard is equipped with a DEBUG debug serial port, which is located in the 20PIN/40PIN pins. You can view the location of the DEBUG port in the **Expansion Pins** section of the hardware introduction for each model of the motherboard in the motherboard introduction. Additionally, the location is marked with silkscreen on the front and back of the board.
+Each model of the motherboard is equipped with a DEBUG debug serial port, which is located in the 20PIN/40PIN pins section. You can view the location of the DEBUG port in the **Expansion Pins** section of the hardware introduction for each model of the motherboard in the motherboard introduction. Additionally, the location is marked with silkscreen on the front and back of the board.
 
 ![image-20250422094320253](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422094320253.png)
 
