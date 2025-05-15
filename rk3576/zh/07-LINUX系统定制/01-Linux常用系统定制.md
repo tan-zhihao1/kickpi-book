@@ -159,9 +159,7 @@ $ xinput set-prop $id 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 ```
 $ xinput_calibrator -v --device $id
 // xinput_calibrator -v --device 11
-
 ```
-
 
 
 ## 语言配置
