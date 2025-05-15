@@ -91,7 +91,7 @@ Serial Debug dongle has 4 wires：
 
 The serial port assistant software can be downloaded by yourself. Take Mobaxterm as an example below.
 
-网盘路径：
+location in cloud disk：
 
 ``` 
 h618_data\5-DevelopmentTools\UART_DebugTool\MobaXterm_Portable_v20.3.zip
