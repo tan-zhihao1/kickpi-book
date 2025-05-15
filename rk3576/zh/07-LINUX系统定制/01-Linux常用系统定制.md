@@ -109,40 +109,54 @@ DP-1 disconnected (normal left inverted right x axis y axis)
 
 **触摸校准**
 
-```shell
-//第一歩 安装工具
+第一歩 安装工具
+```
 $ apt update
 $ apt install xinput
 $ apt install xinput-calibrator
+```
 
-//第二步 查看 Device 和 ID，可知 goodix-ts 设备id 为 12
+第二步 查看 Device 和 ID，可知 goodix-ts 设备id 为 12
+```
 $ xinput_calibrator --list 
 Device "goodix-ts" id=11
+```
 
-//第三歩 重置转置矩阵和校准矩阵，这里非常关键，转置矩阵需要根据屏幕旋转，校准矩阵设置默认值即可
+第三歩 重置转置矩阵和校准矩阵，这里非常关键，转置矩阵需要根据屏幕旋转，校准矩阵设置默认值即可
+```
 $ xinput set-prop $id --type=float "Coordinate Transformation Matrix" 0 -1 1 1 0 0 0 0 1
 // xinput set-prop 11 --type=float "Coordinate Transformation Matrix" 0 -1 1 1 0 0 0 0 1
 
 $ xinput set-prop $id --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
 // xinput set-prop 11 --type=float "libinput Calibration Matrix" 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0
+```
 
-//修改触摸方向（可根据名字修改） 默认方向
+修改触摸方向（可根据名字修改） 默认方向
+```
 $ xinput set-prop $id 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1
- 
+```
+
 //修改触摸方向（可根据名字修改） 向左90度
+```
 $ xinput set-prop $id 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' 0 -1 1 1 0 0 0 0 1
+```
 
 //修改触摸方向（可根据名字修改） 向右90度
+```
 $ xinput set-prop $id 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' 0 1 0 -1 0 1 0 0 1
- 
+```
+
 //修改触摸方向（可根据名字修改） 旋转180度
+```
 $ xinput set-prop $id 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
 // xinput set-prop 11 'Coordinate Transformation Matrix' -1 0 1 0 -1 1 0 0 1
+```
 
 //第四步 开始校准
+```
 $ xinput_calibrator -v --device $id
 // xinput_calibrator -v --device 11
 
