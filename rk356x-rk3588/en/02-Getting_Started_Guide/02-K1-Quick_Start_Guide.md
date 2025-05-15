@@ -73,7 +73,7 @@ The motherboard is equipped with an HDMI OUT display interface. The interface ty
 
 ### User Information
 
-The default usernames and passwords for different systems are as follows:
+The default username and password for different systems are as follows:
 
 | System | Username | Password |
 | ------ | ------ | ------ |
