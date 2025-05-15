@@ -137,7 +137,7 @@ There are many free/commercial serial assistant tools, no need to use a special 
 
 Mobaxterm software download link : https://mobaxterm.mobatek.net/
 
-**Mobaxterm Operation Steps**
+**Mobaxterm Setup Steps**
 
 1. Open Mobaxterm and click the "Session" button to create a new session window.
 2. In the session type list, select "Serial".
