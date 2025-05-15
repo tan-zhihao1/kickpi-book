@@ -131,7 +131,7 @@ Connect the `TX` of the debug cable to the `RX` of the motherboard, the `RX` of 
 
 **Downloading Serial Assistant Software**
 
-You can download the serial assistant software by yourself according to your personal preference. There is no need for a specific tool. The following uses Mobaxterm as an example.
+There are many free/commercial serial assistant tools, no need to use a special one, you can choose the one you preferred. Here we use Mobaxterm as an example.
 
 Mobaxterm software download address: https://mobaxterm.mobatek.net/
 
