@@ -149,7 +149,7 @@ $ echo 0xf > /sys/class/axp/debug_mask
 
 
 
-## 休眠
+## 系统休眠
 
 
 
