@@ -68,6 +68,12 @@ ADB, full name Android Debug Bridge, is a debugging bridge tool for Android deve
 
 The following is an introduction to some commonly used ADB commands.
 
+### View help
+
+```bash
+adb help
+```
+
 ### Device Connection and Management
 
 **Viewing Connected Devices**
