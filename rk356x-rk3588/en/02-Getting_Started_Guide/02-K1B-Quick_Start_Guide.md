@@ -37,7 +37,7 @@ Connect an external 5V power supply to **Pin 1 (VCC)** and **Pin 6 (GND)** of th
 The development board is equipped with two LEDs:
 
 The green LED serves as the power indicator, which remains lit by default when powered on.
-The blue LED acts as the system heartbeat indicator. If the heartbeat LED flashes continuously, it indicates that the kernel is running normally.
+The blue LED acts as the system heartbeat indicator. If the heartbeat LED keeps blinking, it indicates that the kernel is running normally.
 Additionally, the system heartbeat LED can be controlled for other functions as described below.
 
 ### Power-On Steps
