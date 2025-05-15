@@ -876,7 +876,7 @@ $ source /rockchip-test/gstreamer/gstreamer_mpp_fix.sh
 
 
 
-**Debian上安装GCC⼯具链**
+**安装GCC⼯具链**
 
 ```
 apt update && apt install -y build-essential manpages-dev
