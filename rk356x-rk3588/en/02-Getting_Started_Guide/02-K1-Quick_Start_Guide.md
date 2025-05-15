@@ -12,7 +12,7 @@ This guide is designed to assist users in quickly getting started with the mothe
 
 Currently, all series of boards are set to boot automatically upon power-on by default. The following section introduces the power supply methods for each board and the signs of normal board startup.
 
-### **Power Supply Method**
+### **Power Supply**
 
 The K1 motherboard only supports 12V power supply. The power supply method is through a DC12V socket, and the motherboard is powered by connecting a 12V power adapter.
 
