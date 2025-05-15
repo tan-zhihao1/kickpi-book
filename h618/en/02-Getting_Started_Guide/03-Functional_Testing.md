@@ -204,7 +204,7 @@ bluetoothctl block  FC:E8:06:E7:96:AF
 bluetoothctl paired-devices
 ```
 
-4. render audio via bluetooth audio device
+render audio via bluetooth audio device
 
 ``` shell
 # Check connected devices
