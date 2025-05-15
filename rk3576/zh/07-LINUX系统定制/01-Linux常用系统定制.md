@@ -14,7 +14,7 @@
 
 ## ADB 功能
 
-
+[ADB 教程](..\..\..\common\zh\adb\ADB教程.md)
 
 
 
