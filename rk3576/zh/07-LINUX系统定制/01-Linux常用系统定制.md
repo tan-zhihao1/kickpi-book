@@ -42,20 +42,15 @@ $ scp .\1.wav linaro@192.168.77.165:/home/linaro/Desktop/
 
 ## 屏幕显示方向配置
 
-Debian12
+> Debian12
 
-xrandr 进行配置屏幕
-
-# 获取使用帮助
+ **获取使用帮助**
 
 ```
-
 xrandr -help
 ```
 
-
-
-* 查看屏幕信息
+**查看屏幕信息**
 
 ```
 (console)/# xrandr
@@ -82,24 +77,37 @@ DSI-1 connected (normal left inverted right x axis y axis)
 DP-1 disconnected (normal left inverted right x axis y axis)
 ```
 
-
-
-* 旋转控制
+**旋转控制**
 
 >根据xrandr，已知目前显示设备 HDMI-1
 
 对 HDMI-1 进行旋转设置
 
+画面正常显示
+
 ```
-(console)$ xrandr --output HDMI-1 --rotate normal			// 画面正常显示
-(console)$ xrandr --output HDMI-1 --rotate right				// 向右旋转，顺时针旋转90度
-(console)$ xrandr --output HDMI-1 --rotate left				// 向左旋转，顺时针旋转270度
-(console)$ xrandr --output HDMI-1 --rotate inverted			// 反转，顺时针旋转180度
+(console)$ xrandr --output HDMI-1 --rotate normal	
 ```
 
+向右旋转，顺时针旋转90度
 
+```
+(console)$ xrandr --output HDMI-1 --rotate right	
+```
 
-* 触摸校准
+向左旋转，顺时针旋转270度
+
+```
+(console)$ xrandr --output HDMI-1 --rotate left		
+```
+
+反转，顺时针旋转180度
+
+```
+(console)$ xrandr --output HDMI-1 --rotate inverted			
+```
+
+**触摸校准**
 
 ```shell
 //第一歩 安装工具
