@@ -35,7 +35,7 @@ DevelopmentTools\USB Driver\DriverAssitant_v5.12.zip
 
 ### Obtain the Image File
 
-You can obtain the image file in two ways: download from the network disk or compile through the SDK.
+You can obtain the image file in two ways: download from the cloud disk or compile through the SDK.
 
 Refer to the document [SDK Source Code Compilation](11-SDK源码编译.md) for the detailed steps of SDK compilation.
 
