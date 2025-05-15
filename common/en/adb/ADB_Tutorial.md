@@ -1,6 +1,6 @@
 # ADB_Tutorial
 
-ADB (Android Debug Bridge) is a debugging bridge tool from Google's Android SDK Platform-Tools  for Android development. It supports connecting to devices via USB or network, enabling device management and debugging operations such as application installation, file transfer, and command execution.
+ADB (Android Debug Bridge) is a debugging bridge tool from Google's Android SDK Platform-Tools for Android development. It supports connecting to devices via USB or network, enabling device management and debugging operations such as application installation, file transfer, and command execution.
 
 ## Quick Start with ADB
 
