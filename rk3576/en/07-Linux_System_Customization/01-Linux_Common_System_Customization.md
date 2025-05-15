@@ -8,7 +8,9 @@
 
 ## ADB Function
 
-[ADB Tutorial](../../../common/en/adb/ADB Tutorial.md)
+[ADB Tutorial](..\..\..\common\en\adb\ADB_Tutorial.md)
+
+
 
 ## SCP File Transfer
 
