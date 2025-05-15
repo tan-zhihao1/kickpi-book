@@ -46,7 +46,7 @@ Set to **115200**.
 
 ### Cable Wiring
 
-Serial Debug dongle has 4 wires：
+UART Debug dongle has 4 wires：
 
 - Green: TX  
 - White: RX  
