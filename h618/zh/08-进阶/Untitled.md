@@ -82,6 +82,27 @@ K2B开发板默认配置两路GPIO输出功能，分别为PC12（12脚）、PC7�
 
 GPIO输出 提供两种控制方式，分别为gpio-leds、gpio_para
 
+**gpio-para**
+
+是全志的GPIO控制驱动，可实现简单的电平高低控制
+
+系统中目录位于/sys/class/gpio_sw
+
+以下示例为 扩展引脚PC7、PC12的配置
+
+```
+&soc {
+        gpio_para {
+                gpio_num = <2>;
+                gpio_pin_1 = <&pio PC 7 GPIO_ACTIVE_HIGH>;
+                gpio_pin_2 = <&pio PC 12 GPIO_ACTIVE_HIGH>;
+                status = "okay";
+        };
+};
+```
+
+
+
 **gpio-leds**
 
 gpio-leds 是LINUX内核自带的GPIO控制驱动，可实现丰富的控制方式
