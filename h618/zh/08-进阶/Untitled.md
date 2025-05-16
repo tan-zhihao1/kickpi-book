@@ -90,6 +90,8 @@ GPIO输出 提供两种控制方式，分别为gpio-leds、gpio_para
 
 以下示例为 扩展引脚PC7、PC12的配置
 
+增加或删除注意修改gpio_num的值
+
 ```
 &soc {
         gpio_para {
