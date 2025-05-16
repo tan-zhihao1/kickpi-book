@@ -225,10 +225,16 @@ direction
 	in / out
 	echo in > /sys/class/gpio/gpio56/direction
 	echo out > /sys/class/gpio/gpio56/direction
+
+```
+
+ 0表示低 1表示高
+
+```
 value
 	0 / 1
-	cat /sys/class/gpio/gpio56/value 		// 读取
-	echo 1 > /sys/class/gpio/gpio56/value	// 配置高电平
-	echo 0 > /sys/class/gpio/gpio56/value  // 配置低电平
+	cat /sys/class/gpio/gpio56/value 		
+	echo 1 > /sys/class/gpio/gpio56/value
+	echo 0 > /sys/class/gpio/gpio56/value
 ```
 
