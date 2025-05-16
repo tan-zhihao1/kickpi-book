@@ -631,7 +631,7 @@ vncserver -geometry 1920x1080
 
 ![image-20250317142654795](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250317142654795.png)
 
-![image-20250401152018198](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250401152018198.png)
+![image-20250516114712032](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250516114712032.png)
 
 ## 卸载xfce桌面
 
