@@ -14,44 +14,6 @@ sudo passwd root
 
 
 
-## dts
-
-```
-device/config/chips/a133/configs/c3/board.dts
-```
-
-
-
-## Kernel Defconfig 
-
-defconfig 修改及保存
-
-```
-确保编译过一次 或 ./build.sh config
-cd kernel/linux-4.9/
-make ARCH=arm64 menuconfig
-cd -
-./build.sh saveconfig
-```
-
-
-
-## 工具链
-
-包路径
-
-```
-build/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu.tar.xz
-```
-
-编译后工具的路径
-
-```
-out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
-```
-
-
-
 ## PIN 控制
 
 ### pin 脚计算
