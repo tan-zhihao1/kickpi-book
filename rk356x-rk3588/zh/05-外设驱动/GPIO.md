@@ -197,13 +197,22 @@ cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins
 
 通过 /sys/class/gpio/export 注册 56并进行控制
 
+注册
+
 ```
-// 注册
 root@kickpi:~# echo  56 > /sys/class/gpio/export
-// 查看是否生成
+```
+
+查看是否生成
+
+```
 root@kickpi:~# ls /sys/class/gpio/
 export  gpio56  gpiochip0  gpiochip352  unexport
-// 注册后的结点内容
+```
+
+注册后的结点内容
+
+```
 root@kickpi:~# ls /sys/class/gpio/gpio56
 active_low  device  direction  edge  power  subsystem  uevent  value
 root@kickpi:~#
