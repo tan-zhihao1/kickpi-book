@@ -709,7 +709,7 @@ $ ffplay -f v4l2 -i /dev/video1
 
 
 
-## 备份rootfs系统
+## 备份rootfs系统<a id='backup_rootfs'> </a>
 
 > 注意：这种方式替换后的rootfs 可能存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
 
@@ -734,13 +734,13 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 对需要替换这个系统的板子单独烧录rootfs即可
 
-如果需要重新打包进完整镜像，参考[固件解包和打包](../08-进阶/03-固件解包和打包.md)
+也可以需要重新打包，将rootfs.img替换进完整镜像，参考[固件解包和打包](../08-进阶/03-固件解包和打包.md)
 
 
 
 ## 镜像eMMC重新分区
 
-
+重新分区均需要重新烧录，如果系统不想被格式
 
 
 
