@@ -602,11 +602,10 @@ vnc软件下载
 板卡安装并开启VNC服务，并配置密码
 apt-get install tightvncserver
 su kickpi 使用kickpi用户，root用户下使用会出现无法显示导航栏的问题
-密码 kickpi
-vncserver
+vncserver -geometry 1920x1080
 ```
 
-![image-20250317141556644](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250317141556644.png)
+![image-20250516114106707](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250516114106707.png)
 
 修改VNC配置
 
