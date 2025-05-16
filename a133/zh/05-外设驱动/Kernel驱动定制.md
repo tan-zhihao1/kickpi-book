@@ -84,28 +84,6 @@ uart7: uart@07080000 {
  
 ```
 
-打开UART7
-
-```diff
---- a/longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
-+++ b/longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
-+&uart7 {
-+    status = "okay";
-+};
-```
-
-**测试UART**
-
-首先连接好硬件，RX连接TX，GND连GND
-
-板端可通过microcom进行测试
-
-```
-microcom -s 115200 /dev/ttyS2
-```
-
-另一端可通过 Mobaxterm 或其他串口工具进行测试
-
 
 
 ## GPIO
