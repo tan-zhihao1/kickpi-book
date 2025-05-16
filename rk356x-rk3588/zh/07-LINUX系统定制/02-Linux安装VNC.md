@@ -76,7 +76,7 @@ ExecStop=/usr/bin/vncserver -kill :%i
 WantedBy=multi-user.target
 ```
 
-> User=kickpi 对应修改成使用的用户
+> User=kickpi 对应修改为安装VNC的用户
 
 以下命令适用于使用 .`systemd`
 
