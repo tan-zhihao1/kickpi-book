@@ -37,6 +37,20 @@ hidden-users=nobody nobody4 noaccess
 hidden-shells=/bin/false /usr/sbin/nologin /sbin/nologin
 ```
 
+## 无桌面,终端登录
+
+修改/usr/lib/systemd/system/getty@.service.d/override.conf
+
+``` 
+[Service]
+ExecStartPre=/bin/sh -c 'exec /bin/sleep 10'
+ExecStart=
+ExecStart=-/sbin/agetty --noissue --autologin root %I $TERM
+Type=idle
+```
+
+
+
 
 
 ## 拷贝eMMC系统到新SD卡（系统备份）
