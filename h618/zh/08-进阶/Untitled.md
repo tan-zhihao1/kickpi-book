@@ -105,3 +105,25 @@ gpio-leds 是LINUX内核自带的GPIO控制驱动，可实现丰富的控制方�
 };
 ```
 
+
+
+GPIO按键
+
+```
+/{
+		gpio-keys {
+                compatible = "gpio-keys";
+                status = "okay";
+                autorepeat;
+
+                power {
+                        label = "Power Key";
+                        linux,code = <KEY_POWER>;
+                        gpio = <&pio PC 2 GPIO_ACTIVE_LOW>;     /* PC7 */
+                        wakeup-source;
+                        debounce-interval = <100>;
+                };
+        };
+};
+```
+
