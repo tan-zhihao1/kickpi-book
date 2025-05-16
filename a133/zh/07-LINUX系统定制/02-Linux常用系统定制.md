@@ -621,6 +621,12 @@ startxfce4 &
 
 ![image-20250317142240671](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250317142240671.png)
 
+``` shell
+重启vnc 使配置生效
+vncserver -kill :1
+vncserver -geometry 1920x1080
+```
+
 输入ip端口号和密码
 
 ![image-20250317142654795](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250317142654795.png)
