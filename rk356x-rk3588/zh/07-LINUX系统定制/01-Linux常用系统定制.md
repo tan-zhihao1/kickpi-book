@@ -775,7 +775,7 @@ mtdparts=:0x00002000@0x00004000(uboot),0x00002000@0x00006000(misc),0x00020000@0x
 RK356x：
 
 ```
-
+SDK$ device/rockchip/rk3566_rk3568/parameter-buildroot-fit.txt
 ```
 
 RK3588：
