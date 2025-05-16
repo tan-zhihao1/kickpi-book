@@ -738,6 +738,12 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 
 
+## 镜像eMMC重新分区
+
+
+
+
+
 ## Ubuntu桌面版进入root用户
 
 最新桌面版系统默认登录用户为：kickpi
