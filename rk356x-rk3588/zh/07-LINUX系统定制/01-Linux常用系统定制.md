@@ -740,7 +740,15 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 ## 镜像eMMC重新分区
 
-重新分区均需要重新烧录，如果系统不想被格式
+重新分区均需要重新烧录，如果系统不想被格式化，请先[备份rootfs](#backup_rootfs)
+
+重新分区主要修改分区文件parameter.txt
+
+例如将剩余所有空间放到根目录下关键修改如下
+
+```
+mtdparts=:0x00002000@0x00004000(uboot),0x00002000@0x00006000(misc),0x00020000@0x00008000(boot),0x00040000@0x00028000(recovery),0x00010000@0x00068000(backup),-@0x00078000(rootfs:grow)
+```
 
 
 
