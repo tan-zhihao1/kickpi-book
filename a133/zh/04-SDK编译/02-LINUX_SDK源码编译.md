@@ -63,13 +63,7 @@ rootfs
 
 
 
-### defconfig 
-
-```
-kernel/linux-4.9/arch/arm64/configs/sun50iw10p1smp_defconfig
-```
-
-
+## Kernel Defconfig 
 
 defconfig 修改及保存
 
@@ -82,6 +76,20 @@ cd -
 ```
 
 
+
+## 工具链
+
+包路径
+
+```
+build/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu.tar.xz
+```
+
+编译后工具的路径
+
+```
+out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
+```
 
 
 
