@@ -2,6 +2,16 @@
 
 
 
+## 符号说明
+
+* `SDK$`：指代源码路径
+
+* `console$`：泛指主板的命令行控制台。[主板命令行控制台](#console_readme)
+
+* `ADB$`：Android Debug Bridge 命令行工具，泛指可运行 ADB 的环境
+
+
+
 ## 开机自启动程序
 
 ### 开机自启动脚本
@@ -738,7 +748,7 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 
 
-## 镜像eMMC重新分区
+## eMMC分区
 
 重新分区均需要重新烧录，如果系统不想被格式化，请先[备份rootfs](#backup_rootfs)
 
@@ -748,6 +758,20 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 ```
 mtdparts=:0x00002000@0x00004000(uboot),0x00002000@0x00006000(misc),0x00020000@0x00008000(boot),0x00040000@0x00028000(recovery),0x00010000@0x00068000(backup),-@0x00078000(rootfs:grow)
+```
+
+* 完整镜像修改
+
+参考[固件解包和打包](../08-进阶/03-固件解包和打包.md)，修改parameter.txt文件后重新打包
+
+* SDK内修改
+
+修改对应板子型号路径下文件，后重新编译
+
+RK3588：
+
+```
+device/rockchip/rk3588/parameter.txt 
 ```
 
 
