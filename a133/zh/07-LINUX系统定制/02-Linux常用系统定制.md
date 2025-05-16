@@ -6,12 +6,6 @@
 
 Ubuntu系统用户名/密码：kickpi/kickpi
 
-系统默认没有ROOT密码，su不成功，需要配置ROOT密码
-
-```
-sudo passwd root
-```
-
 
 
 ## PIN 控制
