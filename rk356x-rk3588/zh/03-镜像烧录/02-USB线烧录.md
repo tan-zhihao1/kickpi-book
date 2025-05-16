@@ -11,10 +11,8 @@
 **网盘路径**
 
 ```
-5-DevelopmentTool/USB Driver USB/DriverAssitant_v5.13.zip
+5-DevelopmentTool/win_x64_UsbDriver/DriverAssitant_v5.13.zip
 ```
-
-> Android14.0的USB驱动 DriverAssitant 需要更新到V5.1.1版本。
 
 
 
@@ -40,7 +38,7 @@
 **网盘路径**
 
 ```
-5-DevelopmentTool/USB ImageBurnTool/RKDevTool_v3.30_for_window.zip
+5-DevelopmentTool/win_x64_UsbImageBurnTool/RKDevTool_v3.30_for_window.zip
 ```
 
 > RK3576平台windows固件烧写工具必须使用V3.28及以上版本。
