@@ -37,7 +37,7 @@ hidden-users=nobody nobody4 noaccess
 hidden-shells=/bin/false /usr/sbin/nologin /sbin/nologin
 ```
 
-## 无桌面,终端登录
+## 无桌面版本，终端登录
 
 修改/usr/lib/systemd/system/getty@.service.d/override.conf
 
