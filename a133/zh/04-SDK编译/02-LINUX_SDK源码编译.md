@@ -93,8 +93,6 @@ out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
 
 
 
-
-
 如果提示缺少文件
 
 ```
@@ -107,19 +105,4 @@ aarch64-linux-gnu-gcc: error: /home/A/sdk/a133/a133-linux-test1/kernel/linux-4.9
 $ ./build.sh clean
 ```
 
-
-
-### 工具链
-
-包路径
-
-```
-build/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu.tar.xz
-```
-
-编译后工具的路径
-
-```
-out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
-```
 
