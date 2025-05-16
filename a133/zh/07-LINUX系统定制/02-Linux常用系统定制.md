@@ -252,7 +252,7 @@ $ ./ch-mount.sh -u rootfs_k5
 
 将修改后的ubuntu重新打包 **(注意：必须取消挂载！！！)**
 
-```
+```shell
 rm -v device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz
 cd rootfs_k5/
 sudo tar -zcf ../device/config/rootfs_tar/rootfs_ubuntu_kickpi_k5_1604lts.tar.gz .
