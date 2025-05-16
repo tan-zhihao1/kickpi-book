@@ -220,15 +220,20 @@ root@kickpi:~#
 
 通过结点下的内容控制 gpio , 常用如下
 
+GPIO 模式
+
 ```
 direction
 	in / out
 	echo in > /sys/class/gpio/gpio56/direction
 	echo out > /sys/class/gpio/gpio56/direction
-
 ```
 
- 0表示低 1表示高
+> in：输入 
+>
+> out：输出
+
+GPIO读取及高低控制
 
 ```
 value
@@ -238,3 +243,6 @@ value
 	echo 0 > /sys/class/gpio/gpio56/value
 ```
 
+>0：低 
+>
+>1：高
