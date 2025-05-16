@@ -754,7 +754,7 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 重新分区主要修改分区文件parameter.txt
 
-例如将剩余所有空间放到根目录下关键修改如下：
+例如:将剩余所有空间放到根目录下
 
 ```
 mtdparts=:0x00002000@0x00004000(uboot),0x00002000@0x00006000(misc),0x00020000@0x00008000(boot),0x00040000@0x00028000(recovery),0x00010000@0x00068000(backup),-@0x00078000(rootfs:grow)
@@ -768,10 +768,16 @@ mtdparts=:0x00002000@0x00004000(uboot),0x00002000@0x00006000(misc),0x00020000@0x
 
 修改对应板子型号路径下文件，后重新编译
 
+RK356x：
+
+```
+
+```
+
 RK3588：
 
 ```
-device/rockchip/rk3588/parameter.txt 
+SDK$ device/rockchip/rk3588/parameter.txt 
 ```
 
 
