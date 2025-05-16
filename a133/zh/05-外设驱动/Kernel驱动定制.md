@@ -181,7 +181,7 @@ longan/kernel/linux-4.9/drivers/watchdog/sunxi_wdt.c
 echo A > /dev/watchdog
 ```
 
-开启看门狗
+关闭看门狗
 
 ```
 echo V > /dev/watchdog
