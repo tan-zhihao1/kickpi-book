@@ -13,6 +13,3 @@
 ![image-20250514200533242](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514200533242.png)
 
 烧录步骤详见[USB线烧录](../../../common\zh\全志烧录\USB线烧录.md)
-
-
-
