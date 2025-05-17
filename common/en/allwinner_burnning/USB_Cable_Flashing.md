@@ -4,7 +4,7 @@
 
 ### Install USB Driver  
 
-**Extract PhoenixSuit.zip**  
+**Extract PhoenixSuit.zip** 
 The USB driver directory:  
 
 ``` 
@@ -70,5 +70,5 @@ Reconnect the motherboard in burning mode, and the tool will prompt to start bur
 3. The board will reboot automatically after burning.  
    ![image-20250219160856586](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160856586.png)  
 
-
+The board will automatically reboot after successful burning.
 
