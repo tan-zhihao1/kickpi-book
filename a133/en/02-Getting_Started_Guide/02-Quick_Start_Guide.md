@@ -23,9 +23,10 @@ This guide is designed to help users quickly get started with the motherboard, i
 
 The motherboard supports **LVDS screens** and **MIPI screens**.  
 
-By default, the system is adapted for a **7-inch LVDS screen**. To switch to another display, refer to [Image Burning](../03-镜像烧录) to burn the corresponding image.  
+By default, the system is adapted for a **7-inch LVDS screen**. To switch to another display, refer to [Image Burning](../03-Image_Flashing_Guide) to burn the corresponding image.  
 
 **Important Notes**  
+
 - Ensure the motherboard is **powered off** before connecting the screen.  
 
 ---
