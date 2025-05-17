@@ -88,7 +88,7 @@ Software official website download:https://mobaxterm.mobatek.net/
 
 ADB (Android Debug Bridge) is a debugging bridge tool for the Android system, which supports connecting to devices via USB or network, and can realize device management and debugging operations such as application installation, file transfer, and command execution.
 
-Android system supports ADB function, see details[ADB_Tutorial](../../common/en/adb/ADB_Tutorial.md)
+Android system supports ADB function, see details[ADB_Tutorial](../../../common/en/adb/ADB_Tutorial.md)
 
 ### 
 
