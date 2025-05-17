@@ -44,19 +44,13 @@ UART Debug dongle has 4 wires：
 
 ### Board DEBUG Pins
 
+**K5C**
 
-
-
-
-
-
-
-
-
+![image-20250515104514334](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250515104514334.png)
 
 ### Wiring Method
 
-
+![image-20250515105006940](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250515105006940.png)
 
 ### Serial Port Assistant Software Download and Use
 
