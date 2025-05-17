@@ -31,10 +31,10 @@ device/config/chips/a133/configs/c3/kickpi-k5c.dts
 longan/kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
 
 lcd-lvds-21-1920-1080.dtsi  
-lcd-mipi-10-800-1280-v1.dtsi  
+  
 
 lcd-lvds-7-1024-600.dtsi    
-lcd-mipi-10-800-1280-v2.dtsi  
+  
 
 ```
 
@@ -49,8 +49,8 @@ kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
 
   | **型号**    | **尺寸**  | **分辨率** | 设备树文件 |
   | ----------- | --------- | ---------- | -------- |
-  | AT101DS40I  | 10.1-inch | 800x1280   | Y        |
-  | MX101BA1340 | 10.1-inch | 800x1280   | Y        |
+  | AT101DS40I  | 10.1-inch | 800x1280   |lcd-mipi-10-800-1280-v1.dtsi|
+  | MX101BA1340 | 10.1-inch | 800x1280   |lcd-mipi-10-800-1280-v2.dtsi|
   | MX080B2140  | 8.0-inch  | 800x1280   |lcd-mipi-8-800-1280.dtsi|
   | F050008M01  | 5.0-inch  | 720x1280   |lcd-mipi-5-720-1280.dtsi|
   
