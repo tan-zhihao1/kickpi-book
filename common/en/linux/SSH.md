@@ -29,6 +29,22 @@ $ ssh <username>@<IP>
 - Ensure that the computer can successfully ping the IP address of the motherboard.
 - Ensure that the entered username and password exist and are correct.
 
+Connect the board to the network and view the board's IP address through the serial port or the router's background.
+
+**There are three ways to view the IP address after the development board starts:：**
+
+1. **Connect an HDMI monitor, log in to the system, and use the ifconfig eth0 command to view the IP address.**
+2. **Enter the ifconfig eth0 command in the debug serial port terminal to view the IP address.**
+3. **If there is no debug serial port or HDMI monitor, you can also view the IP address of the development board's network port through the router's management interface. However, many people often cannot see the development board's IP address normally using this method. If you cannot see it, the debugging methods are as follows:**
+
+4. **First, check whether the Linux system has started normally. If the blue light of the development board is flashing, it usually means the system has started normally; otherwise, the system has not started normally.**
+5. **Check whether the network cable is plugged in tightly, or try replacing the network cable.**
+6. **Try replacing the router (many problems with routers have been encountered, such as the router being unable to assign an IP address normally, or having assigned an IP address normally but not being visible in the router).**
+7. **If there is no router to replace, you can only connect an HDMI monitor or use the debug serial port to view the IP address.**
+
+
+**In addition, it should be noted that the development board's DHCP automatic IP address allocation does not require any settings.**
+
 Example:
 
 ```
