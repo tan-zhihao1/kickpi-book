@@ -195,3 +195,34 @@ adb shell screencap -p /sdcard/screenshot.png
 ```
 
 This command generates a screenshot file named `screenshot.png` in the `/sdcard` directory on the device. You can then use the `adb pull` command to download it to the local machine.
+
+
+## Common Issues
+
+### ADB Device Not Recognized
+
+When performing ADB debugging, check if the system Device Manager detects a device similar to the following example **while the board's blue light is blinking**:  
+
+![image-20250509185304921](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185304921.png)  
+
+If an **Unknown Device** is detected (as shown below), manually install the driver:  
+
+![image-20250226152046272](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152046272.png)  
+
+**Manually Install the Driver**  
+
+Follow these steps:  
+
+1. ![370849870429aae4906079eb686ee326](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/370849870429aae4906079eb686ee326.jpg)  
+2. ![image-20250226152541205](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152541205.png)  
+3. ![image-20250226152555933](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152555933.png)  
+4. ![image-20250226152618854](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152618854.png)  
+5. ![image-20250226152635425](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152635425.png)  
+6. ![image-20250226152643858](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152643858.png)  
+7. ![image-20250226152654260](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152654260.png)  
+```  
+
+
+
+
+
