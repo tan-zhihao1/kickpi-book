@@ -90,27 +90,9 @@ ADB (Android Debug Bridge) is a debugging bridge tool for the Android system, wh
 
 Android system supports ADB function, see details [ADB_Tutorial](../../../common/en/adb/ADB_Tutorial.md)
 
-
-
 ## SSH
 
 SSH (Secure Shell) is a network protocol used to establish a secure remote connection on an insecure network. It provides encryption and authentication mechanisms to ensure the confidentiality and integrity of data. Through SSH, users can securely manage remote servers, transfer files, and access remote resources.
-
-Connect the board to the network and view the board's IP address through the serial port or the router's background.
-
-**There are three ways to view the IP address after the development board starts:：**
-
-1. **Connect an HDMI monitor, log in to the system, and use the ifconfig eth0 command to view the IP address.**
-2. **Enter the ifconfig eth0 command in the debug serial port terminal to view the IP address.**
-3. **If there is no debug serial port or HDMI monitor, you can also view the IP address of the development board's network port through the router's management interface. However, many people often cannot see the development board's IP address normally using this method. If you cannot see it, the debugging methods are as follows:**
-
-1. **First, check whether the Linux system has started normally. If the blue light of the development board is flashing, it usually means the system has started normally; otherwise, the system has not started normally.**
-2. **Check whether the network cable is plugged in tightly, or try replacing the network cable.**
-3. **Try replacing the router (many problems with routers have been encountered, such as the router being unable to assign an IP address normally, or having assigned an IP address normally but not being visible in the router).**
-4. **If there is no router to replace, you can only connect an HDMI monitor or use the debug serial port to view the IP address.**
-
-
-**In addition, it should be noted that the development board's DHCP automatic IP address allocation does not require any settings.**
 
 Support SSH function usage, see details [SSH](../../../common/en/linux/SSH.md)
 
