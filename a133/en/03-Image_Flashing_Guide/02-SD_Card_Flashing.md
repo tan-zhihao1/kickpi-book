@@ -19,8 +19,8 @@ The path to the burning tool **PhoenixCard** in the cloud storage:
 System image paths:  
 
 ```  
-2-Image\K5*\Android10.0\update-a133-kickpi-k5*-xxx-xxx-x-xxx-xxx-xxxxxxx  
-2-Image\K5*\Ubuntu1604\update-a133-kickpi-k5*-xxx-xxx-x-xxx-xxx-xxxxxxxx  
+2-Image\K5*\Android10.0\update-a133-kickpi-k5*-xxx-xxx-x-xxx-xxx-xxxxxxx 
+2-Image\K5*\Ubuntu1604\update-a133-kickpi-k5*-xxx-xxx-x-xxx-xxx-xxxxxxxx 
 ```
 
 **Hardware Preparation Tools**  
@@ -29,7 +29,7 @@ Prepare an SD card and a card reader.
 
 For detailed burning steps, refer to: [SD Card Burning](../../../common/zh/全志烧录/SD卡烧录.md)  
 
-**Known Issue**: Ubuntu images may fail to create Start up SD cards.  
+**Known Issue**: Ubuntu images may fail to create “Start up” SD cards.  
 
 **Note**: For K5/K5C SD mass production cards:  
 
