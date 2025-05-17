@@ -28,7 +28,7 @@ Software source code.
 Contact technical support for functional customization.  
 
 **2-Image**  
-Update the motherboard system via flashing images. Refer to the "Image Flashing" section for details.  
+Update the motherboard system via flashing images. Refer to the "[Image Flashing](../03-Image_Flashing_Guide)" section for details.  
 
 **3-SoftwareData**  
 Software-related resources, including code examples and patches.  
