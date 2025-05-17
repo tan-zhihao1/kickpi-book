@@ -8,18 +8,7 @@ This guide is designed to help users quickly get started with the motherboard, i
 
 ### Power Supply Methods
 
-**K2B**
 
-K2B supports TYPE-C 5V power supply, as shown in the following figure:
-
-
-![TYPE-C 5V](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426165041732.png)
-
-**K2C**
-
-K2C supports DC 12V power supply, as shown in the following figure:
-
-![DC 12V](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426165015167.png)
 
 ### LED Status  
 - **Green LED**: Power indicator (steady on when powered).  
@@ -32,9 +21,7 @@ K2C supports DC 12V power supply, as shown in the following figure:
 
 ## Display
 
-Supports HDMI output:
 
-![HDMI](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426171612371.png)
 
 
 
@@ -57,31 +44,17 @@ UART Debug dongle has 4 wires：
 
 ### Board DEBUG Pins
 
-**K2B**
-
-![K2B DEBUG PORT](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426173419507.png)
-
-![K2B DEBUG PORT](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426173855683.png)
 
 
 
-**K2C**
 
-![K2C DEBUG PORT](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426173450995.png)
 
-![K2C DEBUG PORT](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426173834282.png)
 
-### Wiring Method
 
-**K2B**
-
-![image-20250426174803589](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426174803589.png)
 
 
 
-**K2C**
-
-![image-20250426174822656](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250426174822656.png)
+### Wiring Method
 
 
 
@@ -94,7 +67,7 @@ The serial port assistant software can be downloaded by yourself. Take Mobaxterm
 location in cloud disk：
 
 ``` 
-h618_data\5-DevelopmentTools\UART_DebugTool\MobaXterm_Portable_v20.3.zip
+5-DevelopmentTools\UART_DebugTool\MobaXterm_Portable_v20.3.zip
 ```
 
 Software official website download:https://mobaxterm.mobatek.net/
@@ -125,7 +98,7 @@ ADB (Android Debug Bridge) is a debugging bridge tool for the Android system, wh
 Connect the computer and the board with a TYPE-C data cable. If the following device is recognized in the Device Manager, it is normal. If not, try changing the computer's USB port or the data cable first.
 
 
-![image-20250509185304921](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185304921.png)
+
 
 ### ADB Tool Acquisition and Installation
 
