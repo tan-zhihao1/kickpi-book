@@ -1,6 +1,4 @@
-# 21-LRADC按键配置
-
-[TOC]
+# LRADC按键配置
 
 ## LRADC
 
