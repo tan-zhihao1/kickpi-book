@@ -2,8 +2,6 @@
 
 ## K5 Expansion Pins  
 
-The development board is equipped with a 20Pin expansion header, including GPIO, I2C, UART, SPI, and other interfaces.  
-
 ![image-20241009150239258](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241009150239258.png)  
 
 ## K5Ck Expansion Pins  
@@ -21,7 +19,7 @@ The development board is equipped with a 20Pin expansion header, including GPIO,
 **Check device nodes**  
 ```bash  
 $ ls dev/ttyS*  
-```  
+```
 - `ttyS0` ↔ DEBUG_UART0  
 - `ttyS2` ↔ UART2  
 - `ttyS7` ↔ S_UART  
@@ -29,17 +27,17 @@ $ ls dev/ttyS*
 **Set baud rate**  
 ```bash  
 stty -F /dev/ttyS2 ispeed 115200 ospeed 115200 cs8  
-```  
+```
 
 **Send data to UART**  
 ```bash  
 echo kickpi > /dev/ttyAS2  
-```  
+```
 
 **Receive data**  
 ```bash  
 cat /dev/ttyAS2  
-```  
+```
 
 ---
 
@@ -54,7 +52,7 @@ LEDs registered as GPIO can be controlled via the `brightness` node.
 ```bash  
 $ ls /sys/class/leds/  
     PC12  PC2  PC3  PC4  PC7  PH8  PL4  PL5  fan_en  spk_en  sysled  
-```  
+```
 
 **Example: Control PH8 pin**  
 ```bash  
@@ -71,7 +69,7 @@ console:/ # cat /sys/class/leds/PH8/brightness
 console:/ # echo 1 > /sys/class/leds/PH8/brightness  # Set high level  
 console:/ # cat /sys/class/leds/PH8/brightness  
 1  
-```  
+```
 
 ---
 
@@ -105,4 +103,4 @@ cat /sys/kernel/debug/sunxi_pinctrl/dev_name
 
 echo r_pio > /sys/kernel/debug/sunxi_pinctrl/dev_name  
 cat /sys/kernel/debug/sunxi_pinctrl/dev_name  
-```  
+```
