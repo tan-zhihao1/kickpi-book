@@ -29,17 +29,16 @@ device/config/chips/a133/configs/c3/kickpi-k5c.dts
 
 ```
 longan/kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
-
-lcd-lvds-21-1920-1080.dtsi  
-  
-
-lcd-lvds-7-1024-600.dtsi    
-  
-
+lcd-lvds-21-1920-1080.dtsi
+lcd-lvds-7-1024-600.dtsi
+lcd-mipi-10-800-1280-v1.dtsi
+lcd-mipi-10-800-1280-v2.dtsi
+lcd-mipi-5-720-1280.dtsi
+lcd-mipi-8-800-1280.dtsi
 ```
 
 ```
-linux 路径
+LinuxSDK 路径
 kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
 ```
 
