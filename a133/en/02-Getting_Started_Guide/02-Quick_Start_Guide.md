@@ -60,7 +60,7 @@ When connecting the screen’s FPC flex cable:
 
 Connection diagram:  
 ![image-20250515104101028](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250515104101028.png)  
-```  
+
 
 
 ## Debug UART
@@ -98,8 +98,9 @@ The serial port assistant software can be downloaded by yourself. Take Mobaxterm
 
 location in cloud disk：
 
-``` 
+```
 5-DevelopmentTools\UART_DebugTool\MobaXterm_Portable_v20.3.zip
+
 ```
 
 Software official website download:https://mobaxterm.mobatek.net/
