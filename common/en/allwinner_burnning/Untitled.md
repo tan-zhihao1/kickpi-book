@@ -7,11 +7,11 @@
 
 USB driver directory:
 
-```
-PhoenixSuit/Drivers/AW_Driver/
-```
 
-> The driver cannot be installed directly. You must first identify the "Unknown Device" in the Device Manager to proceed with driver installation.
+PhoenixSuit/Drivers/AW_Driver/
+
+
+ The driver cannot be installed directly. You must first identify the "Unknown Device" in the Device Manager to proceed with driver installation.
 
 **Open the Device Manager on your computer**
 
@@ -29,7 +29,7 @@ Follow the steps below to install the driver:
 
 ![image-20241204152947830](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241204152947830.png)
 
----
+
 
 ### Common Issues
 
@@ -74,7 +74,7 @@ Reconnect the motherboard in burning mode, and the tool will prompt to start bur
 ![image-20240306171455427](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306171455427.png)
 
 The board will automatically reboot after successful burning.
-``` 
+```
 
 **Notes:**  
 - Terminology adjusted for clarity (e.g., "烧录" translated as "burning" or "flashing" depending on context).  
