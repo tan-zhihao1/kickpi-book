@@ -2,8 +2,6 @@
 
 
 
-
-
 ## 主控信息
 
 ![H168](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240320092438171.png)
