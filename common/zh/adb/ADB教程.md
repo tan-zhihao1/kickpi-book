@@ -213,7 +213,7 @@ adb shell screencap -p /sdcard/screenshot.png
 
 ### ADB设备无法识别
 
-进行ADB调试时，等板卡蓝灯闪烁时查看系统设备管理器是否识到是类似如下设备，
+进行ADB调试时，等板卡蓝灯闪烁时查看系统设备管理器是否识到是类似如下设备，例如这样：
 
 ![image-20250509185304921](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185304921.png)
 
