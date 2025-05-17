@@ -8,7 +8,7 @@
 
 ## 2. 开发板信息
 
-![K5功能标注图](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K5功能标注图.jpg)
+![image-20250517150032789](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250517150032789.png)
 
 ## 3. 配件信息
 
