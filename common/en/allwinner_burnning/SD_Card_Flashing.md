@@ -24,5 +24,7 @@ Insert the burned SD card into the development board and power on to boot automa
 #### ProductCard Burning Steps  
 1. Select the image file.  
 2. Choose **Product**.  
-3. Start burning.  
+3. Start burning. 
 ![image-20250509190047639](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509190047639.png)  
+
+Insert the SD Product card into the development board and power on. 
