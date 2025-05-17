@@ -90,9 +90,7 @@ ADB (Android Debug Bridge) is a debugging bridge tool for the Android system, wh
 
 Android system supports ADB function, see details [ADB_Tutorial](../../../common/en/adb/ADB_Tutorial.md)
 
-### 
 
-![image-20250509185455550](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185455550.png)
 
 ## SSH
 
