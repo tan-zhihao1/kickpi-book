@@ -29,9 +29,10 @@ Prepare an SD card and a card reader.
 
 For detailed burning steps, refer to: [SD Card Burning](../../../common/zh/全志烧录/SD卡烧录.md)  
 
-**Known Issue**: Ubuntu images may fail to create bootable SD cards.  
+**Known Issue**: Ubuntu images may fail to create Start up SD cards.  
 
 **Note**: For K5/K5C SD mass production cards:  
+
 - A steady blue light indicates burning is in progress.  
 - The blue light turns off when burning completes.  
 
