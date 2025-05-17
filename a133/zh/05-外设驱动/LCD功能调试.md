@@ -54,7 +54,7 @@ kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
 如：选择7寸屏软件
 
 ```shell
-$ vim longan/device/config/chips/a133/configs/c3/board.dts
+$ vim longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
 #include "lcd-lvds-7-1024-600.dtsi"
 //#include "lcd-lvds-21-1920-1080.dtsi"
 //#include "lcd-mipi-10-800-1280.dtsi"
