@@ -2,6 +2,8 @@
 
 ## Controller Information
 
+![image-20241125093045544](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241125093045544.png)
+
 ## Development Board Information
 
 ## Accessories List
