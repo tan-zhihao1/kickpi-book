@@ -9,3 +9,4 @@
 ![image-20250514200533242](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514200533242.png)  
 
 For detailed burning steps, refer to: [USB Cable Flashing](..\..\..\common\en\allwinner_burnning\USB_Cable_Flashing.md)  
+
