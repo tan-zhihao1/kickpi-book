@@ -205,7 +205,7 @@ When performing ADB debugging, check if the system Device Manager detects a devi
 
 ![image-20250509185304921](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185304921.png)  
 
-If an **Unknown Device** is detected (as shown below), manually install the driver:  
+If an **Unknown Device** or **Other devices** is detected (as shown below), manually install the driver:  
 
 ![image-20250226152046272](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152046272.png)  
 
@@ -220,9 +220,9 @@ Follow these steps:
  ![image-20250226152555933](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152555933.png) 
 
  ![image-20250226152618854](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152618854.png) 
- 
+
  ![image-20250226152635425](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152635425.png) 
- 
+
  ![image-20250226152643858](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152643858.png) 
 
  ![image-20250226152654260](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152654260.png) 
