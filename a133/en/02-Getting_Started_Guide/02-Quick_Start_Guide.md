@@ -88,55 +88,9 @@ Software official website download:https://mobaxterm.mobatek.net/
 
 ADB (Android Debug Bridge) is a debugging bridge tool for the Android system, which supports connecting to devices via USB or network, and can realize device management and debugging operations such as application installation, file transfer, and command execution.
 
+Android system supports ADB function, see details[ADB_Tutorial](../../common/en/adb/ADB_Tutorial.md)
 
-
-### Debug Cable and Interface
-
-- Debug cable: Use a USB TYPE-C data cable.
-- Debug interface: The USB TYPE-C interface of the motherboard.
-
-Connect the computer and the board with a TYPE-C data cable. If the following device is recognized in the Device Manager, it is normal. If not, try changing the computer's USB port or the data cable first.
-
-
-
-
-### ADB Tool Acquisition and Installation
-
-**Tool Acquisition**
-
-The ADB software tool can be obtained from the KICKPI network disk, for Windows platform, located in the network disk directory:
-
-``` 
-h618_data\5-DevelopmentTools\ADB_Tool\adb-tools.rar
-```
-
-
-
-**Installation Steps**
-
-1. Unzip the adb-tools.rar compressed package, for example, to the path D:\ADB Tool\adb-tools.
-2. Open the command line window and switch to the unzip directory:
-
-```
-ADB$ cd D:\ADB Tool\adb-tools
-```
-
-3. Run the command. A successful run indicates a successful installation.
-
-```
-ADB$ adb --version
-```
-
-Example:
-
-```
-PS D:\ADB Tool\adb-tools> .\adb.exe --version
-Android Debug Bridge version 1.0.40
-Version 4797878
-Installed as D:\ADB Tool\adb-tools\adb.exe
-```
-
-### ADB Debugging
+### 
 
 ![image-20250509185455550](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185455550.png)
 
