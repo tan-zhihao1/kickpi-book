@@ -103,31 +103,3 @@ When the motherboard is connected to many peripherals, resulting in high power c
 **Solution**：This is generally a power supply problem. Please check whether the power consumption of the corresponding power supply is sufficient and whether it can support the power supply of the connected peripheral modules.
 
 
-
-### ADB Device Not Recognized
-
-When debugging ADB, check whether the following device is recognized in the System Device Manager when the board's blue light is flashing.
-
-![image-20250509185304921](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185304921.png)
-
-If an unknown device is recognized, as shown in the figure, you need to manually install the driver.
-
-![image-20250226152046272](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152046272.png)
-
-
-
-![370849870429aae4906079eb686ee326](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/370849870429aae4906079eb686ee326.jpg)
-
-![image-20250226152541205](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152541205.png)
-
-![image-20250226152555933](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152555933.png)
-
-![image-20250226152618854](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152618854.png)
-
-![image-20250226152635425](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152635425.png)
-
-
-
-![image-20250226152643858](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152643858.png)
-
-![image-20250226152654260](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250226152654260.png)
