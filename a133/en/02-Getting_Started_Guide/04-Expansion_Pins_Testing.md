@@ -1,10 +1,10 @@
-# 04-Expansion Pins
+# 04-Expansion_Pins_Testing
 
 ## K5 Expansion Pins  
 
 ![image-20241009150239258](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241009150239258.png)  
 
-## K5Ck Expansion Pins  
+## K5C Expansion Pins  
 
 ![image-20250515144550428](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250515144550428.png)  
 
