@@ -47,6 +47,8 @@ kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
 
 * 屏幕选择编译
 
+  MIPI屏幕
+  
   | **型号**    | **尺寸**  | **分辨率** | 设备树文件 |
   | ----------- | --------- | ---------- | -------- |
   | AT101DS40I  | 10.1-inch | 800x1280   |lcd-mipi-10-800-1280-v1.dtsi|
@@ -54,7 +56,11 @@ kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
   | MX080B2140  | 8.0-inch  | 800x1280   |lcd-mipi-8-800-1280.dtsi|
   | F050008M01  | 5.0-inch  | 720x1280   |lcd-mipi-5-720-1280.dtsi|
   
-  MX070IBC 7寸 1024 * 600 LVDS 屏 #include "lcd-lvds-7-1024-600.dtsi"
+  LVDS屏幕
+  | **型号**    | **尺寸**  | **分辨率** | 设备树文件 |
+  | ----------- | --------- | ---------- | -------- |
+  | MX070IBC  | 7.0-inch | 1024x600   |lcd-lvds-7-1024-600.dtsi|
+
   
   
   
