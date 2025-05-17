@@ -60,11 +60,10 @@ kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
   | **型号**    | **尺寸**  | **分辨率** | 设备树文件 |
   | ----------- | --------- | ---------- | -------- |
   | MX070IBC  | 7.0-inch | 1024x600   |lcd-lvds-7-1024-600.dtsi|
-
+  |          /                      |21~27 inch|1920x1080|lcd-lvds-21-1920-1080.dtsi|
   
   
   
-  1920 * 1080 DUAL LVDS 屏 选择 include lcd-lvds-21-1920-1080.dtsi
 
 如：选择7寸屏软件
 
