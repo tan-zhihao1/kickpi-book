@@ -27,7 +27,7 @@ System image paths:
 
 Prepare an SD card and a card reader.  
 
-For detailed burning steps, refer to: [SD Card Burning](../../../common\en\allwinner_burnning\SD_Card_Flashing.md)  
+For detailed burning steps, refer to: [SD Card Burning](../../../common/en/allwinner_burnning/SD_Card_Flashing.md)  
 
 **Known Issue**: Ubuntu images may fail to create “Start up” SD cards.  
 
