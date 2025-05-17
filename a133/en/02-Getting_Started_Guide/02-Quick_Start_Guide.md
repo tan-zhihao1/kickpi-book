@@ -21,8 +21,46 @@ This guide is designed to help users quickly get started with the motherboard, i
 
 ## Display
 
+The motherboard supports **LVDS screens** and **MIPI screens**.  
 
+By default, the system is adapted for a **7-inch LVDS screen**. To switch to another display, refer to [Image Burning](../03-镜像烧录) to burn the corresponding image.  
 
+**Important Notes**  
+- Ensure the motherboard is **powered off** before connecting the screen.  
+
+---
+
+### Supported MIPI Screens  
+
+| **Model**      | **Size**      | **Resolution** | **Touch Support** |  
+| -------------- | ------------- | -------------- | ----------------- |  
+| AT101DS40I     | 10.1-inch     | 800x1280       | Y                 |  
+| MX101BA1340    | 10.1-inch     | 800x1280       | Y                 |  
+| MX080B2140     | 8.0-inch      | 800x1280       | Y                 |  
+| F050008M01     | 5.0-inch      | 720x1280       | Y                 |  
+
+### Supported LVDS Resolutions  
+
+| **Resolution** | **Touch Support** |  
+| -------------- | ----------------- |  
+| 1024x600       | Y                 |  
+| 1920x1080      | N                 |  
+
+**Available 7-inch LVDS Screen**  
+Model: `MX070IBC`  
+
+---
+
+### Hardware Connection  
+
+When connecting the screen’s FPC flex cable:  
+- **Blue side** must face **up**.  
+- **White side** must face **down**.  
+- Insert into the **LVDS_LCD interface**.  
+
+Connection diagram:  
+![image-20250515104101028](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250515104101028.png)  
+```  
 
 
 ## Debug UART
@@ -101,5 +139,4 @@ Support SSH function usage, see details [SSH](../../../common/en/linux/SSH.md)
 When the motherboard is connected to many peripherals, resulting in high power consumption, after connecting the power supply, the power-on green light may be dim or not remain on, and the system startup may also be abnormal.
 
 **Solution**：This is generally a power supply problem. Please check whether the power consumption of the corresponding power supply is sufficient and whether it can support the power supply of the connected peripheral modules.
-
 
