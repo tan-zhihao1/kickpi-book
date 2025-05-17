@@ -32,7 +32,7 @@ longan/kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
 
 lcd-lvds-21-1920-1080.dtsi  
 lcd-mipi-10-800-1280-v1.dtsi  
-lcd-mipi-5-720-1280.dtsi
+
 lcd-lvds-7-1024-600.dtsi    
 lcd-mipi-10-800-1280-v2.dtsi  
 lcd-mipi-8-800-1280.dtsi
@@ -47,18 +47,18 @@ kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
 
 * 屏幕选择编译
 
-  | **型号**    | **尺寸**  | **分辨率** | 触摸支持 |
+  | **型号**    | **尺寸**  | **分辨率** | 设备树文件 |
   | ----------- | --------- | ---------- | -------- |
   | AT101DS40I  | 10.1-inch | 800x1280   | Y        |
   | MX101BA1340 | 10.1-inch | 800x1280   | Y        |
   | MX080B2140  | 8.0-inch  | 800x1280   | Y        |
-  | F050008M01  | 5.0-inch  | 720x1280   | Y        |
+  | F050008M01  | 5.0-inch  | 720x1280   | lcd-mipi-5-720-1280.dtsi     |
+  
+  MX070IBC 7寸 1024 * 600 LVDS 屏 #include "lcd-lvds-7-1024-600.dtsi"
   
   
   
-  7寸 1024 * 600 LVDS 屏 选择 `#include "lcd-lvds-7-1024-600.dtsi"`
-  
-  1920 * 1080 DUAL LVDS 屏 选择 `#include "lcd-lvds-21-1920-1080.dtsi"`
+  1920 * 1080 DUAL LVDS 屏 选择 include lcd-lvds-21-1920-1080.dtsi
 
 如：选择7寸屏软件
 
