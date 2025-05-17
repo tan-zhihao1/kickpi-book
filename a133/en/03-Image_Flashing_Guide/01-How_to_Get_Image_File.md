@@ -9,17 +9,17 @@ Image files can be obtained in the following two ways: downloading from the clou
 
 Image files naming instructions
 
-update-a133-kickpi-<board>-<system>-<显示屏幕、尺寸、分辨率>-<日期>.img
+update-a133-kickpi-<board>-<system>-<Display screen, size, resolution>-<date>.img
 
 for example:
 
 update-a133-kickpi-k5c-android10-lvds-7-1024-600-2025042609.img
 
-板卡：K5C
+Board：K5C
 
-系统：android10
+System：android10
 
-显示屏幕：7寸 1024x600 LVDS
+Display screen, size, resolution：7 inch 1024x600 LVDS
 
-日期：2025042609
+Date：2025042609
 
