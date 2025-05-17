@@ -35,7 +35,7 @@ lcd-mipi-10-800-1280-v1.dtsi
 
 lcd-lvds-7-1024-600.dtsi    
 lcd-mipi-10-800-1280-v2.dtsi  
-lcd-mipi-8-800-1280.dtsi
+
 ```
 
 ```
@@ -51,8 +51,8 @@ kernel/linux-4.9/arch/arm64/boot/dts/sunxi/
   | ----------- | --------- | ---------- | -------- |
   | AT101DS40I  | 10.1-inch | 800x1280   | Y        |
   | MX101BA1340 | 10.1-inch | 800x1280   | Y        |
-  | MX080B2140  | 8.0-inch  | 800x1280   | Y        |
-  | F050008M01  | 5.0-inch  | 720x1280   | lcd-mipi-5-720-1280.dtsi     |
+  | MX080B2140  | 8.0-inch  | 800x1280   |lcd-mipi-8-800-1280.dtsi|
+  | F050008M01  | 5.0-inch  | 720x1280   |lcd-mipi-5-720-1280.dtsi|
   
   MX070IBC 7寸 1024 * 600 LVDS 屏 #include "lcd-lvds-7-1024-600.dtsi"
   
