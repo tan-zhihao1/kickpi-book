@@ -1,28 +1,5 @@
 # USB_Cable_Flashing
 
-## 1. Android USB Cable Image Burning
-
-The image can be downloaded from the network drive at:  
-
-``` 
-h618_data\2-Image\K2*\Android12.0_* 
-```
-
-The development board comes pre-installed with the default image. Skip this step if no system replacement is needed.  
-
----
-
-### Preparation Tools  
-
-**Download Burning Tool**  
-
-``` 
-h618_data\5-DevelopmentTools\USB_ImageBurnTool\PhoenixSuit.zip 
-```
-
-**Hardware Preparation**  
-Prepare a USB A-to-C cable for connecting the host PC to the development board.  
-
 ---
 
 ### Install USB Driver  
@@ -38,12 +15,9 @@ PhoenixSuit/Drivers/AW_Driver/
 
 **Enter Burning Mode on the Board**  
 
-1. Press and hold the **maskrom** button on the back of the board.  
-2. Power on the board. If already powered, restart it (press the reset button).  
-3. Release the **maskrom** button after ~3 seconds.  
 
-Detailed steps:  
-![image-20250509191757297](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509191757297.png)  
+
+  
 
 ---
 
@@ -91,13 +65,9 @@ Refer to Microsoft’s official solution:
 
    ![image-20250219160640908](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160640908.png)  
 
-**Enter Burning Mode on the Board**  
-Steps:  
 
-1. Press and hold the **maskrom** button.  
-2. Power on/restart the board.  
-3. Release the button after ~3 seconds.  
-   ![image-20250509191757297](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509191757297.png)  
+
+  
 
 **Start Burning**  
 
@@ -108,7 +78,3 @@ Steps:
 
 
 
-### Android Desktop Interface  
-
-Connect the board to an HDMI display. After successful booting, the interface will appear as follows:  
-![image-20240306171855522](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306171855522.png)
