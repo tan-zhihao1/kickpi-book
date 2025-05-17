@@ -112,25 +112,7 @@ Connect the board to the network and view the board's IP address through the ser
 
 **In addition, it should be noted that the development board's DHCP automatic IP address allocation does not require any settings.**
 
-### User Information
-
-The default username and password are as follows:
-
-| System   | Username | Password   |
-| ------ | ------ | ------ |
-| Ubuntu | kickpi | kickpi |
-| Ubuntu | root   | root   |
-
-``` shell
-ssh kickpi@<ip>
-Password: kickpi
-```
-
-**Precautions**
-
-- Ensure that the motherboard's network connection is normal.
-- Ensure that the computer can ping the motherboard's IP address normally.
-- Ensure that the entered username and password exist and are correct.
+Support SSH function usage, see details [SSH](../../../common/en/linux/SSH.md)
 
 ![image-20250411103217477](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250411103217477.png)
 
