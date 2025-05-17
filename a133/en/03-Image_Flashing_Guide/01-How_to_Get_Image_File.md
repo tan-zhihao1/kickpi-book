@@ -9,7 +9,7 @@ Image files can be obtained in the following two ways: downloading from the clou
 
 Image files naming instructions
 
-update-a133-kickpi-<board>-<system>-<Display screen, size, resolution>-<date>.img
+update-a133-kickpi-<Board>-<System>-<Display screen, size, resolution>-<Date>.img
 
 for example:
 
