@@ -107,7 +107,7 @@ hexdump /dev/input/event2  # Press remote buttons to see data output
 
 ## LCD Testing
 
-Supports **Single LVDS**, **Dual LVDS**, and **MIPI** displays. For details, see [LCD](../05-Peripheral-Drivers/LCD功能调试.md).  
+Supports **Single LVDS**, **Dual LVDS**, and **MIPI** displays. For details, see [LCD](../05-Drivers_Development/LCD.md).  
 
 **Backlight Control**  
 
