@@ -20,7 +20,7 @@ PhoenixSuit/Drivers/AW_Driver/
 > The driver cannot be installed directly. It requires recognizing an "Unknown Device" in Device Manager first.  
 
 **Open Device Manager on PC**  
-If the board enters burning mode successfully and the PC lacks the USB driver, an "Unknown Device" will appear. Follow the steps below to install the driver:  
+If the board enters burning mode successfully and the PC lacks the USB driver, an "Unknown device" will appear. Follow the steps below to install the driver:  
 
 ![image-20250219155858913](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155858913.png)  
 ![image-20250219155942874](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155942874.png) 
