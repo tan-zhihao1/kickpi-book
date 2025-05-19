@@ -41,3 +41,7 @@ The DUAL LVDS screens that K3 is default compatible with:
 | DUAL **LVDS Panel Model** | **Diagonal Size** | **Resolution** |
 | -------------------------- | ----------------- | -------------- |
 | DV320FHB                   | 32-inch           | 1920x1080      |
+
+
+
+![k3](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k3.jpg)

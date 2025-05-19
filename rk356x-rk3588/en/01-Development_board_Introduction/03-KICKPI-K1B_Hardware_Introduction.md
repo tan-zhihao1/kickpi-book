@@ -42,4 +42,4 @@ The LVDS screens that the K1B is default - adapted to:
 
 
 
-![image-20250225144334160](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250225144334160.png)
+![k1B_01](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k1B_01.jpg)
