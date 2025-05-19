@@ -160,7 +160,7 @@ tinyplay sample-15s.wav
 
 ---
 
-## Microphone Testing
+## MIC Testing
 
 **Ubuntu**  
 ```shell
