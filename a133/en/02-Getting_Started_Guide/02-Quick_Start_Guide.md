@@ -42,7 +42,7 @@ By default, the system is adapted for a **7-inch LVDS screen**. To switch to ano
 
 ---
 
-### Supported MIPI Screens  
+Supported MIPI Screens  
 
 | **Model**      | **Size**      | **Resolution** | **Touch Support** |  
 | -------------- | ------------- | -------------- | ----------------- |  
@@ -51,7 +51,7 @@ By default, the system is adapted for a **7-inch LVDS screen**. To switch to ano
 | MX080B2140     | 8.0-inch      | 800x1280       | Y                 |  
 | F050008M01     | 5.0-inch      | 720x1280       | Y                 |  
 
-### Supported LVDS Resolutions  
+Supported LVDS Resolutions  
 
 | **Resolution** | **Touch Support** |  
 | -------------- | ----------------- |  
@@ -63,7 +63,7 @@ Model: `MX070IBC`
 
 ---
 
-### Hardware Connection  
+**Hardware Connection**  
 
 When connecting the screen’s FPC flex cable:  
 - **Blue side** must face **up**.  
