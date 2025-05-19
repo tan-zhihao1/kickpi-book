@@ -95,12 +95,15 @@ Check input devices:
 cat /proc/bus/input/devices
 ```
 
+![image-20250517110612748](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250517110612748.png)
+
 Test IR receiver:  
+
 ```shell
 hexdump /dev/input/event2  # Press remote buttons to see data output
 ```
 
----
+![image-20250517110644728](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250517110644728.png)
 
 ## LCD Testing
 
