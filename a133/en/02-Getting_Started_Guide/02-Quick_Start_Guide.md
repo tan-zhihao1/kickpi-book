@@ -2,17 +2,7 @@
 
 This guide is designed to help users quickly get started with the motherboard, including board power-on, display connection, debug serial port, ADB, SSH connection, and other contents.
 
-
-
 ## Board Power-on
-
-### Power Supply Methods
-
-# 02-Quick Start
-
-This guide helps users quickly get started with the board, covering board power-on, display connection, debug serial port, ADB, SSH connections, etc.
-
-## Powering the Board
 
 ### Power Supply Methods
 
