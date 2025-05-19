@@ -12,7 +12,7 @@
 
 ## Accessories List
 
-![Accessories](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K2c详情页_11.jpg)
+![image-20250519162604688](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250519162604688.png)
 
 ## Expansion Pins
 
