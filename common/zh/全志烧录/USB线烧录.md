@@ -1,5 +1,13 @@
 # USB线烧录
 
+烧录工具网盘地址：
+
+``` 
+5-DevelopmentTool\USB_ImageBurnTool\PhoenixSuit.zip
+```
+
+
+
 ### 安装USB驱动
 
 **解压PhoenixSuit.zip**
