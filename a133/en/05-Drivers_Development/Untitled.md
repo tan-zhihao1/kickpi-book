@@ -1,4 +1,3 @@
-```markdown
 # LCD Functional Debugging
 
 ## Kernel Device Tree
