@@ -1,4 +1,4 @@
-# LCD Functional Debugging
+# LCD
 
 ## Kernel Device Tree
 
