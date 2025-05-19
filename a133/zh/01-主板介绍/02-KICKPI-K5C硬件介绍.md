@@ -10,6 +10,8 @@
 
 ## 3. 配件信息
 
+![image-20250519164617837](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250519164617837.png)
+
 ## 4.扩展引脚
 
 ![image-20250515144550428](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250515144550428.png)
