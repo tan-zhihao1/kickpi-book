@@ -105,4 +105,3 @@ aarch64-linux-gnu-gcc: error: /home/A/sdk/a133/a133-linux-test1/kernel/linux-4.9
 $ ./build.sh clean
 ```
 
-
