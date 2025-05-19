@@ -1,5 +1,13 @@
 # SD卡烧录
 
+烧录工具网盘地址：
+
+``` 
+5-DevelopmentTool\SD_Boot_Card_Tool\PhoenixCard4.2.8.rar
+```
+
+
+
 ### 安装烧录工具
 
 PhoenixCard.rar 直接解压后打开即可，打开界面如下
