@@ -4,19 +4,19 @@
 
 ### K1 Pin List
 
-![image-20240420181207097](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420181207097.png)
+![K1_40PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/引脚定議_画板 1 副本.jpg)
 
 ### K1B Pin List
 
-![image-20240914152349051](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240914152349051.png)
+![K1B_20PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/引脚定議_画板 1 副本 2.jpg)
 
 ### K3 Pin List
 
-![image-20250312141333883](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250312141333883.png)
+![K3_20PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/引脚定議_画板 1 副本 5.jpg)
 
 ### K8 Pin List
 
-![944056094ce6a949b748c927edbef52](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/944056094ce6a949b748c927edbef52.png)
+![K8_40PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/引脚定議-10.jpg)
 
 ## GPIO
 
