@@ -31,24 +31,6 @@ The K5C board supports multiple power supply methods. Verify hardware version co
 
 For other power supply details, refer to [K5C Board Power Supply](../08-Advanced/K5C主板供电.md).
 
-### LED Status
-
-The board has two LEDs:  
-- **Green LED**: Power indicator (stays on when powered).  
-- **Blue LED**: Heartbeat indicator (blinks continuously after the kernel boots).  
-
-Use the LED states to diagnose board operation:  
-- If the **power indicator is off**, check for power supply issues.  
-- If the **heartbeat indicator stops blinking**, the system may have crashed.  
-
----
-
-**Notes**  
-- Ensure the board is powered off before connecting/disconnecting peripherals.  
-- Verify power adapter specifications match the board requirements.
-
-
-
 ### LED Status  
 - **Green LED**: Power indicator (steady on when powered).  
 - **Blue LED**: Heartbeat indicator (blinks after kernel boot).  
