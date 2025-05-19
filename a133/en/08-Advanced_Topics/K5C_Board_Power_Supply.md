@@ -1,4 +1,4 @@
-# K5C Board Power Supply
+# K5C_Board_Power_Supply
 
 The K5C board supports multiple power supply methods. Verify hardware version compatibility!
 
