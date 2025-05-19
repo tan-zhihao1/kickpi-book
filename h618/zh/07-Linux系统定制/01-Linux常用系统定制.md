@@ -89,15 +89,7 @@ dd if=/dev/mmcblk0  of=/dev/mmcblk1  bs=4M
 
 ## 备份SD卡系统
 
-### FAQ：
-
-* 出厂是SD卡自动烧录的系统 ，拷贝出来的系统也是SD卡自动烧录的，想要取消自动烧录可以使用下面命令，关闭烧录服务
-
-```shell
-$ sudo systemctl disable kickpi.service
-```
-
-* 这种方式替换后的rootfs存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab 或者在替换前删除此文件
+这种方式替换后的rootfs存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab 或者在替换前删除此文件
 
 ### 操作步骤
 
