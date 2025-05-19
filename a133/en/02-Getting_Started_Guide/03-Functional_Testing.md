@@ -107,9 +107,10 @@ hexdump /dev/input/event2  # Press remote buttons to see data output
 
 ## LCD Testing
 
-Supports **Single LVDS**, **Dual LVDS**, and **MIPI** displays. For details, see [LCD Functional Debugging](../05-Peripheral-Drivers/LCD功能调试.md).  
+Supports **Single LVDS**, **Dual LVDS**, and **MIPI** displays. For details, see [LCD](../05-Peripheral-Drivers/LCD功能调试.md).  
 
 **Backlight Control**  
+
 ```shell
 echo lcd0 > /sys/kernel/debug/dispdbg/name
 echo setbl > /sys/kernel/debug/dispdbg/command
