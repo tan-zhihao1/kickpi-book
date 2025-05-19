@@ -1,6 +1,6 @@
 # USB线烧录
 
-烧录工具网盘地址：
+烧录工具网盘路径：
 
 ``` 
 5-DevelopmentTool\USB_ImageBurnTool\PhoenixSuit.zip

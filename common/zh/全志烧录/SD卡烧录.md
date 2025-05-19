@@ -1,6 +1,6 @@
 # SD卡烧录
 
-烧录工具网盘地址：
+烧录工具网盘路径：
 
 ``` 
 5-DevelopmentTool\SD_Boot_Card_Tool\PhoenixCard4.2.8.rar
