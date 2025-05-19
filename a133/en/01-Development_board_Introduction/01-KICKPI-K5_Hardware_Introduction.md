@@ -12,6 +12,6 @@
 
 ## Expansion Pins
 
-![image-20241009150239258](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241009150239258.png)
+![image-20250519163053948](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250519163053948.png)
 
 > Pins marked with * are the default software configuration functions.
