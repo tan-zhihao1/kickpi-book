@@ -1,6 +1,12 @@
 # USB_Cable_Flashing
 
----
+The path of the burning tool network disk:
+
+``` 
+5-DevelopmentTool\USB_ImageBurnTool\PhoenixSuit.zip
+```
+
+
 
 ### Install USB Driver  
 
