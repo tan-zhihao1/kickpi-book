@@ -48,6 +48,5 @@ The EDP screens that K1 is default - adapted to
 | ------------------- | ----------------- | -------------- |
 | LQ156T3LW03         | 15.6 - inch       | 1920x1080      |
 
+![k1](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k1.jpg)
 
-
-![image-20250225144314914](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250225144314914.png)
