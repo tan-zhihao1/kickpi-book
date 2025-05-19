@@ -1,4 +1,4 @@
-# 02-SD Card Burning
+# 02-SD_Card_Flashing
 
 ### Preparation Tools
 
