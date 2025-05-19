@@ -1,5 +1,13 @@
 # SD_Card_Flashing
 
+The path of the burning tool network disk:
+
+``` 
+5-DevelopmentTool\SD_Boot_Card_Tool\PhoenixCard4.2.8.rar
+```
+
+
+
 ### Install the Burning Tool
 
 Extract `PhoenixCard.rar` and run the tool. The interface is shown below:  
