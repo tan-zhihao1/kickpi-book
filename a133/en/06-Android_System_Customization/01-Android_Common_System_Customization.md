@@ -303,4 +303,4 @@ wm density 120
 ### 1. Headphones Always Detected  
 The driver defaults to headphone mode for speaker functionality. To revert:  
 ![Fix](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/538c0528ac148df300bf0408eada0234.jpg)  
-```
+
