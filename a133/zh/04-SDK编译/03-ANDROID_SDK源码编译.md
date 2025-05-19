@@ -8,42 +8,7 @@ Android SDK版本信息
 
 Android系统版本：10.0
 
-
-
-### 获取SDK源码
-
-* 网盘下载目录
-
-```
-├── 1-SDK软件源码
-│   ├── android10.0
-│   └── ubuntu1604
-```
-
-* 拷贝源码压缩包到编译主机目录 （linux环境）
-
-  > 注意事项：
-  >
-  > 1. 源码不可放在共享目录下编译
-  >
-  > 2. 编译主机不可用ROOT账号登陆
-
-
-
-* 解压源码压缩包，Git恢复源码目录
-
-  >a133-*.tar.gz 指代解压的代码压缩包
-
-```
-mkdir sdk
-tar -zxf a133-*.tar.gz -C sdk/
-cd sdk
-git reset --hard
-```
-
-
-
-## 2. Android SDK编译
+## Android SDK编译
 
 
 
