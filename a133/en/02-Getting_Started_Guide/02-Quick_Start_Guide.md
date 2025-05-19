@@ -8,6 +8,45 @@ This guide is designed to help users quickly get started with the motherboard, i
 
 ### Power Supply Methods
 
+# 02-Quick Start
+
+This guide helps users quickly get started with the board, covering board power-on, display connection, debug serial port, ADB, SSH connections, etc.
+
+## Powering the Board
+
+### Power Supply Methods
+
+The K5C board supports multiple power supply methods. Verify hardware version compatibility.
+
+| Power Supply Method | Voltage | Board Version |
+| ------------------- | ------- | ------------- |
+| DC                  | 12V     | >= V1.0       |
+| Type-C              | 5V      | >= V1.1       |
+| POE                 | 12V     | >= V1.0       |
+| BAT                 | > 3.7V  | >= V1.2       |
+
+**DC Power Supply**  
+
+![image-20250322093752078](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250322093752078.png)![image-20250322093804013](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250322093804013.png)  
+
+For other power supply details, refer to [K5C Board Power Supply](../08-Advanced/K5C主板供电.md).
+
+### LED Status
+
+The board has two LEDs:  
+- **Green LED**: Power indicator (stays on when powered).  
+- **Blue LED**: Heartbeat indicator (blinks continuously after the kernel boots).  
+
+Use the LED states to diagnose board operation:  
+- If the **power indicator is off**, check for power supply issues.  
+- If the **heartbeat indicator stops blinking**, the system may have crashed.  
+
+---
+
+**Notes**  
+- Ensure the board is powered off before connecting/disconnecting peripherals.  
+- Verify power adapter specifications match the board requirements.
+
 
 
 ### LED Status  
