@@ -6,7 +6,7 @@
 
 ## Board Information
 
-
+![k7-board](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k7-board.png)
 
 ## Optional Components
 
