@@ -1,210 +1,146 @@
 # 03-USB_Cable_Flashing
 
-此文档用于用户烧录或升级主板系统。
+This document is used for users to flash or upgrade the motherboard system.
 
+## Image Flashing
 
+### Install USB Driver <a id="USBDRV"> </a>
 
-## 镜像烧录
-
-### 安装USB驱动<a id="USBDRV"> </a>
-
-**网盘路径**
+**Network Disk Path**
 
 ```
 5-DevelopmentTool/win_x64_UsbDriver/DriverAssitant_v5.13.zip
 ```
 
-
-
-1. 将 DriverAssitant_v5.13.zip 解压，打开解压后的文件夹；
-
-2. 找到 DriverInstall.exe ，双击运行；
-
+1. Unzip the `DriverAssitant_v5.13.zip` and open the unzipped folder.
+2. Find `DriverInstall.exe` and double-click to run it.
 
 ![image-20241025101533688](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101533688.png)
 
-
-
-3. 点击驱动安装，提示安装成功；
-
-（若已安装旧版本驱动，可先进行驱动卸载再驱动安装，保持驱动版本为最新）
+3. Click "Driver Installation" and the installation will be successful.
+(If an old version of the driver has been installed, you can uninstall the driver first and then install the driver to keep the driver version up-to-date.)
 
 ![image-20241025101606583](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101606583.png)
 
+### Install RKDevTool
 
-
-### 安装RKDevTool
-
-**网盘路径**
+**Network Disk Path**
 
 ```
 5-DevelopmentTool/win_x64_UsbImageBurnTool/RKDevTool_v3.30_for_window.zip
 ```
 
-> RK3576平台windows固件烧写工具必须使用V3.28及以上版本。
+> The Windows firmware flashing tool for the RK3576 platform must use version V3.28 or higher.
 
-
-
-1. 将 RKDevTool_v3.30_for_window.zip 解压，打开解压后的文件夹；
-
-2. 修改镜像烧录工具语言（可选）
-
-默认镜像烧录工具为中文界面，可按照如下所示修改为英文界面
+1. Unzip the `RKDevTool_v3.30_for_window.zip` and open the unzipped folder.
+2. Modify the language of the image flashing tool (optional)
+The default interface of the image flashing tool is in Chinese. You can modify it to the English interface as shown below.
 
 ![img](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231010202819610.png)
 
 ![img](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231010203036869.png)
 
-3. 找到 RKDevTool.exe，双击运行；
-
-
+3. Find `RKDevTool.exe` and double-click to run it.
 
 ![image-20241025161627415](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025161627415.png)
 
+### Flash the Image
 
+**Enter the Flashing Mode of the Development Board (Pic) <a id="burn_mode"> </a>**
 
-### 烧录镜像
+To flash the image, the development board must enter the flashing mode. The flashing modes of the Rockchip platform include LOADER mode and Maskrom mode.
+- LOADER mode is commonly used for both full image flashing and partition flashing.
+- Maskrom mode is commonly used for forcibly flashing the image after the system is damaged.
 
-**开发板进入烧录模式(Pic)<a id="burn_mode"> </a>**
+> You can view the buttons in the "KICKPI - Hardware Introduction" and "Development Board Information" sections.
 
-烧录镜像 必须使开发板进入烧录模式，Rockchip平台的烧录模式有LOADER模式、Maskrom模式
+Operation Steps:
+1. Open the flashing tool on the Windows computer (refer to the above instructions to install RKDevTool).
+2. Connect the OTG interface of the development board to the USB interface of the computer.
+3. To enter **LOADER mode**, press the LOADER button and power on the board (if the motherboard is already powered on, you can press the reset button to reset it). To enter **MASKROM mode**, press the MASKROM button on the back of the board and power on the board (if the motherboard is already powered on, you can press the reset button to reset it).
 
-LOADER模式 常用于完整镜像烧录、分区烧录皆可
+> Both LOADER and MASKROM modes support full package flashing. You can choose one mode for flashing.
 
-Maskrom模式 常用于系统损坏后，强制烧录镜像
-
-> 按键可通过KICKPI-硬件介绍，开发板信息章节进行查看
-
-
-
-操作步骤：
-
-1. Window电脑上打开烧录工具（参考上面说明安装RKDevTool）
-2. 开发板OTG接口 连接 电脑USB接口
-3. 进入 **LOADER模式** 需要按下LOADER按键，上电（主板已上电可按复位进行复位）；进入 **MASKROM模式** 需要按下板子背后的MASKROM按键，上电（主板已上电可按复位进行复位）；
-
-> LOADER / MASKROM模式均支持整包烧录，选择一个模式进行烧录即可。
-
-4. 瑞芯微开发工具上能够识别到 LOADER设备 或 MASKROM设备；（需要先安装USB驱动，才能识别到相关设备）
+4. The Rockchip development tool should be able to recognize the LOADER device or MASKROM device. (You need to install the USB driver first to recognize the relevant devices.)
 
 ![image-20250422093529751](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093529751.png)
 
-
-
-5. 点击 **Upgrade Firmware**，跳转到升级固件界面；
-
-6. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
+5. Click **Upgrade Firmware** to jump to the firmware upgrade interface.
+6. Click **Firmware** and select the image `update-*.img` to be flashed. [Get the image file](01-获取镜像文件.md)
 
 ![image-20250422093506005](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093506005.png)
 
-
-
-7. 点击 **Upgrade**，等待烧录完成；
+7. Click **Upgrade** and wait for the flashing to complete.
 
 ![image-20250422093623591](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093623591.png)
 
-
-
-8. 烧录完成；
+8. The flashing is completed.
 
 ![image-20250422093934098](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093934098.png)
 
+### Flash the Partition Image
 
-
-### 烧录分区镜像
-
-分区镜像主要用于正常编译的镜像的调试使用，多屏自适应镜像不能烧分区镜像替换，网盘中的固件均为多屏自适应镜像。
+The partition image is mainly used for debugging the normally compiled image. The multi-screen adaptive image cannot be replaced by flashing the partition image. The firmware in the network disk is all multi-screen adaptive image.
 
 ![image-20250428105212038](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250428105212038.png)
 
-操作步骤：
+Operation Steps:
+1. Enter the partition image flashing page.
+2. Check the partition items to be flashed (the partition file `Parameter` must be checked to ensure the correct partition).
+3. Select/enter the path where the corresponding file is stored.
+4. The flashing tool successfully recognizes the board device [enter the loader mode](#burn_mode).
+5. Start flashing the image.
+6. Check the flashing log. After the flashing is successful, the system will automatically restart and enter the system.
 
-1. 进入分区镜像烧录页面
-2. 勾选烧录分区项 (其中分区文件Parameter，必须勾选，确保分区正确)
-3. 选择/输入对应文件存放的路径
-4. 烧录工具成功识别板卡设备[进入loader模式](#burn_mode)
-5. 开始烧录镜像
-6. 查看 烧录日志，烧录成功后自动重启进入系统
+## Factory Flashing
 
+### Install FactoryTool
 
-
-## 工厂烧录
-
-### 安装FactoryTool
-
-**网盘路径**
+**Network Disk Path**
 
 ```
 5-DevelopmentTool/FactoryTool/FactoryTool_v1.89.zip
 ```
 
-1. 将 FactoryTool_v1.89.zip 解压，打开解压后的文件夹；
-
-2. 找到 FactoryTool.exe，双击运行；
+1. Unzip the `FactoryTool_v1.89.zip` and open the unzipped folder.
+2. Find `FactoryTool.exe` and double-click to run it.
 
 ![image-20250109172029374](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250109172029374.png)
 
+### Flash the Image
 
-
-### 烧录镜像
-
-1. 点击 **Firmware**，选择要烧录的镜像 update-*.img；
+1. Click **Firmware** and select the image `update-*.img` to be flashed.
 
 ![image-20250422101009222](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422101009222.png)
 
+2. Click **Run** to start the factory flashing mode.
+3. In the green light state, connect the motherboard with TYPE-C.
+4. To enter **LOADER mode**, press the RECOVERY button and power on the board (if the motherboard is already powered on, you can press the reset button to reset it). To enter **MASKROM mode**, press the MASKROM button on the back of the board and power on the board (if the motherboard is already powered on, you can press the reset button to reset it). [Install the USB driver](#USBDRV)
+5. Observe the light. When the device is recognized, the light will turn red. Do not unplug or plug in the device at this time.
 
+![image-20250422103006729](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422103006729.png)
 
-2. 点击 **Run**，启动工厂烧录模式；
+6. Wait for the green light. Repeat steps 3, 4, and 5 to flash new devices simultaneously.
+7. After flashing all the devices, click **Stop**.
 
-3. 绿灯状态下，使用TYPE-C连接主板；
+## Common Problems
 
-4. 进入 **LOADER模式** 需要按下RECOVERY按键，上电（主板已上电可按复位进行复位）；进入 **MASKROM模式** 需要按下板子背后的MASKROM按键，上电（主板已上电可按复位进行复位）；[USB驱动安装](#USBDRV)
+### The Loader or Maskrom Mode is not Recognized
 
-5. 观察灯，当识别到设备会切换成红灯，此时不要拔出或接入设备；
-
-   ![image-20250422103006729](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422103006729.png)
-
-   
-
-6. 等待绿灯，重复步骤3、步骤4、步骤5，可同时烧录新的设备；
-
-7. 烧录所有设备完成，点击 **Stop**；
-
-
-
-## 常见问题
-
-**Loader或Maskrom模式不识别问题**
-
-1. 进入**LOADER模式**需要按下RECOVERY按键，上电（主板已上电可按复位进行复位）；进入**MASKROM模式**需要按下板子背后的MASKROM按键，上电（主板已上电可按复位进行复位）。
-
-2. 打开电脑中设备管理器；
-
-3. 可以查看到usb设备，说明USB驱动安装成功；
+1. To enter **LOADER mode**, press the RECOVERY button and power on the board (if the motherboard is already powered on, you can press the reset button to reset it). To enter **MASKROM mode**, press the MASKROM button on the back of the board and power on the board (if the motherboard is already powered on, you can press the reset button to reset it).
+2. Open the Device Manager on the computer.
+3. If you can see the USB device, it means the USB driver is installed successfully.
 
 ![image-20241025101105194](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101105194.png)
 
+If you cannot recognize the "Class for rockusb devices", you can try the following steps:
+1. Open `DriverInstall.exe`, try to uninstall the driver, and then install the driver. [Install the USB driver](#USBDRV)
+2. Contact the customer service for feedback.
 
+### Use Other Functions of the Flashing Tool
 
-如果识别不到 Class for rockusb devices，可尝试下面步骤：
-
-1. 打开DriverInstall.exe ，尝试驱动卸载，再进行驱动安装；[USB驱动安装](#USBDRV)
-
-2. 反馈咨询客服
-
-
-
-**烧录工具的其他功能使用**
-
-烧录工具更多说明见
+For more instructions on the flashing tool, see
 
 ```
 RKDevTool_v3.30_for_window/开发工具使用文档_v1.0.pdf
 ```
-
-
-
-
-
-
-
