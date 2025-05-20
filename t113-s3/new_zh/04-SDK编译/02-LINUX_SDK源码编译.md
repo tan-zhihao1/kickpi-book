@@ -1,107 +1,89 @@
-# 02-LINUX_SDK源码编译
+### 编译完整镜像
 
-### 完整编译
+首次执行build.sh进行SDK编译，必须要选择编译配置信息，如：CPU型号、板卡型号、文件系统型号
 
-```shell
-$ ./build.sh config
-Welcome to mkscript setup progress
-All available platform:
-   0. android
-   1. linux
-Choice [android]: 1
-All available linux_dev:
-   0. bsp
-   1. dragonboard
-Choice [bsp]: 0
-All available kern_ver:
-   0. linux-4.9
-Choice [linux-4.9]: 0
-All available ic:
-   0. a133
-Choice [a133]: 0
-All available board:
-   0. b1
-   1. b3
-   2. c3
-   3. c4
-   4. fpga
-   5. perf1
-   6. perf2
-   7. perf3
-   8. qa
-   9. ver
-Choice [c3]: 2
-All available flash:
-   0. default
-   1. nor
-Choice [default]: 0
-```
-
+* SDK编译配置
 
 ```shell
-./build.sh lunch  选择K5或者K5C
-./build.sh 编译完整镜像
+$ ./build.sh lunch
+
+======you are building t113 linux======
+1. BoardConfig-t113-s3-kickpi-k4b-buildroot.mk
+2. BoardConfig-t113-s3-kickpi-k4b-ubuntu.mk
+which board would you like (1-2): 
+```
+
+> 配置命令首次编译执行一次即可
+
+
+
+* 编译镜像
+
+```shell
+./build.sh       \\编译
+./build.sh pack  \\打包生成镜像
+```
+
+> 镜像生成目录：out/t113_linux_evb1_auto_uart0.img
+>
+> 若编译失败，可尝试自行解决，亦可联系技术支持客服解决
+
+
+
+### 单独编译分区镜像
+
+**单独编译Uboot**
+
+```shell
+$ ./build.sh uboot
 ```
 
 
 
-### 单独编译
+**单独编译Kernel**
 
-kernel
-
-```
-./build.sh kernel
+```shell
+$ ./build.sh kernel
 ```
 
 
 
-rootfs
+**单独编译Buildroot**
 
-```
-./build.sh rootfs
-```
-
-
-
-## Kernel Defconfig 
-
-defconfig 修改及保存
-
-```
-确保编译过一次 或 ./build.sh config
-cd kernel/linux-4.9/
-make ARCH=arm64 menuconfig
-cd -
-./build.sh saveconfig
+```shell
+$ ./build.sh buildroot_rootfs
 ```
 
 
 
-## 工具链
+### 其他常用命令
 
-包路径
+**内核配置**
 
-```
-build/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu.tar.xz
-```
-
-编译后工具的路径
-
-```
-out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
+```shell
+$ ./build.sh menuconfig
+$ ./build.sh saveconfig
 ```
 
+使用的defconfig文件为
 
+device/config/chips/t113/configs/evb1_auto/linux-5.4/config-5.4
 
-如果提示缺少文件
+**buildroot配置**
 
-```
-aarch64-linux-gnu-gcc: error: /home/A/sdk/a133/a133-linux-test1/kernel/linux-4.9/modules/gpu/img-rgx/linux/rogue_km/binary_sunxi_linux_release/target_aarch64/kbuild/services/server/env/linux/event.c: No such file or directory
-```
-
-需要进行清除操作
-
-```
-$ ./build.sh clean
+```shell
+$ ./build.sh buildroot_menuconfig
+$ ./build.sh buildroot_saveconfig
 ```
 
+使用的defconfig文件为
+
+buildroot/buildroot-201902/configs/sun8iw20p1_t113_defconfig
+
+## 3. 编译工具链
+
+编译完成时工具链位于
+
+``` shell
+out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf/bin
+```
