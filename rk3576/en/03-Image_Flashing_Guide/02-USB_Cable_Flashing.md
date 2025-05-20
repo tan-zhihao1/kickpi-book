@@ -37,7 +37,7 @@ This document is used for users to burn or upgrade the motherboard system.
 1. Unzip the `RKDevTool_v3.30_for_window.zip` and open the unzipped folder.
 2. Find `RKDevTool.exe` and double-click to run it.
 
-![image-20241025161627415](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025161627415.png)
+
 
 ### Start Image Flashing
 
