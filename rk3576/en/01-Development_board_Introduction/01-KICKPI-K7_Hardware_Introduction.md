@@ -10,6 +10,8 @@
 
 ## Optional Components
 
+![k7](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k7.jpg)
+
 
 
 ## Expansion Pins Information
