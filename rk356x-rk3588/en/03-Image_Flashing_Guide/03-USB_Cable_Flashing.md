@@ -1,140 +1,210 @@
-# 01-USB_Cable_Flashing
+# 02-USB线烧录
 
-## 1. Image Flashing
+此文档用于用户烧录或升级主板系统。
 
-The development board comes pre - flashed with an image by default. If you don't need to replace the system, you can skip this step and start the system directly.
 
-### Download Preparation Tools
 
-The tools required for image flashing are as follows:
+## 镜像烧录
 
-```
-├── System Image
-│   └── RK3568 - K1
-│       ├── Android13
-│       ├── Debian11
-│       └── Ubuntu2004
-└── Development Tools
-    ├── USB Driver
-    └── USB Image Burn Tool
-```
+### 安装USB驱动<a id="USBDRV"> </a>
 
-> For image flashing, you must download the USB driver and the image burn tool.
->
-> You can choose to download the system image according to your actual needs or compile it yourself through the SDK.
-
-### Install the USB Driver
-
-The cloud disk path of the USB driver is:
+**网盘路径**
 
 ```
-DevelopmentTools\USB Driver\DriverAssitant_v5.12.zip
+5-DevelopmentTool/win_x64_UsbDriver/DriverAssitant_v5.13.zip
 ```
 
-![image-20230526154517334](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20230526154517334.png)
 
-### Obtain the Image File
 
-You can obtain the image file in two ways: download from the cloud disk or compile through the SDK.
+1. 将 DriverAssitant_v5.13.zip 解压，打开解压后的文件夹；
 
-Refer to the document [SDK Source Code Compilation](11-SDK源码编译.md) for the detailed steps of SDK compilation.
+2. 找到 DriverInstall.exe ，双击运行；
 
-The network disk directory of the image file is:
 
-```
-├── Image
-    └── RK3568 - K1
-        ├── Android13
-            ├── update-rk3568-kickpi-k1-android-hdmi-2023102403.img
-        ├── Debian11
-        └── Ubuntu2004
-```
+![image-20241025101533688](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101533688.png)
 
-Image name parsing:
 
-![image-20231024111614065](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231024111614065.png)
 
-### Install the Image Burn Tool
+3. 点击驱动安装，提示安装成功；
 
-The network disk directory of the image burn tool is:
+（若已安装旧版本驱动，可先进行驱动卸载再驱动安装，保持驱动版本为最新）
+
+![image-20241025101606583](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101606583.png)
+
+
+
+### 安装RKDevTool
+
+**网盘路径**
 
 ```
-DevelopmentTools\USB Image Burn Tool\RKDevTool_v3.30.zip
+5-DevelopmentTool/win_x64_UsbImageBurnTool/RKDevTool_v3.30_for_window.zip
 ```
 
-1. After downloading the image burn tool from the network disk, unzip the folder to get the following directory list:
+> RK3576平台windows固件烧写工具必须使用V3.28及以上版本。
 
-![image-20241025184222743](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025184222743.png)
 
-> Please read the development tool usage documentation carefully for tool usage.
 
-2. Modify the language of the image burn tool (optional)
+1. 将 RKDevTool_v3.30_for_window.zip 解压，打开解压后的文件夹；
 
-The default interface of the image burn tool is in Chinese. You can modify it to the English interface as follows:
+2. 修改镜像烧录工具语言（可选）
+
+默认镜像烧录工具为中文界面，可按照如下所示修改为英文界面
 
 ![img](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231010202819610.png)
 
 ![img](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231010203036869.png)
 
-3. Open the burn tool
+3. 找到 RKDevTool.exe，双击运行；
 
-![image-20231017114016561](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231017114016561.png)
 
-4. The interface of the burn tool is as follows:
 
-![image-20250428105459703](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250428105459703.png)
+![image-20241025161627415](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025161627415.png)
 
-### Enter the Flashing Mode of the Development Board (Pic)<a id="burn_mode"> </a>
 
-To flash an image, you must make the development board enter the flashing mode. The flashing modes of the Rockchip platform include LOADER mode and Maskrom mode.
 
-The LOADER mode is commonly used for both full image flashing and partition flashing.
+### 烧录镜像
 
-The Maskrom mode is commonly used for forced image flashing after the system is damaged.
+**开发板进入烧录模式(Pic)<a id="burn_mode"> </a>**
 
-> You can view the buttons in the development board information section of the KICKPI - Hardware Introduction.
+烧录镜像 必须使开发板进入烧录模式，Rockchip平台的烧录模式有LOADER模式、Maskrom模式
 
-Operation steps:
+LOADER模式 常用于完整镜像烧录、分区烧录皆可
 
-1. Open the burn tool on a Windows computer (refer to the above instructions to install the burn tool).
-2. Connect the OTG interface of the development board to the USB interface of the computer.
-3. Keep pressing the Loader button and connect the DC power supply interface for power - on operation (if it is already powered on, you can press the reset button for reset operation).
-4. Check whether the image burn tool can correctly recognize the Loader device/Maskrom device.
-5. If the device is correctly recognized, you can release the Loader button. Otherwise, repeat the above steps and try several more times.
+Maskrom模式 常用于系统损坏后，强制烧录镜像
 
-> To enter the Maskrom mode, repeat the operation steps, but note that in step 3, press and hold the MASKROM button on the back of the board instead of the Loader button.
+> 按键可通过KICKPI-硬件介绍，开发板信息章节进行查看
 
-### Flash the Image
 
-Image flashing is divided into full image flashing and partition image flashing.
 
-Full image flashing is commonly used for system flashing or replacing different systems on the development board.
+操作步骤：
 
-Partition image flashing is commonly used in the debugging stage. You must clearly understand the function of each partition before flashing; otherwise, the system may be damaged.
+1. Window电脑上打开烧录工具（参考上面说明安装RKDevTool）
+2. 开发板OTG接口 连接 电脑USB接口
+3. 进入 **LOADER模式** 需要按下LOADER按键，上电（主板已上电可按复位进行复位）；进入 **MASKROM模式** 需要按下板子背后的MASKROM按键，上电（主板已上电可按复位进行复位）；
 
-#### Flash the Full Image
+> LOADER / MASKROM模式均支持整包烧录，选择一个模式进行烧录即可。
 
-![image-20250428105322719](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250428105322719.png)
+4. 瑞芯微开发工具上能够识别到 LOADER设备 或 MASKROM设备；（需要先安装USB驱动，才能识别到相关设备）
 
-Operation steps:
+![image-20250422093529751](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093529751.png)
 
-1. Enter the full image flashing page.
-2. Select the image path.
-3. Make sure the burn tool correctly recognizes the board device [enter the flashing mode](#burn_mode).
-4. Start flashing the image.
-5. Check the flashing log. After successful flashing, the system will automatically restart.
 
-#### Flash the Partition Image
 
-Partition images are mainly used for debugging normal compiled images. Multi - screen adaptive images cannot be replaced by flashing partition images. All the firmware in the network disk are multi - screen adaptive images.
+5. 点击 **Upgrade Firmware**，跳转到升级固件界面；
+
+6. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
+
+![image-20250422093506005](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093506005.png)
+
+
+
+7. 点击 **Upgrade**，等待烧录完成；
+
+![image-20250422093623591](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093623591.png)
+
+
+
+8. 烧录完成；
+
+![image-20250422093934098](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093934098.png)
+
+
+
+### 烧录分区镜像
+
+分区镜像主要用于正常编译的镜像的调试使用，多屏自适应镜像不能烧分区镜像替换，网盘中的固件均为多屏自适应镜像。
 
 ![image-20250428105212038](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250428105212038.png)
 
-Operation steps:
+操作步骤：
 
-1. Enter the partition image flashing page.
-2. Check the partition items to be flashed (the Parameter must be checked).
-3. Select the storage path of the corresponding file.
-4. Make sure the burn tool correctly recognizes the board device [enter the loader mode](#burn_mode).
-5. Start flashing the image.
-6. Check the flashing log. After successful flashing, the system will automatically restart.
+1. 进入分区镜像烧录页面
+2. 勾选烧录分区项 (其中分区文件Parameter，必须勾选，确保分区正确)
+3. 选择/输入对应文件存放的路径
+4. 烧录工具成功识别板卡设备[进入loader模式](#burn_mode)
+5. 开始烧录镜像
+6. 查看 烧录日志，烧录成功后自动重启进入系统
+
+
+
+## 工厂烧录
+
+### 安装FactoryTool
+
+**网盘路径**
+
+```
+5-DevelopmentTool/FactoryTool/FactoryTool_v1.89.zip
+```
+
+1. 将 FactoryTool_v1.89.zip 解压，打开解压后的文件夹；
+
+2. 找到 FactoryTool.exe，双击运行；
+
+![image-20250109172029374](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250109172029374.png)
+
+
+
+### 烧录镜像
+
+1. 点击 **Firmware**，选择要烧录的镜像 update-*.img；
+
+![image-20250422101009222](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422101009222.png)
+
+
+
+2. 点击 **Run**，启动工厂烧录模式；
+
+3. 绿灯状态下，使用TYPE-C连接主板；
+
+4. 进入 **LOADER模式** 需要按下RECOVERY按键，上电（主板已上电可按复位进行复位）；进入 **MASKROM模式** 需要按下板子背后的MASKROM按键，上电（主板已上电可按复位进行复位）；[USB驱动安装](#USBDRV)
+
+5. 观察灯，当识别到设备会切换成红灯，此时不要拔出或接入设备；
+
+   ![image-20250422103006729](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422103006729.png)
+
+   
+
+6. 等待绿灯，重复步骤3、步骤4、步骤5，可同时烧录新的设备；
+
+7. 烧录所有设备完成，点击 **Stop**；
+
+
+
+## 常见问题
+
+**Loader或Maskrom模式不识别问题**
+
+1. 进入**LOADER模式**需要按下RECOVERY按键，上电（主板已上电可按复位进行复位）；进入**MASKROM模式**需要按下板子背后的MASKROM按键，上电（主板已上电可按复位进行复位）。
+
+2. 打开电脑中设备管理器；
+
+3. 可以查看到usb设备，说明USB驱动安装成功；
+
+![image-20241025101105194](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101105194.png)
+
+
+
+如果识别不到 Class for rockusb devices，可尝试下面步骤：
+
+1. 打开DriverInstall.exe ，尝试驱动卸载，再进行驱动安装；[USB驱动安装](#USBDRV)
+
+2. 反馈咨询客服
+
+
+
+**烧录工具的其他功能使用**
+
+烧录工具更多说明见
+
+```
+RKDevTool_v3.30_for_window/开发工具使用文档_v1.0.pdf
+```
+
+
+
+
+
+
+
