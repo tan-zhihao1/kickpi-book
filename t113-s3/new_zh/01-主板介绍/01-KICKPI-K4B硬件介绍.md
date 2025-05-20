@@ -2,7 +2,7 @@
 
 
 
-## 1. T113-S3主控信息
+## 1. 主控信息
 
 ![image-20240713100557331](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240713100557331.png)
 
