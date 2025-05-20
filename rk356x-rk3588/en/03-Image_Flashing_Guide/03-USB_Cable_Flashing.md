@@ -20,8 +20,6 @@ This document is used for users to flash or upgrade the motherboard system.
 3. Click "Driver Installation" and the installation will be successful.
 (If an old version of the driver has been installed, you can uninstall the driver first and then install the driver to keep the driver version up-to-date.)
 
-![image-20241025101606583](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101606583.png)
-
 ### Install RKDevTool
 
 **Network Disk Path**
@@ -36,9 +34,9 @@ This document is used for users to flash or upgrade the motherboard system.
 2. Modify the language of the image flashing tool (optional)
 The default interface of the image flashing tool is in Chinese. You can modify it to the English interface as shown below.
 
-![img](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231010202819610.png)
+![image-20250222152522197](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222152522197.png)
 
-![img](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20231010203036869.png)
+![image-20250222152551843](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222152551843.png)
 
 3. Find `RKDevTool.exe` and double-click to run it.
 
