@@ -2,7 +2,7 @@
 
 
 **Entering Burning Mode**:  
-1. Press and hold the **FEL button** on the back of the board.  
+1. Press and hold the **MASKROM button** on the back of the board.  
 2. Connect the board to your computer via the TYPE-C port.  
 3. Verify device recognition in the computer’s **Device Manager**:  
 
