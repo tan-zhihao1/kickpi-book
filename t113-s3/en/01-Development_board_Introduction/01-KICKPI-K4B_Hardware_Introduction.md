@@ -2,7 +2,11 @@
 
 ## Controller Information
 
+![image-20240713100557331](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240713100557331.png)
+
 ## Development Board Information
+
+![K4B](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/资源 9.png)
 
 ## Accessories List
 
