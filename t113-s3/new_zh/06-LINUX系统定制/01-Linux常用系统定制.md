@@ -67,4 +67,4 @@ ls device/config/rootfs_tar/ubuntu-armhf.tar.gz
 
 ## buildroot文件系统修改
 
-详见[buildroot系统定制](..\02-buildroot系统定制.md)
+详见[buildroot系统定制](./02-buildroot系统定制.md)
