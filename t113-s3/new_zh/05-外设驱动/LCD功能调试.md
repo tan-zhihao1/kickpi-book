@@ -4,7 +4,7 @@
 
 适配自己的屏幕可参考网盘资料，也可联系业务申请定制
 
-3-SoftwareData\SDK模块开发指南\Linux_LCD_开发指南.pdf"
+3-SoftwareData\SDK模块开发指南\Linux_LCD_开发指南.pdf
 
 ## 设备树文件
 
