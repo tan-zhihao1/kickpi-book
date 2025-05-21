@@ -2,7 +2,7 @@
 
 ## Ubuntu文件系统修改
 
-### chroot 方式修改 ubuntu
+**chroot 方式修改 ubuntu**
 
 搭建构建环境
 
