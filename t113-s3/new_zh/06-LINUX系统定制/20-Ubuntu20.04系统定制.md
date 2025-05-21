@@ -207,33 +207,3 @@ gateway 192.168.1.1
 
 
 
-## GPIO控制
-
-### 1查询GPIO管脚号
-
-```shell
-cat /sys/kernel/debug/pinctrl/pio/pins | grep PB3
-```
-### 2管脚控制
-```shell
-echo 35 > /sys/class/gpio/export
-echo out > /sys/class/gpio/gpio35/direction
-echo 1 > /sys/class/gpio/gpio35/value
-echo 0 > /sys/class/gpio/gpio35/value
-
-direction
-	in / out
-	echo in > /sys/class/gpio/gpio35/direction
-	echo out > /sys/class/gpio/gpio35/direction
-value
-	0 / 1
-	cat /sys/class/gpio/gpio35/value 		// 读取
-	echo 1 > /sys/class/gpio/gpio35/value	// 配置高电平
-	echo 0 > /sys/class/gpio/gpio35/value  // 配置低电平
-
-```
-
-
-
-
-

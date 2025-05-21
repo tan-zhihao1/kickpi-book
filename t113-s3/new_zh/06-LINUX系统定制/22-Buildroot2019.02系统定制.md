@@ -49,7 +49,7 @@ buildroot/config/buildroot/allwinner/system/busybox-init-base-files/etc/init.d/
 
 ## 添加应用
 
-buildroot系统不支持使用apt安装工具，需要用过SDK配置buildroot实现工具添加裁剪
+buildroot系统不支持使用apt安装工具，需要用SDK配置buildroot实现工具添加裁剪
 
 ### 添加或裁剪buildroot工具
 
