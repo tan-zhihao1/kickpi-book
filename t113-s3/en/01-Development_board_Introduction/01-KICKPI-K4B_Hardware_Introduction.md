@@ -6,7 +6,7 @@
 
 ## Development Board Information
 
-![K4B](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/资源 9.png)
+![image-20250521174531239](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250521174531239.png)
 
 ## Accessories List
 
