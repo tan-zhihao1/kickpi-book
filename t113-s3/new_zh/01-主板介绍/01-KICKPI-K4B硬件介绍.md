@@ -10,9 +10,9 @@
 
 ## 2. 开发板信息
 
-![资源 9](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/资源 9.png)
 
-![资源 10](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/资源 10.png)
+
+
 
 ## 3.配件信息
 
