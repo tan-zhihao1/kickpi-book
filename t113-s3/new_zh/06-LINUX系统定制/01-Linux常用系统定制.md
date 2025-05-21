@@ -62,3 +62,8 @@ ls device/config/rootfs_tar/ubuntu-armhf.tar.gz
 ```
 
 重新编译即可 ./build.sh , 会将 新的 rootfs 打包编译进镜像。
+
+
+
+## buildroot文件系统修改
+
