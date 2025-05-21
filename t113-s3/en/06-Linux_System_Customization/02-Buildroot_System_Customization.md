@@ -64,4 +64,3 @@ Modify the skeleton directory before compilation:
 t113-linux/buildroot/buildroot-201902/system/skeleton  
 ```
 If ineffective, use the cleanup commands above and recompile.  
-[file content end]
