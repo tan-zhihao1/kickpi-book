@@ -14,7 +14,7 @@ All can be downloaded via the provided cloud storage (contact customer support f
 **Hardware Preparation**  
 - SD card + card reader  
 
-For detailed steps, refer to [SD Card Burning](../../../common/en/Allwinner_Burning/SD_Card_Burning.md).  
+For detailed steps, refer to  [SD Card Flashing](../../../common/en/allwinner_burnning/SD_Card_Flashing.md)  
 
 **Indicator Status**:  
 After successful burning, the K4B's blue LED will remain lit.  
