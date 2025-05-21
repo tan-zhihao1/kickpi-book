@@ -85,12 +85,12 @@ The K4B debug pins are a separate 3-pin header (not part of the 30-pin expansion
 
 ## ADB  
 ADB (Android Debug Bridge) is a debugging tool for Android systems. It supports USB or network connections for app installation, file transfer, and command execution.  
-- For usage details, see [ADB Tutorial](../../../common/zh/adb/ADB教程.md).  
+- For usage details, see [ADB_Tutorial](../../../common/en/adb/ADB_Tutorial.md)
 
 ## SSH  
 SSH (Secure Shell) enables secure remote access over a network.  
 - To connect, obtain the board’s IP via the serial port or router admin page.  
-- For instructions, see [SSH](../../../common/zh/linux/SSH.md).  
+- For instructions, see [SSH](../../../common/en/linux/SSH.md)
 
 ![image-20250411103217477](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250411103217477.png)  
 
