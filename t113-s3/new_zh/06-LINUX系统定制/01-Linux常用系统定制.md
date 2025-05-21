@@ -1,11 +1,6 @@
 # 01-Linux常用系统定制
 
-## Linux系统登陆用户密码
-
-Ubuntu系统用户名/密码：kickpi/kickpi
-
-系统默认ROOT密码：root
-
+## Ubuntu文件系统修改
 
 ### chroot 方式修改 ubuntu
 
