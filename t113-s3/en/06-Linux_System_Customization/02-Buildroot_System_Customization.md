@@ -60,6 +60,7 @@ Repack and recompile.
 
 **Method 2**:  
 Modify the skeleton directory before compilation:  
+
 ```shell  
 t113-linux/buildroot/buildroot-201902/system/skeleton  
 ```
