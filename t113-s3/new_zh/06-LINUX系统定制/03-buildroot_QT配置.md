@@ -1,4 +1,4 @@
-# Buildroot_QT5配置
+# 02-buildroot系统定制
 
 ### 1.在buildroot下面，打开配置界面进行配置
 
