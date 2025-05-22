@@ -227,7 +227,7 @@ $ xinput_calibrator -v --device $id
 
 ### 静态IP地址配置
 
-示例：eth0网卡配置静态IP地址为192.168.1.50
+示例1：eth0网卡通过netplan的yaml配置静态IP地址为192.168.1.50
 
 ```shell
 $ vim /etc/netplan/01-network-manager-all.yaml
@@ -241,6 +241,8 @@ network:
             optional: true
             gateway4: 192.168.1.1
 ```
+
+示例2：eth1网卡通过
 
 重启服务
 
