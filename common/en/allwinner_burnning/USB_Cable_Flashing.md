@@ -23,8 +23,16 @@ PhoenixSuit/Drivers/AW_Driver/
 If the board enters burning mode successfully and the PC lacks the USB driver, an "Unknown device" will appear. Follow the steps below to install the driver:  
 
 ![image-20250219155858913](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155858913.png)  
+
+
+
 ![image-20250219155942874](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219155942874.png) 
+
+
+
  ![image-20250219160431151](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160431151.png)
+
+
 
 ![image-20250219160504707](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250219160504707.png)
 
