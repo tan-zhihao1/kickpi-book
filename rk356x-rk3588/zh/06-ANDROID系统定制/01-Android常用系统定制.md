@@ -86,7 +86,7 @@ logo_kernel.bmp
 
 ### 修改触摸方向
 
-可以参考LCD配置文档：[单触摸屏驱动配置](40-RK3568%20LCD配置.md#TouchDriver)
+可以参考LCD配置文档：[单触摸屏驱动配置](../05-外设驱动/LCD.md#TouchDriver)
 
 ## 4. 默认隐藏状态栏
 
