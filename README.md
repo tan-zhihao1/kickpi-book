@@ -67,9 +67,9 @@
 
 #### KICKPI-K5 (A133)
 
-* [A133 English Document](a133/en/README.md)
+* [A133 English Document](a133/en/)
 
-* [A133 中文文档](a133/zh/README.md)
+* [A133 中文文档](a133/zh/)
 
 
 ---
