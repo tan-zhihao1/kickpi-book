@@ -51,9 +51,9 @@
 
 #### KICKPI-K2B (H618)
 
-* [H618 English Document](h618/en)
+* [H618 English Document](h618/en/)
 
-* [H618 中文文档](h618/zh)
+* [H618 中文文档](h618/zh/)
 
 
 
