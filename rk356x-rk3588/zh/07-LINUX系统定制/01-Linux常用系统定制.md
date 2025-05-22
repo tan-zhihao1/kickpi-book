@@ -245,7 +245,7 @@ network:
 示例2：eth1网卡通过network/interfaces配置静态IP地址为192.168.77.196
 
 ```shell
-$ sudo vim vim /etc/network/interfaces.d/eth1.cfg
+$ sudo vim /etc/network/interfaces.d/eth1.cfg
 auto eth1
 iface eth1 inet static
 address 192.168.77.196
