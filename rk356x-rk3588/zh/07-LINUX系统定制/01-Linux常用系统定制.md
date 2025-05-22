@@ -242,7 +242,17 @@ network:
             gateway4: 192.168.1.1
 ```
 
-示例2：eth1网卡通过
+示例2：eth1网卡通过network/interfaces配置静态IP地址为192.168.77.196
+
+```shell
+$ sudo vim vim /etc/network/interfaces.d/eth1.cfg
+auto eth1
+iface eth1 inet static
+address 192.168.77.196
+netmask 255.255.255.0
+gateway 192.168.77.1
+dns-nameservers 8.8.4.4 8.8.8.8
+```
 
 重启服务
 
