@@ -1,4 +1,4 @@
-# K5/K5C（A133）
+# RK356X-RK3588 English Document
 
 
 
