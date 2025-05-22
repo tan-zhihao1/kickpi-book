@@ -59,9 +59,9 @@
 
 #### KICPI-K4B (T113-S3)
 
-* [T113-S3 English Document](t113-s3/en)
+* [T113-S3 English Document](t113-s3/en/)
 
-* [T113-S3 中文文档](t113-s3/zh)
+* [T113-S3 中文文档](t113-s3/zh/)
 
 
 
