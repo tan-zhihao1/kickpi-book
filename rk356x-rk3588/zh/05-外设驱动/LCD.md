@@ -63,7 +63,7 @@ $ vim kernel-5.10/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi //android
 屏幕设备树名称介绍
 
 ```
-CPU类型-kickpi-lcd-接口类型-英寸-(宽)-(高).dtsi
+(CPU类型)-kickpi-lcd-(接口)-(英寸)-(宽)-(高).dtsi
 ```
 
 
