@@ -406,6 +406,33 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 
 ## 备份文件系统
 
+> 注意：这种方式替换后的rootfs 可能存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
+
+接好U盘在板子上，大小至少16GB以上，打包出来的镜像会比较大
+
+脚本位于网盘：
+
+```
+rk3576_data\3-SoftwareData\Linux_backup_rootfs_script
+```
+
+将脚本拷贝到板子Linux系统上运行
+
+```shell
+$ sudo chmod +x ./ff_export_rootfs
+$ sudo ./ff_export_rootfs /mnt/usb -t ext4
+```
+
+> 生成的包名格式如：rootfs.img
+>
+> /mnt/usb 为U盘挂载的目录
+
+重新打包，将rootfs.img替换进完整镜像，参考[固件解包和打包](../08-进阶/03-固件解包和打包.md)
+
+也可以对需要替换这个系统的板子单独烧录rootfs.img
+
+
+
 当修改文件系统后，需要将其拷贝到其他相同板卡需求。
 
 可通过下面方式导出文件系统，进行重新烧录。
