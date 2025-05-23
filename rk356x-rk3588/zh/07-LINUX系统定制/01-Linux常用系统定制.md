@@ -740,7 +740,7 @@ $ ffplay -f v4l2 -i /dev/video1
 脚本位于网盘：
 
 ```
-rk356x_data\3-SoftwareData软件资料\backup rootfs
+rk356x-rk3588_data\3-SoftwareData\Linux_Backup_ROOTFS_Script
 ```
 
 将脚本拷贝到板子Linux系统上运行
