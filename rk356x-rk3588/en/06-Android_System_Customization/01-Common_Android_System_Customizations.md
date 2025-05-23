@@ -76,7 +76,7 @@ Open the configuration.
 
 ### Modify Touch Orientation
 
-You can refer to the LCD configuration document: [Single Touch Screen Driver Configuration](..\05-Peripheral_Drivers\LCD.md#TouchDriver)
+You can refer to the LCD configuration document: [Single Touch Screen Driver Configuration](..\05-Drivers_Development\LCD.md#TouchDriver)
 
 ## 4. Default Hide Status Bar
 
