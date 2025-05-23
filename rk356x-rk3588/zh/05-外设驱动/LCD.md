@@ -46,36 +46,25 @@ $ vim kernel-5.10/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi //android
 //#include "rk3568-kickpi-lcd-edp-15.6-1920-1080.dtsi"
 //#include "rk3568-kickpi-lcd-mipi0-10.1-800-1280.dtsi"
 //#include "rk3568-kickpi-lcd-mipi1-10.1-800-1280.dtsi"
-//#include "rk3568-kickpi-lcd-lvds-7-1024-600.dtsi"
+//#include "rk3568-kickpi-lcd-mipi0-10.1-800-1280-v2.dtsi"
+//#include "rk3568-kickpi-lcd-mipi1-10.1-800-1280-v2.dtsi"
+//#include "rk3568-kickpi-lcd-lvds0-7-1024-600.dtsi"
+//#include "rk3568-kickpi-lcd-lvds1-7-1024-600.dtsi"
+//#include "rk3568-kickpi-lcd-mipi0-5-720-1280.dtsi"
+//#include "rk3568-kickpi-lcd-mipi1-5-720-1280.dtsi"
+// #include "rk3568-kickpi-lcd-mipi0-8-800-1280.dtsi"
+//#include "rk3568-kickpi-lcd-mipi1-8-800-1280.dtsi"
 ```
 
 > 其中的rk3568-kickpi-lcd-hdmi.dtsi需要默认保持使能
 >
 > 若显示屏调试有问题，可联系售后，获取技术支持
 
+屏幕设备树名称介绍
 
-
-### MIPI
-
-RK3568 有两路MIPI LCD，分别为MIPI0、MIPI1，其中MIPI0与LVDS复用
-
-MIPI0接口 参考 rk3568-kickpi-lcd-mipi0-10.1-800-1280.dtsi 
-
-MIPI1接口 参考 rk3568-kickpi-lcd-mipi1-10.1-800-1280.dtsi
-
-
-
-### LVDS
-
-LVDS接口 参考 rk3568-kickpi-lcd-lvds-7-1024-600.dtsi
-
-
-
-### EDP
-
-EDP接口 参考 rk3568-kickpi-lcd-edp-15.6-1920-1080.dtsi   
-
-
+```
+CPU类型-kickpi-lcd-接口类型-英寸-(宽)-(高).dtsi
+```
 
 
 
