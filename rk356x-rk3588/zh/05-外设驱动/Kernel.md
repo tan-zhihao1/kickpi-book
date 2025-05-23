@@ -71,6 +71,8 @@ cp defconfig arch/arm64/configs/rockchip_defconfig
 
 ## dts
 
+下面列举RK-SDK中的总设备树。在查找设备树所有内容，从这个文件开始递归找。
+
 rk356x-linux
 
 ```
