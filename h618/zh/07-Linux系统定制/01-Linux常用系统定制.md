@@ -51,6 +51,44 @@ Type=idle
 
 
 
+## 修改默认USER_KEY功能
+
+桌面版按下USER按键是打卡login out界面
+
+服务器版本按下USER按键是直接关机
+
+取消这个功能方法如下
+
+**修改systemd的登录器配置**
+
+``` 
+sudo nano /etc/systemd/logind.conf
+```
+
+**取消注释并修改以下行**
+
+``` 
+HandlePowerKey=ignore
+HandleSuspendKey=ignore
+HandleHibernateKey=ignore
+```
+
+**重启服务**
+
+``` 
+sudo systemctl restart systemd-logind
+```
+
+
+
+HandlePowerKey=ignore
+HandleSuspendKey=ignore
+HandleHibernateKey=ignore
+
+
+
+sudo systemctl restart systemd-logind
+
 
 
 ## 拷贝eMMC系统到新SD卡（系统备份）
