@@ -50,8 +50,8 @@ After=syslog.target network.target
 
 [Service]  
 Type=forking  
-User=user  
-PIDFile=/home/user/.vnc/%H:%i.pid  
+User=kickpi  
+PIDFile=/home/kickpi/.vnc/%H:%i.pid  
 ExecStartPre=-/usr/bin/vncserver -kill :%i > /dev/null 2>&1  
 ExecStart=/usr/bin/vncserver :%i -geometry 1920x1080 -depth 24  
 ExecStop=/usr/bin/vncserver -kill :%i  
