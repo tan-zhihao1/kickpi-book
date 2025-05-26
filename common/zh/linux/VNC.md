@@ -58,8 +58,6 @@ console$ chmod +x $HOME/.vnc/xstartup
 
 
 
-
-
 **配置VNC服务**
 
 ```
