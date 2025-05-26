@@ -92,6 +92,14 @@ console$ sudo systemctl start vncserver@1.service
 
 
 
+**查看VNC服务**
+
+```
+console$ sudo systemctl status vncserver@1.service  
+```
+
+
+
 **关闭VNC服务**
 
 ```
