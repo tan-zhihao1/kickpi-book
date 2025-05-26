@@ -100,6 +100,14 @@ console$ sudo systemctl status vncserver@1.service
 
 
 
+**停止VNC服务**
+
+```
+console$ sudo systemctl stop vncserver@1.service  
+```
+
+
+
 **关闭VNC服务**
 
 ```
