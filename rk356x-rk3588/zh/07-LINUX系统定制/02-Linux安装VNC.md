@@ -18,7 +18,6 @@ VNC（Virtual Network Computing）是一种基于远程帧缓冲协议（RFB）�
 
 ```
 console$ sudo apt update
-console$ sudo apt-get install 
 console$ sudo apt-get install -y tigervnc-standalone-server tigervnc-common tigervnc-tools
 ```
 
