@@ -40,6 +40,27 @@ root@linaro-alip:/#
 
 
 
+**配置桌面启动**
+
+创建包含以下内容的文件：`$HOME/.vnc/xstartup`
+
+```console
+#!/bin/sh
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+exec startxfce4
+```
+
+确保文件具有可执行权限。`xstartup`
+
+```console
+console$ chmod +x $HOME/.vnc/xstartup
+```
+
+
+
+
+
 **配置VNC服务**
 
 ```
