@@ -24,5 +24,5 @@
 
 ![k7_40pin](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k7_40pin.jpg)
 
-> 带 * 号为软件默认配置功能
+
 
