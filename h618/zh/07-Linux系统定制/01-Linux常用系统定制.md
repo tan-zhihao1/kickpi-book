@@ -79,17 +79,9 @@ HandleHibernateKey=ignore
 sudo systemctl restart systemd-logind
 ```
 
+修改完成后就能正常让应用获取按键的上报事件
 
-
-HandlePowerKey=ignore
-HandleSuspendKey=ignore
-HandleHibernateKey=ignore
-
-
-
-sudo systemctl restart systemd-logind
-
-
+![image-20250526140216634](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250526140216634.png)
 
 ## 拷贝eMMC系统到新SD卡（系统备份）
 
