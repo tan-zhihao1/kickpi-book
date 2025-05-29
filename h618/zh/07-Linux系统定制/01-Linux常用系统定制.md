@@ -393,7 +393,11 @@ vncserver -geometry 1920x1080
 终端输入
 
 ``` shell
+cd /bin
 sudo ln -s pavucontrol pavucontrol-qt
+sudo apt-get update
+sudo apt purge pulseaudio
+sudo apt install pulseaudio
 ```
 
 

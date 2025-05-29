@@ -8,13 +8,13 @@ ADB - Android Debug Bridge命令行工具，下文指代可运行ADB的环境
 
 
 
-## 1. 开机LOGO定制
+## 开机LOGO定制
 
 开机LOGO分两个部分，分别是Uboot阶段、Kernel阶段
 
-Uboot阶段解析图片kernel-5.10/logo.bmp
+Uboot 阶段解析图片 kernel-5.10/logo.bmp
 
-Kernel阶段解析图片kernel-5.10/logo_kernel.bmp
+Kernel 阶段解析图片 kernel-5.10/logo_kernel.bmp
 
 ```
 (SDK)$ ls kernel-5.10/*.bmp
@@ -24,7 +24,7 @@ logo_kernel.bmp
 
 
 
-## 2. 开机动画定制
+## 开机动画定制
 
 你制作的开机动画放到指定目录
 
@@ -42,9 +42,9 @@ logo_kernel.bmp
 
 
 
-## 3. 默认屏幕方向
+## 默认屏幕方向
 
-### 默认修改显示方向
+**默认修改显示方向**
 
 ```
 (SDK)$ vim device/rockchip/$(dev)/BoardConfig.mk
@@ -66,7 +66,7 @@ logo_kernel.bmp
 
 
 
-### ADB修改显示方向
+**ADB修改显示方向**
 
 ```
 // 0°
@@ -84,24 +84,24 @@ logo_kernel.bmp
 
 
 
-### 修改触摸方向
+**修改触摸方向**
 
 可以参考LCD配置文档：[单触摸屏驱动配置](../05-外设驱动/LCD.md#TouchDriver)
 
-## 4. 默认隐藏状态栏
+## 默认隐藏状态栏
 
 最新的固件可以命名或者app发送广播控制
 
 命令行隐藏导航栏
 
 ```shell
-$ am broadcast -a android.intent.action.HIDE_STATUSBAR_BAR
+(ADB)$ am broadcast -a android.intent.action.HIDE_STATUSBAR_BAR
 ```
 
 命令行显示导航栏
 
 ```shell
-$ am broadcast -a android.intent.action.SHOW_STATUSBAR_BAR
+(ADB)$ am broadcast -a android.intent.action.SHOW_STATUSBAR_BAR
 ```
 
 APP广播测试apk位于网盘下：
@@ -149,7 +149,7 @@ Android13默认禁止状态栏下拉修改如下：
 
 
 
-## 5. 默认隐藏导航栏
+## 默认隐藏导航栏
 
 最新的固件可以命名或者app发送广播控制
 
@@ -204,7 +204,7 @@ Android13默认使用手势导航：
 
 
 
-## 6. 内置第三方APP
+## 内置第三方APP
 
 参考 Settings2.apk 
 
@@ -264,7 +264,7 @@ PRODUCT_PACKAGES += \
 
 
 
-## 7. 开机自启动APP
+## 开机自启动APP
 
 **通过接收开机广播完成后，启动APP**
 
@@ -332,7 +332,7 @@ public class MyReceiver extends BroadcastReceiver {
 
 
 
-## 8. 默认语言
+## 默认语言
 
 ```
 $ vim build/target/product/full_base.mk
@@ -348,13 +348,13 @@ $ vim build/target/product/full_base.mk
 
 
 
-## 9. 默认时区
+## 默认时区
 
 
 
 
 
-## 10. 默认永不休眠
+## 默认永不休眠
 
 ```
 $ vim device/rockchip/rk356x/overlay/frameworks/base/packages/SettingsProvider/res/values/defaults.xml
@@ -363,7 +363,7 @@ $ vim device/rockchip/rk356x/overlay/frameworks/base/packages/SettingsProvider/r
 
 
 
-## 11. 默认禁止锁屏
+## 默认禁止锁屏
 
 ```
 $ vim frameworks/base/packages/SettingsProvider/res/values/defaults.xml
@@ -372,9 +372,7 @@ $ vim frameworks/base/packages/SettingsProvider/res/values/defaults.xml
 
 
 
-## 12. 签名APK
-
-
+## 签名APK
 
 **SDK源码中进行重签**
 
@@ -417,7 +415,7 @@ old.apk new.apk
 
 
 
-## 13.网络ADB
+## 网络ADB
 
 网口ADB需要先adb启动5555端口服务后
 
@@ -434,7 +432,7 @@ List of devices attached
 apollo-p2:/ $ su
 ```
 
-#### 开机默认启动5555端口
+**开机默认启动5555端口**
 
 需要通过USB adb操作
 
@@ -449,7 +447,7 @@ apollo-p2:/ $ su
 
 
 
-## 14. HDMI RX APK 定制
+## HDMI RX APK 定制
 
 K8 有一路 HDMI RX 输入，Android 可以通过打开 HdmiIn APK 显示 HDMI RX 画面。 
 
@@ -476,7 +474,7 @@ hdmi in 画面全屏配置
 
 
 
-## 15.修改debug口波特率
+## 修改debug口波特率
 
 修改路径：
 

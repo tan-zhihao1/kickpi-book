@@ -29,10 +29,10 @@ chroot 进行挂载，等同于在 root 下进行修改ubuntu镜像
 // 配置以及挂载
 $ ./ch-mount.sh -m rootfs_k4b
 $ sudo cp -b /etc/resolv.conf rootfs_k4b/etc/resolv.conf
-$ sudo cp -b /usr/bin/qemu-aarch64-static rootfs_k5/usr/bin/
+$ sudo cp -b /usr/bin/qemu-arm-static rootfs_k4b/usr/bin/
 
 // 通过chroot挂载修改
-$ sudo chroot rootfs_k5
+$ sudo chroot rootfs_k4b
 # export LC_ALL=C.UTF-8
 # echo "nameserver 8.8.8.8" >> etc/resolv.conf
 # echo "nameserver 114.114.114.114" >> etc/resolv.conf

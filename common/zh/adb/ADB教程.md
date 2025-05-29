@@ -153,6 +153,12 @@ adb install <APK FilePath>
 adb install app.apk
 ```
 
+**覆盖已安装的应用**
+
+```
+adb install -r app.apk
+```
+
 **卸载应用**
 
 ```bash

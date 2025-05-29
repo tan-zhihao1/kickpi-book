@@ -336,8 +336,6 @@ PRODUCT_PACKAGES += \
 
 h618 作为Launcher 由于权限限制会出现APP问题，需要针对添加权限， 参考 [APP特殊权限问题](## APP特殊权限问题)
 
-
-
 没有桌面属性缺失问题，需要添加 上面两个 category
 
 ![image-20241101094329876](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241101094329876.png)
@@ -366,6 +364,12 @@ Android.mk 方式
 ```
 LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep Launcher3QuickStepGo
 ```
+
+
+
+**开机桌面选择**
+
+
 
 
 
