@@ -1,6 +1,8 @@
 # 02-LINUX_SDK源码编译
 
-### 完整编译
+## 完整编译
+
+**配置环境**
 
 ```shell
 $ ./build.sh config
@@ -37,42 +39,49 @@ All available flash:
 Choice [default]: 0
 ```
 
+**选择板卡**
 
-```shell
-./build.sh lunch  选择K5或者K5C
-./build.sh 编译完整镜像
+```
+$ ./build.sh lunch 
+```
+
+> 根据需要选择 k5 或 k5c
+
+**编译完整镜像**
+
+
+```
+$ ./build.sh 
 ```
 
 
 
-### 单独编译
+## 单独编译
 
-kernel
-
-```
-./build.sh kernel
-```
-
-
-
-rootfs
+单编 kernel
 
 ```
-./build.sh rootfs
+$ ./build.sh kernel
+```
+
+单编 rootfs
+
+```
+$ ./build.sh rootfs
 ```
 
 
 
-## Kernel Defconfig 
+## Kconfig配置
 
-defconfig 修改及保存
+kconfig 修改及保存
 
 ```
-确保编译过一次 或 ./build.sh config
-cd kernel/linux-4.9/
-make ARCH=arm64 menuconfig
-cd -
-./build.sh saveconfig
+$ ./build.sh config
+$ cd kernel/linux-4.9/
+$ make ARCH=arm64 menuconfig
+$ cd -
+$ ./build.sh saveconfig
 ```
 
 
@@ -93,7 +102,9 @@ out/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu
 
 
 
-如果提示缺少文件
+## 常见问题
+
+### 提示缺少 event.c 文件问题
 
 ```
 aarch64-linux-gnu-gcc: error: /home/A/sdk/a133/a133-linux-test1/kernel/linux-4.9/modules/gpu/img-rgx/linux/rogue_km/binary_sunxi_linux_release/target_aarch64/kbuild/services/server/env/linux/event.c: No such file or directory

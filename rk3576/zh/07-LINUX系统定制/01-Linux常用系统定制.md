@@ -20,17 +20,27 @@
 
 ## SCP 文件传输
 
+**用法**
+
+```
+usage: scp [-346ABCOpqRrsTv] [-c cipher] [-D sftp_server_path] [-F ssh_config]
+           [-i identity_file] [-J destination] [-l limit]
+           [-o ssh_option] [-P port] [-S program] source ... target
+```
+
+**快速使用**
+
 ```
 $ scp $local_path usrname@$ip:$target_path
 ```
 
-$local_path - 本地文件路径
-
-$username - 用户名
-
-$ip - 主板ip
-
-$target_path - 目标路径
+> $local_path - 本地文件路径
+>
+> $username - 用户名
+>
+> $ip - 主板ip
+>
+> $target_path - 目标路径
 
 示例：
 
@@ -79,7 +89,7 @@ DP-1 disconnected (normal left inverted right x axis y axis)
 
 **旋转控制**
 
->根据xrandr，已知目前显示设备 HDMI-1
+>根据xrandr，已知目前已连接显示设备 HDMI-1，DSI-1
 
 对 HDMI-1 进行旋转设置
 
@@ -116,7 +126,7 @@ $ apt install xinput
 $ apt install xinput-calibrator
 ```
 
-第二步 查看 Device 和 ID，可知 goodix-ts 设备id 为 12
+第二步 查看 Device 和 ID，可知 goodix-ts 设备id 为 11
 ```
 $ xinput_calibrator --list 
 Device "goodix-ts" id=11
@@ -214,8 +224,6 @@ $ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 
 
 ## 网络配置
-
-### debian12
 
 使用 `ifconfig` 和 `route` 命令（临时设置）
 
@@ -382,7 +390,7 @@ $ ls nfs_tmp/
 
 测试平台：K7 Debian12 Chrome
 
-#### 测试方法
+**测试方法**
 
 ​	1.拷贝1080P及4K的视频到板子，通过chrome浏览器本地解码。
 
@@ -552,18 +560,6 @@ PING www.wshifen.com (103.235.46.115) from 10.138.192.102 enxca7f24fb0e94: 56(84
 ```
 
 > 指定设备 enx3e003a5bd6ad 进行ping网络测试
-
-
-
-## 其他
-
-**Debian第⼀次更新系统会重启显⽰服务**
-
-通⽤Debian为了兼容不同芯⽚, /etc/init.d/rockchip.sh 第⼀次启动的时候,会根据芯⽚安装各种差异包,⽐如
-
-libmali isp等packages. 安装完后会重启显⽰服务. 如果是独⽴项⽬可以放到制作镜像的时候处理这部分差
-
-异即可。
 
 
 
@@ -883,11 +879,19 @@ $ source /rockchip-test/gstreamer/gstreamer_mpp_fix.sh
 
 
 
-## **安装GCC⼯具链**
+## **GCC⼯具链**
+
+**安装命令**
 
 ```
 apt update && apt install -y build-essential manpages-dev
 ```
 
 
+
+## 常见问题
+
+### **Linux系统烧录后第一次开机重启问题**
+
+通⽤Debian为了兼容不同芯⽚，`/etc/init.d/rockchip.sh` 第⼀次启动的时候，会根据芯⽚安装各种差异包，⽐如 `libmali` 、`isp`等packages，安装完后会重启显⽰服务。 如果是独⽴项⽬可以放到制作镜像的时候处理这部分差异即可。
 

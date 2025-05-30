@@ -1,18 +1,20 @@
 # 03-ANDROID_SDK源码编译
 
-### SDK介绍
+## SDK介绍
 
-Android SDK版本信息
+Android SDK 版本信息
 
 内核版本：4.9
 
 Android系统版本：10.0
 
+
+
 ## Android SDK编译
 
-
-
 ### 编译完整镜像
+
+**环境配置**
 
 ```
 $ cd longan/
@@ -43,6 +45,8 @@ All available board:
 Choice [c3]: 3
 ```
 
+**编译整包镜像**
+
 ```
 $ cd - 
 $ ./build.sh lunch //根据板型选择K5或K5C
@@ -53,32 +57,27 @@ $ ./build.sh
 
 
 
-### **defconfig **
+### **kconfig **
 
-路径
+**路径**
 
 ```
 longan/kernel/linux-4.9/arch/arm64/configs/sun50iw10p1smp_a133_android_defconfig
 ```
 
-
+**配置kconfig**
 
 ```
-cd longan
-
-# loadconfig|menuconfig|saveconfig|mergeconfig
-
-./build.sh loadconfig
-./build.sh menuconfig
-./build.sh saveconfig
-./build.sh mergeconfig
+$ cd longan
+$./build.sh loadconfig
+$./build.sh menuconfig
+$./build.sh saveconfig
+$./build.sh mergeconfig
 ```
 
 
 
-
-
-
+## 常见问题
 
 **由于编译环境 ld 不同，可能会导致 yylloc 报错，需要修改代码中的yylloc**
 

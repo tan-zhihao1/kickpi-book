@@ -367,12 +367,6 @@ LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep Launcher3Quic
 
 
 
-**开机桌面选择**
-
-
-
-
-
 ### 后台调用方式
 
 此方式通过接收开机完成广播调起APK，可返回原本桌面
