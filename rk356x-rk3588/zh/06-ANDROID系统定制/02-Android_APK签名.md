@@ -165,3 +165,16 @@ old.apk new.apk
 
 ### Android.mk 方式
 
+```
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE := Test
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_SRC_FILES := Test.apk
+include $(BUILD_PREBUILT)
+```
+
