@@ -147,4 +147,3 @@ device/rockchip/common/security/platform.pk8 \
 old.apk new.apk
 ```
 
-
