@@ -374,6 +374,8 @@ $ vim frameworks/base/packages/SettingsProvider/res/values/defaults.xml
 
 ## 签名APK
 
+[02-Android_APK签名](02-Android_APK签名.md)
+
 
 
 ## 网络ADB
