@@ -63,3 +63,14 @@ $./keytool-importkeypair -k ./platform.jks -p android -pk8 platform.pk8 -cert pl
 
 
 ## 对APK进行系统签名
+
+### android studio 方式
+
+![image-20250603141117161](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250603141117161.png)
+
+### apksigner 方式
+
+```
+apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk app-debug.apk 
+```
+
