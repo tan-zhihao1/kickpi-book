@@ -291,6 +291,8 @@ $ qmake -v
 
 ### 安装qtcreator
 
+方法一：
+
 安装qtcreator必须先安装Qt，用Qt编译qtcreator，如果编译Qt出错，这个位置编译也会出错。如果Qt编译时，有未编译的模块或者含有不依赖的模块，qt编译不受影响，但是qtcreator会有影响。我试过加-no-opengl \，编译qt没有错误，安装也可以，编译qtcreator出错。
 
 * 虚拟机可以选择安装包程序安装，同时可以安装其他在本机运行的包
@@ -304,7 +306,16 @@ chmod +x qt-opensource-linux-x64-5.12.2.run
 ./qt-opensource-linux-x64-5.12.2.run
 ```
 
+> 这里需要在QT官网注册自己的账号，图像化安装，流程和Windows的一致
 
+方法二：
+
+```
+sudo apt update
+sudo apt install qtcreator
+```
+
+方法三：
 
 **下面这种是特殊情况下需要的编译特定版本的Qtcreator才使用 一般不推荐**
 
