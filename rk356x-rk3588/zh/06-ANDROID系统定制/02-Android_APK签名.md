@@ -161,3 +161,7 @@ old.apk new.apk
 >
 > `new.apk` 指定签名后的apk
 
+
+
+### Android.mk 方式
+
