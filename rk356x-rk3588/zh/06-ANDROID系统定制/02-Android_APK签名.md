@@ -66,7 +66,15 @@ $./keytool-importkeypair -k ./platform.jks -p android -pk8 platform.pk8 -cert pl
 
 ### android studio 方式
 
-![image-20250603141117161](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250603141117161.png)
+第一步，Build ->  Generate Signed App 选择生成签名APK
+
+![image-20250603141117161](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250603141117161.png)
+
+第二步，选择生成APK；（App Bundle 生成的是 aab 文件）
+
+![image-20250603141754390](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250603141754390.png)
+
+![image-20250603142034270](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250603142034270.png)
 
 ### apksigner 方式
 
