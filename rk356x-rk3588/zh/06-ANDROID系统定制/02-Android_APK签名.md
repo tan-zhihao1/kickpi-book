@@ -17,10 +17,16 @@ media.pem           networkstack.pem  platform.pem           sdk_sandbox.pem    
 
 ## 制作平台密钥库JKS
 
+第一步，存放系统签名文件到同一级目录下。
+
 ```
 (SDK)$ mkdir sign_key/
 $ cp device/rockchip/common/security/platform.pk8 sign_key/
 $ cp device/rockchip/common/security/platform.x509.pem sign_key/
+```
 
+第二步，生成系统pem文件
+
+```
 ```
 
