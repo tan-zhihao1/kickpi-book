@@ -33,7 +33,7 @@ rockchip Android SDK 源码密钥路径
 
 ## 制作平台密钥库JKS
 
-第一步，存放系统签名文件到同一级目录下。
+第一步，存放系统签名文件和 keytool-importkeypair 到同一级目录下。
 
 ```
 (SDK)$ mkdir sign_key/
