@@ -147,6 +147,6 @@ device/rockchip/common/security/platform.pk8 \
 old.apk new.apk
 ```
 
-> old.apk 指定需要签名的apk路径
+> `old.apk` 指定需要签名的apk路径
 >
-> new.apk 指定签名后apk的命名
+> `new.apk` 指定签名后的apk
