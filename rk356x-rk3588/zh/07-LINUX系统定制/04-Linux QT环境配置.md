@@ -299,6 +299,15 @@ $ qmake -v
 
 ​	下载后到虚拟机中运行安装程序
 
+```
+chmod +x qt-opensource-linux-x64-5.12.2.run
+./qt-opensource-linux-x64-5.12.2.run
+```
+
+
+
+**下面这种是特殊情况下需要的编译特定版本的Qtcreator才使用 一般不推荐**
+
 Qtcreator最好和Qt版本相对应
 [Qtcreator源码](https://download.qt.io/archive/qtcreator/)
 
