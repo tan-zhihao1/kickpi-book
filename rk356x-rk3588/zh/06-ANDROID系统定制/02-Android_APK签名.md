@@ -2,7 +2,7 @@
 
 
 
-## APK签名密钥
+## 获取APK签名密钥
 
 rockchip Android 平台密钥路径
 
@@ -59,3 +59,7 @@ $./keytool-importkeypair -k ./platform.jks -p android -pk8 platform.pk8 -cert pl
 > -cert platform.x509.pem 指定 pem 文件路径
 >
 > -alias android 指定别名为 android
+
+
+
+Android Studio 对应APK进行系统签名
