@@ -30,6 +30,8 @@ media.pem           networkstack.pem  platform.pem           sdk_sandbox.pem    
 (SDK)$ cd sign_key/
 ```
 
+
+
 第二步，使用 keytool 生成 jks 文件。
 
 keytool-importkeypair 用法
