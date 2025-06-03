@@ -1,6 +1,6 @@
 # 02-Android_APK签名
 
-## APK系统签名
+## APK签名密钥
 
 rockchip 签名路径
 
