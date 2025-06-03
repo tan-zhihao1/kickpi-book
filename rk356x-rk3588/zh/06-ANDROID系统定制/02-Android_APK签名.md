@@ -21,6 +21,14 @@ rockchip Android SDK 源码密钥路径
 
 
 
+## 获取 keytool-importkeypair 
+
+网盘路径
+
+
+
+
+
 ## 制作平台密钥库JKS
 
 第一步，存放系统签名文件到同一级目录下。
@@ -150,3 +158,4 @@ old.apk new.apk
 > `old.apk` 指定需要签名的apk路径
 >
 > `new.apk` 指定签名后的apk
+
