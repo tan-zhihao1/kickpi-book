@@ -13,6 +13,10 @@ bluetooth.x509.pem  media.x509.pem    networkstack.x509.pem  platform.x509.pem  
 media.pem           networkstack.pem  platform.pem           sdk_sandbox.pem    shared.pem            sig_gen.sh       testkey.x509.pem
 ```
 
+网盘路径
+
+
+
 
 
 ## 制作平台密钥库JKS
@@ -50,15 +54,15 @@ The passphrase can also be read from stdin.
 $./keytool-importkeypair -k ./platform.jks -p android -pk8 platform.pk8 -cert platform.x509.pem -alias android
 ```
 
->  -k ./platform.jks 指定生成 jks 文件名为 platform.jks
+>  `-k ./platform.jks` 指定生成 jks 文件名为 platform.jks
 >
-> -p android  指定密码为 android
+> `-p android`  指定密码为 android
 >
-> -pk8 platform.pk8 指定 pk8 文件路径
+> `-pk8 platform.pk8` 指定 pk8 文件路径
 >
-> -cert platform.x509.pem 指定 pem 文件路径
+> `-cert platform.x509.pem` 指定 pem 文件路径
 >
-> -alias android 指定别名为 android
+> `-alias android` 指定别名为 android
 
 
 
@@ -72,7 +76,7 @@ $./keytool-importkeypair -k ./platform.jks -p android -pk8 platform.pk8 -cert pl
 
 第二步，选择生成APK；（App Bundle 生成的是 aab 文件）
 
-![image-20250603141754390](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250603141754390.png)
+![image-20250603141754390](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250603141754390.png)
 
 第三步，选择系统 jks，输入对应的别名和密码。
 
@@ -94,7 +98,6 @@ EXAMPLE:
 apksigner is a tool for signing Android APK files and for checking whether
 signatures of APK files will verify on Android devices.
 
-
         COMMANDS
 rotate                Add a new signing certificate to the SigningCertificateLineage
 
@@ -102,10 +105,10 @@ sign                  Sign the provided APK
 
 verify                Check whether the provided APK is expected to verify on
                       Android
-
+                      
 lineage               Modify the capabilities of one or more signers in an existing
                       SigningCertificateLineage
-
+                      
 version               Show this tool's version number and exit
 
 help                  Show this usage page and exit
@@ -117,11 +120,11 @@ help                  Show this usage page and exit
 $ apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk app-debug.apk 
 ```
 
->  --ks platform.jks 指定 jks 文件路径
+>  `--ks platform.jks` 指定 jks 文件路径
 >
-> --ks-key-alias android 别名为 jks 中的
+> `--ks-key-alias android`  与 jks 中的别名一致
 >
-> --out app-signed.apk 指定签名后apk的命名
+> `--out app-signed.apk` 指定签名后apk的命名
 >
-> app-debug.apk 指定需要签名的apk路径
+> `app-debug.apk` 指定需要签名的apk路径
 
