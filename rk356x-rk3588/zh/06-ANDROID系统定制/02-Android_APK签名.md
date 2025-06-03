@@ -15,3 +15,5 @@ media.pem           networkstack.pem  platform.pem           sdk_sandbox.pem    
 
 
 
+## 制作平台JKS
+
