@@ -111,9 +111,17 @@ version               Show this tool's version number and exit
 help                  Show this usage page and exit
 ```
 
-
+示例：
 
 ```
 $ apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk app-debug.apk 
 ```
+
+>  --ks platform.jks 指定 jks 文件路径
+>
+> --ks-key-alias android 别名为 jks 中的
+>
+> --out app-signed.apk 指定签名后apk的命名
+>
+> app-debug.apk 指定需要签名的apk路径
 
