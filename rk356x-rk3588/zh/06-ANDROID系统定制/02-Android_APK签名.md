@@ -72,7 +72,7 @@ $./keytool-importkeypair -k ./platform.jks -p android -pk8 platform.pk8 -cert pl
 
 ## 对APK进行系统签名
 
-### android studio 方式
+### Android Studio 方式
 
 第一步，Build ->  Generate Signed App 选择生成带签名的APK；
 
