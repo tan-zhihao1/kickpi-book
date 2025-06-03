@@ -165,7 +165,15 @@ old.apk new.apk
 
 ### Android.mk 方式
 
+添加 platform 配置
+
 ```
+LOCAL_CERTIFICATE := platform
+```
+
+示例：
+
+```makefile
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := Test
