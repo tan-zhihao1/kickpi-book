@@ -19,6 +19,6 @@ media.pem           networkstack.pem  platform.pem           sdk_sandbox.pem    
 
 ```
 (SDK)$ mkdir sign_key
-$ cp device/rockchip/common/security/platform.pk8
+$ cp device/rockchip/common/security/platform.pk8 sign_key
 ```
 
