@@ -21,12 +21,13 @@ media.pem           networkstack.pem  platform.pem           sdk_sandbox.pem    
 
 ```
 (SDK)$ mkdir sign_key/
-$ cp device/rockchip/common/security/platform.pk8 sign_key/
-$ cp device/rockchip/common/security/platform.x509.pem sign_key/
+(SDK)$ cp device/rockchip/common/security/platform.pk8 sign_key/
+(SDK)$ cp device/rockchip/common/security/platform.x509.pem sign_key/
 ```
 
 第二步，生成系统pem文件
 
 ```
+(SDK)$ openssl pkcs8 -in platform.pk8 -inform DER -outform PEM -out platform.pem -nocrypt
 ```
 
