@@ -74,11 +74,13 @@ $./keytool-importkeypair -k ./platform.jks -p android -pk8 platform.pk8 -cert pl
 
 ![image-20250603141754390](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250603141754390.png)
 
-![image-20250603142034270](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250603142034270.png)
+第三步，选择系统 jks，输入对应的别名和密码。
+
+![image-20250603142034270](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250603142034270.png)
 
 ### apksigner 方式
 
 ```
-apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk app-debug.apk 
+$ apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk app-debug.apk 
 ```
 
