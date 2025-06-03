@@ -66,7 +66,7 @@ $./keytool-importkeypair -k ./platform.jks -p android -pk8 platform.pk8 -cert pl
 
 ### android studio 方式
 
-第一步，Build ->  Generate Signed App 选择生成签名APK
+第一步，Build ->  Generate Signed App 选择生成APK方式；
 
 ![image-20250603141117161](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250603141117161.png)
 
