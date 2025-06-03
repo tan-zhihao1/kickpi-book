@@ -4,7 +4,7 @@
 
 ## 获取APK签名密钥
 
-rockchip Android SDK 密钥路径
+rockchip Android SDK 源码密钥路径
 
 ```
 (SDK)$ ls device/rockchip/common/security/
@@ -13,9 +13,11 @@ bluetooth.x509.pem  media.x509.pem    networkstack.x509.pem  platform.x509.pem  
 media.pem           networkstack.pem  platform.pem           sdk_sandbox.pem    shared.pem            sig_gen.sh       testkey.x509.pem
 ```
 
-网盘路径
+网盘密钥路径
 
-
+```
+3-SoftwareData/Android_APK_Signature
+```
 
 
 
