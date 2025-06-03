@@ -21,11 +21,13 @@ rockchip Android SDK 源码密钥路径
 
 
 
-## 获取 keytool-importkeypair 
+## 获取 keytool-importkeypair 工具
 
 网盘路径
 
-
+```
+3-SoftwareData/Android_APK_Signature
+```
 
 
 
