@@ -372,9 +372,9 @@ $ vim frameworks/base/packages/SettingsProvider/res/values/defaults.xml
 
 
 
-## 签名APK
+## APK签名
 
-[02-Android_APK签名](02-Android_APK签名.md)
+[06-ANDROID常用系统定制/02-Android_APK签名](02-Android_APK签名.md)
 
 
 
