@@ -310,6 +310,8 @@ chmod +x qt-opensource-linux-x64-5.12.2.run
 
 方法二：
 
+直接通过apt安装对应系统的qtcreator,但是可能和你安装的QT版本不一致
+
 ```
 sudo apt update
 sudo apt install qtcreator
