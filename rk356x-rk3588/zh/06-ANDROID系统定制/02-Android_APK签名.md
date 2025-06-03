@@ -142,8 +142,8 @@ $ apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk a
 $ cd rk-android13.0/
 $ java -Xmx2048m -Djava.library.path="out/host/linux-x86/lib64" \
 -jar out/host/linux-x86/framework/signapk.jar  --disable-v2 \
--w build/target/product/security/platform.x509.pem \
-build/target/product/security/platform.pk8 \
+-w device/rockchip/common/security/platform.x509.pem \
+device/rockchip/common/security/platform.pk8 \
 old.apk new.apk
 ```
 
