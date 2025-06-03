@@ -4,7 +4,7 @@
 
 ## 获取APK签名密钥
 
-rockchip Android 平台密钥路径
+rockchip Android SDK 密钥路径
 
 ```
 (SDK)$ ls device/rockchip/common/security/
@@ -62,4 +62,4 @@ $./keytool-importkeypair -k ./platform.jks -p android -pk8 platform.pk8 -cert pl
 
 
 
-Android Studio 对应APK进行系统签名
+## 对APK进行系统签名
