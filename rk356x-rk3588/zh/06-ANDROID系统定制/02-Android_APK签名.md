@@ -32,9 +32,9 @@ media.pem           networkstack.pem  platform.pem           sdk_sandbox.pem    
 $ openssl pkcs8 -in platform.pk8 -inform DER -outform PEM -out platform.pem -nocrypt
 ```
 
-第三步，
+第三步，生成
 
 ```
-$ openssl pkcs12 -export -in platform.x509.pem -inkey platform.pem -out platform.pk12 -name dev
+$ openssl pkcs12 -export -in platform.x509.pem -inkey platform.pem -out platform.pk12 -name
 ```
 
