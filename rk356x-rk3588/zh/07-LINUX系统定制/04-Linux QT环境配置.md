@@ -319,7 +319,7 @@ sudo apt install qtcreator
 
 方法三：
 
-**下面这种是特殊情况下需要的编译特定版本的Qtcreator才使用 一般不推荐**
+**下面这种是特殊情况下需要的编译特定版本的Qtcreator才使用 不推荐**
 
 Qtcreator最好和Qt版本相对应
 [Qtcreator源码](https://download.qt.io/archive/qtcreator/)
