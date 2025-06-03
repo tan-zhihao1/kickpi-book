@@ -186,3 +186,11 @@ LOCAL_SRC_FILES := Test.apk
 include $(BUILD_PREBUILT)
 ```
 
+
+
+## 查看APK签名信息
+
+```
+$ apksigner verify -v --print-certs test.apk
+```
+
