@@ -134,7 +134,9 @@ $ apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk a
 
 
 
-**SDK源码中进行重签**
+### java 方式
+
+源码中进行重签
 
 ```shell
 $ cd rk-android13.0/
