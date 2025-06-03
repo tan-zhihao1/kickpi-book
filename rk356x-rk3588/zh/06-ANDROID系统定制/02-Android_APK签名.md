@@ -46,17 +46,16 @@ The passphrase can also be read from stdin.
 
 示例：
 
- -k ./platform.jks 指定生成jks文件名
-
--p android  指定密码
-
--pk8 platform.pk8 
-
--cert platform.x509.pem 
-
--alias android 指定用户名
-
 ```
 $./keytool-importkeypair -k ./platform.jks -p android -pk8 platform.pk8 -cert platform.x509.pem -alias android
 ```
 
+>  -k ./platform.jks 指定生成 jks 文件名为 platform.jks
+>
+> -p android  指定密码为 android
+>
+> -pk8 platform.pk8 指定 pk8 文件路径
+>
+> -cert platform.x509.pem 指定 pem 文件路径
+>
+> -alias android 指定别名为 android
