@@ -26,21 +26,3 @@ media.pem           networkstack.pem  platform.pem           sdk_sandbox.pem    
 (SDK)$ cd sign_key/
 ```
 
-第二步，生成 platform.pem 文件
-
-```
-$ openssl pkcs8 -in platform.pk8 -inform DER -outform PEM -out platform.pem -nocrypt
-```
-
-第三步，生成 platform.pk12 文件
-
-```
-$ openssl pkcs12 -export -in platform.x509.pem -inkey platform.pem -out platform.pk12 -name
-```
-
-
-
-```
-keytool -importkeystore -deststorepass ($passwd) -destkeystore platform.jks -srckeystore platform.pk12 -srcstoretype PKCS12 -srcstorepass ($passwd)
-```
-
