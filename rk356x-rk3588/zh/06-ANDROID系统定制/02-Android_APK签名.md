@@ -18,7 +18,9 @@ media.pem           networkstack.pem  platform.pem           sdk_sandbox.pem    
 ## 制作平台密钥库JKS
 
 ```
-(SDK)$ mkdir sign_key
-$ cp device/rockchip/common/security/platform.pk8 sign_key
+(SDK)$ mkdir sign_key/
+$ cp device/rockchip/common/security/platform.pk8 sign_key/
+$ cp device/rockchip/common/security/platform.x509.pem sign_key/
+
 ```
 
