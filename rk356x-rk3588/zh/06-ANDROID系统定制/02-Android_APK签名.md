@@ -80,6 +80,39 @@ $./keytool-importkeypair -k ./platform.jks -p android -pk8 platform.pk8 -cert pl
 
 ### apksigner 方式
 
+apksigner 用法
+
+```
+USAGE: apksigner <command> [options]
+       apksigner --version
+       apksigner --help
+
+EXAMPLE:
+       apksigner sign --ks release.jks app.apk
+       apksigner verify --verbose app.apk
+
+apksigner is a tool for signing Android APK files and for checking whether
+signatures of APK files will verify on Android devices.
+
+
+        COMMANDS
+rotate                Add a new signing certificate to the SigningCertificateLineage
+
+sign                  Sign the provided APK
+
+verify                Check whether the provided APK is expected to verify on
+                      Android
+
+lineage               Modify the capabilities of one or more signers in an existing
+                      SigningCertificateLineage
+
+version               Show this tool's version number and exit
+
+help                  Show this usage page and exit
+```
+
+
+
 ```
 $ apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk app-debug.apk 
 ```
