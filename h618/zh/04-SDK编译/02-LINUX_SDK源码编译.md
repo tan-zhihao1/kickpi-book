@@ -222,6 +222,17 @@ sudo nand-sata-install
 
 完成后，我们重启板卡即可使用更新后的u-boot
 
+**修改设备树**
+
+只修改设备树的话
+1.先编译内核
+2.再编译uboot生成kickpi-k2b-uboot-currentxxxx.deb
+3.板卡dpkg -i kickpi-k2b-uboot-currentxxxx.deb
+4.执行nand-sata-install选择”Install/Update the bootloader on SD/eMMC“更新uboot
+5.重启
+
+
+
 
 
 ### 编译工具链
