@@ -754,6 +754,15 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 >
 > /mnt/usb 为U盘挂载的目录
 
+确保打包出来的文件格式正确
+
+```shell
+$ file Ubuntu_24.04.2_LTS_ext4_202503062020.img 
+Ubuntu_24.04.2_LTS_ext4_202503062020.img: Linux rev 1.0 ext4 filesystem data, UUID=71584b93-ad99-452e-a8e2-6b9ed76eff7d, volume name "rootfs" (extents) (64bit) (large files) (huge files)
+```
+
+> FAT32单文件不让超出4G，如果系统太大，请格式化U盘为其他格式，推荐：ext4、exfat
+
 重新打包，将rootfs.img替换进完整镜像，参考[固件解包和打包](../08-进阶/03-固件解包和打包.md)
 
 也可以对需要替换这个系统的板子单独烧录rootfs.img
