@@ -433,7 +433,7 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 > ff_export_rootfs (存储设备路径) -t ext4
 >
-> 生成的包名格式如：(系统)_(存储类型) _(时间戳).img
+> 生成的包名格式如：(系统) _ (存储类型) _ (时间戳).img
 >
 > /mnt/usb 为U盘挂载的目录
 >
