@@ -38,11 +38,15 @@ android 为惰性编译，直接替换后编译，一些APP、文件不一定编
 
 
 
-## 横屏显示
+## 默认屏幕方向
 
+修改默认显示方向
 
+![image-20250606165333617](C:\Users\10539\AppData\Roaming\Typora\typora-user-images\image-20250606165333617.png)
 
+触控修改参考如下，注意选择对应屏幕的设备树文件
 
+![image-20250606165428265](C:\Users\10539\AppData\Roaming\Typora\typora-user-images\image-20250606165428265.png)
 
 
 
