@@ -1,6 +1,6 @@
 # 02-LINUX_SDK编译
 
-### SDK介绍
+## SDK介绍
 
 Rockchip Linux SDK由SDK源码包、文件系统镜像组成
 
@@ -10,7 +10,7 @@ SDK源码包内核版本5.10，支持Ubuntu20.04、Debian11文件系统
 
 
 
-### 获取SDK源码
+## 获取SDK源码
 
 **网盘下载SDK源码压缩包**
 
@@ -65,7 +65,7 @@ $ git reset --hard
 
 
 
-### 获取文件系统镜像
+## 获取文件系统镜像
 
 SDK源码包不包含文件系统镜像，需要参考下面步骤，单独解压拷贝文件系统到SDK源码
 
@@ -139,7 +139,7 @@ $ ls ubuntu/ubuntu-rootfs.img
 
 
 
-### 编译完整镜像
+## 编译完整镜像
 
 首次执行build.sh进行SDK编译，必须要选择编译配置信息，如：CPU型号、板卡型号、文件系统型号
 
@@ -189,7 +189,7 @@ $ ./build.sh
 
 
 
-### 单独编译分区镜像
+## 单独编译分区镜像
 
 **单独编译Uboot**
 
@@ -217,7 +217,7 @@ $ ./build.sh buildroot
 
 
 
-### 其他常用命令
+## 其他常用命令
 
 **内核配置**
 
@@ -241,7 +241,7 @@ $ ./build.sh all_multi_dtb
 
 
 
-### SDK新增编译项
+## SDK新增编译项
 
 **示例：新增RK3568 K1 Buildroot编译选项**
 
@@ -263,9 +263,11 @@ $ vim rockchip_rk3568_kickpi_k1_buildroot_defconfig
 
 
 
-### 工具链
+## 工具链
 
 ```
 prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
 ```
+
+
 
