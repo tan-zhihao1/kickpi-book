@@ -12,7 +12,7 @@ VNC（Virtual Network Computing）是一种基于远程帧缓冲协议（RFB）�
 
 ## 主板端配置VNC服务器
 
-**安装**
+**步骤一：安装**
 
 ```
 console$ sudo apt update
@@ -21,7 +21,7 @@ console$ sudo apt install tigervnc-standalone-server tigervnc-common tightvncser
 
 
 
-**创建/修改密码**
+**步骤二：创建/修改密码**
 
 ```
 console$ vncpasswd
