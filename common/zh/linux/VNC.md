@@ -59,7 +59,7 @@ console$ chmod +x ~/.vnc/xstartup
 
 
 
-**手动启动VNC**
+**步骤四：手动启动VNC**
 
 ```
 console$ tigervncserver :1 -localhost no -geometry 1920x1080
@@ -67,7 +67,7 @@ console$ tigervncserver :1 -localhost no -geometry 1920x1080
 
 
 
-**配置VNC服务**
+**步骤四：配置VNC服务**
 
 ```
 console$ sudo vim /etc/systemd/system/vncserver@.service
