@@ -59,7 +59,7 @@ console$ chmod +x ~/.vnc/xstartup
 
 
 
-**手动启动VNC服务**
+**手动启动VNC**
 
 ```
 console$ tigervncserver :1 -localhost no -geometry 1920x1080
