@@ -271,3 +271,7 @@ prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-g
 
 
 
+## 常见问题
+
+### buildroot 编译失败问题
+
