@@ -59,13 +59,11 @@ console$ chmod +x ~/.vnc/xstartup
 
 
 
-手动启动VNC服务
+**手动启动VNC服务**
 
 ```
 console$ tigervncserver :1 -localhost no -geometry 1920x1080
 ```
-
-
 
 
 
@@ -82,7 +80,7 @@ Type=forking
 User=kickpi  
 PIDFile=/home/kickpi/.vnc/%H:%i.pid  
 ExecStartPre=-/usr/bin/vncserver -kill :%i > /dev/null 2>&1  
-ExecStart=/usr/bin/vncserver :%i -geometry 1920x1080 -depth 24  
+ExecStart=/usr/bin/vncserver :%i -localhost no -geometry 1920x1080
 ExecStop=/usr/bin/vncserver -kill :%i  
 
 [Install]  
