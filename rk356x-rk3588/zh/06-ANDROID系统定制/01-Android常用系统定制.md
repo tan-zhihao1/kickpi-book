@@ -92,13 +92,13 @@ logo_kernel.bmp
 
 最新的固件可以命名或者app发送广播控制
 
-命令行隐藏导航栏
+命令行隐藏状态栏
 
 ```shell
 (ADB)$ am broadcast -a android.intent.action.HIDE_STATUSBAR_BAR
 ```
 
-命令行显示导航栏
+命令行显示状态栏
 
 ```shell
 (ADB)$ am broadcast -a android.intent.action.SHOW_STATUSBAR_BAR
