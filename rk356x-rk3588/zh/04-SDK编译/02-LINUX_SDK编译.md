@@ -276,22 +276,14 @@ prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-g
 ### buildroot 编译失败问题
 
 ```
---- a/buildroot/configs/rockchip_rk3568_recovery_defconfig
-+++ b/buildroot/configs/rockchip_rk3568_recovery_defconfig
-@@ -1,3 +1,6 @@
- #include "base/base.config"
- #include "base/recovery.config"
- #include "chips/rk3566_rk3568_aarch64.config"
+--- a/buildroot/configs/rockchip_rk3568_defconfig
++++ b/buildroot/configs/rockchip_rk3568_defconfig
 +BR2_KERNEL_MIRROR="https://mirrors.ustc.edu.cn/kernel"
 +BR2_GNU_MIRROR="https://mirrors.ustc.edu.cn/gnu"
 +BR2_CPAN_MIRROR="https://mirrors.ustc.edu.cn/CPAN"
 
 --- a/buildroot/configs/rockchip_rk3568_recovery_defconfig
 +++ b/buildroot/configs/rockchip_rk3568_recovery_defconfig
-@@ -1,3 +1,6 @@
- #include "base/base.config"
- #include "base/recovery.config"
- #include "chips/rk3566_rk3568_aarch64.config"
 +BR2_KERNEL_MIRROR="https://mirrors.ustc.edu.cn/kernel"
 +BR2_GNU_MIRROR="https://mirrors.ustc.edu.cn/gnu"
 +BR2_CPAN_MIRROR="https://mirrors.ustc.edu.cn/CPAN"
