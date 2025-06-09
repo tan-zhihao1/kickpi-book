@@ -275,6 +275,10 @@ prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-g
 
 ### buildroot 编译失败问题
 
+由于下载buildroot相关源码会下载失败，可以修改对应镜像源。
+
+例如：rk3568 修改添加镜像源
+
 ```
 --- a/buildroot/configs/rockchip_rk3568_defconfig
 +++ b/buildroot/configs/rockchip_rk3568_defconfig
@@ -289,3 +293,8 @@ prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-g
 +BR2_CPAN_MIRROR="https://mirrors.ustc.edu.cn/CPAN"
 ```
 
+> k1 / k1b 对应 rk3568
+>
+> k3 对应 rk3562
+>
+> k8 对应 rk3588
