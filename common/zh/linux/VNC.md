@@ -67,7 +67,7 @@ console$ tigervncserver :1 -localhost no -geometry 1920x1080
 
 
 
-**配置VNC服务**
+**配置服务启动VNC**
 
 ```
 console$ sudo vim /etc/systemd/system/vncserver@.service
