@@ -12,7 +12,7 @@ VNC（Virtual Network Computing）是一种基于远程帧缓冲协议（RFB）�
 
 ## 主板端配置VNC服务器
 
-**步骤一：安装**
+**安装**
 
 ```
 console$ sudo apt update
@@ -21,7 +21,7 @@ console$ sudo apt install tigervnc-standalone-server tigervnc-common tightvncser
 
 
 
-**步骤二：创建/修改密码**
+**创建/修改密码**
 
 ```
 console$ vncpasswd
@@ -39,7 +39,7 @@ root@linaro-alip:/#
 
 
 
-**步骤三：配置桌面启动**
+**配置桌面启动**
 
 创建包含以下内容的`xstartup`文件
 
@@ -59,7 +59,7 @@ console$ chmod +x ~/.vnc/xstartup
 
 
 
-**步骤四：手动启动VNC**
+**手动启动VNC**
 
 ```
 console$ tigervncserver :1 -localhost no -geometry 1920x1080
@@ -67,7 +67,7 @@ console$ tigervncserver :1 -localhost no -geometry 1920x1080
 
 
 
-**步骤四：配置VNC服务**
+**配置VNC服务**
 
 配置VNC服务后，开机会自启动VNC。
 
