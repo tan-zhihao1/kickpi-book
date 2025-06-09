@@ -82,13 +82,13 @@ You can refer to the LCD configuration document: [Single Touch Screen Driver Con
 
 The latest firmware can be controlled by naming or sending broadcasts from an app.
 
-Hide the Status  bar via the command line.
+Hide the status  bar via the command line.
 
 ```shell
 $ am broadcast -a android.intent.action.HIDE_STATUSBAR_BAR
 ```
 
-Show the Status bar via the command line.
+Show the status bar via the command line.
 
 ```shell
 $ am broadcast -a android.intent.action.SHOW_STATUSBAR_BAR
