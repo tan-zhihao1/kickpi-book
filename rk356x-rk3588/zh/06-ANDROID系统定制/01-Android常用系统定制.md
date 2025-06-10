@@ -88,6 +88,8 @@ logo_kernel.bmp
 
 可以参考LCD配置文档：[单触摸屏驱动配置](../05-外设驱动/LCD.md#TouchDriver)
 
+
+
 ## 默认隐藏状态栏
 
 最新的固件可以命名或者app发送广播控制
