@@ -84,7 +84,7 @@ logo_kernel.bmp
 
 
 
-**修改触摸方向**
+## 修改默认触摸方向
 
 可以参考LCD配置文档：[单触摸屏驱动配置](../05-外设驱动/LCD.md#TouchDriver)
 
