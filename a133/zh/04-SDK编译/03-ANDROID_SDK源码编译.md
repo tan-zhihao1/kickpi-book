@@ -75,6 +75,13 @@ $./build.sh saveconfig
 $./build.sh mergeconfig
 ```
 
+### 设备树路径
+
+``` 
+a133-android10.0-v2.0/longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
+
+```
+
 
 
 ## 常见问题
