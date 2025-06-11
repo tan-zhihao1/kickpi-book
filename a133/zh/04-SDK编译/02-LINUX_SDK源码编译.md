@@ -84,6 +84,12 @@ $ cd -
 $ ./build.sh saveconfig
 ```
 
+## 设备树路径
+
+``` 
+kickpi-k5c.dts/device/config/chips/a133/configs/c3/kickpi-k5c.dts
+```
+
 
 
 ## 工具链
