@@ -70,6 +70,16 @@ adb shell settings put system user_rotation 3
 
 
 
+隐藏状态栏和导航栏
+``` 
+setprop persist.sys.ban_sb true
+setprop persist.sys.ban_nb true
+```
+
+
+
+
+
 ## 开机LOGO
 
 logo 替换路径
