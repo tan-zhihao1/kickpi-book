@@ -74,6 +74,7 @@ adb shell settings put system user_rotation 3
 ``` 
 setprop persist.sys.ban_sb true
 setprop persist.sys.ban_nb true
+reboot
 ```
 
 
