@@ -84,6 +84,24 @@ device/config/rootfs_tar/install_libs/evb1_auto/etc/test.sh
 
 
 
+## 静态IP配置
+
+``` shell
+vim /etc/network/interfaces
+添加以下内容
+
+auto eth0
+iface eth0 inet static
+address 192.168.1.100
+netmask 255.255.255.0
+gateway 192.168.1.1
+
+根据自己的网关和网段进行配置，否则无法访问网络
+
+```
+
+
+
 
 
 ## buildroot文件系统修改
