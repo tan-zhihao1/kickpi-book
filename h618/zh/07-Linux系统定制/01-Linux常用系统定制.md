@@ -83,6 +83,24 @@ sudo systemctl restart systemd-logind
 
 ![image-20250526140216634](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250526140216634.png)
 
+## 静态IP配置
+
+``` shell
+vim /etc/network/interfaces
+添加以下内容
+
+auto eth0
+iface eth0 inet static
+address 192.168.1.100
+netmask 255.255.255.0
+gateway 192.168.1.1
+
+根据自己的网关和网段进行配置，否则无法访问网络
+
+```
+
+
+
 ## 拷贝eMMC系统到新SD卡（系统备份）
 
 准备一张高速SD卡 建议class10的，SD卡性能会影响系统备份时间
