@@ -244,3 +244,16 @@ sudo nand-sata-install
 ``` shell
 aw-image-build/toolchains/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabi/bin
 ```
+
+
+
+### 设备树路径
+
+``` 
+aw-image-build/source/kernel/linux-5.4-h618/arch/arm64/boot/dts/sunxi
+sun50iw9-kickpi-k2b.dts
+sun50iw9-kickpi-k2c.dts
+```
+
+
+
