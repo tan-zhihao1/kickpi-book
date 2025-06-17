@@ -173,3 +173,11 @@ $ ./build.sh android
 ```
 
 > 镜像生成目录：longan/out/h618_android12_p2_uart0.img
+
+### 设备树路径
+
+``` shell
+h618-android12.0/longan/device/config/chips/h618/configs/p2/linux-5.4/
+board-k2b.dts  board-k2c.dts
+```
+
