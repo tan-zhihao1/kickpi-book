@@ -150,7 +150,7 @@ mount /dev/sda1 /mnt/sda
 dd if=/dev/mmcblk0  of=/mnt/sda/H618.img  bs=4M
 ```
 
-拷贝完成后生成的镜像大小会时30G左右
+拷贝完成后生成的镜像大小会是30G左右
 
 将镜像文件拿到虚拟机ubuntu环境下
 
