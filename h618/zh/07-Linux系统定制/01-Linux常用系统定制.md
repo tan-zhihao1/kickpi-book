@@ -147,7 +147,7 @@ mount /dev/sda1 /mnt/sda
 拷贝生成系统镜像
 
 ``` shell
-dd if=/dev/mmcblk0  of=/mnt/sda/H618.img  bs=4M
+dd if=/dev/mmcblk0  of=/mnt/sda/H618.img  bs=4M status=progress
 ```
 
 拷贝完成后生成的镜像大小会是30G左右
