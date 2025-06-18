@@ -133,7 +133,36 @@ dd if=/dev/mmcblk0  of=/dev/mmcblk1  bs=4M
 
 拷贝完成
 
+## 拷贝eMMC系统生成系统镜像
 
+准备一张具有32G空闲容量的U盘，U盘性能会影响系统备份时间
+
+挂载U盘
+
+``` shell
+mkdir /mnt/sda
+mount /dev/sda1 /mnt/sda
+```
+
+拷贝生成系统镜像
+
+``` shell
+dd if=/dev/mmcblk0  of=/mnt/sda/H618.img  bs=4M
+```
+
+拷贝完成后生成的镜像大小会时30G左右
+
+将镜像文件拿到虚拟机ubuntu环境下
+
+使用以下命令稀释镜像文件
+
+``` shell
+img2simg H618.img h618.img
+```
+
+![image-20250618111201936](C:\Users\10539\AppData\Roaming\Typora\typora-user-images\image-20250618111201936.png)
+
+得到的h618.img即可用于烧录
 
 ## 备份SD卡系统
 
