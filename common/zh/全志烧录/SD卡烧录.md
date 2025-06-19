@@ -6,7 +6,7 @@
 5-DevelopmentTool\SD_Boot_Card_Tool\PhoenixCard4.2.8.rar
 ```
 
-
+此方法不适用于K2B ubuntu镜像！！！
 
 ### 安装烧录工具
 
