@@ -147,7 +147,8 @@ mount /dev/sda1 /mnt/sda
 拷贝生成系统镜像
 
 ``` shell
-dd if=/dev/mmcblk0  of=/mnt/sda/H618.img  bs=4M status=progress
+dd if=/dev/mmcblk0  of=/mnt/sda/output.img  bs=4M status=progress
+sync /mnt/sda/
 ```
 
 拷贝完成后生成的镜像大小会是30G左右
@@ -157,7 +158,7 @@ dd if=/dev/mmcblk0  of=/mnt/sda/H618.img  bs=4M status=progress
 使用以下命令稀释镜像文件
 
 ``` shell
-img2simg H618.img h618.img
+img2simg output.img h618.img
 ```
 
 ![image-20250618111201936](C:\Users\10539\AppData\Roaming\Typora\typora-user-images\image-20250618111201936.png)
