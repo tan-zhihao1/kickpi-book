@@ -57,7 +57,7 @@ K5C 主板支持多种供电方式，注意硬件版本是否支持！
 
 ### 供电规格
 
-使用电池供电时，最高峰值负载 7.5W
+使用电池供电时，最高峰值负载 7.5W。
 
 
 
@@ -208,5 +208,5 @@ consloe$ setprop persist.sys.kickpi_holding_wakelock false
 
 
 
-
+电池关机
 
