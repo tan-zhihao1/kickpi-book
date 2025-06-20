@@ -208,5 +208,7 @@ consloe$ setprop persist.sys.kickpi_holding_wakelock false
 
 
 
-电池关机
+### 电池供电重启问题
+
+
 
