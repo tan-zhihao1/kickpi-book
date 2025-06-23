@@ -123,7 +123,7 @@ $ sudo systemctl disable kickpi.service
 $ sudo systemctl enable kickpi.service 
 ```
 
-##### 
+
 
 ## 拷贝eMMC系统到新SD卡（系统备份）
 
