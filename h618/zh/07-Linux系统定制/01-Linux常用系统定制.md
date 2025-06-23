@@ -101,6 +101,30 @@ gateway 192.168.1.1
 
 
 
+## 自动烧录
+
+下面命令编译固件制作的SD卡为烧录卡
+
+```
+$ ./build.sh auto_burn=true
+```
+
+> 烧录卡想要取消自动烧录 可以通过板子SD烧录卡启动后输入系统下面命令控制
+>
+> 禁用自动烧录服务
+
+```
+$ sudo systemctl disable kickpi.service 
+```
+
+> 启动自动烧录服务（烧录卡默认启动）
+
+```
+$ sudo systemctl enable kickpi.service 
+```
+
+##### 
+
 ## 拷贝eMMC系统到新SD卡（系统备份）
 
 准备一张高速SD卡 建议class10的，SD卡性能会影响系统备份时间
