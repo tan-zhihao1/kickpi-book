@@ -44,16 +44,17 @@ $ vim device/config/chip/{IC}/configs/default/env.cfg
 
 ### 打印/设置寄存器
 
-全志平台实现了 sunxi_dump 机制，使用 /sys/class/sunxi_dump 打印/设置相关的寄存器
+全志平台实现了 sunxi_dump 机制，使用 `/sys/class/sunxi_dump` 打印/设置相关的寄存器
 
 示例：
 
 ```
 # 打印 0x02001000 到 0x02001200 这段寄存器数据
-/sys/class/$ echo 0x02001000,0x02001200 > dump
-/sys/class/$ cat dump
+/sys/class/sunxi_dump$ echo 0x02001000,0x02001200 > dump
+/sys/class/sunxi_dump$ cat dump
 
-# 设备
+# 设备 0x02500100 寄存器数据为 0x02000000
+/sys/class/sunxi_dump$ echo 0x02500100 0x02000000 > write
 ```
 
 
