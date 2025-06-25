@@ -59,3 +59,7 @@ $ vim device/config/chip/{IC}/configs/default/env.cfg
 
 
 
+### 挂载 debugfs
+
+
+
