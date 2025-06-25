@@ -61,5 +61,11 @@ $ vim device/config/chip/{IC}/configs/default/env.cfg
 
 ### 挂载 debugfs
 
+debugfs 系统可以提供一些调试信息，具体可以在控制台里面执行以下指令挂载 debugfs。
+
+```
+mount -t debugs none /sys/kernel/debug
+```
+
 
 
