@@ -20,5 +20,7 @@ $ vim device/config/chip/{IC}/configs/default/env.cfg
 
 在系统启动过程中，按下 ssss 即可进入boot 命令行。
 
+双击 Tab 键获取 boot 支持的命令。
+
 
 
