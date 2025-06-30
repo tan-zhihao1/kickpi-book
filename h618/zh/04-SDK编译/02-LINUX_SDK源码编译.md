@@ -145,6 +145,9 @@ $ ./build.sh
 # 进入内核源码目录 
 cd /home/jiawen/Allwinner/H618/aw-image-build/source/kernel/linux-5.4-h618 
 
+# 加载配置文件
+make ARCH=arm64 linux_h618_defconfig
+
 # 修改内核配置文件 
 make ARCH=arm64 menuconfig
 
