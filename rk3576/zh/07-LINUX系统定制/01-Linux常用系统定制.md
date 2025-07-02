@@ -432,6 +432,15 @@ mtdparts=:0x00002000@0x00004000(uboot),0x00002000@0x00006000(misc),0x00020000@0x
 >
 > 最后一个分区格式为：-@0x0xxxxx(xxx:grow)  -表示剩余所有空间自适应
 
+Linux系统需要额外加一步修改
+
+```
+$ sudo mount -o loop rootfs.img rootfs
+$ sudo vim rootfs/etc/fstab 
+```
+
+将oem userdate的自动挂载注释掉
+
 * 完整镜像修改
 
 参考[固件解包和打包](../08-进阶/03-固件解包和打包.md)，修改parameter.txt文件后重新打包
@@ -440,16 +449,10 @@ mtdparts=:0x00002000@0x00004000(uboot),0x00002000@0x00006000(misc),0x00020000@0x
 
 修改对应板子型号路径下文件，后重新编译
 
-RK356x：
+RK3576：
 
 ```
 SDK$ device/rockchip/rk3566_rk3568/parameter-buildroot-fit.txt
-```
-
-RK3588：
-
-```
-SDK$ device/rockchip/rk3588/parameter.txt 
 ```
 
 
