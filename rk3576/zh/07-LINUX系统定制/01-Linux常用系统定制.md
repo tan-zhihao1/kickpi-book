@@ -412,6 +412,48 @@ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 
 
 
+## eMMC分区
+
+重新分区均需要重新烧录，如果系统不想被格式化，请先[备份rootfs](#backup_rootfs)
+
+重新分区主要修改分区文件parameter.txt
+
+例如:将剩余所有空间放到根目录下
+
+```
+mtdparts=:0x00002000@0x00004000(uboot),0x00002000@0x00006000(misc),0x00020000@0x00008000(boot),0x00040000@0x00028000(recovery),0x00010000@0x00068000(backup),-@0x00078000(rootfs:grow)
+```
+
+> 文件分区规则：分区大小:分区起始地址(分区名称)
+>
+> 分区大小：0x01c00000*512Byte/1024/1024/1014 ≈ 14G
+>
+> 分区起始地址=前一个分区起始地址+前一个分区大小
+>
+> 最后一个分区格式为：-@0x0xxxxx(xxx:grow)  -表示剩余所有空间自适应
+
+* 完整镜像修改
+
+参考[固件解包和打包](../08-进阶/03-固件解包和打包.md)，修改parameter.txt文件后重新打包
+
+* SDK内修改
+
+修改对应板子型号路径下文件，后重新编译
+
+RK356x：
+
+```
+SDK$ device/rockchip/rk3566_rk3568/parameter-buildroot-fit.txt
+```
+
+RK3588：
+
+```
+SDK$ device/rockchip/rk3588/parameter.txt 
+```
+
+
+
 ## 备份文件系统
 
 > 注意：这种方式替换后的rootfs 可能存在mount挂载UUID问题 可以blkid查看正确的UUID 然后修改/etc/fstab
