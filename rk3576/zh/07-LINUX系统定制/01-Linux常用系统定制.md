@@ -452,7 +452,7 @@ $ sudo vim rootfs/etc/fstab
 RK3576：
 
 ```
-SDK$ device/rockchip/rk3566_rk3568/parameter-buildroot-fit.txt
+SDK$ device/rockchip/rk3576//parameter.txt
 ```
 
 
