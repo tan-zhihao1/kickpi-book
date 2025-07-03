@@ -64,8 +64,8 @@ $ setprop persist.sys.bootAppClass $classname
 
 ```
 $ adb shell
-$ setprop persist.sys.bootAppPack $packname
-$ setprop persist.sys.bootAppClass $classname
+$ setprop persist.sys.bootAppPack com.DeviceTest
+$ setprop persist.sys.bootAppClass com.DeviceTest.DeviceTest
 ```
 
 
