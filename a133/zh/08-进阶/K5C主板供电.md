@@ -22,6 +22,7 @@ K5C 主板支持多种供电方式，注意硬件版本是否支持！
 ![image-20250508092317387](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250508092317387.png)
 
 V1.1版本板卡需要去掉板卡背后的0欧电阻
+
 ![image-20250703165443544](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250703165443544.png)
 
 ## POE 供电
