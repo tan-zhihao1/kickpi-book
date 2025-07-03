@@ -222,3 +222,6 @@ consloe$ setprop persist.sys.kickpi_holding_wakelock false
 
 目前关机，电源指示灯仍然亮着，3.3V 和 5V 相关供电仍然存在；若需要关闭供电，需要调整硬件。
 
+![c7ab086d377d1a2852eec41fa0fe4bf](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/c7ab086d377d1a2852eec41fa0fe4bf.png)
+
+硬件调整：需要将图中的0欧电阻，换成 220K欧电阻。
