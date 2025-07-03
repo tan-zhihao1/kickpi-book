@@ -212,3 +212,7 @@ consloe$ setprop persist.sys.kickpi_holding_wakelock false
 
 使用电池供电时，最高峰值负载 7.5W。如果超过峰值功率，PMIC 触发保护重启。
 
+
+
+### 电池供电关机功耗问题
+
