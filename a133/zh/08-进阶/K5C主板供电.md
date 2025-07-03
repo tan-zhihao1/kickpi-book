@@ -168,7 +168,11 @@ $ echo 0xf > /sys/class/axp/debug_mask
 
 ![image-20250218143226261](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250218143226261.png)
 
-2、检查Type-C供电是否足够，更换 **USB Type-C 充电器** 进行供电。
+2、检查需要去掉板卡背后的0欧电阻
+
+![image-20250703165443544](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250703165443544.png)
+
+3、检查Type-C供电是否足够，更换 **USB Type-C 充电器** 进行供电。
 
 
 
