@@ -317,6 +317,26 @@ PRODUCT_PACKAGES += \
 
 ## 开机自启动 APP
 
+安卓已适配自启动APP功能
+
+利用属性 persist.sys.bootAppPack / persist.sys.bootAppClass 配置，开机会启动对应APP
+
+```
+$ adb shell
+$ setprop persist.sys.bootAppPack $packname
+$ setprop persist.sys.bootAppClass $classname
+```
+
+示例：
+
+```
+$ adb shell
+$ setprop persist.sys.bootAppPack com.DeviceTest
+$ setprop persist.sys.bootAppClass com.DeviceTest.DeviceTest
+```
+
+
+
 ### **Launcher方式启动**
 
 此方式替换桌面，返回 HOME 为 替换后的APP
