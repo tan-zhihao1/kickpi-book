@@ -48,6 +48,12 @@ kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
 
 
 
+## 开机启动APP
+
+
+
+
+
 ## 显示方向配置
 
 **默认配置显示方向**
