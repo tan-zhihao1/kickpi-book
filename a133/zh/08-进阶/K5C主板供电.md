@@ -216,3 +216,9 @@ consloe$ setprop persist.sys.kickpi_holding_wakelock false
 
 ### 电池供电关机功耗问题
 
+1、长按电源键进行关机
+
+2、使用系统Power Off 功能进行关机
+
+目前关机，电源指示灯仍然亮着，3.3V 和 5V 相关供电仍然存在；若需要关闭供电，需要调整硬件。
+
