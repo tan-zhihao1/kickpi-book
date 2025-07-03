@@ -133,6 +133,10 @@ longan/device/config/chips/h618/boot-resource/boot-resource/bootlogo.bmp
 device/softwinner/apollo/common/media/config.mk
 ```
 
+``` 
+device/softwinner/apollo/common/media/bootanimation/bootanimation.zip
+```
+
 
 
 bootanimation.zip 格式
