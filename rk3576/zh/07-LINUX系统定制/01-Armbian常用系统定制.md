@@ -62,6 +62,7 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 Debian 12 中科大镜像源
 
 ```
+$ vim /etc/apt/sources.list.d/debian.sources
 Types: deb
 URIs: http://mirrors.ustc.edu.cn/debian
 Suites: bookworm bookworm-updates
