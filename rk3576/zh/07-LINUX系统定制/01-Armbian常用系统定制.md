@@ -40,6 +40,8 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
 
 
+Ubuntu 中科大镜像源
+
 ```
 Types: deb
 URIs: https://mirrors.ustc.edu.cn/ubuntu-ports
