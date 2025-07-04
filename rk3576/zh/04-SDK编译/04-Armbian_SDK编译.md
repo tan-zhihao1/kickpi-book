@@ -144,10 +144,10 @@ $ ./compile.sh kernel BOARD=kickpi-k7 BRANCH=vendor
 $ ./compile.sh kernel-dtb BOARD=kickpi-k7 BRANCH=vendor
 ```
 
-生成路径
+板卡上 dtb 替换路径
 
 ```
-cache/sources/linux-kernel-worktree/6.1__rk35xx__arm64/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtb
+/boot/dtb/rockchip/rk3576-kickpi-k7.dtb
 ```
 
 
