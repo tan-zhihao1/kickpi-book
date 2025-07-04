@@ -54,6 +54,8 @@ SDK$ ./compile.sh
 > * 方向键选择配置，Enter 键确认配置，空格键选中或取消选中。
 > * 支持首字母快速检索，可键盘按下首字母，会跳转到对应首字母选项。
 
+#### 通用配置
+
 1. 选择不修改 Kernel 配置
 
 ![image-20250704140210097](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140210097.png)
@@ -74,6 +76,24 @@ SDK$ ./compile.sh
 
 ![image-20250704140947103](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140947103.png)
 
+#### 系统配置
+
 6. 选择 **Bookworm** 或 **Ubuntu noble 24.04** 版本（带 supported 选项 Armbian 官方支持，使用比较稳定！）
 
 ![image-20250704141035573](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141035573.png)
+
+#### 桌面配置
+
+7. 选择系统配置，桌面版选择 desktop environment / 服务器版选择 console interface (server)
+
+![image-20250704141221587](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141221587.png)
+
+8.1 若第7步选择桌面版，桌面版提供了四种可支持的桌面，根据需要选择。
+
+> 注意：Windows 虚拟机 Ubuntu 系统一般选择 gnome 桌面！
+
+![image-20250704141508062](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141508062.png)
+
+9. 系统基础包配置
+
+![image-20250704141809333](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141809333.png)
