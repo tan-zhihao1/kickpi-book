@@ -107,10 +107,10 @@ echo " kickpi.sh run finish !" >> $LOG_FILE
 
 示例：
 
-板子上接的是 8寸屏，型号为 MX080B2140
+板子上接的是 8寸屏，型号为 MX080B2140 ，添加对应的 overlays 名称。重启后，就能点亮对应的屏幕。
 
 ```
-root@kickpi-k7:~# cat /boot/armbianEnv.txt 
+$ vim /boot/armbianEnv.txt 
 verbosity=1
 bootlogo=true
 console=both
@@ -122,7 +122,7 @@ overlays=rk3576-kickpi-lcd-mipi-MX080B2140
 usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
 ```
 
-
+> overlays=rk3576-kickpi-lcd-mipi-MX080B2140 添加对应的 dtbo 名字
 
 
 
