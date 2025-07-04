@@ -103,7 +103,7 @@
 
    ![image-20250704101553072](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704101553072.png)
 
-4. 在分区框内，鼠标右键打开配置选项，点击 **Load Config**，选择 **armbian.cfg** 文件（cfg格式文件）； [获取镜像文件](01-获取镜像文件.md)
+4. 在分区框内，**鼠标右键**打开配置选项，点击 **Load Config**，选择 **armbian.cfg** 文件（cfg格式文件）； [获取镜像文件](01-获取镜像文件.md)
 
    ![image-20250704101726253](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704101726253.png)
 
