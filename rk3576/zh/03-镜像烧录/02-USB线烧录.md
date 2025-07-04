@@ -91,7 +91,7 @@
 
 ### Armbian 镜像烧录
 
-由于 armbian 的镜像与 rockchip 官方的镜像有所区别，烧录方式不能沿用。
+> 由于 armbian 的镜像与 rockchip 官方的镜像有所区别，烧录方式不能沿用 ！
 
 1. 进入 **LOADER模式** 需要按下RECOVERY按键，上电（主板已上电可按复位进行复位）；进入 **MASKROM模式** 需要按下板子背后的MASKROM按键，上电（主板已上电可按复位进行复位）；
 
