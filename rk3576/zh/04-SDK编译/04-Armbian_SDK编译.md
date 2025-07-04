@@ -154,6 +154,8 @@ $ ./compile.sh kernel-dtb BOARD=kickpi-k7 BRANCH=vendor
 
 
 
+
+
 ## **Armbian官方编译指导**
 
 https://docs.armbian.com/Developer-Guide_Build-Commands/
