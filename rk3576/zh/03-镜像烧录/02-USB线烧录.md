@@ -121,6 +121,8 @@
 
 8. 点击 Run，等待烧录完成；
 
+![image-20250704104936954](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704104936954.png)
+
 
 
 ## 工厂烧录
