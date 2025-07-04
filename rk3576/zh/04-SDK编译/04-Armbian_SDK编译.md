@@ -48,6 +48,11 @@ SDK$ ./compile.sh
 ```
 
 > 运行后，会进入图形化选择编译界面。
+>
+> 图形化界面配置须知：方向键选择配置，Enter 键确认配置，空格键选中或取消选中。
 
+1. 选择不修改 Kernel 配置
 
+![image-20250704140210097](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140210097.png)
 
+2. 
