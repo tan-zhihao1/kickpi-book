@@ -34,7 +34,7 @@ md5sum rk3576-Armbian-*.tar.gz
 
 ```
 $ mkdir rk3576-armbian
-$ tar -zxvf md5sum rk3576-linux-*.tar.gz -C rk3576-linux/
+$ tar -zxvf md5sum rk3576-linux-*.tar.gz -C rk3576-armbian/
 $ cd rk3576-linux/
 $ git reset --hard
 ```
