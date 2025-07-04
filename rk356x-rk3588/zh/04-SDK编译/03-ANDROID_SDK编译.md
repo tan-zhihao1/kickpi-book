@@ -239,3 +239,13 @@ $ ./build.sh -AUCKu -J1
 
 如果你只是完整编译，需要自己去选择你使用的屏，参考[LCD介绍文档](../05-外设驱动/LCD.md#LCDDriver)
 
+
+
+### 编译报错问题日志抓取
+
+```
+$ ./build.sh | tee build.log
+```
+
+> 通过 | tee build.log 组合将编译信息抓取到 build.log 中。
+
