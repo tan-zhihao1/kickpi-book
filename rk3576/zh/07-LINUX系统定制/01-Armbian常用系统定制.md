@@ -136,7 +136,15 @@ https://github.com/quectel-open-source/Quectel_QConnectManager_Linux
 
 
 
-## GCC 编译
+
+
+## **GCC⼯具链**
+
+**安装命令**
+
+```
+apt update && apt install -y build-essential manpages-dev
+```
 
 
 
