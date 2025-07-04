@@ -44,6 +44,8 @@ $ git reset --hard
 ### 全部编译
 
 ```
-$ ./compli
+SDK$ ./compile.sh
 ```
+
+
 
