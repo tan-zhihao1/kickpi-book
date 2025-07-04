@@ -136,6 +136,10 @@ https://github.com/quectel-open-source/Quectel_QConnectManager_Linux
 
 
 
+## GCC 编译
+
+
+
 
 
 ## Chromium 浏览器
