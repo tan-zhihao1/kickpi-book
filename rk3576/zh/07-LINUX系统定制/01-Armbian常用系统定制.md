@@ -59,6 +59,26 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
 
 
+Debian 12 中科大镜像源
+
+```
+Types: deb
+URIs: http://mirrors.ustc.edu.cn/debian
+Suites: bookworm bookworm-updates
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: http://mirrors.ustc.edu.cn/debian-security
+Suites: bookworm-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+```
+
+
+
+
+
 ## Chromium 浏览器
 
 > 推荐使用 chromium 浏览器，目前测试播放视频较为流畅。
