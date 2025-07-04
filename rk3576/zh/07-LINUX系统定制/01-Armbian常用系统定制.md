@@ -105,6 +105,10 @@ echo " kickpi.sh run finish !" >> $LOG_FILE
 /boot/dtb-6.1.115-vendor-rk35xx/rockchip/overlay/rk3576-kickpi-lcd-mipi-F050008M01.dtbo
 ```
 
+示例：
+
+板子上接的是 8寸屏，型号为 MX080B2140
+
 ```
 overlays=rk3576-kickpi-lcd-mipi-MX080B2140
 ```
