@@ -108,9 +108,21 @@ SDK$ ./compile.sh
 
 ## 命令编译
 
+在图形化界面选择编译后，可通过打印信息查看到对应命令行编译指令。
+
+示例：
+
+下面是在编译 K7 ubuntu 24.04 系统 gnome 桌面时，截取到的打印。
+
 ![image-20250704142554606](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704142554606.png)
 
+则获取到以下命令
 
+```
+SDK$ ./compile.sh build BOARD=kickpi-k7 BRANCH=vendor BUILD_DESKTOP=yes BUILD_MINIMAL=no DESKTOP_APPGROUPS_SELECTED= DESKTOP_ENVIRONMENT=gnome DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base KERNEL_CONFIGURE=no RELEASE=noble 
+```
+
+> 执行该命令，会编译 K7 ubuntu 24.04 系统 gnome 桌面（无需进图形化界面重新配置）
 
 
 
