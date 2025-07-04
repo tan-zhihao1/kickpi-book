@@ -47,5 +47,7 @@ $ git reset --hard
 SDK$ ./compile.sh
 ```
 
+> 运行后，会进入图形化选择编译界面。
+
 
 
