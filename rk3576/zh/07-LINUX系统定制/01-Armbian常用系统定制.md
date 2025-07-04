@@ -14,7 +14,11 @@
 
 ## 镜像源替换
 
+Debian 系统镜像源替换
 
+
+
+Ubuntu 系统镜像源替换
 
 ```
 sudo sed -i 's@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g' /etc/apt/sources.list.d/ubuntu.sources
