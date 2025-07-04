@@ -30,7 +30,12 @@ Signed-By: /usr/share/keyrings/armbian-archive-keyring.gpg
 Ubuntu 官方镜像源
 
 ```
-sudo sed -i 's@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g' /etc/apt/sources.list.d/ubuntu.sources
+$ cat /etc/apt/sources.list.d/ubuntu.sources 
+Types: deb
+URIs: http://ports.ubuntu.com/
+Suites: noble noble-security noble-updates noble-backports
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 ```
 
 
