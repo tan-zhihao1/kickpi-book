@@ -96,8 +96,20 @@ echo " kickpi.sh run finish !" >> $LOG_FILE
 
 ## MIPI 屏显示
 
+主板中已存在MIPI屏幕的dtbo文件
+
 ```
+/boot/dtb-6.1.115-vendor-rk35xx/rockchip/overlay/rk3576-kickpi-lcd-mipi-AT101DS40I.dtbo
+/boot/dtb-6.1.115-vendor-rk35xx/rockchip/overlay/rk3576-kickpi-lcd-mipi-MX101BA1340.dtbo
+/boot/dtb-6.1.115-vendor-rk35xx/rockchip/overlay/rk3576-kickpi-lcd-mipi-MX080B2140.dtbo
+/boot/dtb-6.1.115-vendor-rk35xx/rockchip/overlay/rk3576-kickpi-lcd-mipi-F050008M01.dtbo
 ```
+
+```
+overlays=rk3576-kickpi-lcd-mipi-MX080B2140
+```
+
+
 
 
 
