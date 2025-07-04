@@ -133,7 +133,7 @@ $ ./build.sh
 - Kernel deb path：构建生成的内核deb文件保存路径
 - Kernel deb name：构建生成的内核deb包名称
 
-将生成的内核deb包传输到正在运行的板卡中， 使用dpkg -i linux-***.deb，然后重启板卡，就可以更新升级内核了
+将生成的内核deb包传输到正在运行的板卡中， 使用dpkg -i linux-***.deb，然后重启板卡，就可以更新内核了
 
 **修改内核配置项**
 
@@ -223,8 +223,6 @@ sun50iw9-kickpi-k2c.dts
 3.板卡dpkg -i kickpi-k2b-uboot-currentxxxx.deb
 4.执行nand-sata-install选择”Install/Update the bootloader on SD/eMMC“更新uboot
 5.重启
-
-
 
 
 
