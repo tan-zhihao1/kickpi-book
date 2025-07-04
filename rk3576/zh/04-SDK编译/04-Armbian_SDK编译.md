@@ -55,4 +55,10 @@ SDK$ ./compile.sh
 
 ![image-20250704140210097](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140210097.png)
 
-2. 
+2. 选中显示 CSC / WIP / EOS / TVB 相关配置（目前 K7 在CSC配置中）
+
+![image-20250704140436194](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140436194.png)
+
+3. 同意警告声明
+
+![image-20250704140605228](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140605228.png)
