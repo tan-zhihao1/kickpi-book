@@ -40,6 +40,24 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
 
 
+```
+Types: deb
+URIs: https://mirrors.ustc.edu.cn/ubuntu-ports
+Suites: noble noble-updates noble-backports
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+
+Types: deb
+URIs: https://mirrors.ustc.edu.cn/ubuntu-ports
+Suites: noble-security
+Components: main universe restricted multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+```
+
+
+
+
+
 ## Chromium 浏览器
 
 > 推荐使用 chromium 浏览器，目前测试播放视频较为流畅。
