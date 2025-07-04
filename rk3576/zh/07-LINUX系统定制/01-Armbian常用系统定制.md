@@ -78,6 +78,12 @@ Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
 
 
+## 开机启动脚本
+
+
+
+
+
 ## Chromium 浏览器
 
 > 推荐使用 chromium 浏览器，目前测试播放视频较为流畅。
