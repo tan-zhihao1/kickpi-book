@@ -115,7 +115,7 @@
 
    ![image-20250704104346690](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704104346690.png)
 
-7. 勾选分区烧录配置以及 **Write by Address** 配置
+7. 勾选分区烧录配置以及 **Write by Address** 配置（必须选取勾选！）
 
 ![image-20250704104207269](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704104207269.png)
 
