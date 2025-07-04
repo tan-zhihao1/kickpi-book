@@ -80,7 +80,7 @@ Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
 ## 开机启动脚本
 
-
+KICKPI 默认会启动 kickpi.sh 脚本，可将开机启动的脚本（或其他服务）添加到 kickpi.sh 脚本中。
 
 ```
 console$ cat /etc/init.d/kickpi.sh 
