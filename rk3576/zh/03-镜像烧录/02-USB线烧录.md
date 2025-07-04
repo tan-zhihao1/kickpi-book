@@ -113,6 +113,8 @@
 
 6. 选择 Image 分区配置，点击对应文件选择方框，选择 Armbian 镜像文件（img格式文件）；[获取镜像文件](01-获取镜像文件.md)
 
+   ![image-20250704104346690](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704104346690.png)
+
 7. 勾选分区烧录配置以及 **Write by Address** 配置
 
 ![image-20250704104207269](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704104207269.png)
