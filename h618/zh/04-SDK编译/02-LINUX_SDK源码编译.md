@@ -217,10 +217,6 @@ sun50iw9-kickpi-k2b.dts
 sun50iw9-kickpi-k2c.dts
 ```
 
-
-
-
-
 只修改设备树的话
 1.先编译内核
 2.再编译uboot生成kickpi-k2b-uboot-currentxxxx.deb
