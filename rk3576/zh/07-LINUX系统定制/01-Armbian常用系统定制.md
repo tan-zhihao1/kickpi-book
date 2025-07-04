@@ -17,7 +17,7 @@
 armbian 官方镜像源
 
 ```
-$ cat /etc/apt/sources.list.d/armbian.sources 
+console$ cat /etc/apt/sources.list.d/armbian.sources 
 Types: deb
 URIs: https://apt.armbian.com
 Suites: noble
@@ -30,7 +30,7 @@ Signed-By: /usr/share/keyrings/armbian-archive-keyring.gpg
 Ubuntu 官方镜像源
 
 ```
-$ cat /etc/apt/sources.list.d/ubuntu.sources 
+console$ cat /etc/apt/sources.list.d/ubuntu.sources 
 Types: deb
 URIs: http://ports.ubuntu.com/
 Suites: noble noble-security noble-updates noble-backports
@@ -43,7 +43,7 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 Ubuntu 24.04 中科大镜像源
 
 ```
-$ vim /etc/apt/sources.list.d/ubuntu.sources
+console$ vim /etc/apt/sources.list.d/ubuntu.sources
 Types: deb
 URIs: https://mirrors.ustc.edu.cn/ubuntu-ports
 Suites: noble noble-updates noble-backports
@@ -62,7 +62,7 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 Debian 12 中科大镜像源
 
 ```
-$ vim /etc/apt/sources.list.d/debian.sources
+console$ vim /etc/apt/sources.list.d/debian.sources
 Types: deb
 URIs: http://mirrors.ustc.edu.cn/debian
 Suites: bookworm bookworm-updates
@@ -80,16 +80,15 @@ Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
 ## 开机启动脚本
 
+
+
 ```
-$ cat /etc/init.d/kickpi.sh 
+console$ cat /etc/init.d/kickpi.sh 
 #!/bin/sh
 
 LOG_FILE=/tmp/kickpi.log
-
 depmod
-
 dmesg -n 1
-
 echo " kickpi.sh run finish !" >> $LOG_FILE
 ```
 
