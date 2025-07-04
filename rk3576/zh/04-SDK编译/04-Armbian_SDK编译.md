@@ -103,3 +103,4 @@ SDK$ ./compile.sh
 10. 对应类型的系统基础包选择 （空格选中或者取消选中，选中的包会自动编译进系统）
 
 ![image-20250704142123550](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704142123550.png)
+
