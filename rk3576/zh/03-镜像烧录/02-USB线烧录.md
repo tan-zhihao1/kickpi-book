@@ -103,13 +103,13 @@
 
    ![image-20250704101553072](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704101553072.png)
 
-4. 在分区框内，鼠标右键打开配置选项，点击 **Load Config**，选择 **armbian.cfg**； 
+4. 在分区框内，鼠标右键打开配置选项，点击 **Load Config**，选择 **armbian.cfg** 文件； 
 
    ![image-20250704101726253](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704101726253.png)
 
-5. 
+5. 选择 Loader 分区配置，点击文件选择方框，选择 **MiniLoaderAll.bin** 文件；
 
-
+![image-20250704103334992](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704103334992.png)
 
 3. 
 4. 
