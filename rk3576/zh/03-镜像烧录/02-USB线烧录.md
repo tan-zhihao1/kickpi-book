@@ -14,7 +14,7 @@
 5-DevelopmentTool/USB Driver USB/DriverAssitant_v5.13.zip
 ```
 
-> Android14.0的USB驱动 DriverAssitant 需要更新到V5.1.1版本。
+> Android14.0的USB驱动 DriverAssitant 需要更新到V5.1.1以上的版本。
 
 
 
