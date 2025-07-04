@@ -309,8 +309,10 @@ prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-g
 
 
 
-### 编译报错问题上报
+### 编译报错问题日志抓取
 
 ```
+$ ./build.sh | tee build.log
 ```
 
+> 回家
