@@ -25,16 +25,6 @@ console$ sudo apt install chromium
 
 ## FireFox 浏览器
 
-https://blog.csdn.net/qq_44759117/article/details/109009629
-
-**官方说明指导**
-
-https://support.mozilla.org/en-US/kb/firefox-already-running-not-responding
-
-```
- rm ~/.mozilla/firefox/ -rfv
-```
-
 
 
 **解决方法一**
