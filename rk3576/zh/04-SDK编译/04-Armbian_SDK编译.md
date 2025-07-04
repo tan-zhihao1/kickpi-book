@@ -130,10 +130,16 @@ SDK$ ./compile.sh build BOARD=kickpi-k7 BRANCH=vendor BUILD_DESKTOP=yes BUILD_MI
 
 ## 单独编译
 
+**kernel 单编**
+
+```
+$ ./compile.sh kernel BOARD=kickpi-k7 BRANCH=vendor
+```
 
 
 
 
-## **官网编译指导**
+
+## **Armbian官方编译指导**
 
 https://docs.armbian.com/Developer-Guide_Build-Commands/
