@@ -25,7 +25,10 @@ console$ sudo apt install chromium
 
 ## FireFox 浏览器
 
-
+```
+console$ sudo apt update
+console$ sudo apt install chromium
+```
 
 **解决方法一**
 
