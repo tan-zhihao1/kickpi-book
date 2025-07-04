@@ -94,6 +94,13 @@ echo " kickpi.sh run finish !" >> $LOG_FILE
 
 
 
+## MIPI 屏显示
+
+```
+```
+
+
+
 
 
 ## Chromium 浏览器
