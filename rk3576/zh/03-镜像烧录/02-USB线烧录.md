@@ -111,7 +111,7 @@
 
 ![image-20250704103334992](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704103334992.png)
 
-3. 选择 EMMC 分区配置，点击对应文件选择方框，选择 Armbian 镜像文件（img格式文件）；获取镜像文件
+3. 选择 Image 分区配置，点击对应文件选择方框，选择 Armbian 镜像文件（img格式文件）；[获取镜像文件](01-获取镜像文件.md)
 4. 
 5. 点击 **Firmware**，选择要烧录的镜像 update-*.img；
 6. 
