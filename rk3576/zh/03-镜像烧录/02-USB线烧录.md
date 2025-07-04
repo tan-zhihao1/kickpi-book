@@ -103,19 +103,18 @@
 
    ![image-20250704101553072](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704101553072.png)
 
-4. 在分区框内，鼠标右键打开配置选项，点击 **Load Config**；
+4. 在分区框内，鼠标右键打开配置选项，点击 **Load Config**，选择 **armbian.cfg**； 
 
    ![image-20250704101726253](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704101726253.png)
 
 5. 
 
+
+
+3. 
+4. 
+5. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
 6. 
-
-7. 
-
-8. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
-
-9. 
 
 ## 工厂烧录
 
