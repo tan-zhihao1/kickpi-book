@@ -126,6 +126,10 @@ usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
 
 
 
+## 4G / 5G 模块
+
+
+
 
 
 ## Chromium 浏览器
