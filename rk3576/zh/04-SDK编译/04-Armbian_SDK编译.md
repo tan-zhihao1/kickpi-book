@@ -90,7 +90,7 @@ SDK$ ./compile.sh
 
 ![image-20250704141221587](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141221587.png)
 
-### 桌面选择
+### 桌面版配置选择
 
 8.1 若第7步选择桌面版，桌面版提供了四种可支持的桌面，根据需要选择。
 
