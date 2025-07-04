@@ -89,7 +89,7 @@
 
 
 
-### ARMBIAN镜像烧录
+### Armbian 镜像烧录
 
 由于 armbian 的镜像与 rockchip 官方的镜像有所区别，烧录方式不能沿用。
 
