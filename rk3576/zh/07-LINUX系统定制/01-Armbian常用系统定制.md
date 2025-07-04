@@ -14,7 +14,10 @@
 
 ## chromium 浏览器
 
+
+
 ```
+console$ sudo apt update
 console$ sudo apt install chromium
 ```
 
