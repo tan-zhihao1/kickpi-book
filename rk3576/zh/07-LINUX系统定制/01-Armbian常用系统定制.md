@@ -81,7 +81,7 @@ Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 ## 开机启动脚本
 
 ```
-root@kickpi-k7:~# cat /etc/init.d/kickpi.sh 
+$ cat /etc/init.d/kickpi.sh 
 #!/bin/sh
 
 LOG_FILE=/tmp/kickpi.log
