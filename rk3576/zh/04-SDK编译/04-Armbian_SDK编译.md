@@ -76,17 +76,19 @@ SDK$ ./compile.sh
 
 ![image-20250704140947103](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140947103.png)
 
-#### 系统配置
+#### Debian/Ubuntu系统配置
 
 6. 选择 **Bookworm** 或 **Ubuntu noble 24.04** 版本（带 supported 选项 Armbian 官方支持，使用比较稳定！）
 
 ![image-20250704141035573](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141035573.png)
 
-#### 桌面配置
+#### 桌面版/服务器版配置
 
 7. 选择系统配置，桌面版选择 desktop environment / 服务器版选择 console interface (server)
 
 ![image-20250704141221587](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141221587.png)
+
+#### 桌面选择
 
 8.1 若第7步选择桌面版，桌面版提供了四种可支持的桌面，根据需要选择。
 
@@ -97,3 +99,7 @@ SDK$ ./compile.sh
 9. 系统基础包配置
 
 ![image-20250704141809333](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141809333.png)
+
+10. 对应类型的系统基础包选择 （空格选中或者取消选中，选中的包会自动编译进系统）
+
+![image-20250704142123550](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704142123550.png)
