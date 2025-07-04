@@ -101,27 +101,27 @@
 
 3. 点击 **Download Image**，跳转到分区升级固件界面；
 
-   ![image-20250704101553072](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704101553072.png)
+   ![image-20250704101553072](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704101553072.png)
 
 4. 在分区框内，**鼠标右键**打开配置选项，点击 **Load Config**，选择 **armbian.cfg** 文件（cfg格式文件）； [获取镜像文件](01-获取镜像文件.md)
 
-   ![image-20250704101726253](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704101726253.png)
+   ![image-20250704101726253](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704101726253.png)
 
 5. 选择 Loader 分区配置，点击对应文件选择方框，选择 **MiniLoaderAll.bin** 文件（bin格式文件）；[获取镜像文件](01-获取镜像文件.md)
 
-![image-20250704103334992](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704103334992.png)
+![image-20250704103334992](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704103334992.png)
 
 6. 选择 Image 分区配置，点击对应文件选择方框，选择 Armbian 镜像文件（img格式文件）；[获取镜像文件](01-获取镜像文件.md)
 
-   ![image-20250704104346690](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704104346690.png)
+   ![image-20250704104346690](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704104346690.png)
 
 7. 勾选分区烧录配置以及 **Write by Address** 配置（必须选取勾选！）
 
-![image-20250704104207269](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704104207269.png)
+![image-20250704104207269](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704104207269.png)
 
 8. 点击 Run，等待烧录完成；
 
-![image-20250704104936954](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704104936954.png)
+![image-20250704104936954](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704104936954.png)
 
 
 
