@@ -14,7 +14,7 @@
 
 ## 镜像源替换
 
-Debian 系统镜像源
+armbian 官方镜像源
 
 ```
 $ cat /etc/apt/sources.list.d/armbian.sources 
@@ -27,7 +27,7 @@ Signed-By: /usr/share/keyrings/armbian-archive-keyring.gpg
 
 
 
-Ubuntu 系统镜像源
+Ubuntu 官方镜像源
 
 ```
 sudo sed -i 's@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g' /etc/apt/sources.list.d/ubuntu.sources
