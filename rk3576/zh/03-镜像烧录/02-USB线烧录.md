@@ -119,7 +119,7 @@
 
 ![image-20250704104207269](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704104207269.png)
 
-8. 点击 Run；
+8. 点击 Run，等待烧录完成；
 
 
 
