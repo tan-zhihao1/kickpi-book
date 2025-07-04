@@ -144,9 +144,13 @@ $ ./compile.sh kernel BOARD=kickpi-k7 BRANCH=vendor
 $ ./compile.sh kernel-dtb BOARD=kickpi-k7 BRANCH=vendor
 ```
 
+生成路径
+
 ```
- scp hcm@192.168.199.160:/work/huangcm/A/sdk/rk3576/armbian/build/cache/sources/linux-kernel-worktree/6.1__rk35xx__arm64/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtb .
+cache/sources/linux-kernel-worktree/6.1__rk35xx__arm64/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtb
 ```
+
+
 
 
 
