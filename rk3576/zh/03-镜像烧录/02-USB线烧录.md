@@ -99,7 +99,9 @@
 
 2. 瑞芯微开发工具上能够识别到 LOADER设备 或 MASKROM设备；（需要先安装USB驱动，才能识别到相关设备）
 
-3. 点击 **Download Image**，跳转到升级固件界面；
+3. 点击 **Download Image**，跳转到分区升级固件界面；
+
+   ![image-20250704101553072](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704101553072.png)
 
 4. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
 
