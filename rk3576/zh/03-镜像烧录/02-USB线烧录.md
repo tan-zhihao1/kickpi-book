@@ -4,7 +4,7 @@
 
 
 
-## 镜像烧录
+## 通用镜像烧录
 
 ### 安装USB驱动<a id="USBDRV"></a>
 
@@ -84,6 +84,12 @@
 6. 烧录完成；
 
 ![image-20250422093934098](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093934098.png)
+
+
+
+
+
+## ARMBIAN镜像烧录
 
 
 
