@@ -110,7 +110,16 @@ echo " kickpi.sh run finish !" >> $LOG_FILE
 板子上接的是 8寸屏，型号为 MX080B2140
 
 ```
+root@kickpi-k7:~# cat /boot/armbianEnv.txt 
+verbosity=1
+bootlogo=true
+console=both
+overlay_prefix=rk35xx
+fdtfile=rockchip/rk3576-kickpi-k7.dtb
+rootdev=UUID=389fa6c5-33a8-4653-99ec-f532b9d5a742
+rootfstype=ext4
 overlays=rk3576-kickpi-lcd-mipi-MX080B2140
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
 ```
 
 
