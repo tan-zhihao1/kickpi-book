@@ -48,8 +48,6 @@ $ firefox -profilemanager
 >
 > 新建profile 来启动 firefox。
 
-
-
 **解决方法二**
 
 ```
