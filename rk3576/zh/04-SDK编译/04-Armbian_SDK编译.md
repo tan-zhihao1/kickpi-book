@@ -152,6 +152,12 @@ $ ./compile.sh kernel-dtb BOARD=kickpi-k7 BRANCH=vendor
 
 
 
+**Kernel config 配置**
+
+```
+./compile.sh kernel-config BOARD=kickpi-k7 BRANCH=vendor
+```
+
 
 
 
