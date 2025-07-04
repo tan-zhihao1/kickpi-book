@@ -10,7 +10,7 @@ Ubuntu系统版本：2404
 
 
 
-### 获取SDK源码
+## 获取SDK源码
 
 * 网盘目录
 
@@ -41,7 +41,7 @@ $ git reset --hard
 
 
 
-### 全部编译
+## 图形化界面编译
 
 ```
 SDK$ ./compile.sh
@@ -54,7 +54,7 @@ SDK$ ./compile.sh
 > * 方向键选择配置，Enter 键确认配置，空格键选中或取消选中。
 > * 支持首字母快速检索，可键盘按下首字母，会跳转到对应首字母选项。
 
-#### 通用配置
+### 通用配置
 
 1. 选择不修改 Kernel 配置
 
@@ -76,19 +76,19 @@ SDK$ ./compile.sh
 
 ![image-20250704140947103](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140947103.png)
 
-#### Debian/Ubuntu系统配置
+### Debian/Ubuntu系统选择
 
 6. 选择 **Bookworm** 或 **Ubuntu noble 24.04** 版本（带 supported 选项 Armbian 官方支持，使用比较稳定！）
 
 ![image-20250704141035573](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141035573.png)
 
-#### 桌面版/服务器版配置
+### 桌面版/服务器版选择
 
 7. 选择系统配置，桌面版选择 desktop environment / 服务器版选择 console interface (server)
 
 ![image-20250704141221587](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141221587.png)
 
-#### 桌面选择
+### 桌面选择
 
 8.1 若第7步选择桌面版，桌面版提供了四种可支持的桌面，根据需要选择。
 
@@ -103,4 +103,12 @@ SDK$ ./compile.sh
 10. 对应类型的系统基础包选择 （空格选中或者取消选中，选中的包会自动编译进系统）
 
 ![image-20250704142123550](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704142123550.png)
+
+
+
+## 命令编译
+
+
+
+## 单独编译
 
