@@ -136,8 +136,6 @@ https://github.com/quectel-open-source/Quectel_QConnectManager_Linux
 
 
 
-
-
 ## **GCC⼯具链**
 
 **安装命令**
@@ -146,7 +144,7 @@ https://github.com/quectel-open-source/Quectel_QConnectManager_Linux
 apt update && apt install -y build-essential manpages-dev
 ```
 
-
+> 安装后，可以在主板上 gcc 编译软件
 
 
 
