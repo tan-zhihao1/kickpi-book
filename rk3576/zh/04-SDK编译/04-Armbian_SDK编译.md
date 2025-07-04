@@ -69,3 +69,11 @@ SDK$ ./compile.sh
 4. 向下选中 kickpi-k7 配置
 
 ![image-20250704140728595](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140728595.png)
+
+5. 选择 6.1 Kernel 版本（目前仅有此选项）
+
+![image-20250704140947103](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140947103.png)
+
+6. 选择 **Bookworm** 或 **Ubuntu noble 24.04** 版本（带 supported 选项 Armbian 官方支持，使用比较稳定！）
+
+![image-20250704141035573](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141035573.png)
