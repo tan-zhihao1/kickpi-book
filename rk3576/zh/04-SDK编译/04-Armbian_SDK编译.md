@@ -49,7 +49,10 @@ SDK$ ./compile.sh
 
 > 运行后，会进入图形化选择编译界面。
 >
-> 图形化界面配置须知：方向键选择配置，Enter 键确认配置，空格键选中或取消选中。
+> 图形化界面配置须知：
+>
+> * 方向键选择配置，Enter 键确认配置，空格键选中或取消选中。
+> * 支持首字母快速检索，可键盘按下首字母，会跳转到对应首字母选项。
 
 1. 选择不修改 Kernel 配置
 
@@ -62,3 +65,7 @@ SDK$ ./compile.sh
 3. 同意警告声明
 
 ![image-20250704140605228](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140605228.png)
+
+4. 向下选中 kickpi-k7 配置
+
+![image-20250704140728595](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140728595.png)
