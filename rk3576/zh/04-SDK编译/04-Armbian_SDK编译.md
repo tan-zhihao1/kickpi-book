@@ -108,6 +108,10 @@ SDK$ ./compile.sh
 
 ## 命令编译
 
+![image-20250704142554606](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704142554606.png)
+
+
+
 
 
 ## 单独编译
