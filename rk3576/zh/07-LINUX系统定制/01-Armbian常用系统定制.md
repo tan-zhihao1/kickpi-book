@@ -40,7 +40,7 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
 
 
-Ubuntu 中科大镜像源
+Ubuntu 24.04 中科大镜像源
 
 ```
 $ vim /etc/apt/sources.list.d/ubuntu.sources
