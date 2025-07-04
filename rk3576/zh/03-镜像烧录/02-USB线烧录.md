@@ -103,17 +103,17 @@
 
    ![image-20250704101553072](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704101553072.png)
 
-4. 在分区框内，鼠标右键打开配置选项，点击 **Load Config**，选择 **armbian.cfg** 文件； 
+4. 在分区框内，鼠标右键打开配置选项，点击 **Load Config**，选择 **armbian.cfg** 文件； [获取镜像文件](01-获取镜像文件.md)
 
    ![image-20250704101726253](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704101726253.png)
 
-5. 选择 Loader 分区配置，点击文件选择方框，选择 **MiniLoaderAll.bin** 文件；
+5. 选择 Loader 分区配置，点击文件选择方框，选择 **MiniLoaderAll.bin** 文件；[获取镜像文件](01-获取镜像文件.md)
 
 ![image-20250704103334992](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704103334992.png)
 
 3. 
 4. 
-5. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
+5. 点击 **Firmware**，选择要烧录的镜像 update-*.img；
 6. 
 
 ## 工厂烧录
