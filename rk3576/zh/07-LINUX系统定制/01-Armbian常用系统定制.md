@@ -14,11 +14,20 @@
 
 ## 镜像源替换
 
-Debian 系统镜像源替换
+Debian 系统镜像源
+
+```
+$ cat /etc/apt/sources.list.d/armbian.sources 
+Types: deb
+URIs: https://apt.armbian.com
+Suites: noble
+Components: main noble-utils noble-desktop
+Signed-By: /usr/share/keyrings/armbian-archive-keyring.gpg
+```
 
 
 
-Ubuntu 系统镜像源替换
+Ubuntu 系统镜像源
 
 ```
 sudo sed -i 's@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g' /etc/apt/sources.list.d/ubuntu.sources
