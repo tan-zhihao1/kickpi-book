@@ -64,7 +64,9 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 **SDK 方式配置**
 
-比如你要添加的APP名为 TestLauncher，需要将所有 TvLauncher 和 Launcher3 修改为 TestLauncher 的编译。
+
+
+添加的APP名为 TestLauncher，修改所有 TvLauncher 和 Launcher3 修改为 TestLauncher 的编译。
 
 ```diff
 --- a/vendor/aw/homlet/homlet.mk
