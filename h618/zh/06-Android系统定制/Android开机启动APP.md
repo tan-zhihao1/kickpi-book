@@ -12,9 +12,13 @@
 am start com.android.settings/com.android.settings.Settings
 ```
 
+> com.android.settings 为APP的包名
+>
+> com.android.settings.Settings 为APP界面的类名
 
 
-### **验证方法**
+
+获取APP的
 
 查看已安装应用
 
@@ -46,11 +50,8 @@ $ setprop persist.sys.bootAppPack com.android.settings
 $ setprop persist.sys.bootAppClass com.android.settings.Settings
 ```
 
-> com.android.settings 为设置APP的包名
+> 
 >
-> com.android.settings.Settings 为设置APP界面的类名
-
-
 
 **SDK 方式配置**
 
