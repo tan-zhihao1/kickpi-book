@@ -68,9 +68,13 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 ## **Launcher方式启动**
 
-此方式替换桌面，返回 HOME 为 替换后的APP
+APP 作为 Launcher 开机自启动
 
-要让 APP 作为 Launcher 开机自启动，需要在 AndroidManifest.xml 中添加两个 category
+
+
+**APP 修改**
+
+在APP 的 AndroidManifest.xml 中添加两个 category ， 重新编译生成带 Launcher 属性的APP。
 
 ```xml
 <activity android:name=".MainActivity">
