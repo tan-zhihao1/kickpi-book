@@ -144,6 +144,8 @@ Android.mk
 TestLauncher.apk
 ```
 
+Android.mk
+
 
 
 h618-android12.0\vendor\aw\public\prebuild\apk 放你的apk和Android.bp 
