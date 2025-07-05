@@ -10,9 +10,7 @@
 
 `am start` 是 Android 系统中用于启动 Activity 的命令行工具，属于 Activity Manager（`am`）的一部分。它允许你通过命令行直接启动应用的特定界面，常用于测试、自动化脚本或调试场景。
 
-示例：
-
-手动启动设置APP
+示例：手动启动设置
 
 ```
 $ adb shell am start com.android.settings/com.android.settings.Settings
