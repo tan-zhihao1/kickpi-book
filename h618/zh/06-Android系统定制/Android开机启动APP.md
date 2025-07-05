@@ -87,7 +87,7 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 
 
 
-
+**ADB 修改方式**
 
 
 
