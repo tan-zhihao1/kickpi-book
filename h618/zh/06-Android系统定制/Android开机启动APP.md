@@ -124,7 +124,7 @@ pm uninstall --user 0 com.android.tv.launcher
 
 第二部，
 
-```
+```diff
 --- a/vendor/aw/homlet/homlet.mk
 +++ b/vendor/aw/homlet/homlet.mk
 @@ -16,12 +16,12 @@ PRODUCT_PACKAGES += \
