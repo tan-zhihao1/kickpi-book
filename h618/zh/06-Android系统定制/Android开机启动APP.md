@@ -93,6 +93,14 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 
 若需要只启动一个APP，需要将原本的桌面APP删除。
 
+**卸载原桌面app**
+
+``` 
+pm uninstall --user 0 com.android.tv.launcher
+```
+
+
+
 ```
 ```
 

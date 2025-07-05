@@ -331,12 +331,6 @@ adb push （你APK的路径） /system/priv-app/
 adb reboot // 重启，android 会检索  /system/priv-app/ 的apk进行安装
 ```
 
-**卸载原桌面app**
-
-``` 
-pm uninstall --user 0 com.android.tv.launcher
-```
-
 
 
 ## APP签名文件
