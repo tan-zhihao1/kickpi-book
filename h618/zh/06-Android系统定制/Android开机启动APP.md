@@ -4,7 +4,7 @@
 
 ## KICKPI 属性启动APP
 
-此方法通过 SystemUI 服务后台启动指定的应用。
+此方法通过 SystemUI 服务后台启动指定的应用，在开机完成后。
 
 启动原理：
 
@@ -14,9 +14,9 @@ am start com.android.settings/com.android.settings.Settings
 
 > 设置自启动属性（支持此方法的系统镜像可能未输出，具体请咨询技术支持）
 
-安卓已适配自启动APP功能
 
-利用属性 persist.sys.bootAppPack / persist.sys.bootAppClass 配置，开机会启动对应APP
+
+**ADB 方式配置**
 
 ```
 $ adb shell
@@ -31,6 +31,10 @@ $ adb shell
 $ setprop persist.sys.bootAppPack com.android.settings
 $ setprop persist.sys.bootAppClass com.android.settings.Settings
 ```
+
+
+
+
 
 
 
