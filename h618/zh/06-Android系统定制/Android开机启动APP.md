@@ -54,8 +54,9 @@ $ setprop persist.sys.bootAppPack com.android.settings
 $ setprop persist.sys.bootAppClass com.android.settings.Settings
 ```
 
-> 
->
+> 配置完成后，开机都会启动 设置APP
+
+
 
 **SDK 方式配置**
 
