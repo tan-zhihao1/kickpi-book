@@ -120,7 +120,7 @@ pm uninstall --user 0 com.android.tv.launcher
 
 **SDK 修改方式**
 
-第一步，预置APK，如 TestLancher
+第一步，[预装APK](#pre_installed_app)，如 TestLancher
 
 第二部，修改所有的 TvLauncher 和 Launcher3 为预置APK的名称，如 TestLauncher
 
@@ -147,7 +147,7 @@ PRODUCT_PACKAGES += \
 
 
 
-## 预置APK<a id="Pre-installed apps"> </a>
+## 预装APK<a id="pre_installed_app"> </a>
 
 示例：
 
