@@ -4,7 +4,15 @@
 
 ## KICKPI 属性启动APP
 
-此方法通过 SystemUI 服务启动指定的应用
+此方法通过 SystemUI 服务启动指定的应用。
+
+启动原理：
+
+```
+am start com.android.settings/com.android.settings.Settings
+```
+
+
 
 设置自启动属性（支持此方法的系统镜像可能未输出，具体请咨询技术支持）
 
