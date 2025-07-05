@@ -19,6 +19,8 @@ $ adb shell am start com.android.settings/com.android.settings.Settings
 > com.android.settings 为 APP 的包名
 >
 > com.android.settings.Settings 为 APP 界面的类名
+>
+> 只需要获取到 APP 的包名和界面类名，可以通过 am start 启动
 
 
 
