@@ -129,7 +129,7 @@ pm uninstall --user 0 com.android.tv.launcher
 
 **SDK 修改方式**
 
-内置第三方 APP
+内置开机启动 APP
 
 比如新增 test.apk 
 
