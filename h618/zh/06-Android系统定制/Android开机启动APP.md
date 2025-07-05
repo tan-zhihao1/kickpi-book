@@ -87,12 +87,12 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 @@ -25,7 +25,8 @@ PRODUCT_COPY_FILES += $(PRODUCT_PREBUILT_PATH)/bImage:kernel
 
 + PRODUCT_PROPERTY_OVERRIDES += \
-+	persist.sys.bootAppPack=com.android.settings \
-+	persist.sys.bootAppClass=com.android.settings.Settings
++	persist.sys.bootAppPack=com.android.TestLauncher \
++	persist.sys.bootAppClass=com.android.TestLauncher.Activity
 
 ```
 
-
+> 确保属性有效，可使用 am start 验证。
 
 
 
