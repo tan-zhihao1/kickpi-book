@@ -30,11 +30,13 @@ $ setprop persist.sys.bootAppPack com.android.settings
 $ setprop persist.sys.bootAppClass com.android.settings.Settings
 ```
 
-> com.android.settings 为设置应用的包名
+> com.android.settings 为设置APP的包名
 >
-> com.android.settings.Settings
+> com.android.settings.Settings 为设置APP界面的类名
 
-SDK 方式配置
+
+
+**SDK 方式配置**
 
 
 
