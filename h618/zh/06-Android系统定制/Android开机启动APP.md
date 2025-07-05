@@ -18,12 +18,12 @@ am start com.android.settings/com.android.settings.Settings
 
 
 
-获取APP的
+**ADB方式获取APP的包名和界面类名**
 
 查看已安装应用
 
   ```bash
-  adb shell pm list packages | grep oranth
+  adb shell pm list packages
   ```
 
 查看应用的 Activity 信息
