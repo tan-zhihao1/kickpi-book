@@ -18,9 +18,9 @@
 $ adb shell am start com.android.settings/com.android.settings.Settings
 ```
 
-> com.android.settings 为APP的包名
+> com.android.settings 为 APP 的包名
 >
-> com.android.settings.Settings 为APP界面的类名
+> com.android.settings.Settings 为 APP 界面的类名
 
 
 
@@ -63,8 +63,6 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 
 **SDK 方式配置**
-
-
 
 添加的APP名为 TestLauncher，添加 TestLauncher 的编译。
 
@@ -115,6 +113,7 @@ pm uninstall --user 0 com.android.tv.launcher
 卸载 tablet 桌面app
 
 ```
+pm uninstall --user 0 
 ```
 
 
@@ -123,12 +122,7 @@ pm uninstall --user 0 com.android.tv.launcher
 
 内置开机启动 APP
 
-比如新增 test.apk 
 
-```
-$ ls h618-android12.0/vendor/aw/public/prebuild/apk/ 
- 
-```
 
 
 
