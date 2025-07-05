@@ -12,8 +12,6 @@
 am start com.android.settings/com.android.settings.Settings
 ```
 
-> 设置自启动属性（支持此方法的系统镜像可能未输出，具体请咨询技术支持）
-
 
 
 **ADB 方式配置**
@@ -33,6 +31,8 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 ```
 
 
+
+SDK 方式配置
 
 
 
