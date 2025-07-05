@@ -146,74 +146,24 @@ TestLauncher.apk
 
 Android.mk
 
-
-
-h618-android12.0\vendor\aw\public\prebuild\apk 放你的apk和Android.bp 
-
-Android.mk 方式
-
 ```
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
-#可以为user、eng、tests、optional，optional代表在任何版本下都编译
+
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 
-#可以为testkey、platform、shared、media、PRESIGNED（使用原签名），platform代表为系统应用
 LOCAL_CERTIFICATE := PRESIGNED
 
 LOCAL_ENFORCE_USES_LIBRARIES := false
 LOCAL_DEX_PREOPT := false
 
-LOCAL_MODULE := test
+LOCAL_MODULE := TestLauncher
 
-LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
+LOCAL_SRC_FILES := TestLauncher.apk
 
 include $(BUILD_PREBUILT)
 ```
-
-Android.bp 方式
-
-```makefile
-android_app_import {
-    name: "test",
-    apk: "test.apk",
-
-    //presigned: true,
-    certificate: "platform",  //platform表示系统应用，可设置
-    dex_preopt: {
-        enabled: true,
-    },
-
-    privileged: true, //指应用是特权应用 具有高权限
-    //product_specific: true,
-    //proprietary: true,
-    enforce_uses_libs: false,
-}
-```
-
-在/vendor/aw/homlet/homlet.mk加入编译
-
-```
-
-```
-
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-
-
 
 
