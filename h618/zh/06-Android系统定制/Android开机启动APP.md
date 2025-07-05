@@ -6,7 +6,7 @@
 
 属性配置方式是KICKPI Android 系统客制功能，非原生系统功能。（若无法正常使用，需要咨询技术支持）
 
-**am start**
+**am start 介绍**
 
 `am start` 是 Android 系统中用于启动 Activity 的命令行工具，属于 Activity Manager（`am`）的一部分。它允许你通过命令行直接启动应用的特定界面，常用于测试、自动化脚本或调试场景。
 
@@ -24,7 +24,7 @@ $ adb shell am start com.android.settings/com.android.settings.Settings
 
 
 
-**ADB方式获取APP的包名和界面类名**
+**获取APP的包名和界面类名**
 
 查看已安装应用
 
@@ -58,7 +58,7 @@ $ setprop persist.sys.bootAppPack com.android.settings
 $ setprop persist.sys.bootAppClass com.android.settings.Settings
 ```
 
-> 配置完成后，开机都会启动设置
+> 配置完成后，开机都会启动
 
 
 
