@@ -106,29 +106,16 @@ pm uninstall --user 0 com.android.tv.launcher
 
 
 
-
-
-预置时替换原生桌面，需要添加覆盖属性
-
-Android.bp 方式
-
-#overrides覆盖应用列表
-#覆盖其他应用：overrides 列表中的每个条目都是一个应用的名称，这些应用如果存在，将会被当前应用覆盖。这意味着如果设备上已经安装了列表中的任何一个启动器应用，"LauncherJingWei" 将会优先启动并接管启动器的功能。
-#优先级：通过这种方式，你可以确保你的应用在某些情况下优先于其他应用被加载和使用。这对于预装应用特别有用，因为它们通常需要替代系统默认的应用。
+SDK 修改方式
 
 ```
-   overrides: [
-        "Launcher2",
-        "Launcher3",
-        "Launcher3QuickStep",
-        "Launcher3QuickStepGo",
-    ],
-```
-
-Android.mk 方式
 
 ```
-LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep Launcher3QuickStepGo
+
+
+
+```
+
 ```
 
 
