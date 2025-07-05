@@ -127,9 +127,9 @@ pm uninstall --user 0 com.android.tv.launcher
 
 
 
-SDK 修改方式
+**SDK 修改方式**
 
-## 内置第三方 APP
+内置第三方 APP
 
 比如新增 test.apk 
 
@@ -192,73 +192,13 @@ android_app_import {
 
 
 
-## 后台调用方式
-
-此方式通过接收开机完成广播调起APK，可返回原本桌面
-
-**通过接收开机广播完成后，启动APP**
-
-1、修改增加 APP 的权限以及广播接收  AndroidManifest.xml
-
-```
-<uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
-<uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
-<application
-        <receiver
-            android:name=".MyReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter android:priority="1000">
-                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
-            </intent-filter>
-        </receiver>
-</application>
-```
 
 
 
-2、增加广播接收 MyReceiver.java
-
-```
-package com.example.myapplication;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
-
-public class MyReceiver extends BroadcastReceiver {
-    public MyReceiver() {
-    }
-
-    @Override
-    public void onReceive(Context context, Intent intent) {
-        if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {
-            Intent i = new Intent(context, MainActivity.class);
-            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(i);
-            Log.i("kickpi", "onReceive: start app !!!");
-        }
-    }
-}
-```
 
 
 
-3、预装app 到 /system/priv-app/
 
-* 方式一，编译预装到源码，参考 [内置第三方APP](# 6. 内置第三方APP)
-
-* 方式二，push 方式预装
-
-  ```
-  adb root; adb remount;
-  adb push ./app /system/priv-app/
-  ```
-
-h618 预装到 priv-app 由于权限限制会出现APP问题，需要针对添加权限， 参考 [APP特殊权限问题](## APP特殊权限问题)
 
 
 
