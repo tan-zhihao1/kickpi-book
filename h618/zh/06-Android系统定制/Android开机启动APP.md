@@ -64,22 +64,21 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 **SDK 方式配置**
 
-```
+比如你要添加的APP名为 TestLauncher，需要删除掉所有 TvLauncher 和 Launcher3 的编译，添加 TestLauncher 的编译。
+
+```diff
 --- a/vendor/aw/homlet/homlet.mk
 +++ b/vendor/aw/homlet/homlet.mk
 @@ -16,12 +16,12 @@ PRODUCT_PACKAGES += \
      DragonSN  \
      GalleryTV
 
--#PRODUCT_PACKAGES += \
-+PRODUCT_PACKAGES += \
-     TvLauncher \
+PRODUCT_PACKAGES += \
+-     TvLauncher \
      TvSettings
 
--PRODUCT_PACKAGES += \
-       Launcher3 \
-+#PRODUCT_PACKAGES += \
-       Launcher3 \
+PRODUCT_PACKAGES += \
+-       Launcher3 \
         Settings \
         SystemUI
 ```
