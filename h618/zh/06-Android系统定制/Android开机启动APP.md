@@ -66,7 +66,7 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 
 
-添加的APP名为 TestLauncher，修改所有 TvLauncher 和 Launcher3 修改为 TestLauncher 的编译。
+添加的APP名为 TestLauncher，添加 TestLauncher 的编译。
 
 ```diff
 --- a/vendor/aw/homlet/homlet.mk
@@ -76,15 +76,7 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
      GalleryTV
 
 PRODUCT_PACKAGES += \
--     	TvLauncher \
-+		TestLauncher \
-		TvSettings
-
-PRODUCT_PACKAGES += \
--       Launcher3 \
-+		TestLauncher \
-        Settings \
-        SystemUI
++		TestLauncher
 ```
 
 
@@ -134,7 +126,8 @@ pm uninstall --user 0 com.android.tv.launcher
 比如新增 test.apk 
 
 ```
-$ mkdir h618-android12.0/vendor/aw/public/prebuild/apk/ 
+$ ls h618-android12.0/vendor/aw/public/prebuild/apk/ 
+ 
 ```
 
 
