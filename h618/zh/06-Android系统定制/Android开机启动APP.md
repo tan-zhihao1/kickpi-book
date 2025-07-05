@@ -2,7 +2,7 @@
 
 
 
-## 属性启动APP
+## 属性配置方式
 
 **启动原理**
 
@@ -66,7 +66,7 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 
 
-## **Launcher方式启动**
+## **Launcher方式**
 
 APP 作为 Launcher 开机自启动
 
@@ -87,11 +87,11 @@ APP 作为 Launcher 开机自启动
 
 
 
-h618 作为Launcher 由于权限限制会出现APP问题，需要针对添加权限， 参考 [APP特殊权限问题](## APP特殊权限问题)
 
-没有桌面属性缺失问题，需要添加 上面两个 category
 
-![image-20241101094329876](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241101094329876.png)
+
+
+
 
 
 
