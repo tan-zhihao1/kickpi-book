@@ -136,9 +136,12 @@ $ ls h618-android12.0/vendor/aw/public/prebuild/apk/
 
 示例：
 
-预置 TestLauncher APK
+预置 TestLauncher APK ，创建 TestLauncher 目录并存放 Android.mk 和 APK 文件。
 
 ```
+$ ls h618-android12.0/vendor/aw/public/prebuild/TestLauncher 
+Android.mk
+TestLauncher.apk
 ```
 
 
