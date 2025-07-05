@@ -4,7 +4,7 @@
 
 ## KICKPI 属性启动APP
 
-此方法通过 SystemUI 服务启动指定的应用。
+此方法通过 SystemUI 服务后台启动指定的应用。
 
 启动原理：
 
