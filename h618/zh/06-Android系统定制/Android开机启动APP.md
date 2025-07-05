@@ -64,6 +64,26 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 **SDK 方式配置**
 
+```
+--- a/vendor/aw/homlet/homlet.mk
++++ b/vendor/aw/homlet/homlet.mk
+@@ -16,12 +16,12 @@ PRODUCT_PACKAGES += \
+     DragonSN  \
+     GalleryTV
+
+-#PRODUCT_PACKAGES += \
++PRODUCT_PACKAGES += \
+     TvLauncher \
+     TvSettings
+
+-PRODUCT_PACKAGES += \
+       Launcher3 \
++#PRODUCT_PACKAGES += \
+       Launcher3 \
+        Settings \
+        SystemUI
+```
+
 
 
 
