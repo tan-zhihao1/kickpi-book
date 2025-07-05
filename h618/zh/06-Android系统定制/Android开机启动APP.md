@@ -133,6 +133,12 @@ pm uninstall --user 0 com.android.tv.launcher
 
 比如新增 test.apk 
 
+```
+$ mkdir h618-android12.0/vendor/aw/public/prebuild/apk/ 
+```
+
+
+
 h618-android12.0\vendor\aw\public\prebuild\apk 放你的apk和Android.bp 
 
 Android.mk 方式
