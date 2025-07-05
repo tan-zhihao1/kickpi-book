@@ -1,6 +1,8 @@
 # Android开机启动APP
 
-KICKPI 属性启动APP
+
+
+## KICKPI 属性启动APP
 
 ### 设置自启动属性（支持此方法的系统镜像可能未输出，具体请咨询技术支持）
 
@@ -24,7 +26,7 @@ $ setprop persist.sys.bootAppClass com.DeviceTest.DeviceTest
 
 
 
-### **Launcher方式启动**
+## **Launcher方式启动**
 
 此方式替换桌面，返回 HOME 为 替换后的APP
 
@@ -74,7 +76,7 @@ LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep Launcher3Quic
 
 
 
-### 后台调用方式
+## 后台调用方式
 
 此方式通过接收开机完成广播调起APK，可返回原本桌面
 
