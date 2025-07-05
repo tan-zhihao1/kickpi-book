@@ -124,6 +124,26 @@ pm uninstall --user 0 com.android.tv.launcher
 
 第二部，
 
+```
+--- a/vendor/aw/homlet/homlet.mk
++++ b/vendor/aw/homlet/homlet.mk
+@@ -16,12 +16,12 @@ PRODUCT_PACKAGES += \
+     DragonSN  \
+     GalleryTV
+
+-#PRODUCT_PACKAGES += \
++PRODUCT_PACKAGES += \
+     TvLauncher \
+     TvSettings
+
+-PRODUCT_PACKAGES += \
+       Launcher3 \
++#PRODUCT_PACKAGES += \
+       Launcher3 \
+        Settings \
+        SystemUI
+```
+
 
 
 
