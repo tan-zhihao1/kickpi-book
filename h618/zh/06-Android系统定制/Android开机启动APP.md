@@ -132,6 +132,12 @@ $ ls h618-android12.0/vendor/aw/public/prebuild/apk/
 
 
 
+## 预置APK
+
+示例：
+
+预置 TestLauncher APK
+
 h618-android12.0\vendor\aw\public\prebuild\apk 放你的apk和Android.bp 
 
 Android.mk 方式
