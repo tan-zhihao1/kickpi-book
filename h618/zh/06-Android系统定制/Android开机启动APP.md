@@ -120,9 +120,9 @@ pm uninstall --user 0 com.android.tv.launcher
 
 **SDK 修改方式**
 
-第一步，预置APK
+第一步，预置APK，如 TestLancher
 
-第二部，
+第二部，修改所有的 TvLauncher 和 Launcher3 为预置APK的名称，如 TestLauncher
 
 ```diff
 --- a/vendor/aw/homlet/homlet.mk
@@ -131,15 +131,14 @@ pm uninstall --user 0 com.android.tv.launcher
      DragonSN  \
      GalleryTV
 
--#PRODUCT_PACKAGES += \
-+PRODUCT_PACKAGES += \
-     TvLauncher \
-     TvSettings
+PRODUCT_PACKAGES += \
+-     	TvLauncher \
++		TestLauncher \
+		TvSettings
 
--PRODUCT_PACKAGES += \
-       Launcher3 \
-+#PRODUCT_PACKAGES += \
-       Launcher3 \
+PRODUCT_PACKAGES += \
+-      	Launcher3 \
++		TestLauncher \
         Settings \
         SystemUI
 ```
