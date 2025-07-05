@@ -141,10 +141,10 @@ $ ls h618-android12.0/vendor/aw/public/prebuild/apk/
 ```
 $ ls h618-android12.0/vendor/aw/public/prebuild/TestLauncher 
 Android.mk
-TestLauncher.apk
+TestLauncher_20250101.apk
 ```
 
-Android.mk
+Android.mk 文件
 
 ```
 LOCAL_PATH := $(call my-dir)
@@ -161,7 +161,7 @@ LOCAL_DEX_PREOPT := false
 
 LOCAL_MODULE := TestLauncher
 
-LOCAL_SRC_FILES := TestLauncher.apk
+LOCAL_SRC_FILES := TestLauncher_20250101.apk
 
 include $(BUILD_PREBUILT)
 ```
