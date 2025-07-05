@@ -64,7 +64,9 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 **SDK 方式配置**
 
-添加的APP名为 TestLauncher，添加 TestLauncher 的编译。
+第一步，[预装APK](#pre_installed_app)，如 TestLancher
+
+第二步，添加的APP名为 TestLauncher，添加 TestLauncher 的编译。
 
 ```diff
 --- a/vendor/aw/homlet/homlet.mk
@@ -76,6 +78,8 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 +PRODUCT_PACKAGES += \
 +		TestLauncher
 ```
+
+第三部，
 
 
 
