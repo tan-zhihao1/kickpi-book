@@ -58,7 +58,7 @@ $ setprop persist.sys.bootAppPack com.android.settings
 $ setprop persist.sys.bootAppClass com.android.settings.Settings
 ```
 
-> 配置完成后，开机都会启动
+> 配置完成后，每次开机都会启动
 
 
 
