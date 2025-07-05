@@ -73,7 +73,7 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
      DragonSN  \
      GalleryTV
 
-PRODUCT_PACKAGES += \
++PRODUCT_PACKAGES += \
 +		TestLauncher
 ```
 
@@ -120,7 +120,9 @@ pm uninstall --user 0 com.android.tv.launcher
 
 **SDK 修改方式**
 
-内置开机启动 APP
+第一步，预置APK
+
+第二部，
 
 
 
