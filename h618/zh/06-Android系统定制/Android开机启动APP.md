@@ -14,6 +14,22 @@ am start com.android.settings/com.android.settings.Settings
 
 
 
+### **验证方法**
+
+查看已安装应用
+
+  ```bash
+  adb shell pm list packages | grep oranth
+  ```
+
+查看应用的 Activity 信息
+
+```bash
+adb shell dumpsys package com.android.settings | grep -i activity
+```
+
+
+
 **ADB 方式配置**
 
 ```
