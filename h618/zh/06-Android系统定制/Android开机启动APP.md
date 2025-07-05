@@ -12,9 +12,7 @@
 am start com.android.settings/com.android.settings.Settings
 ```
 
-
-
-设置自启动属性（支持此方法的系统镜像可能未输出，具体请咨询技术支持）
+> 设置自启动属性（支持此方法的系统镜像可能未输出，具体请咨询技术支持）
 
 安卓已适配自启动APP功能
 
@@ -30,8 +28,8 @@ $ setprop persist.sys.bootAppClass $classname
 
 ```
 $ adb shell
-$ setprop persist.sys.bootAppPack com.DeviceTest
-$ setprop persist.sys.bootAppClass com.DeviceTest.DeviceTest
+$ setprop persist.sys.bootAppPack com.android.settings
+$ setprop persist.sys.bootAppClass com.android.settings.Settings
 ```
 
 
