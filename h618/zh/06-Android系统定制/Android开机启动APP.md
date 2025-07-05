@@ -79,18 +79,17 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 +		TestLauncher
 ```
 
-第三步，
+第三步，添加属性配置
 
-```
+```diff
 --- a/device/softwinner/apollo/apollo_p2.mk
 +++ b/device/softwinner/apollo/apollo_p2.mk
 @@ -25,7 +25,8 @@ PRODUCT_COPY_FILES += $(PRODUCT_PREBUILT_PATH)/bImage:kernel
- PRODUCT_PROPERTY_OVERRIDES += \
-     ro.vendor.spk_dul.used=false \
-     ro.vendor.audio.eq=false \
--    service.adb.tcp.port=5555
-+    service.adb.tcp.port=5555 \
-+    persist.sys.bootonDeviceTest=0
+
++ PRODUCT_PROPERTY_OVERRIDES += \
++	persist.sys.bootAppPack=com.android.settings \
++	persist.sys.bootAppClass=com.android.settings.Settings
+
 ```
 
 
