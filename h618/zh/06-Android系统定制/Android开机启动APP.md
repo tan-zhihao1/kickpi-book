@@ -53,7 +53,7 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 +		TestLauncher
 ```
 
-第四步，添加属性配置
+第四步，添加包名和类名属性配置
 
 ```diff
 --- a/device/softwinner/apollo/apollo_p2.mk
@@ -65,8 +65,6 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 +	persist.sys.bootAppClass=com.android.TestLauncher.Activity
 
 ```
-
-
 
 
 
