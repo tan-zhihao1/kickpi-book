@@ -24,8 +24,12 @@
 
 接口1：40 Pin 屏接口（通过 FPC 排线连接 MIPI 屏 + I2C 触摸框）
 
-接口2：10 Pin 触摸接口（通过 FPC 排线连接 I2C 触摸框接口）
+接口2：6 Pin 触摸接口（通过 FPC 排线连接 I2C 触摸框接口）
 
-接口3：30 Pin 屏接口（通过 FPC 排线连接主板接口）
+接口3：10 Pin 触摸接口（通过 FPC 排线连接 I2C 触摸框接口）
+
+接口4：30 Pin 屏接口（通过 FPC 排线连接 rockchip 瑞芯微系列主板接口）
+
+接口5：30 Pin 屏接口（通过 FPC 排线连接 allwinner 全志系列主板接口）
 
 ![image-20250707145122477](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250707145122477.png)
