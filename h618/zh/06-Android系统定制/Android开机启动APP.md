@@ -10,6 +10,8 @@
 
 第二步，获取对应APP的包名和页面类名；[点击查看获取方式和测试方法](#am_start_app)
 
+第三步，配置属性；（）
+
 ```
 $ adb shell
 $ setprop persist.sys.bootAppPack $packname
@@ -25,8 +27,6 @@ $ adb shell
 $ setprop persist.sys.bootAppPack com.android.settings
 $ setprop persist.sys.bootAppClass com.android.settings.Settings
 ```
-
-> 配置完成后，每次开机都会启动
 
 
 
