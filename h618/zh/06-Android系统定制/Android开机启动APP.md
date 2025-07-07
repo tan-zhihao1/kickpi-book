@@ -34,6 +34,12 @@ $ setprop persist.sys.bootAppPack com.android.settings
 $ setprop persist.sys.bootAppClass com.android.settings.Settings
 ```
 
+第四步，重启；
+
+```
+$ adb reboot
+```
+
 
 
 **SDK 方式配置（修改源码定制镜像）**
@@ -219,6 +225,8 @@ $ adb shell am start com.android.settings/com.android.settings.Settings
   ```
 $ adb shell pm list packages
   ```
+
+
 
 查看应用的 Activity 信息
 
