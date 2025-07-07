@@ -8,7 +8,7 @@
 
 **获取 APP 的包名和页面类名**
 
- [点击查看获取方式](#am_start_app)
+利用 am start 方式调用APP，[点击查看获取方式和测试方法](#am_start_app)
 
 
 
