@@ -1,8 +1,6 @@
 # Android开机启动APP
 
-## 属性配置方式
-
-属性配置方式是KICKPI Android 系统客制功能，非原生系统功能。（若无法正常使用，需要咨询技术支持）
+## 命令行启动APP
 
 **am start 介绍**
 
@@ -27,7 +25,7 @@ $ adb shell am start com.android.settings/com.android.settings.Settings
 查看已安装应用
 
   ```
-  $ adb shell pm list packages
+$ adb shell pm list packages
   ```
 
 查看应用的 Activity 信息
@@ -35,6 +33,12 @@ $ adb shell am start com.android.settings/com.android.settings.Settings
 ```
 $ adb shell dumpsys package com.android.settings | grep -i activity
 ```
+
+
+
+## 属性配置方式
+
+属性配置方式是KICKPI Android 系统客制功能，非原生系统功能。（若无法正常使用，需要咨询技术支持）
 
 
 
