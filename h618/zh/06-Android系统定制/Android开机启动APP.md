@@ -128,7 +128,7 @@ pm uninstall --user 0 com.android.tv.launcher
 卸载 tablet 桌面app
 
 ```
-
+pm uninstall --user 0 com.android.launcher3
 ```
 
 
