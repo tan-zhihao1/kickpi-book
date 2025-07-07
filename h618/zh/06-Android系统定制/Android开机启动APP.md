@@ -164,9 +164,11 @@ PRODUCT_PACKAGES += \
 
 ## 预装APK<a id="pre_installed_app"> </a>
 
-示例：
+示例：预置 TestLauncher APK 
 
-预置 TestLauncher APK ，创建 TestLauncher 目录并存放 Android.mk 和 APK 文件。
+第一步，创建 TestLauncher 目录
+
+第二步，存放 Android.mk 和 APK 文件。
 
 ```
 $ ls h618-android12.0/vendor/aw/public/prebuild/TestLauncher 
@@ -174,7 +176,7 @@ Android.mk
 TestLauncher_20250101.apk
 ```
 
-Android.mk 文件
+Android.mk 文件编写示例：
 
 ```
 LOCAL_PATH := $(call my-dir)
