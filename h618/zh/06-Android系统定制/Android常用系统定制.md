@@ -255,7 +255,7 @@ const std::string readLocale()
 
 
 
-## 内置第三方 APP
+## 预装APP
 
 比如新增 test.apk 
 
