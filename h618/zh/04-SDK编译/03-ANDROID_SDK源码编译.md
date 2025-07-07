@@ -199,16 +199,15 @@ android 为惰性编译，直接替换后编译，一些APP、文件不一定编
 
 
 
-## 全部编译替换不生效问题
+### 全部编译替换不生效问题
 
-由于惰性编译，一些编译目标或依赖直接替换文件，在编译时不会拷贝生效
+由于惰性编译，一些编译目标或依赖直接替换文件，在编译时不会拷贝生效。
 
-需要先手动清除，再进行编译
+编译前需要先手动清除：
 
 ```
-source build/envsetup.sh
-lunch apollo_p2-userdebug
-make installclean -j32
-./build.sh
+SDK$ source build/envsetup.sh
+SDK$ lunch apollo_p2-userdebug
+SDK$ make installclean -j32
 ```
 
