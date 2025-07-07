@@ -19,6 +19,8 @@ K5C 主板支持多种供电方式，注意硬件版本是否支持！
 
 ## Type-C 供电
 
+供电使用适配器不用HUB和电脑USB口，否则可能供电不足导致系统异常
+
 ![image-20250508092317387](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250508092317387.png)
 
 V1.1版本板卡需要去掉板卡背后的0欧电阻
