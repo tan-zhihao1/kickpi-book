@@ -72,7 +72,7 @@ packages/apps/Launcher3/
 
 ## 屏幕方向与旋转
 
-**ADB旋转屏幕**
+**ADB命令旋转屏幕**
 
 支持使用adb命令进行旋转
 
@@ -92,7 +92,7 @@ adb shell settings put system user_rotation 3
 
 
 
-**默认修改显示方向**
+**软件默认修改显示方向**
 
 ```
 (SDK)$ vim android/device/softwinner/ceres-c3/ceres_c3.mk
