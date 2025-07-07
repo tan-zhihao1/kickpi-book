@@ -269,12 +269,12 @@ test.apk
 Android.mk (Android.bp)
 ```
 
-Android.mk 方式
+Android.mk 
 
 ```
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
-#可以为user、eng、tests、optional，optional代表在任何版本下都编译
+
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -297,7 +297,7 @@ include $(BUILD_PREBUILT)
 >
 > `LOCAL_SRC_FILES` 模块源码路径
 
-Android.bp 方式
+Android.bp 
 
 ```makefile
 android_app_import {
@@ -310,18 +310,19 @@ android_app_import {
         enabled: true,
     },
 
-    privileged: true, //指应用是特权应用 具有高权限
+    privileged: true,
     //product_specific: true,
     //proprietary: true,
     enforce_uses_libs: false,
 }
 ```
 
-在/vendor/aw/homlet/homlet.mk加入编译
+第三步，添加模块编译（对应模块名称）
 
-```makefile
-PRODUCT_PACKAGES += \
-       test
+```diff
+$ vim /vendor/aw/homlet/homlet.mk
++ PRODUCT_PACKAGES += \
++       test
 ```
 
 
