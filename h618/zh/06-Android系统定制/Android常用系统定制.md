@@ -343,14 +343,6 @@ out/host/linux-x86/framework/signak.jar
 
 
 
-
-
-
-
-## HDMI 固定输出分辨率
-
-
-
 ## HDMI TX
 
 hdmi tx 属性结点
