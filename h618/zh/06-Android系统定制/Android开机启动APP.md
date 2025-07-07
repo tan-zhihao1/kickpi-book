@@ -1,14 +1,12 @@
 # Android开机启动APP
 
-
-
 ## 属性配置方式
 
 属性配置方式是KICKPI Android 系统客制功能。（若无法正常使用，需要咨询技术支持）
 
 **获取 APP 的包名和页面类名**
 
-利用 am start 方式调用APP，[点击查看获取方式和测试方法](#am_start_app)
+利用 am start 方式调用APP，第一步需要获取对应APP的包名和页面类名，[点击查看获取方式和测试方法](#am_start_app)
 
 
 
