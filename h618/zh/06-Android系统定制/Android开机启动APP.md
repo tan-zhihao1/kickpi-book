@@ -123,9 +123,7 @@ $ adb reboot
 
 
 
-
-
-**SDK 修改方式**
+**SDK 修改方式（修改源码定制镜像）**
 
 第一步，[预装APK](#pre_installed_app)，如 TestLancher
 
