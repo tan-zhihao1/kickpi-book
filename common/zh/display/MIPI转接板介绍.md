@@ -39,3 +39,10 @@
 接口5：30 Pin 屏接口（通过 FPC 排线连接 allwinner 全志系列主板接口）
 
 ![image-20250707145122477](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250707145122477.png)
+
+
+
+## 常见问题
+
+### 购买了一块MIPI屏幕和瑞芯微和全志的两块主板，怎么两块主板都能点亮屏幕？
+
