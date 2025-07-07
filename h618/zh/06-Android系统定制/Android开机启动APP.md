@@ -223,7 +223,8 @@ $ adb shell pm list packages
 查看应用的 Activity 信息
 
 ```
-$ adb shell dumpsys package $packname | grep -i activity
+$ adb shell 
+$ dumpsys package $packname | grep -i activity
 ```
 
 示例：
