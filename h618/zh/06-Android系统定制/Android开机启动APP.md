@@ -8,7 +8,7 @@
 
 **获取 APP 的包名和页面类名**
 
- [am start 验证](#am_start_app)
+ [获取APP的包名的页面类名](#am_start_app)
 
 
 
