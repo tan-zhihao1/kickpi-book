@@ -279,7 +279,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 
-#可以为testkey、platform、shared、media、PRESIGNED（使用原签名），platform代表为系统应用
 LOCAL_CERTIFICATE := PRESIGNED
 
 LOCAL_ENFORCE_USES_LIBRARIES := false
@@ -291,6 +290,8 @@ LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
 
 include $(BUILD_PREBUILT)
 ```
+
+> `LOCAL_CERTIFICATE` 支持 testkey、platform（系统签名）、shared、media、PRESIGNED（保留原签名）
 
 Android.bp 方式
 
