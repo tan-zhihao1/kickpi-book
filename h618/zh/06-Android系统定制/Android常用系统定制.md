@@ -292,6 +292,10 @@ include $(BUILD_PREBUILT)
 ```
 
 > `LOCAL_CERTIFICATE` 支持 testkey、platform（系统签名）、shared、media、PRESIGNED（保留原签名）
+>
+> `LOCAL_MODULE` 模块名称
+>
+> `LOCAL_SRC_FILES` 模块源码路径
 
 Android.bp 方式
 
