@@ -66,6 +66,8 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 ```
 
+第五步，编译SDK，烧录镜像；
+
 
 
 ## **Launcher方式**
@@ -125,9 +127,9 @@ $ adb reboot
 
 **SDK 修改方式（修改源码定制镜像）**
 
-第一步，[预装APK](#pre_installed_app)，如 TestLancher
+第一步，[预装APK](#pre_installed_app)，如 TestLancher；
 
-第二部，修改所有的 TvLauncher 和 Launcher3 为预置APK的名称，如 TestLauncher
+第二步，修改所有的 TvLauncher 和 Launcher3 为预置APK的名称，如 TestLauncher；
 
 ```diff
 --- a/vendor/aw/homlet/homlet.mk
@@ -148,7 +150,7 @@ PRODUCT_PACKAGES += \
         SystemUI
 ```
 
-
+第三步，编译SDK，烧录镜像；
 
 
 
