@@ -345,21 +345,6 @@ out/host/linux-x86/framework/signak.jar
 
 
 
-## 全编替换不生效问题
-
-由于惰性编译，一些编译目标或依赖直接替换文件，在编译时不会拷贝生效
-
-需要先手动清除，再进行编译
-
-```
-source build/envsetup.sh
-lunch apollo_p2-userdebug
-make installclean -j32
-./build.sh
-```
-
-
-
 
 
 ## HDMI 固定输出分辨率

@@ -185,7 +185,7 @@ board-k2b.dts  board-k2c.dts
 
 ## 常见问题
 
-### APP 、文件编译不生效问题
+### APP 文件编译不生效问题
 
 android 为惰性编译，直接替换后编译，一些APP、文件不一定编译到镜像中
 
@@ -196,3 +196,19 @@ android 为惰性编译，直接替换后编译，一些APP、文件不一定编
 2. rm out/target/product/apollo-p2/xxx/xxx
 
 3. 编译的条件发生变化（比如文件名、APK名）
+
+
+
+## 全编替换不生效问题
+
+由于惰性编译，一些编译目标或依赖直接替换文件，在编译时不会拷贝生效
+
+需要先手动清除，再进行编译
+
+```
+source build/envsetup.sh
+lunch apollo_p2-userdebug
+make installclean -j32
+./build.sh
+```
+
