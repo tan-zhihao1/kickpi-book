@@ -72,7 +72,7 @@ packages/apps/Launcher3/
 
 ## 默认屏幕方向
 
-### 默认修改显示方向
+**默认修改显示方向**
 
 ```
 (SDK)$ android/device/softwinner/ceres-c3/ceres_c3.mk
@@ -497,27 +497,9 @@ h618_data\5-DevelopmentTools开发工具\ADB Screen Cast 投屏
 
 ![image-20250303104027819](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250303104027819.png)
 
-## 旋转功能
-
-支持使用adb命令进行旋转
-
-```
-// 正常显示
-adb shell settings put system user_rotation 0
-
-// 90°
-adb shell settings put system user_rotation 1
-
-// 180°
-adb shell settings put system user_rotation 2
-
-// 270°
-adb shell settings put system user_rotation 3
-```
-
 
 
 ## 常见问题
 
-1. 
+
 
