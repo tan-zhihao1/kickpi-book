@@ -6,6 +6,12 @@
 
 属性配置方式是KICKPI Android 系统客制功能。（若无法正常使用，需要咨询技术支持）
 
+**获取 APP 的包名和页面类名**
+
+ [am start 验证](#am_start_app)
+
+
+
 **ADB 方式配置**
 
 ```
@@ -58,7 +64,7 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 ```
 
-> 确保属性有效，可使用 [am start 验证](#am_start_app)
+
 
 
 
