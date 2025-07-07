@@ -4,13 +4,7 @@
 
 属性配置方式是KICKPI Android 系统客制功能。（若无法正常使用，需要咨询技术支持）
 
-**获取 APP 的包名和页面类名**
-
-利用 am start 方式调用APP，第一步需要获取对应APP的包名和页面类名，
-
-
-
-**ADB 方式配置**
+**ADB 方式配置（无需修改源码）**
 
 第一步，安装需要开机启动的APP；
 
@@ -36,7 +30,7 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 
 
-**SDK 方式配置**
+**SDK 方式配置（修改源码定制镜像）**
 
 第一步，[预装APK](#pre_installed_app)，如 TestLancher
 
