@@ -16,11 +16,15 @@
 
 接口3：30 Pin 屏接口（通过 FPC 排线连接主板接口）
 
-![image-20250707145025437](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250707145025437.png)
+![image-20250707145025437](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250707145025437.png)
 
 
 
 ## V1.3 MIPI 转接板
+
+> V1.3 MIPI 转接板添加了全志系列主板的支持，并扩展了 6 PIN的 I2C 触摸框支持。
+>
+> 
 
 接口1：40 Pin 屏接口（通过 FPC 排线连接 MIPI 屏 + I2C 触摸框）
 
@@ -32,4 +36,4 @@
 
 接口5：30 Pin 屏接口（通过 FPC 排线连接 allwinner 全志系列主板接口）
 
-![image-20250707145122477](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250707145122477.png)
+![image-20250707145122477](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250707145122477.png)
