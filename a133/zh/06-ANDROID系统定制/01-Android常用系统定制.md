@@ -94,6 +94,12 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 >
 > 图片分辨率 - 小于实际屏幕分辨率
 
+## 系统壁纸
+
+``` 
+android\device\softwinner\ceres-c3\overlay\frameworks\base\core\res\res\drawable-sw720dp-nodpi\default_wallpaper.jpg
+```
+
 
 
 ## 开机动画
