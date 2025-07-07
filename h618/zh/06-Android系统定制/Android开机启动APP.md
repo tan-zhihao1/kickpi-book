@@ -226,3 +226,9 @@ $ adb shell pm list packages
 $ adb shell dumpsys package com.android.settings | grep -i activity
 ```
 
+示例：
+
+```
+$ adb shell dumpsys package com.android.settings | grep -i activity
+```
+
