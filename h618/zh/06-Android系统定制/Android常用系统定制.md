@@ -304,8 +304,8 @@ android_app_import {
     name: "test",
     apk: "test.apk",
 
-    //presigned: true,
-    certificate: "platform",  //platform表示系统应用，可设置
+    presigned: true,
+    //certificate: "platform", 
     dex_preopt: {
         enabled: true,
     },
@@ -316,6 +316,10 @@ android_app_import {
     enforce_uses_libs: false,
 }
 ```
+
+> `name` 模块名称
+>
+> `apk` 模块源码路径
 
 第三步，添加模块编译（对应模块名称）
 
