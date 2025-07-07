@@ -1,6 +1,6 @@
-## 2. Android SDK编译
+# 2. Android SDK编译
 
-### SDK介绍
+## SDK介绍
 
 Android SDK版本信息
 
@@ -10,7 +10,7 @@ Android系统版本：12.0
 
 
 
-### 获取SDK源码
+## 获取SDK源码
 
 * 网盘下载目录
 
@@ -58,7 +58,7 @@ $ git reset --hard
 
 
 
-### 首次编译环境配置
+## 首次编译环境配置
 
 首次编译需要配置一下编译环境，后续不改变sdk位置，则无需重复配置
 
@@ -130,7 +130,7 @@ Which would you like? [0]:
 
 
 
-### 编译完整镜像
+## 编译完整镜像
 
 ```
 $ ./build.sh
@@ -140,7 +140,7 @@ $ ./build.sh
 
 注意：如果编译Android的时候失败了，没有明显的报错，可以修改build.sh 里面Android编译的进程数，将make -j32减小至你设备的实际情况。
 
-### 单独编译分区镜像
+## 单独编译分区镜像
 
 **单独编译Uboot**
 
@@ -158,7 +158,7 @@ $ ./build.sh kernel
 
 > 镜像生成目录：longan/out/h618_android12_p2_uart0.img
 
-### 配置内核
+**配置内核**
 
 ``` 
 cd longan
@@ -174,7 +174,7 @@ $ ./build.sh android
 
 > 镜像生成目录：longan/out/h618_android12_p2_uart0.img
 
-### 设备树路径
+**设备树路径**
 
 ``` shell
 h618-android12.0/longan/device/config/chips/h618/configs/p2/linux-5.4/
