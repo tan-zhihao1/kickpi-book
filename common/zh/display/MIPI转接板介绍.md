@@ -8,6 +8,8 @@
 
 ## V1.0 MIPI 转接板
 
+> V1.0 仅支持 rockchip 方案主板 （K1 / K1B / K3 / K7 / K8）
+
 接口1：40 Pin 屏接口（通过 FPC 排线连接 MIPI 屏 + I2C 触摸框）
 
 接口2：10 Pin 触摸接口（通过 FPC 排线连接 I2C 触摸框接口）
@@ -19,5 +21,11 @@
 
 
 ## V1.3 MIPI 转接板
+
+接口1：40 Pin 屏接口（通过 FPC 排线连接 MIPI 屏 + I2C 触摸框）
+
+接口2：10 Pin 触摸接口（通过 FPC 排线连接 I2C 触摸框接口）
+
+接口3：30 Pin 屏接口（通过 FPC 排线连接主板接口）
 
 ![image-20250707145122477](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250707145122477.png)
