@@ -348,12 +348,14 @@ out/host/linux-x86/framework/signak.jar
 目前桌面级APP是特殊应用，如果添加特殊权限，可能会出现系统无法起来问题，需要抓取APP相关log日志
 
 ```shell
-# logcat | grep com.example.myapplication3（Androidapk的包名）
+# logcat | grep com.example.myapplication3
 09-14 10:36:06.662  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication3 (/system/priv-app/LauncherJingWei) not in privapp-permissions allowlist
 09-14 10:36:08.437  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication3 (/system/priv-app/LauncherJingWei) not in privapp-permissions allowlist
 ```
 
-
+> com.example.myapplication3 为（Androidapk的包名）
+>
+> android.permission.INSTALL_PACKAGES 为预装APP缺少的权限
 
 根据log信息添加权限
 
