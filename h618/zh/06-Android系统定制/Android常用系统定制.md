@@ -162,7 +162,7 @@ PRODUCT_COPY_FILES += \
 
 ## 开机启动APP
 
-[Android开机启动APP](Android开机启动APP#booton_app)
+[点击查看Android开机启动APP文档](Android开机启动APP#booton_app)
 
 
 
