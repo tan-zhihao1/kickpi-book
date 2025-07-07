@@ -72,7 +72,7 @@ packages/apps/Launcher3/
 
 ## 屏幕方向与旋转
 
-## 旋转功能
+**ADB旋转屏幕**
 
 支持使用adb命令进行旋转
 
@@ -105,13 +105,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
     #ro.surface_flinger.primary_display_orientation=ORIENTATION_270
 ```
 
-将ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 
-修改为
 
-ro.surface_flinger.primary_display_orientation=ORIENTATION_90
+示例：即可修改屏幕默认显示旋转90°
 
-即可修改屏幕默认显示旋转90°
+```
+(SDK)$ vim android/device/softwinner/ceres-c3/ceres_c3.mk
+
+# set primary display orientation to 270
+PRODUCT_PROPERTY_OVERRIDES += \
+- ro.surface_flinger.primary_display_orientation=ORIENTATION_0
++ ro.surface_flinger.primary_display_orientation=ORIENTATION_90
+```
+
+
+
+
 
 
 
