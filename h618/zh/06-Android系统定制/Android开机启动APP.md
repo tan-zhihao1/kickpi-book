@@ -1,4 +1,4 @@
-# Android开机启动APP<a id="am_start_app"> </a>
+# Android开机启动APP<a id="booton_app"> </a>
 
 ## 属性配置方式
 
