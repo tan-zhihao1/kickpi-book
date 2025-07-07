@@ -198,6 +198,10 @@ LOCAL_SRC_FILES := TestLauncher_20250101.apk
 include $(BUILD_PREBUILT)
 ```
 
+>`LOCAL_MODULE` 指定编译模块的名称
+>
+>`LOCAL_SRC_FILES` 指定编译文件的路径
+
 
 
 ## 命令行启动APP<a id="am_start_app"> </a>
@@ -227,8 +231,6 @@ $ adb shell am start com.android.settings/com.android.settings.Settings
   ```
 $ adb shell pm list packages
   ```
-
-
 
 查看应用的 Activity 信息
 
