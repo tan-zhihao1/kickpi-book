@@ -107,8 +107,6 @@ ro.surface_flinger.primary_display_orientation=ORIENTATION_90
 
 
 
-
-
 ## 开机LOGO
 
 logo 替换路径
@@ -156,6 +154,12 @@ PRODUCT_COPY_FILES += \
 ```
 
 * 烧录镜像后第一次启动的开机动画是原生Android，需要重启显示替换的开机动画
+
+
+
+## 开机启动APP
+
+[Android开机启动APP](Android开机启动APP#booton_app)
 
 
 
@@ -315,20 +319,6 @@ android_app_import {
 ```makefile
 PRODUCT_PACKAGES += \
        test
-```
-
-
-
-
-
-
-
-## APK priv-app push 替换
-
-```
-adb root; adb remount;  // 进行root 可以修改只读分区
-adb push （你APK的路径） /system/priv-app/
-adb reboot // 重启，android 会检索  /system/priv-app/ 的apk进行安装
 ```
 
 
