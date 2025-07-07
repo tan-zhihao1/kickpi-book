@@ -68,8 +68,6 @@ packages/apps/Launcher3/
 
 
 
-
-
 ## 屏幕方向与旋转
 
 **ADB命令旋转屏幕**
@@ -117,10 +115,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 
 
-
-
-
-
 ## 开机LOGO
 
 logo 替换路径
@@ -137,37 +131,32 @@ longan/device/config/chips/h618/boot-resource/boot-resource/bootlogo.bmp
 
 两种文件同时存在播放 mp4 优先级比 zip 高 ，具体优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
 
-
-
-修改路径
+第一步，存放动画文件（zip 或 mp4 格式）
 
 ```
-device/softwinner/apollo/common/media/config.mk
-```
-
-``` 
 device/softwinner/apollo/common/media/bootanimation/bootanimation.zip
+device/softwinner/apollo/common/media/bootanimation/bootanimation.mp4
 ```
 
-
+第二步，修改编译配置
 
 bootanimation.zip 格式
 
-```makefile
+```diff
+SDK$ vim device/softwinner/apollo/common/media/config.mk
 PRODUCT_COPY_FILES += \
-     $(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
+-		$(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
++     	$(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
 ```
-
-
 
 bootanimation.mp4 格式
 
-```makefile
+```diff
+SDK$ vim device/softwinner/apollo/common/media/config.mk
 PRODUCT_COPY_FILES += \
-    $(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
+-		$(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
++    	$(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
 ```
-
-* 烧录镜像后第一次启动的开机动画是原生Android，需要重启显示替换的开机动画
 
 
 
