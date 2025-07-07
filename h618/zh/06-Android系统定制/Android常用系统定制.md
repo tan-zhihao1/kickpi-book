@@ -162,7 +162,7 @@ PRODUCT_COPY_FILES += \
 
 ## 开机启动APP
 
-[点击查看Android开机启动APP文档](Android开机启动APP#booton_app)
+[Android系统定制/Android开机启动APP](Android开机启动APP#booton_app)
 
 
 
@@ -171,7 +171,7 @@ PRODUCT_COPY_FILES += \
 persist.sys.locale 属性
 
 ```
-device/softwinner/apollo/apollo_p2.mk
+$ vim device/softwinner/apollo/apollo_p2.mk
 	PRODUCT_PROPERTY_OVERRIDES += \
 		persist.sys.locale=zh-CN
 ```
