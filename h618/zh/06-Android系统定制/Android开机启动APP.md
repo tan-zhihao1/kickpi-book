@@ -58,7 +58,7 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 ```
 
-> 确保属性有效，可使用 am start 验证。
+> 确保属性有效，可使用 [am start 验证](#am_start_app)
 
 
 
