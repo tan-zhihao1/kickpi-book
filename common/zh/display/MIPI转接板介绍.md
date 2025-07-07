@@ -20,7 +20,7 @@
 
 
 
-## V1.3 MIPI 转接板
+## V1.3 MIPI 转接板<a id="mipi_board_v13"> </a>
 
 > V1.3 MIPI 转接板添加了全志系列主板的支持，并扩展了 6 PIN的 I2C 触摸框支持。
 >
