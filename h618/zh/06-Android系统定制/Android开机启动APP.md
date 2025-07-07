@@ -1,39 +1,5 @@
 # Android开机启动APP
 
-## 命令行启动APP
-
-**am start 介绍**
-
-`am start` 是 Android 系统中用于启动 Activity 的命令行工具，属于 Activity Manager（`am`）的一部分。它允许你通过命令行直接启动应用的特定界面，常用于测试、自动化脚本或调试场景。
-
-示例：手动启动设置
-
-```
-$ adb shell am start com.android.settings/com.android.settings.Settings
-```
-
-> com.android.settings 为 APP 的包名
->
-> com.android.settings.Settings 为 APP 界面的类名
->
-> 只需要获取到 APP 的包名和界面类名，可以通过 am start 启动
-
-
-
-**获取APP的包名和界面类名**
-
-查看已安装应用
-
-  ```
-$ adb shell pm list packages
-  ```
-
-查看应用的 Activity 信息
-
-```
-$ adb shell dumpsys package com.android.settings | grep -i activity
-```
-
 
 
 ## 属性配置方式
@@ -196,5 +162,41 @@ LOCAL_MODULE := TestLauncher
 LOCAL_SRC_FILES := TestLauncher_20250101.apk
 
 include $(BUILD_PREBUILT)
+```
+
+
+
+## 命令行启动APP<a id="am_start_app"> </a>
+
+**am start 介绍**
+
+`am start` 是 Android 系统中用于启动 Activity 的命令行工具，属于 Activity Manager（`am`）的一部分。它允许你通过命令行直接启动应用的特定界面，常用于测试、自动化脚本或调试场景。
+
+示例：手动启动设置
+
+```
+$ adb shell am start com.android.settings/com.android.settings.Settings
+```
+
+> com.android.settings 为 APP 的包名
+>
+> com.android.settings.Settings 为 APP 界面的类名
+>
+> 只需要获取到 APP 的包名和界面类名，可以通过 am start 启动
+
+
+
+**获取APP的包名和界面类名**
+
+查看已安装应用
+
+  ```
+$ adb shell pm list packages
+  ```
+
+查看应用的 Activity 信息
+
+```
+$ adb shell dumpsys package com.android.settings | grep -i activity
 ```
 
