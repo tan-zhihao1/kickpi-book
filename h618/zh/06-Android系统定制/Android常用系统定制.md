@@ -95,7 +95,7 @@ adb shell settings put system user_rotation 3
 **默认修改显示方向**
 
 ```
-(SDK)$ android/device/softwinner/ceres-c3/ceres_c3.mk
+(SDK)$ vim android/device/softwinner/ceres-c3/ceres_c3.mk
 
 # set primary display orientation to 270
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -105,14 +105,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     #ro.surface_flinger.primary_display_orientation=ORIENTATION_270
 ```
 
-
-
 示例：即可修改屏幕默认显示旋转90°
 
-```
+```diff
 (SDK)$ vim android/device/softwinner/ceres-c3/ceres_c3.mk
 
-# set primary display orientation to 270
 PRODUCT_PROPERTY_OVERRIDES += \
 - ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 + ro.surface_flinger.primary_display_orientation=ORIENTATION_90
