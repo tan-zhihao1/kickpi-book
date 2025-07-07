@@ -345,7 +345,7 @@ out/host/linux-x86/framework/signak.jar
 
 ## APP特殊权限问题
 
-目前桌面级APP是特殊应用，如果添加特殊权限，可能会出现系统无法起来问题，需要抓取APP相关log日志
+若APP为特殊应用（system-app 或 priv-app），如果没有相关权限，会出现系统无法起来问题，需要抓取 APP 相关 log 日志
 
 ```shell
 # logcat | grep com.example.myapplication3
@@ -363,7 +363,6 @@ out/host/linux-x86/framework/signak.jar
 SDK
 	修改 frameworks/base/data/etc/privapp-permissions-platform.xml
 	重新编译烧录
-
 主板上
 	/etc/permissions/privapp-permissions-platform.xml
 ```
