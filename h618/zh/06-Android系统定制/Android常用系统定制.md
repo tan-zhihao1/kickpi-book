@@ -99,7 +99,11 @@ adb shell settings put system user_rotation 3
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+    #ro.surface_flinger.primary_display_orientation=ORIENTATION_90
+    #ro.surface_flinger.primary_display_orientation=ORIENTATION_270
 ```
+
+> 支持 ORIENTATION_0、ORIENTATION_90、ORIENTATION_180、ORIENTATION_270
 
 示例：修改屏幕默认显示旋转90°
 
