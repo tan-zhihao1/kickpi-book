@@ -343,47 +343,6 @@ out/host/linux-x86/framework/signak.jar
 
 
 
-## APP特殊权限问题
-
-若APP为特殊应用（system-app 或 priv-app），如果没有相关权限，会出现系统无法起来问题，需要抓取 APP 相关 log 日志
-
-```shell
-# logcat | grep com.example.myapplication3
-09-14 10:36:06.662  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication3 (/system/priv-app/LauncherJingWei) not in privapp-permissions allowlist
-09-14 10:36:08.437  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication3 (/system/priv-app/LauncherJingWei) not in privapp-permissions allowlist
-```
-
-> com.example.myapplication3 为（Androidapk的包名）
->
-> android.permission.INSTALL_PACKAGES 为预装APP缺少的权限
-
-根据log信息添加权限
-
-```
-SDK
-	修改 frameworks/base/data/etc/privapp-permissions-platform.xml
-	重新编译烧录
-主板上
-	/etc/permissions/privapp-permissions-platform.xml
-```
-
-
-
-根据 log 修改 android.permission.INSTALL_PACKAGES 内容如下，其他报错类似参考以下添加：
-
-```diff
---- a/frameworks/base/data/etc/privapp-permissions-platform.xml
-+++ b/frameworks/base/data/etc/privapp-permissions-platform.xml
-@@ -550,4 +550,8 @@ applications that come with the platform
-     <privapp-permissions package="com.android.calllogbackup">
-         <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
-     </privapp-permissions>
-+
-+    <privapp-permissions package="com.example.myapplication3">
-+        <permission name="android.permission.INSTALL_PACKAGES"/>
-+    </privapp-permissions>
-```
-
 
 
 ## 全编替换不生效问题
@@ -521,6 +480,45 @@ h618_data\5-DevelopmentTools开发工具\ADB Screen Cast 投屏
 
 
 ## 常见问题
+
+### APP特殊权限问题
+
+若APP为特殊应用（system-app 或 priv-app），如果没有相关权限，会出现系统无法起来问题，需要抓取 APP 相关 log 日志
+
+```shell
+# logcat | grep com.example.myapplication3
+09-14 10:36:06.662  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication3 (/system/priv-app/LauncherJingWei) not in privapp-permissions allowlist
+09-14 10:36:08.437  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication3 (/system/priv-app/LauncherJingWei) not in privapp-permissions allowlist
+```
+
+> com.example.myapplication3 为（Androidapk的包名）
+>
+> android.permission.INSTALL_PACKAGES 为预装APP缺少的权限
+
+**方式一**
+
+修改源码，根据 log 中的 android.permission.INSTALL_PACKAGES 报错添加对应 APP 的权限允许，其他报错类似：
+
+```diff
+--- a/frameworks/base/data/etc/privapp-permissions-platform.xml
++++ b/frameworks/base/data/etc/privapp-permissions-platform.xml
+@@ -550,4 +550,8 @@ applications that come with the platform
+     <privapp-permissions package="com.android.calllogbackup">
+         <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+     </privapp-permissions>
++
++    <privapp-permissions package="com.example.myapplication3">
++        <permission name="android.permission.INSTALL_PACKAGES"/>
++    </privapp-permissions>
+```
+
+**方式二**
+
+修改主板上的 xml 文件
+
+```
+/etc/permissions/privapp-permissions-platform.xml
+```
 
 
 
