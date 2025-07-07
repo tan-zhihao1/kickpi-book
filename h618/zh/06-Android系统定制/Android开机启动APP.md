@@ -36,11 +36,11 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 
 **SDK 方式配置（修改源码定制镜像）**
 
-第一步，[预装APK](#pre_installed_app)，如 TestLancher
+第一步，[预装APK](#pre_installed_app)，如 TestLancher；
 
 第二步，获取对应APP的包名和页面类名；[点击查看获取方式和测试方法](#am_start_app)
 
-第二步，添加的APP名为 TestLauncher，添加 TestLauncher 的编译。
+第三步，添加的APP名为 TestLauncher，添加 TestLauncher 的编译。
 
 ```diff
 --- a/vendor/aw/homlet/homlet.mk
@@ -53,7 +53,7 @@ $ setprop persist.sys.bootAppClass com.android.settings.Settings
 +		TestLauncher
 ```
 
-第三步，添加属性配置
+第四步，添加属性配置
 
 ```diff
 --- a/device/softwinner/apollo/apollo_p2.mk
