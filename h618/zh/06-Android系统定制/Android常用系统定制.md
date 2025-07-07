@@ -257,9 +257,18 @@ const std::string readLocale()
 
 ## 预装APP
 
-比如新增 test.apk 
+示例：新增 test.apk 
 
-h618-android12.0\vendor\aw\public\prebuild\apk 放你的apk和Android.bp 
+第一步，新增目录 testapk 在 h618-android12.0\vendor\aw\public\prebuild\ 下。 
+
+第二步，存放 test.apk 和 Android.mk（或Android.bp）文件； 
+
+```
+$ ls vendor/aw/public/prebuild/testapk
+
+```
+
+
 
 Android.mk 方式
 
