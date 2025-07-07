@@ -38,9 +38,7 @@ $ adb shell dumpsys package com.android.settings | grep -i activity
 
 ## 属性配置方式
 
-属性配置方式是KICKPI Android 系统客制功能，非原生系统功能。（若无法正常使用，需要咨询技术支持）
-
-
+属性配置方式是KICKPI Android 系统客制功能。（若无法正常使用，需要咨询技术支持）
 
 **ADB 方式配置**
 
