@@ -266,7 +266,7 @@ const std::string readLocale()
 ```
 $ ls vendor/aw/public/prebuild/testapk
 test.apk
-Android.mk / Android.bp
+Android.mk (Android.bp)
 ```
 
 Android.mk 方式
