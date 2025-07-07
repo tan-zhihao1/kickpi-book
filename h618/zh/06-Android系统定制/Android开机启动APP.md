@@ -95,23 +95,33 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 
 第二步，卸载原生桌面；
 
-> 当安装好新的 Laucher APP，系统会存在多个HOME属性APP，开机会让你选择其中一个作为桌面启动。
->
-> 若需要只启动一个APP，需要将原本的桌面APP删除。
-
 卸载 tv 桌面app
 
 ``` 
-pm uninstall --user 0 com.android.tv.launcher
+$ adb shell
+$ su
+$ pm uninstall --user 0 com.android.tv.launcher
 ```
 
 卸载 tablet 桌面app
 
 ```
-pm uninstall --user 0 com.android.launcher3
+$ adb shell
+$ su
+$ pm uninstall --user 0 com.android.launcher3
 ```
 
+> 当安装好新的 Laucher APP，系统会存在多个HOME属性APP，系统会选择优先级高的优先启动。
+>
+> 需要只启动一个APP，需要将原本的桌面APP删除。
+
 第三步，重启；
+
+```
+$ adb reboot
+```
+
+
 
 
 
