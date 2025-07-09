@@ -12,6 +12,24 @@ lunch ceres_c3-userdebug
 
 
 
+## 开机LOGO定制
+
+logo 替换路径
+
+```
+longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
+```
+
+> 图片格式 - 32bit
+>
+> 图片分辨率 - 小于实际屏幕分辨率
+
+
+
+
+
+
+
 ## 开发者模式
 
 ```
@@ -65,20 +83,6 @@ reboot
 ```
 
 
-
-
-
-## 开机LOGO
-
-logo 替换路径
-
-```
-longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
-```
-
-> 图片格式 - 32bit
->
-> 图片分辨率 - 小于实际屏幕分辨率
 
 ## 系统壁纸
 
