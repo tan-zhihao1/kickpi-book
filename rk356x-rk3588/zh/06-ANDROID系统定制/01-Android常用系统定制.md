@@ -44,17 +44,11 @@ logo_kernel.bmp
 
 ## 关机动画定制
 
-你制作的关机动画放到指定目录
+关机动画存放指定目录
 
 ```
 (SDK)$ ls device/rockchip/common/bootshutdown/shutdownanimation.zip
 ```
-
-
-
-
-
-
 
 
 
