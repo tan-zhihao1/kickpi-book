@@ -38,16 +38,10 @@ Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的�
 frameworks/base/cmds/bootanimation/BootAnimation.cpp
 ```
 
-公版动画路径
+动画源码路径
 
 ```
 android/device/softwinner/ceres-c3/media/bootanimation.zip
-```
-
-修改拷贝路径
-
-```
-
 ```
 
 bootanimation.zip 格式
