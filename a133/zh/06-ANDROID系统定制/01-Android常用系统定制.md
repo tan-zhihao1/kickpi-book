@@ -24,18 +24,6 @@ Settings -> System -> Developer options
 
 
 
-## APP 、文件编译不生效问题
-
-android 为惰性编译，直接替换后编译，一些APP、文件不一定编译到镜像中
-
-可以通过如下其中一种方式解决
-
-1. make installclean
-
-2. rm out/target/product/apollo-p2/xxx/xxx
-
-3. 编译的条件发生变化（比如文件名、APK名）
-
 
 
 ## 默认屏幕方向
