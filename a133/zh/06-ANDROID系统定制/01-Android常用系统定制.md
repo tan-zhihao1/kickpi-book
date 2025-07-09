@@ -166,18 +166,6 @@ audio_conf.txt
 
 
 
-## 开发者模式
-
-```
-操作步骤：
-Settings -> About tablet ->  点击 Build number -> 提示已经切换到开发者模式
-
-开发者选项路径：
-Settings -> System -> Developer options
-```
-
-
-
 ## 默认屏幕方向
 
 修改默认显示方向
@@ -541,6 +529,20 @@ public class MyReceiver extends BroadcastReceiver {
 ```
 (console)# wm density 120
 ```
+
+
+
+## 开发者模式
+
+```
+操作步骤：
+Settings -> About tablet ->  点击 Build number -> 提示已经切换到开发者模式
+
+开发者选项路径：
+Settings -> System -> Developer options
+```
+
+
 
 
 
