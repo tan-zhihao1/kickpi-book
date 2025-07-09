@@ -549,7 +549,7 @@ vncserver -geometry 1920x1080
 
 vim /home/kickpi/.vnc/xstartup
 
-注释所有内容并添加一下内容
+注释所有内容并添加以下内容
 
 ``` shell
 unset SESSION_MANAGER
