@@ -28,7 +28,7 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 
 ## 开机动画定制
 
-### 默认替换动画
+### 默认替换开机动画
 
 Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画。
 
@@ -68,7 +68,7 @@ PRODUCT_COPY_FILES += \
 
 
 
-### **在线替换动画**
+### **在线替换卡机动画**
 
 Android 支持在线替换开机动画
 
