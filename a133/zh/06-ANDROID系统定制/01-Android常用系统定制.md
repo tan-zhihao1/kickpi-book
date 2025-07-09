@@ -297,7 +297,7 @@ SDK$ BUILD_NUMBER=ido-a133 m Launcher3QuickStepGo -j32
 
 
 
-## 预装第三方 APP
+## 预装第三方APP
 
 比如新增 test.apk 
 
@@ -350,7 +350,7 @@ PRODUCT_PACKAGES += \
 
 
 
-## 开机自启动 APP
+## 开机自启动APP
 
 ### **Launcher方式启动**
 
