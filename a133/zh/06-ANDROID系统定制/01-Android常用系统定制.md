@@ -26,73 +26,7 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 
 
 
-
-
-
-
-## 开发者模式
-
-```
-操作步骤：
-Settings -> About tablet ->  点击 Build number -> 提示已经切换到开发者模式
-
-开发者选项路径：
-Settings -> System -> Developer options
-```
-
-
-
-## 默认屏幕方向
-
-修改默认显示方向
-
-![image-20250606165333617](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250606165333617.png)
-
-触控修改参考如下，注意选择对应屏幕的设备树文件
-
-![image-20250606165428265](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250606165428265.png)
-
-
-
-## 旋转功能
-
-支持使用adb命令进行旋转
-
-```
-// 0
-adb shell settings put system user_rotation 0
-
-// 90°
-adb shell settings put system user_rotation 1
-
-// 180°
-adb shell settings put system user_rotation 2
-
-// 270°
-adb shell settings put system user_rotation 3
-```
-
-
-
-## 隐藏状态栏和导航栏
-
-``` 
-setprop persist.sys.ban_sb true
-setprop persist.sys.ban_nb true
-reboot
-```
-
-
-
-## 系统壁纸
-
-``` 
-android\device\softwinner\ceres-c3\overlay\frameworks\base\core\res\res\drawable-sw720dp-nodpi\default_wallpaper.jpg
-```
-
-
-
-## 开机动画
+## 开机动画定制
 
 ### 默认替换
 
@@ -232,6 +166,68 @@ $ zip -0qry bootanimation.zip  *.txt part0/ part1/
 如需开机音乐，将开机音乐放入part0目录中，命名为Audio.wav。
 
 在根目录加入audio_conf.txt，复制原有动画配置即可
+
+
+
+## 开发者模式
+
+```
+操作步骤：
+Settings -> About tablet ->  点击 Build number -> 提示已经切换到开发者模式
+
+开发者选项路径：
+Settings -> System -> Developer options
+```
+
+
+
+## 默认屏幕方向
+
+修改默认显示方向
+
+![image-20250606165333617](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250606165333617.png)
+
+触控修改参考如下，注意选择对应屏幕的设备树文件
+
+![image-20250606165428265](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250606165428265.png)
+
+
+
+## 旋转功能
+
+支持使用adb命令进行旋转
+
+```
+// 0
+adb shell settings put system user_rotation 0
+
+// 90°
+adb shell settings put system user_rotation 1
+
+// 180°
+adb shell settings put system user_rotation 2
+
+// 270°
+adb shell settings put system user_rotation 3
+```
+
+
+
+## 隐藏状态栏和导航栏
+
+``` 
+setprop persist.sys.ban_sb true
+setprop persist.sys.ban_nb true
+reboot
+```
+
+
+
+## 系统壁纸
+
+``` 
+android\device\softwinner\ceres-c3\overlay\frameworks\base\core\res\res\drawable-sw720dp-nodpi\default_wallpaper.jpg
+```
 
 
 
