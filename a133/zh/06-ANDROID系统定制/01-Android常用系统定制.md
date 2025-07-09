@@ -277,10 +277,6 @@ SDK$ BUILD_NUMBER=ido-a133 m Launcher3QuickStepGo -j32
 
 
 
-
-
-
-
 ## 默认语言
 
 persist.sys.locale 属性
