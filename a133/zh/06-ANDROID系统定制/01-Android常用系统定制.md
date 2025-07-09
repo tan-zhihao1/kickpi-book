@@ -2,16 +2,6 @@
 
 
 
-## Android 环境
-
-```
-cd android
-source build/envsetup.sh
-lunch ceres_c3-userdebug
-```
-
-
-
 ## 开机LOGO定制
 
 logo 源码替换路径
