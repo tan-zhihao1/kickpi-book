@@ -47,14 +47,16 @@ android/device/softwinner/ceres-c3/media/bootanimation.zip
 修改拷贝路径
 
 ```
-android/device/softwinner/ceres-c3/ceres_c3.mk
+
 ```
 
 bootanimation.zip 格式
 
 ```makefile
- PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
+$ vim android/device/softwinner/ceres-c3/ceres_c3.mk
+PRODUCT_COPY_FILES += \
+-		$(LOCAL_PATH)/media/bootanimation.mp4:system/media/bootanimation.mp4
++     	$(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
 ```
 
 bootanimation.mp4 格式
