@@ -178,6 +178,48 @@ audio_conf.txt
 
 
 
+## 默认语言
+
+persist.sys.locale 属性
+
+```
+device/softwinner/apollo/apollo_p2.mk
+	PRODUCT_PROPERTY_OVERRIDES += \
+		persist.sys.locale=zh-CN
+```
+
+
+
+persist.sys.country 以及 persist.sys.language 属性
+
+```diff
+--- a/device/softwinner/apollo/apollo_p2.mk
++++ b/device/softwinner/apollo/apollo_p2.mk
+@@ -32,8 +32,8 @@ PRODUCT_PACKAGES += FT618
+
+ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+     persist.sys.timezone=Asia/Shanghai \
+-    persist.sys.country=US \
+-    persist.sys.language=en
++    persist.sys.country=CN \
++    persist.sys.language=zh
+```
+
+
+
+PRODUCT_LOCALES 配置
+
+```makefile
+$ vim build/target/product/full_base.mk
+	PRODUCT_LOCALES := en_US
+```
+
+语言属性配置获取优先级见 frameworks/base/core/jni/AndroidRuntime.cpp。
+
+
+
+
+
 ## 旋转功能
 
 支持使用adb命令进行旋转
@@ -251,108 +293,6 @@ SDK$ BUILD_NUMBER=ido-a133 m Launcher3QuickStepGo -j32
  
      public static final TogglableFlag EXAMPLE_FLAG = new TogglableFlag("EXAMPLE_FLAG", true,
              "An example flag that doesn't do anything. Useful for testing");
-```
-
-
-
-## 默认语言
-
-persist.sys.locale 属性
-
-```
-device/softwinner/apollo/apollo_p2.mk
-	PRODUCT_PROPERTY_OVERRIDES += \
-		persist.sys.locale=zh-CN
-```
-
-
-
-persist.sys.country 以及 persist.sys.language 属性
-
-```diff
---- a/device/softwinner/apollo/apollo_p2.mk
-+++ b/device/softwinner/apollo/apollo_p2.mk
-@@ -32,8 +32,8 @@ PRODUCT_PACKAGES += FT618
-
- PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-     persist.sys.timezone=Asia/Shanghai \
--    persist.sys.country=US \
--    persist.sys.language=en
-+    persist.sys.country=CN \
-+    persist.sys.language=zh
-```
-
-
-
-PRODUCT_LOCALES 配置
-
-```makefile
-$ vim build/target/product/full_base.mk
-	PRODUCT_LOCALES := en_US
-```
-
-
-
-| 选项  | 描述 |
-| ----- | ---- |
-| en_US | 英文 |
-| zh_CN | 中文 |
-
-
-
-locale 获取优先级 frameworks/base/core/jni/AndroidRuntime.cpp
-
-```java
-/*
- * Read the persistent locale. Inspects the following system properties
- * (in order) and returns the first non-empty property in the list :
- *
- * (1) persist.sys.locale
- * (2) persist.sys.language/country/localevar (country and localevar are
- * inspected iff. language is non-empty.
- * (3) ro.product.locale
- * (4) ro.product.locale.language/region
- *
- * Note that we need to inspect persist.sys.language/country/localevar to
- * preserve language settings for devices that are upgrading from Lollipop
- * to M. The same goes for ro.product.locale.language/region as well.
- */
-const std::string readLocale()
-{
-    const std::string locale = GetProperty("persist.sys.locale", "");
-    if (!locale.empty()) {
-        return locale;
-    }
-
-    const std::string language = GetProperty("persist.sys.language", "");
-    if (!language.empty()) {
-        const std::string country = GetProperty("persist.sys.country", "");
-        const std::string variant = GetProperty("persist.sys.localevar", "");
-
-        std::string out = language;
-        if (!country.empty()) {
-            out = out + "-" + country;
-        }
-
-        if (!variant.empty()) {
-            out = out + "-" + variant;
-        }
-
-        return out;
-    }
-
-    const std::string productLocale = GetProperty("ro.product.locale", "");
-    if (!productLocale.empty()) {
-        return productLocale;
-    }
-
-    // If persist.sys.locale and ro.product.locale are missing,
-    // construct a locale value from the individual locale components.
-    const std::string productLanguage = GetProperty("ro.product.locale.language", "en");
-    const std::string productRegion = GetProperty("ro.product.locale.region", "US");
-
-    return productLanguage + "-" + productRegion;
-}
 ```
 
 
