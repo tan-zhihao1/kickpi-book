@@ -14,7 +14,7 @@ lunch ceres_c3-userdebug
 
 ## 开机LOGO定制
 
-logo 替换路径
+logo 源码替换路径
 
 ```
 longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
