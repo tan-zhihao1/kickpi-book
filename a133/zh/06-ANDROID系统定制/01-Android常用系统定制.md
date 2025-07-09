@@ -168,6 +168,8 @@ audio_conf.txt
 
 ## 默认屏幕方向
 
+### 源码修改屏幕显示方向
+
 修改默认显示方向
 
 ![image-20250606165333617](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250606165333617.png)
@@ -178,7 +180,7 @@ audio_conf.txt
 
 
 
-## 旋转功能
+### 旋转功能
 
 支持使用adb命令进行旋转
 
