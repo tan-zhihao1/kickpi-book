@@ -30,7 +30,7 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 
 ### 默认替换动画
 
-Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
+Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画。
 
 两种文件同时存在播放 mp4 优先级比 zip 高 ，具体优先级见
 
@@ -38,11 +38,15 @@ Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的�
 frameworks/base/cmds/bootanimation/BootAnimation.cpp
 ```
 
-动画源码路径
+第一步，替换源码动画；
+
+动画源码路径如下
 
 ```
 android/device/softwinner/ceres-c3/media/bootanimation.zip
 ```
+
+第二步，修改动画拷贝方式；
 
 bootanimation.zip 格式
 
@@ -65,6 +69,8 @@ PRODUCT_COPY_FILES += \
 
 
 ### **在线替换动画**
+
+Android 支持在线替换开机动画
 
 ```
 $ adb root
