@@ -24,8 +24,6 @@ Settings -> System -> Developer options
 
 
 
-
-
 ## 默认屏幕方向
 
 修改默认显示方向
