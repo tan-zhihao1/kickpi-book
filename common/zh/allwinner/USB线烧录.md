@@ -89,7 +89,7 @@ https://support.microsoft.com/zh-cn/windows/%E6%97%A0%E6%B3%95%E5%9C%A8%E6%AD%A4
 
 ***不要点击立即升级！！！***
 
-主板重新接入烧录模式，则会提示烧录
+主板重新进入烧录模式，则会提示烧录
 
 ![image-20240306171455427](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306171455427.png)
 
