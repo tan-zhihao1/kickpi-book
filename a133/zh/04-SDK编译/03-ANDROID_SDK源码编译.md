@@ -79,12 +79,13 @@ $./build.sh mergeconfig
 
 ``` 
 a133-android10.0-v2.0/longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
-
 ```
 
 
 
 ## 常见问题
+
+### 编译 yylloc 报错问题
 
 **由于编译环境 ld 不同，可能会导致 yylloc 报错，需要修改代码中的yylloc**
 
@@ -102,4 +103,18 @@ a133-android10.0-v2.0/longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
 +YYLTYPE yylloc;
 +//extern YYLTYPE yylloc;
 ```
+
+
+
+### APP 、文件编译不生效问题
+
+android 为惰性编译，直接替换后编译，一些APP、文件不一定编译到镜像中
+
+可以通过如下其中一种方式解决
+
+1. make installclean
+
+2. rm out/target/product/apollo-p2/xxx/xxx
+
+3. 编译的条件发生变化（比如文件名、APK名）
 
