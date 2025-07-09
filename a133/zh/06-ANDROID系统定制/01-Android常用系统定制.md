@@ -81,7 +81,7 @@ $ adb reboot
 
 
 
-### bootanimation.zip 制作方式
+### bootanimation.zip 制作
 
 **文件结构**
 
