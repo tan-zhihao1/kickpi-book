@@ -44,19 +44,15 @@ logo_kernel.bmp
 
 ## 关机动画定制
 
-你制作的开机动画放到指定目录
+你制作的关机动画放到指定目录
 
 ```
-(SDK)$ ls device/rockchip/common/bootshutdown/bootanimation.zip
+(SDK)$ ls device/rockchip/common/bootshutdown/shutdownanimation.zip
 ```
 
-打开配置
 
-```diff
-(SDK)$ vim device\rockchip\common\BoardConfig.mk
--BOOT_SHUTDOWN_ANIMATION_RINGING ?= false
-+BOOT_SHUTDOWN_ANIMATION_RINGING ?= true
-```
+
+
 
 
 
