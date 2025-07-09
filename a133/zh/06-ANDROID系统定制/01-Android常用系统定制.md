@@ -163,7 +163,7 @@ $ zip -0qry bootanimation.zip  *.txt part0/ part1/
 
 
 
-## 开机音乐
+## 开机音乐定制
 
 如需开机音乐，将开机音乐放入part0目录中，命名为Audio.wav。
 
