@@ -178,6 +178,26 @@ audio_conf.txt
 
 
 
+## 旋转功能
+
+支持使用adb命令进行旋转
+
+```
+// 0
+adb shell settings put system user_rotation 0
+
+// 90°
+adb shell settings put system user_rotation 1
+
+// 180°
+adb shell settings put system user_rotation 2
+
+// 270°
+adb shell settings put system user_rotation 3
+```
+
+
+
 ## 默认语言
 
 persist.sys.locale 属性
@@ -219,24 +239,6 @@ $ vim build/target/product/full_base.mk
 
 
 
-
-## 旋转功能
-
-支持使用adb命令进行旋转
-
-```
-// 0
-adb shell settings put system user_rotation 0
-
-// 90°
-adb shell settings put system user_rotation 1
-
-// 180°
-adb shell settings put system user_rotation 2
-
-// 270°
-adb shell settings put system user_rotation 3
-```
 
 
 
