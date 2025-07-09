@@ -240,11 +240,7 @@ $ vim build/target/product/full_base.mk
 
 
 
-
-
-
-
-## 隐藏状态栏和导航栏
+## 默认隐藏状态栏和导航栏
 
 ``` 
 setprop persist.sys.ban_sb true
@@ -301,7 +297,7 @@ SDK$ BUILD_NUMBER=ido-a133 m Launcher3QuickStepGo -j32
 
 
 
-## 内置第三方 APP
+## 预装第三方 APP
 
 比如新增 test.apk 
 
