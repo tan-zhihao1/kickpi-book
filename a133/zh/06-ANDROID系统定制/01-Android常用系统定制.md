@@ -169,6 +169,12 @@ $ zip -0qry bootanimation.zip  *.txt part0/ part1/
 
 在根目录加入audio_conf.txt，复制原有动画配置即可
 
+```
+part0/audio.wav
+```
+
+
+
 
 
 ## 开发者模式
