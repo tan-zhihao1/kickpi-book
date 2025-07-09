@@ -83,6 +83,16 @@ a133-android10.0-v2.0/longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
 
 
 
+## Android 环境
+
+```
+cd android
+source build/envsetup.sh
+lunch ceres_c3-userdebug
+```
+
+
+
 ## 常见问题
 
 ### 编译 yylloc 报错问题
