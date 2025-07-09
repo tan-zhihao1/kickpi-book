@@ -167,13 +167,12 @@ $ zip -0qry bootanimation.zip  *.txt part0/ part1/
 
 如需开机音乐，将开机音乐放入part0目录中，命名为Audio.wav。
 
-在根目录加入audio_conf.txt，复制原有动画配置即可
+在根目录加入audio_conf.txt，复制原有动画配置即可。
 
 ```
 part0/audio.wav
+audio_conf.txt
 ```
-
-
 
 
 
