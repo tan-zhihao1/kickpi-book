@@ -46,7 +46,7 @@ android/device/softwinner/ceres-c3/media/bootanimation.zip
 
 bootanimation.zip 格式
 
-```makefile
+```diff
 $ vim android/device/softwinner/ceres-c3/ceres_c3.mk
 PRODUCT_COPY_FILES += \
 -		$(LOCAL_PATH)/media/bootanimation.mp4:system/media/bootanimation.mp4
@@ -55,14 +55,12 @@ PRODUCT_COPY_FILES += \
 
 bootanimation.mp4 格式
 
-```makefile
+```diff
 $ vim android/device/softwinner/ceres-c3/ceres_c3.mk
 PRODUCT_COPY_FILES += \
 -     	$(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
 +		$(LOCAL_PATH)/media/bootanimation.mp4:system/media/bootanimation.mp4
 ```
-
-> mp4 方式烧录镜像后第一次启动的开机动画是原生Android，需要重启显示替换的开机动画
 
 
 
