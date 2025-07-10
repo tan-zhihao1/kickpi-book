@@ -98,6 +98,10 @@ gateway 192.168.1.1
 
 根据自己的网关和网段进行配置，否则无法访问网络
 
+配置静态IP 插拔网口ip丢失 解决
+systemctl stop NetworkManager
+systemctl disable NetworkManager
+
 ```
 
 
