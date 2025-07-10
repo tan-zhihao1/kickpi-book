@@ -28,3 +28,7 @@ git clone https://github.com/airockchip/rknn_model_zoo.git --depth 1
 # 2.如果遇到 git clone 失败的情况，也可以直接在 github 中下载压缩包到本地，然后解压至该目录
 ```
 
+
+
+### 安装 **RKNN-Toolkit2** 环境
+
