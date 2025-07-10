@@ -14,3 +14,9 @@ https://github.com/airockchip/rknn-toolkit2/blob/master/doc/
 
 ## 快速入门
 
+```
+01_Rockchip_RKNPU_Quick_Start_RKNN_SDK_V2.3.2_CN.pdf
+```
+
+
+
