@@ -59,5 +59,4 @@ chmod 777 Miniforge3-Linux-x86_64.sh
 bash Miniforge3-Linux-x86_64.sh
 ```
 
-
-
+#### 使用 **Miniforge Conda** 创建 **Python** 环境
