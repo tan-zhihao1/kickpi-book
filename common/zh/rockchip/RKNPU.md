@@ -10,15 +10,19 @@
 
 建议新建一个目录用来存放 RKNN 仓库，例如新建一个名称为 Projects 的文件夹，并将 RKNN-Toolkit2 和 RKNN Model Zoo 仓库存放至该目录下，参考命令如下：
 
-```
+```bash
 # 新建 Projects 文件夹
 mkdir Projects
+
 # 进入该目录
 cd Projects
+
 # 下载 RKNN-Toolkit2 仓库
 git clone https://github.com/airockchip/rknn-toolkit2.git --depth 1
+
 # 下载 RKNN Model Zoo 仓库
 git clone https://github.com/airockchip/rknn_model_zoo.git --depth 1
+
 # 注意：
 # 1.参数 --depth 1 表示只克隆最近一次 commit
 # 2.如果遇到 git clone 失败的情况，也可以直接在 github 中下载压缩包到本地，然后解压至该目录
