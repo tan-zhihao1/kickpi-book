@@ -39,3 +39,25 @@ git clone https://github.com/airockchip/rknn_model_zoo.git --depth 1
 Conda 创建新的 Python 3.8 环境。
 
 **安装 Miniforge Conda**
+
+在计算机的终端窗口中执行以下命令，检查是否安装Miniforge Conda，若已安装则可省略此节步骤。
+
+```
+conda -V
+```
+
+如果没有安装 Miniforge Conda，可以通过下面的链接下载 Miniforge Conda 安装包：
+
+```
+wget -c https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+```
+
+然后通过以下命令安装 Miniforge Conda：
+
+```
+chmod 777 Miniforge3-Linux-x86_64.sh
+bash Miniforge3-Linux-x86_64.sh
+```
+
+
+
