@@ -6,6 +6,10 @@
 
 ## 准备开发环境
 
+> Ubuntu 22.04
+
+
+
 ### 下载 **RKNN** 相关仓库
 
 建议新建一个目录用来存放 RKNN 仓库，例如新建一个名称为 Projects 的文件夹，并将 RKNN-Toolkit2 和 RKNN Model Zoo 仓库存放至该目录下，参考命令如下：
