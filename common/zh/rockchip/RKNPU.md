@@ -32,3 +32,8 @@ git clone https://github.com/airockchip/rknn_model_zoo.git --depth 1
 
 ### 安装 **RKNN-Toolkit2** 环境
 
+**安装 Python**
+
+如果系统中没有安装 Python 3.8（建议版本），或者同时有多个版本的 Python 环境，建议使用Miniforge
+
+Conda 创建新的 Python 3.8 环境。
