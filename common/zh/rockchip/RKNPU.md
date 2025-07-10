@@ -60,3 +60,6 @@ bash Miniforge3-Linux-x86_64.sh
 ```
 
 #### 使用 **Miniforge Conda** 创建 **Python** 环境
+
+在计算机的终端窗口中，执行以下命令进入 Conda base 环境：
+
