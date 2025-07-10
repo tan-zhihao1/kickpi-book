@@ -33,7 +33,7 @@ $ ls rknn-toolkit2/doc/
 
 
 
-## 官方文档指南
+## 在线官方文档指南
 
 https://github.com/airockchip/rknn-toolkit2/blob/master/doc/
 
