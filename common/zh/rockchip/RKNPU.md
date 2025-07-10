@@ -20,3 +20,11 @@ https://github.com/airockchip/rknn-toolkit2/blob/master/doc/
 
 
 
+## RKNN SDK 指导
+
+```
+02_Rockchip_RKNPU_User_Guide_RKNN_SDK_V2.3.2_CN.pdf
+```
+
+
+
