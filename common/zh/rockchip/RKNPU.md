@@ -11,24 +11,24 @@
 ```
 $ git clone https://github.com/airockchip/rknn-toolkit2.git --depth 1
 $ ls rknn-toolkit2/doc/
- 01_Rockchip_RK2118_Quick_Start_RKNN_SDK_V2.3.2_CN.pdf
- 01_Rockchip_RK2118_Quick_Start_RKNN_SDK_V2.3.2_EN.pdf
- 01_Rockchip_RKNPU_Quick_Start_RKNN_SDK_V2.3.2_CN.pdf
- 01_Rockchip_RKNPU_Quick_Start_RKNN_SDK_V2.3.2_EN.pdf
- 01_Rockchip_RV1106_RV1103_Quick_Start_RKNN_SDK_V2.3.2_CN.pdf
- 01_Rockchip_RV1106_RV1103_Quick_Start_RKNN_SDK_V2.3.2_EN.pdf
- 02_Rockchip_RKNPU_User_Guide_RKNN_SDK_V2.3.2_CN.pdf
- 02_Rockchip_RKNPU_User_Guide_RKNN_SDK_V2.3.2_EN.pdf
- 03_Rockchip_RKNPU_API_Reference_RKNN_Toolkit2_V2.3.2_CN.pdf
- 03_Rockchip_RKNPU_API_Reference_RKNN_Toolkit2_V2.3.2_EN.pdf
- 04_Rockchip_RKNPU_API_Reference_RKNNRT_V2.3.2_CN.pdf
- 04_Rockchip_RKNPU_API_Reference_RKNNRT_V2.3.2_EN.pdf
- 05_RKNN_Compiler_Support_Operator_List_V2.3.2.pdf
- RKNNToolKit2_API_Difference_With_Toolkit1-2.3.2.md
- RKNNToolKit2_OP_Support-2.3.2.md
-'Using RKNN-ToolKit2 in WSL.md'
- WSL中使用RKNN_ToolKit2.md
- rknn_server_proxy.md
+01_Rockchip_RK2118_Quick_Start_RKNN_SDK_V2.3.2_CN.pdf
+01_Rockchip_RK2118_Quick_Start_RKNN_SDK_V2.3.2_EN.pdf
+01_Rockchip_RKNPU_Quick_Start_RKNN_SDK_V2.3.2_CN.pdf
+01_Rockchip_RKNPU_Quick_Start_RKNN_SDK_V2.3.2_EN.pdf
+01_Rockchip_RV1106_RV1103_Quick_Start_RKNN_SDK_V2.3.2_CN.pdf
+01_Rockchip_RV1106_RV1103_Quick_Start_RKNN_SDK_V2.3.2_EN.pdf
+02_Rockchip_RKNPU_User_Guide_RKNN_SDK_V2.3.2_CN.pdf
+02_Rockchip_RKNPU_User_Guide_RKNN_SDK_V2.3.2_EN.pdf
+03_Rockchip_RKNPU_API_Reference_RKNN_Toolkit2_V2.3.2_CN.pdf
+03_Rockchip_RKNPU_API_Reference_RKNN_Toolkit2_V2.3.2_EN.pdf
+04_Rockchip_RKNPU_API_Reference_RKNNRT_V2.3.2_CN.pdf
+04_Rockchip_RKNPU_API_Reference_RKNNRT_V2.3.2_EN.pdf
+05_RKNN_Compiler_Support_Operator_List_V2.3.2.pdf
+RKNNToolKit2_API_Difference_With_Toolkit1-2.3.2.md
+RKNNToolKit2_OP_Support-2.3.2.md
+Using RKNN-ToolKit2 in WSL.md
+WSL中使用RKNN_ToolKit2.md
+rknn_server_proxy.md
 ```
 
 
