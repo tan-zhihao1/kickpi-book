@@ -929,7 +929,7 @@ $ source /rockchip-test/gstreamer/gstreamer_mpp_fix.sh
 **安装命令**
 
 ```
-apt update && apt install -y build-essential manpages-dev
+sudo apt update && sudo apt install -y build-essential manpages-dev
 ```
 
 
