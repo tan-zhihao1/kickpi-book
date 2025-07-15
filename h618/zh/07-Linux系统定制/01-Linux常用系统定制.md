@@ -187,7 +187,7 @@ sync /mnt/sda/
 img2simg output.img h618.img
 ```
 
-![image-20250618111201936](C:\Users\10539\AppData\Roaming\Typora\typora-user-images\image-20250618111201936.png)
+![image-20250618111201936](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250618111201936.png)
 
 得到的h618.img即可用于烧录
 
