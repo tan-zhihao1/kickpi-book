@@ -2,12 +2,16 @@
 
 **dts**
 
-PMIC 包含 regulator，power supply，power key。PMU 的配置是通过设备树进行配置。
+PMIC 包含 regulator，power supply，power key。
+
+PMU 的配置是通过设备树进行配置。
 
 ```
 longan/device/config/chips/a133/configs/c3/kickpi-k5.dts
 longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
 ```
+
+
 
 **battery dtsi**
 
