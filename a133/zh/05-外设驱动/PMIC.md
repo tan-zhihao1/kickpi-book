@@ -9,7 +9,7 @@ longan/device/config/chips/a133/configs/c3/kickpi-k5.dts
 longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
 ```
 
-pmu 配置
+pmu 配置节点
 
 ```
 pmu0: pmu@34 {
@@ -39,10 +39,6 @@ battery_power_supply: battery-power-supply {
     ...
 }
 ```
-
-
-
-
 
 
 
