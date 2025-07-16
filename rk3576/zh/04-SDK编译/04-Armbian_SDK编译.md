@@ -17,7 +17,9 @@ Ubuntu系统版本：2404
 * 网盘目录
 
 ```
-
+1-SDK/Armbian/
+├── kickpi-armbian.md5sum
+└── kickpi-armbian.tar.gz
 ```
 
 >  *这里一般指代日期，下面同，实际名称以网盘为准
