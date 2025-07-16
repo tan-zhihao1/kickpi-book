@@ -11,6 +11,17 @@ longan/device/config/chips/a133/configs/c3/kickpi-k5.dts
 longan/device/config/chips/a133/configs/c3/kickpi-k5c.dts
 ```
 
+pmu 配置
+
+```
+pmu0: pmu@34 {
+    compatible = "x-powers,axp803";
+    reg = <0x34>;
+    status = "okay";
+    ...
+}
+```
+
 
 
 **battery dtsi**
