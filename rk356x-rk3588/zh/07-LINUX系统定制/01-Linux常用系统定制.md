@@ -767,6 +767,12 @@ Ubuntu_24.04.2_LTS_ext4_202503062020.img: Linux rev 1.0 ext4 filesystem data, UU
 
 也可以对需要替换这个系统的板子单独烧录rootfs.img
 
+烧录后根文件系统的占用空间只会是这个img的大小，需要执行下面命令还原大小。
+
+```shell
+$ resize2fs /dev/mmcblk1p6 
+```
+
 
 
 ## eMMC分区
@@ -923,5 +929,52 @@ $ systemctl set-default graphical.target
 
 ```shell
 $ reboot
+```
+
+
+
+## 安装samba
+
+安装samba
+
+```shell
+$ sudo apt install samba samba-common
+```
+
+给要共享的文件权限
+
+```shell
+$ sudo chmod 777 /home/kickpi/
+```
+
+添加samba用户
+
+```shell
+$ sudo smbpasswd -a
+```
+
+配置samba
+
+```shell
+$ sudo vim /etc/samba/smb.conf
+```
+
+在文本最后添加如下内容：
+
+```shell
+[kickpi] 
+    comment = kickpi 
+    path = /home/kickpi
+    public = yes   
+    writable = yes 
+    workgroup = kickpi 
+```
+
+> [kickpi] 为共享看到的文件夹名称
+
+重启服务
+
+```shell
+$ sudo systemctl restart smbd
 ```
 

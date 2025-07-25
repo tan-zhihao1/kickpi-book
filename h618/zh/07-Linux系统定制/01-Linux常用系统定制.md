@@ -16,6 +16,15 @@ ROOT密码：root
 
 ![image-20250305115657169](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250305115657169.png)
 
+## 桌面环境切换为中文
+
+
+[修改xface桌面环境为中文](https://blog.csdn.net/weixin_51612528/article/details/147515617#:~:text=%E6%A3%80%E6%9F%A5%E5%BD%93%E5%89%8D%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83%EF%BC%8C%E6%89%A7%E8%A1%8C%E6%8C%87%E4%BB%A4%20locale%EF%BC%8C%E5%A6%82%E6%9E%9C%E8%BE%93%E5%87%BA%E7%9A%84%20LANG%E3%80%81LC_ALL%20%E7%AD%89%E6%9C%AA%E5%8C%85%E5%90%AB%20zh_CN.UTF-8%EF%BC%8C%E9%9C%80%E8%A6%81%E8%AE%BE%E7%BD%AE%E4%B8%AD%E6%96%87%E7%8E%AF%E5%A2%83%E3%80%82%20sudo%20apt%20install,language-pack-zh-hans%20language-pack-zh-hant%20%E5%9C%A8%E5%BC%B9%E5%87%BA%E7%9A%84%E7%AA%97%E5%8F%A3%E4%B8%AD%E9%80%89%E6%8B%A9%20zh_CN.UTF-8%20UTF-8%20%E7%84%B6%E5%90%8E%E5%9B%9E%E8%BD%A6%E7%A1%AE%E8%AE%A4%E3%80%82%20%E7%84%B6%E5%90%8E%E7%BB%A7%E7%BB%AD%E9%80%89%E6%8B%A9%20zh_CN.UTF-8%EF%BC%8C%E5%9B%9E%E8%BD%A6%E7%A1%AE%E8%AE%A4%E3%80%82)
+
+
+
+
+
 ## 桌面环境修改为ROOT登录
 
 修改/etc/lightdm/lightdm.conf.d/22-autologin.conf
@@ -458,7 +467,7 @@ vncserver -geometry 1920x1080
 
 ## 常见问题
 
-1. 桌面声卡设置打开报错
+**桌面声卡设置打开报错**
 
 ![05f3817bf038d6f1f138a290c0496e68](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/05f3817bf038d6f1f138a290c0496e68.jpg)
 
@@ -473,6 +482,15 @@ sudo apt-get update
 sudo apt purge pulseaudio
 sudo apt install pulseaudio
 ```
+
+
+## 
+
+**有线网口使用局域网，WiFi连接网络时无法访问外网**
+
+[解决Linux下同时使用有线和无线网络时，网络连接的优先级问题_linux以太网和无线网冲突问题-CSDN博客](https://blog.csdn.net/qq547276542/article/details/78713893)
+
+![image-20250427165431777](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250427165431777.png)
 
 
 

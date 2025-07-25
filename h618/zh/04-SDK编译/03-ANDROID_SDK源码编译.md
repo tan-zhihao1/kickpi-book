@@ -164,6 +164,7 @@ $ ./build.sh kernel
 cd longan
 
 ./build.sh menuconfig
+./build.sh saveconfig
 ```
 
 **单独编译Android**

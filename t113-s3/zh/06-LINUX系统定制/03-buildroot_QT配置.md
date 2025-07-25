@@ -1,10 +1,17 @@
 # 02-buildroot系统定制
 
-### 1.在buildroot下面，打开配置界面进行配置
+### 1.打开配置界面进行配置
 
+执行命令使用图形化界面配置
+
+``` shell
+./build.sh buildroot_menuconfig
 ```
-make menuconfig //打开配置界面
-make savedefconfig  //保存为默认配置
+
+在图形化界面配置后，保存退出
+
+``` 
+./build.sh buildroot_saveconfig
 ```
 
 Buildroot下QT5配置有关如下：

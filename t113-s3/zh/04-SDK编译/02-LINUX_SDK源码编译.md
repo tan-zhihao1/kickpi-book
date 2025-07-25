@@ -26,8 +26,6 @@ which board would you like (1-2):
 ./build.sh pack  \\打包生成镜像
 ```
 
-> 镜像生成目录：out/t113_linux_evb1_auto_uart0.img
->
 > 若编译失败，可尝试自行解决，亦可联系技术支持客服解决
 
 

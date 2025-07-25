@@ -44,19 +44,7 @@ PhoenixSuit/Drivers/AW_Driver/
 
 
 
-### 常见问题
 
-1.遇到兼容性错误
-
-![image-20241026114145257](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241026114145257.png)
-
-解决方法参考Microsoft解决方法
-
-Microsoft官方链接
-
-https://support.microsoft.com/zh-cn/windows/%E6%97%A0%E6%B3%95%E5%9C%A8%E6%AD%A4%E8%AE%BE%E5%A4%87%E4%B8%8A%E5%8A%A0%E8%BD%BD%E9%A9%B1%E5%8A%A8%E7%A8%8B%E5%BA%8F-8eea34e5-ff4b-16ec-870d-61a4a43b3dd5
-
-![image-20241026114443290](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241026114443290.png)
 
 ### 安装镜像烧录工具
 
@@ -94,3 +82,25 @@ https://support.microsoft.com/zh-cn/windows/%E6%97%A0%E6%B3%95%E5%9C%A8%E6%AD%A4
 ![image-20240306171455427](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306171455427.png)
 
 烧录完成板卡会自动启动
+
+
+### 常见问题
+
+1.遇到兼容性错误
+
+![image-20241026114145257](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241026114145257.png)
+
+解决方法参考Microsoft解决方法
+
+Microsoft官方链接
+
+https://support.microsoft.com/zh-cn/windows/%E6%97%A0%E6%B3%95%E5%9C%A8%E6%AD%A4%E8%AE%BE%E5%A4%87%E4%B8%8A%E5%8A%A0%E8%BD%BD%E9%A9%B1%E5%8A%A8%E7%A8%8B%E5%BA%8F-8eea34e5-ff4b-16ec-870d-61a4a43b3dd5
+
+![image-20241026114443290](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241026114443290.png)
+
+2.烧写固件失败
+
+
+![image-20250721173420273](C:\Users\10539\AppData\Roaming\Typora\typora-user-images\image-20250721173420273.png)
+
+烧录软件使用管理员和兼容性模式打开

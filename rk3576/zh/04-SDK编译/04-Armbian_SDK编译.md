@@ -62,35 +62,35 @@ SDK$ ./compile.sh
 
 1. 选择不修改 Kernel 配置
 
-![image-20250704140210097](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140210097.png)
+![image-20250704140210097](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704140210097.png)
 
 2. 选中显示 CSC / WIP / EOS / TVB 相关配置（目前 K7 在CSC配置中）
 
-![image-20250704140436194](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140436194.png)
+![image-20250704140436194](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704140436194.png)
 
 3. 同意警告声明
 
-![image-20250704140605228](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140605228.png)
+![image-20250704140605228](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704140605228.png)
 
 4. 向下选中 kickpi-k7 配置
 
-![image-20250704140728595](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140728595.png)
+![image-20250704140728595](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704140728595.png)
 
 5. 选择 6.1 Kernel 版本（目前仅有此选项）
 
-![image-20250704140947103](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704140947103.png)
+![image-20250704140947103](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704140947103.png)
 
 ### Debian/Ubuntu系统选择
 
 6. 选择 **Bookworm** 或 **Ubuntu noble 24.04** 版本（带 supported 选项 Armbian 官方支持，使用比较稳定！）
 
-![image-20250704141035573](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141035573.png)
+![image-20250704141035573](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704141035573.png)
 
 ### 桌面版/服务器版选择
 
 7. 选择系统配置，桌面版选择 desktop environment / 服务器版选择 console interface (server)
 
-![image-20250704141221587](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141221587.png)
+![image-20250704141221587](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704141221587.png)
 
 ### 桌面版配置选择
 
@@ -98,15 +98,15 @@ SDK$ ./compile.sh
 
 > 注意：Windows 虚拟机 Ubuntu 系统一般选择 gnome 桌面！
 
-![image-20250704141508062](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141508062.png)
+![image-20250704141508062](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704141508062.png)
 
 9. 系统基础包配置
 
-![image-20250704141809333](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704141809333.png)
+![image-20250704141809333](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704141809333.png)
 
 10. 对应类型的系统基础包选择 （空格选中或者取消选中，选中的包会自动编译进系统）
 
-![image-20250704142123550](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704142123550.png)
+![image-20250704142123550](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704142123550.png)
 
 
 
@@ -118,7 +118,7 @@ SDK$ ./compile.sh
 
 下面是在编译 K7 ubuntu 24.04 系统 gnome 桌面时，截取到的打印。
 
-![image-20250704142554606](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250704142554606.png)
+![image-20250704142554606](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704142554606.png)
 
 则获取到以下命令
 
