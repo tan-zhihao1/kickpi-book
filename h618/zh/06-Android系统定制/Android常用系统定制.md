@@ -358,6 +358,13 @@ debug           hdcp_dump  hdmi_source  phy_read   scdc_read
 
 
 
+## 芯片序列号
+
+芯片序列号可作为唯一识别ID使用，方法参考
+[全志H芯片序列号的获取方法_全志 cpu id-CSDN博客](https://blog.csdn.net/yyzsyx/article/details/143108132)
+
+
+
 ## ADB 功能
 
 ### adb连接

@@ -192,3 +192,91 @@ $ rm ~/.mozilla/firefox/ -rfv
 
 
 
+## 导出镜像修改 armbian 镜像
+
+第一步，导出文件系统镜像到 U盘/SD卡 等存储路径
+
+```
+sudo ./ff_export_rootfs /mnt/ -t ext4
+```
+
+第二步，确认文件系统镜像大小，如果大于 armbian镜像
+
+```
+// 确认对比镜像大小，导出的 ext镜像接近7G，大于原本的armbian镜像
+$ ls -lh *.img
+-rwxr--r--  1 hcm  hcm  6.9G Jun 12 16:18 Armbian-unofficial_25.08.0-trunk_noble_ext4_202506121342.img
+-rw-rw-r--  1 hcm  hcm  6.3G Jun 12 16:22 armbian.img
+```
+
+第三步，如果文件系统镜像大于原本的镜像容量，需要调整原本 armbian 镜像容量
+
+调整armbian的镜像大小为8G
+
+```
+$ sudo fallocate -l 9G armbian.img
+```
+
+确认节点生成
+
+```
+$ sudo losetup -P /dev/loop777 ./armbian.img
+```
+
+调整分区大小，使用parted工具
+
+```
+$ sudo parted /dev/loop777
+# 在parted中执行：
+# Fix #选择修复
+# (parted) print free  # 查看当前分区和可用空间
+# (parted) resizepart 1 100% # 选择调整第一个分区
+# (parted) print         # 确认分区信息
+# (parted) quit          # 退出
+```
+
+调整文件系统大小
+
+```
+ # 检查文件系统（可选但推荐）
+$ sudo e2fsck -f /dev/loop777p1 
+# 扩展文件系统到最大
+$ sudo resize2fs /dev/loop777p1  
+```
+
+第四步，挂载 armbian镜像文件系统
+
+```
+$ sudo mount /dev/loop777p1 orgin/  
+```
+
+第五步，挂载导出的文件系统
+
+```
+$  sudo mount ext4.img copy/
+```
+
+第六步，替换文件系统
+
+```
+$ sudo cp -rfp copy/* orgin/
+```
+
+第七步，卸载
+
+```
+sudo umount copy/
+sudo umount orgin/
+sudo losetup -d /dev/loop777
+```
+
+第八步，修改后的镜像已经完成。
+
+
+
+以上步骤也可用脚本进行更新，参考：
+
+```
+3-SoftwareData\Linux_backup_rootfs_script\armbian_replace_rootfs.sh
+```
+

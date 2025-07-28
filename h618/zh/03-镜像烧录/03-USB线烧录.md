@@ -1,5 +1,9 @@
 # 03-USB线烧录
 
+!!!Ubuntu镜像参考Ubuntu镜像SD卡 镜像烧录!!!
+
+Ubuntu镜像只能SD卡烧录
+
 ## 1. Android USB线 镜像烧录
 
 镜像可通过网盘这个路径下载
