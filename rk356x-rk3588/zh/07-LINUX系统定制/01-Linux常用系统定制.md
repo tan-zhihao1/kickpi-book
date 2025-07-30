@@ -487,6 +487,12 @@ $ iptables --version
 $ sudo create_ap --no-virt wlan0 eth0 MyAccessPoint 12345678 &
 ```
 
+使用create_ap后 想恢复WiFi 节点
+
+```shell
+$ sudo create_ap --fix-unmanaged
+```
+
 
 
 ## NFS配置
