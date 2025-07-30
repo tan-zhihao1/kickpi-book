@@ -225,8 +225,8 @@ device/softwinner/ceres-c3/ceres_c3.mk
 persist.sys.country 以及 persist.sys.language 属性
 
 ```diff
---- a/device/softwinner/apollo/apollo_p2.mk
-+++ b/device/softwinner/apollo/apollo_p2.mk
+--- a/device/softwinner/ceres-c3/ceres_c3.mk
++++ b/device/softwinner/ceres-c3/ceres_c3.mk
 @@ -32,8 +32,8 @@ PRODUCT_PACKAGES += FT618
 
  PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
