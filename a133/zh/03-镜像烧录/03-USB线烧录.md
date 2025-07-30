@@ -10,7 +10,7 @@
 
 第三步，再按一下RESET按键；
 
-> 电脑设备管理器有识别设备即可
+> 电脑设备管理器有识别设备‘未知设备’即可
 
 ![image-20250514200533242](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250514200533242.png)
 
