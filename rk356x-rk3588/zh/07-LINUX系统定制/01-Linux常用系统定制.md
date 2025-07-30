@@ -980,6 +980,10 @@ $ sudo systemctl restart smbd
 
 
 
+## 常见问题
+
+create_ap因为iw版本6.7以上兼容补丁<a id='wifi-ap'> </a>
+
 ```diff
 @@ -321,9 +321,9 @@ can_transmit_to_channel() {
 
