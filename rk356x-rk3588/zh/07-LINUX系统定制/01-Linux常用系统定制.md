@@ -1024,3 +1024,9 @@ is_5ghz_frequency() {
 
 ```
 
+```
+is_wifi_connected() {
+    return 1
+}
+```
+
