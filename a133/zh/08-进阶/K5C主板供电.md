@@ -230,4 +230,4 @@ consloe$ setprop persist.sys.kickpi_holding_wakelock false
 
 ![c7ab086d377d1a2852eec41fa0fe4bf](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/c7ab086d377d1a2852eec41fa0fe4bf.png)
 
-硬件调整：需要将图中的0欧电阻，换成 220K欧电阻。
+硬件调整：需要将图中的0欧电阻，换成 270K欧电阻。
