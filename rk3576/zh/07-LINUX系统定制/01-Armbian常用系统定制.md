@@ -280,3 +280,12 @@ sudo losetup -d /dev/loop777
 3-SoftwareData\Linux_backup_rootfs_script\armbian_replace_rootfs.sh
 ```
 
+
+
+## RKNN 部署
+
+armbian 系统支持部署 rknn-toolkit2，rknn_model_zoo，参考 rockhip 官方文档如下：
+
+https://github.com/airockchip/rknn-toolkit2/tree/master/doc
+
+https://github.com/airockchip/rknn_model_zoo/tree/main/docs
