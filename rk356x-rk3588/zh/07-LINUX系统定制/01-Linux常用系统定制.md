@@ -49,6 +49,52 @@ $ vim /lib/systemd/system/serial-getty@.service
 
 
 
+## 修改桌面登录为root
+
+图形化界面默认登录为kickpi，按照下面修改文件，重启后就可以修改登录用户会root
+
+### Ubuntu
+
+修改默认登录用户
+
+```diff
+$ sudo /etc/silm.conf
+--default_user        kickpi
+++default_user        root
+```
+
+重启
+
+```shell
+$ sudo reboot
+```
+
+### Debian
+
+修改默认登录用户
+
+```diff
+$ sudo vim /etc/lightdm/lightdm.conf 
+--autologin-user=linaro
+++autologin-user=root
+```
+
+添加root登录权限
+
+```diff
+$ sudo vim /etc/pam.d/lightdm-autologin
+--auth required pam_succeed_if.so user != root quiet_success
+++#auth required pam_succeed_if.so user != root quiet_success
+```
+
+重启
+
+```shell
+$ sudo reboot
+```
+
+
+
 ## 语言配置
 
 > 命令执行后，重启生效
