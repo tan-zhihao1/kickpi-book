@@ -282,10 +282,14 @@ network:
 	version: 2
     ethernets:
         eth0:
-            dhcp4: no
-            addresses: [192.168.1.50/24]
-            optional: true
-            gateway4: 192.168.1.1
+          dhcp4: no
+          addresses: [192.168.199.160/24]
+          optional: true
+          routes:
+            - to: default
+              via: 192.168.199.1
+          nameservers:
+            addresses: [8.8.8.8, 8.8.4.4]
 ```
 
 示例2：eth1网卡通过network/interfaces配置静态IP地址为192.168.77.196
