@@ -20,7 +20,9 @@ RK Linux官方提供rknn_yolov5_demo，源码支持 `RK3562`、`RK3566`、`RK356
 (SDK)/external/rknpu2/examples/rknn_yolov5_demo
 ```
 
-
+> 目前 RK3568、RK3588 可使用此demo
+>
+> Ubuntu系统库适配有问题，暂时无法使用
 
 ### 源码参考及编译
 
@@ -157,6 +159,8 @@ car @ (702 263 716 273) 0.163944
 测试环境：RK3568 Debian11
 
 > 目前 RK3568、RK3588 可使用此demo
+>
+> Ubuntu系统库适配有问题，暂时无法使用
 
 
 
@@ -266,6 +270,8 @@ $ ./rknn_yolov5_demo model/RK356X/yolov5s-640-640.rknn model/test.mp4
 测试环境：RK3568 Debian11
 
 > 目前 RK3568、RK3588 可使用此demo
+>
+> Ubuntu系统库适配有问题，暂时无法使用
 
 
 
