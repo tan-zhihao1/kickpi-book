@@ -56,6 +56,14 @@
 >
 > rk3576-kickpi-k7-cam3.dtsi 对应 MIPI-CSI_3
 
+armbian dts 路径
+
+```
+patch/kernel/rk35xx-vendor-6.1/dt/rk3576-kickpi-k7-cam0.dtsi
+patch/kernel/rk35xx-vendor-6.1/dt/rk3576-kickpi-k7-cam1.dtsi
+patch/kernel/rk35xx-vendor-6.1/dt/rk3576-kickpi-k7-cam3.dtsi
+```
+
 
 
 
