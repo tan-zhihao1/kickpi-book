@@ -356,7 +356,7 @@ sudo apt install gstreamer1.0-tools
 sudo apt install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
 ```
 
-### 预览摄像头
+### 命令行预览摄像头
 
 ```
 gst-launch-1.0 v4l2src device=/dev/video33 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
