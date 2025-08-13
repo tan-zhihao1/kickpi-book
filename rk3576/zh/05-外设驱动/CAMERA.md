@@ -46,7 +46,7 @@
 
 ## Linux 测试
 
-查看摄像头节点
+**查看摄像头节点**
 
 ```
 v4l2-ctl --list-devices
@@ -138,3 +138,36 @@ root@linaro-alip:/#
 ```
 
 > 通过 rkisp_mainpath 可知有两个摄像头，可操作对应的第一个设备/dev/video33 和 /dev/video42
+
+
+
+**查看摄像头信息**
+
+```
+v4l2-ctl --list-formats-ext --device=/dev/video*
+```
+
+示例
+
+```
+root@linaro-alip:/# v4l2-ctl --list-formats-ext --device=/dev/video33
+ioctl: VIDIOC_ENUM_FMT
+        Type: Video Capture Multiplanar
+
+        [0]: 'UYVY' (UYVY 4:2:2)
+                Size: Stepwise 32x32 - 3840x2160 with step 8/8
+        [1]: 'NV16' (Y/UV 4:2:2)
+                Size: Stepwise 32x32 - 3840x2160 with step 8/8
+        [2]: 'NV61' (Y/VU 4:2:2)
+                Size: Stepwise 32x32 - 3840x2160 with step 8/8
+        [3]: 'NV21' (Y/VU 4:2:0)
+                Size: Stepwise 32x32 - 3840x2160 with step 8/8
+        [4]: 'NV12' (Y/UV 4:2:0)
+                Size: Stepwise 32x32 - 3840x2160 with step 8/8
+        [5]: 'NM21' (Y/VU 4:2:0 (N-C))
+                Size: Stepwise 32x32 - 3840x2160 with step 8/8
+        [6]: 'NM12' (Y/UV 4:2:0 (N-C))
+                Size: Stepwise 32x32 - 3840x2160 with step 8/8
+root@linaro-alip:/# 
+```
+
