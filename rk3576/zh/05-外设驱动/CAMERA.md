@@ -307,6 +307,10 @@ sudo gst-launch-1.0 v4l2src num-buffers=1 device=/dev/video33 ! jpegenc ! filesi
 
 ### **命令行预览摄像头**
 
+1、先查看摄像头节点
+
+2、指定摄像头头节点进行预览
+
 ```
 gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
 ```
@@ -359,6 +363,10 @@ sudo apt install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.
 ```
 
 ### 命令行预览摄像头
+
+1、先查看摄像头节点
+
+2、指定摄像头头节点进行预览
 
 ```
 gst-launch-1.0 v4l2src device=/dev/video33 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
