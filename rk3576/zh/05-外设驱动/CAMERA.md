@@ -137,3 +137,4 @@ rkvpss_scale0 (platform:rkvpss-vir3):
 root@linaro-alip:/# 
 ```
 
+> 通过 rkisp_mainpath 可知有两个摄像头，可操作对应的第一个设备/dev/video33 和 /dev/video42
