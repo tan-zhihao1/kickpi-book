@@ -29,7 +29,7 @@ MIPI_CS0、MIPI_CS1、MIPI_CS3 为 22 pin 的 MIPI_CSI_RX 接口。
 
 **多摄像头配置**
 
-使用 MIPI-CSI_0 接口接入 imx415。
+使用 MIPI-CSI_0 、MIPI-CSI_1、MIPI-CSI_3 接口都接入 imx415，共三个摄像头。
 
 ```diff
 (SDK)$ vim kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dtsi
@@ -38,5 +38,5 @@ MIPI_CS0、MIPI_CS1、MIPI_CS3 为 22 pin 的 MIPI_CSI_RX 接口。
 +#include "rk3576-kickpi-k7-cam3.dtsi"
 ```
 
-> 目前配置仅支持 imx415
+
 
