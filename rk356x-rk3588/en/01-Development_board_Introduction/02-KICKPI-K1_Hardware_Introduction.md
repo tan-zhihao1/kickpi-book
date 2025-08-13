@@ -12,7 +12,7 @@
 
 ## Expansion Pins <a id="ExpansionPin"> </a>
 
-![image-20250222170528749](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170528749.png)
+![k1_40pin](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k1_40pin.jpg)
 
 ## Accessory List
 
