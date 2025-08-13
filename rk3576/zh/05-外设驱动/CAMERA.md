@@ -49,6 +49,12 @@
 查看摄像头节点
 
 ```
+v4l2-ctl --list-devices
+```
+
+示例：
+
+```
 root@linaro-alip:/# v4l2-ctl --list-devices
 rkisp-statistics (platform: rkisp):
         /dev/video39
