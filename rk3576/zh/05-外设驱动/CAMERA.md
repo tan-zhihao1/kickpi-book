@@ -238,6 +238,8 @@ Redistribute latency...
 
 ## Android 测试
 
+> 以双路摄像头为例，前置+后置摄像头。
+
 1、打开 Camera APP
 
 ![image-20250813152220642](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250813152220642.png)
