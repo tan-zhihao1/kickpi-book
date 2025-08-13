@@ -322,9 +322,22 @@ sudo gst-launch-1.0 v4l2src num-buffers=1 device=/dev/video33 ! jpegenc ! filesi
 
 ### **命令行摄像头预览**
 
+autovideosink 方式
+
 ```
 gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
+
+gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
 ```
+
+waylandsink 方式
+
+```
+gst-launch-1.0 v4l2src device=/dev/video33 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
+gst-launch-1.0 v4l2src device=/dev/video42 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
+```
+
+
 
 示例：
 
