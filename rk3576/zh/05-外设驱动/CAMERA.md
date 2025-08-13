@@ -116,6 +116,8 @@ Linux 源码文档路径
 ```
 sudo apt update
 sudo apt install v4l-utils
+sudo apt install gstreamer1.0-tools
+sudo apt install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
 ```
 
 
