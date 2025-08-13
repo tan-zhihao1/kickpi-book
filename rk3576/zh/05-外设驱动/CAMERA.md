@@ -56,12 +56,30 @@
 >
 > rk3576-kickpi-k7-cam3.dtsi 对应 MIPI-CSI_3
 
-armbian dts 路径
+**Armbian dtsi 文件路径**
 
 ```
 patch/kernel/rk35xx-vendor-6.1/dt/rk3576-kickpi-k7-cam0.dtsi
 patch/kernel/rk35xx-vendor-6.1/dt/rk3576-kickpi-k7-cam1.dtsi
 patch/kernel/rk35xx-vendor-6.1/dt/rk3576-kickpi-k7-cam3.dtsi
+```
+
+
+
+**多摄像头配置**
+
+使用 MIPI-CSI_0 、MIPI-CSI_1、MIPI-CSI_3 接口都接入 imx415，共三个摄像头。
+
+```
+--- a/patch/kernel/rk35xx-vendor-6.1/dt/rk3576-kickpi-k7.dts
++++ b/patch/kernel/rk35xx-vendor-6.1/dt/rk3576-kickpi-k7.dts
+@@ -20,6 +20,10 @@
+ #include "rk3576-rk806.dtsi"
+ #include "rk3576-linux.dtsi"
+ 
++#include "rk3576-kickpi-k7-cam0.dtsi"
++#include "rk3576-kickpi-k7-cam1.dtsi"
++#include "rk3576-kickpi-k7-cam3.dtsi"
 ```
 
 
