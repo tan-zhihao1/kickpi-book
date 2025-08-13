@@ -16,6 +16,8 @@
 
 添加摄像头配置，cam0 ~ cam3 对应原理图的 MIPI-CSI_0 ~ MIPI-CSI_3。
 
+**Android / Linux dtsi 文件路径**
+
 > kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-cam0.dtsi 对应 MIPI-CSI_0
 >
 > kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-cam1.dtsi 对应 MIPI-CSI_1
