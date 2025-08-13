@@ -10,6 +10,10 @@
 
 ![image-20250222170435757](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170435757.png)
 
+## Expansion Pins <a id="ExpansionPin"> </a>
+
+![K8-40PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250721095338113.png)
+
 ## Accessory List
 
 ### Display <a id="display"> </a>
