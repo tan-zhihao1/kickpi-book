@@ -8,6 +8,10 @@
 
 ![image-20250222170410745](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222170410745.png)
 
+## Expansion Pins <a id="ExpansionPin"> </a>
+
+
+
 ## Accessory List
 
 ### Display <a id="display"> </a>
