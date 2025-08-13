@@ -297,7 +297,7 @@ root@linaro-alip:/#
 
 ## Debian 测试
 
-### 命令行截图图片
+### 命令行摄像头捕获图片
 
 ```
 sudo gst-launch-1.0 v4l2src num-buffers=1 device=/dev/video33 ! jpegenc ! filesink location=picture.jpg
@@ -305,7 +305,7 @@ sudo gst-launch-1.0 v4l2src num-buffers=1 device=/dev/video33 ! jpegenc ! filesi
 
 
 
-### **命令行预览摄像头**
+### **命令行摄像头预览**
 
 ```
 gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
