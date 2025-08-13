@@ -111,6 +111,13 @@ Linux 源码文档路径
 
 ## v4l2-ctl 测试
 
+### 安装工具
+
+```
+sudo apt update
+sudo apt install v4l-utils
+```
+
 ### **查看摄像头节点**
 
 ```
