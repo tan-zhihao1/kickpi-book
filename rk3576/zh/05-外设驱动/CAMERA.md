@@ -218,7 +218,9 @@ root@linaro-alip:/#
 gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
 ```
 
-示例
+示例：
+
+预览 /dev/video33 摄像头。
 
 ```
 root@linaro-alip:/# gst-launch-1.0 v4l2src device=/dev/video33 ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
