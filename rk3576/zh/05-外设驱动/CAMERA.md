@@ -49,6 +49,8 @@
 Rockchip 官方提供了 Camera 相关文档。
 
 ```
+(Android SDK)/RKDocs/common/camera/
+
 ```
 
 
