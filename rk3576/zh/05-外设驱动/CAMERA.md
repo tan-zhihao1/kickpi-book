@@ -304,6 +304,14 @@ root@linaro-alip:/#
 
 ## Debian 测试
 
+### 安装工具
+
+```
+sudo apt update
+sudo apt install gstreamer1.0-tools
+sudo apt install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
+```
+
 ### 命令行摄像头捕获图片
 
 ```
