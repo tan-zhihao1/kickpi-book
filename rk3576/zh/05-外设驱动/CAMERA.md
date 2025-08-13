@@ -295,6 +295,8 @@ root@linaro-alip:/#
 
 
 
+## Debian 测试
+
 ### 命令行拍照
 
 ```
