@@ -14,6 +14,8 @@
 
 
 
+![k3_20pin](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k3_20pin.jpg)
+
 ## 配件列表
 
 ### 显示屏<a id="display"> </a>
