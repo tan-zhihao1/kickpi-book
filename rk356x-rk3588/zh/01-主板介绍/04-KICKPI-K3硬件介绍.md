@@ -12,7 +12,7 @@
 
 ![image-20250222171213291](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250222171213291.png)
 
-
+## 引脚列表
 
 ![k3_20pin](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k3_20pin.jpg)
 
