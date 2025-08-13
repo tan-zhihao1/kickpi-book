@@ -21,3 +21,7 @@ MIPI_CS0、MIPI_CS1、MIPI_CS3 为 22 pin 的 MIPI_CSI_RX 接口。
 +#include "rk3576-kickpi-k7-cam3.dtsi"
 ```
 
+> 目前配置仅支持 imx415
+
+
+
