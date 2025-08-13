@@ -272,6 +272,16 @@ Redistribute latency...
 
 
 
+## Android APP
+
+Camera2 APP 源码路径。
+
+```
+(Android SDK)/packages/apps/Camera2/
+```
+
+
+
 ## Android 测试
 
 > 以双路摄像头为例，前置+后置摄像头。
