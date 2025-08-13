@@ -236,6 +236,22 @@ Redistribute latency...
 0:00:04.1 / 99:99:99.
 ```
 
+> 1. **`gst-launch-1.0`**
+>    GStreamer 的命令行工具，用于快速构建和运行 GStreamer 管道。
+> 2. **`v4l2src device=/dev/video33`**
+>    - `v4l2src`：视频 4Linux2 源元件，用于从符合 V4L2 标准的视频设备（如摄像头）捕获数据
+>    - `device=/dev/video33`：指定要使用的视频设备文件，这里是 `/dev/video33`（不同设备的摄像头编号可能不同）
+> 3. **`video/x-raw,format=NV12,width=800,height=600,framerate=30/1`**
+>    这是一个**Caps（功能描述）**，用于指定视频格式：
+>    - `video/x-raw`：表示原始未压缩视频
+>    - `format=NV12`：视频像素格式为 NV12（一种常见的 YUV 格式，适合硬件加速）
+>    - `width=800,height=600`：视频分辨率为 800x600
+>    - `framerate=30/1`：帧率为 30 帧 / 秒
+> 4. **`videoconvert`**
+>    视频格式转换元件，用于将输入视频格式转换为后续元件支持的格式（这里主要是为了适配显示元件的需求）
+> 5. **`autovideosink`**
+>    自动选择合适的视频输出元件，会根据系统环境自动选择最佳的视频显示方式（如 X11、Wayland 或直接渲染等）
+
 
 
 ## Android 测试
