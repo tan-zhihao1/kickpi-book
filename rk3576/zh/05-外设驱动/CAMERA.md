@@ -306,6 +306,14 @@ root@linaro-alip:/#
 
 
 
+### 命令行拍照
+
+```
+sudo gst-launch-1.0 v4l2src num-buffers=1 device=/dev/video33 ! jpegenc ! filesink location=picture.jpg
+```
+
+
+
 ### **命令行预览摄像头**
 
 ```
