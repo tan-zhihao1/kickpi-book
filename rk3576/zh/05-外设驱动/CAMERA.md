@@ -46,7 +46,7 @@
 
 ## 文档参考
 
-Rockchip 官方提供了 Camera 相关文档。
+Rockchip 官方提供了 Camera 相关文档，包含在源码SDK中。
 
 Android 源码文档路径
 
