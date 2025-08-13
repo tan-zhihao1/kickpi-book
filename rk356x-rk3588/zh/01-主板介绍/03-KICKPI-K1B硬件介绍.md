@@ -16,7 +16,7 @@
 
 ## 引脚列表
 
-![image-20240914152349051](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240914152349051.png)
+![k1b_20pin](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k1b_20pin.jpg)
 
 ## 配件列表
 

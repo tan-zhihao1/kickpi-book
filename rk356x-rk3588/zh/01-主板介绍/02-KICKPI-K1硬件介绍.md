@@ -14,7 +14,7 @@
 
 ## 引脚列表
 
-![image-20240420181207097](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240420181207097.png)
+![k1_40pin](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k1_40pin.jpg)
 
 ## 配件列表
 
