@@ -10,7 +10,7 @@
 
 ## Expansion Pins <a id="ExpansionPin"> </a>
 
-
+![k3_20pin](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k3_20pin.jpg)
 
 ## Accessory List
 
