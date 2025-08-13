@@ -210,6 +210,24 @@ The pixelformat 'MJPG' is invalid
 root@linaro-alip:/#
 ```
 
+>1. **`v4l2-ctl -d /dev/video33`**
+>   - `v4l2-ctl`：Video4Linux2 控制工具，用于配置和控制 V4L2 兼容的视频设备
+>   - `-d /dev/video33`：指定操作的视频设备为 `/dev/video33`
+>2. **`--set-fmt-video=width=1920,height=1080,pixelformat='MJPG'`**
+>   配置视频输出格式：
+>   - `width=1920,height=1080`：设置视频分辨率为 1920x1080（1080P）
+>   - `pixelformat='MJPG'`：设置像素格式为 MJPEG（ Motion JPEG，一种压缩格式）
+>3. **`--stream-mmap=4`**
+>   - 启用内存映射（mmap）方式捕获视频流
+>   - `=4` 表示分配 4 个缓冲区用于流捕获（多缓冲区可以减少帧丢失）
+>4. **`--set-selection=target=crop,flags=0,top=0,left=0,width=1920,height=1080`**
+>   设置视频裁剪区域：
+>   - `target=crop`：指定操作对象为裁剪区域
+>   - `flags=0`：无特殊标志（默认）
+>   - `top=0,left=0,width=1920,height=1080`：设置裁剪区域从左上角 (0,0) 开始，大小为 1920x1080（即使用完整画面，不裁剪）
+>5. **`--stream-count=500`**
+>   指定捕获的视频帧数为 500 帧，捕获完成后自动停止
+
 
 
 **命令行预览摄像头**
