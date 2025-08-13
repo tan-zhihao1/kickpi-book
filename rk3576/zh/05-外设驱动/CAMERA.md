@@ -247,3 +247,7 @@ Redistribute latency...
 2、
 
 ![image-20250813152323711](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250813152323711.png)
+
+3、
+
+![image-20250813152343947](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250813152343947.png)
