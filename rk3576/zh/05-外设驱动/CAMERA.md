@@ -356,6 +356,17 @@ Redistribute latency...
 
 
 
+## Armbian Ubuntu 测试
+
+```
+gst-launch-1.0 v4l2src device=/dev/video33 ! videoconvert ! waylandsink
+gst-launch-1.0 v4l2src device=/dev/video33 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
+```
+
+
+
+
+
 ## Android APP
 
 Camera2 APP 源码路径。
