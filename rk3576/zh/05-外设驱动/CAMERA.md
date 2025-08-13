@@ -326,18 +326,14 @@ autovideosink 方式
 
 ```
 gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
-
-gst-launch-1.0 v4l2src device=/dev/video33 ! video/x-raw,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
 ```
 
-waylandsink 方式
+waylandsink 方式（gome桌面使用该方式进行预览）
 
 ```
 gst-launch-1.0 v4l2src device=/dev/video33 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
 gst-launch-1.0 v4l2src device=/dev/video42 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
 ```
-
-
 
 示例：
 
@@ -376,32 +372,6 @@ Redistribute latency...
 >    视频格式转换元件，用于将输入视频格式转换为后续元件支持的格式（这里主要是为了适配显示元件的需求）
 > 5. **`autovideosink`**
 >    自动选择合适的视频输出元件，会根据系统环境自动选择最佳的视频显示方式（如 X11、Wayland 或直接渲染等）
-
-
-
-## Armbian Ubuntu 测试
-
-### 安装工具
-
-```
-sudo apt update
-sudo apt install v4l-utils
-sudo apt install gstreamer1.0-tools
-sudo apt install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
-```
-
-### 命令行摄像头预览
-
-1、先查看摄像头节点
-
-2、指定摄像头头节点进行预览
-
-```
-gst-launch-1.0 v4l2src device=/dev/video33 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
-gst-launch-1.0 v4l2src device=/dev/video42 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
-```
-
-
 
 
 
