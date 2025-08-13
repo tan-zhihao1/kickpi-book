@@ -243,3 +243,7 @@ Redistribute latency...
 1、打开 Camera APP
 
 ![image-20250813152220642](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250813152220642.png)
+
+2、
+
+![image-20250813152323711](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250813152323711.png)
