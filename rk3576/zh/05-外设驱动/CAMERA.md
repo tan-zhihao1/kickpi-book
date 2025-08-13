@@ -212,3 +212,25 @@ root@linaro-alip:/#
 
 
 
+**命令行预览摄像头**
+
+```
+gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
+```
+
+示例
+
+```
+root@linaro-alip:/# gst-launch-1.0 v4l2src device=/dev/video33 ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
+Setting pipeline to PAUSED ...-1.0 v4l2src device=/dev/video33 ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
+libEGL warning: DRI2: failed to authenticate
+Using mplane plugin for capture 
+Pipeline is live and does not need PREROLL ...
+Got context from element 'autovideosink0': gst.gl.GLDisplay=context, gst.gl.GLDisplay=(GstGLDisplay)"\(GstGLDisplayX11\)\ gldisplayx11-0";
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+New clock: GstSystemClock
+Redistribute latency...
+0:00:04.1 / 99:99:99.
+```
+
