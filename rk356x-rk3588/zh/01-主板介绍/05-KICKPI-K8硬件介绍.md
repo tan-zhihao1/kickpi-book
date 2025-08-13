@@ -14,7 +14,7 @@
 
 ## 引脚列表
 
-
+![K8-40PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250721095338113.png)
 
 ## 配件列表
 
