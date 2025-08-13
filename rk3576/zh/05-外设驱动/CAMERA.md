@@ -48,16 +48,18 @@
 
 Rockchip 官方提供了 Camera 相关文档。
 
+Android 源码文档路径
+
 ```
 (Android SDK)/RKDocs/common/camera/
 ```
 
-```
-Linux SDK/docs/cn/Linux/Camera/
-Linux SDK/docs/cn/Common/ISP/
-```
+Linux 源码文档路径
 
-
+```
+(Linux SDK)/docs/cn/Linux/Camera/
+(Linux SDK)/docs/cn/Common/ISP/
+```
 
 
 
