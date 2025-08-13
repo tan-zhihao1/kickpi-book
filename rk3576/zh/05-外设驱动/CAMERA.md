@@ -46,6 +46,22 @@
 
 
 
+## Armbian dts 配置
+
+添加摄像头配置，cam0 ~ cam3 对应原理图的 MIPI-CSI_0 ~ MIPI-CSI_3。
+
+> kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-cam0.dtsi 对应 MIPI-CSI_0
+>
+> kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-cam1.dtsi 对应 MIPI-CSI_1
+>
+> kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-cam3.dtsi 对应 MIPI-CSI_3
+
+
+
+
+
+
+
 ## 文档参考
 
 Rockchip 官方提供了 Camera 相关文档，包含在源码SDK中。
