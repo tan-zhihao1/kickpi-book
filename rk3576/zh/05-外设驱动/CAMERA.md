@@ -111,17 +111,6 @@ Linux 源码文档路径
 
 ## Linux 测试
 
-### 安装工具
-
-```
-sudo apt update
-sudo apt install v4l-utils
-sudo apt install gstreamer1.0-tools
-sudo apt install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
-```
-
-
-
 ### **查看摄像头节点**
 
 ```
@@ -358,9 +347,21 @@ Redistribute latency...
 
 ## Armbian Ubuntu 测试
 
+### 安装工具
+
 ```
-gst-launch-1.0 v4l2src device=/dev/video33 ! videoconvert ! waylandsink
+sudo apt update
+sudo apt install v4l-utils
+sudo apt install gstreamer1.0-tools
+sudo apt install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
+```
+
+### 预览摄像头
+
+```
 gst-launch-1.0 v4l2src device=/dev/video33 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
+
+gst-launch-1.0 v4l2src device=/dev/video42 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
 ```
 
 
