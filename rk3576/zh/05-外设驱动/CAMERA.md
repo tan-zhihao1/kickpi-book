@@ -30,8 +30,6 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-cam3.dtsi
 >
 > rk3576-kickpi-k7-cam3.dtsi 对应 MIPI-CSI_3
 
-
-
 **单摄像头配置**
 
 使用 MIPI-CSI_0 接口接入 imx415，仅单个摄像头。
@@ -74,8 +72,6 @@ patch/kernel/rk35xx-vendor-6.1/dt/rk3576-kickpi-k7-cam3.dtsi
 >
 > rk3576-kickpi-k7-cam3.dtsi 对应 MIPI-CSI_3
 
-
-
 **多摄像头配置**
 
 使用 MIPI-CSI_0 、MIPI-CSI_1、MIPI-CSI_3 接口都接入 imx415，共三个摄像头。
@@ -91,10 +87,6 @@ patch/kernel/rk35xx-vendor-6.1/dt/rk3576-kickpi-k7-cam3.dtsi
 +#include "rk3576-kickpi-k7-cam1.dtsi"
 +#include "rk3576-kickpi-k7-cam3.dtsi"
 ```
-
-
-
-
 
 
 
