@@ -240,14 +240,14 @@ Redistribute latency...
 
 > 以双路摄像头为例，前置+后置摄像头。
 
-1、打开 Camera APP
+1、打开 Camera APP。
 
 ![image-20250813152220642](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250813152220642.png)
 
-2、
+2、切换前置和后置摄像头，需要点击3个小点配置。
 
 ![image-20250813152323711](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250813152323711.png)
 
-3、
+3、点击按钮，切换前置和后置摄像头。
 
 ![image-20250813152343947](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250813152343947.png)
