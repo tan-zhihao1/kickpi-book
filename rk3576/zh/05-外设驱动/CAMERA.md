@@ -345,7 +345,7 @@ gst-launch-1.0 v4l2src device=/dev/video42 ! video/x-raw,width=1280,height=720,f
 
 2、指定摄像头头节点进行预览
 
-3、预览 /dev/video33 摄像头。
+3、使用 gst-launch-1.0 工具 autovideosink 方式预览 /dev/video33 摄像头。
 
 ```
 root@linaro-alip:/# gst-launch-1.0 v4l2src device=/dev/video33 ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
