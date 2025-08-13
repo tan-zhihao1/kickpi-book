@@ -67,7 +67,7 @@ Linux 源码文档路径
 
 ## Linux 测试
 
-**查看摄像头节点**
+### **查看摄像头节点**
 
 ```
 v4l2-ctl --list-devices
@@ -162,7 +162,7 @@ root@linaro-alip:/#
 
 
 
-**查看摄像头信息**
+### **查看摄像头信息**
 
 ```
 v4l2-ctl --list-formats-ext --device=/dev/video*
@@ -194,7 +194,7 @@ root@linaro-alip:/#
 
 
 
-**查看摄像头帧率**
+### **查看摄像头帧率**
 
 ```
 v4l2-ctl -d /dev/video* \
@@ -251,7 +251,7 @@ root@linaro-alip:/#
 
 
 
-**命令行预览摄像头**
+### **命令行预览摄像头**
 
 ```
 gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
