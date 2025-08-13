@@ -238,3 +238,6 @@ Redistribute latency...
 
 ## Android 测试
 
+1、打开 Camera APP
+
+![image-20250813152220642](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250813152220642.png)
