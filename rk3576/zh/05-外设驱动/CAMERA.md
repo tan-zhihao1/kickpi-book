@@ -12,7 +12,7 @@
 
 
 
-## dts配置
+## Android/Linux dts配置
 
 添加摄像头配置，cam0 ~ cam3 对应原理图的 MIPI-CSI_0 ~ MIPI-CSI_3。
 
