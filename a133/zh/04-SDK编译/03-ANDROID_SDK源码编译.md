@@ -95,6 +95,14 @@ lunch ceres_c3-userdebug
 
 ## 常见问题
 
+### 安卓编译失败
+
+编译安卓时失败 且没有明显错误报错，修改一下内容尝试重新编译
+
+![image-20250814093933050](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250814093933050.png)
+
+
+
 ### 编译 yylloc 报错问题
 
 **由于编译环境 ld 不同，可能会导致 yylloc 报错，需要修改代码中的yylloc**
