@@ -202,7 +202,11 @@ include $(BUILD_PREBUILT)
 >
 >`LOCAL_SRC_FILES` 指定编译文件的路径
 
+第二步，修改apollo_p2.mk文件
 
+路径device/softwinner/apollo/apollo_p2.mk
+
+![image-20250814163119903](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250814163119903.png)
 
 ## 命令行启动APP<a id="am_start_app"> </a>
 
