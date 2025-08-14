@@ -259,7 +259,7 @@ v4l2-ctl -d /dev/video* \
 
 ```
 root@linaro-alip:/# v4l2-ctl -d /dev/video33 \
- --set-fmt-video=width=1920,height=1080,pixelformat='MJPG' \
+ --set-fmt-video=width=1920,height=1080\
  --stream-mmap=4 \
  --set-selection=target=crop,flags=0,top=0,left=0,width=1920,height=1080 \
  --stream-count=500
