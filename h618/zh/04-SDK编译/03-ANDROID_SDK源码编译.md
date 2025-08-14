@@ -186,6 +186,12 @@ board-k2b.dts  board-k2c.dts
 
 ## 常见问题
 
+### 安卓编译失败
+
+编译安卓时失败 且没有明显错误报错，修改一下内容尝试重新编译
+
+![image-20250814094151807](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250814094151807.png)
+
 ### APP 文件编译不生效问题
 
 android 为惰性编译，直接替换后编译，一些APP、文件不一定编译到镜像中
