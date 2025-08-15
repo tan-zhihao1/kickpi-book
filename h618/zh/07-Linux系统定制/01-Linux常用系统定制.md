@@ -62,7 +62,7 @@ Type=idle
 
 ## 修改默认USER_KEY功能
 
-桌面版按下USER按键是打卡login out界面
+桌面版按下USER按键是打开login out界面
 
 关闭xfce4-power-manager可禁用
 
