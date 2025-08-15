@@ -66,6 +66,8 @@ Type=idle
 
 关闭xfce4-power-manager可禁用
 
+
+
 服务器版本按下USER按键是直接关机
 
 取消这个功能方法如下
