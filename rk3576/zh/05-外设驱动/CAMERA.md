@@ -259,21 +259,14 @@ v4l2-ctl -d /dev/video* \
 
 ```
 root@linaro-alip:/# v4l2-ctl -d /dev/video33 \
- --set-fmt-video=width=1280,height=720\
+ --set-fmt-video=width=3840,height=2160\
  --stream-mmap=4 \
- --set-selection=target=crop,flags=0,top=0,left=0,width=1280,height=720 \
+ --set-selection=target=crop,flags=0,top=0,left=0,width=3840,height=2160 \
  --stream-count=500
-[  425.753116] rkisp_hw 27c00000.isp: set isp clk = 396000000Hz
-[  425.779808] rkisp rkisp-vir0: first params buf queue
-[  425.780839] rkcif-mipi-lvds: stream[0] start streaming
-[  425.783853] rkcif-mipi-lvds: Allocate dummy buffer, size: 0x01028000
-[  425.783941] rockchip-mipi-csi2 mipi0-csi2: stream on, src_sd: 000000004c236c38, sd_name:rockchip-csi2-dphy0
-[  425.783950] rockchip-mipi-csi2 mipi0-csi2: stream ON
-[  425.783977] rockchip-csi2-dphy0: dphy0, data_rate_mbps 892
-[  425.784438] rockchip-csi2-dphy csi2-dcphy0: csi2_dphy_s_stream stream on:1, dphy0, ret 0
-[  425.784447] imx415 4-0037: s_stream: 1. 3864x2192, hdr: 0, bpp: 10
-[  425.951182] mipi0-csi2-hw ERR2:0xf0000 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 30.00 fps
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 30.00 fps
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 30.00 fps
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 30.00 fps
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 30.00 fps
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 30.00 fps
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 30.00 fps
