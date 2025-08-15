@@ -96,7 +96,7 @@ SDK$ ./compile.sh
 
 8.1 若第7步选择桌面版，桌面版提供了四种可支持的桌面，根据需要选择。
 
-> 注意：Windows 虚拟机 Ubuntu 系统一般选择 gnome 桌面！
+> 注意： Ubuntu 系统选择 gnome 桌面，目前仅验证了此桌面！
 
 ![image-20250704141508062](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704141508062.png)
 
