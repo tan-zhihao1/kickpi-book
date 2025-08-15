@@ -259,9 +259,9 @@ v4l2-ctl -d /dev/video* \
 
 ```
 root@linaro-alip:/# v4l2-ctl -d /dev/video33 \
- --set-fmt-video=width=1920,height=1080\
+ --set-fmt-video=width=1280,height=720\
  --stream-mmap=4 \
- --set-selection=target=crop,flags=0,top=0,left=0,width=1920,height=1080 \
+ --set-selection=target=crop,flags=0,top=0,left=0,width=1280,height=720 \
  --stream-count=500
 [  425.753116] rkisp_hw 27c00000.isp: set isp clk = 396000000Hz
 [  425.779808] rkisp rkisp-vir0: first params buf queue
