@@ -386,12 +386,14 @@ $ vim frameworks/base/packages/SettingsProvider/res/values/defaults.xml
 
 ## APK签名
 
+如果需要给APK签名，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
+
 ```
 kickpi-book/common/en/android/Android_Apk_Signing.md
 kickpi-book/common/zh/android/Android_Apk_Signing.md
 ```
 
-点击查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
+
 
 
 
