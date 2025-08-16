@@ -161,9 +161,19 @@ $ apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk a
 
 ### java 方式
 
-在源码中进行重签
+在源码中进行重签。
 
 H618 平台
+
+```
+$ source build/envsetup.sh
+$ lunch apollo_p2-userdebug
+$ java -Xmx2048m -Djava.library.path="out/host/linux-x86/lib64" \
+-jar out/host/linux-x86/framework/signapk.jar  --disable-v2 \
+-w device/rockchip/common/security/platform.x509.pem \
+device/rockchip/common/security/platform.pk8 \
+old.apk new.apk
+```
 
 A133 平台
 
@@ -174,7 +184,6 @@ RK3576 平台
 ```shell
 $ source build/envsetup.sh
 $ lunch apollo_p2-userdebug
-$ cd rk-android13.0/
 $ java -Xmx2048m -Djava.library.path="out/host/linux-x86/lib64" \
 -jar out/host/linux-x86/framework/signapk.jar  --disable-v2 \
 -w device/rockchip/common/security/platform.x509.pem \
@@ -182,9 +191,26 @@ device/rockchip/common/security/platform.pk8 \
 old.apk new.apk
 ```
 
-> `old.apk` 指定需要签名的apk路径
+> - `java`：启动 Java 虚拟机（JVM）的命令。
+> - `-Xmx2048m`：设置 JVM 最大堆内存为 2048MB（2GB），避免签名过程中因内存不足报错。
+> - `-Djava.library.path="out/host/linux-x86/lib64"`：指定 Java native 库（C/C++ 编写的库）的搜索路径，这里指向 Android 编译输出的主机端（Linux x86 架构）库目录，确保签名工具能加载依赖的原生库。
 >
-> `new.apk` 指定签名后的apk
+> - `-jar out/host/linux-x86/framework/signapk.jar`：指定执行 `signapk.jar` 这个工具（Android 源码中用于 APK 签名的官方工具，位于编译输出的主机端框架目录）。
+>
+> - ` --disable-v2 `
+>
+>   禁用 APK 签名方案 V2（仅使用 V1 签名）。
+>
+>   - V1 是基于 JAR 的传统签名（生成 `META-INF` 目录下的签名文件），兼容性好但安全性较低；
+>   - V2 是 Android 7.0+ 引入的整体 APK 签名，安全性更高。
+>     禁用 V2 通常是为了兼容旧系统或特定场景（如某些定制系统对 V2 签名支持不完善）
+>
+> - `-w device/rockchip/common/security/platform.x509.pem`：指定 **公钥证书文件**（`platform.x509.pem`），`-w` 表示验证证书链的完整性。
+>   该文件是 Rockchip 平台的系统级证书（`platform` 类型），用于标识签名者身份。
+> - `device/rockchip/common/security/platform.pk8`：指定 **私钥文件**（`platform.pk8`），与上述公钥证书配对，用于实际签署 APK。
+>
+> - `old.apk`：待签名的原始 APK 文件（可以是未签名、预签名或其他签名的 APK）。
+> - `new.apk`：签名后生成的新 APK 文件（保存路径和文件名，将覆盖原文件同名文件）。
 
 
 
