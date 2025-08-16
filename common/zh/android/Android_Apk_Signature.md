@@ -51,14 +51,10 @@ platform.pk8 platform.x509.pem
 
 第一步，存放系统签名文件和 keytool-importkeypair 到同一级目录下。
 
-> 不同平台签名文件路径不一样，根据实际情况放入
-
 ```
 $ mkdir sign_key/
 $ ls sign_key/
-platform.pk8 
-platform.x509.pem
-keytool-importkeypair
+platform.pk8	platform.x509.pem	keytool-importkeypair
 ```
 
 
