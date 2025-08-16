@@ -6,6 +6,17 @@
 
 ## 获取APK签名密钥
 
+
+
+```
+(SDK)$ ls android/build/target/product/security/
+platform.pk8 platform.x509.pem
+```
+
+
+
+
+
 **allwinner Android SDK 源码密钥路径**
 
 ```
