@@ -42,7 +42,7 @@ platform.pk8 platform.x509.pem
 网盘路径
 
 ```
-3-SoftwareData/Android_APK_Signature
+3-SoftwareData/Android_app_signkey
 ```
 
 
