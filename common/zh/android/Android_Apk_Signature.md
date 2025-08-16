@@ -58,6 +58,8 @@ platform.pk8 platform.x509.pem
 (SDK)$ cd sign_key/
 ```
 
+>不同平台签名文件路径不一样
+
 
 
 第二步，使用 keytool 生成 jks 文件。
