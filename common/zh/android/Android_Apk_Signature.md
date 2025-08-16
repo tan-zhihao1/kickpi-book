@@ -173,9 +173,9 @@ $ lunch apollo_p2-userdebug
 A133 平台
 
 ```
+$ source build/envsetup.sh
+$ lunch ceres_c3-userdebug
 ```
-
-
 
 RK3562 / RK3568 / RK3588 平台
 
