@@ -6,7 +6,17 @@
 
 ## 获取APK签名密钥
 
-rockchip Android SDK 源码密钥路径
+**allwinner Android SDK 源码密钥路径**
+
+```
+build/target/product/security/platform.pk8
+build/target/product/security/platform.x509.pem
+out/host/linux-x86/framework/signak.jar
+```
+
+
+
+**rockchip Android SDK 源码密钥路径**
 
 ```
 (SDK)$ ls device/rockchip/common/security/
