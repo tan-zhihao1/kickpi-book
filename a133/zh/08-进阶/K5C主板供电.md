@@ -177,9 +177,7 @@ $ echo 0xf > /sys/class/axp/debug_mask
 
 3、检查Type-C供电是否足够，更换 **USB Type-C 充电器** 进行供电。
 
-### 充电电流和打印信息误差较大
-
-
+### 
 
 ### 系统按键无法正常休眠问题
 
