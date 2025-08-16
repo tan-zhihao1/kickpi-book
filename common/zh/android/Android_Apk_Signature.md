@@ -163,6 +163,8 @@ $ apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk a
 
 在源码中进行重签。
 
+第一步，配置 Android java 环境。
+
 H618 平台
 
 ```
@@ -177,16 +179,16 @@ $ source build/envsetup.sh
 $ lunch ceres_c3-userdebug
 ```
 
-RK3562 / RK3568 / RK3588 平台
+RK3562 / RK3568 / RK3576 / RK3588 平台
 
 ```
+$ ./build.sh lunch 
+$ source device/rockchip/.BoardConfig.mk
+$ source build/envsetup.sh 
+$ lunch $TARGET_PRODUCT-$BUILD_VARIANT
 ```
 
-
-
-RK3576 平台
-
-
+第二步。
 
 ```shell
 $ source build/envsetup.sh
