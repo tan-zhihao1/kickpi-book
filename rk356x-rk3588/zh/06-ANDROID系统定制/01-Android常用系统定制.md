@@ -342,8 +342,6 @@ public class MyReceiver extends BroadcastReceiver {
 
   
 
-
-
 ## 默认语言
 
 ```
