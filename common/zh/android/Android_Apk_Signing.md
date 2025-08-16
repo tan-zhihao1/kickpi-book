@@ -161,7 +161,7 @@ $ apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk a
 
 ### java 方式
 
-在源码中进行重签。
+在源码中进行重签（确保已经编译过源码）。
 
 第一步，配置 Android java 环境。
 
