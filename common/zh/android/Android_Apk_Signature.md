@@ -61,7 +61,7 @@ platform.pk8	platform.x509.pem	keytool-importkeypair
 
 第二步，使用 keytool 生成 jks 文件。
 
-`keytool-importkeypair` 用法
+`keytool-importkeypair` 用法：
 
 ```
 keytool-importkeypair: Missing option, exiting...
