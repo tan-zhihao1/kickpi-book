@@ -11,9 +11,6 @@
 ```
 (SDK)$ ls build/target/product/security/
 platform.pk8 platform.x509.pem
-
-(SDK)$ ls out/host/linux-x86/framework/
-signak.jar
 ```
 
 
