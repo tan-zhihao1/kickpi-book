@@ -168,18 +168,25 @@ H618 平台
 ```
 $ source build/envsetup.sh
 $ lunch apollo_p2-userdebug
-$ java -Xmx2048m -Djava.library.path="out/host/linux-x86/lib64" \
--jar out/host/linux-x86/framework/signapk.jar  --disable-v2 \
--w device/rockchip/common/security/platform.x509.pem \
-device/rockchip/common/security/platform.pk8 \
-old.apk new.apk
 ```
 
 A133 平台
 
+```
+```
+
+
+
 RK3562 / RK3568 / RK3588 平台
 
+```
+```
+
+
+
 RK3576 平台
+
+
 
 ```shell
 $ source build/envsetup.sh
