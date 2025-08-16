@@ -6,14 +6,12 @@
 
 ## 获取APK签名密钥
 
-
+**A133 Android SDK 源码密钥路径**
 
 ```
 (SDK)$ ls android/build/target/product/security/
 platform.pk8 platform.x509.pem
 ```
-
-
 
 
 
