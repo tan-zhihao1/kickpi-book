@@ -235,3 +235,5 @@ consloe$ setprop persist.sys.kickpi_holding_wakelock false
 ### 充电电流和打印信息误差较大
 
 修改R0805为0.01欧电阻
+
+![image-20250816092507537](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250816092507537.png)
