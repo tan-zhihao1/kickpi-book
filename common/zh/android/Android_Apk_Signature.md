@@ -1,4 +1,4 @@
-# Android_Apk_Signature
+# Android_Apk_Signing
 
 本文介绍如何对APK进行系统签名。
 
