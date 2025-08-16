@@ -15,7 +15,7 @@ platform.pk8 platform.x509.pem
 
 
 
-**H618 Android SDK 源码密钥路径**
+**H618 RK3576 Android SDK 源码密钥路径**
 
 ```
 (SDK)$ ls build/target/product/security/
@@ -24,7 +24,7 @@ platform.pk8 platform.x509.pem
 
 
 
-**RK356X RK3576 RK3588 Android SDK 源码密钥路径**
+**RK356X RK3588 Android SDK 源码密钥路径**
 
 ```
 (SDK)$ ls device/rockchip/common/security/
