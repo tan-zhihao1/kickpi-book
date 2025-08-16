@@ -333,14 +333,13 @@ $ vim /vendor/aw/homlet/homlet.mk
 
 
 
-## APP签名文件
+## APK签名
 
-签名文件路径如下
+如果需要给APK签名，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
 
 ```
-build/target/product/security/platform.pk8
-build/target/product/security/platform.x509.pem
-out/host/linux-x86/framework/signak.jar
+kickpi-book/common/en/android/Android_Apk_Signing.md
+kickpi-book/common/zh/android/Android_Apk_Signing.md
 ```
 
 
