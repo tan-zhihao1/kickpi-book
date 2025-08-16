@@ -161,7 +161,15 @@ $ apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk a
 
 ### java 方式
 
-源码中进行重签
+在源码中进行重签
+
+H618 平台
+
+A133 平台
+
+RK3562 / RK3568 / RK3588 平台
+
+RK3576 平台
 
 ```shell
 $ source build/envsetup.sh
