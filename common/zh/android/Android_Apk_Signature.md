@@ -205,9 +205,8 @@ old.apk new.apk
 >   - V2 是 Android 7.0+ 引入的整体 APK 签名，安全性更高。
 >     禁用 V2 通常是为了兼容旧系统或特定场景（如某些定制系统对 V2 签名支持不完善）
 >
-> - `-w device/rockchip/common/security/platform.x509.pem`：指定 **公钥证书文件**（`platform.x509.pem`），`-w` 表示验证证书链的完整性。
->   该文件是 Rockchip 平台的系统级证书（`platform` 类型），用于标识签名者身份。
-> - `device/rockchip/common/security/platform.pk8`：指定 **私钥文件**（`platform.pk8`），与上述公钥证书配对，用于实际签署 APK。
+> - `-w platform.x509.pem`：指定 **公钥证书文件**（`platform.x509.pem`），`-w` 表示验证证书链的完整性。该文件是平台的系统级证书（`platform` 类型），用于标识签名者身份。
+> - `platform.pk8`：指定 **私钥文件**（`platform.pk8`），与上述公钥证书配对，用于实际签署 APK。
 >
 > - `old.apk`：待签名的原始 APK 文件（可以是未签名、预签名或其他签名的 APK）。
 > - `new.apk`：签名后生成的新 APK 文件（保存路径和文件名，将覆盖原文件同名文件）。
