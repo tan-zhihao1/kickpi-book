@@ -164,6 +164,8 @@ $ apksigner sign --ks platform.jks --ks-key-alias android --out app-signed.apk a
 源码中进行重签
 
 ```shell
+$ source build/envsetup.sh
+$ lunch apollo_p2-userdebug
 $ cd rk-android13.0/
 $ java -Xmx2048m -Djava.library.path="out/host/linux-x86/lib64" \
 -jar out/host/linux-x86/framework/signapk.jar  --disable-v2 \
