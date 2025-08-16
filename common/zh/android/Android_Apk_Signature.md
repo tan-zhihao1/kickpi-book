@@ -6,14 +6,14 @@
 
 ## 获取APK签名密钥
 
+> 根据主板SOC平台获取源码密钥路径
+
 **A133 Android SDK 源码密钥路径**
 
 ```
 (SDK)$ ls android/build/target/product/security/
 platform.pk8 platform.x509.pem
 ```
-
-
 
 **H618/RK3576 Android SDK 源码密钥路径**
 
@@ -22,16 +22,12 @@ platform.pk8 platform.x509.pem
 platform.pk8 platform.x509.pem
 ```
 
-
-
 **RK3562/RK3568/RK3588 Android SDK 源码密钥路径**
 
 ```
 (SDK)$ ls device/rockchip/common/security/
  platform.pk8     platform.x509.pem  
 ```
-
-
 
 **网盘密钥路径**
 
