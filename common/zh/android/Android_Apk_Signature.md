@@ -32,7 +32,7 @@ platform.pk8 platform.x509.pem
 **网盘密钥路径**
 
 ```
-3-SoftwareData/Android_app_signkey/*key.zip
+3-SoftwareData/Android_app_signkey/*key*
 ```
 
 
@@ -42,7 +42,7 @@ platform.pk8 platform.x509.pem
 网盘路径
 
 ```
-3-SoftwareData/Android_app_signkey
+3-SoftwareData/Android_app_signkey/
 ```
 
 
