@@ -32,7 +32,7 @@ Ubuntu系统版本：2404
 md5sum kickpi-armbian.tar.gz
 ```
 
-> 判断结果和 rk3576-linux-*.md5sum 内容一致，则文件下载完整
+> 判断结果和 kickpi-armbian.md5sum 内容一致，则文件下载完整
 
 3. 解压源码压缩包
 
