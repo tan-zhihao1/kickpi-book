@@ -29,7 +29,7 @@ platform.pk8 platform.x509.pem
  platform.pk8     platform.x509.pem  
 ```
 
-**网盘密钥路径**
+**网盘路径**
 
 ```
 3-SoftwareData/Android_app_signkey/*key*
@@ -39,7 +39,7 @@ platform.pk8 platform.x509.pem
 
 ## 获取 keytool-importkeypair 工具
 
-网盘路径
+**网盘路径**
 
 ```
 3-SoftwareData/Android_app_signkey/
