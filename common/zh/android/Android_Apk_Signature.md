@@ -51,20 +51,21 @@ platform.pk8 platform.x509.pem
 
 第一步，存放系统签名文件和 keytool-importkeypair 到同一级目录下。
 
-```
-(SDK)$ mkdir sign_key/
-(SDK)$ cp device/rockchip/common/security/platform.pk8 sign_key/
-(SDK)$ cp device/rockchip/common/security/platform.x509.pem sign_key/
-(SDK)$ cd sign_key/
-```
+> 不同平台签名文件路径不一样，根据实际情况放入
 
->不同平台签名文件路径不一样
+```
+$ mkdir sign_key/
+$ ls sign_key/
+platform.pk8 
+platform.x509.pem
+keytool-importkeypair
+```
 
 
 
 第二步，使用 keytool 生成 jks 文件。
 
-keytool-importkeypair 用法
+`keytool-importkeypair` 用法
 
 ```
 keytool-importkeypair: Missing option, exiting...
