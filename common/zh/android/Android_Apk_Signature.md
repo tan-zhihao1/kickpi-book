@@ -190,6 +190,8 @@ $ lunch $TARGET_PRODUCT-$BUILD_VARIANT
 
 第二步，利用 java 进行签名。
 
+> 不同平台根据实际签名文件路径，替换  platform.pk8 platform.x509.pem 下面命令路径。
+
 ```shell
 $ java -Xmx2048m -Djava.library.path="out/host/linux-x86/lib64" \
 -jar out/host/linux-x86/framework/signapk.jar  --disable-v2 \
