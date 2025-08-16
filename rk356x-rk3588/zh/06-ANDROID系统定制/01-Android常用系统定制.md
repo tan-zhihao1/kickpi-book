@@ -395,8 +395,6 @@ kickpi-book/common/zh/android/Android_Apk_Signing.md
 
 
 
-
-
 ## 网络ADB
 
 网口ADB需要先adb启动5555端口服务后
