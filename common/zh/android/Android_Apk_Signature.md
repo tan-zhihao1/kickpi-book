@@ -188,11 +188,9 @@ $ source build/envsetup.sh
 $ lunch $TARGET_PRODUCT-$BUILD_VARIANT
 ```
 
-第二步。
+第二步，利用 java 进行签名。
 
 ```shell
-$ source build/envsetup.sh
-$ lunch apollo_p2-userdebug
 $ java -Xmx2048m -Djava.library.path="out/host/linux-x86/lib64" \
 -jar out/host/linux-x86/framework/signapk.jar  --disable-v2 \
 -w device/rockchip/common/security/platform.x509.pem \
