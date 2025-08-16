@@ -386,6 +386,8 @@ $ vim frameworks/base/packages/SettingsProvider/res/values/defaults.xml
 
 ## APK签名
 
+查看 [Android_Apk_Signing]() 文档
+
 [06-ANDROID常用系统定制/02-Android_APK签名](02-Android_APK签名.md)
 
 
