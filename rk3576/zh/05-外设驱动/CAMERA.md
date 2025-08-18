@@ -304,10 +304,12 @@ sudo apt install gstreamer1.0-tools
 sudo apt install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
 ```
 
+
+
 ### 命令行摄像头捕获图片
 
 ```
-sudo gst-launch-1.0 v4l2src num-buffers=1 device=/dev/video33 ! jpegenc ! filesink location=picture.jpg
+sudo gst-launch-1.0 v4l2src num-buffers=1 device=/dev/video* ! jpegenc ! filesink location=picture.jpg
 ```
 
 
