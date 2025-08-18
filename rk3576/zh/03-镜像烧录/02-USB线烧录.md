@@ -181,7 +181,7 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 3. 绿灯状态下，使用TYPE-C连接主板；
 
-4. 进入 **LOADER模式** 或者 **MASKROM模式**；
+4. 主板进入 **LOADER模式** 或者 **MASKROM模式**；
 
    > LOADER / MASKROM模式均支持整包烧录，选择一个模式进行烧录即可。
    >
