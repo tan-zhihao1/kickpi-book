@@ -245,7 +245,7 @@ root@linaro-alip:/#
 
 
 
-### **查看摄像头帧率**
+### **查看摄像头帧率**<a id="camera-fps"></a> 
 
 ```
 v4l2-ctl -d /dev/video* \
