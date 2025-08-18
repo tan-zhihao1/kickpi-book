@@ -151,6 +151,8 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 ## 工厂烧录
 
+> 不支持 Armbian 系统批量烧录
+
 ### 安装FactoryTool
 
 **网盘路径**
