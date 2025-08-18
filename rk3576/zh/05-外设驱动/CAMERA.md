@@ -429,10 +429,6 @@ $ make camera-engine-rkaiq
 
 
 
-
-
-
-
 ## Android APP
 
 Camera2 APP 源码路径。
