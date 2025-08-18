@@ -61,9 +61,9 @@
 
    > LOADER / MASKROM模式均支持整包烧录，选择一个模式进行烧录即可。
    >
-   > 按住RECOVERY按键，给主板重新上电，
+   > 按住RECOVERY按键，给主板重新上电，系统进入 LOADER 模式；
    >
-   > 按住板子背后的MASKROM按键，给主板重新上电，
+   > 按住板子背后的MASKROM按键，给主板重新上电，系统进入 MASKROM 模式；
 
 2. 瑞芯微开发工具上能够识别到 LOADER设备 或 MASKROM设备；（需要先安装USB驱动，才能识别到相关设备）
 
