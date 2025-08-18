@@ -12,6 +12,16 @@
 
 
 
+## RKNN 部署
+
+armbian 系统支持部署 rknn-toolkit2，rknn_model_zoo，参考 rockhip 官方文档如下：
+
+https://github.com/airockchip/rknn-toolkit2/tree/master/doc
+
+https://github.com/airockchip/rknn_model_zoo/tree/main/docs
+
+
+
 ## 1. NPU YOLOV5S 是什么
 
 YOLOV5S 是计算机视觉中的一个目标检测算法，它是YOLO（You Only Look Once）系列的一部分，由Joseph Redmon和Alexey Bochkovskiy等人开发。YOLO 算法系列以其快速的实时目标检测能力而闻名，能够在图像或视频中检测和定位多个对象，包括物体的类别和位置。
