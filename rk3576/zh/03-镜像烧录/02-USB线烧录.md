@@ -75,6 +75,8 @@
 
 3. 点击 **Upgrade Firmware**，跳转到升级固件界面；
 
+   ![image-20250818154842113](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250818154842113.png)
+
 4. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
 
 ![image-20250422093506005](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093506005.png)
