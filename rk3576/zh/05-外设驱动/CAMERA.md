@@ -392,10 +392,12 @@ external/camera_engine_rkaiq/
 
 ### 编译 camera-engine-rkaiq
 
+编译
+
 ```
-source buildroot/envsetup.sh rockchip_rk3588_glibc2.28
-cd buildroot
-make camera-engine-rkaiq
+$ source buildroot/envsetup.sh rockchip_rk3576_glibc2.28
+$ cd buildroot
+$ make camera-engine-rkaiq
 ```
 
 
