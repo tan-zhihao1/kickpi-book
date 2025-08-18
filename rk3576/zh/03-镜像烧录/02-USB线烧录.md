@@ -63,7 +63,7 @@
 
    > LOADER / MASKROM模式均支持整包烧录，选择一个模式进行烧录即可。
    >
-   > * 按住RECOVERY按键，给主板重新上电，系统进入 LOADER 模式；
+   > * 按住网口旁边的 RECOVERY 按键，给主板重新上电，系统进入 LOADER 模式；
    >
    > * 按住板子背后的MASKROM按键，给主板重新上电，系统进入 MASKROM 模式；
 
