@@ -350,9 +350,9 @@ gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,width=1280,height=720,fr
 
 示例：
 
-1、先查看摄像头节点
+1、先查看摄像头规格；[查看摄像头](#camera-id)、[查看摄像头信息](#camera-info)、[查看摄像头帧率](#camera-fps)
 
-2、指定摄像头头节点进行预览
+2、指定摄像头头节点进行预览；
 
 3、使用 gst-launch-1.0 工具 autovideosink 方式预览 /dev/video33 摄像头。
 
