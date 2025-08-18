@@ -113,7 +113,7 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 > 由于 armbian 的镜像与 rockchip 官方的镜像有所区别，烧录方式不能沿用 ！
 
-1. 使主板进入 **LOADER模式** 或者 **MASKROM模式**；
+1. 使主板进入 LOADER 模式或者 MASKROM 模式；
 
    > LOADER / MASKROM模式均支持整包烧录，选择一个模式进行烧录即可。
    >
@@ -121,7 +121,7 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
    >
    > * 按住板子背后的 MASKROM 按键，给主板重新上电，系统进入 MASKROM 模式；
 
-2. 瑞芯微开发工具上能够识别到 LOADER设备 或 MASKROM设备；（需要先安装USB驱动，才能识别到相关设备！）
+2. 瑞芯微开发工具上能够识别到 LOADER 设备或 MASKROM 设备；（需要先安装USB驱动，才能识别到相关设备！）
 
 3. 点击 **Download Image**，跳转到分区升级固件界面；
 
