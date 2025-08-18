@@ -392,6 +392,9 @@ external/camera_engine_rkaiq/
 
 ### 编译 camera-engine-rkaiq
 
+```
+```
+
 
 
 

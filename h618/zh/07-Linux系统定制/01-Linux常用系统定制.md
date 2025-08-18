@@ -64,9 +64,11 @@ Type=idle
 
 桌面版按下USER按键是打开login out界面
 
-关闭xfce4-power-manager可禁用
+设置里取消功能即可
 
+![image-20250818163503951](C:\Users\10539\AppData\Roaming\Typora\typora-user-images\image-20250818163503951.png)
 
+![image-20250818163514774](C:\Users\10539\AppData\Roaming\Typora\typora-user-images\image-20250818163514774.png)
 
 服务器版本按下USER按键是直接关机
 
