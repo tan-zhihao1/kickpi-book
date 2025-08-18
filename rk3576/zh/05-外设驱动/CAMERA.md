@@ -314,6 +314,10 @@ sudo gst-launch-1.0 v4l2src num-buffers=1 device=/dev/video33 ! jpegenc ! filesi
 
 ### **命令行摄像头预览**
 
+第一步，确认对应的摄像头节点、摄像头信息、摄像头帧率；
+
+第二步，使用下面一种方式进行预览测试；
+
 autovideosink 方式
 
 ```
