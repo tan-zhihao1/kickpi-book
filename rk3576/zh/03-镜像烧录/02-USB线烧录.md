@@ -16,8 +16,6 @@
 
 > Android14.0的USB驱动 DriverAssitant 需要更新到V5.1.1以上的版本。
 
-
-
 1. 将 DriverAssitant_v5.13.zip 解压，打开解压后的文件夹；
 
 2. 找到 DriverInstall.exe ，双击运行；
