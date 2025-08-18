@@ -427,10 +427,17 @@ $ cd buildroot
 $ make camera-engine-rkaiq
 ```
 
-第四步，将生成的 tar 放到主板根目录，进行解压。
+第四步，将生成的 tar 放到主板根目录
 
 ```
 output/rockchip_rk3576_glibc2.28/build/camera-engine-rkaiq-1.0/camera-engine-rkaiq-1.0.tar
+```
+
+第五步，解压并重启
+
+```
+$ tar -xvf camera-engine-rkaiq-1.0.tar
+consloe$ reboot
 ```
 
 
