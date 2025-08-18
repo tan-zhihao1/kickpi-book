@@ -165,3 +165,38 @@ $ ./compile.sh kernel-dtb BOARD=kickpi-k7 BRANCH=vendor
 ## **Armbian官方编译指导**
 
 https://docs.armbian.com/Developer-Guide_Build-Commands/
+
+
+
+## 常见问题
+
+### Armbian 编译太慢？
+
+目前Armbian源码编译配置默认为 16，如果需要修改编译线程数，请参考下面例子。
+
+```diff
+--- a/lib/functions/compilation/distcc.sh
++++ b/lib/functions/compilation/distcc.sh
+@@ -49,7 +49,7 @@ function prepare_distcc_compilation_config() {
+ 
+                DISTCC_CROSS_COMPILE_PREFIX=("distcc")
+ 
+-        DISTCC_MAKE_J_PARALLEL=("-j16")
++        DISTCC_MAKE_J_PARALLEL=("-j64")
+                #DISTCC_MAKE_J_PARALLEL=("-j$((total_distcc_cores * 2))") # Use double the total distcc cores
+ 
+                display_alert "DISTCC_TARGETS_SEGMENTS" "${DISTCC_TARGETS_SEGMENTS[*]}" "warn"
+@@ -58,7 +58,7 @@ function prepare_distcc_compilation_config() {
+                [[ -z "${CTHREADS}" ]] && exit_with_error "CTHREADS is not set in prepare_distcc_compilation_config"
+                DISTCC_MAKE_J_PARALLEL=("${CTHREADS}")
+ 
+-        DISTCC_MAKE_J_PARALLEL=("-j16")
++        DISTCC_MAKE_J_PARALLEL=("-j64")
+        fi
+ 
+        return 0
+```
+
+
+
+Armbian 编译太慢？
