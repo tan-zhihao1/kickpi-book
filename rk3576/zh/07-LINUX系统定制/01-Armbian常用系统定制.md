@@ -292,5 +292,3 @@ https://github.com/airockchip/rknn_model_zoo/tree/main/docs
 
 
 
-## ARMBIAN 源码修改 patch 参考
-
