@@ -382,6 +382,20 @@ Redistribute latency...
 
 
 
+## Linux Camera
+
+rkaiq 源码路径
+
+```
+external/camera_engine_rkaiq/
+```
+
+
+
+
+
+
+
 ## Android APP
 
 Camera2 APP 源码路径。
