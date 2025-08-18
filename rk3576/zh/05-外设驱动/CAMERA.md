@@ -394,7 +394,7 @@ Camera2 APP 源码路径。
 
 ## Android ISP 适配
 
-参考 imx415 其他 Profiles 配置对应设备 m02 。
+参考 imx415 其他 Profiles 配置对应设备 m02 。更多详解文档参考章节。
 
 ```diff
 --- a/hardware/rockchip/camera/etc/camera/camera3_profiles_rk3576.xml
