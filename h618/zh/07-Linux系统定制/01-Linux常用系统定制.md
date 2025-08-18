@@ -66,9 +66,9 @@ Type=idle
 
 设置里取消功能即可
 
-![image-20250818163503951](C:\Users\10539\AppData\Roaming\Typora\typora-user-images\image-20250818163503951.png)
+![image-20250818163503951](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250818163503951.png)
 
-![image-20250818163514774](C:\Users\10539\AppData\Roaming\Typora\typora-user-images\image-20250818163514774.png)
+![image-20250818163514774](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250818163514774.png)
 
 服务器版本按下USER按键是直接关机
 
