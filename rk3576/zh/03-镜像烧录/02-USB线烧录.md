@@ -65,9 +65,9 @@
    >
    > * 按住网口旁边的 RECOVERY 按键，给主板重新上电，系统进入 LOADER 模式；
    >
-   > * 按住板子背后的MASKROM按键，给主板重新上电，系统进入 MASKROM 模式；
+   > * 按住板子背后的 MASKROM 按键，给主板重新上电，系统进入 MASKROM 模式；
 
-2. 瑞芯微开发工具上能够识别到 LOADER设备 或 MASKROM设备；（需要先安装USB驱动，才能识别到相关设备）
+2. 瑞芯微开发工具上能够识别到 LOADER 设备或 MASKROM 设备；（需要先安装USB驱动，才能识别到相关设备）
 
 ![image-20250422093529751](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093529751.png)
 
