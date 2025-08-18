@@ -79,6 +79,8 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
    >
    > * 按住板子背后的 MASKROM 按键，给主板重新上电，系统进入 MASKROM 模式；
 
+   
+
 2. 瑞芯微开发工具上能够识别到 LOADER 设备或 MASKROM 设备；（需要先安装USB驱动，才能识别到相关设备）
 
 ![image-20250422093529751](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093529751.png)
@@ -92,8 +94,6 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 4. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
 
 ![image-20250818154913407](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250818154913407.png)
-
-
 
 5. 点击 **Upgrade**，等待烧录完成；
 
