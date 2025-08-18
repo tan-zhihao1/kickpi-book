@@ -289,3 +289,8 @@ armbian 系统支持部署 rknn-toolkit2，rknn_model_zoo，参考 rockhip 官�
 https://github.com/airockchip/rknn-toolkit2/tree/master/doc
 
 https://github.com/airockchip/rknn_model_zoo/tree/main/docs
+
+
+
+## ARMBIAN 源码修改 patch 参考
+
