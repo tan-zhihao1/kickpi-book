@@ -324,7 +324,7 @@ gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,format=NV12,width=800,he
 >
 > gst-launch-1.0 v4l2src device=/dev/video11 ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
 >
-> gst-launch-1.0 v4l2src device=/dev/video31 ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
+> gst-launch-1.0 v4l2src device=/dev/video22 ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! videoconvert ! autovideosink
 >
 > gst-launch-1.0 v4l2src device=/dev/video42 ! video/x-raw,format=NV12,width=1280,height=720,framerate=30/1 ! videoconvert ! autovideosink
 >
