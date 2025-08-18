@@ -79,7 +79,7 @@
 
 4. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
 
-![image-20250422093506005](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093506005.png)
+![image-20250818154913407](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250818154913407.png)
 
 
 
