@@ -392,7 +392,34 @@ external/camera_engine_rkaiq/
 
 ### 编译 camera-engine-rkaiq
 
-编译
+第一步，删除 BR2_ARCH_NEEDS_GCC_AT_LEAST_9。
+
+```diff
+--- a/buildroot/package/gcc/Config.in.host
++++ b/buildroot/package/gcc/Config.in.host
+@@ -17,7 +17,6 @@ config BR2_GCC_VERSION_ARC
+ 
+ config BR2_GCC_VERSION_8_X
+        bool "gcc 8.x"
+-       depends on !BR2_ARCH_NEEDS_GCC_AT_LEAST_9
+        select BR2_TOOLCHAIN_GCC_AT_LEAST_8
+ 
+ config BR2_GCC_VERSION_10_X
+diff --git a/envsetup.sh b/envsetup.sh
+deleted file mode 120000
+index a2f3ce43c..000000000
+```
+
+第二步，创建低版本的 GCC 和 GLIBC 编译。
+
+```
+cat buildroot/configs/rockchip_rk3576_glibc2.28_defconfig
+#include "../rockchip_rk3576_defconfig"
+BR2_GCC_VERSION_8_X=y
+BR2_PACKAGE_GLIBC_2_28=y
+```
+
+第三步，编译。
 
 ```
 $ source buildroot/envsetup.sh rockchip_rk3576_glibc2.28
