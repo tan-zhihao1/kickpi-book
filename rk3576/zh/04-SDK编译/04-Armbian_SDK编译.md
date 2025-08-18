@@ -199,7 +199,7 @@ https://docs.armbian.com/Developer-Guide_Build-Commands/
 
 
 
-## Armbian 编译失败？
+### Armbian 编译失败？
 
 Armbian 编译拉取的代码、库、deb 等源于不同的国外网址，如果无法访问会导致编译失败。
 
