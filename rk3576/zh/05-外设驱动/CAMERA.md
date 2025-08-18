@@ -392,6 +392,40 @@ Camera2 APP 源码路径。
 
 
 
+## Android ISP 适配
+
+参考 imx415 其他 Profiles 配置对应设备 m02 。
+
+```diff
+--- a/hardware/rockchip/camera/etc/camera/camera3_profiles_rk3576.xml
++++ b/hardware/rockchip/camera/etc/camera/camera3_profiles_rk3576.xml
+@@ -1797,6 +1797,268 @@
+             <aiq.workingMode value="NORMAL"/> <!-- NORMAL or HDR2 or HDR3 -->
+         </Sensor_info_RKISP1>
+ 
++<!-- ******************PSL specific section end **************************************************************-->
++    </Profiles>
++        <Profiles cameraId="0" name="imx415" moduleId="m02">
+.......
++            <sensor.digitalGain value="true"/> <!-- digital gain support on sensor-->
++            <gain.lag value="2"/> <!-- camera3 HAL CPF parameters moved here start-->
++            <exposure.lag value="2"/>
++            <fov value= "54.8" value_v="42.5"/>
++            <statistics.initialSkip value="1"/> <!-- camera3 HAL CPF parameters moved here end-->
++            <frame.initialSkip value="3"/> <!-- should equal actual skipFrames - 2 for driver dropped 2 frames -->
++            <isoAnalogGain1 value="75"/> <!--Pseudo ISO corresponding analog gain value 1.0. -->
++            <cITMaxMargin value="10"/> <!--coarse integration time max margin -->
++            <aiq.workingMode value="NORMAL"/> <!-- NORMAL or HDR2 or HDR3 -->
++        </Sensor_info_RKISP1>
++
++ <!-- ******************PSL specific section end **************************************************************-->
++     </Profiles>
+```
+
+
+
+
+
 ## Android 测试
 
 > 以双路摄像头为例，前置+后置摄像头。
