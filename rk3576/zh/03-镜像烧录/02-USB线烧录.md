@@ -71,7 +71,7 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 ### 通用烧录镜像
 
-1. 进入 **LOADER模式** 或者 **MASKROM模式**；
+1. 使主板进入 **LOADER模式** 或者 **MASKROM模式**；
 
    > LOADER / MASKROM模式均支持整包烧录，选择一个模式进行烧录即可。
    >
