@@ -93,7 +93,7 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 4. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
 
-![image-20250818154913407](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250818154913407.png)
+![image-20250818154913407](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250818154913407.png)
 
 5. 点击 **Upgrade**，等待烧录完成；
 
@@ -197,7 +197,7 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 ## 常见问题
 
-**Loader或Maskrom模式不识别问题**
+### **Loader或Maskrom模式不识别问题**
 
 1. 进入**LOADER模式**需要按下RECOVERY按键，上电（主板已上电可按复位进行复位）；进入**MASKROM模式**需要按下板子背后的MASKROM按键，上电（主板已上电可按复位进行复位）。
 
@@ -217,7 +217,7 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 
 
-**烧录工具的其他功能使用**
+### **烧录工具的其他功能使用**
 
 烧录工具更多说明见
 
