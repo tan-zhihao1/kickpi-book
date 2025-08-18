@@ -314,6 +314,8 @@ sudo gst-launch-1.0 v4l2src num-buffers=1 device=/dev/video33 ! jpegenc ! filesi
 
 ### **命令行摄像头预览**
 
+> 由于 ISP 问题，Armbian 目前不支持摄像头。
+
 autovideosink 方式
 
 ```
