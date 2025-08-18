@@ -118,7 +118,7 @@ sudo apt update
 sudo apt install v4l-utils
 ```
 
-### **查看摄像头节点**<a id="USBDRV"></a> 
+### **查看摄像头节点**<a id="camera-id"></a> 
 
 ```
 v4l2-ctl --list-devices
@@ -213,7 +213,7 @@ root@linaro-alip:/#
 
 
 
-### **查看摄像头信息**
+### **查看摄像头信息**<a id="camera-info"></a> 
 
 ```
 v4l2-ctl --list-formats-ext --device=/dev/video*
