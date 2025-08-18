@@ -422,9 +422,9 @@ BR2_PACKAGE_GLIBC_2_28=y
 第三步，编译
 
 ```
-$ source buildroot/envsetup.sh rockchip_rk3576_glibc2.28
-$ cd buildroot
-$ make camera-engine-rkaiq
+(SDK)$ source buildroot/envsetup.sh rockchip_rk3576_glibc2.28
+(SDK)$ cd buildroot
+buildroot$ make camera-engine-rkaiq
 ```
 
 第四步，将生成的 tar 放到主板根目录
