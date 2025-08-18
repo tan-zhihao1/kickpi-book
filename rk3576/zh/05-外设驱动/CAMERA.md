@@ -330,7 +330,7 @@ gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,format=NV12,width=800,he
 >
 > gst-launch-1.0 v4l2src device=/dev/video51 ! video/x-raw,format=NV12,width=1600,height=960,framerate=30/1 ! videoconvert ! autovideosink
 
-waylandsink 方式（gome桌面使用该方式进行预览）
+waylandsink 方式（gome wayland 架构桌面使用该方式进行预览）
 
 ```
 gst-launch-1.0 v4l2src device=/dev/video* ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! waylandsink
