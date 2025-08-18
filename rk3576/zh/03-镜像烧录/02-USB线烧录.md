@@ -181,7 +181,13 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 3. 绿灯状态下，使用TYPE-C连接主板；
 
-4. 进入 **LOADER模式** 需要按下RECOVERY按键，上电（主板已上电可按复位进行复位）；进入 **MASKROM模式** 需要按下板子背后的MASKROM按键，上电（主板已上电可按复位进行复位）；[USB驱动安装](#USBDRV)
+4. 进入 **LOADER模式** 或者 **MASKROM模式**；
+
+   > LOADER / MASKROM模式均支持整包烧录，选择一个模式进行烧录即可。
+   >
+   > * 按住网口旁边的 RECOVERY 按键，给主板重新上电，系统进入 LOADER 模式；
+   >
+   > * 按住板子背后的 MASKROM 按键，给主板重新上电，系统进入 MASKROM 模式；
 
 5. 观察灯，当识别到设备会切换成红灯，此时不要拔出或接入设备；
 
