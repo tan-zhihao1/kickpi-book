@@ -14,7 +14,7 @@
 
 ## RKNN 部署
 
-armbian 系统支持部署 rknn-toolkit2，rknn_model_zoo，参考 rockhip 官方文档如下：
+系统支持部署 rknn-toolkit2，rknn_model_zoo，参考 rockhip 官方文档如下：
 
 https://github.com/airockchip/rknn-toolkit2/tree/master/doc
 
