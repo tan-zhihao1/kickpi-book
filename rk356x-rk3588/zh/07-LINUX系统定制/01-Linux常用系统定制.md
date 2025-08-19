@@ -1036,6 +1036,16 @@ $ sudo systemctl restart smbd
 
 
 
+## RKNN 部署
+
+系统支持部署 rknn-toolkit2，rknn_model_zoo，参考 rockhip 官方文档如下：
+
+https://github.com/airockchip/rknn-toolkit2/tree/master/doc
+
+https://github.com/airockchip/rknn_model_zoo/tree/main/docs
+
+
+
 ## 常见问题
 
 create_ap因为iw版本6.7以上兼容补丁<a id='wifi-ap'> </a>
