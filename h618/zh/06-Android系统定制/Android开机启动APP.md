@@ -179,21 +179,46 @@ TestLauncher_20250101.apk
 Android.mk 文件编写示例：
 
 ```
+# Copyright (C) 2008 The Android Open Source Project
+# Copyright (C) 2012 Broadcom Corporation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+#
+
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
-
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-
 LOCAL_CERTIFICATE := platform
 
-LOCAL_ENFORCE_USES_LIBRARIES := false
-LOCAL_DEX_PREOPT := false
+LOCAL_MODULE := LauncherTest
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_ENFORCE_USES_LIBRARIES := true
+LOCAL_DEX_PREOPT := true
 
-LOCAL_MODULE := TestLauncher
+LOCAL_OPTIONAL_USES_LIBRARIES := \
+    androidx.window.extensions \
+    androidx.window.sidecar
 
-LOCAL_SRC_FILES := TestLauncher_20250101.apk
+LOCAL_OVERRIDES_PACKAGES := \
+    Launcher2 \
+    Launcher3 \
+    Launcher3QuickStep \
+    Launcher3QuickStepGo
+
+LOCAL_SRC_FILES := 07-test-launcher-an12.apk
 
 include $(BUILD_PREBUILT)
 ```
