@@ -242,7 +242,7 @@ aw-image-build/toolchains/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabi/bin
 
 编译cec驱动失败
 
-
+![image-20250820150033592](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250820150033592.png)
 
 参考以下修改
 
