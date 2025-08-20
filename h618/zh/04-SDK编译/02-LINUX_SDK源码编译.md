@@ -238,3 +238,25 @@ aw-image-build/toolchains/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabi/bin
 
 
 
+## 常见问题
+
+编译cec驱动失败
+
+
+
+参考以下修改
+
+``` c
+--- a/source/kernel/linux-5.4-h618/drivers/media/cec/cec-pin.c
++++ b/source/kernel/linux-5.4-h618/drivers/media/cec/cec-pin.c
+@@ -42,7 +42,7 @@
+ /* when polling for a state change, sample once every 50 microseconds */
+ #define CEC_TIM_SAMPLE                 50
+ 
+-#define CEC_TIM_LOW_DRIVE_ERROR                (1.5 * CEC_TIM_DATA_BIT_TOTAL)
++#define CEC_TIM_LOW_DRIVE_ERROR                (3/2 * CEC_TIM_DATA_BIT_TOTAL)
+ 
+ /*
+  * Total data bit time that is too short/long for a valid bit,
+```
+
