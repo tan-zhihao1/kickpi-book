@@ -4,20 +4,20 @@
 
 各主板支持系统见表格：
 
-| 主板               | Android   | Debian   | Ubuntu     | Buildroot     |
-| ------------------ | --------- | -------- | ---------- | ------------- |
-| K1 / K1B / K3 / K8 | Android13 | Debian11 | Ubuntu2004 | N             |
-| K2B / K2C          | Android12 | N        | Ubuntu2204 | N             |
-| K4B                | N         | N        | Ubuntu2004 | Buildroot2019 |
-| K5 / K5C           | Android10 | N        | Ubuntu1604 | N             |
-| K7                 | Android14 | Debian12 | Ubuntu2404 | N             |
+| 主板               | Doc           | Android   | Debian   | Ubuntu     | Buildroot     |
+| ------------------ | ------------- | --------- | -------- | ---------- | ------------- |
+| K1 / K1B / K3 / K8 | rk356x-rk3588 | Android13 | Debian11 | Ubuntu2004 | N             |
+| K2B / K2C          | h618          | Android12 | N        | Ubuntu2204 | N             |
+| K4B                | t113-s3       | N         | N        | Ubuntu2004 | Buildroot2019 |
+| K5 / K5C           | a133          | Android10 | N        | Ubuntu1604 | N             |
+| K7                 | rk3576        | Android14 | Debian12 | Ubuntu2404 | N             |
 
-主板支持重新烧录系统，烧录系统一般有以下步骤：
+主板支持重新烧录系统，烧录系统通用步骤如下：
 
 1、查看文档镜像介绍，从网盘获取对应的镜像文件，文档路径为
 
 ```
-kickpi-book/$soc/zh/03-镜像烧录/01-获取镜像文件.md
+kickpi-book/$Doc/zh/03-镜像烧录/01-获取镜像文件.md
 ```
 
 [K1 / K1B / K3 / K8 获取镜像文件](../../rk356x-rk3588/zh/03-镜像烧录/01-获取镜像文件.md)
@@ -33,7 +33,7 @@ kickpi-book/$soc/zh/03-镜像烧录/01-获取镜像文件.md
 2、配置烧录环境及工具，连接主板进行烧录，文档路径为
 
 ```
-kickpi-book/$soc/zh/03-镜像烧录/
+kickpi-book/$Doc/zh/03-镜像烧录/
 ```
 
 [K1 / K1B / K3 / K8 镜像烧录](../../rk356x-rk3588/zh/03-镜像烧录/)
