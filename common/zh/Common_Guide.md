@@ -21,6 +21,8 @@ kickpi-book/$Doc/zh/
 | K5 / K5C           | a133          |
 | K7 / K7C           | rk3576        |
 
+
+
 ### 板卡目录介绍
 
 ```
