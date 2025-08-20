@@ -58,7 +58,7 @@ SDK指代软件源码
 
 **Android系统定制**
 
-此目录包含 Android 系统的定制指导文档。
+此目录包含 Android 系统的定制指导文档。例如修改LOGO、开机动画、开机APP等；
 
 **Linux系统定制**
 
