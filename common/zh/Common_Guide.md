@@ -93,7 +93,12 @@ kickpi-book/$Doc/zh/03-镜像烧录/SD*
 
 ## Linux 系统账号
 
-
+| 系统   | 用户名 | 密码   |
+| ------ | ------ | ------ |
+| Debian | linaro | linaro |
+| Debian | root   | root   |
+| Ubuntu | kickpi | kickpi |
+| Ubuntu | root   | root   |
 
 
 
