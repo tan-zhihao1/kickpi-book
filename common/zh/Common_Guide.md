@@ -2,11 +2,13 @@
 
 ## 如何重新烧录系统？
 
-|      |      |      |      |
-| ---- | ---- | ---- | ---- |
-|      |      |      |      |
-|      |      |      |      |
-|      |      |      |      |
+| 主板               | Android   | Debian   | Ubuntu     | Buildroot     |
+| ------------------ | --------- | -------- | ---------- | ------------- |
+| K1 / K1B / K3 / K8 | Android13 | Debian11 | Ubuntu2004 | N             |
+| K2B / K2C          | Android12 | N        | Ubuntu2204 | N             |
+| K4B                | N         | N        | Ubuntu2004 | Buildroot2019 |
+| K5 / K5C           | Android10 | N        | Ubuntu1604 | N             |
+| K7                 | Android14 | Debian12 | Ubuntu2404 | N             |
 
 [K1 / K1B / K3 / K8 获取镜像文件](../../rk356x-rk3588/zh/03-镜像烧录/01-获取镜像文件.md)
 
