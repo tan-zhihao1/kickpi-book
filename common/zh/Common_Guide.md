@@ -14,10 +14,13 @@ kickpi-book 文档主页每个主板都有对应的中文和英文文档，每�
 
 ```
 kickpi-book/$Doc/zh/01-主板介绍/
+kickpi-book/$Doc/zh/02-入门必读/
 kickpi-book/$Doc/zh/03-镜像烧录/
-kickpi-book/$Doc/zh/03-镜像烧录/
-kickpi-book/$Doc/zh/03-镜像烧录/
-kickpi-book/$Doc/zh/03-镜像烧录/
+kickpi-book/$Doc/zh/04-SDK编译/
+kickpi-book/$Doc/zh/05-外设驱动/
+kickpi-book/$Doc/zh/06-Android系统定制/
+kickpi-book/$Doc/zh/07-Linux系统定制/
+kickpi-book/$Doc/zh/08-进阶/
 ```
 
 **主板介绍**
