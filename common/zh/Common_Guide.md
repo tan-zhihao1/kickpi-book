@@ -13,7 +13,7 @@ kickpi-book 文档主页每个主板都有对应的中文和英文文档，每�
 ### 板卡目录介绍
 
 ```
-kickpi-book/$Doc/zh/03-镜像烧录/
+kickpi-book/$Doc/zh/01-主板介绍/
 kickpi-book/$Doc/zh/03-镜像烧录/
 kickpi-book/$Doc/zh/03-镜像烧录/
 kickpi-book/$Doc/zh/03-镜像烧录/
