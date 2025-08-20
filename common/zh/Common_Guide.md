@@ -229,3 +229,7 @@ kickpi-book/$Doc/zh/06-Android系统定制/
 kickpi-book/$Doc/zh/07-Linux系统定制/
 ```
 
+
+
+### 板子怎么供电？可以用扩展引脚供电吗？
+
