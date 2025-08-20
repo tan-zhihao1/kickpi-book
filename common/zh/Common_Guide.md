@@ -19,7 +19,7 @@ kickpi-book/$Doc/zh/
 | K2B / K2C          | h618          |
 | K4B                | t113-s3       |
 | K5 / K5C           | a133          |
-| K7                 | rk3576        |
+| K7 / K7C           | rk3576        |
 
 ### 板卡目录介绍
 
