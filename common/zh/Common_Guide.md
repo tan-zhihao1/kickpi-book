@@ -62,27 +62,61 @@ kickpi-book/$Doc/zh/02-入门必读/
 
 此目录包含主板的镜像烧录，如USB线烧，SD卡烧录，SD卡启动等。
 
+```
+kickpi-book/$Doc/zh/03-镜像烧录/
+```
+
+
+
 **SDK编译**
 
 SDK指代软件源码
 
 此目录包含主板的软件编译文档，通过定制编译SDK生成自己定制化的软件镜像。
 
+```
+kickpi-book/$Doc/zh/04-SDK编译/
+```
+
+
+
 **外设驱动**
 
 此目录包含主板外设驱动的文档，根据文档修改定制驱动。
+
+```
+kickpi-book/$Doc/zh/05-外设驱动/
+```
+
+
 
 **Android系统定制**
 
 此目录包含 Android 系统的定制指导文档。例如修改LOGO、开机动画、开机APP等；
 
+```
+kickpi-book/$Doc/zh/06-Android系统定制/
+```
+
+
+
 **Linux系统定制**
 
 此目录包含 Linux 系统（如 Ubuntu / Debian 系统）的定制指导文档。
 
+```
+kickpi-book/$Doc/zh/07-Linux系统定制/
+```
+
+
+
 **进阶**
 
 此目录包含一些进阶的功能文档。
+
+```
+kickpi-book/$Doc/zh/08-进阶/
+```
 
 
 
