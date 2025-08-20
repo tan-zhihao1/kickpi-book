@@ -857,7 +857,7 @@ RK3588：
 SDK$ device/rockchip/rk3588/parameter.txt 
 ```
 
-修改的内容：**
+**修改的内容：**
 
 重新分区主要修改分区文件parameter.txt
 
@@ -883,6 +883,8 @@ $ sudo vim rootfs/etc/fstab
 ```
 
 将oem userdate的自动挂载注释掉
+
+
 
 ## Ubuntu桌面版进入root用户
 
