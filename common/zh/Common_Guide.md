@@ -8,6 +8,11 @@
 
 kickpi-book 文档主页每个主板都有对应的中文和英文文档，每个人都能浏览所有主板的文档。
 
+```
+kickpi-book/$Doc/en/
+kickpi-book/$Doc/zh/
+```
+
 
 
 ### 板卡目录介绍
