@@ -35,7 +35,8 @@ kickpi-book/$Doc/zh/03-镜像烧录/01-获取镜像文件.md
 2、配置烧录环境及工具，连接主板进行烧录。
 
 ```
-kickpi-book/$Doc/zh/03-镜像烧录/
+kickpi-book/$Doc/zh/03-镜像烧录/USB*
+kickpi-book/$Doc/zh/03-镜像烧录/SD*
 ```
 
 [K1 / K1B / K3 / K8 镜像烧录](../../rk356x-rk3588/zh/03-镜像烧录/)
