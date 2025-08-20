@@ -833,7 +833,31 @@ $ resize2fs /dev/mmcblk1p6
 
 ## eMMC分区
 
-重新分区均需要重新烧录，如果系统不想被格式化，请先[备份rootfs](#backup_rootfs)
+**注意：**重新分区均需要重新烧录，如果系统不想被格式化，请先[备份rootfs](#backup_rootfs)
+
+**修改有两种方法：**
+
+* 完整镜像修改
+
+参考[固件解包和打包](../08-进阶/03-固件解包和打包.md)，修改parameter.txt文件后重新打包
+
+* SDK内修改
+
+修改对应板子型号路径下文件，后重新编译
+
+RK356x：
+
+```
+SDK$ device/rockchip/rk3566_rk3568/parameter-buildroot-fit.txt
+```
+
+RK3588：
+
+```
+SDK$ device/rockchip/rk3588/parameter.txt 
+```
+
+修改的内容：**
 
 重新分区主要修改分区文件parameter.txt
 
@@ -859,28 +883,6 @@ $ sudo vim rootfs/etc/fstab
 ```
 
 将oem userdate的自动挂载注释掉
-
-* 完整镜像修改
-
-参考[固件解包和打包](../08-进阶/03-固件解包和打包.md)，修改parameter.txt文件后重新打包
-
-* SDK内修改
-
-修改对应板子型号路径下文件，后重新编译
-
-RK356x：
-
-```
-SDK$ device/rockchip/rk3566_rk3568/parameter-buildroot-fit.txt
-```
-
-RK3588：
-
-```
-SDK$ device/rockchip/rk3588/parameter.txt 
-```
-
-
 
 ## Ubuntu桌面版进入root用户
 
