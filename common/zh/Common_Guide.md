@@ -175,3 +175,9 @@ kickpi-book/$Doc/zh/03-镜像烧录/SD*
 
 
 ### 如何定制修改系统？
+
+```
+kickpi-book/$Doc/zh/06-Android系统定制/
+kickpi-book/$Doc/zh/07-Linux系统定制/
+```
+
