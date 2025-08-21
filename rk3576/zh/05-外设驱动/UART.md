@@ -8,8 +8,6 @@ UART（Universal Asynchronous Receiver/Transmitter，通用异步收发传输器
 
 UART 一般位于扩展引脚。
 
-
-
 **K7扩展引脚**
 
 ![K7_PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_PIN.png)
@@ -26,22 +24,25 @@ UART 一般位于扩展引脚。
 
 ## 硬件连接
 
-### 基本信号线（核心连接）
+**基本信号线（核心连接）**
 
 UART 通信最少需要 3 根线即可工作（全双工通信）：
 
 TXD（Transmit Data）：发送数据端，设备通过此线向外发送数据。
+
 RXD（Receive Data）：接收数据端，设备通过此线接收外部数据。
+
 GND（Ground）：地线，用于保证两个设备的电平参考一致（共地）。
 
-连接原则：
+**连接原则**
 
 两个设备之间需要交叉连接：
 
 设备 A 的 TXD → 设备 B 的 RXD
-设备 A 的 RXD → 设备 B 的 TXD
-设备 A 的 GND → 设备 B 的 GND（必须共地，否则可能无法通信或数据错乱）
 
+设备 A 的 RXD → 设备 B 的 TXD
+
+设备 A 的 GND → 设备 B 的 GND（必须共地，否则可能无法通信或数据错乱）
 
 
 ## **回环测试**
@@ -76,9 +77,16 @@ hello uart word!
 
 `stty` 是 Linux 系统中用于配置和查询终端设备（如终端、串口等）参数的命令行工具，全称为 "set tty"。它可以调整终端的输入输出模式、控制字符、波特率等设置，常用于终端行为定制和串口调试。
 
+源码：
+
+```
+https://github.com/coreutils/coreutils/blob/master/src/stty.c
+```
+
 
 ### **一、基本用法**
-#### 1. 查看终端参数
+1. 查看终端参数
+
 ```bash
 # 显示当前终端的基本配置
 stty
@@ -90,9 +98,10 @@ stty -a
 stty -F /dev/ttyS0 -a
 ```
 
+2. 修改终端参数
 
-#### 2. 修改终端参数
-##### （1）控制输入回显
+（1）控制输入回显
+
 ```bash
 # 关闭输入回显（输入内容不显示在终端，常用于密码输入场景）
 stty -echo
@@ -101,7 +110,8 @@ stty -echo
 stty echo
 ```
 
-##### （2）配置串口参数（波特率、数据位等）
+（2）配置串口参数（波特率、数据位等）
+
 ```bash
 # 设置串口 /dev/ttyS0 的波特率为 9600（常用波特率：9600、115200 等）
 stty -F /dev/ttyS0 9600
@@ -114,7 +124,8 @@ stty -F /dev/ttyS0 9600 cs8 -parenb -cstopb
 # -cstopb → 1 停止位（cstopb 表示 2 停止位，加 - 表示禁用）
 ```
 
-##### （3）修改控制字符（如中断、退出键）
+（3）修改控制字符（如中断、退出键）
+
 ```bash
 # 查看当前控制字符（如 Ctrl+C 对应 intr）
 stty -a | grep intr
@@ -126,14 +137,15 @@ stty intr '^T'
 stty intr '^C'
 ```
 
-##### （4）设置终端尺寸
+（4）设置终端尺寸
+
 ```bash
 # 设置终端为 24 行，80 列
 stty rows 24 cols 80
 ```
 
+3. 重置终端配置
 
-#### 3. 重置终端配置
 当终端因异常设置（如乱码、无法输入）导致无法正常使用时，可重置为默认状态：
 ```bash
 stty sane
