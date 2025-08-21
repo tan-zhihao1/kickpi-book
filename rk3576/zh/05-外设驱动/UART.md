@@ -83,7 +83,85 @@ hello uart word!
 https://github.com/pengutronix/microcom
 ```
 
+`microcom` 是一款轻量级的串口通信工具，常用于嵌入式系统和Linux环境下的串口调试，支持通过命令行配置串口参数并进行数据收发。以下是其基本用法和常见场景：
 
+
+### **一、安装 microcom**
+在 Ubuntu/Debian 系统中，可直接通过包管理器安装：
+```bash
+sudo apt update
+sudo apt install microcom
+```
+
+在嵌入式系统（如 OpenWRT）中，通常已预装，若未安装可通过系统包管理工具安装（如 `opkg install microcom`）。
+
+
+### **二、基本用法**
+1. 连接串口设备
+
+基本语法：
+```bash
+microcom [选项] <串口设备路径>
+```
+
+示例：连接到 `/dev/ttyUSB0` 串口（常见的USB转串口设备）：
+```bash
+microcom /dev/ttyUSB0
+```
+
+默认参数：波特率 9600、8位数据位、1位停止位、无校验（8N1）。
+
+2. 自定义串口参数
+
+若设备使用非默认参数（如波特率 115200），需通过 `-s` 选项指定：
+```bash
+# 波特率 115200，设备 /dev/ttyS0（传统串口）
+microcom -s 115200 /dev/ttyS0
+```
+
+其他常用选项：
+- `-p < parity >`：设置校验位（`n` 无校验，`o` 奇校验，`e` 偶校验），默认 `n`；
+- `-8`：强制使用8位数据位（默认）；
+- `-t`：设置超时时间（单位：毫秒），如 `-t 1000` 表示超时1秒。
+
+示例（完整配置）：
+```bash
+# 115200波特率，偶校验，设备 /dev/ttyUSB1
+microcom -s 115200 -p e /dev/ttyUSB1
+```
+
+
+### **三、使用技巧**
+1. **退出 microcom**  
+   按 `Ctrl+q` 组合键退出当前连接（注意：不是 `Ctrl+c`，后者会被转发到串口设备）。
+
+2. **数据收发**  
+   进入 `microcom` 交互界面后，输入的内容会直接发送到串口设备，设备返回的数据会实时显示在终端上，适合调试传感器、单片机等设备的串口输出。
+
+3. **查看可用串口**  
+   若不确定设备路径，可通过以下命令列出系统中的串口设备：
+   ```bash
+   ls /dev/ttyS*   # 传统串口（如 ttyS0、ttyS1）
+   ls /dev/ttyUSB* # USB转串口设备（如 ttyUSB0）
+   ls /dev/ttyACM* # 某些USB设备（如Arduino）可能识别为此类
+   ```
+
+
+### **四、常见问题**
+1. **权限不足**  
+   提示 `Permission denied` 时，需确保当前用户有权限访问串口设备。可将用户加入 `dialout` 组（Ubuntu/Debian）：
+   ```bash
+   sudo usermod -aG dialout $USER
+   # 需重新登录生效
+   ```
+
+2. **设备被占用**  
+   提示 `Device or resource busy` 时，说明串口已被其他程序占用（如 `minicom`、`screen` 等），需先关闭占用程序。
+
+3. **乱码问题**  
+   通常是波特率、校验位等参数与设备不匹配导致，需确认设备的串口参数并重新配置。
+
+`microcom` 以简洁著称，适合快速调试；若需更复杂的功能（如日志记录、宏定义），可考虑 `minicom` 或 `screen` 工具。通过 `man microcom` 可查看完整选项说明。
 
 ## stty
 
