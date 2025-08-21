@@ -4,7 +4,7 @@ UART（Universal Asynchronous Receiver/Transmitter，通用异步收发传输器
 
 
 
-## 扩展引脚
+## UART位置
 
 UART 一般位于扩展引脚。
 
