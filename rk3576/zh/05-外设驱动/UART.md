@@ -75,11 +75,17 @@ hello uart word!
 
 
 
+## microcom
+
+源码：
+
+```
+https://github.com/pengutronix/microcom
+```
 
 
 
-
-## STTY
+## stty
 
 `stty` 是 Linux 系统中用于配置和查询终端设备（如终端、串口等）参数的命令行工具，全称为 "set tty"。它可以调整终端的输入输出模式、控制字符、波特率等设置，常用于终端行为定制和串口调试。
 
