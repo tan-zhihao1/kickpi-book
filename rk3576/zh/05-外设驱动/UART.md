@@ -6,6 +6,10 @@ UART（Universal Asynchronous Receiver/Transmitter，通用异步收发传输器
 
 ## 扩展引脚
 
+UART 一般位于扩展引脚。
+
+
+
 **K7扩展引脚**
 
 ![K7_PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_PIN.png)
