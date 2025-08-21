@@ -1,5 +1,13 @@
 # UART
 
+**K7扩展引脚**
+
+![K7_PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_PIN.png)
+
+**K7引脚电压**
+
+![K7_PIN_DOMAIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_PIN_DOMAIN.png)
+
 K7主板扩展引脚可配置 UART 接口，通过[扩展引脚章节](#ExpansionPin-K7)查看对应的 UART 位置及通道号。
 
 **注意：** K7的UART默认配置的都是1.8V的电平，不能与3.3V电平的UART通讯，请确定好后使用。
