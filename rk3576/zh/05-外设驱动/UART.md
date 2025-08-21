@@ -8,6 +8,10 @@ UART（Universal Asynchronous Receiver/Transmitter，通用异步收发传输器
 
 UART 一般位于扩展引脚，通过扩展引脚图查看扩展引脚中带有 UART 标志的引脚。
 
+> 扩展引脚上的 UART* 对应设备 /dev/tty*
+>
+> UART6 对应 设备 /dev/ttyS6
+
 **K7扩展引脚**
 
 ![K7_PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_PIN.png)
@@ -75,7 +79,9 @@ hello uart word!
 
 
 
-## microcom
+## 常用测试工具
+
+### microcom
 
 源码：
 
@@ -85,8 +91,8 @@ https://github.com/pengutronix/microcom
 
 `microcom` 是一款轻量级的串口通信工具，常用于嵌入式系统和Linux环境下的串口调试，支持通过命令行配置串口参数并进行数据收发。以下是其基本用法和常见场景：
 
+**一、安装 microcom**
 
-### **一、安装 microcom**
 在 Ubuntu/Debian 系统中，可直接通过包管理器安装：
 ```bash
 sudo apt update
@@ -95,8 +101,8 @@ sudo apt install microcom
 
 在嵌入式系统（如 OpenWRT）中，通常已预装，若未安装可通过系统包管理工具安装（如 `opkg install microcom`）。
 
+**二、基本用法**
 
-### **二、基本用法**
 1. 连接串口设备
 
 基本语法：
@@ -130,8 +136,8 @@ microcom -s 115200 /dev/ttyS0
 microcom -s 115200 -p e /dev/ttyUSB1
 ```
 
+**三、使用技巧**
 
-### **三、使用技巧**
 1. **退出 microcom**  
    按 `Ctrl+q` 组合键退出当前连接（注意：不是 `Ctrl+c`，后者会被转发到串口设备）。
 
@@ -146,8 +152,8 @@ microcom -s 115200 -p e /dev/ttyUSB1
    ls /dev/ttyACM* # 某些USB设备（如Arduino）可能识别为此类
    ```
 
+**四、常见问题**
 
-### **四、常见问题**
 1. **权限不足**  
    提示 `Permission denied` 时，需确保当前用户有权限访问串口设备。可将用户加入 `dialout` 组（Ubuntu/Debian）：
    ```bash
@@ -165,20 +171,20 @@ microcom -s 115200 -p e /dev/ttyUSB1
 
 
 
-## minicom
+### minicom
 
 `minicom` 是一款功能强大的串口通信工具，支持更丰富的配置和操作（如保存配置、文件传输等），比 `microcom` 更适合复杂的串口调试场景。以下是其核心用法：
 
+**一、安装 minicom**
 
-### **一、安装 minicom**
 在 Ubuntu/Debian 系统中安装：
 ```bash
 sudo apt update
 sudo apt install minicom
 ```
 
+**二、基本配置（首次使用必做）**
 
-### **二、基本配置（首次使用必做）**
 1. 启动配置界面：
    ```bash
    sudo minicom -s  # -s 表示进入设置模式
@@ -197,8 +203,8 @@ sudo apt install minicom
 
    - **Exit**（退出配置界面，进入串口交互模式）
 
+**三、基本操作**
 
-### **三、基本操作**
 1. 启动 minicom（使用默认配置）：
    ```bash
    minicom
@@ -219,8 +225,8 @@ sudo apt install minicom
    - `S`：发送文件（支持 Xmodem、Ymodem 等协议）  
    - `R`：接收文件  
 
+**四、高级用法**
 
-### **四、高级用法**
 1. **文件传输**：  
    - 发送方：`Ctrl+A` → `S` → 选择传输协议（如 `xmodem`）→ 选择本地文件。  
    - 接收方：确保目标设备已进入接收模式，在 minicom 中 `Ctrl+A` → `R` → 选择相同协议。
@@ -236,8 +242,8 @@ sudo apt install minicom
    # 重新登录生效
    ```
 
+**五、常见问题**
 
-### **五、常见问题**
 - **乱码**：检查波特率、数据位等参数是否与设备匹配（`Ctrl+A` → `O` 可临时修改）。  
 - **无法输入**：确认硬件流控是否关闭（配置中 `Hardware Flow Control` 设为 `No`）。  
 - **设备被占用**：关闭其他占用串口的程序（如 `screen`、`microcom`），或重启设备。
@@ -247,7 +253,7 @@ sudo apt install minicom
 
 
 
-## stty
+### stty
 
 `stty` 是 Linux 系统中用于配置和查询终端设备（如终端、串口等）参数的命令行工具，全称为 "set tty"。它可以调整终端的输入输出模式、控制字符、波特率等设置，常用于终端行为定制和串口调试。
 
@@ -257,8 +263,8 @@ sudo apt install minicom
 https://github.com/coreutils/coreutils/blob/master/src/stty.c
 ```
 
+**一、基本用法**
 
-### **一、基本用法**
 1. 查看终端参数
 
 ```bash
@@ -325,8 +331,8 @@ stty rows 24 cols 80
 stty sane
 ```
 
+**二、常用参数说明**
 
-### **二、常用参数说明**
 | 参数                | 功能描述                                                                 |
 |---------------------|--------------------------------------------------------------------------|
 | `-a`                | 显示所有终端参数（详细模式）                                             |
@@ -341,14 +347,15 @@ stty sane
 | `cstopb`/`-cstopb`  | 启用 2 停止位/禁用（即 1 停止位）                                        |
 | `sane`              | 恢复终端默认配置                                                         |
 
+**三、实际应用场景**
 
-### **三、实际应用场景**
 1. **串口调试**：配置单片机、传感器等设备的串口通信参数（波特率、数据位等）。  
    示例：与波特率为 115200 的设备通信  
+   
    ```bash
    stty -F /dev/ttyUSB0 115200 cs8 -parenb -cstopb
    ```
-
+   
 2. **脚本中隐藏输入**：如读取密码时关闭回显  
    ```bash
    echo "请输入密码："
