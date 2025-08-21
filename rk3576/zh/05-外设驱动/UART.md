@@ -173,6 +173,12 @@ microcom -s 115200 -p e /dev/ttyUSB1
 
 `minicom` 是一款功能强大的串口通信工具，支持更丰富的配置和操作（如保存配置、文件传输等），比 `microcom` 更适合复杂的串口调试场景。以下是其核心用法：
 
+**源码**
+
+```
+https://salsa.debian.org/minicom-team/minicom
+```
+
 **一、安装 minicom**
 
 在 Ubuntu/Debian 系统中安装：
