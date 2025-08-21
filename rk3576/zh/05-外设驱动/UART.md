@@ -81,13 +81,13 @@ hello uart word!
 
 ### microcom
 
-源码：
+`microcom` 是一款轻量级的串口通信工具，常用于嵌入式系统和Linux环境下的串口调试，支持通过命令行配置串口参数并进行数据收发。以下是其基本用法和常见场景：
+
+**源码**
 
 ```
 https://github.com/pengutronix/microcom
 ```
-
-`microcom` 是一款轻量级的串口通信工具，常用于嵌入式系统和Linux环境下的串口调试，支持通过命令行配置串口参数并进行数据收发。以下是其基本用法和常见场景：
 
 **一、安装 microcom**
 
