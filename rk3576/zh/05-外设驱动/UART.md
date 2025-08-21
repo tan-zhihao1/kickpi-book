@@ -8,7 +8,7 @@ UART（Universal Asynchronous Receiver/Transmitter，通用异步收发传输器
 
 UART 一般位于扩展引脚，通过扩展引脚图查看扩展引脚中带有 UART 标志的引脚。
 
-> 扩展引脚上的 UART* 对应设备 /dev/tty*，例如 UART6 对应 设备 /dev/ttyS6
+> 扩展引脚上的 UART 接口与设备文件的对应关系为：UART 编号直接对应 `/dev/ttyS` 后的数字，例如 UART6 对应设备文件 `/dev/ttyS6`。
 
 **K7扩展引脚**
 
