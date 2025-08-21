@@ -8,11 +8,13 @@
 
 ![K7_PIN_DOMAIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_PIN_DOMAIN.png)
 
-**注意：** K7的UART默认配置的都是1.8V的电平，不能与3.3V电平的UART通讯，请确定好后使用。
+> **注意：** K7的UART默认配置的都是1.8V的电平，不能与3.3V电平的UART通讯，请确定好后使用。
+>
+> [不同电平有什么区别，为什么不能通讯？](#uart_ttl)
 
-[不同电平有什么区别，为什么不能通讯？](#uart_ttl)
 
-**回环测试**
+
+## **回环测试**
 
 软件默认已配置 UART8，下面以 UART8 进行示例说明。
 
