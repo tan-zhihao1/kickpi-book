@@ -1,5 +1,11 @@
 # UART
 
+UART（Universal Asynchronous Receiver/Transmitter，通用异步收发传输器）是一种广泛用于串行通信的硬件接口协议，用于在两个设备之间异步传输数据（无需时钟信号同步，仅通过约定的波特率等参数实现通信）。它是嵌入式系统、单片机、计算机与外设（如传感器、蓝牙模块、GPS 模块等）之间常用的通信方式。
+
+
+
+## 扩展引脚
+
 **K7扩展引脚**
 
 ![K7_PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_PIN.png)
