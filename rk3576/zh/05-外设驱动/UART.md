@@ -6,7 +6,7 @@ UART（Universal Asynchronous Receiver/Transmitter，通用异步收发传输器
 
 ## UART位置
 
-UART 一般位于扩展引脚，通过扩展引脚图查看扩展引脚中 UART 标志的位置。
+UART 一般位于扩展引脚，通过扩展引脚图查看扩展引脚中带有 UART 标志的引脚。
 
 **K7扩展引脚**
 
@@ -72,6 +72,10 @@ hello uart word!
 ```
 
 > 回环测试下，microcom 能够同时接收输出的字符
+
+
+
+
 
 
 
