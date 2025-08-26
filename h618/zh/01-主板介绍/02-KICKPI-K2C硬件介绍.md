@@ -12,7 +12,7 @@
 
 ## 开发板信息
 
-![K2C](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509174842735.png)
+![image-20250826105513285](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250826105513285.png)
 
 
 
