@@ -1,5 +1,17 @@
 # PMIC
 
+
+
+## 参考文档
+
+```
+Linux_PMIC_开发指南.pdf
+```
+
+
+
+
+
 **dts**
 
 通过设备树进行配置 PMU。
@@ -41,10 +53,4 @@ battery_power_supply: battery-power-supply {
 ```
 
 
-
-## 参考文档
-
-```
-Linux_PMIC_开发指南.pdf
-```
 
