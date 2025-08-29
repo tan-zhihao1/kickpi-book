@@ -6,6 +6,7 @@
 
 ```
 Linux_PMIC_开发指南.pdf
+AXP707_Datasheet_V1.0.pdf
 ```
 
 
