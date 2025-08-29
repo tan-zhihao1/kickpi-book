@@ -505,7 +505,7 @@ Settings -> System -> Developer options
 
 
 
-## 默认printk等级
+## 默认打印等级
 
 ```diff
 --- a/longan/device/config/chips/a133/configs/default/env.cfg
