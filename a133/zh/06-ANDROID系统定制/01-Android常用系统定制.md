@@ -505,6 +505,20 @@ Settings -> System -> Developer options
 
 
 
+## 默认printk等级
+
+```diff
+--- a/longan/device/config/chips/a133/configs/default/env.cfg
++++ b/longan/device/config/chips/a133/configs/default/env.cfg
+@@ -7,6 +7,7 @@ nand_root=/dev/nand0p4
+ mmc_root=/dev/mmcblk0p4
+ init=/init
+-loglevel=8
++loglevel=1
+```
+
+
+
 
 
 ## 常见问题
