@@ -105,6 +105,7 @@ value
 cd /sys/kernel/debug/sunxi_pinctrl
 
 查看 pin 的配置
+# cd /sys/kernel/debug/sunxi_pinctrl
 # echo PH8 > sunxi_pin
 # cat sunxi_pin_configure
 
