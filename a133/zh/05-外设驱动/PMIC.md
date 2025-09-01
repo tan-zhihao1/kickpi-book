@@ -58,5 +58,17 @@ battery_power_supply: battery-power-supply {
 
 ## 常见问题
 
+### 充电电流偏低问题
+
+问题一：VBUS 电压是否低于4.6V，电压偏低，触发限流
+
+问题二：VBUS 串接的电流计存在较大压降（超过0.2V）
+
+问题三：USB 线损和板级OVP压降，导致 VBUS 电压偏低
+
+更换低阻抗的USB电流计测试；
+
+更换线损较小的USB线材；
+
 
 
