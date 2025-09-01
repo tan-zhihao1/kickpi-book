@@ -322,6 +322,7 @@ sudo reboot
 安装依赖和create_ap
 
 ```shell
+$ sudo apt update
 $ sudo apt-get install git util-linux hostapd dnsmasq iptables iproute2 haveged  make
 $ git clone https://github.com/oblique/create_ap
 $ cd */create_ap

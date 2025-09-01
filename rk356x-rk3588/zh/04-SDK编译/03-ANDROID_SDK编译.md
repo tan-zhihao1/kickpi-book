@@ -81,6 +81,8 @@ $ ./build.sh -AUCKu
 ```
 
 > 镜像生成目录：rockdev/Image-*/update-\*.img
+>
+> 如果有接屏，请先选择你使用的屏配置：[屏设备树配置](..\05-外设驱动\LCD.md#LCDDriver) 
 
 
 
