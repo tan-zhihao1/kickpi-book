@@ -5,6 +5,8 @@
 ## 文档参考
 
 ```
+RKDocs/android/wifi/Rockchip_Introduction_WIFI_Configuration_CN&EN.pdf
+RKDocs/android/wifi/Rockchip_Introduction_REALTEK_WIFI_Driver_Porting_CN&EN.pdf
 ```
 
 
