@@ -19,6 +19,8 @@ Linux_SDK
 
 ## DTS
 
+MIPI DSI
+
 ```
 kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android-mipi-5-720-1280-F050008M01.dtb
 kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android-mipi-8-800-1280-MX080B2140.dtb
@@ -27,4 +29,18 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android-mipi-10.1-800-1
 ```
 
 
+
+HDMI
+
+```
+kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-lcd-hdmi.dtsi
+```
+
+
+
+TYPE-C DP
+
+```
+kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-lcd-dp.dtsi
+```
 
