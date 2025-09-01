@@ -4,11 +4,17 @@
 
 ## 文档参考
 
+```
+```
+
 
 
 ## DTS
 
 ```
+kernel-5.10/arch/arm64/boot/dts/rockchip/rk3568-kickpi-wifibt.dtsi
+kernel-5.10/arch/arm64/boot/dts/rockchip/rk3562-kickpi-wifibt.dtsi
+kernel-5.10/arch/arm64/boot/dts/rockchip/rk3588-kickpi-wifi-rtl8822be.dtsi
 ```
 
 
