@@ -8,6 +8,9 @@
 
 ## DTS
 
+```
+```
+
 
 
 ## Driver
@@ -17,5 +20,12 @@ RTL8822CS
 ```
 Android_SDK/external/wifi_driver/rtl8822cs/
 Linux_SDK/external/rkwifibt/drivers/rtl8822cs/ 
+```
+
+RTL8852BE
+
+```
+Android_SDK/external/wifi_driver/rtl8852be
+Linux_SDK/external/rkwifibt/drivers/rtl8852be
 ```
 
