@@ -315,6 +315,33 @@ sudo reboot
 
 
 
+## 命令行配置WIFI热点（AP）模式
+
+### 使用物理接口创建热点模式
+
+安装依赖和create_ap
+
+```shell
+$ sudo apt-get install git util-linux hostapd dnsmasq iptables iproute2 haveged  make
+$ git clone https://github.com/oblique/create_ap
+$ cd */create_ap
+$ sudo make install
+```
+
+创建热点MyAccessPoint，密码：12345678，共享eth0网络
+
+```shell
+$ sudo create_ap --no-virt wlan0 eth0 MyAccessPoint 12345678 &
+```
+
+使用create_ap后 想恢复WiFi 节点
+
+```shell
+$ sudo create_ap --fix-unmanaged
+```
+
+
+
 ## NFS配置
 
 **环境配置**
