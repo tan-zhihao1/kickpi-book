@@ -344,11 +344,11 @@ sudo reboot
 
 6.配置WiFi热点的安全属性
 
-![image-20250901153503691](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250901153503691.png)
+![image-20250901154557971](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250901154557971.png)
 
-> none: 无密码
+> None: 无密码
 >
-> WPA/WPA2/WPA3 Personal : 常规加密模式
+> WPA/WPA2/WPA3 Personal : 常用加密模式
 >
 > WPA3 Personal： 只支持WPA3
 >

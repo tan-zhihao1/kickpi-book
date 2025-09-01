@@ -32,9 +32,7 @@ device/config/chips/a133/configs/c3/kickpi-k5c.dts
 
 ### sys gpio控制
 
-当存在将拓展引脚配置为输入的需求，默认软件的gpio-led不能满足需求。
-
-将GPIO释放出来，通过/sys/class/gpio进行控制
+当存在将拓展引脚配置为输入的需求，默认软件的gpio-led不能满足需求。需要将GPIO释放出来，通过/sys/class/gpio进行控制。
 
 步骤一
 
@@ -68,8 +66,6 @@ pin 232 (PH8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
 ```
 
 ​		能够看到PH8未被使用，且对应 pin 值为 232 
-
-
 
 步骤四
 
