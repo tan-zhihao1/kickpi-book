@@ -1,6 +1,19 @@
-# MIPI_DSI
+# LCD
+
+
 
 ## 文档参考
+
+Android_SDK
+
+```
+RKDocs/common/display/
+```
+
+Linux_SDK
+
+```
+```
 
 
 
