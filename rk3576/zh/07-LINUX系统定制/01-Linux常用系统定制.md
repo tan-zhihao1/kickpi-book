@@ -315,6 +315,47 @@ sudo reboot
 
 
 
+## 图像化界面配置WIFI热点
+
+### Ubuntu
+
+1.确保连接以太网
+2.打开图像化网络配置界面
+
+![image-20250901152628037](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250901152628037.png)
+
+3.添加WiFi节点
+
+![image-20250901152731237](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250901152731237.png)
+
+4.选择Wi-Fi类型
+
+![image-20250901152814149](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250901152814149.png)
+
+5.进行WiFi网络节点配置
+
+![image-20250901153026817](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250901153026817.png)
+
+> SSID:WiFi名称
+>
+> Mode：模式
+>
+> Device：使用的设备
+
+6.配置WiFi热点的安全属性
+
+![image-20250901153503691](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250901153503691.png)
+
+> none: 无密码
+>
+> WPA/WPA2/WPA3 Personal : 常规加密模式
+>
+> WPA3 Personal： 只支持WPA3
+>
+> Enhanced Open：公共网络的安全标准
+
+
+
 ## 命令行配置WIFI热点（AP）模式
 
 ### 使用物理接口创建热点模式

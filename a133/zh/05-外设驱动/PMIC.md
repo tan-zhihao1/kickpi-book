@@ -64,7 +64,9 @@ battery_power_supply: battery-power-supply {
 
 问题二：VBUS 串接的电流计存在较大压降（超过0.2V）
 
-问题三：USB 线损和板级OVP压降，导致 VBUS 电压偏低
+问题三：USB 线损和板级OVP（过压保护）压降，导致 VBUS 电压偏低
+
+> 部分差的线材，使用 DC 供电测试，提供 5.8V的供电，测试板端 VBUS 才有 5.1V ！
 
 更换低阻抗的USB电流计测试；
 
