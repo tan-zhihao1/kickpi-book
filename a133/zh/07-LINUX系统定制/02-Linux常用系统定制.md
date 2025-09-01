@@ -10,7 +10,7 @@ Ubuntu系统用户名/密码：kickpi/kickpi
 
 ## PIN 控制
 
-
+[ 参考 GPIO 文档](../05-外设驱动/GPIO.md)
 
 ### sys gpio控制
 
