@@ -28,6 +28,30 @@ device/config/chips/a133/configs/c3/kickpi-k5c.dts
 
 
 
+dts 控制解析
+
+```
+gpios = <&pio   PH 0x8 0x0 0x1 0x0 0x1>;
+gpios = <&r_pio PL 0x4 0x0 0x1 0x0 0x1>;
+gpios = <&A		B  C   D   E   F   G>;
+```
+
+> `&A` &pio/&r_pio 指定 pio，属于 cpus 要用 &r_pio （PL之后的）
+>
+> `B` PH/PL  指定 gpio 的 bank
+>
+> `C` 0x8/0x4 指定 bank 中的哪个引脚
+>
+> `D` 复用类型
+>
+> `E` 上下拉，值为 0x1 时采用默认值
+>
+> `F` 驱动能力，值为 0x0 时采用默认值
+>
+> `G` 输出电平，只用 output 才有效
+
+
+
 ## PIN 控制
 
 ### sys gpio控制
