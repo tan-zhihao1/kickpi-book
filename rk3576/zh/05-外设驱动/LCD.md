@@ -13,13 +13,15 @@ RKDocs/common/display/
 Linux_SDK
 
 ```
+docs/cn/Common/DISPLAY/
+docs/en/Common/DISPLAY/
 ```
 
 
 
 ## DTS
 
-MIPI DSI
+**MIPI DSI**
 
 ```
 kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android-mipi-5-720-1280-F050008M01.dtb
@@ -30,7 +32,7 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-android-mipi-10.1-800-1
 
 
 
-HDMI
+**HDMI**
 
 ```
 kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-lcd-hdmi.dtsi
@@ -38,7 +40,7 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-lcd-hdmi.dtsi
 
 
 
-TYPE-C DP
+**TYPE-C DP**
 
 ```
 kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-lcd-dp.dtsi
