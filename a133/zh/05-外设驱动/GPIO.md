@@ -99,7 +99,7 @@ value
 
 
 
-### sunxi gpio 控制
+### sunxi gpio debug 控制
 
 ```
 cd /sys/kernel/debug/sunxi_pinctrl
