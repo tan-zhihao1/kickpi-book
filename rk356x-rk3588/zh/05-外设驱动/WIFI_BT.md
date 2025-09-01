@@ -61,7 +61,10 @@ Linux_SDK/external/rkwifibt/drivers/rtl8852be
 ## Android
 
 ```
+packages/apps/Settings/src/com/android/settings/wifi/
 frameworks/opt/net/wifi/libwifi_hal/
+external/wpa_supplicant_8/
+hardware/interfaces/wifi/
 hardware/realtek/
 ```
 
