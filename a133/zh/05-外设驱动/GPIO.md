@@ -28,7 +28,7 @@ device/config/chips/a133/configs/c3/kickpi-k5c.dts
 
 
 
-dts 控制解析
+dts gpios 配置解析
 
 ```
 gpios = <&pio   PH 0x8 0x0 0x1 0x0 0x1>;
