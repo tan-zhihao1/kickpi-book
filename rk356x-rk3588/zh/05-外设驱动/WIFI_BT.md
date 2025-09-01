@@ -18,6 +18,15 @@ docs/en/Linux/Wifibt
 
 
 
+## WiFi 模块
+
+| 型号      | 接口 | 工作频率 |
+| --------- | ---- | -------- |
+| RTL8822CS | SDIO | 5/2.4GHz |
+| RTL8852BE | PCIE | 5/2.4GHz |
+
+
+
 ## DTS
 
 Android_SDK
