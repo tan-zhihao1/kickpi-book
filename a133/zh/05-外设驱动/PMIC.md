@@ -41,6 +41,7 @@ pmu0: pmu@34 {
 
 ```
 longan/kernel/linux-4.9/arch/arm64/boot/dts/sunxi/a133-kickpi-axp707-bat-5000mA.dtsi
+longan/kernel/linux-4.9/arch/arm64/boot/dts/sunxi/a133-kickpi-axp707-bat-8000mA.dtsi
 ```
 
 电池配置，配置电池相关数据节点
@@ -55,5 +56,7 @@ battery_power_supply: battery-power-supply {
 
 
 
-## AXP707
+## 常见问题
+
+
 
