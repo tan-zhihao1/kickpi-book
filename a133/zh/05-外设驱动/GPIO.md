@@ -103,30 +103,44 @@ value
 
 ```
 cd /sys/kernel/debug/sunxi_pinctrl
-
+```
 查看 pin 的配置
+```
 # cd /sys/kernel/debug/sunxi_pinctrl
 # echo PH8 > sunxi_pin
 # cat sunxi_pin_configure
-
+```
 配置 pin 为 gpio 模式
+```
 # echo 'PH8 0' > function
-
+```
 修改 pin 的上拉属性
+```
 # echo 'PH8 1' > pull
+```
 // 查看修改情况
+```
 # cat pull					
 # cat sunxi_pin_configure
+```
 
 查看 pin 电平
-# cat data
-
-注意：
-当操作PL及之后的pin ， 需要切换pin的设备， 否则操作失败
-echo pio > /sys/kernel/debug/sunxi_pinctrl/dev_name
-cat /sys/kernel/debug/sunxi_pinctrl/dev_name
-
-echo r_pio > /sys/kernel/debug/sunxi_pinctrl/dev_name
-cat /sys/kernel/debug/sunxi_pinctrl/dev_name
 ```
+# cat data
+```
+
+> 注意：
+> 当操作PL及之后的pin ， 需要切换pin的设备， 否则操作失败
+>
+> ```
+> echo pio > /sys/kernel/debug/sunxi_pinctrl/dev_name
+> cat /sys/kernel/debug/sunxi_pinctrl/dev_name
+> ```
+>
+> 切换 r_pio （当操作PL及之后的pin ， 需要切换 r_pio 的设备， 否则操作失败）
+>
+> ```
+> echo r_pio > /sys/kernel/debug/sunxi_pinctrl/dev_name
+> cat /sys/kernel/debug/sunxi_pinctrl/dev_name
+> ```
 
