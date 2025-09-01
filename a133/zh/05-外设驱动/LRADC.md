@@ -1,4 +1,4 @@
-# LRADC按键配置
+# LRADC
 
 ## LRADC
 
