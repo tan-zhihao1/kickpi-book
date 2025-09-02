@@ -370,7 +370,82 @@ $ sudo make install
 
 * 创建虚拟接口可以共享WiFi自己的
 
+创建虚拟网卡
 
+```shell
+$ sudo iw dev <wirelessname> interface add <virtualwlanname> type __ap  
+```
+
+> <wirelessname> 是真实无线网卡名，可通过ifconfig查看，<virtualwlanname>是虚拟的无线网卡名
+
+例如命令 
+
+```shell
+$ sudo iw dev wlan0 interface add wlo2 type __ap
+```
+
+为虚拟网卡添加物理地址
+
+```shell
+$ sudo ip link set dev <virtualwlanname> address 22:33:44:55:66:00
+```
+
+> 随意填写，假如冲突则换一个，<virtualwlanname>是虚拟的无线网卡名
+
+例如命令：
+
+```shell
+$ sudo ip link set dev wlo2 address 22:33:44:55:66:00
+```
+
+查看创建情况
+
+```shell
+$ sudo iw dev wlo2 info
+   Interface wlo2
+	ifindex 5
+	wdev 0x5
+	addr 22:33:44:55:66:00
+	type managed
+	wiphy 0
+	txpower 0.00 dBm
+	multicast TXQ:
+		qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytestx-packets
+		0	0	0	0	0	0	0	0	0
+```
+
+> 注意：重启电脑后，这里创建的虚拟网卡就会失效
+
+使用create_ap创建热点
+
+```shell
+$ sudo create_ap -c 11 <virtualwlanname> <wirelessname> <SSID> <password> 
+```
+
+>  <wirelessname> 是你的无线网卡的姓名，<virtualwlanname> 虚拟网卡名，<SSID> <password>分别是创建的热点wifi名和密码
+
+例如 
+
+```shell
+$ sudo create_ap wlo2 wlan0 m3 88888888
+```
+
+如果创建的热点卡住，开启热点时报如下错误:
+
+```
+#RTNETLINK answers: Device or resource busy
+
+#ERROR: Maybe your WiFi adapter does not fully support virtual interfaces.
+     #  Try again with --no-virt.
+```
+
+可以如下操作停止之前创建的热点，然后重启开启热点。
+
+```shell
+$ sudo create_ap --stop <virtualwlanname>  
+```
+
+> <virtualwlanname> 虚拟网卡名
 
 
 
