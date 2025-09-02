@@ -368,6 +368,14 @@ $ cd */create_ap
 $ sudo make install
 ```
 
+* 创建虚拟接口可以共享WiFi自己的
+
+
+
+
+
+* 使用物理接口如共享以太网
+
 创建热点MyAccessPoint，密码：12345678，共享eth0网络
 
 ```shell
