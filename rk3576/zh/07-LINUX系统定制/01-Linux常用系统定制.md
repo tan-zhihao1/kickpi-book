@@ -453,6 +453,8 @@ $ sudo create_ap wlan0 end0 K7_Point 12345678 &
 $ sudo create_ap --fix-unmanaged
 ```
 
+
+
 * 开机就启动热点
 
 配置create_ap 配置文件
@@ -461,13 +463,13 @@ $ sudo create_ap --fix-unmanaged
 $ sudo vim /etc/create_ap.conf 
 ```
 
-配置如下项
+关键配置如下项
 
 ```
-WIFI_IFACE=wlp1s0 #wireless 网卡名
-INTERNET_IFACE=wlp1s0 #wlan 网卡名
-SSID=Thinkpad #要建立的热点名称
-PASSPHRASE=20212021 #密码
+WIFI_IFACE=wlan0
+INTERNET_IFACE=end0
+SSID=K7C_Point
+PASSPHRASE=12345678
 ```
 
 启动 create_ap.service服务
