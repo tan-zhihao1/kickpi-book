@@ -320,7 +320,7 @@ sudo reboot
 > Ubuntu、Debian
 
 1.确保连接以太网
-2.单击网络图标打开图像化网络配置界面（Debian系统为右键 “两台PC图标”）
+2.单击网络图标打开图像化网络配置界面（Debian：右键 “两台PC图标”）
 
 ![image-20250901152628037](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250901152628037.png)
 
