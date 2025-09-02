@@ -1,4 +1,4 @@
-# 01-Linux常用系统定制
+01-Linux常用系统定制
 
 
 
@@ -407,7 +407,7 @@ $ sudo iw dev wlo2 info
 使用create_ap创建热点
 
 ```shell
-$ sudo create_ap -c 11 <virtualwlanname> <wirelessname> <SSID> <password> 
+$ sudo create_ap <virtualwlanname> <wirelessname> <SSID> <password> 
 ```
 
 >  <wirelessname> 是你的无线网卡的姓名，<virtualwlanname> 虚拟网卡名，<SSID> <password>分别是创建的热点wifi名和密码
@@ -451,6 +451,28 @@ $ sudo create_ap wlan0 end0 K7_Point 12345678 &
 
 ```shell
 $ sudo create_ap --fix-unmanaged
+```
+
+* 开机就启动热点
+
+配置create_ap 配置文件
+
+```shell
+$ sudo vim /etc/create_ap.conf 
+```
+
+配置如下项
+
+```
+WIFI_IFACE=wlp1s0 #wireless 网卡名
+INTERNET_IFACE=wlp1s0 #wlan 网卡名
+SSID=Thinkpad #要建立的热点名称
+PASSPHRASE=20212021 #密码
+```
+
+```
+sudo systemctl enable create_ap
+sudo systemctl start create_ap # 开启 wifi 热点
 ```
 
 
