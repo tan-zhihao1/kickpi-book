@@ -481,6 +481,18 @@ sudo systemctl enable create_ap.service
 sudo systemctl start create_ap.service
 ```
 
+服务如果存在问题，可以进行修改
+
+```
+sudo vim /lib/systemd/system/create_ap.service
+```
+
+例如：添加kill dnsmasq
+
+```
+ExecStartPre=/usr/bin/killall dnsmasq || true
+```
+
 
 
 ## NFS配置
