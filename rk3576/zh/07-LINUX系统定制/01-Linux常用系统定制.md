@@ -376,6 +376,10 @@ $ sudo make install
 $ sudo create_ap --no-virt wlan0 eth0 MyAccessPoint 12345678 &
 ```
 
+> 如果出现dnsmasq: failed to bind DHCP server socket: Address already in use
+> 因为create_ap需要启动dnsmasq，但是dnsmasq已经启动了
+> lsof -i 找到dnsmasq对应的PID，kill -9 < PID> 掉就行
+
 使用create_ap后 想恢复WiFi 节点
 
 ```shell
