@@ -364,14 +364,14 @@ sudo reboot
 $ sudo apt update
 $ sudo apt-get install git util-linux hostapd dnsmasq iptables iproute2 haveged  make
 $ git clone https://github.com/oblique/create_ap
-$ cd */create_ap
+$ cd create_ap
 $ sudo make install
 ```
 
 create_ap官方介绍文档：
 
 ```
-*/create_ap/README.md 
+create_ap/README.md 
 ```
 
 
