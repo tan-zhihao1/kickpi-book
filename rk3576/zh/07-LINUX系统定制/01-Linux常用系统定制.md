@@ -374,9 +374,7 @@ $ sudo make install
 $ sudo create_ap wlan0 end0 K7_Point 12345678 &
 ```
 
-> 如果出现 dnsmasq: failed to bind DHCP server socket: Address already in use
-> 因为create_ap 需要启动 dnsmasq，但是dnsmasq已经启动了
-> lsof -i 找到dnsmasq对应的PID，kill -9 < PID> 掉就行
+> 遇到错误可以先参考[create_ap常见问题](#wifi-ap) 
 
 使用create_ap后 想恢复WiFi 节点
 
@@ -850,7 +848,7 @@ AV1 Main10 L5.3: 4K 120fps
 
 开启调试信息
 
-```
+```shell
 $ export mpp_syslog_perror=1
 $ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 ```
@@ -862,7 +860,7 @@ $ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 
 关闭调试信息
 
-```
+```shell
 $ export mpp_syslog_perror=0
 $ echo 0x100 > /sys/module/rk_vcodec/parameters/mpp_dev_debug
 ```
@@ -875,7 +873,7 @@ Rockchip 提供了 MPP 相关工具进行使用
 
 mpi_enc_test
 
-```
+```shell
 usage: mpi_enc_test [options]
  -i       input_file          input frame file                       
  -o       output_file         output encoded bitstream file          
@@ -903,7 +901,7 @@ usage: mpi_enc_test [options]
 
 * 编码H.264 4096x2160 100帧测试
 
-```
+```shell
 $ mpi_enc_test -w 4096 -h 2160 -t 7 -o ./test.h264 -n 100
 ```
 
@@ -915,7 +913,7 @@ $ mpi_enc_test -w 4096 -h 2160 -t 7 -o ./test.h264 -n 100
 
 * 编码H.265 4096x2160 100帧测试
 
-```
+```shell
 $ mpi_enc_test -w 4096 -h 2160 -t 16777220 -o ./test.h265 -n 100
 ```
 
@@ -929,7 +927,7 @@ $ mpi_enc_test -w 4096 -h 2160 -t 16777220 -o ./test.h265 -n 100
 
 mpi_dec_test
 
-```
+```shell
  usage: mpi_dec_test [options]
  -i       input_file   input bitstream file                                 
  -o       output_file  output decoded frame file                            
@@ -947,7 +945,7 @@ mpi_dec_test
 
 * 解码H.264 4096x2160 100帧测试
 
-```
+```shell
 $ mpi_dec_test -t 7 -i test.h264 -n 100
 ```
 
@@ -959,7 +957,7 @@ $ mpi_dec_test -t 7 -i test.h264 -n 100
 
 * 解码H.265 4096x2160 100帧测试
 
-```
+```shell
 $ mpi_dec_test -t 16777220 -i test.h265 -n 100
 ```
 
@@ -973,7 +971,7 @@ $ mpi_dec_test -t 16777220 -i test.h265 -n 100
 
 板卡连接显示设备，打开虚拟终端 或 调试串口终端，执行以下命令开始 chromium 视频测试
 
-```
+```shell
 $ source /rockchip-test/chromium/test_chromium_with_video.sh
 ```
 
@@ -981,7 +979,7 @@ ubuntu 中 rockchip chromium 和 gstreamer 配置硬解码存在兼容性问题�
 
 默认配置 chromium 进行调用，若chromium未调用硬解码，需要以下命令进行修复
 
-```
+```shell
 $ source /rockchip-test/chromium/chromium_mpp_fix.sh
 ```
 
@@ -989,8 +987,8 @@ $ source /rockchip-test/chromium/chromium_mpp_fix.sh
 
 **gstreamer视频测试**
 
-```
-sudo GST_DEBUG=2 gst-launch-1.0 playbin uri=file:///usr/local/test.mp4 video-sink="autovideosink" audio-sink=fakesink
+```shell
+$ sudo GST_DEBUG=2 gst-launch-1.0 playbin uri=file:///usr/local/test.mp4 video-sink="autovideosink" audio-sink=fakesink
 ```
 
 > 如果有mpp调⽤的字样，说明硬件解码成功调用。
@@ -999,7 +997,7 @@ ubuntu 中 rockchip chromium 和 gstreamer 配置硬解码存在兼容性问题�
 
 默认配置 chromium 进行调用，若需要 gstreamer 调用硬解码，需要以下命令进行修复
 
-```
+```shell
 $ source /rockchip-test/gstreamer/gstreamer_mpp_fix.sh
 ```
 
@@ -1013,8 +1011,8 @@ $ source /rockchip-test/gstreamer/gstreamer_mpp_fix.sh
 
 **安装命令**
 
-```
-sudo apt update && sudo apt install -y build-essential manpages-dev
+```shell
+$ sudo apt update && sudo apt install -y build-essential manpages-dev
 ```
 
 
@@ -1024,4 +1022,72 @@ sudo apt update && sudo apt install -y build-essential manpages-dev
 ### **Linux系统烧录后第一次开机重启问题**
 
 通⽤Debian为了兼容不同芯⽚，`/etc/init.d/rockchip.sh` 第⼀次启动的时候，会根据芯⽚安装各种差异包，⽐如 `libmali` 、`isp`等packages，安装完后会重启显⽰服务。 如果是独⽴项⽬可以放到制作镜像的时候处理这部分差异即可。
+
+
+
+### create_ap<a id='wifi-ap'> </a>
+
+**dnsmasq报错**
+
+如果创建遇到
+
+```shell
+dnsmasq: failed to bind DHCP server socket: Address already in use
+```
+
+因为create_ap 需要启动 dnsmasq，但是dnsmasq已经启动了
+
+```shell
+$ sudo lsof -i
+```
+
+找到dnsmasq对应的PID
+
+```shell
+$ sudo kill -9 < PID> 
+```
+
+
+
+**因为iw版本6.7以上兼容补丁**
+
+```diff
+@@ -321,9 +321,9 @@ can_transmit_to_channel() {
+
+    if [[ $USE_IWCONFIG -eq 0 ]]; then
+        if [[ $FREQ_BAND == 2.4 ]]; then
+-           CHANNEL_INFO=$(get_adapter_info ${IFACE} | grep " 24[0-9][0-9] MHz \[${CHANNEL_NUM}\]")
++           CHANNEL_INFO=$(get_adapter_info ${IFACE} | grep " 24[0-9][0-9]\(\.0\+\)\? MHz \[${CHANNEL_NUM}\]")
+        else
+-           CHANNEL_INFO=$(get_adapter_info ${IFACE} | grep " \(49[0-9][0-9]\|5[0-9]\{3\}\) MHz \[${CHANNEL_NUM}\]")
++           CHANNEL_INFO=$(get_adapter_info ${IFACE} | grep " \(49[0-9][0-9]\|5[0-9]\{3\}\)\(\.0\+\)\? MHz \[${CHANNEL_NUM}\]")
+        fi
+        [[ -z "${CHANNEL_INFO}" ]] && return 1
+        [[ "${CHANNEL_INFO}" == *no\ IR* ]] && return 1
+@@ -339,7 +339,9 @@ can_transmit_to_channel() {
+
+# taken from iw/util.c
+ieee80211_frequency_to_channel() {
+-   local FREQ=$1
++   local FREQ_MAYBE_FRACTIONAL=$1
++   local FREQ=${FREQ_MAYBE_FRACTIONAL%.*}
+
+    if [[ $FREQ -eq 2484 ]]; then
+        echo 14
+    elif [[ $FREQ -lt 2484 ]]; then
+@@ -356,7 +358,7 @@ ieee80211_frequency_to_channel() {
+}
+
+is_5ghz_frequency() {
+-    [[ $1 =~ ^(49[0-9]{2})|(5[0-9]{3})$ ]]
++   [[ $1 =~ ^(49[0-9]{2})|(5[0-9]{3})(\.0+)?$ ]]
+}
+
+```
+
+```
+is_wifi_connected() {
+    return 1
+}
+```
 
