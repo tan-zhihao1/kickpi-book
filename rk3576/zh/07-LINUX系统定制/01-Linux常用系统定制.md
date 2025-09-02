@@ -317,10 +317,10 @@ sudo reboot
 
 ## 图像化界面配置WIFI热点
 
-### Ubuntu
+> Ubuntu、Debian
 
 1.确保连接以太网
-2.打开图像化网络配置界面
+2.单击网络图标打开图像化网络配置界面（Debian系统为右键 “两台PC图标”）
 
 ![image-20250901152628037](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250901152628037.png)
 
