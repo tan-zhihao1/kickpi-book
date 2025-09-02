@@ -368,7 +368,7 @@ $ cd */create_ap
 $ sudo make install
 ```
 
-* 创建虚拟接口可以共享WiFi自己的
+* 创建虚拟接口：共享WiFi
 
 创建虚拟网卡
 
@@ -382,20 +382,6 @@ $ sudo iw dev <wirelessname> interface add <virtualwlanname> type __ap
 
 ```shell
 $ sudo iw dev wlan0 interface add wlo2 type __ap
-```
-
-为虚拟网卡添加物理地址
-
-```shell
-$ sudo ip link set dev <virtualwlanname> address 22:33:44:55:66:00
-```
-
-> 随意填写，假如冲突则换一个，<virtualwlanname>是虚拟的无线网卡名
-
-例如命令：
-
-```shell
-$ sudo ip link set dev wlo2 address 22:33:44:55:66:00
 ```
 
 查看创建情况
@@ -415,6 +401,8 @@ $ sudo iw dev wlo2 info
 ```
 
 > 注意：重启电脑后，这里创建的虚拟网卡就会失效
+
+
 
 使用create_ap创建热点
 
@@ -449,7 +437,7 @@ $ sudo create_ap --stop <virtualwlanname>
 
 
 
-* 使用物理接口如共享以太网
+* 使用物理接口：共享以太网
 
 创建热点MyAccessPoint，密码：12345678，共享eth0网络
 
