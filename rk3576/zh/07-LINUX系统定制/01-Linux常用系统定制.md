@@ -373,7 +373,7 @@ $ sudo make install
 创建热点MyAccessPoint，密码：12345678，共享eth0网络
 
 ```shell
-$ sudo create_ap wlan0 eth0 MyAccessPoint 12345678 &
+$ sudo create_ap wlan0 end0 K7_Point 12345678 &
 ```
 
 > 如果出现 dnsmasq: failed to bind DHCP server socket: Address already in use
