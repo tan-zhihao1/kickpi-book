@@ -470,9 +470,11 @@ SSID=Thinkpad #要建立的热点名称
 PASSPHRASE=20212021 #密码
 ```
 
+启动 create_ap.service服务
+
 ```
-sudo systemctl enable create_ap
-sudo systemctl start create_ap # 开启 wifi 热点
+sudo systemctl enable create_ap.service
+sudo systemctl start create_ap.service
 ```
 
 
