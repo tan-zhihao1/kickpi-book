@@ -38,8 +38,23 @@ $ md5sum -c *.md5
 ```
 $ tar -zxvf rk356x-android13-*.tar.gz
 $ cd rk356x-android13-*
+$ ls -al
+	.git
+```
+
+> SDK源码压缩包通过Git仓库分享，可用ls -al命令查看到.git文件夹
+
+
+
+* 还原源码文件
+
+进入解压出的目录下，通过git还原源码
+
+```
 $ git reset --hard
 ```
+
+> 注意：请在Linux下操作 并且安装了git
 
 
 
