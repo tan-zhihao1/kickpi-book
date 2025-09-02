@@ -368,6 +368,12 @@ $ cd */create_ap
 $ sudo make install
 ```
 
+create_ap官方介绍文档：
+
+```
+*/create_ap/README.md 
+```
+
 
 
 * 创建虚拟接口：共享WiFi
