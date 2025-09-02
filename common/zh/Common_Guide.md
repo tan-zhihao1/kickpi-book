@@ -19,7 +19,7 @@ kickpi-book/$Doc/zh/
 | ------------------ | ------------- | ------ | --------- | -------- | ---------- | --------- |
 | K1 / K1B / K3 / K8 | rk356x-rk3588 | 5.10   | Android13 | Debian11 | Ubuntu2004 | N         |
 | K2B / K2C          | h618          | 5.4    | Android12 | N        | Ubuntu2204 | N         |
-| K4B                | t113-s3       |        | N         | N        | Ubuntu2004 | Buildroot |
+| K4B                | t113-s3       | 5.4    | N         | N        | Ubuntu2004 | Buildroot |
 | K5 / K5C           | a133          | 4.9    | Android10 | N        | Ubuntu1604 | N         |
 | K7                 | rk3576        | 6.10   | Android14 | Debian12 | Ubuntu2404 | N         |
 
