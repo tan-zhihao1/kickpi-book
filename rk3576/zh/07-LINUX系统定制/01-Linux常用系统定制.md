@@ -388,17 +388,17 @@ $ sudo create_ap --fix-unmanaged
 
 **环境配置**
 
-```
-sudo apt install nfs-kernel-server
-sudo apt install rpcbind
-sudo apt install nfs-common
+```shell
+$ sudo apt install nfs-kernel-server
+$ sudo apt install rpcbind
+$ sudo apt install nfs-common
 ```
 
 **服务器端**
 
 1. 配置共享的文件
 
-```
+```shell
 $ mkdir /home/kickpi/nfs_share
 $ chmod 777 /home/kickpi/nfs_share
 $ vi /etc/exports
@@ -417,8 +417,8 @@ $ vi /etc/exports
 
 2. 启动服务
 
-```
-sudo service nfs-kernel-server restart
+```shell
+$ sudo service nfs-kernel-server restart
 ```
 
 3. 查看当前服务器共享文件，证明共享成果
