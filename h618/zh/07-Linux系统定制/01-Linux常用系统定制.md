@@ -398,6 +398,8 @@ network={
         psk="123456789"
         key_mgmt=WPA-PSK
 }
+
+命令连接网络 获取ip
 wpa_supplicant -D nl80211 -i wlan0 -c /var/run/wpa_supplicant -B
 dhclient wlan0
 ```
