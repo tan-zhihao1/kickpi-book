@@ -97,7 +97,7 @@ lunch ceres_c3-userdebug
 
 ### 安卓编译失败
 
-编译安卓时失败 且没有明显错误报错，修改一下内容尝试重新编译
+编译安卓时失败 且没有明显错误报错，修以下内容尝试重新编译
 
 ![image-20250814093933050](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250814093933050.png)
 
