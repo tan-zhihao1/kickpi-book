@@ -236,6 +236,18 @@ aw-image-build/toolchains/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabi/bin
 
 
 
+### 应用工具添加
+
+添加自己的应用和工具可放在这个目录下
+
+``` 
+aw-image-build/external/packages/bsp/common
+```
+
+
+
+
+
 
 
 ## 常见问题
