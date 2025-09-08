@@ -65,7 +65,7 @@ gpios = <&A		B  C   D   E   F   G>;
 比如PH8，如需其他引脚，一样在 leds 结点下注释即可 ,  下面内容都以PH8 做举例
 
 ```diff
-vim device/config/chips/a133/configs/c3/kickpi-k5.dts
+vim device/config/chips/a133/configs/c3/kickpi-k5c.dts
 + /*
 			PH8 {
 				label = "PH8";
