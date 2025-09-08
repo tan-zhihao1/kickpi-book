@@ -61,7 +61,7 @@ $ ./build.sh
 
 ##### 编译详细步骤选择介绍
 
-在aw-image-build根目录运行 **./build.sh** 来进入交互式构建界面
+在aw-image-build目录运行 **./build.sh** 来进入交互式构建界面
 
 ![image-20241025181130073](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025181130073.png)
 
