@@ -78,6 +78,8 @@ logo_kernel.bmp
 
 **ADB修改显示方向**
 
+> 系统自动旋转保持关闭
+
 ```
 // 0°
 (ADB)$ adb shell settings put system user_rotation 0
