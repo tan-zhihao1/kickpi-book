@@ -72,6 +72,8 @@ PhoenixSuit/Drivers/AW_Driver/
 
 ![image-20240306171455427](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20240306171455427.png)
 
+![image-20250909114121321](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250909114121321.png)
+
 第六步，PhoenixSuit 烧录完成板卡会自动重启
 
 
