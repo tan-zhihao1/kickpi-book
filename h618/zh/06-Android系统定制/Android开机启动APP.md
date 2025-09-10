@@ -312,7 +312,7 @@ SDK
          <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
      </privapp-permissions>
 +
-+    <privapp-permissions package="com.example.myapplication3">
++    <privapp-permissions package="com.example.myapplication">
 +        <permission name="android.permission.INSTALL_PACKAGES"/>
 +    </privapp-permissions>
 ```
