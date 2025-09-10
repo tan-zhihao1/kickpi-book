@@ -275,3 +275,45 @@ $ adb shell
 $ dumpsys package com.android.settings | grep -i activity
 ```
 
+
+
+## APP特殊权限问题
+
+目前桌面级APP是特殊应用，如果添加特殊权限，可能会出现系统无法起来问题，需要抓取APP相关log日志
+
+```shell
+# logcat | grep LauncherTest
+09-14 10:36:06.662  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication (/system/priv-app/LauncherTest) not in privapp-permissions allowlist
+09-14 10:36:08.437  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication (/system/priv-app/LauncherTest) not in privapp-permissions allowlist
+```
+
+
+
+根据log信息添加权限
+
+```
+SDK
+	修改 frameworks/base/data/etc/privapp-permissions-platform.xml
+	重新编译烧录
+
+主板上
+	/etc/permissions/privapp-permissions-platform.xml
+```
+
+
+
+根据 log 修改 android.permission.INSTALL_PACKAGES 内容如下，其他报错类似参考以下添加：
+
+```diff
+--- a/frameworks/base/data/etc/privapp-permissions-platform.xml
++++ b/frameworks/base/data/etc/privapp-permissions-platform.xml
+@@ -550,4 +550,8 @@ applications that come with the platform
+     <privapp-permissions package="com.android.calllogbackup">
+         <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+     </privapp-permissions>
++
++    <privapp-permissions package="com.example.myapplication3">
++        <permission name="android.permission.INSTALL_PACKAGES"/>
++    </privapp-permissions>
+```
+
