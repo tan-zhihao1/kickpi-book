@@ -40,4 +40,6 @@ h618_data\5-DevelopmentTools\USB_ImageBurnTool\PhoenixSuit.zip
 
 ![image-20250509191757297](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509191757297.png)
 
+![image-20250910135147109](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250910135147109.png)
+
 烧录步骤详见[USB线烧录](../../../common/zh/allwinner/USB线烧录.md)
