@@ -808,7 +808,7 @@ $ sudo ./ff_export_rootfs /mnt/usb -t ext4
 
 > 生成的包名格式如：rootfs.img
 >
-> /mnt/usb 为U盘挂载的目录
+> /mnt/usb 指代：你将U盘挂载的目录
 
 确保打包出来的文件格式正确
 
