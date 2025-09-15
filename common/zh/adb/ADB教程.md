@@ -85,6 +85,14 @@ adb devices
 
 该命令用于查看当前通过 ADB 连接到计算机的所有设备。若设备已正确连接且授权，会显示设备的序列号和状态（如“device”）。
 
+**连接网络ADB**
+
+```
+adb connect <IP>
+```
+
+> 连接网络ADB端口
+
 **重启设备**
 
 ```bash
@@ -96,8 +104,10 @@ adb reboot
 **adb登录**
 
 ``` 
-adb shell
+adb -s <序列号> shell
 ```
+
+> 序列号通过 adb devices 查看，只有一台设备时，可以省略-s 操作
 
 ![image-20250509185455550](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250509185455550.png)
 
