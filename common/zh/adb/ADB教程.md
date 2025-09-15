@@ -91,7 +91,7 @@ adb devices
 adb connect <IP>
 ```
 
-> 连接网络ADB端口
+> IP：为板子的网络IP
 
 **重启设备**
 
