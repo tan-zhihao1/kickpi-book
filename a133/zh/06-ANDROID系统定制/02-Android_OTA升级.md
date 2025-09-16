@@ -76,6 +76,8 @@ Android_10_OTA_开发指南.pdf
 
 ## 升级流程
 
+0. 首先确保 OTA 包和主板信息满足升级前提
+
 1. 将 OTA 包存放到 /sdcard/ 路径下
 
 > adb push ceres_c3-full_ota-eng_*.zip /sdcard/
