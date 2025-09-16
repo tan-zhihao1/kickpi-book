@@ -49,16 +49,16 @@ cd kernel-5.10/
 make loadconfig
 make ARCH=arm64 menuconfig
 make saveconfig
-make ARCH=arm64 rockchip_defconfig
+make ARCH=arm64 rockchip_linux_defconfig 
 ```
 > ARCH=arm64&emsp;配置架构，目前rk356x/3588为arm64
 > menuconfig&emsp;启动图形化配置界面
 > saveconfig&emsp;将当前配置精简后保存为 `defconfig` 文件‌
-> rockchip_defconfig&emsp;加载 Rockchip 官方预置的 ARM64 架构配置文件
+> rockchip_linux_defconfig &emsp;加载 Rockchip 官方预置的 ARM64 架构配置文件
 > loadconfig&emsp;加载默认的defconfig
 
 ```
-cp defconfig arch/arm64/configs/rockchip_defconfig
+cp defconfig arch/arm64/configs/rockchip_linux_defconfig 
 ```
 
 > make  saveconfig生成defconfig 需要cp 到SDK编译使用的*defconfig文件进行使用
