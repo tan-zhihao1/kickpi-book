@@ -112,7 +112,7 @@ Android_10_OTA_开发指南.pdf
 
 ## 常见问题
 
-### 升级失败
+### 升级失败问题
 
 1. 确认是否符合升级前提
 2. 查看对应的升级日志 /cache/recovery，主要查看 last_log ，里面包含主要的升级信息。
@@ -122,5 +122,21 @@ $ ls /cache/recovery/
 block.map    last_kmsg.1 last_kmsg.4 last_log   last_log.3 uncrypt_file 
 last_install last_kmsg.2 last_kmsg.5 last_log.1 last_log.4 
 last_kmsg    last_kmsg.3 last_locale last_log.2 last_log.5 
+```
+
+
+
+### 无法生成OTA包问题
+
+查看补丁信息是否添加到源码中。
+
+
+
+### 差分包如何生成
+
+请参考文档
+
+```
+Android_10_OTA_开发指南.pdf
 ```
 
