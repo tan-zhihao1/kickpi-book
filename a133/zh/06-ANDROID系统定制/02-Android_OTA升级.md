@@ -83,3 +83,8 @@ Android_10_OTA_开发指南.pdf
 > U盘拷贝到 /sdcard/ 路径下
 
 2. 打开 Setting -> System -> 
+
+```
+  am start -n com.softwinner.update/com.softwinner.update.MainActivity
+```
+
