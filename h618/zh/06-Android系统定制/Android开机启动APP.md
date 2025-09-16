@@ -279,14 +279,14 @@ $ dumpsys package com.android.settings | grep -i activity
 
 **获取APP指定页面的包名和类名**
 
-1. 手动打开系统升级界面
+1. 手动打开对应界面
 2. 执行命令获取当前活动的 Activity：
 
 ```
 adb shell dumpsys window | grep mCurrentFocus
 ```
 
-
+命令输出会包含类似 `com.android.settings/com.android.settings.Settings$SystemUpdateActivity` 的信息，其中 `/` 前面是包名，后面是 Activity 类名，直接替换到 `am start -n` 命令中即可。
 
 
 
