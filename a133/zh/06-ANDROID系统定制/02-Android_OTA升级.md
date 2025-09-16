@@ -108,6 +108,15 @@ Android_10_OTA_开发指南.pdf
 
 ![image-20250916171709862](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250916171709862.png)
 
+7. 升级完成后，打开系统信息查看
+
+```
+$ getprop ro.build.date
+[ro.build.date]: [Tue Sep 16 16:44:38 CST 2025]
+```
+
+
+
 
 
 ## 常见问题
