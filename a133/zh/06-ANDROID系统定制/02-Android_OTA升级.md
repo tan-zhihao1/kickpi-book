@@ -21,5 +21,11 @@ index 95b62fe30b..13d54e0763 100755
  }
 ```
 
-> pack4dist
+> pack4dist 生成 OTA 包
+>
+> 最终生成路径：
+>
+> android/out/target/product/ceres-c3/ceres_c3-full_ota-eng_$(date +%Y%m%d)_$(date +%H%M).zip
+
+
 
