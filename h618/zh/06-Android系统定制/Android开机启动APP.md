@@ -277,6 +277,19 @@ $ dumpsys package com.android.settings | grep -i activity
 
 
 
+**获取APP指定页面的包名和类名**
+
+1. 手动打开系统升级界面
+2. 执行命令获取当前活动的 Activity：
+
+```
+adb shell dumpsys window | grep mCurrentFocus
+```
+
+
+
+
+
 ## APP特殊权限问题
 
 目前桌面级APP是特殊应用，如果添加特殊权限，可能会出现系统无法起来问题，需要抓取APP相关log日志
