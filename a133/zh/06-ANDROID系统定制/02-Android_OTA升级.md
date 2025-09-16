@@ -35,7 +35,7 @@ Android_10_OTA_开发指南.pdf
 
 
 
-## 升级流程
+## 升级前提
 
 1. 确认电池是否接入，若接入电池需要保证电量充足。
 2. 如果无电池，dts 需要关闭电池供电。
@@ -50,5 +50,27 @@ Android_10_OTA_开发指南.pdf
                                         pmu_battery_rdc= <93>;
 ```
 
-> 默认软件会打开此选项，软件兼容有电池和无电池两种开机场景
+> 默认软件会打开此选项，软件兼容有电池和无电池两种开机场景。
+>
+> 如果不接电池，必须关闭此选项才能支持 OTA 升级。否则 OTA 检测到电池电量过低，导致升级失败。
+
+3. 保证 OTA 包的镜像日期高于主板原本的镜像。
+
+```diff
+--- a/build.sh
++++ b/build.sh
+@@ -100,7 +100,7 @@ function build() {
+         echo "Start build Android"
+         rm -vf longan/out/*.img
+         cd android
+-        # make installclean
++        make installclean
+         make BUILD_NUMBER=ido-a133 -j64
+         if [ $? -eq 0 ]; then
+             echo "Build android ok!"
+```
+
+> 编译保证 make installclean 打开，对应的 prop 信息正常更新。
+
+
 
