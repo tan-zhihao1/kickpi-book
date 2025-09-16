@@ -108,14 +108,12 @@ Android_10_OTA_开发指南.pdf
 
 ![image-20250916171709862](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250916171709862.png)
 
-7. 升级完成后，打开系统信息查看
+7. 升级完成后，可通过验证功能或系统编译属性确认变更。
 
 ```
 $ getprop ro.build.date
  [Tue Sep 16 16:44:38 CST 2025]
 ```
-
-
 
 
 
