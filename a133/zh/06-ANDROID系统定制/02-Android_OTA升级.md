@@ -2,9 +2,13 @@
 
 
 
+
+
+
+
 ## 补丁信息
 
-确保 build.sh 下由此修改
+确保 build.sh 下有此修改
 
 ```diff
 diff --git a/build.sh b/build.sh
