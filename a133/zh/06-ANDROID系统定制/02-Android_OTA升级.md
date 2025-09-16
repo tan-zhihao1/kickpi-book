@@ -107,3 +107,20 @@ Android_10_OTA_开发指南.pdf
 6. 点击 ok，等待升级即可
 
 ![image-20250916171709862](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250916171709862.png)
+
+
+
+## 常见问题
+
+### 升级失败
+
+1. 确认是否符合升级前提
+2. 查看对应的升级日志 /cache/recovery，主要查看 last_log ，里面包含主要的升级信息。
+
+```
+$ ls /cache/recovery/                                                
+block.map    last_kmsg.1 last_kmsg.4 last_log   last_log.3 uncrypt_file 
+last_install last_kmsg.2 last_kmsg.5 last_log.1 last_log.4 
+last_kmsg    last_kmsg.3 last_locale last_log.2 last_log.5 
+```
+
