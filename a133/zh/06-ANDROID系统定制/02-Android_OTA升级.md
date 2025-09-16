@@ -14,7 +14,7 @@ index 95b62fe30b..13d54e0763 100755
      echo "Start pack image"
      cd android
      pack
-+    rm out/target/product/ceres-c3/ceres_c3-full_ota-eng.*.zip
++    rm out/target/product/ceres-c3/ceres_c3-full_ota*.zip
 +    pack4dist
 +    mv out/target/product/ceres-c3/ceres_c3-full_ota-eng.*.zip out/target/product/ceres-c3/ceres_c3-full_ota-eng_$(date +%Y%m%d)_$(date +%H%M).zip
      cd -
@@ -23,7 +23,7 @@ index 95b62fe30b..13d54e0763 100755
 
 > pack4dist 执行后生成 OTA 包
 
-编译后 OTA 整包最终生成路径：`android/out/target/product/ceres-c3/ceres_c3-full_ota-eng_$(date +%Y%m%d)_$(date +%H%M).zip`
+编译后 OTA 整包最终生成路径：`android/out/target/product/ceres-c3/ceres_c3-full_ota-eng_*.zip`
 
 
 
