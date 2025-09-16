@@ -82,9 +82,8 @@ Android_10_OTA_开发指南.pdf
 >
 > U盘拷贝到 /sdcard/ 路径下
 
-2. 打开 Setting -> System -> 
+2. 打开 Setting -> System -> Advanced -> Local Update 
 
-```
-  am start -n com.softwinner.update/com.softwinner.update.MainActivity
-```
-
+> 命令行打开方式：
+>
+> adb shell am start -n com.softwinner.update/com.softwinner.update.MainActivity
