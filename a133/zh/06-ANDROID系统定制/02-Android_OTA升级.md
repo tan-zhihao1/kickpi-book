@@ -112,7 +112,7 @@ Android_10_OTA_开发指南.pdf
 
 ```
 $ getprop ro.build.date
-[ro.build.date]: [Tue Sep 16 16:44:38 CST 2025]
+ [Tue Sep 16 16:44:38 CST 2025]
 ```
 
 
