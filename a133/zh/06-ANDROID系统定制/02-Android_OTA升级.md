@@ -74,3 +74,12 @@ Android_10_OTA_开发指南.pdf
 
 
 
+## 升级流程
+
+1. 将 OTA 包存放到 /sdcard/ 路径下
+
+> adb push ceres_c3-full_ota-eng_*.zip /sdcard/
+>
+> U盘拷贝到 /sdcard/ 路径下
+
+2. 打开 Setting -> System -> 
