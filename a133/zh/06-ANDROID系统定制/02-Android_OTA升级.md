@@ -87,3 +87,8 @@ Android_10_OTA_开发指南.pdf
 > 命令行打开方式：
 >
 > adb shell am start -n com.softwinner.update/com.softwinner.update.MainActivity
+
+![image-20250916171430949](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250916171430949.png)
+
+3. 选择 OTA System Update 
+
