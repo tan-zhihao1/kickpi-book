@@ -286,6 +286,8 @@ $ dumpsys package com.android.settings | grep -i activity
 adb shell dumpsys window | grep mCurrentFocus
 ```
 
+比如升级界面：
+
 命令输出会包含类似 `com.android.settings/com.android.settings.Settings$SystemUpdateActivity` 的信息，其中 `/` 前面是包名，后面是 Activity 类名，直接替换到 `am start -n` 命令中即可。
 
 
