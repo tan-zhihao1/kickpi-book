@@ -37,5 +37,18 @@ Android_10_OTA_开发指南.pdf
 
 ## 升级流程
 
+1. 确认电池是否接入，若接入电池需要保证电量充足。
+2. 如果无电池，dts 需要关闭电池供电。
 
+```diff
+                                battery_power_supply: battery-power-supply {
+                                        compatible = "x-powers,axp803-battery-power-supply";
+-                                       status = "okay";
++                                       status = "disabled";
+ 
+                                        pmu_chg_ic_temp = <0>;
+                                        pmu_battery_rdc= <93>;
+```
+
+> 默认软件会打开此选项，软件兼容有电池和无电池两种开机场景
 
