@@ -83,23 +83,31 @@ Android_10_OTA_开发指南.pdf
 
 ## 升级流程
 
-0. 首先确保 OTA 包和主板信息满足升级前提
+第一步，首先确保 OTA 包和主板信息满足升级前提
 
-1. 将 OTA 包存放到 /sdcard/ 路径下
+
+
+第二步，将 OTA 包存放到 /sdcard/ 路径下
 
 > adb push ceres_c3-full_ota-eng_*.zip /sdcard/
 >
 > U盘拷贝到 /sdcard/ 路径下
 
-2. 打开 Setting -> System -> Advanced -> Local Update 
 
-> 命令行打开方式：
+
+第三步，系统打开 Setting -> System -> Advanced -> Local Update 
+
+> 命令行打开方式 
 >
+> ```
 > adb shell am start -n com.softwinner.update/com.softwinner.update.MainActivity
+> ```
 
 ![image-20250916171430949](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250916171430949.png)
 
-3. 选择 OTA System Update 
+
+
+第四步，选择 OTA System Update 
 
 ![image-20250916171506303](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250916171506303.png)
 
