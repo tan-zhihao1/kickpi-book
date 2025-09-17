@@ -6,6 +6,8 @@
 
 第一步，连接12V电源，TYPE-C口和电脑；
 
+![image-20250917111049079](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250917111049079.png)
+
 第二步，按住板子的RECOVERY按键（K5为BOOT按键）；
 
 第三步，再按一下RESET按键；
