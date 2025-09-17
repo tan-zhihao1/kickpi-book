@@ -236,3 +236,21 @@ $ make savedefconfig
 $ cp defconfig configs/rk3576_defconfig
 ```
 
+
+
+## 常见问题
+
+* 打开kernel的内核配置后，WiFi失效了
+
+因为RK的WiFi驱动是用的自动适配的方法 
+WiFi驱动位于：external/rkwifibt/drivers/
+最后都以KO的形式存在于文件系统中`/lib/modules`下
+
+需要重新编译拷贝最新的WiFi驱动到文件系统中
+
+```
+$ cd <文件系统路径>/
+$ ./mk-image.sh
+```
+
+> 文件系统路径： ubuntu 或  debian
