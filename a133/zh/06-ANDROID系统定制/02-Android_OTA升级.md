@@ -111,11 +111,11 @@ Android_10_OTA_开发指南.pdf
 
 ![image-20250916171506303](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250916171506303.png)
 
-4. 选中对应的 OTA 包，等待认证
+第五步，选中对应的 OTA 包，等待认证
 
 ![image-20250916171547458](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250916171547458.png)
 
-5. 点击 Start install
+第六步，点击 Start install
 
 ![image-20250916171617182](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250916171617182.png)
 
