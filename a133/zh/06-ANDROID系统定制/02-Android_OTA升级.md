@@ -150,7 +150,7 @@ last_kmsg    last_kmsg.3 last_locale last_log.2 last_log.5
 
 
 
-### 无法生成OTA包问题
+### 编译无法生成OTA包问题
 
 查看补丁信息是否添加到源码中。
 
