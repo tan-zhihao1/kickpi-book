@@ -57,7 +57,7 @@ Android_10_OTA_开发指南.pdf
 >
 > 如果不接电池，必须关闭此选项才能支持 OTA 升级。
 >
-> 否则 OTA 检测到电池电量过低，导致升级失败。
+> 否则 OTA 升级检测到电池电量过低，导致升级失败。
 
 
 
@@ -77,7 +77,7 @@ Android_10_OTA_开发指南.pdf
              echo "Build android ok!"
 ```
 
-> 编译保证 make installclean 打开，对应的 prop 信息正常更新。
+> 编译保证 make installclean 打开，编译时 prop 信息正常更新。
 
 
 
