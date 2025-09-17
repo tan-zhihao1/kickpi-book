@@ -156,6 +156,12 @@ last_install last_kmsg.2 last_kmsg.5 last_log.1 last_log.4
 last_kmsg    last_kmsg.3 last_locale last_log.2 last_log.5 
 ```
 
+3. 更多问题可参考文档
+
+```
+Android_10_OTA_开发指南.pdf
+```
+
 
 
 ### 编译无法生成OTA包问题
