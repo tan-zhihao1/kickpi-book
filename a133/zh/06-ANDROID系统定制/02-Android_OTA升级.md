@@ -119,11 +119,13 @@ Android_10_OTA_开发指南.pdf
 
 ![image-20250916171617182](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250916171617182.png)
 
-6. 点击 ok，等待升级即可
+第七步，点击 ok，等待升级完成
 
 ![image-20250916171709862](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250916171709862.png)
 
-7. 升级完成后，可通过验证功能或系统编译属性确认变更。
+
+
+第八步，升级完成后，可通过验证功能或系统编译属性确认变更。
 
 ```
 $ getprop ro.build.date
