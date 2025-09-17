@@ -231,3 +231,7 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 RKDevTool_v3.30_for_window/开发工具使用文档_v1.0.pdf
 ```
 
+
+
+### Armbian 镜像烧录失败问题
+
