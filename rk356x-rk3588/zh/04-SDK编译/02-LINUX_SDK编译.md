@@ -1,5 +1,11 @@
 # 02-LINUX_SDK编译
 
+## 符号说明
+
+< SDK > : 指代SDK源码路径
+
+
+
 ## SDK介绍
 
 Rockchip Linux SDK由SDK源码包、文件系统镜像组成
