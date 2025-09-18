@@ -116,9 +116,9 @@ $ md5sum -c *.md5
 
 ```
 $ tar -zxvf linaro-rootfs-*.tar.gz
-$ cp linaro-rootfs.img debian/
+$ cp linaro-rootfs.img <SDK>/debian/
 
-$ ls debian/linaro-rootfs.img
+$ ls <SDK>/debian/linaro-rootfs.img
 ```
 
 > debian镜像文件的名称、目录必须保证一致
@@ -133,9 +133,10 @@ $ ls debian/linaro-rootfs.img
 
 ```
 $ tar -zxvf ubuntu-rootfs-*.tar.gz
-$ cp ubuntu-rootfs.img ubuntu/
+$ mkdir -p <SDK>/ubuntu/
+$ cp ubuntu-rootfs.img <SDK>/ubuntu/
 
-$ ls ubuntu/ubuntu-rootfs.img
+$ ls <SDK>/ubuntu/ubuntu-rootfs.img
 ```
 
 > ubuntu镜像文件的名称、目录必须保证一致
