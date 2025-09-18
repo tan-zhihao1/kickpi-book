@@ -51,7 +51,7 @@ $ md5sum -c *.md5
 ```
 $ tar -zxvf rk356x-linux-*.tar.gz
 
-$ ls -al
+$ ls -al <SDK> 
 	.git
 ```
 
@@ -64,6 +64,7 @@ $ ls -al
 进入解压出的目录下，通过git还原源码
 
 ```
+$ cd <SDK> 
 $ git reset --hard
 ```
 
