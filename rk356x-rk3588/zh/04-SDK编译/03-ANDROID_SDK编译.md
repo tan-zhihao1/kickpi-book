@@ -44,7 +44,7 @@ $ md5sum -c *.md5
 ```
 $ tar -zxvf rk356x-android13-*.tar.gz
 $ cd rk356x-android13-*
-$ ls -al
+$ ls -al <SDK>
 	.git
 ```
 
@@ -57,6 +57,7 @@ $ ls -al
 进入解压出的目录下，通过git还原源码
 
 ```
+$ cd <SDK>
 $ git reset --hard
 ```
 
