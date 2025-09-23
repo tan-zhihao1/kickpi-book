@@ -317,7 +317,7 @@ SDK
 
 
 
-根据 log 修改 android.permission.INSTALL_PACKAGES 内容如下，其他报错类似参考以下添加：
+SDK 根据 log 修改 android.permission.INSTALL_PACKAGES 内容如下，其他报错类似参考以下添加：
 
 ```diff
 --- a/frameworks/base/data/etc/privapp-permissions-platform.xml
@@ -332,3 +332,6 @@ SDK
 +    </privapp-permissions>
 ```
 
+主板路径
+
+```
