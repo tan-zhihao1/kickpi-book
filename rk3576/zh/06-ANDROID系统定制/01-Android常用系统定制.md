@@ -22,8 +22,10 @@ tablet
 
 (SDK)$ ./build.sh lunch 
 (SDK)$ source device/rockchip/.BoardConfig.mk
-$ source build/envsetup.sh 
-$ lunch $TARGET_PRODUCT-$BUILD_VARIANT
+(SDK)$ source build/envsetup.sh 
+(SDK)$ lunch $TARGET_PRODUCT-$BUILD_VARIANT
+(SDK)$ get_build_var TARGET_BOARD_PLATFORM_PRODUCT
+tablet
 ```
 
 > lunch 选择 rk3576_u-userdebug
