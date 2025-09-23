@@ -77,6 +77,10 @@ hello uart word!
 
 
 
+Android serial Api
+
+
+
 ## 常用测试工具
 
 ### microcom
