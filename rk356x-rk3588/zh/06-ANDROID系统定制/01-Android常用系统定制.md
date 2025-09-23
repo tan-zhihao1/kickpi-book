@@ -12,6 +12,19 @@
 
 
 
+## 系统平台
+
+```
+(SDK)$ ./build.sh lunch 
+(SDK)$ source device/rockchip/.BoardConfig.mk
+(SDK)$ source build/envsetup.sh 
+(SDK)$ lunch $TARGET_PRODUCT-$BUILD_VARIANT
+(SDK)$ get_build_var TARGET_BOARD_PLATFORM_PRODUCT
+tablet
+```
+
+
+
 ## 开机LOGO定制
 
 开机LOGO分两个部分，分别是Uboot阶段、Kernel阶段
