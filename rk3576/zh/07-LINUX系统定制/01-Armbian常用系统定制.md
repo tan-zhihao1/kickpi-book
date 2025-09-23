@@ -130,7 +130,7 @@ usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
 
 如果监测到4G/5G模块，开机会执行 /usr/bin/quectel-CM 进行拨号上网。
 
-需要定制 4G/5G 模块软件，可通过定制移远官方Linux软件。
+需要定制 4G/5G 模块软件功能，可通过定制移远官方Linux软件。
 
 https://github.com/quectel-open-source/Quectel_QConnectManager_Linux
 
