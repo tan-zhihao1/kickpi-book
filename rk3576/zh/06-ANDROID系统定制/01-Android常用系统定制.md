@@ -15,11 +15,6 @@
 ## 系统平台
 
 ```
-(SDK)$ source build/envsetup.sh
-(SDK)$ lunch 
-(SDK)$ get_build_var TARGET_BOARD_PLATFORM_PRODUCT
-tablet
-
 (SDK)$ ./build.sh lunch 
 (SDK)$ source device/rockchip/.BoardConfig.mk
 (SDK)$ source build/envsetup.sh 
@@ -27,8 +22,6 @@ tablet
 (SDK)$ get_build_var TARGET_BOARD_PLATFORM_PRODUCT
 tablet
 ```
-
-> lunch 选择 rk3576_u-userdebug
 
 
 
