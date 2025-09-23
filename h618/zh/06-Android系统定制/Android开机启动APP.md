@@ -302,21 +302,6 @@ adb shell dumpsys window | grep mCurrentFocus
 09-14 10:36:08.437  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication (/system/priv-app/LauncherTest) not in privapp-permissions allowlist
 ```
 
-
-
-根据log信息添加权限
-
-```
-SDK
-	修改 frameworks/base/data/etc/privapp-permissions-platform.xml
-	重新编译烧录
-
-主板上
-	/etc/permissions/privapp-permissions-platform.xml
-```
-
-
-
 SDK 根据 log 修改 android.permission.INSTALL_PACKAGES 内容如下，其他报错类似参考以下添加：
 
 ```diff
@@ -335,3 +320,6 @@ SDK 根据 log 修改 android.permission.INSTALL_PACKAGES 内容如下，其他�
 主板路径
 
 ```
+/etc/permissions/privapp-permissions-platform.xml
+```
+
