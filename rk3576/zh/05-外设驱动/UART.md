@@ -86,7 +86,7 @@ hello uart word!
 **网址链接**
 
 ```
-https://code.google.com/archive/p/android-serialport-api/source/default/source
+https://code.google.com/archive/p/android-serialport-api/
 ```
 
 **网盘路径**
