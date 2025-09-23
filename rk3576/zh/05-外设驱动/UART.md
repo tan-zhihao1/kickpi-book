@@ -79,11 +79,13 @@ hello uart word!
 
 ## Android SerialPort API
 
-“Android SerialPort API” 是早期开源的 Android 串口通信工具类项目，最初托管于 Google Code（后因 Google Code 停止服务，项目归档至 archive 仓库，即你访问的 URL 所属的 “archive” 归档地址）。其核心功能是为 Android 设备提供**串口（如 RS232、UART）通信的封装接口**，解决 Android 系统原生缺乏串口操作统一 API 的问题，方便开发者实现设备与外部硬件（如传感器、单片机、POS 机等）的串口数据交互。
+“Android SerialPort API” 是早期开源的 Android 串口通信工具类项目。其核心功能是为 Android 设备提供**串口（如 RS232、UART）通信的封装接口**，解决 Android 系统原生缺乏串口操作统一 API 的问题，方便开发者实现设备与外部硬件（如传感器、单片机、POS 机等）的串口数据交互。
 
 ```
 https://code.google.com/archive/p/android-serialport-api/source/default/source
 ```
+
+网盘路径
 
 
 
