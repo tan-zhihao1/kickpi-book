@@ -8,9 +8,7 @@
 | H618                        | K2B/K2C             | vendor/aw/homlet/homlet.mk                     | vendor/aw/public/prebuild/         |
 | RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | device/rockchip/common/device.mk               | vendor/rockchip/common/apps/       |
 
-示例：
-
-预置 TestLauncher APK 
+**预装 TestLauncher APK示例** 
 
 第一步，在**APP预装路径**下创建 TestLauncher 目录
 
