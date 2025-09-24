@@ -215,6 +215,15 @@ frameworks/base/core/jni/AndroidRuntime.cpp
 
 ## 预装APP
 
+如果需要给APK签名，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
+
+```
+kickpi-book/common/en/android/Android_Apk_Signing.md
+kickpi-book/common/zh/android/Android_Apk_Signing.md
+```
+
+
+
 示例：新增 test.apk 
 
 第一步，新增目录 testapk 在 h618-android12.0\vendor\aw\public\prebuild\ 下。 
