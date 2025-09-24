@@ -135,16 +135,6 @@ kickpi-book/common/zh/android/Android_Launcher.md
 
 
 
-下载工具网盘路径
-
-5-DevelopmentTools开发工具\ADB Screen Cast 投屏
-
-![image-20250303103950558](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250303103950558.png)
-
-![image-20250303104027819](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250303104027819.png)
-
-
-
 ## DPI 配置
 
 系统默认DPI配置
