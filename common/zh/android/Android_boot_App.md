@@ -172,6 +172,8 @@ LOCAL_SRC_FILES := TestLauncher.apk
 include $(BUILD_PREBUILT)
 ```
 
+> 
+
 第三步，在**编译配置路径**下添加的 APP 名为 TestLauncher 的配置；
 
 ```diff
