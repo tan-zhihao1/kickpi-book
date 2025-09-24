@@ -124,8 +124,16 @@ kickpi-book/common/zh/android/Android_Launcher.md
 
 
 
+## ADB功能与投屏
 
-## ADB功能yu投屏
+如果需要旋转屏幕，查看 [Android_Launcher](../../../common/zh/android/Android_Launcher.md) 文档。
+
+```
+kickpi-book/common/en/android/Android_Launcher.md
+kickpi-book/common/zh/android/Android_Launcher.md
+```
+
+
 
 下载工具网盘路径
 
