@@ -50,6 +50,8 @@ $ adb reboot
 
 第三步，添加的APP名为 TestLauncher，添加 TestLauncher 的编译。
 
+a13
+
 ```diff
 --- a/vendor/aw/homlet/homlet.mk
 +++ b/vendor/aw/homlet/homlet.mk
