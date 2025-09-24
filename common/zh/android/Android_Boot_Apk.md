@@ -229,3 +229,8 @@ SDK 路径
 /etc/permissions/privapp-permissions-platform.xml
 ```
 
+
+
+### 编译失败问题
+
+编译失败的问题根据bu't
