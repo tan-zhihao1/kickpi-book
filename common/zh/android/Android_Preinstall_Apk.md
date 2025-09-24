@@ -10,7 +10,7 @@
 
 
 
-预装 TestLauncher APK
+**预装 TestLauncher APK 示例**
 
 第一步，在**APP预装路径**下创建 TestLauncher 目录
 
@@ -31,7 +31,7 @@ TestLauncher.apk
 
 
 
-Android.mk 文件编写示例
+**Android.mk 文件编写示例**
 
 ```
 LOCAL_PATH := $(call my-dir)
