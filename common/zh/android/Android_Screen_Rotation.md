@@ -26,27 +26,7 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 
 
 
-## 屏幕方向与旋转
-
-**ADB命令旋转屏幕**
-
-支持使用adb命令进行旋转
-
-```
-// 正常显示
-adb shell settings put system user_rotation 0
-
-// 90°
-adb shell settings put system user_rotation 1
-
-// 180°
-adb shell settings put system user_rotation 2
-
-// 270°
-adb shell settings put system user_rotation 3
-```
-
-
+## H618 源码修改屏幕方向
 
 **软件默认修改显示方向**
 
