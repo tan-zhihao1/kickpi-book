@@ -235,43 +235,6 @@ Android13默认使用手势导航：
 
 
 
-## 开机LOGO与动画
-
-定制开机LOGO和动画，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_Logo_Bootanimation.md
-kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
-```
-
-
-
-## 开机启动APP
-
-如果需要开机启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_boot_App.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_boot_App.md
-kickpi-book/common/zh/android/Android_boot_App.md
-```
-
-
-
-## APK预装
-
-
-
-## APK签名
-
-如果需要给APK签名，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_Apk_Signing.md
-kickpi-book/common/zh/android/Android_Apk_Signing.md
-```
-
-
-
 ## 默认语言
 
 ```
