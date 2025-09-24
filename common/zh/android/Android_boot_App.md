@@ -106,7 +106,7 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 
 第一步，[预装APK](#pre_installed_app)，如 TestLancher；
 
-第二步，添加桌面优先级覆盖；
+第二步，编译配置文件中添加桌面优先级覆盖；
 
 Android.mk 方式
 
