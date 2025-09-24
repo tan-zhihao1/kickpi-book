@@ -4,6 +4,13 @@
 
 ## 桌面定制
 
+定制桌面，查看 [Android_Launcher](../../../common/zh/android/Android_Launcher.md) 文档。
+
+```
+kickpi-book/common/en/android/Android_Launcher.md
+kickpi-book/common/zh/android/Android_Launcher.md
+```
+
 
 
 ## 开机LOGO与动画定制
