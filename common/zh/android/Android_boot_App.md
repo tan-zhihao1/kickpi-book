@@ -174,14 +174,21 @@ include $(BUILD_PREBUILT)
 
 > `LOCAL_PATH := $(call my-dir)`：设置当前模块的路径
 >
-> - `include $(CLEAR_VARS)`：清除之前定义的变量，避免干扰当前模块
-> - `LOCAL_MODULE_TAGS := optional`：标记为可选模块
-> - `LOCAL_MODULE_CLASS := APPS`：指定模块类别为应用
-> - `LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)`：使用标准 APK 后缀
-> - `LOCAL_CERTIFICATE := platform`：使用平台签名
-> - `LOCAL_MODULE := TestLauncher`：模块名称
-> - `LOCAL_SRC_FILES := TestLauncher.apk`：指定 APK 文件路径
-> - `include $(BUILD_PREBUILT)`：使用预编译构建方式
+> `include $(CLEAR_VARS)`：清除之前定义的变量，避免干扰当前模块
+>
+> `LOCAL_MODULE_TAGS := optional`：标记为可选模块
+>
+> `LOCAL_MODULE_CLASS := APPS`：指定模块类别为应用
+>
+> `LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)`：使用标准 APK 后缀
+>
+> `LOCAL_CERTIFICATE := platform`：使用平台签名
+>
+> `LOCAL_MODULE := TestLauncher`：模块名称
+>
+> `LOCAL_SRC_FILES := TestLauncher.apk`：指定 APK 文件路径
+>
+> `include $(BUILD_PREBUILT)`：使用预编译构建方式
 
 ```makefile
 LOCAL_PRIVILEGED_MODULE := true
