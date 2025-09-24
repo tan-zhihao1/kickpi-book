@@ -172,7 +172,19 @@ LOCAL_SRC_FILES := TestLauncher.apk
 include $(BUILD_PREBUILT)
 ```
 
-> 
+你提供的这个 Android.mk 文件是完整且正确的，用于预装 TestLauncher 应用。它定义了一个预编译 APK 模块，主要包含以下关键配置：
+
+- 
+
+配合之前提到的 `PRODUCT_PACKAGES` 配置，这个 Android.mk 会将 TestLauncher.apk 正确打包到系统镜像的 `/system/app/TestLauncher` 目录下。
+
+如果需要修改安装路径到 `/system/priv-app`（适用于需要特殊权限的应用），可以在文件中添加：
+
+```makefile
+LOCAL_PRIVILEGED_MODULE := true
+```
+
+这会将应用安装到 `/system/priv-app` 目录，获得更多系统权限。
 
 第三步，在**编译配置路径**下添加的 APP 名为 TestLauncher 的配置；
 
