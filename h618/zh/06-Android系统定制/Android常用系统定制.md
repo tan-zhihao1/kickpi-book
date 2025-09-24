@@ -126,45 +126,6 @@ kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
 
 
 
-## 开机动画
-
-支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
-
-已知问题：mp4格式开机动画 系统第一次上电启动会显示安卓开机动画
-
-两种文件同时存在播放 mp4 优先级比 zip 高 ，具体优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
-
-第一步，存放动画文件（zip 或 mp4 格式）
-
-```
-device/softwinner/apollo/common/media/bootanimation/bootanimation.zip
-device/softwinner/apollo/common/media/bootanimation/bootanimation.mp4
-```
-
-第二步，修改编译配置
-
-bootanimation.zip 格式
-
-```diff
-SDK$ vim device/softwinner/apollo/common/media/config.mk
-PRODUCT_COPY_FILES += \
--		$(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
-+     	$(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
-```
-
-bootanimation.mp4 格式
-
-```diff
-SDK$ vim device/softwinner/apollo/common/media/config.mk
-PRODUCT_COPY_FILES += \
--		$(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
-+    	$(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
-```
-
-
-
-
-
 ## 默认语言
 
 persist.sys.locale 属性
