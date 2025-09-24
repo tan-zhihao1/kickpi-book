@@ -44,7 +44,7 @@ $ adb reboot
 
 **SDK 方式配置（修改源码定制镜像）**
 
-| 主控                        | 型号                | 路径                                           |
+| 主控                        | 型号                | 编译配置路径                                   |
 | --------------------------- | ------------------- | ---------------------------------------------- |
 | A133                        | K5/K5C              | android/device/softwinner/ceres-c3/ceres_c3.mk |
 | H618                        | K2B/K2C             | device/softwinner/apollo/apollo_p2.mk          |
