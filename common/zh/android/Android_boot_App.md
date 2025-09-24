@@ -44,18 +44,16 @@ $ adb reboot
 
 **SDK 方式配置（修改源码定制镜像）**
 
-第一步，[预装APK](#pre_installed_app)，如 TestLancher；
-
-第二步，获取对应APP的包名和页面类名；[点击查看获取方式和测试方法](#am_start_app)
-
-第三步，添加的APP名为 TestLauncher，添加 TestLauncher 的编译。
-
 | 主控 | 型号   | 路径                                          |
 | ---- | ------ | --------------------------------------------- |
 | A133 | K5/K5C | android/device/softwinner/apollo/apollo_p2.mk |
 |      |        |                                               |
 
+第一步，[预装APK](#pre_installed_app)，如 TestLancher；
 
+第二步，获取对应APP的包名和页面类名；[点击查看获取方式和测试方法](#am_start_app)
+
+第三步，添加的APP名为 TestLauncher，添加 TestLauncher 的编译。
 
 ```diff
 +PRODUCT_PACKAGES += \
