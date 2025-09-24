@@ -360,8 +360,6 @@ PRODUCT_PACKAGES += \
 
 
 
-## 开机自启动APP
-
 ## 开机启动APP
 
 如果需要开机启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_boot_App.md) 文档。
@@ -370,87 +368,6 @@ PRODUCT_PACKAGES += \
 kickpi-book/common/en/android/Android_boot_App.md
 kickpi-book/common/zh/android/Android_boot_App.md
 ```
-
-
-
-### **Launcher方式启动**
-
-要让 APP 作为 Launcher 开机自启动，需要在 AndroidManifest.xml 中添加两个 category
-
-```xml
-<activity android:name=".MainActivity">
-    <intent-filter>
-		<category android:name="android.intent.category.HOME"/>
-		<category android:name="android.intent.category.DEFAULT"/>
-	</intent-filter>
-</activity>
-```
-
-
-
-### 后台调用方式
-
-**通过接收开机广播完成后，启动APP**
-
-1、修改增加 APP 的权限以及广播接收  AndroidManifest.xml
-
-```xml
-<uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
-<uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
-<application
-        <receiver
-            android:name=".MyReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter android:priority="1000">
-                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
-            </intent-filter>
-        </receiver>
-</application>
-```
-
-
-
-2、增加广播接收 MyReceiver.java
-
-```java
-package com.example.myapplication;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
-
-public class MyReceiver extends BroadcastReceiver {
-    public MyReceiver() {
-    }
-
-    @Override
-    public void onReceive(Context context, Intent intent) {
-        if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {
-            Intent i = new Intent(context, MainActivity.class);
-            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(i);
-            Log.i("kickpi", "onReceive: start app !!!");
-        }
-    }
-}
-```
-
-
-
-3、预装app 到 /system/priv-app/
-
-* 方式一，编译预装到源码，参考 [内置第三方APP](# 6. 内置第三方APP)
-
-* 方式二，push 方式预装
-
-  ```
-  adb root; adb remount;
-  adb push ./app /system/priv-app/
-  ```
 
 
 
