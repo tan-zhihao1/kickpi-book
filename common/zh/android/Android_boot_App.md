@@ -171,10 +171,6 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_ENFORCE_USES_LIBRARIES := true
 LOCAL_DEX_PREOPT := true
 
-LOCAL_OPTIONAL_USES_LIBRARIES := \
-    androidx.window.extensions \
-    androidx.window.sidecar
-
 LOCAL_OVERRIDES_PACKAGES := \
     Launcher2 \
     Launcher3 \
