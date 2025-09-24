@@ -158,6 +158,9 @@ TestLauncher_20250101.apk
 Android.mk 文件编写示例
 
 ```
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
 # 定义模块名称
 LOCAL_MODULE := TestLauncher
 # 定义模块类型为APK
@@ -176,9 +179,7 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 # 包含Android构建系统的基本规则
 include $(BUILD_PREBUILT)
 
-LOCAL_PATH := $(call my-dir)
 
-include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
