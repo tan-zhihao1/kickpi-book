@@ -215,7 +215,7 @@ frameworks/base/core/jni/AndroidRuntime.cpp
 
 ## 预装APP
 
-如果需要预装APK进xi'tong，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
+如果需要预装APK进系统镜像，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
 
 ```
 kickpi-book/common/en/android/Android_Apk_Signing.md
