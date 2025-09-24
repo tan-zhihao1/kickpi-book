@@ -36,11 +36,7 @@ Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的�
 
 
 
-
-
-
-
-### H618 修改动画示例
+### H618 动画
 
 第一步，存放动画文件（zip 或 mp4 格式）
 
@@ -71,7 +67,7 @@ PRODUCT_COPY_FILES += \
 
 
 
-## RK3562/RK3568/RK3576/RK3588 开关机动画
+### RK3562/RK3568/RK3576/RK3588 开关机动画
 
 开机动画放到指定目录
 
