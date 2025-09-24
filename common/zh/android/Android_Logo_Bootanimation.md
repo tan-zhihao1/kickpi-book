@@ -4,7 +4,7 @@
 
 ## 开机LOGO
 
-LOGO替换路径l
+LOGO替换路径如下
 
 | 主控                 | 型号         | LOGO路径                                                     |
 | -------------------- | ------------ | ------------------------------------------------------------ |
@@ -14,6 +14,8 @@ LOGO替换路径l
 | RK3576               | K7/K7C       | kernel-6.1/logo.bmp<br />kernel-6.1/logo_kernel.bmp          |
 
 >rockchip 平台区分 Uboot、Kernel两个阶段显示LOGO，logo.bmp 为Uboot阶段，logo_kernel.bmp为Kernel阶段；
+>
+>LOGO的分辨率必须小于
 
 
 
