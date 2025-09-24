@@ -8,13 +8,11 @@
 | H618                        | K2B/K2C             | vendor/aw/homlet/homlet.mk                     | vendor/aw/public/prebuild/         |
 | RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | device/rockchip/common/device.mk               | vendor/rockchip/common/apps/       |
 
-** 示例** 
+**示例**
 
 预装 TestLauncher APK
 
 第一步，在**APP预装路径**下创建 TestLauncher 目录
-
-
 
 第二步，存放 Android.mk 和 APK 文件。
 
@@ -70,3 +68,6 @@ include $(BUILD_PREBUILT)
 +		TestLauncher
 ```
 
+
+
+An'd'r
