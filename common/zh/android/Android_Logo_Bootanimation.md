@@ -135,3 +135,16 @@ PRODUCT_COPY_FILES += $(CUR_PATH)/shutdownanimation.zip:$(TARGET_COPY_OUT_SYSTEM
 endif
 ```
 
+
+
+## **ADB替换开机动画**
+
+Android 支持在线替换开机动画
+
+```
+$ adb root
+$ adb remount
+$ adb push $(bootanimation_path) /system/media/bootanimation.zip
+$ adb reboot
+```
+
