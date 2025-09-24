@@ -24,7 +24,7 @@ LOGO替换路径如下
 | 主控                        | 型号                | 开机动画路径                                                 |
 | --------------------------- | ------------------- | ------------------------------------------------------------ |
 | A133                        | K5/K5C              | android/device/softwinner/ceres-c3/media/bootanimation.zip   |
-| H618                        | K2B/K2C             | device/softwinner/apollo/common/media/bootanimation/bootanimation.zip<br/>device/softwinner/apollo/common/media/bootanimation/bootanimation.mp4 |
+| H618                        | K2B/K2C             | device/softwinner/apollo/common/media/bootanimation/bootanimation.zip<br/> |
 | RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | device/rockchip/common/bootshutdown/bootanimation.zip        |
 
 Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
