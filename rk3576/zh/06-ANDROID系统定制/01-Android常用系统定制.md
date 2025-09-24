@@ -36,7 +36,7 @@ kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
 
 
 
-## 开机动画
+## 
 
 ```
 (SDK)$ ls device/rockchip/common/bootanimation.zip
