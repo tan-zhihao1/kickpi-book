@@ -49,7 +49,6 @@ $ adb reboot
 | A133                        | K5/K5C              | android/device/softwinner/apollo/apollo_p2.mk |
 | H618                        | K2B/K2C             |                                               |
 | RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | device/rockchip/common/device.mk              |
-|                             |                     |                                               |
 
 第一步，[预装APK](#pre_installed_app)，如 TestLancher；
 
