@@ -172,7 +172,7 @@ LOCAL_SRC_FILES := TestLauncher.apk
 include $(BUILD_PREBUILT)
 ```
 
-第三步，在**编译配置路径**下添加的APP名为 TestLauncher，添加 TestLauncher 的编译；
+第三步，在**编译配置路径**下添加的 APP 名为 TestLauncher，添加 TestLauncher 的编译；
 
 ```diff
 +PRODUCT_PACKAGES += \
