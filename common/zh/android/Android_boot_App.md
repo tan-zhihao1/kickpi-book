@@ -137,7 +137,11 @@ Android.bp 方式
 
 ## 预装APK<a id="pre_installed_app"> </a>
 
-
+| 主控                        | 型号                | APP预装l路径                                   |
+| --------------------------- | ------------------- | ---------------------------------------------- |
+| A133                        | K5/K5C              | android/device/softwinner/ceres-c3/ceres_c3.mk |
+| H618                        | K2B/K2C             | device/softwinner/apollo/apollo_p2.mk          |
+| RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | device/rockchip/common/device.mk               |
 
 示例：预置 TestLauncher APK 
 
