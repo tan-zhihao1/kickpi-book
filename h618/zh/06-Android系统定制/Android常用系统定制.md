@@ -59,48 +59,16 @@ kickpi-book/common/zh/android/Android_Apk_Signing.md
 
 ## 屏幕方向与旋转
 
-**ADB命令旋转屏幕**
 
-支持使用adb命令进行旋转
+
+如果需要给屏幕旋转，查看 [Android_Screen_Rotation](../../../common/zh/android/Android_Screen_Rotation.md) 文档。
 
 ```
-// 正常显示
-adb shell settings put system user_rotation 0
-
-// 90°
-adb shell settings put system user_rotation 1
-
-// 180°
-adb shell settings put system user_rotation 2
-
-// 270°
-adb shell settings put system user_rotation 3
+kickpi-book/common/en/android/Android_Screen_Rotation.md
+kickpi-book/common/zh/android/Android_Screen_Rotation.md
 ```
 
 
-
-**软件默认修改显示方向**
-
-```
-(SDK)$ vim android/device/softwinner/ceres-c3/ceres_c3.mk
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.primary_display_orientation=ORIENTATION_0
-    #ro.surface_flinger.primary_display_orientation=ORIENTATION_90
-    #ro.surface_flinger.primary_display_orientation=ORIENTATION_270
-```
-
-> 支持 ORIENTATION_0、ORIENTATION_90、ORIENTATION_180、ORIENTATION_270
-
-示例：修改屏幕默认显示旋转90°
-
-```diff
-(SDK)$ vim android/device/softwinner/ceres-c3/ceres_c3.mk
-
-PRODUCT_PROPERTY_OVERRIDES += \
-- ro.surface_flinger.primary_display_orientation=ORIENTATION_0
-+ ro.surface_flinger.primary_display_orientation=ORIENTATION_90
-```
 
 
 
