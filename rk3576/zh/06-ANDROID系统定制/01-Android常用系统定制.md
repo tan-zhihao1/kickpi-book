@@ -36,19 +36,6 @@ kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
 
 
 
-开机LOGO分两个部分，分别是Uboot阶段、Kernel阶段
-
-Uboot阶段解析显示图片kernel-6.1/logo.bmp
-
-Kernel阶段解析显示图片kernel-6.1/logo_kernel.bmp
-
-```
-(SDK)$ ls kernel-6.1/*.bmp
-kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
-```
-
-
-
 ## 开机动画
 
 ```
