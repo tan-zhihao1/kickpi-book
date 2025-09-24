@@ -137,7 +137,7 @@ Android.bp 方式
 
 ## 预装APK<a id="pre_installed_app"> </a>
 
-| 主控                        | 型号                | 产品配置路径                                   | APP预装路径                        |
+| 主控                        | 型号                | 编译配置路径                                   | APP预装路径                        |
 | --------------------------- | ------------------- | ---------------------------------------------- | ---------------------------------- |
 | A133                        | K5/K5C              | android/device/softwinner/ceres-c3/ceres_c3.mk | android/vendor/aw/homlet/prebuild/ |
 | H618                        | K2B/K2C             | vendor/aw/homlet/homlet.mk                     | vendor/aw/public/prebuild/         |
@@ -152,7 +152,7 @@ Android.bp 方式
 ```
 $ ls TestLauncher/ 
 Android.mk
-TestLauncher_20250101.apk
+TestLauncher.apk
 ```
 
 Android.mk 文件编写示例
@@ -167,7 +167,7 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := platform
 
 LOCAL_MODULE := TestLauncher
-LOCAL_SRC_FILES := TestLauncher_20250101.apk
+LOCAL_SRC_FILES := TestLauncher.apk
 
 include $(BUILD_PREBUILT)
 ```
