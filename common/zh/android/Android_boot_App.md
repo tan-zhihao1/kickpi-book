@@ -137,6 +137,8 @@ Android.bp 方式
 
 ## 预装APK<a id="pre_installed_app"> </a>
 
+
+
 示例：预置 TestLauncher APK 
 
 第一步，创建 TestLauncher 目录
