@@ -26,7 +26,6 @@ LOGO替换路径如下
 | A133                        | K5/K5C              | longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp |
 | H618                        | K2B/K2C             | device/softwinner/apollo/common/media/bootanimation/bootanimation.zip<br/>device/softwinner/apollo/common/media/bootanimation/bootanimation.mp4 |
 | RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | device/rockchip/common/bootshutdown/bootanimation.zip        |
-|                             |                     | device/rockchip/common/bootshutdown/bootanimation.zip        |
 
 Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
 
