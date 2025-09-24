@@ -69,7 +69,6 @@ device/softwinner/apollo/apollo_p2.mk
 + PRODUCT_PROPERTY_OVERRIDES += \
 +	persist.sys.bootAppPack=com.android.TestLauncher \
 +	persist.sys.bootAppClass=com.android.TestLauncher.Activity
-
 ```
 
 第五步，编译SDK，烧录镜像；
