@@ -292,10 +292,6 @@ $ dumpsys package com.android.settings | grep -i activity
 
 
 
-
-
-
-
 ## APP特殊权限问题
 
 目前桌面级APP是特殊应用，如果添加特殊权限，可能会出现系统无法起来问题，需要抓取APP相关log日志
