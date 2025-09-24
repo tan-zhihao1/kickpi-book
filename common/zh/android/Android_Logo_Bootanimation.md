@@ -11,7 +11,7 @@
 | RK3562/RK3568/RK3588 | K1/K1B/K3/K8 | kernel-5.10/logo.bmp<br />kernel-5.10/logo_kernel.bmp        |
 | RK3576               | K7/K7C       | kernel-6.1/logo.bmp<br />kernel-6.1/logo_kernel.bmp          |
 
->roc
+>rockchip 平台区分 Uboot、Kernel两个阶段显示LOGO，logo.
 
 ## 开机动画
 
