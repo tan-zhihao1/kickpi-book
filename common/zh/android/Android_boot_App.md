@@ -262,9 +262,9 @@ $ adb shell am start com.android.settings/com.android.settings.Settings
 adb shell dumpsys window | grep mCurrentFocus
 ```
 
-比如升级界面：
+比如设置界面：
 
-命令输出会包含类似 `com.android.settings/com.android.settings.Settings$SystemUpdateActivity` 的信息，其中 `/` 前面是包名，后面是 Activity 类名，直接替换到 `am start -n` 命令中即可。
+命令输出会包含类似 `com.android.settings/com.android.settings.Settings` 的信息，其中 `/` 前面是包名，后面是 Activity 类名，直接替换到 `am start -n` 命令中即可。
 
 
 
