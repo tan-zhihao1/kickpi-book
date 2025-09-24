@@ -115,15 +115,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 
 
-## 开机LOGO与动画
-
-定制开机LOGO和动画，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_Logo_Bootanimation.md
-kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
-```
-
 
 
 ## 默认语言
@@ -162,6 +153,17 @@ locale 获取优先级见
 
 ```
 frameworks/base/core/jni/AndroidRuntime.cpp
+```
+
+
+
+## 开机LOGO与动画
+
+定制开机LOGO和动画，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
+
+```
+kickpi-book/common/en/android/Android_Logo_Bootanimation.md
+kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
 ```
 
 
