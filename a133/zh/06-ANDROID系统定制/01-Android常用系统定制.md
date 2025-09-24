@@ -362,6 +362,17 @@ PRODUCT_PACKAGES += \
 
 ## 开机自启动APP
 
+## 开机启动APP
+
+如果需要开机启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_boot_App.md) 文档。
+
+```
+kickpi-book/common/en/android/Android_boot_App.md
+kickpi-book/common/zh/android/Android_boot_App.md
+```
+
+
+
 ### **Launcher方式启动**
 
 要让 APP 作为 Launcher 开机自启动，需要在 AndroidManifest.xml 中添加两个 category
