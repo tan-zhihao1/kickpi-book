@@ -25,8 +25,6 @@ tablet
 
 
 
-
-
 ## 默认屏幕方向
 
 **默认修改显示方向**
@@ -193,64 +191,6 @@ Android13默认使用手势导航：
 
 
 
-## 内置第三方APP
-
-参考 Settings2.apk 
-
-rk-android13.0\vendor\rockchip\common\apps\Settings2 放你的apk和Android.bp 
-
-Android.mk 方式
-
-```
-###############################################################################
-# Settings2
-LOCAL_PATH := $(call my-dir)
-include $(CLEAR_VARS)
-LOCAL_MODULE := Settings2
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_TAGS := optional
-LOCAL_BUILT_MODULE_STEM := package.apk
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-#LOCAL_PRIVILEGED_MODULE :=
-LOCAL_CERTIFICATE := PRESIGNED
-#LOCAL_OVERRIDES_PACKAGES := 
-LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
-#LOCAL_REQUIRED_MODULES :=
-#LOCAL_PREBUILT_JNI_LIBS :=
-include $(BUILD_PREBUILT)
-
-```
-
-Android.bp 方式
-
-```makefile
-android_app_import {
-    name: "test",
-    apk: "test.apk",
-
-    //presigned: true,
-    certificate: "platform",
-    dex_preopt: {
-        enabled: true,
-    },
-
-    privileged: true,
-    //product_specific: true,
-    //proprietary: true,
-    enforce_uses_libs: false,
-}
-```
-
-在 PRODUCT_PACKAGES 加入编译目标
-
-```makefile
-(SDK)$ vim vendor/rockchip/common/apps/apps.mk
-PRODUCT_PACKAGES += \
-       Settings2
-```
-
-
-
 ## 开机LOGO与动画
 
 定制开机LOGO和动画，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
@@ -285,8 +225,6 @@ kickpi-book/common/zh/android/Android_boot_App.md
 kickpi-book/common/en/android/Android_Apk_Signing.md
 kickpi-book/common/zh/android/Android_Apk_Signing.md
 ```
-
-
 
 
 
