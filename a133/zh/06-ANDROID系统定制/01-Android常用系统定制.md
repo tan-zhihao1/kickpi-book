@@ -115,6 +115,9 @@ reboot
 
 ``` 
 android\device\softwinner\ceres-c3\overlay\frameworks\base\core\res\res\drawable-sw720dp-nodpi\default_wallpaper.jpg
+android/device/softwinner/common/custom/overlay/frameworks/base/core/res/res/drawable-nodpi/default_wallpaper.png
+android/device/softwinner/common/custom/overlay/frameworks/base/core/res/res/drawable-sw600dp-nodpi/default_wallpaper.png
+android/device/softwinner/common/custom/overlay/frameworks/base/core/res/res/drawable-sw720dp-nodpi/default_wallpaper.png
 ```
 
 
