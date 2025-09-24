@@ -108,6 +108,8 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 
 第二步，编译配置文件中添加桌面优先级覆盖；
 
+> K2B/K2C 需要添加 TvLauncher 的覆盖！！！
+
 Android.mk 方式
 
 ```diff
@@ -118,7 +120,7 @@ Android.mk 方式
         Launcher3QuickStepGo
 ```
 
-> K2B/K2C 需要添加 TvLauncher 的覆盖
+> 
 
 Android.bp 方式
 
