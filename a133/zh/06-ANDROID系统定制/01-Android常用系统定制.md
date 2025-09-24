@@ -84,8 +84,6 @@ persist.sys.country 以及 persist.sys.language 属性
 +    persist.sys.language=zh
 ```
 
-
-
 PRODUCT_LOCALES 配置
 
 ```makefile
@@ -131,8 +129,6 @@ SDK$ . build/envsetup.sh
 SDK$ lunch ceres_c3-userdebug
 SDK$ BUILD_NUMBER=ido-a133 m Launcher3QuickStepGo -j32
 ```
-
-
 
 **关闭搜索框**
 
