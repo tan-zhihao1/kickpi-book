@@ -22,9 +22,9 @@ $ setprop persist.sys.bootAppClass $classname
 
 > `packname` 包名
 >
-> `classname` 类名
+> `classname` 页面类名
 >
-> 将属性配置为需要开机启动的APP包名和类名。
+> 将属性配置为需要开机启动的APP包名和y类名。
 >
 > 示例：
 >
