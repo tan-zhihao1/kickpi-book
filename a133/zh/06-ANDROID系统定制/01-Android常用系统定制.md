@@ -122,7 +122,7 @@ android/device/softwinner/common/custom/overlay/frameworks/base/core/res/res/dra
 
 
 
-## 桌面定制
+## 默认桌面
 
 如果需要旋转屏幕，查看 [Android_Launcher](../../../common/zh/android/Android_Launcher.md) 文档。
 
