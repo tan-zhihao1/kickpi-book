@@ -27,6 +27,15 @@ tablet
 
 ## 开机LOGO
 
+如果需要开机启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_boot_App.md) 文档。
+
+```
+kickpi-book/common/en/android/Android_boot_App.md
+kickpi-book/common/zh/android/Android_boot_App.md
+```
+
+
+
 开机LOGO分两个部分，分别是Uboot阶段、Kernel阶段
 
 Uboot阶段解析显示图片kernel-6.1/logo.bmp
