@@ -196,6 +196,8 @@ include $(BUILD_PREBUILT)
 
 ![image-20250814163119903](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250814163119903.png)
 
+
+
 ## 命令行启动APP<a id="am_start_app"> </a>
 
 **am start 介绍**
@@ -265,7 +267,9 @@ $ dumpsys package com.android.settings | grep -i activity
 09-14 10:36:08.437  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication (/system/priv-app/LauncherTest) not in privapp-permissions allowlist
 ```
 
-SDK 根据 log 修改 android.permission.INSTALL_PACKAGES 内容如下，其他报错类似参考以下添加：
+SDK lu
+
+根据 log 修改 android.permission.INSTALL_PACKAGES 内容如下，其他报错类似参考以下添加：
 
 ```diff
 --- a/frameworks/base/data/etc/privapp-permissions-platform.xml
