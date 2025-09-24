@@ -71,6 +71,13 @@ device/softwinner/ceres-c3/ceres_c3.mk
 
 **语言修改**
 
+PRODUCT_LOCALES 配置
+
+```makefile
+$ vim build/target/product/full_base.mk
+	PRODUCT_LOCALES := en_US
+```
+
 persist.sys.country 以及 persist.sys.language 属性
 
 ```diff
@@ -84,13 +91,6 @@ persist.sys.country 以及 persist.sys.language 属性
 -    persist.sys.language=en
 +    persist.sys.country=CN \
 +    persist.sys.language=zh
-```
-
-PRODUCT_LOCALES 配置
-
-```makefile
-$ vim build/target/product/full_base.mk
-	PRODUCT_LOCALES := en_US
 ```
 
 语言属性配置获取优先级见 frameworks/base/core/jni/AndroidRuntime.cpp。
