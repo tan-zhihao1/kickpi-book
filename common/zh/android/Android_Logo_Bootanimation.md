@@ -36,28 +36,6 @@ Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的�
 
 
 
-## 开关机动画
-
-开机动画放到指定目录
-
-```
-(SDK)$ ls device/rockchip/common/bootshutdown/bootanimation.zip
-```
-
-关机动画存放指定目录
-
-```
-(SDK)$ ls device/rockchip/common/bootshutdown/shutdownanimation.zip
-```
-
-打开配置
-
-```diff
-(SDK)$ vim device\rockchip\common\BoardConfig.mk
--BOOT_SHUTDOWN_ANIMATION_RINGING ?= false
-+BOOT_SHUTDOWN_ANIMATION_RINGING ?= true
-```
-
 
 
 
@@ -89,5 +67,29 @@ SDK$ vim device/softwinner/apollo/common/media/config.mk
 PRODUCT_COPY_FILES += \
 -		$(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
 +    	$(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
+```
+
+
+
+## RK3562/RK3568/RK3576/RK3588开关机动画
+
+开机动画放到指定目录
+
+```
+(SDK)$ ls device/rockchip/common/bootshutdown/bootanimation.zip
+```
+
+关机动画存放指定目录
+
+```
+(SDK)$ ls device/rockchip/common/bootshutdown/shutdownanimation.zip
+```
+
+打开配置
+
+```diff
+(SDK)$ vim device\rockchip\common\BoardConfig.mk
+-BOOT_SHUTDOWN_ANIMATION_RINGING ?= false
++BOOT_SHUTDOWN_ANIMATION_RINGING ?= true
 ```
 
