@@ -25,9 +25,9 @@ tablet
 
 
 
-## 开机LOGO
+## 开机LOGO与动画
 
-如果需要开机启动APP，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
+定制开机LOGO和dong'd，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
 
 ```
 kickpi-book/common/en/android/Android_Logo_Bootanimation.md
