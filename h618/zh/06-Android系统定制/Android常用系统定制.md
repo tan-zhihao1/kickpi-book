@@ -93,13 +93,6 @@ persist.sys.country 以及 persist.sys.language 属性
 +    persist.sys.language=zh
 ```
 
-支持语言选项
-
-| 选项  | 描述 |
-| ----- | ---- |
-| en_US | 英文 |
-| zh_CN | 中文 |
-
 locale 获取优先级见 
 
 ```
