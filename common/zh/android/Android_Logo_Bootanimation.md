@@ -137,6 +137,99 @@ endif
 
 
 
+### bootanimation.zip 制作
+
+**文件结构**
+
+```
+$ zipinfo android/device/softwinner/ceres-c3/media/bootanimation.zip
+ part0/
+ part0/0000.png
+ part0/0001.png
+ part0/0002.png
+ ...
+ part1
+ part1/0013.png
+ part1/0014.png
+ part1/0015.png
+ ...
+ audio_conf.txt
+ desc.txt
+```
+
+> bootanimation.zip 包含 part0 part1 文件夹和 desc.txt 文件，part0 part1 等文件夹里面放的是动画拆分的图片，格式为 png。
+
+
+
+**desc.txt 配置文件**
+
+```
+800 480 15
+p 1 0 part0 
+p 0 0 part1
+
+```
+
+> 第一行
+>
+> WIDTH HEIGHT FPS
+>
+> WIDTH  800 图片的宽度
+>
+> HEIGHT 480 图片的高度
+>
+> FPS 15 帧数
+>
+> 第二、三行
+>
+> TYPE COUNT PAUSE PATH
+>
+> TYPE p 播放直到开机完成
+>
+> COUNT 1 播放次数，0代表无线循环直到开机结束
+>
+> PAUSE 0 part结束后暂停帧数
+>
+> PATH part1 路径
+>
+> 最后一行需为空行
+
+
+
+**window 压缩打包zip**
+
+1. 左键选中 part0、part1、desc.txt等文件；（保证part0、part1等文件位于压缩包根目录级别）
+2. 右键选择压缩，选择其他；
+
+3. 进行ZIP压缩，压缩标准需要选择 Store；
+
+![image-20250408175807082](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250408175807082.png)
+
+
+
+**Linux 压缩打包zip**
+
+linux 压缩，指定压缩等级为最低等级stored，只归档不压缩
+
+```
+$ zip -0qry bootanimation.zip  *.txt part0/ part1/
+```
+
+> 注意压缩包下 part0 part1 txt 为同一级根目录
+
+### A133开机音乐定制
+
+如需开机音乐，将开机音乐放入part0目录中，命名为Audio.wav。
+
+在根目录加入audio_conf.txt，复制原有动画配置即可。
+
+```
+part0/audio.wav
+audio_conf.txt
+```
+
+
+
 ## **ADB替换开机动画**
 
 Android 支持在线替换开机动画
