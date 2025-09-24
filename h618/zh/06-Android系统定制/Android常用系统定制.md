@@ -215,85 +215,11 @@ frameworks/base/core/jni/AndroidRuntime.cpp
 
 ## 预装APP
 
-如果需要给APK签名，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
+如果需要预装APK进xi'tong，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
 
 ```
 kickpi-book/common/en/android/Android_Apk_Signing.md
 kickpi-book/common/zh/android/Android_Apk_Signing.md
-```
-
-
-
-示例：新增 test.apk 
-
-第一步，新增目录 testapk 在 h618-android12.0\vendor\aw\public\prebuild\ 下。 
-
-第二步，存放 test.apk 和 Android.mk（或Android.bp）文件； 
-
-```
-$ ls vendor/aw/public/prebuild/testapk
-test.apk
-Android.mk (Android.bp)
-```
-
-Android.mk 
-
-```
-LOCAL_PATH := $(call my-dir)
-include $(CLEAR_VARS)
-
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-
-LOCAL_CERTIFICATE := PRESIGNED
-
-LOCAL_ENFORCE_USES_LIBRARIES := false
-LOCAL_DEX_PREOPT := false
-
-LOCAL_MODULE := test
-
-LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
-
-include $(BUILD_PREBUILT)
-```
-
-> `LOCAL_CERTIFICATE` 支持 testkey、platform（系统签名）、shared、media、PRESIGNED（保留原签名）
->
-> `LOCAL_MODULE` 模块名称
->
-> `LOCAL_SRC_FILES` 模块源码路径
-
-Android.bp 
-
-```makefile
-android_app_import {
-    name: "test",
-    apk: "test.apk",
-
-    presigned: true,
-    //certificate: "platform", 
-    dex_preopt: {
-        enabled: true,
-    },
-
-    privileged: true,
-    //product_specific: true,
-    //proprietary: true,
-    enforce_uses_libs: false,
-}
-```
-
-> `name` 模块名称
->
-> `apk` 模块源码路径
-
-第三步，添加模块编译（对应模块名称）
-
-```diff
-$ vim /vendor/aw/homlet/homlet.mk
-+ PRODUCT_PACKAGES += \
-+       test
 ```
 
 
