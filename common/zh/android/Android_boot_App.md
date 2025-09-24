@@ -57,7 +57,8 @@ $ adb reboot
      DragonSN  \
      GalleryTV
 
-
++PRODUCT_PACKAGES += \
++		TestLauncher
 ```
 
 第四步，添加包名和类名属性配置
@@ -71,8 +72,6 @@ $ adb reboot
 +	persist.sys.bootAppPack=com.android.TestLauncher \
 +	persist.sys.bootAppClass=com.android.TestLauncher.Activity
 
-+PRODUCT_PACKAGES += \
-+		TestLauncher
 ```
 
 第五步，编译SDK，烧录镜像；
