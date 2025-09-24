@@ -78,8 +78,6 @@ audio_conf.txt
 
 
 
-
-
 ### H618 开机动画
 
 第一步，存放动画文件（zip 或 mp4 格式）
@@ -152,12 +150,12 @@ endif
 
 
 
-### bootanimation.zip 制作
+### bootanimation.zip 定制
 
 **文件结构**
 
 ```
-$ zipinfo android/device/softwinner/ceres-c3/media/bootanimation.zip
+$ zipinfo bootanimation.zip
  part0/
  part0/0000.png
  part0/0001.png
