@@ -50,7 +50,7 @@ $ adb reboot
 | H618                        | K2B/K2C             | device/softwinner/apollo/apollo_p2.mk          |
 | RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | device/rockchip/common/device.mk               |
 
-第一步，[预装APK](#pre_installed_app)，如 TestLancher；[点击跳转](Android_Preinstall_Apk.md)
+第一步，[预装APK](#pre_installed_app)，如 TestLancher；[点击查看预装方法](Android_Preinstall_Apk.md)
 
 第二步，获取对应APP的包名和页面类名；[点击查看获取方式和测试方法](#am_start_app)
 
