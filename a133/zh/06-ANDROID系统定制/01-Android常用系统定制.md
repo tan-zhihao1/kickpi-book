@@ -2,7 +2,7 @@
 
 
 
-## 开机LOGO与动画
+## 开机LOGO与动画定制
 
 定制开机LOGO和动画，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
 
@@ -13,7 +13,7 @@ kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
 
 
 
-## 开机启动APP
+## 开机自启动APP
 
 定制开机启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_boot_App.md) 文档。
 
