@@ -164,7 +164,12 @@ PRODUCT_COPY_FILES += \
 
 ## 开机启动APP
 
-[Android系统定制/Android开机启动APP](Android开机启动APP#booton_app)
+如果需要开机启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_boot_App.md) 文档。
+
+```
+kickpi-book/common/en/android/Android_boot_App.md
+kickpi-book/common/zh/android/Android_boot_App.md
+```
 
 
 
