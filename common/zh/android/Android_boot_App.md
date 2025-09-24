@@ -81,7 +81,7 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 
 第一步，在APP 的 AndroidManifest.xml 中添加两个 category；
 
-第二步，重新编译生成带 HOME 属性的APP。
+
 
 ```xml
 <activity android:name=".MainActivity">
@@ -91,6 +91,10 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 	</intent-filter>
 </activity>
 ```
+
+第二步，重新编译生成带 HOME 属性的APP。
+
+第三步，签名APP。
 
 
 
