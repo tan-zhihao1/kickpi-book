@@ -172,6 +172,15 @@ LOCAL_SRC_FILES := TestLauncher_20250101.apk
 include $(BUILD_PREBUILT)
 ```
 
+第三步，添加的APP名为 TestLauncher，添加 TestLauncher 的编译；
+
+```diff
++PRODUCT_PACKAGES += \
++		TestLauncher
+```
+
+第四步，添加包名和类名属性配置；
+
 第二步，修改apollo_p2.mk文件
 
 路径device/softwinner/apollo/apollo_p2.mk
