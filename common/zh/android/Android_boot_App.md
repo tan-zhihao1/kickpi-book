@@ -108,13 +108,13 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 
 第二步，添加桌面优先级覆盖；
 
-Android.mk
+Android.mk 方式
 
 ```diff
 
 ```
 
-Android.bp
+Android.bp 方式
 
 ```
     overrides: [
