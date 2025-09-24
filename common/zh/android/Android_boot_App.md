@@ -55,14 +55,14 @@ $ adb reboot
 
 第二步，获取对应APP的包名和页面类名；[点击查看获取方式和测试方法](#am_start_app)
 
-第三步，添加的APP名为 TestLauncher，添加 TestLauncher 的编译。
+第三步，添加的APP名为 TestLauncher，添加 TestLauncher 的编译；
 
 ```diff
 +PRODUCT_PACKAGES += \
 +		TestLauncher
 ```
 
-第四步，添加包名和类名属性配置
+第四步，添加包名和类名属性配置；
 
 ```diff
 + PRODUCT_PROPERTY_OVERRIDES += \
