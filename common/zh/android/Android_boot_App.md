@@ -120,8 +120,6 @@ Android.mk 方式
         Launcher3QuickStepGo
 ```
 
-> 
-
 Android.bp 方式
 
 ```
