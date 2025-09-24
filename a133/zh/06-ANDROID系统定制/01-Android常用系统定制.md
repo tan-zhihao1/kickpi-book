@@ -24,6 +24,8 @@ kickpi-book/common/zh/android/Android_boot_App.md
 
 
 
+## 预装APP
+
 
 
 ## 开机LOGO与动画定制
