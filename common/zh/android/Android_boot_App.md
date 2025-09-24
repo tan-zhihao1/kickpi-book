@@ -170,13 +170,6 @@ LOCAL_MODULE := TestLauncher
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_ENFORCE_USES_LIBRARIES := true
 LOCAL_DEX_PREOPT := true
-
-LOCAL_OVERRIDES_PACKAGES := \
-    Launcher2 \
-    Launcher3 \
-    Launcher3QuickStep \
-    Launcher3QuickStepGo
-
 LOCAL_SRC_FILES := TestLauncher_20250101.apk
 
 include $(BUILD_PREBUILT)
