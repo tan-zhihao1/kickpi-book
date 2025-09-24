@@ -239,4 +239,4 @@ SDK 路径
 
 将编译报错的日志，复制给AI进行解答，一般都能得到正确的解决方法。
 
-> 一般体现为 Android.mk 或 An
+> 一般体现为 Android.mk 或 Android.bp 添加对应配置。
