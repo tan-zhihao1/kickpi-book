@@ -145,7 +145,7 @@ Android.bp 方式
 
 示例：预置 TestLauncher APK 
 
-第一步，创建 TestLauncher 目录
+第一步，在预装路径下创建 TestLauncher 目录
 
 第二步，存放 Android.mk 和 APK 文件。
 
