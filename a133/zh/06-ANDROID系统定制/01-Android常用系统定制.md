@@ -59,7 +59,7 @@ kickpi-book/common/zh/android/Android_Screen_Rotation.md
 
 ## 默认时区和语言
 
-s
+**时区修改**
 
 persist.sys.locale 属性
 
@@ -68,6 +68,8 @@ device/softwinner/ceres-c3/ceres_c3.mk
 	PRODUCT_PROPERTY_OVERRIDES += \
 		persist.sys.locale=zh-CN
 ```
+
+**语言修改**
 
 persist.sys.country 以及 persist.sys.language 属性
 
