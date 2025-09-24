@@ -162,15 +162,6 @@ PRODUCT_COPY_FILES += \
 
 
 
-## 开机启动APP
-
-如果需要开机启动APP，查看 [Android_Boot_Apk](../../../common/zh/android/Android_Boot_Apk.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_Boot_Apk.md
-kickpi-book/common/zh/android/Android_Boot_Apk.md
-```
-
 
 
 ## 默认语言
@@ -209,6 +200,17 @@ locale 获取优先级见
 
 ```
 frameworks/base/core/jni/AndroidRuntime.cpp
+```
+
+
+
+## 开机启动APP
+
+如果需要开机启动APP，查看 [Android_Boot_Apk](../../../common/zh/android/Android_Boot_Apk.md) 文档。
+
+```
+kickpi-book/common/en/android/Android_Boot_Apk.md
+kickpi-book/common/zh/android/Android_Boot_Apk.md
 ```
 
 
