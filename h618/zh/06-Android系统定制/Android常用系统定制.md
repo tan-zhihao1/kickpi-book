@@ -2,6 +2,10 @@
 
 
 
+## 桌面定制
+
+
+
 ## 开机LOGO与动画定制
 
 定制开机LOGO和动画，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
