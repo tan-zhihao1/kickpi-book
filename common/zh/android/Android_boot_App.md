@@ -192,7 +192,7 @@ include $(BUILD_PREBUILT)
 >
 > `LOCAL_PRIVILEGED_MODULE := true` 这会将应用安装到 `/system/priv-app` 目录，获得更多系统权限。
 
-第三步，在**编译配置路径**下添加的 APP 名为 TestLauncher 的配置；
+第三步，在**编译配置路径**下添加的模块名称为 TestLauncher 的配置；
 
 ```diff
 +PRODUCT_PACKAGES += \
