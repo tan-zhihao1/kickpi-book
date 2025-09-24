@@ -75,7 +75,7 @@ PRODUCT_LOCALES 配置
 
 ```makefile
 $ vim build/target/product/full_base.mk
-	PRODUCT_LOCALES := en_US
++	PRODUCT_LOCALES := en_US
 ```
 
 persist.sys.country 以及 persist.sys.language 属性
