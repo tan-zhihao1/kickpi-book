@@ -61,7 +61,7 @@ kickpi-book/common/zh/android/Android_Screen_Rotation.md
 
 **时区修改**
 
-persist.sys.locale 属性
+修改 persist.sys.timezone 属性
 
 ```
 device/softwinner/ceres-c3/ceres_c3.mk
@@ -71,7 +71,7 @@ device/softwinner/ceres-c3/ceres_c3.mk
 
 **语言修改**
 
-PRODUCT_LOCALES 配置
+修改 PRODUCT_LOCALES 配置
 
 ```diff
 $ vim build/target/product/full_base.mk
