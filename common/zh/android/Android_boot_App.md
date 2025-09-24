@@ -25,14 +25,14 @@ $ setprop persist.sys.bootAppClass $classname
 > `classname` 类名
 >
 > 将属性配置为需要开机启动的APP包名和类名。
-
-示例：
-
-```
-$ adb shell
-$ setprop persist.sys.bootAppPack com.android.settings
-$ setprop persist.sys.bootAppClass com.android.settings.Settings
-```
+>
+> 示例：
+>
+> ```
+> $ adb shell
+> $ setprop persist.sys.bootAppPack com.android.settings
+> $ setprop persist.sys.bootAppClass com.android.settings.Settings
+> ```
 
 第四步，重启；
 
