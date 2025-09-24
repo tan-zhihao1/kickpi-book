@@ -165,6 +165,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := platform
+LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_MODULE := TestLauncher
 LOCAL_SRC_FILES := TestLauncher.apk
@@ -188,13 +189,9 @@ include $(BUILD_PREBUILT)
 >
 > `LOCAL_SRC_FILES := TestLauncher.apk`：指定 APK 文件路径
 >
-> `include $(BUILD_PREBUILT)`：使用预编译构建方式
-
-```makefile
-LOCAL_PRIVILEGED_MODULE := true
-```
-
-这会将应用安装到 `/system/priv-app` 目录，获得更多系统权限。
+> `include $(BUILD_PREBUILT)`：使用预编译构建方式.
+>
+> `LOCAL_PRIVILEGED_MODULE := true` 这会将应用安装到 `/system/priv-app` 目录，获得更多系统权限。
 
 第三步，在**编译配置路径**下添加的 APP 名为 TestLauncher 的配置；
 
