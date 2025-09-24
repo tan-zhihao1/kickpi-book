@@ -34,5 +34,32 @@ Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的�
 >
 > 两种文件同时存在播放 mp4 优先级比 zip 高 ，具体优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
 
-修改动画示例：
+### H618 修改动画示例
+
+第一步，存放动画文件（zip 或 mp4 格式）
+
+```
+device/softwinner/apollo/common/media/bootanimation/bootanimation.zip
+device/softwinner/apollo/common/media/bootanimation/bootanimation.mp4
+```
+
+第二步，修改编译配置
+
+bootanimation.zip 格式
+
+```diff
+SDK$ vim device/softwinner/apollo/common/media/config.mk
+PRODUCT_COPY_FILES += \
+-		$(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
++     	$(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
+```
+
+bootanimation.mp4 格式
+
+```diff
+SDK$ vim device/softwinner/apollo/common/media/config.mk
+PRODUCT_COPY_FILES += \
+-		$(BOOTANIMATION_CONFIG_PATH)/bootanimation.zip:system/media/bootanimation.zip
++    	$(BOOTANIMATION_CONFIG_PATH)/bootanimation.mp4:system/media/bootanimation.mp4
+```
 
