@@ -201,50 +201,6 @@ frameworks/base/core/jni/AndroidRuntime.cpp
 
 
 
-## 开机LOGO与动画
-
-定制开机LOGO和动画，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_Logo_Bootanimation.md
-kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
-```
-
-
-
-## 开机启动APP
-
-如果需要开机启动APP，查看 [Android_Boot_Apk](../../../common/zh/android/Android_Boot_Apk.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_Boot_Apk.md
-kickpi-book/common/zh/android/Android_Boot_Apk.md
-```
-
-
-
-## 预装APP
-
-如果需要预装APK进系统镜像，查看 [Android_Preinstall_Apk](../../../common/zh/android/Android_Preinstall_Apk.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_Preinstall_Apk.md
-kickpi-book/common/zh/android/Android_Preinstall_Apk.md
-```
-
-
-
-## APK签名
-
-如果需要给APK签名，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_Apk_Signing.md
-kickpi-book/common/zh/android/Android_Apk_Signing.md
-```
-
-
-
 ## HDMI TX
 
 hdmi tx 属性结点
