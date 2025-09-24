@@ -57,7 +57,7 @@ kickpi-book/common/zh/android/Android_Screen_Rotation.md
 
 
 
-## 默认国家语言
+## 默认时区和语言
 
 persist.sys.locale 属性
 
