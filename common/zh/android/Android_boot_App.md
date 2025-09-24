@@ -125,6 +125,7 @@ Android.bp 方式
         "Launcher2",
         "Launcher3",
         "Launcher3QuickStep",
+        "Launcher3QuickStepGo",
     ],
 ```
 
