@@ -115,12 +115,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 
 
-## 开机LOGO
+## 开机LOGO与动画
 
-logo 替换路径
+定制开机LOGO和动画，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
 
 ```
-longan/device/config/chips/h618/boot-resource/boot-resource/bootlogo.bmp
+kickpi-book/common/en/android/Android_Logo_Bootanimation.md
+kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
 ```
 
 

@@ -4,6 +4,8 @@
 
 ## 开机LOGO
 
+LOGO替换路径l
+
 | 主控                 | 型号         | LOGO路径                                                     |
 | -------------------- | ------------ | ------------------------------------------------------------ |
 | A133                 | K5/K5C       | longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp |
