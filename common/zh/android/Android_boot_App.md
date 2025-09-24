@@ -118,7 +118,7 @@ Android.mk 方式
         Launcher3QuickStepGo
 ```
 
-> K2B/K2C 需要添加 TvLaunch
+> K2B/K2C 需要添加 TvLauncher 的覆盖
 
 Android.bp 方式
 
