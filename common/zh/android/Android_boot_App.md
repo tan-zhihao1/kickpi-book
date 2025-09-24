@@ -145,7 +145,7 @@ Android.bp 方式
 
 示例：预置 TestLauncher APK 
 
-第一步，在预装路径下创建 TestLauncher 目录
+第一步，在**APP预装路径**下创建 TestLauncher 目录
 
 第二步，存放 Android.mk 和 APK 文件。
 
@@ -172,7 +172,7 @@ LOCAL_SRC_FILES := TestLauncher_20250101.apk
 include $(BUILD_PREBUILT)
 ```
 
-第三步，添加的APP名为 TestLauncher，添加 TestLauncher 的编译；
+第三步，**编译配置路径**添加的APP名为 TestLauncher，添加 TestLauncher 的编译；
 
 ```diff
 +PRODUCT_PACKAGES += \
