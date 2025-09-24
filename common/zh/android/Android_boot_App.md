@@ -178,17 +178,6 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 
 # 包含Android构建系统的基本规则
 include $(BUILD_PREBUILT)
-
-
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_CERTIFICATE := platform
-
-LOCAL_MODULE := TestLauncher
-LOCAL_SRC_FILES := TestLauncher_20250101.apk
-
-include $(BUILD_PREBUILT)
 ```
 
 第三步，在**编译配置路径**下添加的APP名为 TestLauncher，添加 TestLauncher 的编译；
