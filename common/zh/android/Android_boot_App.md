@@ -44,10 +44,10 @@ $ adb reboot
 
 **SDK 方式配置（修改源码定制镜像）**
 
-| 主控 | 型号   | 路径                                          |
-| ---- | ------ | --------------------------------------------- |
-| A133 | K5/K5C | android/device/softwinner/apollo/apollo_p2.mk |
-|      |        |                                               |
+| 主控                 | 型号       | 路径                                          |
+| -------------------- | ---------- | --------------------------------------------- |
+| A133                 | K5/K5C     | android/device/softwinner/apollo/apollo_p2.mk |
+| RK3562/RK3568/RK3588 | K1/K1B/K3/ |                                               |
 
 第一步，[预装APK](#pre_installed_app)，如 TestLancher；
 
