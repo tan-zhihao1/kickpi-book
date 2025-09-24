@@ -158,8 +158,6 @@ android\device\softwinner\ceres-c3\overlay\frameworks\base\core\res\res\drawable
 SDK$ ls android/packages/apps/Launcher3/
 ```
 
-
-
 单编APK
 
 ```
