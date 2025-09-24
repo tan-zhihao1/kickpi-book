@@ -100,9 +100,9 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 
 | 主控                        | 型号                | 桌面                                                         | 路径                                           |
 | --------------------------- | ------------------- | ------------------------------------------------------------ | ---------------------------------------------- |
-| A133                        | K5/K5C              | Launcher3QuickStepGo<br />Launcher3QuickStep                 | android/device/softwinner/ceres-c3/ceres_c3.mk |
-| H618                        | K2B/K2C             | Launcher3QuickStepGo<br />TvLauncher<br />Launcher3          | vendor/aw/homlet/homlet.mk                     |
-| RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | Launcher2<br />Launcher3<br />Launcher3QuickStepGo<br />Launcher3QuickStepGo | device/rockchip/common/device.mk               |
+| A133                        | K5/K5C              | Launcher2<br />Launcher3<br />Launcher3QuickStep<br />Launcher3QuickStepGo | android/device/softwinner/ceres-c3/ceres_c3.mk |
+| H618                        | K2B/K2C             | Launcher2<br />Launcher3<br />Launcher3QuickStep<br />Launcher3QuickStepGoLauncher3QuickStepGo<br />TvLauncher<br />Launcher3 | vendor/aw/homlet/homlet.mk                     |
+| RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | Launcher2<br />Launcher3<br />Launcher3QuickStep<br />Launcher3QuickStepGo | device/rockchip/common/device.mk               |
 
 第一步，[预装APK](#pre_installed_app)，如 TestLancher；
 
