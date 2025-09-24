@@ -152,6 +152,8 @@ endif
 
 ### bootanimation.zip 定制
 
+动画定制参考yuan'b
+
 **文件结构**
 
 ```
