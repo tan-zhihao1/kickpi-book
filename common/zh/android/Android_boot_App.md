@@ -150,7 +150,7 @@ Android.bp 方式
 第二步，存放 Android.mk 和 APK 文件。
 
 ```
-$ ls TestLauncher 
+$ ls TestLauncher/ 
 Android.mk
 TestLauncher_20250101.apk
 ```
