@@ -118,7 +118,7 @@ android\device\softwinner\ceres-c3\overlay\frameworks\base\core\res\res\drawable
 如果需要旋转屏幕，查看 [Android_Screen_Rotation](../../../common/zh/android/Android_Screen_Rotation.md) 文档。
 
 ```
-kickpi-book/common/en/android/Android_Screen_Rotation.md
+kickpi-book/common/en/android/Android_Lau.md
 kickpi-book/common/zh/android/Android_Screen_Rotation.md
 ```
 
