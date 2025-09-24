@@ -50,18 +50,10 @@ $ adb reboot
 
 第三步，添加的APP名为 TestLauncher，添加 TestLauncher 的编译。
 
-a133 路径
-
 | 主控 | 型号   | 路径                                          |
 | ---- | ------ | --------------------------------------------- |
-| A    | K5/K5C | android/device/softwinner/apollo/apollo_p2.mk |
+| A133 | K5/K5C | android/device/softwinner/apollo/apollo_p2.mk |
 |      |        |                                               |
-
-
-
-```
-
-```
 
 
 
