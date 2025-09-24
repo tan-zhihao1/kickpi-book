@@ -111,7 +111,7 @@ reboot
 
 
 
-## 系统壁纸
+## 默认系统壁纸
 
 ``` 
 android/device/softwinner/ceres-c3/overlay/frameworks/base/core/res/res/drawable-sw720dp-nodpi/default_wallpaper.jpg
