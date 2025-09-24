@@ -59,12 +59,6 @@ device/softwinner/apollo/apollo_p2.mk
 
 
 ```diff
---- a/vendor/aw/homlet/homlet.mk
-+++ b/vendor/aw/homlet/homlet.mk
-@@ -16,12 +16,12 @@ PRODUCT_PACKAGES += \
-     DragonSN  \
-     GalleryTV
-
 +PRODUCT_PACKAGES += \
 +		TestLauncher
 ```
@@ -72,10 +66,6 @@ device/softwinner/apollo/apollo_p2.mk
 第四步，添加包名和类名属性配置
 
 ```diff
---- a/device/softwinner/apollo/apollo_p2.mk
-+++ b/device/softwinner/apollo/apollo_p2.mk
-@@ -25,7 +25,8 @@ PRODUCT_COPY_FILES += $(PRODUCT_PREBUILT_PATH)/bImage:kernel
-
 + PRODUCT_PROPERTY_OVERRIDES += \
 +	persist.sys.bootAppPack=com.android.TestLauncher \
 +	persist.sys.bootAppClass=com.android.TestLauncher.Activity
