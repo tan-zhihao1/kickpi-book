@@ -28,6 +28,13 @@ kickpi-book/common/zh/android/Android_boot_App.md
 
 
 
+定制开机启动APP，查看 [Android_Preinstall_Apk](../../../common/zh/android/Android_Preinstall_Apk.md) 文档。
+
+```
+kickpi-book/common/en/android/Android_boot_App.md
+kickpi-book/common/zh/android/Android_boot_App.md
+```
+
 
 
 ## APK签名
