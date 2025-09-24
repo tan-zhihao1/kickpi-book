@@ -93,7 +93,11 @@ persist.sys.country 以及 persist.sys.language 属性
 +    persist.sys.language=zh
 ```
 
-语言属性配置获取优先级见 frameworks/base/core/jni/AndroidRuntime.cpp。
+语言属性配置获取优先级见
+
+```
+frameworks/base/core/jni/AndroidRuntime.cpp
+```
 
 
 
