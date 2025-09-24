@@ -46,20 +46,6 @@ kickpi-book/common/zh/android/Android_Apk_Signing.md
 
 
 
-## 开机LOGO与动画定制
-
-logo 源码替换路径
-
-```
-longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
-```
-
-> 图片格式 - 32bit
->
-> 图片分辨率 - 小于实际屏幕分辨率
-
-
-
 ## 开机动画定制
 
 ### 默认替换开机动画
