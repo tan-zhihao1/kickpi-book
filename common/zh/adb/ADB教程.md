@@ -225,6 +225,20 @@ adb shell screencap -p /sdcard/screenshot.png
 
 该命令会在设备的 `/sdcard` 目录下生成一个名为 `screenshot.png` 的屏幕截图文件，之后可使用 `adb pull` 命令将其下载到本地。
 
+
+
+## ADB投屏
+
+下载工具网盘路径
+
+5-DevelopmentTools开发工具\ADB Screen Cast 投屏
+
+![image-20250303103950558](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250303103950558.png)
+
+![image-20250303104027819](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250303104027819.png)
+
+
+
 ## 常见问题
 
 ### ADB设备无法识别
