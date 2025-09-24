@@ -111,18 +111,17 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 Android.mk 方式
 
 ```diff
-LOCAL_OVERRIDES_PACKAGES := \
-    Launcher2 \
-    Launcher3 \
-    Launcher3QuickStep \
-    Launcher3QuickStepGo
+    LOCAL_OVERRIDES_PACKAGES := \
+        Launcher2 \
+        Launcher3 \
+        Launcher3QuickStep \
+        Launcher3QuickStepGo
 ```
 
 Android.bp 方式
 
 ```
     overrides: [
-        "Home",
         "Launcher2",
         "Launcher3",
         "Launcher3QuickStep",
