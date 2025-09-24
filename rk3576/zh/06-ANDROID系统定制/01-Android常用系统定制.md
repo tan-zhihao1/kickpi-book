@@ -69,39 +69,6 @@ kickpi-book/common/zh/android/Android_Apk_Signing.md
 
 
 
-## 开机LOGO与动画
-
-定制开机LOGO和动画，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_Logo_Bootanimation.md
-kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
-```
-
-
-
-## 开机自启动APP
-
-定制开机自启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_boot_App.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_boot_App.md
-kickpi-book/common/zh/android/Android_boot_App.md
-```
-
-
-
-## APK签名
-
-如果需要给APK签名，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_Apk_Signing.md
-kickpi-book/common/zh/android/Android_Apk_Signing.md
-```
-
-
-
 ## 显示方向配置
 
 **默认配置显示方向**
