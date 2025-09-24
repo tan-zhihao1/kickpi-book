@@ -45,7 +45,7 @@ Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的�
 android/device/softwinner/ceres-c3/media/bootanimation.zip
 ```
 
-第二步，修改动画拷贝方式；
+第二步，确认动画拷贝方式；
 
 bootanimation.zip 格式
 
