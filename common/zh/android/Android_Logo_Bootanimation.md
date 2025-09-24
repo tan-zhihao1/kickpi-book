@@ -28,4 +28,6 @@ LOGO替换路径如下
 | RK3562/RK3568/RK3588 | K1/K1B/K3/K8 | kernel-5.10/logo.bmp kernel-5.10/logo_kernel.bmp             |
 | RK3576               | K7/K7C       | device/rockchip/common/bootanimation.zip                     |
 
-A
+Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
+
+> 已知问题：mp4格式开机动画 系统第一次上电启动会显示安卓开机动画
