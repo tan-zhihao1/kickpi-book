@@ -126,7 +126,7 @@ kickpi-book/common/zh/android/Android_Launcher.md
 
 ## ADB功能与投屏
 
-使用ADB功能或ADB投屏，查看 [Android教程](../../../common/zh/android/Android_Launcher.md) 文档。
+使用ADB功能或ADB投屏，查看 [Android教程](../../../common/zh/adb/Android教程.md) 文档。
 
 ```
 kickpi-book/common/en/android/Android_Launcher.md
