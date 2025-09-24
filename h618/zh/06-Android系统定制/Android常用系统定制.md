@@ -26,10 +26,10 @@ kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
 
 ## 开机自启动APP
 
-定制开机启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_boot_App.md) 文档。
+定制开机启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_Boot_Apk.md) 文档。
 
 ```
-kickpi-book/common/en/android/Android_boot_App.md
+kickpi-book/common/en/android/Android_Boot_Apk.md
 kickpi-book/common/zh/android/Android_boot_App.md
 ```
 
@@ -59,18 +59,12 @@ kickpi-book/common/zh/android/Android_Apk_Signing.md
 
 ## 屏幕方向与旋转
 
-
-
 如果需要给屏幕旋转，查看 [Android_Screen_Rotation](../../../common/zh/android/Android_Screen_Rotation.md) 文档。
 
 ```
 kickpi-book/common/en/android/Android_Screen_Rotation.md
 kickpi-book/common/zh/android/Android_Screen_Rotation.md
 ```
-
-
-
-
 
 
 
