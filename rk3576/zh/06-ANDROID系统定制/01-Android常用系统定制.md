@@ -52,22 +52,9 @@ kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
 
 [开机启动APP](../../../common/zh/android/Android_boot_App.md)
 
-安卓已适配自启动APP功能
-
-利用属性 persist.sys.bootAppPack / persist.sys.bootAppClass 配置，开机会启动对应APP
-
 ```
-$ adb shell
-$ setprop persist.sys.bootAppPack $packname
-$ setprop persist.sys.bootAppClass $classname
-```
-
-示例：
-
-```
-$ adb shell
-$ setprop persist.sys.bootAppPack com.DeviceTest
-$ setprop persist.sys.bootAppClass com.DeviceTest.DeviceTest
+kickpi-book/common/en/android/Android_Apk_Signing.md
+kickpi-book/common/zh/android/Android_Apk_Signing.md
 ```
 
 
