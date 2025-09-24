@@ -37,7 +37,7 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 **软件默认修改显示方向**
 
 ```
-(SDK)$ vim android/device/softwinner/ceres-c3/ceres_c3.mk
+(SDK)$ vim device/softwinner/apollo/apollo_p2.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.primary_display_orientation=ORIENTATION_0
@@ -50,14 +50,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 示例：修改屏幕默认显示旋转90°
 
 ```diff
-(SDK)$ vim android/device/softwinner/ceres-c3/ceres_c3.mk
+(SDK)$ vim device/softwinner/apollo/apollo_p2.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
 - ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 + ro.surface_flinger.primary_display_orientation=ORIENTATION_90
 ```
-
-
 
 
 
