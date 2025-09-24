@@ -37,16 +37,6 @@ Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的�
 
 ### A133 开机动画
 
-### 默认替换开机动画
-
-Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画。
-
-两种文件同时存在播放 mp4 优先级比 zip 高 ，具体优先级见
-
-```
-frameworks/base/cmds/bootanimation/BootAnimation.cpp
-```
-
 第一步，替换源码动画；
 
 动画源码路径如下
