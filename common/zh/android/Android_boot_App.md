@@ -118,7 +118,7 @@ Android.mk 方式
         Launcher3QuickStepGo
 ```
 
-> K2B
+> K2B/K2C 需要添加 TvLaunch
 
 Android.bp 方式
 
