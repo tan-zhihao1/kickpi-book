@@ -25,44 +25,6 @@ tablet
 
 
 
-## 开机LOGO
-
-开机LOGO分两个部分，分别是Uboot阶段、Kernel阶段
-
-Uboot 阶段解析图片 kernel-5.10/logo.bmp
-
-Kernel 阶段解析图片 kernel-5.10/logo_kernel.bmp
-
-```
-(SDK)$ ls kernel-5.10/*.bmp
-logo.bmp
-logo_kernel.bmp
-```
-
-
-
-## 开关机动画
-
-开机动画放到指定目录
-
-```
-(SDK)$ ls device/rockchip/common/bootshutdown/bootanimation.zip
-```
-
-关机动画存放指定目录
-
-```
-(SDK)$ ls device/rockchip/common/bootshutdown/shutdownanimation.zip
-```
-
-打开配置
-
-```diff
-(SDK)$ vim device\rockchip\common\BoardConfig.mk
--BOOT_SHUTDOWN_ANIMATION_RINGING ?= false
-+BOOT_SHUTDOWN_ANIMATION_RINGING ?= true
-```
-
 
 
 ## 默认屏幕方向
@@ -285,6 +247,17 @@ android_app_import {
 (SDK)$ vim vendor/rockchip/common/apps/apps.mk
 PRODUCT_PACKAGES += \
        Settings2
+```
+
+
+
+## 开机LOGO与动画
+
+定制开机LOGO和动画，查看 [Android_Logo_Bootanimation](../../../common/zh/android/Android_Logo_Bootanimation.md) 文档。
+
+```
+kickpi-book/common/en/android/Android_Logo_Bootanimation.md
+kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
 ```
 
 
