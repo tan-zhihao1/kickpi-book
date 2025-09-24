@@ -31,3 +31,8 @@ LOGO替换路径如下
 Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
 
 > 已知问题：mp4格式开机动画 系统第一次上电启动会显示安卓开机动画
+>
+> 两种文件同时存在播放 mp4 优先级比 zip 高 ，具体优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
+
+修改动画示例：
+
