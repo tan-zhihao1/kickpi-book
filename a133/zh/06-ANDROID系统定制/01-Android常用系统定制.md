@@ -67,8 +67,6 @@ device/softwinner/ceres-c3/ceres_c3.mk
 		persist.sys.locale=zh-CN
 ```
 
-
-
 persist.sys.country 以及 persist.sys.language 属性
 
 ```diff
