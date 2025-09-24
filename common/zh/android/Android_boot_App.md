@@ -106,25 +106,10 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 
 第一步，[预装APK](#pre_installed_app)，如 TestLancher；
 
-第二步，修改所有的 TvLauncher 和 Launcher3 为预置APK的名称，如 TestLauncher；
+第二步，修改所有的原生桌面为预置APK的名称，如 TestLauncher；
 
 ```diff
---- a/vendor/aw/homlet/homlet.mk
-+++ b/vendor/aw/homlet/homlet.mk
-@@ -16,12 +16,12 @@ PRODUCT_PACKAGES += \
-     DragonSN  \
-     GalleryTV
 
-PRODUCT_PACKAGES += \
--     	TvLauncher \
-+		TestLauncher \
-		TvSettings
-
-PRODUCT_PACKAGES += \
--      	Launcher3 \
-+		TestLauncher \
-        Settings \
-        SystemUI
 ```
 
 第三步，编译SDK，烧录镜像；
