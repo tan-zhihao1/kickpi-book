@@ -52,15 +52,15 @@ $ adb reboot
 
 a133 路径
 
-| 主控 | 型号 |      |
-| ---- | ---- | ---- |
-|      |      |      |
-|      |      |      |
+| 主控 | 型号   | 路径                                          |
+| ---- | ------ | --------------------------------------------- |
+| A    | K5/K5C | android/device/softwinner/apollo/apollo_p2.mk |
+|      |        |                                               |
 
 
 
 ```
-device/softwinner/apollo/apollo_p2.mk
+
 ```
 
 
