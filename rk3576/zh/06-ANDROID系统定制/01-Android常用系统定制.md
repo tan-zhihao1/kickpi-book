@@ -50,7 +50,7 @@ kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
 
 ## 开机启动APP
 
-[开机启动APP](../../)
+[开机启动APP](../../../common/zh)
 
 安卓已适配自启动APP功能
 
