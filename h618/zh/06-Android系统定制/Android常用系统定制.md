@@ -205,7 +205,7 @@ persist.sys.country 以及 persist.sys.language 属性
 | en_US | 英文 |
 | zh_CN | 中文 |
 
-locale 获取优先级 frameworks/base/core/jni/AndroidRuntime.cpp
+locale 获取优先级 
 
 ```java
 /*
@@ -222,42 +222,6 @@ locale 获取优先级 frameworks/base/core/jni/AndroidRuntime.cpp
  * preserve language settings for devices that are upgrading from Lollipop
  * to M. The same goes for ro.product.locale.language/region as well.
  */
-const std::string readLocale()
-{
-    const std::string locale = GetProperty("persist.sys.locale", "");
-    if (!locale.empty()) {
-        return locale;
-    }
-
-    const std::string language = GetProperty("persist.sys.language", "");
-    if (!language.empty()) {
-        const std::string country = GetProperty("persist.sys.country", "");
-        const std::string variant = GetProperty("persist.sys.localevar", "");
-
-        std::string out = language;
-        if (!country.empty()) {
-            out = out + "-" + country;
-        }
-
-        if (!variant.empty()) {
-            out = out + "-" + variant;
-        }
-
-        return out;
-    }
-
-    const std::string productLocale = GetProperty("ro.product.locale", "");
-    if (!productLocale.empty()) {
-        return productLocale;
-    }
-
-    // If persist.sys.locale and ro.product.locale are missing,
-    // construct a locale value from the individual locale components.
-    const std::string productLanguage = GetProperty("ro.product.locale.language", "en");
-    const std::string productRegion = GetProperty("ro.product.locale.region", "US");
-
-    return productLanguage + "-" + productRegion;
-}
 ```
 
 
