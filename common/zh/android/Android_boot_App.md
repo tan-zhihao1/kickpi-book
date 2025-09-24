@@ -158,6 +158,24 @@ TestLauncher_20250101.apk
 Android.mk 文件编写示例
 
 ```
+# 定义模块名称
+LOCAL_MODULE := TestLauncher
+# 定义模块类型为APK
+LOCAL_MODULE_CLASS := APPS
+# 指定模块为预装应用
+LOCAL_MODULE_TAGS := optional
+# 设置安装路径为/system/app
+LOCAL_MODULE_PATH := $(TARGET_OUT_APPS)
+# 启用签名（使用平台签名）
+LOCAL_CERTIFICATE := platform
+# 指定APK文件路径
+LOCAL_SRC_FILES := TestLauncher_20250101.apk
+# 定义模块为预装应用
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+
+# 包含Android构建系统的基本规则
+include $(BUILD_PREBUILT)
+
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
