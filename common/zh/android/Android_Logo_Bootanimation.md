@@ -71,7 +71,7 @@ PRODUCT_COPY_FILES += \
 
 
 
-## RK3562/RK3568/RK3576/RK3588开关机动画
+## RK3562/RK3568/RK3576/RK3588 开关机动画
 
 开机动画放到指定目录
 
@@ -88,7 +88,7 @@ PRODUCT_COPY_FILES += \
 打开配置
 
 ```diff
-(SDK)$ vim device\rockchip\common\BoardConfig.mk
+(SDK)$ vim device/rockchip/common/BoardConfig.mk
 -BOOT_SHUTDOWN_ANIMATION_RINGING ?= false
 +BOOT_SHUTDOWN_ANIMATION_RINGING ?= true
 ```
