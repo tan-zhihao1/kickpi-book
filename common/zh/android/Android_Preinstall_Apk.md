@@ -8,9 +8,13 @@
 | H618                        | K2B/K2C             | vendor/aw/homlet/homlet.mk                     | vendor/aw/public/prebuild/         |
 | RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | device/rockchip/common/device.mk               | vendor/rockchip/common/apps/       |
 
-**预装 TestLauncher APK 示例** 
+** 示例** 
+
+预装 TestLauncher APK
 
 第一步，在**APP预装路径**下创建 TestLauncher 目录
+
+
 
 第二步，存放 Android.mk 和 APK 文件。
 
@@ -56,6 +60,8 @@ include $(BUILD_PREBUILT)
 > `include $(BUILD_PREBUILT)`：使用预编译构建方式.
 >
 > `LOCAL_PRIVILEGED_MODULE := true` 这会将应用安装到 `/system/priv-app` 目录，获得更多系统权限。
+
+
 
 第三步，在**编译配置路径**下添加的模块名称为 TestLauncher 的配置；
 
