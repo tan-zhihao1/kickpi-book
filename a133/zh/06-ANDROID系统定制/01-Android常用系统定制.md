@@ -24,7 +24,7 @@ kickpi-book/common/zh/android/Android_boot_App.md
 
 
 
-## 预装APP
+## 预装第三方APP
 
 预装APP，查看 [Android_Preinstall_Apk](../../../common/zh/android/Android_Preinstall_Apk.md) 文档。
 
@@ -185,81 +185,6 @@ SDK$ BUILD_NUMBER=ido-a133 m Launcher3QuickStepGo -j32
  
      public static final TogglableFlag EXAMPLE_FLAG = new TogglableFlag("EXAMPLE_FLAG", true,
              "An example flag that doesn't do anything. Useful for testing");
-```
-
-
-
-## 预装第三方APP
-
-比如新增 test.apk 
-
-Android.mk
-
-```
-LOCAL_PATH := $(call my-dir)
-include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_CERTIFICATE := PRESIGNED
-
-LOCAL_ENFORCE_USES_LIBRARIES := false
-LOCAL_DEX_PREOPT := false
-
-LOCAL_MODULE := test
-
-LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
-
-include $(BUILD_PREBUILT)
-```
-
-Android.bp
-
-```makefile
-android_app_import {
-    name: "test",
-    apk: "test.apk",
-
-    //presigned: true,
-    certificate: "platform",
-    dex_preopt: {
-        enabled: true,
-    },
-
-    privileged: true,
-    //product_specific: true,
-    //proprietary: true,
-    enforce_uses_libs: false,
-}
-```
-
-加入编译
-
-```makefile
-PRODUCT_PACKAGES += \
-       test
-```
-
-
-
-## 开机启动APP
-
-如果需要开机启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_boot_App.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_boot_App.md
-kickpi-book/common/zh/android/Android_boot_App.md
-```
-
-
-
-## APK签名
-
-如果需要给APK签名，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
-
-```
-kickpi-book/common/en/android/Android_Apk_Signing.md
-kickpi-book/common/zh/android/Android_Apk_Signing.md
 ```
 
 
