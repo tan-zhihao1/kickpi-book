@@ -50,7 +50,7 @@ kernel-6.1/logo.bmp  kernel-6.1/logo_kernel.bmp
 
 ## 开机启动APP
 
-[开机启动APP](../../../common/zh/android/Android_boot_App.md)
+如果需要开机启动APP[开机启动APP](../../../common/zh/android/Android_boot_App.md)
 
 ```
 kickpi-book/common/en/android/Android_boot_App.md
