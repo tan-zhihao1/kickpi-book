@@ -16,8 +16,6 @@ LOGO替换路径如下
 >rockchip 平台区分 Uboot、Kernel两个阶段显示LOGO，logo.bmp 为Uboot阶段，logo_kernel.bmp为Kernel阶段；
 >
 >LOGO的分辨率必须小于显示屏的分辨率！！！
->
->bmp的需要为32位
 
 
 
