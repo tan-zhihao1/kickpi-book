@@ -1,5 +1,7 @@
 # Android_Screen_Rotation
 
+
+
 ## A133 源码修改屏幕方向
 
 第一步，修改logo显示图片方向
@@ -24,7 +26,7 @@ longan/device/config/chips/a133/configs/c3/android/bootlogo.bmp
 
 
 
-### 命令修改屏幕方向
+## 命令修改屏幕方向
 
 支持使用adb命令进行旋转，能够单次旋转屏幕，重启后失效。
 

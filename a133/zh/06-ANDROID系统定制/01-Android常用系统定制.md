@@ -48,6 +48,15 @@ kickpi-book/common/zh/android/Android_Apk_Signing.md
 
 ## 默认屏幕方向
 
+如果需要给APK签名，查看 [Android_Apk_Signing](../../../common/zh/android/Android_Apk_Signing.md) 文档。
+
+```
+kickpi-book/common/en/android/Android_Apk_Signing.md
+kickpi-book/common/zh/android/Android_Apk_Signing.md
+```
+
+
+
 ### 源码修改屏幕方向
 
 第一步，修改logo显示图片方向
