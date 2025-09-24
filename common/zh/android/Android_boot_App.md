@@ -141,7 +141,7 @@ Android.bp 方式
 | --------------------------- | ------------------- | ---------------------------------------------- | ---------------------------------------------- |
 | A133                        | K5/K5C              | android/device/softwinner/ceres-c3/ceres_c3.mk | android/device/softwinner/ceres-c3/ceres_c3.mk |
 | H618                        | K2B/K2C             | vendor/aw/homlet/homlet.mk                     | vendor/aw/public/prebuild/                     |
-| RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | device/rockchip/common/device.mk               | device/rockchip/common/device.mk               |
+| RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | device/rockchip/common/device.mk               | vendor/rockchip/common/apps                    |
 
 示例：预置 TestLauncher APK 
 
