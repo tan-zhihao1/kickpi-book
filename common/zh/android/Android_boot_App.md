@@ -102,7 +102,7 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 | --------------------------- | ------------------- | --------------------------------------------------- | ---------------------------------------------- |
 | A133                        | K5/K5C              |                                                     | android/device/softwinner/ceres-c3/ceres_c3.mk |
 | H618                        | K2B/K2C             | Launcher3QuickStepGo<br />TvLauncher<br />Launcher3 | vendor/aw/homlet/homlet.mk                     |
-| RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 |                                                     | device/rockchip/common/device.mk               |
+| RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | Launcher3QuickStep                                  | device/rockchip/common/device.mk               |
 
 第一步，[预装APK](#pre_installed_app)，如 TestLancher；
 
