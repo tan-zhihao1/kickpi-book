@@ -239,6 +239,43 @@ adb shell screencap -p /sdcard/screenshot.png
 
 
 
+### 网络ADB
+
+网口ADB需要先adb启动5555端口服务后
+
+```
+PS C:\Users\16708\Desktop> adb tcpip 5555
+PS C:\Users\16708\Desktop> adb connect 192.168.77.170
+connected to 192.168.77.170:5555
+PS C:\Users\16708\Desktop> adb devices
+List of devices attached
+7c001075a313c7c1c12     device
+192.168.77.170:5555     device
+
+PS C:\Users\16708\Desktop> adb -s 192.168.77.170:5555 shell
+apollo-p2:/ $ su
+```
+
+开机默认启动5555端口
+
+需要通过USB adb操作
+
+```
+ adb root
+ adb remount
+ adb pull /system/build.prop
+ //在build.prop中加入
+ //添加这一行
+ service.adb.tcp.port=5555
+ //替换进入
+ adb push .\build.prop /system/build.prop
+ adb reboot
+```
+
+
+
+
+
 ## 常见问题
 
 ### ADB设备无法识别
