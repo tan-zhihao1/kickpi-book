@@ -259,7 +259,7 @@ $ dumpsys package com.android.settings | grep -i activity
 
 ## APP特殊权限问题
 
-目前桌面级APP是特殊应用，如果添加特殊权限，可能会出现系统无法起来问题，需要抓取APP相关log日志
+目前桌面级 APP 是特殊应用，如果添加特殊权限，可能会出现系统无法起来问题，需要抓取 APP 相关 log 日志
 
 ```shell
 # logcat | grep LauncherTest
@@ -267,7 +267,7 @@ $ dumpsys package com.android.settings | grep -i activity
 09-14 10:36:08.437  3826  3826 W PackageManager: Privileged permission android.permission.INSTALL_PACKAGES for package com.example.myapplication (/system/priv-app/LauncherTest) not in privapp-permissions allowlist
 ```
 
-SDK lu
+SDK 路径
 
 根据 log 修改 android.permission.INSTALL_PACKAGES 内容如下，其他报错类似参考以下添加：
 
