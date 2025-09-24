@@ -198,30 +198,17 @@ persist.sys.country 以及 persist.sys.language 属性
 +    persist.sys.language=zh
 ```
 
-支持语音选项
+支持语言选项
 
 | 选项  | 描述 |
 | ----- | ---- |
 | en_US | 英文 |
 | zh_CN | 中文 |
 
-locale 获取优先级 
+locale 获取优先级见 
 
-```java
-/*
- * Read the persistent locale. Inspects the following system properties
- * (in order) and returns the first non-empty property in the list :
- *
- * (1) persist.sys.locale
- * (2) persist.sys.language/country/localevar (country and localevar are
- * inspected iff. language is non-empty.
- * (3) ro.product.locale
- * (4) ro.product.locale.language/region
- *
- * Note that we need to inspect persist.sys.language/country/localevar to
- * preserve language settings for devices that are upgrading from Lollipop
- * to M. The same goes for ro.product.locale.language/region as well.
- */
+```
+frameworks/base/core/jni/AndroidRuntime.cpp
 ```
 
 
