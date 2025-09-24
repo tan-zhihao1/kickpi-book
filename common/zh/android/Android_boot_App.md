@@ -167,17 +167,10 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := platform
 
 LOCAL_MODULE := TestLauncher
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_ENFORCE_USES_LIBRARIES := true
-LOCAL_DEX_PREOPT := true
 LOCAL_SRC_FILES := TestLauncher_20250101.apk
 
 include $(BUILD_PREBUILT)
 ```
-
->`LOCAL_MODULE` 指定编译模块的名称
->
->`LOCAL_SRC_FILES` 指定编译文件的路径
 
 第二步，修改apollo_p2.mk文件
 
