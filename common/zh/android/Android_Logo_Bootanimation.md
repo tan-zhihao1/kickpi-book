@@ -34,6 +34,34 @@ Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的�
 >
 > 两种文件同时存在播放 mp4 优先级比 zip 高 ，具体优先级见 frameworks/base/cmds/bootanimation/BootAnimation.cpp
 
+
+
+## 开关机动画
+
+开机动画放到指定目录
+
+```
+(SDK)$ ls device/rockchip/common/bootshutdown/bootanimation.zip
+```
+
+关机动画存放指定目录
+
+```
+(SDK)$ ls device/rockchip/common/bootshutdown/shutdownanimation.zip
+```
+
+打开配置
+
+```diff
+(SDK)$ vim device\rockchip\common\BoardConfig.mk
+-BOOT_SHUTDOWN_ANIMATION_RINGING ?= false
++BOOT_SHUTDOWN_ANIMATION_RINGING ?= true
+```
+
+
+
+
+
 ### H618 修改动画示例
 
 第一步，存放动画文件（zip 或 mp4 格式）
