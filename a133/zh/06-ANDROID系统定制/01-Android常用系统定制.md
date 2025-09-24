@@ -66,7 +66,7 @@ persist.sys.locale 属性
 ```
 device/softwinner/ceres-c3/ceres_c3.mk
 	PRODUCT_PROPERTY_OVERRIDES += \
-		persist.sys.locale=zh-CN
+    	persist.sys.timezone=Asia/Shanghai
 ```
 
 **语言修改**
