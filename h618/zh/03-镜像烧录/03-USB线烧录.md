@@ -1,6 +1,6 @@
 # 03-USB线烧录
 
-!!!Ubuntu镜像参考Ubuntu镜像SD卡 镜像烧录!!!
+!!!Ubuntu镜像参考SD卡烧录!!!
 
 Ubuntu镜像只能SD卡烧录
 
