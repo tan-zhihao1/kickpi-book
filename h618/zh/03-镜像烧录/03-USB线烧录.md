@@ -2,7 +2,7 @@
 
 !!!Ubuntu镜像参考SD卡烧录!!!
 
-Ubuntu镜像只能SD卡烧录
+Ubuntu镜像只能SD卡烧录[SD卡烧录](./02-SD卡烧录.md)
 
 ## 1. Android USB线 镜像烧录
 
