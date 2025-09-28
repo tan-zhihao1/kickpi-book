@@ -10,6 +10,7 @@
 | H618                 | K2B/K2C      | longan/device/config/chips/h618/boot-resource/boot-resource/bootlogo.bmp |
 | RK3562/RK3568/RK3588 | K1/K1B/K3/K8 | kernel-5.10/logo.bmp<br />kernel-5.10/logo_kernel.bmp        |
 | RK3576               | K7/K7C       | kernel-6.1/logo.bmp<br />kernel-6.1/logo_kernel.bmp          |
+| T527                 | K9           | longan/device/config/chips/t527/boot-resource/boot-resource/bootlogo.bmp |
 
 >rockchip 平台区分 Uboot、Kernel两个阶段显示LOGO，logo.bmp 为Uboot阶段，logo_kernel.bmp为Kernel阶段；
 >
@@ -26,6 +27,7 @@
 | A133                        | K5/K5C              | android/device/softwinner/ceres-c3/media/bootanimation.zip   |
 | H618                        | K2B/K2C             | device/softwinner/apollo/common/media/bootanimation/bootanimation.zip |
 | RK3562/RK3568/RK3576/RK3588 | K1/K1B/K3/K7/K7C/K8 | device/rockchip/common/bootshutdown/bootanimation.zip        |
+| T527                        | K9                  | device/softwinner/saturn/t527-demo/media/bootanimation/bootanimation.zip |
 
 Android 支持 bootanimation.mp4 以及 bootanimation.zip 两种文件格式的开机动画
 
