@@ -74,7 +74,7 @@ $ ./build.sh rootfs
 
 ## Kconfig配置
 
-kconfig 修改及保存
+方式一：kconfig 修改及保存
 
 ```
 $ ./build.sh config
