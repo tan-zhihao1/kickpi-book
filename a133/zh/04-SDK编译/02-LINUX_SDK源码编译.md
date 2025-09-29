@@ -91,8 +91,6 @@ $ ./build.sh menuconfig
 ```
 
 >
->
->
 
 ## 设备树路径
 
