@@ -90,7 +90,7 @@ $ ./build.sh saveconfig
 $ ./build.sh menuconfig
 ```
 
->如果命令未支持，自行添加添加补丁；
+>如果命令未支持，可自行添加添加补丁修改；
 >
 >```diff
 >--- a/build.sh
