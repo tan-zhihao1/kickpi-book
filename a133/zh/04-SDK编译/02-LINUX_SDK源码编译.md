@@ -74,6 +74,10 @@ $ ./build.sh rootfs
 
 ## Kconfig配置
 
+```
+$ ./build.sh menuconfig
+```
+
 
 
 kconfig 修改及保存
