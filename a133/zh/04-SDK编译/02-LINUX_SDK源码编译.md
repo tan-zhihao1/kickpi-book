@@ -90,7 +90,7 @@ $ ./build.sh saveconfig
 $ ./build.sh menuconfig
 ```
 
->
+>如果命令失效，自行添加添加补丁；
 >
 >```diff
 >+function build_menuconfig()
@@ -109,8 +109,6 @@ $ ./build.sh menuconfig
 >+    exit 0;
 > else
 >```
->
->
 
 ## 设备树路径
 
