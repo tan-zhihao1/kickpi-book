@@ -84,13 +84,15 @@ $ cd -
 $ ./build.sh saveconfig
 ```
 
-
+命令集成
 
 ```
 $ ./build.sh menuconfig
 ```
 
-
+>
+>
+>
 
 ## 设备树路径
 
