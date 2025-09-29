@@ -74,12 +74,6 @@ $ ./build.sh rootfs
 
 ## Kconfig配置
 
-```
-$ ./build.sh menuconfig
-```
-
-
-
 kconfig 修改及保存
 
 ```
@@ -89,6 +83,14 @@ $ make ARCH=arm64 menuconfig
 $ cd -
 $ ./build.sh saveconfig
 ```
+
+
+
+```
+$ ./build.sh menuconfig
+```
+
+
 
 ## 设备树路径
 
