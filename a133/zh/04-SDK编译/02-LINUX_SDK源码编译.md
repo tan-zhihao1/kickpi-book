@@ -90,9 +90,12 @@ $ ./build.sh saveconfig
 $ ./build.sh menuconfig
 ```
 
->如果命令失效，自行添加添加补丁；
+>如果命令未支持，自行添加添加补丁；
 >
 >```diff
+>--- a/build.sh
+>+++ b/build.sh
+>
 >+function build_menuconfig()
 >+{
 >+    build/mkcommon.sh autoconfig  -o bsp -n default -i a133 -b c3 -k linux-4.9
