@@ -91,6 +91,26 @@ $ ./build.sh menuconfig
 ```
 
 >
+>
+>```diff
+>+function build_menuconfig()
+>+{
+>+    build/mkcommon.sh autoconfig  -o bsp -n default -i a133 -b c3 -k linux-4.9
+>+    cd kernel/linux-4.9/
+>+    make ARCH=arm64 menuconfig
+>+    cd -
+>+    build/mkcommon.sh saveconfig
+>+}
+>+
+> if [ x"$1" == "xlunch" ] ;then
+>     build_lunch && exit 0
+>+elif [ x"$1" == "xmenuconfig" ] ;then
+>+    build_menuconfig 
+>+    exit 0;
+> else
+>```
+>
+>
 
 ## 设备树路径
 
