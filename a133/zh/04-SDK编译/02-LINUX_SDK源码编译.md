@@ -84,7 +84,7 @@ $ cd -
 $ ./build.sh saveconfig
 ```
 
-命令集成
+方式二：命令集成
 
 ```
 $ ./build.sh menuconfig
