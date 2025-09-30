@@ -92,9 +92,11 @@ Android 开机会默认启动 HOME 属性的APP，下面介绍修改APP为带 HO
 
 第二步，重新编译生成带 HOME 属性的APP。
 
-第三步，签名APP。
+第三步，[签名APP](./android_apk_signing.md)。
 
+第四步，安装你的APP
 
+第五步，在设置中 > Apps > Default apps > Home app 修改成你的APP
 
 **SDK 修改（修改源码定制镜像）**
 
