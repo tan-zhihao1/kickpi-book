@@ -38,7 +38,7 @@ kickpi-book/common/zh/android/Android_Logo_Bootanimation.md
 
 ## 开机自启动APP
 
-定制开机启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_boot_App.md) 文档。
+定制开机启动APP，查看 [Android_boot_App](../../../common/zh/android/Android_Boot_Apk.md) 文档。
 
 ```
 kickpi-book/common/en/android/Android_boot_App.md
