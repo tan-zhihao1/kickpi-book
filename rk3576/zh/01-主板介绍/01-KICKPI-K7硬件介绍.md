@@ -22,7 +22,9 @@
 
 ## 拓展引脚
 
-![k7_40pin](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/k7_40pin.jpg)
+
+
+![K7_PIN](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/K7_PIN.png)
 
 
 
