@@ -28,6 +28,10 @@ device/config/chips/a133/configs/c3/kickpi-k5c.dts
 
 
 
+sunxi
+
+
+
 dts gpios 配置解析
 
 ```
