@@ -26,11 +26,10 @@ device/config/chips/a133/configs/c3/kickpi-k5.dts
 device/config/chips/a133/configs/c3/kickpi-k5c.dts
 ```
 
-
-
 sunxi-gpio.h (4.9)
 
 ```
+include/linux/sunxi-gpio.h
 ```
 
 
