@@ -105,7 +105,9 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 ![image-20250422093934098](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093934098.png)
 
-
+> 注意事项：
+>
+> 烧录后首次开机，bi'xu
 
 
 
