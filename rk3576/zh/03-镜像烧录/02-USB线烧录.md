@@ -151,6 +151,12 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 ![image-20250704104936954](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704104936954.png)
 
+> 注意事项：
+>
+> 烧录后首次开机，必须等待机器正常开启，画面正常后再进行断电操作！
+>
+> 首次开机异常断电会导致系统异常，系统变砖！
+
 
 
 ## 工厂烧录
