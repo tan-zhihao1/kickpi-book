@@ -107,7 +107,7 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 > 注意事项：
 >
-> 烧录后首次开机，bi'xu
+> 烧录后首次开机，必须等待机器正常开启，画面正常！
 
 
 
