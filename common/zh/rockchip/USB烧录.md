@@ -63,9 +63,17 @@ kickpi-book/$Doc/zh/03-镜像烧录/01-获取镜像文件
 
 
 
-### Rockchip 平台烧录模式
+### Rockchip 平台烧录模式<a id="burn_mode"> </a>
 
+烧录镜像 必须使开发板进入烧录模式，Rockchip平台的烧录模式有LOADER模式、Maskrom模式
 
+LOADER模式 常用于完整镜像烧录、分区烧录皆可
+
+Maskrom模式 常用于系统损坏后，强制烧录镜像
+
+> 按键可通过KICKPI-硬件介绍，开发板信息章节进行查看
+>
+> 
 
 ## 镜像烧录
 
