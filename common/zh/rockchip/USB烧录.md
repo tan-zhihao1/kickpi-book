@@ -63,18 +63,6 @@ update-rk3576-kickpi-k7-android-multi-202505291812.img
 
 以 RK3576 为例，需获取以下文件：
 
-plaintext
-
-
-
-
-
-
-
-
-
-
-
 ```plaintext
 armbian.cfg  
 MiniLoaderAll_rk3576.bin  
@@ -85,24 +73,10 @@ Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.im
 
 - 查看路径：
 
-  plaintext
-
-  
-
-  
-
-  
-
-  
-
-  
-
   ```plaintext
   kickpi-book/rk356x-rk3588/zh/03-镜像烧录/01-获取镜像文件  
   kickpi-book/rk3576/zh/03-镜像烧录/01-获取镜像文件  
   ```
-
-  
 
 - 直接访问：
 
