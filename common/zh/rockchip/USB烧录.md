@@ -115,7 +115,9 @@ Maskrom模式 常用于系统损坏后，强制烧录镜像
 2. 连接开发板 USB TYPE-C 接口和电脑 USB 接口
 3. 进入 **LOADER 模式** 或 **MASKROM 模式** ；
 
-> 进入 **LOADER 模式** 需要一直按着LOADER按键，重新上电；进入 **MASKROM 模式** 需要一直按着板子背后的MASKROM按键，重新上电；
+> 按下 RECOVERY 按键，给主板重新上电，系统进入 LOADER 模式，松开按键；
+>
+> 
 
 4. 瑞芯微开发工具上能够识别到 LOADER设备 或 MASKROM设备，便可松开按键；（需要先安装[USB驱动安装](#USBDRV)，才能识别到相关设备）
 
