@@ -97,6 +97,8 @@ reboot loader
 
 ### **MASKROM 模式** 
 
+仅yon完整镜像烧录、分区烧录
+
 **按键触发方式**
 
 长按 MASKROM 按键，给主板重新上电，系统进入 MASKROM 模式；
