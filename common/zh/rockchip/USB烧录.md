@@ -83,6 +83,8 @@ Rockchip 平台有 LOADER 和 MASKROM 两种烧录模式。
 reboot loader
 ```
 
+按键chu
+
 
 
 **MASKROM 模式** 
