@@ -41,9 +41,9 @@
 5-DevelopmentTool/win_x64_UsbImageBurnTool/RKDevTool_v3.30_for_window.zip
 ```
 
-> windows固件烧写工具推荐使用网盘上软件。
+> windows 固件烧写工具推荐使用网盘上软件。
 >
-> （）
+> （旧版软件）
 
 
 
