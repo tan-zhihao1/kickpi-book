@@ -51,27 +51,15 @@ kickpi-book/rk3576/zh/03-镜像烧录/01-获取镜像文件
 
 请下载网盘上日期最新的对应镜像文件，具体说明如下：
 
-#### 1. 通用镜像（适用于烧录 / 批量烧录）
+1. 通用镜像（适用于烧录 / 批量烧录）
 
 以 RK3576 为例，文件格式如下：
-
-plaintext
-
-
-
-
-
-
-
-
-
-
 
 ```plaintext
 update-rk3576-kickpi-k7-android-multi-202505291812.img  
 ```
 
-#### 2. Armbian 镜像（适用于 Armbian 系统烧录）
+2. Armbian 镜像（适用于 Armbian 系统烧录）
 
 以 RK3576 为例，需获取以下文件：
 
