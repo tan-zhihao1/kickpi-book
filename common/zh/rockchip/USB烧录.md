@@ -89,6 +89,8 @@ reboot loader
 
 * 串口触发方式
 
+连接 DE
+
 
 
 **MASKROM 模式** 
