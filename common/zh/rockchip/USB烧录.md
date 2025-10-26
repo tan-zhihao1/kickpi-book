@@ -134,7 +134,7 @@ Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.im
 
 5. 点击 **Upgrade Firmware**，跳转到升级固件界面；
 
-6. 点击 **Firmware**，选择要烧录的镜像 update-*.img；[获取镜像文件](01-获取镜像文件.md)
+6. 点击 **Firmware**，选择要烧录的镜像 update-*.img；
 
 ![image-20250422093506005](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250422093506005.png)
 
