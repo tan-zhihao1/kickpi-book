@@ -153,6 +153,50 @@ Maskrom模式 常用于系统损坏后，强制烧录镜像
 
 
 
+### Armbian 镜像烧录
+
+> 由于 armbian 的镜像与 rockchip 官方的镜像有所区别，烧录方式不能沿用 ！
+
+1. 使主板进入 LOADER 模式或者 MASKROM 模式；
+
+   > LOADER / MASKROM模式均支持整包烧录，选择一个模式进行烧录即可。
+   >
+   > * 按住网口旁边的 RECOVERY 按键，给主板重新上电，系统进入 LOADER 模式；
+   >
+   > * 按住板子背后的 MASKROM 按键，给主板重新上电，系统进入 MASKROM 模式；
+
+2. 瑞芯微开发工具上能够识别到 LOADER 设备或 MASKROM 设备；（需要先安装USB驱动，才能识别到相关设备！）
+
+3. 点击 **Download Image**，跳转到分区升级固件界面；
+
+   ![image-20250704101553072](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704101553072.png)
+
+4. 在分区框内，**鼠标右键**打开配置选项，点击 **Load Config**，选择 **armbian.cfg** 文件（cfg格式文件）； [获取镜像文件](01-获取镜像文件.md)
+
+   ![image-20250704101726253](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704101726253.png)
+
+5. 选择 Loader 分区配置，点击对应文件选择方框，选择 **MiniLoaderAll.bin** 文件（bin格式文件）；[获取镜像文件](01-获取镜像文件.md)
+
+![image-20250704103334992](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704103334992.png)
+
+6. 选择 Image 分区配置，点击对应文件选择方框，选择 Armbian 镜像文件（img格式文件）；[获取镜像文件](01-获取镜像文件.md)
+
+   ![image-20250704104346690](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704104346690.png)
+
+7. 勾选分区烧录配置以及 **Write by Address** 配置（必须选取勾选！）
+
+![image-20250704104207269](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704104207269.png)
+
+8. 点击 Run，等待烧录完成；
+
+![image-20250704104936954](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250704104936954.png)
+
+> 注意事项：
+>
+> 烧录后首次开机，必须等待机器正常开启，画面正常后再进行断电操作！
+>
+> 首次开机异常断电会导致系统异常，系统变砖！
+
 
 
 
