@@ -63,6 +63,10 @@ kickpi-book/$Doc/zh/03-镜像烧录/01-获取镜像文件
 
 
 
+ROC烧录模式
+
+
+
 ## 镜像烧录
 
 ### 安装RKDevTool
