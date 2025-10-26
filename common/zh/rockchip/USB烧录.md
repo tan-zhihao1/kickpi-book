@@ -26,6 +26,8 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll_rk3576.bin`、`Armbia
 
 
 
+[]
+
 **获取和查看镜像介绍**
 
 ```
@@ -144,8 +146,6 @@ MASKROM 模式是设备的一种底层强制启动模式，主要用于系统无
 1. Window 电脑上打开烧录工具（参考上面说明安装RKDevTool）
 2. 连接开发板 USB TYPE-C 接口和电脑 USB 接口
 3. 使主板进入 **LOADER 模式** 或 **MASKROM 模式** ；
-
-
 
 4. 瑞芯微开发工具上能够识别到 LOADER设备 或 MASKROM设备，便可松开按键；（需要先安装[USB驱动安装](#USBDRV)，才能识别到相关设备）
 
