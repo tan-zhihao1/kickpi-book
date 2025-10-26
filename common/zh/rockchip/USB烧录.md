@@ -77,7 +77,7 @@ Rockchip 平台有 LOADER 和 MASKROM 两种烧录模式。
 
 > LOADER 模式可由多种方式触发，但命令和串口触发方式并非所有系统都支持！
 >
-> 并非所有系统都支持 LOADER 模式 ！！！
+> 并非所有系统都支持 LOADER 模式，如 Armbian 系统 ！！！
 
 * **按键触发方式**
 
@@ -187,7 +187,7 @@ reboot loader
 
 > 由于 armbian 的镜像与 rockchip 官方的镜像有所区别，烧录方式不能沿用 ！
 
-1. 使主板进入 LOADER 模式或者 MASKROM 模式；
+1. 使主板进入 MASKROM 模式；
 
    > LOADER / MASKROM模式均支持整包烧录，选择一个模式进行烧录即可。
    >
