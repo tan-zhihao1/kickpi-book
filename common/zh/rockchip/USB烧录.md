@@ -67,11 +67,11 @@ kickpi-book/$Doc/zh/03-镜像烧录/01-获取镜像文件
 
 > USB 烧录方式无法直接安装系统，只能识别处于烧录模式的主板进行烧录。
 
-Rockchip 平台有 LOADER 和 MASK模式
+Rockchip 平台有 LOADER 和 MASKROM 两种烧录模式
 
-LOADER模式 常用于完整镜像烧录、分区烧录皆可
+LOADER 模式 常用于完整镜像烧录、分区烧录皆可
 
-Maskrom模式 常用于系统损坏后，强制烧录镜像
+MAS模式 常用于系统损坏后，强制烧录镜像
 
 > 按键可通过KICKPI-硬件介绍，开发板信息章节进行查看
 
