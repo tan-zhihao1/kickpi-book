@@ -47,6 +47,82 @@ kickpi-book/rk3576/zh/03-镜像烧录/01-获取镜像文件
 
 
 
+### **获取镜像文件**
+
+请下载网盘上日期最新的对应镜像文件，具体说明如下：
+
+#### 1. 通用镜像（适用于烧录 / 批量烧录）
+
+以 RK3576 为例，文件格式如下：
+
+plaintext
+
+
+
+
+
+
+
+
+
+
+
+```plaintext
+update-rk3576-kickpi-k7-android-multi-202505291812.img  
+```
+
+#### 2. Armbian 镜像（适用于 Armbian 系统烧录）
+
+以 RK3576 为例，需获取以下文件：
+
+plaintext
+
+
+
+
+
+
+
+
+
+
+
+```plaintext
+armbian.cfg  
+MiniLoaderAll_rk3576.bin  
+Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.img  
+```
+
+#### 镜像文件获取路径
+
+- 查看路径：
+
+  plaintext
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  ```plaintext
+  kickpi-book/rk356x-rk3588/zh/03-镜像烧录/01-获取镜像文件  
+  kickpi-book/rk3576/zh/03-镜像烧录/01-获取镜像文件  
+  ```
+
+  
+
+- 直接访问：
+
+  - [K1 / K1B / K3 / K8 镜像文件](https://www.doubao.com/rk356x-rk3588/zh/03-镜像烧录/01-获取镜像文件.md)
+  - [K7 / K7C 镜像文件](https://www.doubao.com/rk3576/zh/03-镜像烧录/01-获取镜像文件.md)
+
+
+
 ### 安装USB驱动<a id="USBDRV"> </a>
 
 **网盘路径**
