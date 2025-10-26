@@ -65,9 +65,9 @@ kickpi-book/$Doc/zh/03-镜像烧录/01-获取镜像文件
 
 ### Rockchip 平台烧录模式<a id="burn_mode"> </a>
 
-USB烧录方式无法直接安装系统，只能识别处于烧录模式的主板进行烧录。
+> USB 烧录方式无法直接安装系统，只能识别处于烧录模式的主板进行烧录。
 
-烧录镜像 必须使开发板进入烧录模式，Rockchip平台的烧录模式有LOADER模式、Maskrom模式
+Rockchip 平台的烧录模式有LOADER模式、Maskrom模式
 
 LOADER模式 常用于完整镜像烧录、分区烧录皆可
 
