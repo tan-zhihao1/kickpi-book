@@ -124,7 +124,7 @@ Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.im
 
 1. Window 电脑上打开烧录工具（参考上面说明安装RKDevTool）
 2. 连接开发板 USB TYPE-C 接口和电脑 USB 接口
-3. 使主板进入 **LOADER 模式** 或 **MASKROM 模式** ；
+3. 使主板进入 **LOADER 模式** 或 **MASKROM 模式** ；[查看烧录模式](#burn_mode)
 
 4. 瑞芯微开发工具上能够识别到 LOADER设备 或 MASKROM设备，便可松开按键；（需要先安装[USB驱动安装](#USBDRV)，才能识别到相关设备）
 
