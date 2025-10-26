@@ -20,17 +20,13 @@
 
 下载网盘上日期最新的镜像文件。
 
-通用镜像烧录/批量烧录，
-
-RK3576为例
+通用镜像烧录/批量烧录，RK3576为例
 
 ```
 update-rk3576-kickpi-k7-android-multi-202505291812.img
 ```
 
-Armbian镜像烧录，
-
-RK3576为例
+Armbian镜像烧录，RK3576为例
 
 ```
 armbian.cfg
