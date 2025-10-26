@@ -20,18 +20,13 @@
 
 下载网盘上日期最新的镜像文件。
 
-通用镜像烧录/批量烧录，
-
-RK3576为例
+通用镜像烧录/批量烧录，RK3576为例
 
 ```
+update-rk3576-kickpi-k7-android-multi-202505291812.img
 ```
 
-
-
-`update-rk3576-kickpi-k7-android-multi-202505291812.img`。
-
-Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll_rk3576.bin`、`Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.img`。
+Armbian镜像烧录，RK如：`armbian.cfg`、`MiniLoaderAll_rk3576.bin`、`Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.img`。
 
 
 
