@@ -187,7 +187,7 @@ reboot loader
 
 > 由于 armbian 的镜像与 rockchip 官方的镜像有所区别，烧录方式不能沿用 ！
 
-1. 使主板进入 MASKROM 模式；《
+1. 使主板进入 MASKROM 烧录模式；烧录模式方法
 
 2. 瑞芯微开发工具上能够识别到 MASKROM 设备；（需要先安装USB驱动，才能识别到相关设备！）
 
