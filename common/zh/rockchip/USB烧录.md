@@ -79,17 +79,17 @@ Rockchip 平台有 LOADER 和 MASKROM 两种烧录模式。
 >
 > 并非所有系统都支持 LOADER 模式，如 Armbian 系统 ！！！
 
-* **按键触发方式**
+**按键触发方式**
 
 长按 RECOVERY 按键，给主板重新上电，系统进入 LOADER 模式；
 
-* 命令触发方式
+**命令触发方式**
 
 ```
 reboot loader
 ```
 
-* 串口触发方式
+**串口触发方式**
 
 连接 Debug 串口，在 Debug 串口输入界面，持续按下 Ctrl + c 按键；
 
@@ -99,7 +99,7 @@ reboot loader
 
 ### **MASKROM 模式** 
 
-* 按键触发方式
+**按键触发方式**
 
 长按 MASKROM 按键，给主板重新上电，系统进入 MASKROM 模式；
 
