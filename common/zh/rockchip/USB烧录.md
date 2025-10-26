@@ -63,7 +63,7 @@ kickpi-book/$Doc/zh/03-镜像烧录/01-获取镜像文件
 
 
 
-### Rockchip 平台烧录模式<a id="burn_mode"> </a>
+## Rockchip 平台烧录模式<a id="burn_mode"> </a>
 
 Rockchip 平台有 LOADER 和 MASKROM 两种烧录模式。
 
@@ -71,7 +71,7 @@ Rockchip 平台有 LOADER 和 MASKROM 两种烧录模式。
 
 
 
-**LOADER 模式**
+### **LOADER 模式**
 
 常用于完整镜像烧录、分区烧录
 
