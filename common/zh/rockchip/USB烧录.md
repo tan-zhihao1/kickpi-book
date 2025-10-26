@@ -26,7 +26,7 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll_rk3576.bin`、`Armbia
 
 
 
-获取和查看镜像
+**获取和查看镜像介绍**
 
 ```
 kickpi-book/$Doc/zh/03-镜像烧录/01-获取镜像文件
