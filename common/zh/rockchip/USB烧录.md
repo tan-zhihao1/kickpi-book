@@ -26,6 +26,8 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll_rk3576.bin`、`Armbia
 
 
 
+K1 / K1B /K3 / K8
+
 [K7 镜像文件](../../../rk3576/zh/03-镜像烧录/01-获取镜像文件.md)
 
 **获取和查看镜像介绍**
