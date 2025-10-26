@@ -10,6 +10,8 @@
 
 ## 烧录环境配置
 
+
+
 ### 获取镜像文件
 
 下载网盘上日期较新的镜像文件。
@@ -22,7 +24,7 @@ Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unoff
 
 
 
-### 烧录工具
+
 
 
 
