@@ -89,7 +89,7 @@ reboot loader
 
 * 串口触发方式
 
-连接 DE
+连接 Debug 串口，在 Debu
 
 
 
