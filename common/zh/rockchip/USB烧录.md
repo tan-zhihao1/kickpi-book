@@ -89,7 +89,9 @@ reboot loader
 
 * 串口触发方式
 
-连接 Debug 串口，在 Debug 串口输入界面，持续按下 Ctrl + 
+连接 Debug 串口，在 Debug 串口输入界面，持续按下 Ctrl + c 按键；
+
+给主板重新上电
 
 
 
