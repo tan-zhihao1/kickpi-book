@@ -22,7 +22,7 @@
 
 通用镜像烧录，如：`update-rk3576-kickpi-k7-android-multi-202505291812.img`。
 
-Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.img`。
+Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll_r.bin`、`Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.img`。
 
 [点击查看镜像文件的网盘位置以及镜像介绍。](01-获取镜像文件.md)
 
