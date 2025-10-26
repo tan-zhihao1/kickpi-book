@@ -41,7 +41,7 @@
 5-DevelopmentTool/win_x64_UsbImageBurnTool/RKDevTool_v3.30_for_window.zip
 ```
 
-> RK3576平台windows固件烧写工具必须使用V3.28及以上版本。
+> windows固件烧写工具推荐使用V3.28及以上版本。
 
 
 
