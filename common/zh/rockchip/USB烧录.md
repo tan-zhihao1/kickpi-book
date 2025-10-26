@@ -75,7 +75,7 @@ Rockchip 平台有 LOADER 和 MASKROM 两种烧录模式。
 
 常用于完整镜像烧录、分区烧录
 
-
+按键方式：
 
 
 
