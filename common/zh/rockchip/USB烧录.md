@@ -38,7 +38,7 @@ MiniLoaderAll_rk3576.bin
 Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.img  
 ```
 
-镜像文件获取路径
+镜像文件获取和介绍路径
 
 - 查看路径：
 
