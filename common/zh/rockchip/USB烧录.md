@@ -8,6 +8,8 @@
 
 
 
+
+
 ## 烧录环境配置
 
 ### 准备工具
@@ -83,46 +85,6 @@ Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.im
 ![image-20241025101606583](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101606583.png)
 
 
-
-## Rockchip 平台烧录模式<a id="burn_mode"> </a>
-
-Rockchip 平台有 LOADER 和 MASKROM 两种烧录模式。
-
-> USB 烧录方式无法直接安装系统，只能识别处于烧录模式的主板进行烧录。
-
-
-
-### **LOADER 模式**
-
-常用于完整镜像烧录、分区烧录
-
-> 请注意，并非所有系统都支持 LOADER 模式（例如 Armbian 系统）。此外，命令触发方式及串口触发方式也并非适用于所有系统！
-
-**按键触发方式**
-
-长按 RECOVERY 按键，给主板重新上电，系统进入 LOADER 模式；
-
-**命令触发方式**
-
-```
-reboot loader
-```
-
-**串口触发方式**
-
-连接 Debug 串口，在 Debug 串口输入界面，持续按下 Ctrl + c 按键；
-
-给主板重新上电
-
-
-
-### **MASKROM 模式** 
-
-MASKROM 模式是设备的一种底层强制启动模式，主要用于系统无法正常启动时的固件修复（如强制烧写固件）或紧急系统救援操作。
-
-**按键触发方式**
-
-长按 MASKROM 按键，给主板重新上电，系统进入 MASKROM 模式；
 
 
 
