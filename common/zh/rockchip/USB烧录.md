@@ -10,13 +10,34 @@
 
 ## 环境配置
 
+### 安装USB驱动<a id="USBDRV"> </a>
+
+**网盘路径**
+
+```
+5-DevelopmentTool/win_x64_UsbDriver/DriverAssitant_v5.13.zip
+```
+
+
+
+1. 将 DriverAssitant_v5.13.zip 解压，打开解压后的文件夹；
+
+2. 找到 DriverInstall.exe ，双击运行；
+
+
+![image-20241025101533688](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101533688.png)
+
+
+
+3. 点击驱动安装，提示安装成功；
+
+（若已安装旧版本驱动，可先进行驱动卸载再驱动安装，保持驱动版本为最新）
+
+![image-20241025101606583](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20241025101606583.png)
+
 
 
 ## 镜像烧录
-
-
-
-
 
 ### 安装RKDevTool
 
