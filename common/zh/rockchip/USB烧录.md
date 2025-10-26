@@ -365,7 +365,7 @@ RKDevTool_v3.30_for_window/开发工具使用文档_v1.0.pdf
 
 如果遇到反复启动 DDR 信息失败时，说明之前的 Armbian 镜像烧录失败导致系统异常。
 
-![image-20250917165634041](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250917165634041.png)
+![image-20250917165634041](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250917165634041.png)
 
 解决办法：
 
