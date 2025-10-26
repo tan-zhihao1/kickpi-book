@@ -77,11 +77,15 @@ Rockchip 平台有 LOADER 和 MASKROM 两种烧录模式。
 
 按键方式：
 
-按住 RECOVERY 按键，给主板重新上电，系统进入 LOADER 模式；
+长按 RECOVERY 按键，给主板重新上电，系统进入 LOADER 模式；
+
+
 
 
 
 **MASKROM 模式** 
+
+长按 RECOVERY 按键，给主板重新上电，系统进入 LOADER 模式；
 
 
 
