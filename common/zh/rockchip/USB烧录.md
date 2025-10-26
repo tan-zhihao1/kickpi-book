@@ -31,14 +31,10 @@ Armbian镜像烧录，RK3576为例
 ```
 armbian.cfg
 MiniLoaderAll_rk3576.bin
-Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.img`。
+Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.img
 ```
 
-
-
-
-
-
+通过下面路径ho
 
 ```
 kickpi-book/$Doc/zh/03-镜像烧录/01-获取镜像文件
