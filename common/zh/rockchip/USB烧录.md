@@ -10,6 +10,10 @@
 
 ## 烧录环境配置
 
+### 准备工具
+
+一根支持数据传输的 USB Type-C 数据线
+
 
 
 ### 获取镜像文件
@@ -21,10 +25,6 @@
 Armbian镜像烧录，如：`armbian.cfg`、`MiniLoaderAll.bin`、`Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.img`。
 
 [点击查看镜像文件的网盘位置以及镜像介绍。](01-获取镜像文件.md)
-
-
-
-
 
 
 
