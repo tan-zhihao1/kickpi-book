@@ -42,6 +42,8 @@ kickpi-book/$Doc/zh/03-镜像烧录/01-获取镜像文件
 5-DevelopmentTool/win_x64_UsbDriver/DriverAssitant_v5.13.zip
 ```
 
+> USB推荐使用网盘上软件。（旧版软件不兼容较新的平台镜像，如 RK3576 等）
+
 
 
 1. 将 DriverAssitant_v5.13.zip 解压，打开解压后的文件夹；
