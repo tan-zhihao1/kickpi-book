@@ -71,13 +71,13 @@ Rockchip 平台有 LOADER 和 MASKROM 两种烧录模式。
 
 
 
-MASKROM 模式 常用于系统损坏后，强制烧录镜像
+**LOADER 模式**
 
-**LOADER** 模式
-
-常用于完整镜像烧录、分区烧录皆可
+常用于完整镜像烧录、分区烧录
 
 
+
+**MASKROM 模式** 
 
 
 
