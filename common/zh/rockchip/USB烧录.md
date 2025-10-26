@@ -32,8 +32,6 @@ kickpi-book/$Doc/zh/03-镜像烧录/01-获取镜像文件
 
 
 
-
-
 ### 安装USB驱动<a id="USBDRV"> </a>
 
 **网盘路径**
