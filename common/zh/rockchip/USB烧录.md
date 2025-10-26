@@ -37,7 +37,8 @@ Armbian-unofficial_25.08.0-trunk_Kickpi-k7_noble_vendor_6.1.115_gnome_desktop.im
 通过下面路径或点击查看
 
 ```
-kickpi-book/rk/zh/03-镜像烧录/01-获取镜像文件
+kickpi-book/rk356x-rk3588/zh/03-镜像烧录/01-获取镜像文件
+kickpi-book/rk3576/zh/03-镜像烧录/01-获取镜像文件
 ```
 
 [K1 / K1B /K3 / K8 镜像文件](../../../rk356x-rk3588/zh/03-镜像烧录/01-获取镜像文件.md)
