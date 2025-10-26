@@ -113,9 +113,9 @@ Maskrom模式 常用于系统损坏后，强制烧录镜像
 
 1. Window 电脑上打开烧录工具（参考上面说明安装RKDevTool）
 2. 连接开发板 USB TYPE-C 接口和电脑 USB 接口
-3. 进入 **LOADER 模式**  **MASKROM 模式** 需要一直按着板子背后的MASKROM按键，重新上电；
+3. 进入 **LOADER 模式** 或 **MASKROM 模式** ；
 
-> LOADER / MASKROM模式均支持整包烧录，选择一个模式进行烧录即可。
+> 
 >
 > 进入 **LOADER 模式** 需要一直按着LOADER按键，重新上电；进入 **MASKROM 模式** 需要一直按着板子背后的MASKROM按键，重新上电；
 
