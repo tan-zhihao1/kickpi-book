@@ -315,3 +315,17 @@ RKDevTool_v3.30_for_window/开发工具使用文档_v1.0.pdf
 
 3. 如果是识别到未知设备，请安装USB驱动。如果安装后还是未知设备，参考步骤2测试
 4. 如果识别到ADB设备，哪说明板子和线都正常，请参考文档上面的烧录方法进入烧录模式
+
+
+
+### Armbian 镜像烧录失败问题
+
+如果遇到反复启动 DDR 信息失败时，说明之前的 Armbian 镜像烧录失败导致系统异常。
+
+![image-20250917165634041](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250917165634041.png)
+
+解决办法：
+
+第一步，烧录 android / linux 的整包镜像，恢复系统。
+
+第二部，重新进行 armbian 镜像烧录即可。
