@@ -158,7 +158,7 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.extend=LVDS,HDMI-A
 
 
 
-## 4. 单触摸屏驱动配置<a id='TouchDriver'> </a>
+## 单触摸屏驱动配置<a id='TouchDriver'> </a>
 
 > 以GT9XX为例
 
@@ -287,7 +287,7 @@ gt9xx:gt9xx@5d {
 
 
 
-## 5. 多屏触摸系统配置
+## 多屏触摸系统配置
 
 ### 内核设备树配置
 
