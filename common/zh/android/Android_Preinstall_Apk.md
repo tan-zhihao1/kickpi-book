@@ -31,7 +31,7 @@ TestLauncher.apk
 +		TestLauncher
 ```
 
-
+> 模块名称对应 mk wen'j
 
 **Android.mk 文件编写示例**
 
