@@ -74,6 +74,8 @@ $ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
 
 
 
+## 使用说明
+
 导出 PWM 通道
 
 ```
@@ -107,7 +109,9 @@ echo 1/0 > /sys/class/pwm/pwmchip0/pwm0/enable
 
 
 
-## 普通PWM
+## DTS
+
+### 普通PWM
 
 例如：将K1拓展引脚上的GPIO0_C0（pwm1m0）配置成PWM
 
