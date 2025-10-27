@@ -22,6 +22,8 @@ Extend Pin 接口包含多路PWM，具体引脚见对应主板扩展引脚。
 
 
 
+### RK3576
+
 下面以 PWM2_CH7_M2 进行说明。
 
 ![image-20250421155643696](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250421155643696.png)
