@@ -1,8 +1,10 @@
 # LCD
 
-RK3568 配备四路显示输出接口，分别为 HDMI、MIPI、LVDS、EDP，其中最高支持三路同时显示输出
+RK3568 配备四路显示输出接口，分别为 HDMI、MIPI、LVDS、EDP，其中最高支持三路同时显示输出。
 
-RK3576 配备三路显示输出接口，分别为 HDMI、USB Type-C DP
+RK3576 配备三路显示输出接口，分别为 HDMI、USB Type-C DP、MIPI DSI。
+
+RK3
 
 ## 文档参考
 
