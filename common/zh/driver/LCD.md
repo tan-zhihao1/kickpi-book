@@ -118,7 +118,7 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-lcd-dp.dtsi
 
 
 
-## 3. 多屏显示系统配置
+## 多屏显示系统配置
 
 多屏显示方案中，LCD参数选择注意事项：
 
