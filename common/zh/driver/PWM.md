@@ -129,7 +129,7 @@ echo 1/0 > /sys/class/pwm/pwmchip0/pwm0/enable
 
 
 
-## 红外使用的PWM
+### 红外使用的PWM
 
 永久关闭板子红外遥控，修改设备树目录下rk3568-kickpi-ir.dtsi文件
 
