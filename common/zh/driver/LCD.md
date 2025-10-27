@@ -158,6 +158,202 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.extend=LVDS,HDMI-A
 
 
 
+## 4. 单触摸屏驱动配置<a id='TouchDriver'> </a>
+
+> 以GT9XX为例
+
+### 驱动移植
+
+将厂商提供的驱动移植进SDK目录，并修改添加进编译文件
+
+驱动文件copy到触摸驱动的文件夹下$(SDK_DIR)\kernel-5.10\drivers\input\touchscreen
+
+修改kconfig：添加如下
+
+```
+config TOUCHSCREEN_GT9XX
+	tristate "GT9XX touchscreens support"
+```
+
+修改Makefile：添加如下
+
+```
+obj-$(CONFIG_TOUCHSCREEN_GT9XX)		+= gt9xx/
+```
+
+内核配置添加CONFIG_TOUCHSCREEN_GT9XX=y
+
+内核配置文件如arch/arm64/configs/rockchip_defconfig，不同版本的defconfig请自行在git历史记录中查找对应的版本文件
+
+
+
+### 内核设备树配置
+
+i2c_gt9xx配置：
+
+```
+&i2c1 {
+	status = "okay";
+	gt9xx:gt9xx@5d {
+		compatible = "goodix,gt9xx";
+		status = "okay";
+		reg = <0x5d>;
+
+		gtp_resolution_x = <1024>;
+		gtp_resolution_y = <600>;
+		gtp_int_tarigger = <1>;
+		gtp_change_x2y = <0>;
+		gtp_overturn_x = <0>;
+		gtp_overturn_y = <0>;
+		gtp_send_cfg = <1>;
+		gtp_touch_wakeup = <1>;
+		goodix_rst_gpio = <&gpio0 RK_PB6 GPIO_ACTIVE_HIGH>;
+		goodix_irq_gpio = <&gpio3 RK_PA3 IRQ_TYPE_LEVEL_LOW>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&touch3_gpio>;
+
+		goodix,cfg-group0 = [
+			4B 00 04 58 02 01 0D 00 01 08
+			28 05 50 32 03 05 00 00 00 00
+			00 00 00 00 00 00 00 8B 2A 0C
+			17 15 31 0D 00 00 02 BA 03 2D
+			00 00 00 00 00 03 00 00 00 00
+			00 0F 41 94 C5 02 07 00 00 04
+			9B 11 00 77 17 00 5C 1F 00 48
+			2A 00 3B 38 00 3B 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00
+			00 00 02 04 06 08 0A 0C 0E 10
+			12 14 16 18 FF FF 00 00 00 00
+			00 00 00 00 00 00 00 00 00 00
+			00 00 00 02 04 06 08 0A 0C 0F
+			10 12 13 16 18 1C 1D 1E 1F 20
+			21 22 24 FF FF FF FF FF 00 00
+			00 00 00 00 00 00 00 00 00 00
+			00 00 00 00 B6 01
+		];
+	};
+};
+```
+
+
+
+### 旋转触摸方向
+
+基于设备树调整触摸屏方向，以下方向仅适用于GT9XX驱动
+
+0度（默认）
+
+```
+gt9xx:gt9xx@5d {
+	gtp_change_x2y = <0>;		
+	gtp_overturn_x = <0>;
+	gtp_overturn_y = <0>;
+};
+```
+
+90度
+
+```
+gt9xx:gt9xx@5d {
+	gtp_change_x2y = <1>;
+	gtp_overturn_x = <1>;
+	gtp_overturn_y = <0>;
+};
+```
+
+180度
+
+```
+gt9xx:gt9xx@5d {
+	gtp_change_x2y = <0>;
+	gtp_overturn_x = <0>;
+	gtp_overturn_y = <1>;
+};
+```
+
+270度
+
+```
+gt9xx:gt9xx@5d {
+	gtp_change_x2y = <0>;
+	gtp_overturn_x = <1>;
+	gtp_overturn_y = <0>;
+};
+```
+
+
+
+
+
+## 5. 多屏触摸系统配置
+
+### 内核设备树配置
+
+I2C + I2C
+
+
+
+### Android单屏触摸配置
+
+* Android13.0
+
+禁止副屏触摸，不论external 或 internal类型设备，都作用在主屏
+
+```
+$ vim frameworks/native/services/inputflinger/reader/EventHub.cpp
+
+    // Determine whether the device is external or internal.
+    if (isExternalDeviceLocked(device)) {
+-        device->classes |= INPUT_DEVICE_CLASS_EXTERNAL;
++        //device->classes |= INPUT_DEVICE_CLASS_EXTERNAL;
+    }
+```
+
+
+
+### Android多屏触摸配置
+
+* 判断设备名称
+
+```
+$ vim frameworks/native/services/inputflinger/reader/EventHub.cpp
+
+bool EventHub::isExternalDeviceLocked(Device* device) {
++	const char *I2C_DEVICE_NAME = "generic ft5x06 (79)";
++	ALOGE("input deviceis '%s' ",device->identifier.name.c_str());
++	if (strcmp(device->identifier.name.c_str(), I2C_DEVICE_NAME) == 0) {
++		return true;
++	}
+
+	if (device->configuration) {
+	bool value;
+}
+```
+
+
+
+* 添加IDC配置文件
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## 文档参考
