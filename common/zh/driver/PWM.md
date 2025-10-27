@@ -111,7 +111,7 @@ echo 1/0 > /sys/class/pwm/pwmchip0/pwm0/enable
 +};
 ```
 
-测试方法参考:12-硬件功能测试 [PWM](12-硬件功能测试.md#PWM)
+
 
 ### 红外使用的PWM
 
