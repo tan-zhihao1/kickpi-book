@@ -14,9 +14,7 @@
 
 ## 拓展引脚 PWM
 
-Extend Pin 接口包含多路PWM，具体引脚见[扩展引脚章节](#ExpansionPin-K7)。
-
-
+Extend Pin 接口包含多路PWM，具体引脚见对应主板扩展引脚。
 
 [kickpi-book/rk356x-rk3588/zh/02-入门必读/04-扩展引脚](../../../rk356x-rk3588/zh/02-入门必读/04-扩展引脚)
 
