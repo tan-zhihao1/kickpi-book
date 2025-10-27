@@ -6,11 +6,11 @@ RK3576 配备三路显示输出接口，分别为 HDMI、USB Type-C DP、MIPI DS
 
 
 
-| 主板 | 显示输出接口                  | 多路显示输出 |
-| ---- | ----------------------------- | ------------ |
-| K1   |                               |              |
-| K7   | HDMI、USB Type-C DP、MIPI DSI | 三路         |
-| K8   | HDMI、                        |              |
+| 主板 | 显示输出接口                  | 多路同显 |
+| ---- | ----------------------------- | -------- |
+| K1   | HDMI、MIPI DSI、              |          |
+| K7   | HDMI、USB Type-C DP、MIPI DSI | 三路     |
+| K8   | HDMI、USB Type-C DP、MIPI DSI |          |
 
 
 
