@@ -348,6 +348,7 @@ Android_SDK
 
 ```
 RKDocs/common/display/
+RKDocs/android/patches/customized_functions/Android11异显开发说明.zip
 ```
 
 Linux_SDK
