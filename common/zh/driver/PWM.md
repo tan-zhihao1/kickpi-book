@@ -12,9 +12,15 @@
 
 
 
-## 拓展引脚PWM
+## 拓展引脚 PWM
 
-Extend 40Pin 接口 包含多路PWM，具体引脚见[扩展引脚章节](#ExpansionPin-K7)。
+Extend Pin 接口包含多路PWM，具体引脚见[扩展引脚章节](#ExpansionPin-K7)。
+
+
+
+kickpi
+
+
 
 下面以 PWM2_CH7_M2 进行说明。
 
