@@ -349,6 +349,7 @@ Android_SDK
 ```
 RKDocs/common/display/
 RKDocs/android/patches/customized_functions/Android11异显开发说明.zip
+RKDocs/android/patches/customized_functions/Dual_Audio_v1.0.zip
 ```
 
 Linux_SDK
