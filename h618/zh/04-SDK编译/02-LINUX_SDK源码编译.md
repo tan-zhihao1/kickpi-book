@@ -194,8 +194,6 @@ git diff arch/arm64/configs/linux_h618_defconfig
 dpkg -i kickpi-k2b-uboot-currentxxxx.deb
 ```
 
-
-
 最后还需要使用脚本将u-boot镜像写入进我们存储设备的指定位置覆盖原来的u-boot。
 
 ```
