@@ -186,7 +186,7 @@ git diff arch/arm64/configs/linux_h618_defconfig
 - Target directory：构建生成的u-boot deb文件保存路径
 - File name：构建生成的u-boot deb包名称
 
-将生成的u-boot deb包传输到正在运行的板卡中， 使用dpkg -i kickpi-k2b-uboot-currentxxxx.deb将u-boot镜像解压到板卡文件系统中， 
+将生成的u-boot deb包传输到正在运行的板卡中， 使用dpkg命令安装， 
 
 安装deb包
 
