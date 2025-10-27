@@ -12,6 +12,8 @@
 
 
 
+## 拓展引脚PWM
+
 Extend 40Pin 接口 包含多路PWM，具体引脚见[扩展引脚章节](#ExpansionPin-K7)。
 
 下面以 PWM2_CH7_M2 进行说明。
@@ -95,7 +97,7 @@ echo 1/0 > /sys/class/pwm/pwmchip0/pwm0/enable
 
 
 
-### 普通PWM
+## 普通PWM
 
 例如：将K1拓展引脚上的GPIO0_C0（pwm1m0）配置成PWM
 
@@ -113,7 +115,7 @@ echo 1/0 > /sys/class/pwm/pwmchip0/pwm0/enable
 
 
 
-### 红外使用的PWM
+## 红外使用的PWM
 
 永久关闭板子红外遥控，修改设备树目录下rk3568-kickpi-ir.dtsi文件
 
