@@ -52,6 +52,8 @@ RK3568 有三个VP节点，每个VP节点可挂接一个显示屏，对应关系
 
 ## 单显示屏驱动配置<a id='LCDDriver'> </a>
 
+### RK3562
+
 ### RK3568
 
 显示屏配置 主要修改设备树LCD配置文件，RK3568 设备树LCD配置目录如下：
@@ -85,7 +87,7 @@ $ vim kernel-5.10/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi //android
 (CPU类型)-kickpi-lcd-(接口)-(英寸)-(宽)-(高).dtsi
 ```
 
-
+### RK3576
 
 
 
