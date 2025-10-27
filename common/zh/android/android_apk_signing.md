@@ -169,6 +169,7 @@ H618 平台
 
 ```
 $ source build/envsetup.sh
+$ source device/softwinner/.BoardConfig.mk
 $ lunch apollo_p2-userdebug
 ```
 
