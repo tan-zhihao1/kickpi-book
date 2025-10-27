@@ -118,6 +118,48 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-lcd-dp.dtsi
 
 
 
+## 3. 多屏显示系统配置
+
+多屏显示方案中，LCD参数选择注意事项：
+
+推荐选择显示长宽比例一致的显示屏，否则会出现画面拉伸或者画面黑边
+
+
+
+### 内核设备树配置
+
+```
+$ vim kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi
+
+// Triple LCD
+//#include "rk3568-kickpi-triple-lcd-hdmi-mipi1-lvds.dtsi"
+//#include "rk3568-kickpi-triple-lcd-edp-mipi1-lvds.dtsi"
+```
+
+> 在完成单屏调试的基础上，参考以上提供的多屏设备树配置文件
+
+
+
+### Android多屏配置
+
+* DSI作为主屏，HDMI-A作为副屏
+
+```
+PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.primary=DSI
+PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.extend=HDMI-A
+```
+
+* DSI\eDP作为主屏，LVDS\HDMI-A作为副屏
+
+```
+PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.primary=DSI,eDP
+PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.extend=LVDS,HDMI-A
+```
+
+
+
+
+
 ## 文档参考
 
 Android_SDK
@@ -133,7 +175,4 @@ docs/cn/Common/DISPLAY/
 docs/en/Common/DISPLAY/
 ```
 
-
-
-## DTS
 
