@@ -342,20 +342,6 @@ bool EventHub::isExternalDeviceLocked(Device* device) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 文档参考
 
 Android_SDK
