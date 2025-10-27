@@ -7,8 +7,8 @@
 | K1   | HDMI、MIPI DSI、Signal LVDS、EDP       |          |
 | K1B  | HDMI、MIPI DSI、Signal LVDS            |          |
 | K3   | HDMI、MIPI DSI、Signal LVDS、Dual LVDS |          |
-| K7   | HDMI、USB Type-C DP、MIPI DSI          | 三路     |
-| K7C  |                                        |          |
+| K7   | HDMI、USB Type-C DP、MIPI DSI          |          |
+| K7C  | HDMI、MIPI DSI                         |          |
 | K8   | HDMI X2、USB Type-C DP、MIPI DSI       |          |
 
 
