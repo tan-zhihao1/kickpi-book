@@ -18,7 +18,7 @@ Extend Pin 接口包含多路PWM，具体引脚见[扩展引脚章节](#Expansio
 
 
 
-kickpi
+kickpi-book/rk3576/zh/02
 
 
 
