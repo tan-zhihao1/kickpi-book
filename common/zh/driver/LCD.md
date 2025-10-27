@@ -1,15 +1,15 @@
 # LCD
 
-主板显示输出
+主板显示输出接口
 
-| 主板 | 显示输出接口                     | 多路同显 |
-| ---- | -------------------------------- | -------- |
-| K1   | HDMI、MIPI DSI、Signal LVDS、EDP |          |
-| K1B  |                                  |          |
-| K3   |                                  |          |
-| K7   | HDMI、USB Type-C DP、MIPI DSI    | 三路     |
-| K7C  |                                  |          |
-| K8   | HDMI X2、USB Type-C DP、MIPI DSI |          |
+| 主板 | 显示输出接口                           | 多路同显 |
+| ---- | -------------------------------------- | -------- |
+| K1   | HDMI、MIPI DSI、Signal LVDS、EDP       |          |
+| K1B  | HDMI                                   |          |
+| K3   | HDMI、MIPI DSI、Signal LVDS、Dual LVDS |          |
+| K7   | HDMI、USB Type-C DP、MIPI DSI          | 三路     |
+| K7C  |                                        |          |
+| K8   | HDMI X2、USB Type-C DP、MIPI DSI       |          |
 
 
 
