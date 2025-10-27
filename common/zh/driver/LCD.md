@@ -4,7 +4,15 @@ RK3568 配备四路显示输出接口，分别为 HDMI、MIPI、LVDS、EDP，其
 
 RK3576 配备三路显示输出接口，分别为 HDMI、USB Type-C DP、MIPI DSI。
 
-RK3
+
+
+|        |       |
+| ------ | ----- |
+|        |       |
+| RK3576 | HDMI\ |
+|        |       |
+
+
 
 ## 文档参考
 
