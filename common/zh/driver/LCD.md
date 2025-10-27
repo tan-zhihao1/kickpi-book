@@ -13,6 +13,82 @@
 
 
 
+## 显示接口资源介绍
+
+### RK3568
+
+RK3568 有三个VP节点，每个VP节点可挂接一个显示屏，对应关系如下表格示
+
+| VP编号 | VP支持显示接口                    | VP最大分辨率   |
+| ------ | --------------------------------- | -------------- |
+| VP0    | MIPI0 / MIPI1 / HDMI / EDP        | 4096x2304@60Hz |
+| VP1    | MIPI0 / MIPI1 / LVDS / HDMI / EDP | 2048x1536@60Hz |
+| VP2    | LVDS / RGB                        | 1920x1080@60Hz |
+
+> MIPI0与LVDS接口引脚冲突，只能二选一
+>
+> VP2节点仅支持LVDS/RGB，所以三屏显示时其中一路必须是LVDS（RGB接口未引出）
+
+
+
+| 显示接口  | 显示最大分辨率 | 格式             |
+| --------- | -------------- | ---------------- |
+| HDMI      | 4096x2160@60Hz | RGB/YUV420 10Bit |
+| MIPI      | 1920x1080@60Hz | RGB 8Bit         |
+| Dual MIPI | 2560x1440@60Hz | RGB 8Bit         |
+| LVDS      | 1280x800@60Hz  | RGB 8Bit         |
+| EDP       | 2560x1600@60Hz | RGB 10Bit        |
+| RGB       | 1920x1080@60Hz | RGB 8Bit         |
+
+
+
+### RK3576
+
+
+
+### RK3588
+
+
+
+## 单显示屏驱动配置<a id='LCDDriver'> </a>
+
+显示屏配置 主要修改设备树LCD配置文件，RK3568 设备树LCD配置目录如下：
+
+```
+$ vim kernel/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi //linux
+$ vim kernel-5.10/arch/arm64/boot/dts/rockchip/rk3568-kickpi-k1.dtsi //android
+
+// LCD
+#include "rk3568-kickpi-lcd-hdmi.dtsi"
+//#include "rk3568-kickpi-lcd-edp-15.6-1920-1080.dtsi"
+//#include "rk3568-kickpi-lcd-mipi0-10.1-800-1280.dtsi"
+//#include "rk3568-kickpi-lcd-mipi1-10.1-800-1280.dtsi"
+//#include "rk3568-kickpi-lcd-mipi0-10.1-800-1280-v2.dtsi"
+//#include "rk3568-kickpi-lcd-mipi1-10.1-800-1280-v2.dtsi"
+//#include "rk3568-kickpi-lcd-lvds0-7-1024-600.dtsi"
+//#include "rk3568-kickpi-lcd-lvds1-7-1024-600.dtsi"
+//#include "rk3568-kickpi-lcd-mipi0-5-720-1280.dtsi"
+//#include "rk3568-kickpi-lcd-mipi1-5-720-1280.dtsi"
+// #include "rk3568-kickpi-lcd-mipi0-8-800-1280.dtsi"
+//#include "rk3568-kickpi-lcd-mipi1-8-800-1280.dtsi"
+```
+
+> 其中的rk3568-kickpi-lcd-hdmi.dtsi需要默认保持使能
+>
+> 若显示屏调试有问题，可联系售后，获取技术支持
+
+屏幕设备树名称介绍
+
+```
+(CPU类型)-kickpi-lcd-(接口)-(英寸)-(宽)-(高).dtsi
+```
+
+
+
+
+
+
+
 ## 文档参考
 
 Android_SDK
