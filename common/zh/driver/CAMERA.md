@@ -12,6 +12,14 @@
 
 
 
+|      |                              |              |
+| ---- | ---------------------------- | ------------ |
+|      |                              |              |
+| K7 > | MIPI_CS0、MIPI_CS1、MIPI_CS3 | imx415 4lane |
+|      |                              |              |
+
+
+
 ## Android/Linux dts配置
 
 添加摄像头配置，cam0 ~ cam3 对应原理图的 MIPI-CSI_0 ~ MIPI-CSI_3。
