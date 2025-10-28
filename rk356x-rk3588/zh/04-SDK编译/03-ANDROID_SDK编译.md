@@ -261,7 +261,11 @@ $ ./build.sh -AUCKu -J1
 
 我们网盘提供的是多屏自适应镜像，需要特殊指令编译，参考[编译多屏自适应镜像](#multi)
 
-如果你只是完整编译，需要自己去选择你使用的屏，参考[LCD介绍文档](../05-外设驱动/LCD.md#LCDDriver)
+如果你只是完整编译，需要自己去选择你使用的屏，参考文档
+
+[kickpi-book/common/en/driver/LCD](../../../common/en/driver/LCD.md)
+
+[kickpi-book/common/zh/driver/LCD](../../../common/zh/driver/LCD.md)
 
 
 
