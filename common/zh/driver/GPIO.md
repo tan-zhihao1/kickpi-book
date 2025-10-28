@@ -22,7 +22,13 @@ K7 / K7C 扩展引脚
 
 ## LED配置
 
-RK35
+### RK3562
+
+```
+kernel-5.10/arch/arm64/boot/dts/rockchip/rk3562-kickpi-extend-20pin.dtsi
+```
+
+
 
 ### RK3568
 
@@ -62,6 +68,14 @@ gpio1a4/ gpio1b1/ gpio1d0/ gpio3b5/ gpio4c4/
 $ echo 1 > /sys/class/leds/gpio1d4/brightness
 $ echo 0 > /sys/class/leds/gpio1d4/brightness
 ```
+
+
+
+### RK3576
+
+
+
+RK3
 
 
 
