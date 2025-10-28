@@ -18,13 +18,12 @@ Android_SDK
 
 ```
 RKDocs/android/SARADC/
-RKDocs/android/wifi/Rockchip_Introduction_REALTEK_WIFI_Driver_Porting_CN&EN.pdf
 ```
 
 Linux_SDK
 
 ```
-docs/cn/Linux/Wifibt
+docs/cn/Linux/c/SARADC/
 docs/en/Linux/Wifibt
 ```
 
