@@ -39,13 +39,13 @@ Extend Pin 接口包含多路PWM，具体引脚见对应主板扩展引脚。
 
 
 
-### RK3576
+### K7
 
 ADC位于扩展引脚中，见下图
 
 ![image-20250422110732652](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250422110732652.png)
 
-
+> 由图可知，K7
 
 ## **读取ADC值**
 
