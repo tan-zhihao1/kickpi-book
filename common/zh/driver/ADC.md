@@ -23,11 +23,11 @@ RKDocs/android/SARADC/
 Linux_SDK
 
 ```
-docs/cn/Linux/c/SARADC/
-docs/en/Linux/Wifibt
+docs/cn/Common/SARADC/
+docs/en/Common/SARADC/
 ```
 
-
+​	
 
 ## 拓展引脚 PWM
 
