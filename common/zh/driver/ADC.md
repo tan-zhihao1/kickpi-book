@@ -65,6 +65,12 @@ drivers/iio/adc/rockchip_saradc.c
 
 
 
+## DTS节点配置
+
+```
+Documentation/devicetree/bindings/iio/adc/rockchip-saradc.txt
+```
+
 
 
 
