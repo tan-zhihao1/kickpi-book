@@ -2,8 +2,6 @@
 
 
 
-
-
 ## 拓展引脚 ADC
 
 Extend Pin 接口包含多路PWM，具体引脚见对应主板扩展引脚。
@@ -73,3 +71,21 @@ console$ cat /sys/bus/iio/devices/iio\:device0/in_voltage4_raw
 获取adc值: iio_read_channel_raw()
 
 获取电压: iio_read_channel_processed()
+
+
+
+## 文档参考
+
+Android_SDK
+
+```
+RKDocs/common/SARADC/
+```
+
+Linux_SDK
+
+```
+docs/cn/Common/SARADC/
+docs/en/Common/SARADC/
+```
+
