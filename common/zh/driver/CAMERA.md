@@ -4,12 +4,6 @@
 
 ## 环境
 
-* K7主板版本 >= 2.0。
-
-* 支持摄像头 imx415，4 lane。
-
-* MIPI_CS0、MIPI_CS1、MIPI_CS3 为 22 pin 的 MIPI_CSI_RX 接口。
-
 
 
 |           |                              |              |
@@ -23,6 +17,10 @@
 
 
 ## Android/Linux dts配置
+
+
+
+RK3
 
 添加摄像头配置，cam0 ~ cam3 对应原理图的 MIPI-CSI_0 ~ MIPI-CSI_3。
 
