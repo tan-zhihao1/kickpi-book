@@ -57,6 +57,18 @@ K7 / K7C 扩展引脚
 
 
 
+## 驱动
+
+```
+drivers/iio/adc/rockchip_saradc.c
+```
+
+
+
+
+
+
+
 ## **读取ADC值**
 
 ```
