@@ -29,7 +29,7 @@ docs/en/Common/SARADC/
 
 ​	
 
-## 拓展引脚 PWM
+## 拓展引脚 ADC
 
 Extend Pin 接口包含多路PWM，具体引脚见对应主板扩展引脚。
 
