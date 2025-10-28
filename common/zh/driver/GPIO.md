@@ -73,9 +73,19 @@ $ echo 0 > /sys/class/leds/gpio1d4/brightness
 
 ### RK3576
 
+```
+
+```
 
 
-RK3
+
+### RK3588
+
+```
+kernel-5.10/arch/arm64/boot/dts/rockchip/rk3588-kickpi-k8-extend-40pin.dtsi
+```
+
+
 
 
 
