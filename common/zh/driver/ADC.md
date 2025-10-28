@@ -43,9 +43,9 @@ K7 / K7C 扩展引脚
 
 
 
-## 拓展引脚图分析示例
+## ADC引脚分析示例
 
-K7 ADC位于扩展引脚中，见下图 3
+K7 ADC位于扩展引脚中，见下图 36 、38 、40 号引脚。
 
 ![image-20250422110732652](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250422110732652.png)
 
