@@ -93,7 +93,7 @@ console$ cat /sys/bus/iio/devices/iio\:device0/in_voltage4_raw
 
 
 
-内核常用接口
+**内核常用接口**
 
 获取adc值: iio_read_channel_raw()
 
