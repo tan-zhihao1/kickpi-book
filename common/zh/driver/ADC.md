@@ -45,9 +45,11 @@ ADC位于扩展引脚中，见下图
 
 ![image-20250422110732652](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250422110732652.png)
 
-> 由图可知，K7 扩展引脚中包含三路 SARADC 通道，SARADC_VIN* 对应主板接口上的对应序号通道j
+> 由图可知，K7 扩展引脚中包含三路 SARADC 通道。
 >
-> SARADC_VIN4 
+> SARADC_VIN* 对应主板接口上的对应序号通道
+>
+> SARADC_VIN4 对应 /sys/bus/iio/devices/iio\:device0/in_voltage4_raw，其他同理
 
 ## **读取ADC值**
 
