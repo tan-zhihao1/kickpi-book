@@ -6,13 +6,13 @@
 
 
 
-| 主板        |                              |                        |
-| ----------- | ---------------------------- | ---------------------- |
-| K1          |                              |                        |
-| K1B         |                              | 4 Lane x1 or 2 Lane x2 |
-| K3          |                              |                        |
-| K7 (>= 2.0) | MIPI_CS0、MIPI_CS1、MIPI_CS3 | imx415 4lane           |
-| K7C         | MIPI_CS0、MIPI_CS1、MIPI_CS3 | imx415 4lane           |
+| 主板        |                              |      |                        |
+| ----------- | ---------------------------- | ---- | ---------------------- |
+| K1          |                              |      |                        |
+| K1B         |                              |      | 4 Lane x1 or 2 Lane x2 |
+| K3          |                              |      |                        |
+| K7 (>= 2.0) | MIPI_CS0、MIPI_CS1、MIPI_CS3 |      | imx415 4lane           |
+| K7C         | MIPI_CS0、MIPI_CS1、MIPI_CS3 |      | imx415 4lane           |
 
 
 
