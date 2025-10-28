@@ -9,15 +9,15 @@
 | K1          | MIPI_CSI                        | gc5035     | 4 Lane x1 or 2 Lane x2 |
 | K1B         | MIPI_CSI                        | gc5035     | 4 Lane x1 or 2 Lane x2 |
 | K3          | MIPI_CSI_RX0、MIPI_CSI_RX1      | gc5035     | 4 Lane x2 or 2 Lane x4 |
-| K7 (< 2.0)  | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | null       |                        |
-| K7 (>= 2.0) | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | imx415     |                        |
-| K7C         | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | imx415     |                        |
+| K7 (< 2.0)  | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | null       | 4 Lane x3              |
+| K7 (>= 2.0) | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | imx415     | 4 Lane x3              |
+| K7C         | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | imx415     | 4 Lane x3              |
 
 
 
 ## Android/Linux dts配置
 
-### RK3576
+### 
 
 添加摄像头配置，cam0 ~ cam3 对应原理图的 MIPI-CSI_0 ~ MIPI-CSI_3。
 
