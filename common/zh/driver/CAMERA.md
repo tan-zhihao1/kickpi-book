@@ -1,17 +1,15 @@
 # CAMERA
 
+## gui
 
-
-## 环境
-
-| 主板        | 接口                            | 已适配模块 | 规格                   |
-| ----------- | ------------------------------- | ---------- | ---------------------- |
-| K1          | MIPI_CSI                        | gc5035     | 4 Lane x1 or 2 Lane x2 |
-| K1B         | MIPI_CSI                        | gc5035     | 4 Lane x1 or 2 Lane x2 |
-| K3          | MIPI_CSI_RX0、MIPI_CSI_RX1      | gc5035     | 4 Lane x2 or 2 Lane x4 |
-| K7 (< 2.0)  | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | null       | 4 Lane x3              |
-| K7 (>= 2.0) | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | imx415     | 4 Lane x3              |
-| K7C         | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | imx415     | 4 Lane x3              |
+| 主板        | 接口                            | 模块   | 规格                   |
+| ----------- | ------------------------------- | ------ | ---------------------- |
+| K1          | MIPI_CSI                        | gc5035 | 4 Lane x1 or 2 Lane x2 |
+| K1B         | MIPI_CSI                        | gc5035 | 4 Lane x1 or 2 Lane x2 |
+| K3          | MIPI_CSI_RX0、MIPI_CSI_RX1      | gc5035 | 4 Lane x2 or 2 Lane x4 |
+| K7 (< 2.0)  | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | null   | 4 Lane x3              |
+| K7 (>= 2.0) | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | imx415 | 4 Lane x3              |
+| K7C         | MIPI_CSI0、MIPI_CSI1、MIPI_CSI3 | imx415 | 4 Lane x3              |
 
 
 
