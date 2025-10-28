@@ -94,6 +94,17 @@ echo " kickpi.sh run finish !" >> $LOG_FILE
 
 
 
+## 串口自动登陆
+
+```
+ # serial-getty auto login
++            sed -i "s~\(^ExecStart=.*\)~# \1\nExecStart=-/sbin/agetty --autologin $RealUserName --keep-baud 115200,57600,38400,9600 %I \$TERM~" /usr/lib/systemd/system/serial-getty@.service
+```
+
+
+
+
+
 ## MIPI 屏显示
 
 主板中已存在MIPI屏幕的dtbo文件
