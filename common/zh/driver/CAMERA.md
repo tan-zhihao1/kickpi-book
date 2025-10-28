@@ -17,6 +17,16 @@
 
 ## Android/Linux dts配置
 
+
+
+```
+kernel-5.10/arch/arm64/boot/dts/rockchip/rk3562-kickpi-mipi-camera1.dtsi
+```
+
+
+
+
+
 ### RK3568
 
 ```
