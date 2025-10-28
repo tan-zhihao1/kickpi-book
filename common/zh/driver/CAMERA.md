@@ -20,7 +20,7 @@
 
 
 
-RK3
+### RK3576
 
 添加摄像头配置，cam0 ~ cam3 对应原理图的 MIPI-CSI_0 ~ MIPI-CSI_3。
 
@@ -63,6 +63,10 @@ kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-cam3.dtsi
 
 
 ## Armbian dts 配置
+
+### RK3576
+
+> 目前 Armbian ISP 存在问题，不建议使用
 
 添加摄像头配置，cam0 ~ cam3 对应原理图的 MIPI-CSI_0 ~ MIPI-CSI_3。
 
