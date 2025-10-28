@@ -81,9 +81,15 @@ Documentation/devicetree/bindings/iio/adc/rockchip-saradc.txt
 console$ cat /sys/bus/iio/devices/iio\:device0/in_voltage*_raw
 ```
 
-1.可以通过用户态接口获取adc值，其中*表示adc第多少通道:
+可以通过用户态接口获取 adc 值，其中 * 表示 adc 第多少通道:
 
+```
 cat /sys/bus/iio/devices/iio\:device0/in_voltage*_raw
+```
+
+
+
+
 
 例如 channle0:
 
