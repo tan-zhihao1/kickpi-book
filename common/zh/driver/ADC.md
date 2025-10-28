@@ -12,6 +12,24 @@
 
 
 
+## 文档参考
+
+Android_SDK
+
+```
+RKDocs/android/wifi/Rockchip_Introduction_WIFI_Configuration_CN&EN.pdf
+RKDocs/android/wifi/Rockchip_Introduction_REALTEK_WIFI_Driver_Porting_CN&EN.pdf
+```
+
+Linux_SDK
+
+```
+docs/cn/Linux/Wifibt
+docs/en/Linux/Wifibt
+```
+
+
+
 ## 拓展引脚 PWM
 
 Extend Pin 接口包含多路PWM，具体引脚见对应主板扩展引脚。
