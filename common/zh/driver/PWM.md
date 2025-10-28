@@ -34,8 +34,6 @@ Extend Pin 接口包含多路PWM，具体引脚见对应主板扩展引脚。
 
 pwmX_Ych_Z，X 表示控制器 id ，Y 表示当前控制器支持的通道总数，Z 表示通道 id 。
 
-PWM2_CH7_M2，代表
-
 > pwm0_2ch_1: pwm@27331000
 >
 > pwm2_8ch_6: pwm@2ade6000
