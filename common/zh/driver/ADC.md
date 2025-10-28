@@ -43,9 +43,9 @@ K7 / K7C 扩展引脚
 
 
 
-## 示例
+## 拓展引脚图分析示例
 
-ADC位于扩展引脚中，见下图
+K7 ADC位于扩展引脚中，见下图 3
 
 ![image-20250422110732652](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250422110732652.png)
 
