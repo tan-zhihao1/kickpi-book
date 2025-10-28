@@ -93,7 +93,12 @@ kernel-5.10/arch/arm64/boot/dts/rockchip
  rk3588-kickpi-k8-android.dts
 ```
 
+RK3576
 
+```
+kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7.dts
+kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7c.dts
+```
 
 
 
