@@ -33,6 +33,8 @@ docs/en/Common/SARADC/
 
 Extend Pin 接口包含多路PWM，具体引脚见对应主板扩展引脚。
 
+
+
 [kickpi-book/rk356x-rk3588/zh/02-入门必读/04-扩展引脚](../../../rk356x-rk3588/zh/02-入门必读/04-扩展引脚)
 
 [kickpi-book/rk3576/zh/02-入门必读/04-扩展引脚](../../../rk3576/zh/02-入门必读/04-扩展引脚)
@@ -47,9 +49,11 @@ ADC位于扩展引脚中，见下图
 
 > 由图可知，K7 扩展引脚中包含三路 SARADC 通道。
 >
-> SARADC_VIN* 对应主板接口上的对应序号通道
+> SARADC_VIN* 对应主板接口上的对应序号通道。
 >
-> SARADC_VIN4 对应 /sys/bus/iio/devices/iio\:device0/in_voltage4_raw，其他同理
+> SARADC_VIN4 对应 /sys/bus/iio/devices/iio\:device0/in_voltage4_raw，其他同理。
+
+
 
 ## **读取ADC值**
 
