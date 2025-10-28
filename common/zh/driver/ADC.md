@@ -33,9 +33,11 @@ docs/en/Common/SARADC/
 
 Extend Pin 接口包含多路PWM，具体引脚见对应主板扩展引脚。
 
-
+K1 / K1B / K3 / K8 扩展引脚
 
 [kickpi-book/rk356x-rk3588/zh/02-入门必读/04-扩展引脚](../../../rk356x-rk3588/zh/02-入门必读/04-扩展引脚)
+
+K7 / K7C 扩展引脚
 
 [kickpi-book/rk3576/zh/02-入门必读/04-扩展引脚](../../../rk3576/zh/02-入门必读/04-扩展引脚)
 
