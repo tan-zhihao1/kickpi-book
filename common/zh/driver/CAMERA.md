@@ -9,7 +9,7 @@
 | 主板        | 接口                         | 已适配模块 | 规格                   |
 | ----------- | ---------------------------- | ---------- | ---------------------- |
 | K1          | MIPI_CSI                     | gc5035     | 4 Lane x1 or 2 Lane x2 |
-| K1B         |                              | gc5035     | 4 Lane x1 or 2 Lane x2 |
+| K1B         | MIPI_CSI                     | gc5035     | 4 Lane x1 or 2 Lane x2 |
 | K3          |                              | gc5035     |                        |
 | K7 (>= 2.0) | MIPI_CS0、MIPI_CS1、MIPI_CS3 | imx415     |                        |
 | K7C         | MIPI_CS0、MIPI_CS1、MIPI_CS3 | imx415     |                        |
