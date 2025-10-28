@@ -116,25 +116,6 @@ patch/kernel/rk35xx-vendor-6.1/dt/rk3576-kickpi-k7-cam3.dtsi
 
 
 
-## 文档参考
-
-Rockchip 官方提供了 Camera 相关文档，包含在源码SDK中。
-
-Android 源码文档路径
-
-```
-(Android SDK)/RKDocs/common/camera/
-```
-
-Linux 源码文档路径
-
-```
-(Linux SDK)/docs/cn/Linux/Camera/
-(Linux SDK)/docs/cn/Common/ISP/
-```
-
-
-
 ## v4l2-ctl 测试
 
 ### 安装工具
@@ -535,3 +516,23 @@ Camera2 APP 源码路径。
 3、点击按钮，切换前置和后置摄像头。
 
 ![image-20250813152343947](http://tanzhtanzh.oss-cn-shenzhen.aliyuncs.com/img/image-20250813152343947.png)
+
+
+
+## 文档参考
+
+Rockchip 官方提供了 Camera 相关文档，包含在源码SDK中。
+
+Android 源码文档路径
+
+```
+(Android SDK)/RKDocs/common/camera/
+```
+
+Linux 源码文档路径
+
+```
+(Linux SDK)/docs/cn/Linux/Camera/
+(Linux SDK)/docs/cn/Common/ISP/
+```
+
