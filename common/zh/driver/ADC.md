@@ -73,11 +73,9 @@ Documentation/devicetree/bindings/iio/adc/rockchip-saradc.txt
 
 
 
-
-
 ## **SARADC常用接口**
 
-yon
+**用户态接口**
 
 可以通过用户态接口获取 adc 值，其中 * 表示 adc 第多少通道:
 
@@ -95,3 +93,8 @@ console$ cat /sys/bus/iio/devices/iio\:device0/in_voltage4_raw
 
 
 
+内核常用接口
+
+获取adc值: iio_read_channel_raw()
+
+获取电压: iio_read_channel_processed()
