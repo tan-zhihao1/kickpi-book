@@ -22,14 +22,6 @@ K7 / K7C 扩展引脚
 
 ## LED配置
 
-### RK3562
-
-```
-kernel-5.10/arch/arm64/boot/dts/rockchip/rk3562-kickpi-extend-20pin.dtsi
-```
-
-
-
 ### RK3568
 
 例如：将K1拓展引脚上的GPIO1_D4配置成LED，可以参考下面的修改
@@ -70,6 +62,12 @@ $ echo 0 > /sys/class/leds/gpio1d4/brightness
 ```
 
 
+
+### RK3562
+
+```
+kernel-5.10/arch/arm64/boot/dts/rockchip/rk3562-kickpi-extend-20pin.dtsi
+```
 
 
 
