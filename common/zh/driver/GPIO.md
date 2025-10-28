@@ -74,7 +74,7 @@ kernel-5.10/arch/arm64/boot/dts/rockchip/rk3562-kickpi-extend-20pin.dtsi
 ### RK3576
 
 ```
-
+kernel-6.1/arch/arm64/boot/dts/rockchip/rk3576-kickpi-k7-extend-40pin.dtsi
 ```
 
 
@@ -84,10 +84,6 @@ kernel-5.10/arch/arm64/boot/dts/rockchip/rk3562-kickpi-extend-20pin.dtsi
 ```
 kernel-5.10/arch/arm64/boot/dts/rockchip/rk3588-kickpi-k8-extend-40pin.dtsi
 ```
-
-
-
-
 
 
 
