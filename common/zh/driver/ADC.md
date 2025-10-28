@@ -45,7 +45,7 @@ ADC位于扩展引脚中，见下图
 
 ![image-20250422110732652](C:\Users\16708\AppData\Roaming\Typora\typora-user-images\image-20250422110732652.png)
 
-> 由图可知，K7
+> 由图可知，K7 扩展引脚中包含三路 SARADC通道
 
 ## **读取ADC值**
 
