@@ -17,7 +17,7 @@
 Android_SDK
 
 ```
-RKDocs/android/SARADC/
+RKDocs/common/SARADC/
 ```
 
 Linux_SDK
