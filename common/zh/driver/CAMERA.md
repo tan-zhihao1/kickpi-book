@@ -17,7 +17,7 @@
 
 ## Android/Linux dts配置
 
-### 
+### RK3576
 
 添加摄像头配置，cam0 ~ cam3 对应原理图的 MIPI-CSI_0 ~ MIPI-CSI_3。
 
