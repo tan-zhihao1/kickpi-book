@@ -263,6 +263,27 @@ $ xinput_calibrator -v --device $id
 
 
 
+开机自启动旋转
+
+```
+root@ubuntu2004:~# vim /etc/systemd/system/xrandr-startup.service 
+[Unit]
+Description=Start xrandr script on boot
+After=graphical.target
+
+[Service]
+Type=oneshot
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/kickpi/.Xauthority"
+ExecStart=/usr/bin/xrandr --output LVDS-1 --rotate left
+User=kickpi
+
+[Install]
+WantedBy=graphical.target
+```
+
+
+
 ### 永久修改触摸方向
 
 可以参考LCD配置文档：[单触摸屏驱动配置](../05-外设驱动/LCD.md#TouchDriver)
