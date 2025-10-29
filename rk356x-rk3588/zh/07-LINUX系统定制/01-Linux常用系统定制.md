@@ -263,7 +263,7 @@ $ xinput_calibrator -v --device $id
 
 
 
-开机自启动旋转
+* 开机自启动旋转服务参考
 
 ```
 root@ubuntu2004:~# vim /etc/systemd/system/xrandr-startup.service 
