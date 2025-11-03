@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
 +		$(LOCAL_PATH)/media/bootanimation.mp4:system/media/bootanimation.mp4
 ```
 
-
+K5C使用mp4格式需重命名为boot.mp4
 
 ### A133 开机音乐定制
 
